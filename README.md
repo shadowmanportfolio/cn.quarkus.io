@@ -1,14 +1,14 @@
-# ja.quarkus.io
+# cn.quarkus.io
 
-Japanese Localization project for [https://github.com/quarkusio/quarkusio.github.io](https://github.com/quarkusio/quarkusio.github.io) (The repository for [quarkus.io website](https://quarkus.io))
+Chinese Localization project for [https://github.com/quarkusio/quarkusio.github.io](https://github.com/quarkusio/quarkusio.github.io) (The repository for [quarkus.io website](https://quarkus.io))
 
-Localized site: [https://ja.quarkus.io/](https://ja.quarkus.io)
+Localized site: [https://cn.quarkus.io/](https://cn.quarkus.io)
 
 ## Localization architecture
 
 Original [quarkusio.github.io](https://github.com/quarkusio/quarkusio.github.io) is built with Jekyll, 
 and most of its contents are written in asciidoctor (.adoc) files.
-ja-quarkusio extracts texts to po files with [po4a](https://po4a.org/) utility, translates, 
+cn-quarkusio extracts texts to po files with [po4a](https://po4a.org/) utility, translates, 
 write back to asciidoctor files, and build a localized site.
 Most workflow including pre-translation by DeepL API are automated by GitHub Actions. 
 Translators can focus on post-editing to improve fluency.
@@ -20,7 +20,7 @@ If you are interested in contributing localization, please edit .po files, and s
 
 #### sync workflow
 
-ja-quarkusio GitHub repository has a GitHub Actions workflow which checks upstream repository(submodule) update, 
+cn-quarkusio GitHub repository has a GitHub Actions workflow which checks upstream repository(submodule) update, 
 extracts texts from upstream .adoc files to [.adoc.po files](l10n/po), pre-translate with a translation memory 
 and the DeepL API.
 
@@ -37,7 +37,7 @@ please remove "fuzzy" mark and correct inappropriate sentences if needed.
 When you send a pull-request, GitHub Actions workflow automatically apply translations in .po files to .adoc files,
 build a localized site and deploy it to surge.sh with preview domain. When the deploy finish, GitHub Actions comment 
 the URL to the pull-request. Reviewers can check the deployed site for review.
-When the pull-request is merged into `master`, it is automatically deployed to the production site (https://ja.quarkus.io).
+When the pull-request is merged into `master`, it is automatically deployed to the production site (https://cn.quarkus.io).
 
 #### Build a localized site locally
 
@@ -75,9 +75,9 @@ We'll appreciate if you post-edit the corresponding .adoc.po files to polish up,
 
 Submitting a pull request, and reporting an issue are all welcome.
 
-For translators, we have a [translation guide(ja)](./translation-guide.ja.md).
+For translators, we have a [translation guide(cn)](./translation-guide.cn.md).
 
 ## License
 
-ja-quarkusio is Open Source Project released under the
+cn-quarkusio is Open Source Project released under the
 [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
