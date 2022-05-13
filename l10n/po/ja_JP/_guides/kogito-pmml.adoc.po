@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-04 01:49+0900\n"
+"POT-Creation-Date: 2022-04-12 10:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,7 @@ msgstr "ソリューション"
 #. type: Plain text
 #: upstream/_guides/kogito-pmml.adoc:46
 msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can go right to the complete example."
-msgstr "次の章で紹介する手順に沿って、ステップを踏んでアプリを作成することをお勧めします。ただし、完成した例にそのまま進んでも構いません。"
+msgstr "次のセクションで紹介する手順に沿って、ステップを踏んでアプリを作成することをお勧めします。ただし、完成した例にそのまま進んでも構いません。"
 
 #. type: Plain text
 #: upstream/_guides/kogito-pmml.adoc:48
@@ -126,7 +126,7 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #. type: Plain text
 #: upstream/_guides/kogito-pmml.adoc:63
 #, fuzzy
-msgid "This command generates a Maven project, importing the `kogito` extension that comes with all needed dependencies and configuration to equip your application with business automation.  It also imports the `resteasy-jackson` extension that is needed for Kogito to expose REST services."
+msgid "This command generates a Maven project, importing the `kogito` extension that comes with all needed dependencies and configuration to equip your application with business automation.  It also imports the `resteasy-reactive-jackson` extension that is needed for Kogito to expose REST services."
 msgstr "このコマンドはMavenプロジェクトを生成し、アプリケーションにビジネス・オートメーションを装備するために必要な依存関係と構成をすべて備えた `kogito` 拡張をインポートします。また、KogitoがRESTサービスを公開するのに必要な `resteasy-jackson` 拡張をインポートします。"
 
 #. type: Plain text
@@ -259,7 +259,7 @@ msgstr "開発モードでの動作"
 #: upstream/_guides/kogito-pmml.adoc:152
 #, fuzzy
 msgid "To run the microservice in dev mode, use:"
-msgstr "マイクロサービスをdevモードで実行するには"
+msgstr "マイクロサービスを開発モードで実行するには"
 
 #. type: Title ===
 #: upstream/_guides/kogito-pmml.adoc:155

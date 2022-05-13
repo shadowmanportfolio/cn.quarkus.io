@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-02-08 17:12+0000\n"
+"POT-Creation-Date: 2022-04-19 17:18+0000\n"
 "PO-Revision-Date: 2021-04-30 16:54+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -56,7 +56,7 @@ msgstr "OidcClient"
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client.adoc:21
 #, fuzzy
-msgid "Add the following Maven dependency:"
+msgid "Add the following dependency:"
 msgstr "テストプロジェクトに以下の依存関係を追加します。"
 
 #. type: delimited block -
@@ -110,7 +110,7 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-client.adoc:46
 #, fuzzy
 msgid "`OidcClient` will discover that the token endpoint URL is `http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/tokens`."
-msgstr "`OidcClient` は、トークンのエンドポイントURLが `&lt;a href=\"http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/tokens\" class=\"bare\"&gt;http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/tokens&lt;/a&gt;`."
+msgstr "`OidcClient` は、トークンのエンドポイントURLが `<a href=\"http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/tokens\" class=\"bare\">http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/tokens</a>`."
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client.adoc:48
@@ -1280,13 +1280,13 @@ msgstr "相互のTLS"
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client.adoc:641
 #, fuzzy
-msgid "Some OpenID Connect Providers may require that a client is authenticated as part of the `Mutual TLS` (`MTLS`) authentication process."
+msgid "Some OpenID Connect Providers may require that a client is authenticated as part of the `Mutual TLS` (`mTLS`) authentication process."
 msgstr "OpenID Connectプロバイダによっては、 `Mutual TLS` ( `MTLS`) 認証プロセスの一環として、クライアントの認証を要求する場合があります。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client.adoc:643
 #, fuzzy
-msgid "`quarkus-oidc-client` can be configured as follows to support `MTLS`:"
+msgid "`quarkus-oidc-client` can be configured as follows to support `mTLS`:"
 msgstr "`quarkus-oidc-client` は、 `MTLS` をサポートするために以下のように構成することができます。"
 
 #. type: delimited block -

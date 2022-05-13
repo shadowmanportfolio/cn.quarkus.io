@@ -71,7 +71,7 @@ msgstr "コード"
 #. type: Plain text
 #: upstream/_guides/funqy-http.adoc:37
 msgid "If you look at the Java code, you'll see that there is no HTTP specific API.  Its just simple Java methods annotated with `@Funq`.  Simple, easy, straightforward."
-msgstr "Javaコードを見ると、HTTP固有のAPIがないことがわかります。単純な Java メソッドに `@Funq` と注釈が付けられているだけです。シンプルで、簡単で、わかりやすいです。"
+msgstr "Javaコードを見ると、HTTP固有のAPIがないことがわかります。単純な Java メソッドに `@Funq` とアノテーションが付けられているだけです。シンプルで、簡単で、わかりやすいです。"
 
 #. type: Title ==
 #: upstream/_guides/funqy-http.adoc:38
@@ -109,7 +109,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/funqy-http.adoc:58
 msgid "This starts your functions in Quarkus dev mode."
-msgstr "これにより、Quarkus devモードで Function が起動されます。"
+msgstr "これにより、Quarkus 開発モードで Function が起動されます。"
 
 #. type: Title ==
 #: upstream/_guides/funqy-http.adoc:59

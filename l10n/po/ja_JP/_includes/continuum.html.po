@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-02-04 01:50+0900\n"
+"POT-Creation-Date: 2022-04-12 07:14+0000\n"
 "PO-Revision-Date: 2021-12-03 23:52+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -77,7 +77,7 @@ msgid ""
 "\n"
 "    <span class=\"hljs-comment\">//...</span>\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-meta\"&gt;@Path&lt;/span&gt;（&lt;span class=\"hljs-string\"&gt;\"/elements\"&lt;/span&gt;）&lt;span class=\"hljs-keyword\"&gt;。public&lt;/span&gt; &lt;span class=\"hljs-class\"&gt;&lt;span class=\"hljs-keyword\"&gt;class&lt;/span&gt; &lt;span class=\"hljs-title\"&gt;ElementResource&lt;/span&gt; &lt;/span&gt;{。"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-meta\">@Path</span>（<span class=\"hljs-string\">\"/elements\"</span>）<span class=\"hljs-keyword\">。public</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title\">ElementResource</span> </span>{。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:42
@@ -106,7 +106,7 @@ msgid ""
 "    <span class=\"hljs-meta\">@Column</span>(unique = <span class=\"hljs-keyword\">true</span>)\n"
 "    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">int</span> position;\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-meta\"&gt;@Entity&lt;/span&gt; &lt;span class=\"hljs-keyword\"&gt;public&lt;/span&gt; &lt;span class=\"hljs-class\"&gt;&lt;span class=\"hljs-keyword\"&gt; &lt;/spanクラス&lt;/span&gt; &lt;span class=\"hljs-title\"&gt;Element&lt;/span&gt; &lt;span class=\"hljs-keyword\"&gt;extends&lt;/span&gt; &lt;span class=\"hljs-title\"&gt;PanacheEntity&lt;/span&gt; &lt;/span&gt;{。"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-meta\">@Entity</span> <span class=\"hljs-keyword\">public</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\"> </spanクラス</span> <span class=\"hljs-title\">Element</span> <span class=\"hljs-keyword\">extends</span> <span class=\"hljs-title\">PanacheEntity</span> </span>{。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:62
@@ -130,7 +130,7 @@ msgid ""
 "    <span class=\"hljs-meta\">@Path</span>(<span class=\"hljs-string\">\"/{position}\"</span>)\n"
 "    <span class=\"hljs-function\">Element <span class=\"hljs-title\">getElement</span><span class=\"hljs-params\">(@PathParam(<span class=\"hljs-string\">\"position\"</span>)</span> <span class=\"hljs-keyword\">int</span> position)</span>;\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-meta\"&gt;@Path&lt;/span&gt;(&lt;span class=\"hljs-string\"&gt;?\"/elements\"&lt;/span&gt;） &lt;span class=\"hljs-meta\"&gt;@RegisterRestClient&lt;/span&gt;(configKey=&lt;span class=\"hljs-string\"&gt;)\"element-service\"&lt;/span&gt;) &lt;span class=\"hljs-keyword\"&gt;public&lt;/span&gt; &lt;span class=\"hljs-class\"&gt;&lt;span class=\"hljs-keyword\"&gt;interface&lt;/span&gt; &lt;span class=\"hljs-title\"&gt;ElementService&lt;/span&gt; &lt;/span&gt;{。"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-meta\">@Path</span>(<span class=\"hljs-string\">?\"/elements\"</span>） <span class=\"hljs-meta\">@RegisterRestClient</span>(configKey=<span class=\"hljs-string\">)\"element-service\"</span>) <span class=\"hljs-keyword\">public</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\">interface</span> <span class=\"hljs-title\">ElementService</span> </span>{。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:78
@@ -153,7 +153,7 @@ msgid ""
 "        <span class=\"hljs-keyword\">return</span> elements.getElement(position);\n"
 "    }\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-meta\"&gt;@Path&lt;/span&gt;（&lt;span class=\"hljs-string\"&gt;\"/elem\"&lt;/span&gt;）&lt;span class=\"hljs-keyword\"&gt;。public&lt;/span&gt; &lt;span class=\"hljs-class\"&gt;&lt;span class=\"hljs-keyword\"&gt;class&lt;/span&gt; &lt;span class=\"hljs-title\"&gt;ElementResource&lt;/span&gt; &lt;/span&gt;{。"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-meta\">@Path</span>（<span class=\"hljs-string\">\"/elem\"</span>）<span class=\"hljs-keyword\">。public</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title\">ElementResource</span> </span>{。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:94
@@ -164,7 +164,7 @@ msgstr "しかし、URLがコードに含まれていないため、どこで設
 #: upstream/_includes/continuum.html:96
 #, fuzzy, no-wrap
 msgid "<code class=\"language-text hljs\" data-lang=\"text\">element-service/mp-rest/url=http://localhost:9001</code>"
-msgstr "&lt;code class=\"language-text hljs\" data-lang=\"text\"&gt;element-service/mp-rest/url=http://localhost:9001&lt;/code&gt;"
+msgstr "<code class=\"language-text hljs\" data-lang=\"text\">element-service/mp-rest/url=http://localhost:9001</code>"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:98
@@ -188,6 +188,7 @@ msgstr "アプリケーションの要件は、ここ数年で大きく変化し
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:108
+#, fuzzy
 msgid "Today’s users embrace applications with milliseconds of response time, 100% uptime, lower latency, push data instead of pull, higher throughput, and elasticity. However, these features are nearly impossible to achieve using yesterday’s software architecture without a considerable investment in resources, infrastructure, and tooling. The world changed, and having dozens of servers, long response times (&gt; 500 ms), downtime due to maintenance or waterfalls of failures does not meet the expected user experience."
 msgstr "今日のユーザーは、ミリ秒単位の応答時間、100%のアップタイム、低レイテンシー、プル型ではなくプッシュ型のデータ、高いスループット、そして弾力性を備えたアプリケーションを求めています。しかし、これらの機能を以前のソフトウェアアーキテクチャで実現するには、リソース、インフラ、ツールに多大な投資をしなければほぼ不可能です。世界は変わりました。何十台ものサーバー、長い応答時間（500ms以上）、メンテナンスによるダウンタイム、滝のような障害などは、期待されるユーザーエクスペリエンスを満たすものではありません。"
 
@@ -206,7 +207,7 @@ msgid ""
 "    <span class=\"hljs-keyword\">return</span> elements.getElement(position)\n"
 "        .onFailure().recoverWithItem(FALLBACK);\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-meta\"&gt;@GET&lt;/span&gt; &lt;span class=\"hljs-meta\"&gt;@Path&lt;/span&gt;(&lt;?span class=\"hljs-string\"&gt;\"/elements/{position}\"&lt;/span&gt;) &lt;span class=\"hljs-function\"&gt;&lt;span class=\"hljs-keyword\"&gt;public&lt;/span&gt; Uni&lt;?要素&gt; &lt;span class=\"hljs-title\"&gt;getElement&lt;/span&gt;&lt;span class=\"hljs-params\"&gt;(@PathParam(&lt;span class=\"hljs-string\"&gt;\"position\"&lt;?/span&gt;)&lt;/span&gt; &lt;span class=\"hljs-keyword\"&gt;int&lt;/span&gt; position) &lt;/span&gt;{ &lt;span class=\"hljs-keyword\"&gt;return&lt;/span&gt; elements.getElement(position) .onFailure().recoverWithItem(FALLBACK); }&lt;/code&gt;。"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-meta\">@GET</span> <span class=\"hljs-meta\">@Path</span>(<?span class=\"hljs-string\">\"/elements/{position}\"</span>) <span class=\"hljs-function\"><span class=\"hljs-keyword\">public</span> Uni<?要素> <span class=\"hljs-title\">getElement</span><span class=\"hljs-params\">(@PathParam(<span class=\"hljs-string\">\"position\"<?/span>)</span> <span class=\"hljs-keyword\">int</span> position) </span>{ <span class=\"hljs-keyword\">return</span> elements.getElement(position) .onFailure().recoverWithItem(FALLBACK); }</code>。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:119
@@ -225,7 +226,7 @@ msgid ""
 "    <span class=\"hljs-meta\">@Path</span>(<span class=\"hljs-string\">\"/{position}\"</span>)\n"
 "    <span class=\"hljs-function\">Uni&lt;Element&gt; <span class=\"hljs-title\">getElement</span><span class=\"hljs-params\">(@PathParam(<span class=\"hljs-string\">\"position\"</span>)</span> <span class=\"hljs-keyword\">int</span> position)</span>;\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-meta\"&gt;@Path&lt;/span&gt;(&lt;span class=\"hljs-string\"&gt;?\"/elements\"&lt;/span&gt;） &lt;span class=\"hljs-meta\"&gt;@RegisterRestClient&lt;/span&gt;(configKey=&lt;span class=\"hljs-string\"&gt;)\"element-service\"&lt;/span&gt;) &lt;span class=\"hljs-keyword\"&gt;public&lt;/span&gt; &lt;span class=\"hljs-class\"&gt;&lt;span class=\"hljs-keyword\"&gt;interface&lt;/span&gt; &lt;span class=\"hljs-title\"&gt;ElementService&lt;/span&gt; &lt;/span&gt;{。"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-meta\">@Path</span>(<span class=\"hljs-string\">?\"/elements\"</span>） <span class=\"hljs-meta\">@RegisterRestClient</span>(configKey=<span class=\"hljs-string\">)\"element-service\"</span>) <span class=\"hljs-keyword\">public</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\">interface</span> <span class=\"hljs-title\">ElementService</span> </span>{。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:131
@@ -242,7 +243,7 @@ msgid ""
 "<span class=\"hljs-function\"><span class=\"hljs-keyword\">public</span> Multi&lt;String&gt; <span class=\"hljs-title\">stream</span><span class=\"hljs-params\">()</span> </span>{\n"
 "    <span class=\"hljs-keyword\">return</span> kafka.toMulti();\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-meta\"&gt;@Produces&lt;/span&gt;(MediaType.SERVER_SENT_EVENTS） &lt;span class=\"hljs-meta\"&gt;@GET&lt;/span&gt; &lt;span class=\"hljs-meta\"&gt;@Path&lt;/span&gt;(&lt;?span class=\"hljs-string\"&gt;\"/events\"&lt;/span&gt;） &lt;span class=\"hljs-function\"&gt;&lt;span class=\"hljs-keyword\"&gt; &lt;span class=\"hljs-keyword\"&gt; パブリック&lt;/span&gt; マルチ&lt;STRONG&gt; &lt;/span&gt; &lt;/span&gt;。public&lt;/span&gt; Multi&lt;String&gt; &lt;span class=\"hljs-title\"&gt;stream&lt;/span&gt;&lt;span class=\"hljs-params\"&gt;()&lt;/span&gt; &lt;/span&gt;{ &lt;span class=\"hljs-keyword\"&gt;return&lt;/span&gt; kafka.toMulti(); }&lt;/code&gt;。"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-meta\">@Produces</span>(MediaType.SERVER_SENT_EVENTS） <span class=\"hljs-meta\">@GET</span> <span class=\"hljs-meta\">@Path</span>(<?span class=\"hljs-string\">\"/events\"</span>） <span class=\"hljs-function\"><span class=\"hljs-keyword\"> <span class=\"hljs-keyword\"> パブリック</span> マルチ<STRONG> </span> </span>。public</span> Multi<String> <span class=\"hljs-title\">stream</span><span class=\"hljs-params\">()</span> </span>{ <span class=\"hljs-keyword\">return</span> kafka.toMulti(); }</code>。"
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/continuum.html:138
@@ -272,7 +273,7 @@ msgid ""
 "    <span class=\"hljs-keyword\">return</span> health.getHeartbeat();\n"
 "  }\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-meta\"&gt;@ApplicationScoped&lt;/span&gt; &lt;span class=\"hljs-keyword\"&gt;public&lt;?/span&gt; &lt;span class=\"hljs-keyword\"&gt;&lt;span class=\"hljs-keyword\"&gt;class&lt;/span&gt; &lt;span class=\"hljs-title\"&gt;MyEventProcessor&lt;/span&gt; &lt;/span&gt;{。"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-meta\">@ApplicationScoped</span> <span class=\"hljs-keyword\">public<?/span> <span class=\"hljs-keyword\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title\">MyEventProcessor</span> </span>{。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:150
@@ -297,7 +298,7 @@ msgid ""
 "        .onItem().transform(capture -&gt; <span class=\"hljs-keyword\">new</span> Measure(capture.sensor, capture.value, capture.unit))\n"
 "        .onItem().transform(measure -&gt; Record.of(measure.sensor, measure));\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-meta\"&gt;@着信&lt;/span&gt;(&lt;span class=\"hljs-string\"&gt;\"health\"&lt;./span&gt;) &lt;span class=\"hljs-meta\"&gt;@Outgoing&lt;/span&gt;(&lt;span class=\"hljs-string\"&gt;\"output\"&lt;/span&gt;) &lt;span class=\"hljs-keyword\"&gt;public&lt;/span&gt; Multi&lt;&lt;span class=\"hljs-function\"&gt;Record&lt;String, Measure&gt; &lt;span class=\"hljs-title\"&gt;filterState&lt;/span&gt;&lt;span class=\"hljs-params\"&gt;(Multi&lt;Capture&gt; input)&lt;/span&gt; &lt;/span&gt;{ &lt;span class=\"hljs-keyword\"&gt;return&lt;/span&gt; input .drop().repetitions().select().where(capture -&gt; capture.value &gt; &lt;span class=\"hljs-number\"&gt;0&lt;/span&gt;) .onItem().transform(capture -&gt; &lt;span class=\"hljs-keyword\"&gt;new&lt;/span&gt; Measure(capture.sensor, capture.value, capture.unit)) .onItem().transform(measure -&gt; Record.of(measure.sensor, measure)); }&lt;/code&gt;。"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-meta\">@着信</span>(<span class=\"hljs-string\">\"health\"<./span>) <span class=\"hljs-meta\">@Outgoing</span>(<span class=\"hljs-string\">\"output\"</span>) <span class=\"hljs-keyword\">public</span> Multi<<span class=\"hljs-function\">Record<String, Measure> <span class=\"hljs-title\">filterState</span><span class=\"hljs-params\">(Multi<Capture> input)</span> </span>{ <span class=\"hljs-keyword\">return</span> input .drop().repetitions().select().where(capture -> capture.value > <span class=\"hljs-number\">0</span>) .onItem().transform(capture -> <span class=\"hljs-keyword\">new</span> Measure(capture.sensor, capture.value, capture.unit)) .onItem().transform(measure -> Record.of(measure.sensor, measure)); }</code>。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:164
@@ -331,7 +332,7 @@ msgid ""
 "       <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">\"Hello \"</span> + name;\n"
 "    }\n"
 "}</code>"
-msgstr "&lt;code class=\"language-java hljs\" data-lang=\"java\"&gt;&lt;span class=\"hljs-keyword\"&gt;import&lt;/span&gt; io.quarkus.funqy.Funq;"
+msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-keyword\">import</span> io.quarkus.funqy.Funq;"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/continuum.html:177

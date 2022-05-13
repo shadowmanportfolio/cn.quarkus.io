@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-02-22 21:13+0000\n"
-"PO-Revision-Date: 2022-02-04 14:42+0900\n"
+"POT-Creation-Date: 2022-04-19 17:17+0000\n"
+"PO-Revision-Date: 2022-05-08 11:55+0900\n"
 "Last-Translator: Nobuhiro Sue <nobuhiro.sue@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -43,9 +43,8 @@ msgstr "前提条件"
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:23
-#, fuzzy
 msgid "https://jbang.dev/download[JBang]"
-msgstr "link:https://jbang.dev/download[jbang v0.40.3+]"
+msgstr "https://jbang.dev/download[JBang]"
 
 #. type: Title ==
 #: upstream/_guides/scripting.adoc:24
@@ -59,11 +58,12 @@ msgid "Normally we would link to a Git repository to clone but in this case ther
 msgstr "通常はGitリポジトリにリンクしてクローンするのですが、今回は以下のみで追加ファイルはありません。"
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:34
+#: upstream/_guides/scripting.adoc:35
 #, no-wrap
 msgid ""
 "//usr/bin/env jbang \"$0\" \"$@\" ; exit $?\n"
-"//DEPS io.quarkus:quarkus-resteasy:{quarkus-version}\n"
+"//DEPS io.quarkus.platform:quarkus-bom:{quarkus-version}@pom\n"
+"//DEPS io.quarkus:quarkus-resteasy-reactive\n"
 "//JAVAC_OPTIONS -parameters\n"
 "//JAVA_OPTIONS -Djava.util.logging.manager=org.jboss.logmanager.LogManager\n"
 msgstr ""
@@ -79,12 +79,11 @@ msgid ""
 "import javax.ws.rs.Path;\n"
 "import javax.ws.rs.Produces;\n"
 "import javax.ws.rs.core.MediaType;\n"
-"import org.jboss.resteasy.annotations.jaxrs.PathParam;\n"
 "import org.jboss.logging.Logger;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:48 upstream/_guides/scripting.adoc:172
+#: upstream/_guides/scripting.adoc:48 upstream/_guides/scripting.adoc:173
 #: upstream/_guides/scripting.adoc:295
 #, no-wrap
 msgid ""
@@ -94,7 +93,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:53 upstream/_guides/scripting.adoc:177
+#: upstream/_guides/scripting.adoc:53 upstream/_guides/scripting.adoc:178
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -127,7 +126,7 @@ msgid ""
 "    @GET\n"
 "    @Produces(MediaType.TEXT_PLAIN)\n"
 "    @Path(\"/greeting/{name}\")\n"
-"    public String greeting(@PathParam String name) {\n"
+"    public String greeting(String name) {\n"
 "        return service.greeting(name);\n"
 "    }\n"
 msgstr ""
@@ -182,9 +181,8 @@ msgstr "初期ファイルの作成"
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:87
-#, fuzzy
 msgid "First, we need a Java file. JBang lets you create an initial version using:"
-msgstr "まず、Javaファイルが必要です。jbangを使うと初期バージョンを作成できます。"
+msgstr "まず、Javaファイルが必要です。jbangを使うと次のように初期バージョンを作成できます:"
 
 #. type: delimited block -
 #: upstream/_guides/scripting.adoc:92
@@ -206,9 +204,8 @@ msgstr "この初期バージョンは、実行すると `Hello World` が表示
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:99
-#, fuzzy
 msgid "Once generated, look at the `quarkusapp.java` file."
-msgstr "生成されたら、 `quarkusapp.java` を見てみましょう。"
+msgstr "生成されたら、 `quarkusapp.java` ファイルを見てみましょう。"
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:101
@@ -228,7 +225,8 @@ msgstr "この行は、LinuxやmacOSでスクリプトとして実行できる�
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:110
-msgid "The next line"
+#, fuzzy
+msgid "The next lines"
 msgstr "次の行"
 
 #. type: delimited block -
@@ -240,34 +238,37 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:117
 #, fuzzy
-msgid "Is illustrating how you add dependencies to this script. This is a feature of JBang."
+msgid "illustrate how you add dependencies to this script. This is a feature of JBang."
 msgstr "このスクリプトに依存関係を追加する方法を説明しています。これは `jbang` の機能です。"
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:119
-msgid "Go ahead and update this line to include the `quarkus-resteasy` dependency like so:"
+#, fuzzy
+msgid "Go ahead and update this line to include the `quarkus-bom` and the `quarkus-resteasy-reactive` dependency like so:"
 msgstr "この行を更新して、 `quarkus-resteasy` 依存関係を含むようにしてください。"
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:123
+#: upstream/_guides/scripting.adoc:124
 #, no-wrap
-msgid "//DEPS io.quarkus:quarkus-resteasy:{quarkus-version}\n"
+msgid ""
+"//DEPS io.quarkus.platform:quarkus-bom:{quarkus-version}@pom\n"
+"//DEPS io.quarkus:quarkus-resteasy-reactive\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:126
+#: upstream/_guides/scripting.adoc:127
 #, fuzzy
 msgid "Now, run `jbang quarkusapp.java` and you will see JBang resolving this dependency and building the jar with help from Quarkus' JBang integration."
 msgstr "さて、 `jbang quarkusapp.java` を実行すると、 `jbang` がこの依存関係を解決し、Quarkus の jbang 統合の助けを借りて jar をビルドしていることがわかります。"
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:130 upstream/_guides/scripting.adoc:201
+#: upstream/_guides/scripting.adoc:131 upstream/_guides/scripting.adoc:202
 #, no-wrap
 msgid "$ jbang quarkusapp.java\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:141
+#: upstream/_guides/scripting.adoc:142
 #, no-wrap
 msgid ""
 "[jbang] Resolving dependencies...\n"
@@ -283,45 +284,45 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:144
+#: upstream/_guides/scripting.adoc:145
 msgid "For now the application does nothing new."
 msgstr "今のところ、アプリケーションは何も新しいことをしていません。"
 
 #. type: Block title
-#: upstream/_guides/scripting.adoc:146
+#: upstream/_guides/scripting.adoc:147
 #, no-wrap
 msgid "How do I edit this file and get content assist?"
 msgstr "このファイルを編集してコンテンツアシストを受けるにはどうすればいいですか?"
 
 #. type: delimited block =
-#: upstream/_guides/scripting.adoc:150
+#: upstream/_guides/scripting.adoc:151
 msgid "As there is nothing but a `.java` file, most IDE's don't handle content assist well.  To work around that you can run `jbang edit quarkusapp.java`, this will print out a directory that will have a temporary project setup you can use in your IDE."
 msgstr "`.java` ファイルしかないので、ほとんどの IDE はコンテンツアシストをうまく処理できません。これを回避するには、 `jbang edit quarkusapp.java` を実行すると、IDE で使用できる一時的なプロジェクトの設定があるディレクトリーが出力されます。"
 
 #. type: delimited block =
-#: upstream/_guides/scripting.adoc:152
+#: upstream/_guides/scripting.adoc:153
 msgid "On Linux/macOS you can run `<idecommand> `jbang edit quarkusapp.java``."
 msgstr "Linux/macOSでは、 `<idecommand> `jbang edit quarkusapp.java`` で実行できます。"
 
 #. type: delimited block =
-#: upstream/_guides/scripting.adoc:155
+#: upstream/_guides/scripting.adoc:156
 #, fuzzy
 msgid "If you add dependencies while editing, you can get JBang to automatically refresh the IDE project using `jbang edit --live=<idecommand> quarkusapp.java`."
 msgstr "編集中に依存関係を追加した場合は、 `jbang edit --live=<idecommand> quarkusapp.java` を使用して、IDE プロジェクトを自動的に更新するように jbang を設定することができます。"
 
 #. type: Title ===
-#: upstream/_guides/scripting.adoc:158
+#: upstream/_guides/scripting.adoc:159
 #, no-wrap
 msgid "The JAX-RS resources"
 msgstr "JAX-RSリソース"
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:161
+#: upstream/_guides/scripting.adoc:162
 msgid "Now let us replace the class with one that uses Quarkus features:"
 msgstr "ここで、Quarkusの機能を使用するクラスに置き換えてみましょう。"
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:168
+#: upstream/_guides/scripting.adoc:169
 #, no-wrap
 msgid ""
 "import io.quarkus.runtime.Quarkus;\n"
@@ -331,7 +332,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:182
+#: upstream/_guides/scripting.adoc:183
 #, no-wrap
 msgid ""
 "    public static void main(String[] args) {\n"
@@ -341,40 +342,40 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:185
+#: upstream/_guides/scripting.adoc:186
 msgid "It's a very simple class with a main method that starts Quarkus with a REST endpoint, returning \"hello\" to requests on \"/hello\"."
 msgstr "RESTエンドポイントでQuarkusを起動し、「/hello」上のリクエストに「hello」を返すメインメソッドを持つ非常にシンプルなクラスです。"
 
 #. type: Block title
-#: upstream/_guides/scripting.adoc:187
+#: upstream/_guides/scripting.adoc:188
 #, no-wrap
 msgid "Why is the `main` method there?"
 msgstr "なぜそこに `main` メソッドがあるのか?"
 
 #. type: delimited block =
-#: upstream/_guides/scripting.adoc:190
+#: upstream/_guides/scripting.adoc:191
 #, fuzzy
 msgid "A `main` method is currently needed for the JBang integration to work - we might remove this requirement in the future."
 msgstr "`jbang` の統合が機能するためには、現在 `main` メソッドが必要です。"
 
 #. type: Title ==
-#: upstream/_guides/scripting.adoc:192
+#: upstream/_guides/scripting.adoc:193
 #, no-wrap
 msgid "Running the application"
 msgstr "アプリケーションの実行"
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:195
+#: upstream/_guides/scripting.adoc:196
 msgid "Now when you run the application you will see Quarkus start up."
 msgstr "これでアプリケーションを実行すると、Quarkusが起動するのがわかります。"
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:197
+#: upstream/_guides/scripting.adoc:198
 msgid "Use: `jbang quarkusapp.java`:"
 msgstr "使用方法: `jbang quarkusapp.java`"
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:215
+#: upstream/_guides/scripting.adoc:216
 #, no-wrap
 msgid ""
 "[jbang] Building jar...\n"
@@ -389,16 +390,16 @@ msgid ""
 "--\\___\\_\\____/_/ |_/_/|_/_/|_|\\____/___/\n"
 "2020-08-30 05:49:03,255 INFO  [io.quarkus] (main) Quarkus {quarkus-version} on JVM started in 0.638s. Listening on: http://0.0.0.0:8080\n"
 "2020-08-30 05:49:03,272 INFO  [io.quarkus] (main) Profile prod activated.\n"
-"2020-08-30 05:49:03,272 INFO  [io.quarkus] (main) Installed features: [cdi, resteasy]\n"
+"2020-08-30 05:49:03,272 INFO  [io.quarkus] (main) Installed features: [cdi, resteasy-reactive]\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:218
+#: upstream/_guides/scripting.adoc:219
 msgid "Once started, you can request the provided endpoint:"
 msgstr "起動したら、提供されたエンドポイントにリクエストすることができます。"
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:223
+#: upstream/_guides/scripting.adoc:224
 #, no-wrap
 msgid ""
 "$ curl -w \"\\n\" http://localhost:8080/hello\n"
@@ -406,66 +407,66 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:226
+#: upstream/_guides/scripting.adoc:227
 msgid "After that, hit `CTRL+C` to stop the application."
 msgstr "その後、 `CTRL+C` を叩いてアプリケーションを停止させます。"
 
 #. type: Block title
-#: upstream/_guides/scripting.adoc:228
+#: upstream/_guides/scripting.adoc:229
 #, no-wrap
 msgid "Automatically add newline with `curl -w \"\\n\"`"
 msgstr "`curl -w \"\\n\"` で自動的に改行を追加します。"
 
 #. type: delimited block =
-#: upstream/_guides/scripting.adoc:231
+#: upstream/_guides/scripting.adoc:232
 msgid "We are using `curl -w \"\\n\"` in this example to avoid your terminal printing a '%' or put both result and next command prompt on the same line."
 msgstr "例では、 `curl -w \"\\n\"` を使用して、結果と次のコマンドプロンプトが同じ行に表示されるのを防止しています。"
 
 #. type: Block title
-#: upstream/_guides/scripting.adoc:234
+#: upstream/_guides/scripting.adoc:235
 #, no-wrap
-msgid "Why is `quarkus-resteasy` not resolved?"
-msgstr "`quarkus-resteasy` が解決されないのはなぜですか?"
+msgid "Why is `quarkus-resteasy-reactive` not resolved?"
+msgstr "`quarkus-resteasy-reactive` が解決されないのはなぜですか?"
 
 #. type: delimited block =
-#: upstream/_guides/scripting.adoc:238
+#: upstream/_guides/scripting.adoc:239
 #, fuzzy
-msgid "In this second run you should not see a line saying it is resolving `quarkus-resteasy` as JBang caches the dependency resolution between runs.  If you want to clear the caches to force resolution use `jbang cache clear`."
+msgid "In this second run you should not see a line saying it is resolving `quarkus-resteasy-reactive` as JBang caches the dependency resolution between runs.  If you want to clear the caches to force resolution use `jbang cache clear`."
 msgstr "この2回目の実行では、jbangが実行間の依存関係の解決をキャッシュしているため、 `quarkus-resteasy` を解決しているという行は表示されないはずです。キャッシュをクリアして強制的に解決したい場合は `jbang cache clear` を利用します。"
 
 #. type: Title ==
-#: upstream/_guides/scripting.adoc:240
+#: upstream/_guides/scripting.adoc:241
 #, no-wrap
 msgid "Using injection"
 msgstr "インジェクションの使用"
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:244
+#: upstream/_guides/scripting.adoc:245
 msgid "Dependency injection in Quarkus is based on ArC which is a CDI-based dependency injection solution tailored for Quarkus' architecture.  You can learn more about it in the xref:cdi-reference.adoc[Contexts and Dependency Injection guide]."
 msgstr "Quarkusの依存性インジェクションは、Quarkusのアーキテクチャに合わせて調整されたCDIベースの依存性インジェクションソリューションであるArCをベースにしています。ArCの詳細については、 link:cdi-reference[コンテキストと依存性注入ガイド] を参照してください。"
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:246
-msgid "ArC comes as a dependency of `quarkus-resteasy` so you already have it handy."
+#: upstream/_guides/scripting.adoc:247
+msgid "ArC comes as a dependency of `quarkus-resteasy-reactive` so you already have it handy."
 msgstr "ArCは `quarkus-resteasy` の依存関係として提供されているので、すでに追加済です。"
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:248
+#: upstream/_guides/scripting.adoc:249
 msgid "Let's modify the application and add a companion bean."
 msgstr "アプリケーションを修正してコンパニオンBeanを追加してみましょう。"
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:251
+#: upstream/_guides/scripting.adoc:252
 msgid "Normally you would add a separate class, but as we are aiming to have it all in one file you will add a nested class."
 msgstr "通常は別のクラスを追加しますが、一つのファイルにまとめようとしているので、入れ子クラスを追加します。"
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:253
+#: upstream/_guides/scripting.adoc:254
 msgid "Add the following *inside* the `quarkusapp` class body."
 msgstr "`quarkusapp` クラスのボディ *内に* 以下を追加します。"
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:258
+#: upstream/_guides/scripting.adoc:259
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -473,7 +474,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:262
+#: upstream/_guides/scripting.adoc:263
 #, no-wrap
 msgid ""
 "    public String greeting(String name) {\n"
@@ -482,44 +483,44 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:264
+#: upstream/_guides/scripting.adoc:265
 #, no-wrap
 msgid "}\n"
 msgstr "}\n"
 
 #. type: Block title
-#: upstream/_guides/scripting.adoc:267
+#: upstream/_guides/scripting.adoc:268
 #, no-wrap
 msgid "Use of nested static public classes"
 msgstr "ネストされた静的パブリッククラスの使用"
 
 #. type: delimited block =
-#: upstream/_guides/scripting.adoc:270
+#: upstream/_guides/scripting.adoc:271
 msgid "We are using a nested static public class instead of a top level class for two reasons:"
 msgstr "トップレベルのクラスではなく、ネストされた静的パブリッククラスを使用しているのには、2つの理由があります。"
 
 #. type: delimited block =
-#: upstream/_guides/scripting.adoc:272
+#: upstream/_guides/scripting.adoc:273
 #, fuzzy
 msgid "JBang currently does not support multiple source files."
 msgstr "jbangは現在、複数のソースファイルをサポートしていません。"
 
 #. type: delimited block =
-#: upstream/_guides/scripting.adoc:273
+#: upstream/_guides/scripting.adoc:274
 msgid "All Java frameworks relying on introspection have challenges using top level classes as they are not as visible as public classes; and in Java there can only be one top level public class in a file."
 msgstr "イントロスペクションに依存するすべてのJavaフレームワークは、トップレベルのクラスを使用することに課題があります。"
 
 #. type: Plain text
-#: upstream/_guides/scripting.adoc:277
+#: upstream/_guides/scripting.adoc:278
 msgid "Edit the `quarksapp` class to inject the `GreetingService` and create a new endpoint using it, you should end up with something like:"
 msgstr "`quarksapp` クラスを編集して `GreetingService` を注入し、それを使って新しいエンドポイントを作成します。"
 
 #. type: delimited block -
-#: upstream/_guides/scripting.adoc:282
+#: upstream/_guides/scripting.adoc:283
 #, no-wrap
 msgid ""
 "//usr/bin/env jbang \"$0\" \"$@\" ; exit $?\n"
-"//DEPS io.quarkus:quarkus-resteasy:{quarkus-version}\n"
+"//DEPS io.quarkus:quarkus-resteasy-reactive:{quarkus-version}\n"
 msgstr ""
 
 #. type: delimited block -
@@ -533,7 +534,6 @@ msgid ""
 "import javax.ws.rs.Path;\n"
 "import javax.ws.rs.Produces;\n"
 "import javax.ws.rs.core.MediaType;\n"
-"import org.jboss.resteasy.annotations.jaxrs.PathParam;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -566,7 +566,8 @@ msgstr "さて、予想に反して、なぜそれは `hello quarkus` ではな�
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:336
-msgid "The reason is that JAX-RS `@PathParam` relies on the `-parameters` compiler flag to be set to be able to map `{name}` to the `name` parameter."
+#, fuzzy
+msgid "The reason is that RESTEasy Reactive relies on the `-parameters` compiler flag to be set to be able to map `{name}` to the `name` parameter."
 msgstr "これは、JAX-RS `@PathParam` は `{name}` を `name` パラメーターにマッピングできるように `-parameters` コンパイラフラグを設定することに依存しているためです。"
 
 #. type: Plain text
@@ -618,9 +619,8 @@ msgstr "ロギング"
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:362
-#, fuzzy
 msgid "To use logging in Quarkus scripting with JBang you do as usual, with configuring a logger, i.e."
-msgstr "jbangを使ってQuarkusスクリプトでロギングを使用するには、通常通りロガーを設定します。"
+msgstr "jbangによるQuarkusスクリプトでロギングを使用するには、通常通りロガーを設定します。"
 
 #. type: delimited block -
 #: upstream/_guides/scripting.adoc:366
@@ -687,9 +687,9 @@ msgstr "`native-image` バイナリーがインストールされていて `GRAA
 
 #. type: delimited block -
 #: upstream/_guides/scripting.adoc:399
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$ jbang --native quarkusapp.java\n"
-msgstr "使用方法: `jbang quarkusapp.java`"
+msgstr "$ jbang --native quarkusapp.java\n"
 
 #. type: delimited block -
 #: upstream/_guides/scripting.adoc:412
@@ -721,7 +721,7 @@ msgid ""
 "--\\___\\_\\____/_/ |_/_/|_/_/|_|\\____/___/\n"
 "2020-08-30 06:22:32,012 INFO  [io.quarkus] (main) Quarkus {quarkus-version} native started in 0.017s. Listening on: http://0.0.0.0:8080\n"
 "2020-08-30 06:22:32,013 INFO  [io.quarkus] (main) Profile prod activated.\n"
-"2020-08-30 06:22:32,013 INFO  [io.quarkus] (main) Installed features: [cdi, resteasy]\n"
+"2020-08-30 06:22:32,013 INFO  [io.quarkus] (main) Installed features: [cdi, resteasy-reactive]\n"
 msgstr ""
 
 #. type: Plain text
@@ -741,7 +741,7 @@ msgid ""
 "--\\___\\_\\____/_/ |_/_/|_/_/|_|\\____/___/\n"
 "2020-08-30 06:23:36,846 INFO  [io.quarkus] (main) Quarkus {quarkus-version} native started in 0.015s. Listening on: http://0.0.0.0:8080\n"
 "2020-08-30 06:23:36,846 INFO  [io.quarkus] (main) Profile prod activated.\n"
-"2020-08-30 06:23:36,846 INFO  [io.quarkus] (main) Installed features: [cdi, resteasy]\n"
+"2020-08-30 06:23:36,846 INFO  [io.quarkus] (main) Installed features: [cdi, resteasy-reactive]\n"
 msgstr ""
 
 #. type: Title ===

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-01-25 02:23+0000\n"
+"POT-Creation-Date: 2022-05-12 02:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:3
 msgid "icon:lock[title=Fixed at build time] Configuration property fixed at build time - All other configuration properties are overridable at runtime"
-msgstr ""
+msgstr "icon:lock[title=ビルド時に固定] ビルド時に固定される設定プロパティ - それ以外の設定プロパティは実行時に上書き可能"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:8
@@ -52,14 +52,14 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:17
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:107
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:18
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:127
 #, no-wrap
-msgid "`required`, `certificate-validation`, `none`"
+msgid "tooltip:required[Certificates are validated and hostname verification is enabled. This is the default value.], tooltip:certificate-validation[Certificates are validated but hostname verification is disabled.], tooltip:none[All certificated are trusted and hostname verification is disabled.]"
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:25
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:26
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-file]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-file[quarkus.oidc-client.tls.key-store-file]`\n"
@@ -71,16 +71,16 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:26
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:71
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:116
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:161
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:27
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:81
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:136
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:190
 #, no-wrap
 msgid "path"
-msgstr ""
+msgstr "path"
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:34
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:35
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-file-type]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-file-type[quarkus.oidc-client.tls.key-store-file-type]`\n"
@@ -92,26 +92,42 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:35
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:44
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:53
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:62
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:80
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:89
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:98
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:125
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:134
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:143
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:152
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:170
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:179
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:188
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:36
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:45
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:54
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:63
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:72
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:90
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:99
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:108
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:117
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:145
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:154
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:163
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:172
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:181
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:199
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:208
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:217
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:226
 #, no-wrap
 msgid "string"
 msgstr "string"
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:43
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:44
+#, no-wrap
+msgid ""
+"[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-provider]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-provider[quarkus.oidc-client.tls.key-store-provider]`\n"
+"\n"
+"[.description]\n"
+"--\n"
+"An optional parameter to specify a provider of the key store file. If not given, the provider is automatically detected based on the key store file type.\n"
+"--"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:53
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-password]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-password[quarkus.oidc-client.tls.key-store-password]`\n"
@@ -123,14 +139,14 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:47
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:137
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:57
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:166
 #, no-wrap
 msgid "`password`"
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:52
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:62
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-key-alias]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-key-alias[quarkus.oidc-client.tls.key-store-key-alias]`\n"
@@ -142,7 +158,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:61
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:71
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-key-password]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.key-store-key-password[quarkus.oidc-client.tls.key-store-key-password]`\n"
@@ -154,7 +170,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:70
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:80
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-file]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-file[quarkus.oidc-client.tls.trust-store-file]`\n"
@@ -166,7 +182,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:79
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:89
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-password]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-password[quarkus.oidc-client.tls.trust-store-password]`\n"
@@ -178,7 +194,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:88
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:98
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-cert-alias]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-cert-alias[quarkus.oidc-client.tls.trust-store-cert-alias]`\n"
@@ -190,7 +206,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:97
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:107
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-file-type]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-file-type[quarkus.oidc-client.tls.trust-store-file-type]`\n"
@@ -202,7 +218,19 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:106
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:116
+#, no-wrap
+msgid ""
+"[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-provider]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.tls.trust-store-provider[quarkus.oidc-client.tls.trust-store-provider]`\n"
+"\n"
+"[.description]\n"
+"--\n"
+"An optional parameter to specify a provider of the trust store file. If not given, the provider is automatically detected based on the trust store file type.\n"
+"--"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:125
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.verification]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.verification[quarkus.oidc-client.\"id\".tls.verification]`\n"
@@ -214,7 +242,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:115
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:135
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-file]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-file[quarkus.oidc-client.\"id\".tls.key-store-file]`\n"
@@ -226,7 +254,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:124
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:144
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-file-type]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-file-type[quarkus.oidc-client.\"id\".tls.key-store-file-type]`\n"
@@ -238,7 +266,19 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:133
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:153
+#, no-wrap
+msgid ""
+"[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-provider]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-provider[quarkus.oidc-client.\"id\".tls.key-store-provider]`\n"
+"\n"
+"[.description]\n"
+"--\n"
+"An optional parameter to specify a provider of the key store file. If not given, the provider is automatically detected based on the key store file type.\n"
+"--"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:162
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-password]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-password[quarkus.oidc-client.\"id\".tls.key-store-password]`\n"
@@ -250,7 +290,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:142
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:171
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-key-alias]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-key-alias[quarkus.oidc-client.\"id\".tls.key-store-key-alias]`\n"
@@ -262,7 +302,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:151
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:180
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-key-password]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.key-store-key-password[quarkus.oidc-client.\"id\".tls.key-store-key-password]`\n"
@@ -274,7 +314,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:160
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:189
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-file]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-file[quarkus.oidc-client.\"id\".tls.trust-store-file]`\n"
@@ -286,7 +326,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:169
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:198
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-password]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-password[quarkus.oidc-client.\"id\".tls.trust-store-password]`\n"
@@ -298,7 +338,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:178
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:207
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-cert-alias]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-cert-alias[quarkus.oidc-client.\"id\".tls.trust-store-cert-alias]`\n"
@@ -310,7 +350,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:187
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:216
 #, no-wrap
 msgid ""
 "[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-file-type]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-file-type[quarkus.oidc-client.\"id\".tls.trust-store-file-type]`\n"
@@ -318,5 +358,17 @@ msgid ""
 "[.description]\n"
 "--\n"
 "An optional parameter to specify type of the trust store file. If not given, the type is automatically detected based on the file name.\n"
+"--"
+msgstr ""
+
+#. type: Table
+#: upstream/_generated-config/main/config/quarkus-oidc-common-config-group-oidc-common-config-tls.adoc:225
+#, no-wrap
+msgid ""
+"[[quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-provider]]`link:#quarkus-oidc-common-config-group-oidc-common-config-tls_quarkus.oidc-client.-id-.tls.trust-store-provider[quarkus.oidc-client.\"id\".tls.trust-store-provider]`\n"
+"\n"
+"[.description]\n"
+"--\n"
+"An optional parameter to specify a provider of the trust store file. If not given, the provider is automatically detected based on the trust store file type.\n"
 "--"
 msgstr ""

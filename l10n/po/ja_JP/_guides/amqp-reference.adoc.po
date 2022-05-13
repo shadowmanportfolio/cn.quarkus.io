@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-04 01:50+0900\n"
+"POT-Creation-Date: 2022-03-09 21:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -264,7 +264,7 @@ msgstr ""
 #: upstream/_guides/amqp-reference.adoc:120
 #, fuzzy
 msgid "Or, you can retrieve the Message<Double>:"
-msgstr "または、Message&lt;Double&gt;を取得することができます。"
+msgstr "または、Message<Double>を取得することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/amqp-reference.adoc:127
@@ -446,7 +446,7 @@ msgstr ""
 #: upstream/_guides/amqp-reference.adoc:196
 #, no-wrap
 msgid ""
-"    @Incoming(\"from-amqp\")\n"
+"    @Incoming(\"from-amqp\") // <1>\n"
 "    public void consume(JsonObject p) {   // <2>\n"
 "        Price price = p.mapTo(Price.class);  // <3>\n"
 "        prices.add(price);\n"
@@ -1011,7 +1011,7 @@ msgstr "健康報告"
 #: upstream/_guides/amqp-reference.adoc:463
 #, fuzzy
 msgid "If you use the AMQP connector with the `quarkus-smallrye-health` extension, it contributes to the readiness and liveness probes.  The AMQP connector reports the readiness and liveness of each channel managed by the connector.  At the moment, the AMQP connector uses the same logic for the readiness and liveness checks."
-msgstr "AMQP コネクタを `quarkus-smallrye-health` 拡張機能と一緒に使用すると、準備状態とライブネスのプローブに貢献します。AMQP コネクタは、コネクタで管理されている各チャネルのレディネスとライヴネスを報告します。現時点では、AMQP コネクタは準備状況とライヴネスのチェックに同じロジックを使用しています。"
+msgstr "AMQP コネクタを `quarkus-smallrye-health` エクステンションと一緒に使用すると、準備状態とライブネスのプローブに貢献します。AMQP コネクタは、コネクタで管理されている各チャネルのレディネスとライヴネスを報告します。現時点では、AMQP コネクタは準備状況とライヴネスのチェックに同じロジックを使用しています。"
 
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:467

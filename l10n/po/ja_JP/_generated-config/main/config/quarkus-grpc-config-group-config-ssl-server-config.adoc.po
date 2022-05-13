@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-05-07 17:37+0000\n"
+"POT-Creation-Date: 2022-05-12 02:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_generated-config/main/config/quarkus-grpc-config-group-config-ssl-server-config.adoc:3
 msgid "icon:lock[title=Fixed at build time] Configuration property fixed at build time - All other configuration properties are overridable at runtime"
-msgstr ""
+msgstr "icon:lock[title=ビルド時に固定] ビルド時に固定される設定プロパティ - それ以外の設定プロパティは実行時に上書き可能"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-grpc-config-group-config-ssl-server-config.adoc:8
@@ -58,7 +58,7 @@ msgstr ""
 #: upstream/_generated-config/main/config/quarkus-grpc-config-group-config-ssl-server-config.adoc:62
 #, no-wrap
 msgid "path"
-msgstr ""
+msgstr "path"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-grpc-config-group-config-ssl-server-config.adoc:25
@@ -209,13 +209,13 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-grpc-config-group-config-ssl-server-config.adoc:107
+#: upstream/_generated-config/main/config/quarkus-grpc-config-group-config-ssl-server-config.adoc:108
 #, no-wrap
 msgid "`none`, `request`, `required`"
 msgstr ""
 
 #. type: Table
-#: upstream/_generated-config/main/config/quarkus-grpc-config-group-config-ssl-server-config.adoc:109
+#: upstream/_generated-config/main/config/quarkus-grpc-config-group-config-ssl-server-config.adoc:110
 #, no-wrap
 msgid "`none`"
 msgstr "`none`"

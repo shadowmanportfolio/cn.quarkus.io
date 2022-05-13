@@ -101,7 +101,7 @@ msgstr "ソリューション"
 #. type: Plain text
 #: upstream/_versions/1.7/guides/mongodb.adoc:35
 msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can go right to the completed example."
-msgstr "次の章で紹介する手順に沿って、ステップを踏んでアプリを作成することをお勧めします。ただし、完成した例にそのまま進んでも構いません。"
+msgstr "次のセクションで紹介する手順に沿って、ステップを踏んでアプリを作成することをお勧めします。ただし、完成した例にそのまま進んでも構いません。"
 
 #. type: Plain text
 #: upstream/_versions/1.7/guides/mongodb.adoc:37
@@ -623,7 +623,7 @@ msgstr "ブラウザで `http://localhost:8080/fruits.html` を開きます。"
 #. type: Plain text
 #: upstream/_versions/1.7/guides/mongodb.adoc:309
 msgid "add new fruits to the list via the form"
-msgstr ""
+msgstr "フォームを使って新しいフルーツをリストに追加します。"
 
 #. type: Title ==
 #: upstream/_versions/1.7/guides/mongodb.adoc:311

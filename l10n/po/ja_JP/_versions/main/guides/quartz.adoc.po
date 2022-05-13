@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-08 02:20+0000\n"
+"POT-Creation-Date: 2022-03-21 02:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr "最近のアプリケーションでは、定期的に特定のタスク
 #. type: Plain text
 #: upstream/_versions/main/guides/quartz.adoc:17
 msgid "If you only need to run in-memory scheduler use the xref:scheduler.adoc[Scheduler] extension."
-msgstr ""
+msgstr "インメモリーのスケジューラーを実行するだけであれば、 link:scheduler.html[Scheduler]エクステンションを使用してください。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/quartz.adoc:18
@@ -173,8 +173,8 @@ msgstr "`org.acme.quartz` パッケージで、以下の内容の `Task` クラ�
 #: upstream/_versions/main/guides/quartz.adoc:88
 #: upstream/_versions/main/guides/quartz.adoc:118
 #: upstream/_versions/main/guides/quartz.adoc:149
-#: upstream/_versions/main/guides/quartz.adoc:235
-#: upstream/_versions/main/guides/quartz.adoc:259
+#: upstream/_versions/main/guides/quartz.adoc:239
+#: upstream/_versions/main/guides/quartz.adoc:263
 #, no-wrap
 msgid "package org.acme.quartz;\n"
 msgstr ""
@@ -226,7 +226,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/main/guides/quartz.adoc:110
 msgid "Declare the entity using xref:hibernate-orm-panache.adoc[Panache]"
-msgstr ""
+msgstr "link:hibernate-orm-panache.html[Panache]を使ってエンティティを宣言"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/quartz.adoc:111
@@ -296,7 +296,7 @@ msgstr "現在の開始時刻で新しい `Task` を作成します。"
 #. type: Plain text
 #: upstream/_versions/main/guides/quartz.adoc:140
 msgid "Persist the task in database using xref:hibernate-orm-panache.adoc[Panache]."
-msgstr ""
+msgstr "link:hibernate-orm-panache.html[Panache]を使ってタスクをデータベースに永続化"
 
 #. type: Title ===
 #: upstream/_versions/main/guides/quartz.adoc:141
@@ -421,16 +421,17 @@ msgid "Edit the `application.properties` file and add the below configuration:"
 msgstr "`application.properties` ファイルを編集し、以下の設定を追加します。"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:204
+#: upstream/_versions/main/guides/quartz.adoc:205
 #, no-wrap
 msgid ""
 "# Quartz configuration\n"
 "quarkus.quartz.clustered=true <1>\n"
 "quarkus.quartz.store-type=jdbc-cmt <2>\n"
+"quarkus.quartz.misfire-policy.task-job=ignore-misfire-policy <3>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:210
+#: upstream/_versions/main/guides/quartz.adoc:211
 #, no-wrap
 msgid ""
 "# Datasource configuration.\n"
@@ -441,7 +442,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:215
+#: upstream/_versions/main/guides/quartz.adoc:216
 #, no-wrap
 msgid ""
 "# Hibernate configuration\n"
@@ -451,7 +452,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:223
+#: upstream/_versions/main/guides/quartz.adoc:224
 #, no-wrap
 msgid ""
 "# flyway configuration\n"
@@ -473,26 +474,36 @@ msgstr "スケジューラーがクラスターモードで実行されること
 msgid "Use the database store to persist job related information so that they can be shared between nodes"
 msgstr "データベースストアを使用してジョブ関連情報を永続化し、ノード間で共有できるようにします。"
 
-#. type: Title ==
+#. type: Plain text
 #: upstream/_versions/main/guides/quartz.adoc:228
+msgid "The misfire policy can be configured for each job. `task-job` is the identity of the job."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_versions/main/guides/quartz.adoc:231
+msgid "Valid misfire policy for cron jobs are: `smart-policy`, `ignore-misfire-policy`, `fire-now` and `cron-trigger-do-nothing`.  Valid misfire policy for interval jobs are: `smart-policy`, `ignore-misfire-policy`, `fire-now`, `simple-trigger-reschedule-now-with-existing-repeat-count`, `simple-trigger-reschedule-now-with-remaining-repeat-count`, `simple-trigger-reschedule-next-with-existing-count` and `simple-trigger-reschedule-next-with-remaining-count`."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_versions/main/guides/quartz.adoc:232
 #, fuzzy, no-wrap
 msgid "Creating a REST resource and a test"
 msgstr "リソースとテストの更新"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:231
+#: upstream/_versions/main/guides/quartz.adoc:235
 #, fuzzy
 msgid "Create the `org.acme.quartz.TaskResource` class with the following content:"
 msgstr "`org.acme.quartz` パッケージで、以下の内容の `Task` クラスを作成します:"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:237
+#: upstream/_versions/main/guides/quartz.adoc:241
 #, no-wrap
 msgid "import java.util.List;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:242
+#: upstream/_versions/main/guides/quartz.adoc:246
 #, no-wrap
 msgid ""
 "import javax.ws.rs.GET;\n"
@@ -506,7 +517,7 @@ msgstr ""
 "import javax.ws.rs.core.MediaType;\n"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:245
+#: upstream/_versions/main/guides/quartz.adoc:249
 #, no-wrap
 msgid ""
 "@Path(\"/tasks\")\n"
@@ -514,7 +525,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:251
+#: upstream/_versions/main/guides/quartz.adoc:255
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -525,36 +536,36 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:253
+#: upstream/_versions/main/guides/quartz.adoc:257
 msgid "Retrieve the list of created tasks from the database"
 msgstr "作成されたタスクのリストをデータベースから取得します。"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:255
+#: upstream/_versions/main/guides/quartz.adoc:259
 #, fuzzy
 msgid "You also have the option to create a `org.acme.quartz.TaskResourceTest` test with the following content:"
 msgstr "ルートディレクトリーに、以下の内容の `docker-compose.yml` ファイルを作成します。"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:261
+#: upstream/_versions/main/guides/quartz.adoc:265
 #, no-wrap
 msgid "import io.quarkus.test.junit.QuarkusTest;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:263
+#: upstream/_versions/main/guides/quartz.adoc:267
 #, no-wrap
 msgid "import static org.hamcrest.Matchers.greaterThanOrEqualTo;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:265
+#: upstream/_versions/main/guides/quartz.adoc:269
 #, no-wrap
 msgid "import org.junit.jupiter.api.Test;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:268
+#: upstream/_versions/main/guides/quartz.adoc:272
 #, no-wrap
 msgid ""
 "import static io.restassured.RestAssured.given;\n"
@@ -562,7 +573,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:271
+#: upstream/_versions/main/guides/quartz.adoc:275
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -570,7 +581,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:282
+#: upstream/_versions/main/guides/quartz.adoc:286
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -586,40 +597,40 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:284
+#: upstream/_versions/main/guides/quartz.adoc:288
 msgid "Ensure that we have a `200` response and at least one task created"
 msgstr "`200` のレスポンスが返却されていることと、少なくとも 1 つのタスクが作成されていることを確認してください。"
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:285
+#: upstream/_versions/main/guides/quartz.adoc:289
 #, no-wrap
 msgid "Creating Quartz Tables"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:289
+#: upstream/_versions/main/guides/quartz.adoc:293
 msgid "Add a SQL migration file named `src/main/resources/db/migration/V2.0.0\\__QuarkusQuartzTasks.sql` with the content copied from file with the content from link:{quickstarts-blob-url}/quartz-quickstart/src/main/resources/db/migration/V2.0.0__QuarkusQuartzTasks.sql[V2.0.0__QuarkusQuartzTasks.sql]."
 msgstr "link:{quickstarts-blob-url}/quartz-quickstart/src/main/resources/db/migration/V2.0.0__QuarkusQuartzTasks.sql[V2.0.0.0__QuarkusQuartzTasks.sql] からコピーした内容でファイルからコピーした内容で `src/main/resources/db/migration/V2.0.0__QuarkusQuartzTasks.sql` という名前のSQLマイグレーションファイルを追加します。"
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:290
+#: upstream/_versions/main/guides/quartz.adoc:294
 #, no-wrap
 msgid "Configuring the load balancer"
 msgstr "ロードバランサーの設定"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:293
+#: upstream/_versions/main/guides/quartz.adoc:297
 msgid "In the root directory, create a `nginx.conf` file with the following content:"
 msgstr "ルートディレクトリーに、以下の内容の `nginx.conf` ファイルを作成します:"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:297
+#: upstream/_versions/main/guides/quartz.adoc:301
 #, no-wrap
 msgid "user  nginx;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:301
+#: upstream/_versions/main/guides/quartz.adoc:305
 #, no-wrap
 msgid ""
 "events {\n"
@@ -628,7 +639,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:310
+#: upstream/_versions/main/guides/quartz.adoc:314
 #, no-wrap
 msgid ""
 "http {\n"
@@ -642,29 +653,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:313
+#: upstream/_versions/main/guides/quartz.adoc:316
 msgid "Route all traffic to our tasks application"
 msgstr "すべてのトラフィックをタスクアプリケーションにルーティング"
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:314
+#: upstream/_versions/main/guides/quartz.adoc:317
 #, no-wrap
 msgid "Setting Application Deployment"
 msgstr "アプリケーションデプロイメントの設定"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:317
+#: upstream/_versions/main/guides/quartz.adoc:320
 msgid "In the root directory, create a `docker-compose.yml` file with the following content:"
 msgstr "ルートディレクトリーに、以下の内容の `docker-compose.yml` ファイルを作成します。"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:321
+#: upstream/_versions/main/guides/quartz.adoc:324
 #, no-wrap
 msgid "version: '3'\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:334
+#: upstream/_versions/main/guides/quartz.adoc:337
 #, no-wrap
 msgid ""
 "services:\n"
@@ -682,7 +693,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:345
+#: upstream/_versions/main/guides/quartz.adoc:348
 #, no-wrap
 msgid ""
 "  nginx: <2>\n"
@@ -698,7 +709,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:357
+#: upstream/_versions/main/guides/quartz.adoc:360
 #, no-wrap
 msgid ""
 "  postgres: <3>\n"
@@ -715,7 +726,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:361
+#: upstream/_versions/main/guides/quartz.adoc:364
 #, no-wrap
 msgid ""
 "networks:\n"
@@ -724,96 +735,96 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:364
+#: upstream/_versions/main/guides/quartz.adoc:366
 msgid "Define the tasks service"
 msgstr "タスクサービスの定義"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:365
+#: upstream/_versions/main/guides/quartz.adoc:367
 msgid "Define the nginx load balancer to route incoming traffic to an appropriate node"
 msgstr "受信トラフィックを適切なノードにルーティングするための nginx ロードバランサーを定義"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:366
+#: upstream/_versions/main/guides/quartz.adoc:368
 msgid "Define the configuration to run the database"
 msgstr "データベースを実行するための設定を定義"
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:367
+#: upstream/_versions/main/guides/quartz.adoc:369
 #, no-wrap
 msgid "Running the database"
 msgstr "データベースの実行"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:370
+#: upstream/_versions/main/guides/quartz.adoc:372
 msgid "In a separate terminal, run the below command:"
 msgstr "別のターミナルで以下のコマンドを実行します。"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:374
+#: upstream/_versions/main/guides/quartz.adoc:376
 #, no-wrap
 msgid "docker-compose up postgres <1>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:377
+#: upstream/_versions/main/guides/quartz.adoc:378
 msgid "Start the database instance using the configuration options supplied in the `docker-compose.yml` file"
 msgstr "`docker-compose.yml` ファイルで提供されている設定オプションを使用してデータベースインスタンスを起動します。"
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:378
+#: upstream/_versions/main/guides/quartz.adoc:379
 #, no-wrap
 msgid "Run the application in Dev Mode"
 msgstr "アプリケーションを開発モードで実行します。"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:381
+#: upstream/_versions/main/guides/quartz.adoc:382
 #, fuzzy
 msgid "Run the application with:"
 msgstr "アプリケーションを開発モードで実行します。"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:385
+#: upstream/_versions/main/guides/quartz.adoc:386
 #, fuzzy
 msgid "After a few seconds, open another terminal and run `curl localhost:8080/tasks` to verify that we have at least one task created."
 msgstr "`./mvnw quarkus:dev` でアプリケーションを実行します。数秒後、別のターミナルを開き、 `curl localhost:8080/tasks` を実行して、少なくとも 1 つのタスクが作成されていることを確認します。"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:387
+#: upstream/_versions/main/guides/quartz.adoc:388
 msgid "As usual, the application can be packaged using:"
 msgstr "いつものように、アプリケーションは以下の方法でパッケージ化されます。"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:391
+#: upstream/_versions/main/guides/quartz.adoc:392
 msgid "and executed with `java -jar target/quarkus-app/quarkus-run.jar`."
 msgstr "そして次のコマンドで実行できます。 `java -jar target/quarkus-app/quarkus-run.jar`."
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:393
+#: upstream/_versions/main/guides/quartz.adoc:394
 #: upstream/_versions/main/guides/quartz.adoc:414
 #, fuzzy
 msgid "You can also generate the native executable with:"
 msgstr "`./mvnw clean package -Pnative` でネイティブ実行可能ファイルを生成することもできます。"
 
 #. type: Title ==
-#: upstream/_versions/main/guides/quartz.adoc:396
+#: upstream/_versions/main/guides/quartz.adoc:397
 #, no-wrap
 msgid "Packaging the application and run several instances"
 msgstr "アプリケーションのパッケージ化と複数のインスタンスの実行"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:399
+#: upstream/_versions/main/guides/quartz.adoc:400
 msgid "The application can be packaged using:"
-msgstr ""
+msgstr "アプリケーションは以下でパッケージ化することができます:"
 
 #. type: Plain text
-#: upstream/_versions/main/guides/quartz.adoc:403
+#: upstream/_versions/main/guides/quartz.adoc:404
 #, fuzzy
 msgid "Once the build is successful, run the below command:"
 msgstr "別のターミナルで以下のコマンドを実行します。"
 
 #. type: delimited block -
-#: upstream/_versions/main/guides/quartz.adoc:407
+#: upstream/_versions/main/guides/quartz.adoc:408
 #, no-wrap
 msgid "docker-compose up --scale tasks=2 --scale nginx=1 <1>\n"
 msgstr ""

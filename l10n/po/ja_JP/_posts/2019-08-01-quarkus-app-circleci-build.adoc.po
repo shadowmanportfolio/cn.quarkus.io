@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-04 01:47+0900\n"
+"POT-Creation-Date: 2022-04-29 21:23+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,23 +16,35 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Plain text
+#. type: YAML Front Matter: author
 #: upstream/_posts/2019-08-01-quarkus-app-circleci-build.adoc:1
 #, fuzzy, no-wrap
-msgid "---\n"
-msgstr "---\n"
+msgid "ewittman"
+msgstr "イットマン"
 
-#. type: Plain text
-#: upstream/_posts/2019-08-01-quarkus-app-circleci-build.adoc:7
+#. type: YAML Front Matter: date
+#: upstream/_posts/2019-08-01-quarkus-app-circleci-build.adoc:1
 #, fuzzy, no-wrap
-msgid ""
-"layout: post\n"
-"date:   2019-08-01\n"
-"author: ewittman\n"
-"tips: development-tips\n"
-"synopsis: With a little bit of config mojo, it is possible (and useful) to build a native Quarkus application in CircleCI.\n"
-"---\n"
+msgid "2019-08-01"
+msgstr "2019-08-01"
+
+#. type: YAML Front Matter: layout
+#: upstream/_posts/2019-08-01-quarkus-app-circleci-build.adoc:1
+#, fuzzy, no-wrap
+msgid "post"
+msgstr "ポスト"
+
+#. type: YAML Front Matter: synopsis
+#: upstream/_posts/2019-08-01-quarkus-app-circleci-build.adoc:1
+#, fuzzy, no-wrap
+msgid "With a little bit of config mojo, it is possible (and useful) to build a native Quarkus application in CircleCI."
 msgstr "layout: post date: 2019-08-01 author: ewittman tips: development-tips synopsis: ほんの少しのconfig mojoで、CircleCIでネイティブなQuarkusアプリケーションを構築することが可能（かつ便利）です。---"
+
+#. type: YAML Front Matter: tips
+#: upstream/_posts/2019-08-01-quarkus-app-circleci-build.adoc:1
+#, fuzzy, no-wrap
+msgid "development-tips"
+msgstr "開発秘話"
 
 #. type: Title =
 #: upstream/_posts/2019-08-01-quarkus-app-circleci-build.adoc:9
@@ -50,7 +62,7 @@ msgstr "Quarkusのアプリケーションに限らず、あらゆるソフト�
 #: upstream/_posts/2019-08-01-quarkus-app-circleci-build.adoc:17
 #, fuzzy
 msgid "If you're in a hurry, just scroll down to the full (and annotated) example at the bottom of this post."
-msgstr "お急ぎの方は、この記事の下にある完全な（そして注釈付きの）例をスクロールダウンしてご覧ください。"
+msgstr "お急ぎの方は、この記事の下にある完全な（そしてアノテーション付きの）例をスクロールダウンしてご覧ください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-08-01-quarkus-app-circleci-build.adoc:18
@@ -349,3 +361,7 @@ msgid ""
 "          command: ./mvnw verify -Pnative\n"
 "          no_output_timeout: 30m\n"
 msgstr ""
+
+#, fuzzy
+#~ msgid "---\n"
+#~ msgstr "---\n"

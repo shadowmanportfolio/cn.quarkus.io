@@ -708,7 +708,7 @@ msgstr "拡張"
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:341
 msgid "This is the first phase, and is done by the <<Build Step Processors>>. These processors have access to Jandex annotation information and can parse any descriptors and read annotations, but should not attempt to load any application classes. The output of these build steps is some recorded bytecode, using an extension of the ObjectWeb ASM project called Gizmo(ext/gizmo), that is used to actually bootstrap the application at runtime. Depending on the `io.quarkus.deployment.annotations.ExecutionTime` value of the `@io.quarkus.deployment.annotations.Record` annotation associated with the build step, the step may be run in a different JVM based on the following two modes."
-msgstr ""
+msgstr "これは最初のフェーズであり、 link:#Build Step Processors[Build Step Processors]によって行われます。これらのプロセッサはJandexのアノテーション情報にアクセスすることができ、任意の記述子を解析してアノテーションを読み取ることができますが、任意のアプリケーションクラスのロードを試みるべきではありません。これらのビルドステップの出力は、Gizmo(ext/gizmo)と呼ばれるObjectWeb ASMプロジェクトのエクステンションを使用して、記録されたバイトコードであり、実行時にアプリケーションを実際にブートストラップするために使用されます。ビルド・ステップに関連する `@io.quarkus.deployment.annotations.Record` アノテーションの `io.quarkus.deployment.annotations.ExecutionTime` 値に応じて、そのステップは以下の2つのモードに基づいて異なるJVMで実行されることがあります。"
 
 #. type: Labeled list
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:342
@@ -719,22 +719,22 @@ msgstr "スタティック初期化"
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:348
 msgid "If bytecode is recorded with `@Record(STATIC_INIT)` then it will be executed from a static init method on the main class. For a native executable build, this code is executed in a normal JVM as part of the native build process, and any retained objects that are produced in this stage will be directly serialized into the native executable via an image mapped file.  This means that if a framework can boot in this phase then it will have its booted state directly written to the image, and so the boot code does not need to be executed when the image is started."
-msgstr ""
+msgstr "`@Record(STATIC_INIT)` でバイトコードが記録されている場合は、mainクラスのスタティック初期化メソッドから実行されます。ネイティブビルドの場合、このコードはネイティブビルドプロセスの一部として通常のJVMで実行され、この段階で生成されたリテインドオブジェクトは、イメージマップされたファイルを介してネイティブ実行可能ファイルに直接シリアル化されます。つまり、この段階でフレームワークが起動できれば、そのフレームワークの起動状態がイメージに直接書き込まれるため、イメージの起動時にブートコードを実行する必要がありません。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:350
 msgid "There are some restrictions on what can be done in this stage as the Substrate VM disallows some objects in the native executable. For example you should not attempt to listen on a port or start threads in this phase. In addition, it is disallowed to read run time configuration during static initialization."
-msgstr ""
+msgstr "この段階では、サブストレートVMがネイティブ実行可能ファイルに含まれるいくつかのオブジェクトを許可しないため、実行できる内容にいくつかの制限があります。例えば、この段階でポートのリッスンやスレッドの開始を試みてはいけません。また、スタティック初期化時に実行時設定を読み取ることも禁止されています。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:355
 msgid "In non-native pure JVM mode, there is no real difference between Static and Runtime Init, except that Static Init is always executed first. This mode benefits from the same build phase augmentation as native mode as the descriptor parsing and annotation scanning are done at build time and any associated class/framework dependencies can be removed from the build output jar. In servers like WildFly, deployment related classes such as XML parsers hang around for the life of the application, using up valuable memory. Quarkus aims to eliminate this, so that the only classes loaded at runtime are actually used at runtime."
-msgstr ""
+msgstr "非ネイティブのピュアJVMモードでは、スタティック起動とランタイム起動に実質的な違いはありませんが、スタティック起動が常に最初に実行されることが異なります。このモードでは、記述子の解析とアノテーションのスキャンがビルド時に行われ、関連するクラスやフレームワークの依存関係がビルド出力jarから削除されるため、ネイティブモードと同様のビルドフェーズのエクステンションが利用できます。WildFlyのようなサーバーでは、XMLパーサーなどの展開関連クラスがアプリケーションの存続期間中、貴重なメモリを使用してぶら下がっています。Quarkusは、このようなことをなくし、実行時にロードされるクラスのみが実行時に実際に使用されるようにすることを目指しています。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:358
 msgid "As an example, the only reason that a Quarkus application should load an XML parser is if the user is using XML in their application. Any XML parsing of configuration should be done in the Augmentation phase."
-msgstr ""
+msgstr "例として、QuarkusアプリケーションがXMLパーサーをロードする理由は、ユーザーがアプリケーションでXMLを使用している場合のみです。どの設定のXMLパースも、拡張フェーズで行う必要があります。"
 
 #. type: Labeled list
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:359
@@ -745,22 +745,22 @@ msgstr "ランタイム初期化"
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:363
 msgid "If bytecode is recorded with `@Record(RUNTIME_INIT)` then it is executed from the application's main method. This code will be run on native executable boot. In general as little code as possible should be executed in this phase, and should be restricted to code that needs to open ports etc."
-msgstr ""
+msgstr "`@Record(RUNTIME_INIT)` でバイトコードが記録されている場合は、アプリケーションのメインメソッドから実行されます。このコードはネイティブ実行可能ファイルブートで実行されます。一般的に、このフェーズではできるだけ少ないコードを実行すべきであり、ポートを開く必要があるコードなどに限定すべきです。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:365
 msgid "Pushing as much as possible into the `@Record(STATIC_INIT)` phase allows for two different optimizations:"
-msgstr ""
+msgstr "`@Record(STATIC_INIT)` フェーズにできるだけ多くのものを押し込むことで、2つの異なる最適化が可能になります。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:367
 msgid "In both native executable and pure JVM mode this allows the app to start as fast as possible since processing was done during build time. This also minimizes the classes/native code needed in the application to pure runtime related behaviors."
-msgstr ""
+msgstr "ネイティブ実行可能ファイルとピュアJVMの両方のモードで、これによりビルド時に処理が行われたため、アプリを可能な限り高速に起動することができます。また、アプリケーションに必要なクラスやネイティブコードを最小限に抑え、純粋な実行時関連の動作を実現します。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:370
 msgid "Another benefit with native executable mode is that Substrate can more easily eliminate features that are not used. If features are directly initialized via bytecode, Substrate can detect that a method is never called and eliminate that method. If config is read at runtime, Substrate cannot reason about the contents of the config and so needs to keep all features in case they are required."
-msgstr ""
+msgstr "ネイティブ実行可能ファイルモードのもう一つの利点は、サブストレートが使われない機能をより簡単に排除できることです。機能がバイトコードで直接初期化される場合、Substrateはメソッドが一度も呼ばれていないことを検知し、そのメソッドを削除することができます。また、実行時に設定を読み込む場合、サブストレートは設定の内容を推論することができないため、必要な場合に備えてすべての機能を残しておく必要があります。"
 
 #. type: Title ===
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:372
@@ -771,17 +771,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:375
 msgid "Your extension project should be setup as a multi-module project with two submodules:"
-msgstr ""
+msgstr "エクステンションプロジェクトは、2つのサブモジュールを持つマルチモジュールプロジェクトとして設定する必要があります。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:377
 msgid "A deployment time submodule that handles the build time processing and bytecode recording."
-msgstr ""
+msgstr "ビルド時の処理やバイトコードの記録を行うデプロイメント時サブモジュール"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:379
 msgid "A runtime submodule that contains the runtime behavior that will provide the extension behavior in the native executable or runtime JVM."
-msgstr ""
+msgstr "ネイティブ実行可能ファイルまたはランタイムJVMでエクステンション動作を提供する実行時動作を含むランタイムサブモジュール"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:381
@@ -796,7 +796,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:389
 msgid "By convention the deployment time artifact has the `-deployment` suffix, and the runtime artifact has no suffix (and is what the end user adds to their project)."
-msgstr ""
+msgstr "規約として、デプロイメント時アーティファクトには `-deployment` というサフィックスを付け、実行時アーティファクトにはサフィックスを付けません（エンドユーザーが自分のプロジェクトに追加するものです）。"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:399
@@ -855,7 +855,7 @@ msgstr "上記の `maven-compiler-plugin` の設定には、バージョン 3.5+
 #. type: delimited block =
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:439
 msgid "Under no circumstances can the runtime module depend on a deployment artifact. This would result in pulling all the deployment time code into runtime scope, which defeats the purpose of having the split."
-msgstr ""
+msgstr "いかなる場合でも、実行時モジュールはデプロイメントアーティファクトに依存することはできません。これは、すべてのデプロイメント時のコードが実行時スコープに取り込まれることに繋がり、分割の目的を台無しにします。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:444
@@ -915,7 +915,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:479
 msgid "As and example, let's add a new extension called `my-ext` to the Quarkus source tree:"
-msgstr ""
+msgstr "例として、 `my-ext` という新しいエクステンションをQuarkusのソースツリーに追加してみましょう:"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:489
@@ -933,7 +933,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:492
 msgid "The above sequence of commands does the following:"
-msgstr ""
+msgstr "上記の一連のコマンドは、次のような動作をします。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:494
@@ -998,7 +998,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:510
 msgid "This is the `quarkus-extension.yaml` of the `quarkus-agroal` extension, you can use it as an example:"
-msgstr ""
+msgstr "これは、 `quarkus-agroal` エクステンションの `quarkus-extension.yaml` です。手本として使用することができます:"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:524
@@ -1051,24 +1051,24 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:552
 msgid "Please refer to https://github.com/quarkusio/quarkus/blob/{quarkus-version}/devtools/maven/src/main/java/io/quarkus/maven/CreateExtensionMojo.java[CreateExtensionMojo JavaDoc] for all the available options of the mojo."
-msgstr ""
+msgstr "Mojoで使用できるすべてのオプションについては、 link:https://github.com/quarkusio/quarkus/blob/{quarkus-version}/devtools/maven/src/main/java/io/quarkus/maven/CreateExtensionMojo.java[CreateExtensionMojoのJavaDoc]を参照してください。"
 
 #. type: Title ===
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:553
 #, no-wrap
 msgid "Build Step Processors"
-msgstr ""
+msgstr "ビルドステッププロセッサー"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:558
 msgid "Work is done at augmentation time by _build steps_ which produce and consume _build items_.  The build steps found in the deployment modules that correspond to the extensions in the project build are automatically wired together and executed to produce the final build artifact(s)."
-msgstr ""
+msgstr "作業は、 _ビルドアイテム_ を生成・消費する _ビルドステップ_ によって拡張時に行われます。プロジェクトビルドのエクステンションに対応するデプロイメント・モジュール内のビルドステップは、自動的に接続され、最終的なビルドアーティファクトを生成するために実行されます。"
 
 #. type: Title ====
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:559
 #, no-wrap
 msgid "Build steps"
-msgstr ""
+msgstr "ビルドステップ"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:565
@@ -1078,23 +1078,23 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:568
 msgid "Build steps are normally placed on plain classes within an extension's deployment module.  The classes are automatically instantiated during the augment process and utilize <<injection,injection>>."
-msgstr ""
+msgstr "ビルドステップは通常、エクステンションのデプロイメントモジュール内のプレーンなクラスに配置されます。このクラスは、拡張プロセス中に自動的にインスタンス化され、 link:#injection[インジェクション]を利用します。"
 
 #. type: Title ====
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:570
 #, no-wrap
 msgid "Build items"
-msgstr ""
+msgstr "ビルドアイテム"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:576
 msgid "Build items are concrete, final subclasses of the abstract `io.quarkus.builder.item.BuildItem` class.  Each build item represents some unit of information that must be passed from one stage to another.  The base `BuildItem` class may not itself be directly subclassed; rather, there are abstract subclasses for each of the kinds of build item subclasses that _may_ be created: <<simple-build-items,simple>>, <<multi-build-items,multi>>, and <<empty-build-items,empty>>."
-msgstr ""
+msgstr "ビルドアイテムは、abstractな `io.quarkus.builder.item.BuildItem` クラスのfinalな具象サブクラスです。それぞれのビルドアイテムは、あるステージから別のステージに渡す必要のある情報の単位を表します。ベースとなる `BuildItem` クラスは、それ自体を直接サブクラス化することはできません。むしろ、作成 _可能な_ ビルドアイテムのサブクラスの種類（ link:#simple-build-items[シンプル]、 link:#multi-build-items[マルチ]、 link:#empty-build-items[空]）ごとに抽象サブクラスがあります。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:578
 msgid "Think of build items as a way for different extensions to communicate with one another.  For example, a build item can:"
-msgstr ""
+msgstr "ビルドアイテムは、異なるエクステンションが相互に通信するための手段と考えてください。例えば、ビルドアイテムは以下のことができます:"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:580
@@ -1104,7 +1104,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:581
 msgid "consume that database configuration (e.g. a connection pool extension or an ORM extension)"
-msgstr ""
+msgstr "データベースの設定を利用する（例：コネクションプールエクステンション、ORMエクステンション）"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:583
@@ -1114,23 +1114,23 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:585
 msgid "This is a very flexible mechanism."
-msgstr ""
+msgstr "これは非常に柔軟なメカニズムです。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:588
 msgid "`BuildItem` instances should be immutable, as the producer/consumer model does not allow for mutation to be correctly ordered. This is not enforced but failure to adhere to this rule can result in race conditions."
-msgstr ""
+msgstr "`BuildItem` インスタンスはイミュータブルでなければなりません。プロデューサー/コンシューマーモデルでは、ミューテーションを正しく順序付けることができないからです。これは強制されるものではありませんが、このルールに従わないと競合状態になる可能性があります。"
 
 #. type: Title =====
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:590
 #, no-wrap
 msgid "Simple build items"
-msgstr ""
+msgstr "シンプルなビルドアイテム"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:596
 msgid "Simple build items are final classes which extend `io.quarkus.builder.item.SimpleBuildItem`.  Simple build items may only be produced by one step in a given build; if multiple steps in a build declare that they produce the same simple build item, an error is raised.  Any number of build steps may consume a simple build item.  A build step which consumes a simple build item will always run _after_ the build step which produced that item."
-msgstr ""
+msgstr "シンプルビルドアイテムは `io.quarkus.builder.item.SimpleBuildItem` を拡張したfinalクラスです。シンプルビルドアイテムは、特定のビルドにおいて、1つのステップでのみ作成できます。ビルド内の複数のステップが同じシンプルビルドアイテムを生成すると宣言した場合、エラーが発生します。シンプルビルドアイテムを利用するビルドステップは、常にそのアイテムを生成したビルドステップの _後に_ 実行されます。"
 
 #. type: Block title
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:597
@@ -1179,18 +1179,18 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:621
 #, no-wrap
 msgid "Multi build items"
-msgstr ""
+msgstr "マルチビルドアイテム"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:626
 msgid "Multiple or \"multi\" build items are final classes which extend `io.quarkus.builder.item.MultiBuildItem`.  Any number of multi build items of a given class may be produced by any number of steps, but any steps which consume multi build items will only run _after_ every step which can produce them has run."
-msgstr ""
+msgstr "マルチビルドアイテムは、 `io.quarkus.builder.item.MultiBuildItem` を拡張したfinalクラスです。あるクラスのマルチビルドアイテムは、任意の数のステップで、任意の数生成できますが、マルチビルドアイテムを利用するステップは、それらを生成できるすべてのステップが実行された後のみ実行されます。"
 
 #. type: Block title
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:627
 #, no-wrap
 msgid "Example of a multiple build item"
-msgstr ""
+msgstr "マルチビルドアイテムの例"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:633
@@ -1239,7 +1239,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:654
 #, no-wrap
 msgid "Example of multiple build item usage"
-msgstr ""
+msgstr "マルチビルドアイテムの使用例"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:669
@@ -1345,18 +1345,18 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:734
 #, no-wrap
 msgid "Empty build items"
-msgstr ""
+msgstr "空のビルドアイテム"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:739
 msgid "Empty build items are final (usually empty) classes which extend `io.quarkus.builder.item.EmptyBuildItem`.  They represent build items that don't actually carry any data, and allow such items to be produced and consumed without having to instantiate empty classes.  They cannot themselves be instantiated."
-msgstr ""
+msgstr "空のビルドアイテムは、 `io.quarkus.builder.item.EmptyBuildItem` を拡張するfinalの（通常は空の）クラスです。空のビルドアイテムは、実際には何のデータも持たないビルドアイテムを表しており、空のクラスをインスタンス化することなく、そのようなアイテムを生成したり消費したりすることができます。空のクラスは、それ自体をインスタンス化することはできません。"
 
 #. type: Block title
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:740
 #, no-wrap
 msgid "Example of an empty build item"
-msgstr ""
+msgstr "空のビルドアイテムの例"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:746
@@ -1370,13 +1370,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:751
 msgid "Empty build items can represent \"barriers\" which can impose ordering between steps.  They can also be used in the same way that popular build systems use \"pseudo-targets\", which is to say that the build item can represent a conceptual goal that does not have a concrete representation."
-msgstr ""
+msgstr "空のビルドアイテムは、ステップ間の順序付けを可能にする「バリア」を表すことができます。また、一般的なビルドシステムが「疑似ターゲット」を使用するのと同じように、空のビルドアイテムを使用することもできます。"
 
 #. type: Block title
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:752
 #, no-wrap
 msgid "Example of usage of an empty build item in a \"pseudo-target\" style"
-msgstr ""
+msgstr "空のビルドアイテムを「疑似ターゲット」スタイルで使用する例"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:767
@@ -1400,7 +1400,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:769
 #, no-wrap
 msgid "Example of usage of an empty build item in a \"barrier\" style"
-msgstr ""
+msgstr "空のビルドアイテムを \"バリア \"スタイルで使用した例"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:781
@@ -1426,88 +1426,88 @@ msgstr "注入"
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:787
 msgid "Classes which contain build steps support the following types of injection:"
-msgstr ""
+msgstr "ビルドステップを含むクラスは、以下のタイプのインジェクションに対応しています。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:789
 msgid "Constructor parameter injection"
-msgstr ""
+msgstr "コンストラクタパラメータ・インジェクション"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:790
 msgid "Field injection"
-msgstr ""
+msgstr "フィールド・インジェクション"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:791
 msgid "Method parameter injection (for build step methods only)"
-msgstr ""
+msgstr "メソッドパラメータ・インジェクション（ビルドステップ・メソッドの場合のみ）"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:794
 msgid "Build step classes are instantiated and injected for each build step invocation, and are discarded afterwards.  State should only be communicated between build steps by way of build items, even if the steps are on the same class."
-msgstr ""
+msgstr "ビルド・ステップ・クラスは、ビルド・ステップを呼び出すたびにインスタンス化され、注入され、その後は破棄されます。ビルドステップ間では、たとえ同じクラスであっても、ビルドアイテムを介してのみ状態が伝達されるべきです。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:797
 msgid "Final fields are not considered for injection, but can be populated by way of constructor parameter injection if desired.  Static fields are never considered for injection."
-msgstr ""
+msgstr "finalフィールドはインジェクションの対象にはなりませんが、必要に応じてコンストラクタのパラメータインジェクションで入力することができます。staticフィールドは、インジェクションの対象にはなりません。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:799
 msgid "The types of values that can be injected include:"
-msgstr ""
+msgstr "注入可能な値の種類は以下の通りです:"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:801
 msgid "<<build-items,Build items>> produced by previous build steps"
-msgstr ""
+msgstr "前のビルドステップで生成された link:#build-items[ビルドアイテム]"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:802
 msgid "<<producing-values,Build producers>> to produce items for subsequent build steps"
-msgstr ""
+msgstr "後続のビルドステップのためにアイテムを生産する link:#producing-values[ビルドプロデューサー]"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:803
 msgid "<<configuration-roots,Configuration root>> types"
-msgstr ""
+msgstr "link:#configuration-roots[設定ルート]の種類"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:804
 msgid "Template objects for <<bytecode-recording,bytecode recording>>"
-msgstr ""
+msgstr "link:#bytecode-recording[バイトコード記録]用のテンプレートオブジェクト"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:807
 msgid "Objects which are injected into a build step method or its class _must not_ be used outside of that method's execution."
-msgstr ""
+msgstr "ビルドステップのメソッドやそのクラスに注入されたオブジェクトは、そのメソッドの実行時以外に使用しては _いけません_ 。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:810
 msgid "Injection is resolved at compile time via an annotation processor, and the resulting code does not have permission to inject private fields or invoke private methods."
-msgstr ""
+msgstr "インジェクションは、アノテーション・プロセッサを介してコンパイル時に解決され、生成されたコードは、プライベート・フィールドを注入したり、プライベート・メソッドを呼び出したりする権限を持ちません。"
 
 #. type: Title ====
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:812
 #, no-wrap
 msgid "Producing values"
-msgstr ""
+msgstr "値の生成"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:815
 msgid "A build step may produce values for subsequent steps in several possible ways:"
-msgstr ""
+msgstr "ビルドステップは、いくつかの可能な方法で後続のステップのために値を生成することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:817
 msgid "By returning a <<simple-build-items,simple build item>> or <<multi-build-items,multi build item>> instance"
-msgstr ""
+msgstr "link:#simple-build-items[シンプルビルドアイテム]や link:#multi-build-items[マルチビルドアイテム]のインスタンスを返すことで"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:818
 msgid "By returning a `List` of a multi build item class"
-msgstr ""
+msgstr "マルチビルドアイテムクラスの `List` を返すことで"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:819
@@ -1533,27 +1533,27 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:832
 #, no-wrap
 msgid "Consuming values"
-msgstr ""
+msgstr "値の利用"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:835
 msgid "A build step may consume values from previous steps in the following ways:"
-msgstr ""
+msgstr "ビルドステップは、以下の方法で前のステップの値を利用することができます:"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:837
 msgid "By injecting a <<simple-build-items,simple build item>>"
-msgstr ""
+msgstr "link:#simple-build-items[シンプルビルドアイテム]を注入することで"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:838
 msgid "By injecting an `Optional` of a simple build item class"
-msgstr ""
+msgstr "シンプルビルドアイテムクラスの `Optional` を注入することで"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:839
 msgid "By injecting a `List` of a <<multi-build-items,multi build item>> class"
-msgstr ""
+msgstr "link:#multi-build-items[マルチビルドアイテムクラス]の `List` を注入することで"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:841
@@ -1579,7 +1579,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:851
 #, no-wrap
 msgid "Weak value production"
-msgstr ""
+msgstr "弱い値の生成"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:856
@@ -1685,7 +1685,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:917
 #, no-wrap
 msgid "Application Archives"
-msgstr ""
+msgstr "アプリケーションアーカイブ"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:923
@@ -1813,7 +1813,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:992
 #, no-wrap
 msgid "Configuration Keys"
-msgstr ""
+msgstr "設定キー"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:995
@@ -1874,7 +1874,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1018
 msgid "`String`"
-msgstr ""
+msgstr "`String`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1019
@@ -1894,17 +1894,17 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1022
 msgid "`java.time.Duration`"
-msgstr ""
+msgstr "`java.time.Duration`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1023
 msgid "`java.util.regex.Pattern`"
-msgstr ""
+msgstr "`java.util.regex.Pattern`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1024
 msgid "`java.nio.file.Path`"
-msgstr ""
+msgstr "`java.nio.file.Path`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1025
@@ -1972,7 +1972,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1053
 #, no-wrap
 msgid "Configuration Groups"
-msgstr ""
+msgstr "設定グループ"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1057
@@ -1994,7 +1994,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1065
 #, no-wrap
 msgid "Configuration Maps"
-msgstr ""
+msgstr "設定マップ"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1070
@@ -2005,7 +2005,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1072
 #, no-wrap
 msgid "Configuration Roots"
-msgstr ""
+msgstr "設定ルート"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1078
@@ -2031,7 +2031,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1093
 #, no-wrap
 msgid "Configuration Root Phases"
-msgstr ""
+msgstr "設定ルートフェーズ"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1097
@@ -2042,7 +2042,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1101
 #, no-wrap
 msgid "Phase name"
-msgstr ""
+msgstr "フェーズ名"
 
 #. type: Table
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1102
@@ -2072,7 +2072,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1107
 #, no-wrap
 msgid "Notes"
-msgstr ""
+msgstr "備考"
 
 #. type: Table
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1108
@@ -2162,7 +2162,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1141
 #, no-wrap
 msgid "Configuration Example"
-msgstr ""
+msgstr "設定例"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1148
@@ -2624,22 +2624,22 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1365
 #, no-wrap
 msgid "Bytecode Recording"
-msgstr ""
+msgstr "バイトコードの記録"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1369
 msgid "One of the main outputs of the build process is recorded bytecode. This bytecode actually sets up the runtime environment. For example, in order to start Undertow, the resulting application will have some bytecode that directly registers all Servlet instances and then starts Undertow."
-msgstr ""
+msgstr "ビルドプロセスの主要なアウトプットの1つは、記録されたバイトコードです。このバイトコードは、実際に実行時環境を設定します。例えば、Undertowを起動するために、出来上がったアプリケーションには、すべてのServletインスタンスを直接登録し、その後Undertowを起動するバイトコードが含まれます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1375
 msgid "As writing bytecode directly is complex, this is instead done via bytecode recorders. At deployment time, invocations are made on recorder objects that contain the actual runtime logic, but instead of these invocations proceeding as normal they are intercepted and recorded (hence the name). This recording is then used to generate bytecode that performs the same sequence of invocations at runtime. This is essentially a form of deferred execution where invocations made at deployment time get deferred until runtime."
-msgstr ""
+msgstr "バイトコードを直接書くのは複雑なので、代わりにバイトコードレコーダーを使っています。デプロイメント時には、実際の実行時 ロジックを含むレコーダー オブジェクトが呼び出されますが、これらの呼び出しは通常通りに行われるのではなく、インターセプトされて記録されます (これが名前の由来です)。この記録は、実行時に同じ一連の呼び出しを実行するバイトコードを生成するために使用されます。これは本質的には遅延実行の一形態であり、デプロイメント時に行われた呼び出しが実行時まで延期されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1377
 msgid "Let's look at the classic 'Hello World' type example. To do this the Quarkus way we would create a recorder as follows:"
-msgstr ""
+msgstr "典型的な「Hello World」タイプの例を見てみましょう。これをQuarkusの方法で行うには、次のようにレコーダーを作成します。"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1382
@@ -2661,7 +2661,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1391
 msgid "And then create a build step that uses this recorder:"
-msgstr ""
+msgstr "そして、このレコーダーを使用するビルドステップを作成します。"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1399
@@ -2677,27 +2677,27 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1404
 msgid "When this build step is run nothing is printed to the console. This is because the `HelloRecorder` that is injected is actually a proxy that records all invocations. Instead if we run the resulting Quarkus program we will see 'Hello World' printed to the console."
-msgstr ""
+msgstr "このビルドステップを実行しても、コンソールには何も表示されません。これは、注入された `HelloRecorder` が、実際にはすべての呼び出しを記録するプロキシであるためです。代わりに、生成されたQuarkusプログラムを実行すると、コンソールに「Hello World」が出力されます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1409
 msgid "Methods on a recorder can return a value, which must be proxiable (if you want to return a non-proxiable item wrap it in `io.quarkus.runtime.RuntimeValue`). These proxies may not be invoked directly, however they can be passed into other recorder methods. This can be any recorder method, including from other `@BuildStep` methods, so a common pattern is to produce `BuildItem` instances that wrap the results of these recorder invocations."
-msgstr ""
+msgstr "レコーダーのメソッドは値を返すことができますが、その値はプロキシ可能なものでなければなりません（プロキシ不可能なアイテムを返す場合は、 `io.quarkus.runtime.RuntimeValue` で囲みます）。これらのプロキシは、直接呼び出すことはできませんが、他のレコーダーのメソッドに渡すことができます。これは、他の `@BuildStep` メソッドも含めて、どのようなレコーダ・メソッドでもよいので、これらのレコーダの呼び出しの結果をラップした `BuildItem` インスタンスを生成するのが一般的なパターンです。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1413
 msgid "For instance, in order to make arbitrary changes to a Servlet deployment Undertow has a `ServletExtensionBuildItem`, which is a `MultiBuildItem` that wraps a `ServletExtension` instance. I can return a `ServletExtension` from a recorder in another module, and Undertow will consume it and pass it into the recorder method that starts Undertow."
-msgstr ""
+msgstr "例えば、Servletの配置に任意の変更を加えるために、Undertowは `ServletExtensionBuildItem` を持っています。これは `ServletExtension` インスタンスをラップした `MultiBuildItem` です。他のモジュールのレコーダーから `ServletExtension` を返すと、Undertowはそれを使用し、Undertowを起動するレコーダー・メソッドに渡すことができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1417
 msgid "At runtime the bytecode will be invoked in the order it is generated. This means that build step dependencies implicitly control the order that generated bytecode is run. In the example above we know that the bytecode that produces a `ServletExtensionBuildItem` will be run before the bytecode that consumes it."
-msgstr ""
+msgstr "実行時には、生成された順にバイトコードが呼び出されます。つまり、ビルドステップの依存関係は、生成されたバイトコードが実行される順序を暗黙のうちに制御します。上の例では、 `ServletExtensionBuildItem` を生成するバイトコードが、それを消費するバイトコードよりも先に実行されることがわかっています。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1419
 msgid "The following objects can be passed to recorders:"
-msgstr ""
+msgstr "レコーダーに渡すことができるオブジェクトは以下の通りです。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1421
@@ -2717,7 +2717,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1424
 msgid "Objects returned from a previous recorder invocation"
-msgstr ""
+msgstr "前回のレコーダー起動時に返されたオブジェクト"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1425
@@ -2732,39 +2732,39 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1427
 msgid "Any arbitrary object via the `io.quarkus.deployment.recording.RecorderContext#registerSubstitution(Class, Class, Class)` mechanism"
-msgstr ""
+msgstr "`io.quarkus.deployment.recording.RecorderContext#registerSubstitution(Class, Class, Class)` メカニズムによる任意のオブジェクト"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1428
 msgid "Arrays, Lists and Maps of the above"
-msgstr ""
+msgstr "上記の配列、リスト、マップ"
 
 #. type: Title ====
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1430
 #, no-wrap
 msgid "RecorderContext"
-msgstr ""
+msgstr "RecorderContext"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1436
 msgid "`io.quarkus.deployment.recording.RecorderContext` provides some convenience methods to enhance bytecode recording, this includes the ability to register creation functions for classes without no-arg constructors, to register an object substitution (basically a transformer from a non-serializable object to a serializable one and vice versa), and to create a class proxy. This interface can be directly injected as a method parameter into any `@Record` method."
-msgstr ""
+msgstr "`io.quarkus.deployment.recording.RecorderContext` は、バイトコードの記録を強化するためのいくつかの便利なメソッドを提供しています。これには、引数なしのコンストラクタを持たないクラスの作成関数の登録、オブジェクト置換の登録（基本的には、シリアル化不可能なオブジェクトからシリアル化可能なオブジェクトへの変換、およびその逆）、クラスプロキシの作成などがあります。このインターフェースは、 `@Record` のメソッドにメソッドパラメータとして直接注入することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1440
 msgid "Calling `classProxy` with a given class name will create a `Class` that can be passed into recorder methods, and at runtime will be substituted with the class whose name was passed in to `classProxy`. This is basically a convenience to avoid the need to explicitly load classes in the recorders."
-msgstr ""
+msgstr "与えられたクラス名で `classProxy` を呼び出すと、レコーダーのメソッドに渡すことができる `Class` が作成され、実行時には `classProxy` に渡された名前のクラスで置き換えられます。これは基本的に、レコーダで明示的にクラスをロードする必要性を避けるための便宜的なものです。"
 
 #. type: Title ====
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1441
 #, no-wrap
 msgid "Printing step execution time"
-msgstr ""
+msgstr "ステップ実行時間の出力"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1446
 msgid "At times, it can be useful to know how the exact time each startup task (which is the result of each bytecode recording) takes when the application is run.  The simplest way to determine this information is to launch the Quarkus application with the `-Dquarkus.debug.print-startup-times=true` system property.  The output will look something like:"
-msgstr ""
+msgstr "時には、アプリケーションを実行したときに、各スタートアップタスク（各バイトコードの記録結果）にかかる正確な時間を知りたい場合があります。この情報を確認する最も簡単な方法は、 `-Dquarkus.debug.print-startup-times=true` システムプロパティを付けてQuarkusアプリケーションを起動することです。出力は以下のようになります:"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1459
@@ -2787,13 +2787,13 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1464
 #, no-wrap
 msgid "Contexts and Dependency Injection"
-msgstr ""
+msgstr "コンテキストと依存性インジェクション"
 
 #. type: Title ====
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1466
 #, no-wrap
 msgid "Extension Points"
-msgstr ""
+msgstr "拡張ポイント"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1471
@@ -2815,17 +2815,17 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1476
 #, no-wrap
 msgid "Extension-defined endpoints"
-msgstr ""
+msgstr "エクステンションで定義されたエンドポイント"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1480
 msgid "Your extension can add additional, non-application endpoints to be served alongside endpoints for Health, Metrics, OpenAPI, Swagger UI, etc."
-msgstr ""
+msgstr "エクステンションは、Health、Metrics、OpenAPI、Swagger UIなどのエンドポイントと一緒に提供される、アプリケーション以外のエンドポイントを追加することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1482
 msgid "Use a `NonApplicationRootPathBuildItem` to define an endpoint:"
-msgstr ""
+msgstr "`NonApplicationRootPathBuildItem` を使用して、エンドポイントを定義します:"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1493
@@ -2844,7 +2844,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1498
 msgid "Note that the path above does not start with a '/', indicating it is a relative path. The above endpoint will be served relative to the configured non-application endpoint root. The non-application endpoint root is `/q` by default, which means the resulting endpoint will be found at `/q/custom-endpoint`."
-msgstr ""
+msgstr "上記のパスが「/」で始まっていないのは、相対パスであることを示しています。上記のエンドポイントは、設定されたノンアプリケーションエンドポイントのルートからの相対パスで提供されます。アプリケーション以外のエンドポイントのルートは、デフォルトでは `/q` となっており、結果的にエンドポイントは `/q/custom-endpoint` にあることになります。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1501
@@ -2854,7 +2854,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1503
 msgid "If an extension needs nested non-application endpoints:"
-msgstr ""
+msgstr "エクステンションがネストした非アプリケーションのエンドポイントを必要とする場合:"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1514
@@ -2919,12 +2919,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1537
 msgid "Import the `quarkus-smallrye-health-spi` library in your deployment module."
-msgstr ""
+msgstr "デプロイメントモジュールに `quarkus-smallrye-health-spi` ライブラリをインポートします。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1538
 msgid "Add a build step in your deployment module that produces a `HealthBuildItem`."
-msgstr ""
+msgstr "デプロイメントモジュールに、 `HealthBuildItem` を生成するビルドステップを追加します。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1539
@@ -3007,7 +3007,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1573
 #, no-wrap
 msgid "Case 1: The library uses a metrics library directly"
-msgstr ""
+msgstr "ケース1：ライブラリがメトリクス・ライブラリを直接利用する場合"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:1576
@@ -3876,7 +3876,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2057
 #, no-wrap
 msgid "`io.quarkus.deployment.builditem.nativeimage.NativeImageResourceBuildItem`"
-msgstr ""
+msgstr "`io.quarkus.deployment.builditem.nativeimage.NativeImageResourceBuildItem`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2059
@@ -3909,18 +3909,18 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2066
 #, no-wrap
 msgid "`io.quarkus.deployment.builditem.nativeimage.NativeImageSystemPropertyBuildItem`"
-msgstr ""
+msgstr "`io.quarkus.deployment.builditem.nativeimage.NativeImageSystemPropertyBuildItem`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2068
 msgid "A system property that will be set at native executable build time."
-msgstr ""
+msgstr "ネイティブ実行可能ファイルのビルド時に設定されるシステムプロパティです。"
 
 #. type: Labeled list
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2069
 #, no-wrap
 msgid "`io.quarkus.deployment.builditem.nativeimage.NativeImageResourceBundleBuildItem`"
-msgstr ""
+msgstr "`io.quarkus.deployment.builditem.nativeimage.NativeImageResourceBundleBuildItem`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2071
@@ -3931,7 +3931,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2072
 #, no-wrap
 msgid "`io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem`"
-msgstr ""
+msgstr "`io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2074
@@ -3942,7 +3942,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2075
 #, no-wrap
 msgid "`io.quarkus.deployment.builditem.nativeimage.RuntimeInitializedClassBuildItem`"
-msgstr ""
+msgstr "`io.quarkus.deployment.builditem.nativeimage.RuntimeInitializedClassBuildItem`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2077
@@ -3953,7 +3953,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2078
 #, no-wrap
 msgid "`io.quarkus.deployment.builditem.nativeimage.NativeImageConfigBuildItem`"
-msgstr ""
+msgstr "`io.quarkus.deployment.builditem.nativeimage.NativeImageConfigBuildItem`"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2080
@@ -4012,12 +4012,12 @@ msgstr "`pom.xml` にこのプロパティを追加します : `<m2e.apt.activat
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2097
 msgid "If you have the `io.quarkus:quarkus-extension-processor` project open at the same time in your IDE (for example, if you have the Quarkus sources checked out and open in your IDE) you will need to close that project. Otherwise, Eclipse will not invoke the APT plugin that it contains."
-msgstr ""
+msgstr "IDEで同時に `io.quarkus:quarkus-extension-processor` プロジェクトを開いている場合（例えば、QuarkusのソースをチェックアウトしてIDEで開いている場合）、そのプロジェクトを閉じる必要があります。そうしないと、Eclipseはそのプロジェクトに含まれるAPTプラグインを起動しません。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2098
 msgid "If you just closed the extension processor project, be sure to do `Maven > Update Project` on the other projects in order for Eclipse to pick up the extension processor from the Maven repository."
-msgstr ""
+msgstr "エクステンションプロセッサのプロジェクトを閉じたばかりの場合は、Eclipse が Maven リポジトリからエクステンションプロセッサをピックアップするために、他のプロジェクトで `Maven > Update Project` を必ず実行してください。"
 
 #. type: Title ===
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2099
@@ -4054,12 +4054,12 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2112
 msgid "These properties are especially useful in the development mode or when running the tests where the generated/transformed classes are only held in memory in a class loader."
-msgstr ""
+msgstr "これらのプロパティは、開発モードやテストの実行時に、生成/変換されたクラスがクラスローダーのメモリ内に保持されているだけの場合に特に有効です。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2114
 msgid "For example, you can specify the `quarkus.debug.generated-classes-dir` system property to have these classes written out to disk for inspection in the development mode:"
-msgstr ""
+msgstr "例えば、 `quarkus.debug.generated-classes-dir` システムプロパティを指定すると、これらのクラスがディスクに書き出され、開発モードで検査できるようになります。"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2118
@@ -4103,12 +4103,12 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2139
 #, no-wrap
 msgid "Multi-module Maven Projects and the Development Mode"
-msgstr ""
+msgstr "マルチモジュールのMavenプロジェクトと開発モード"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2144
 msgid "It's not uncommon to develop an extension in a multi-module Maven project that also contains an \"example\" module.  However, if you want to run the example in the development mode then the `-DnoDeps` system property must be used in order to exclude the local project dependencies.  Otherwise, Quarkus attempts to monitor the extension classes and this may result in weird class loading issues."
-msgstr ""
+msgstr "example \"モジュールを含むマルチモジュールのMavenプロジェクトでエクステンションを開発することはよくあります。しかし、開発モードでサンプルを実行する場合は、ローカルプロジェクトの依存関係を除外するために、 `-DnoDeps` システムプロパティを使用する必要があります。そうしないと、Quarkusがエクステンションクラスを監視しようとするため、クラスの読み込みに問題が生じる可能性があります。"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2148
@@ -4136,13 +4136,13 @@ msgstr "サンプルテストエクステンション"
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2157
 msgid "We have an extension that is used to test for regressions in the extension processing. It is located in {quarkus-tree-url}/core/test-extension directory. In this section we touch on some of the tasks an extension author will typically need to perform using the test-extension code to illustrate how the task could be done."
-msgstr ""
+msgstr "エクステンションの処理のリグレッションをテストするために使われるエクステンションがあります。これは {quarkus-tre-url}/core/test-extension ディレクトリにあります。このセクションでは、test-extension のコードを使って、エクステンションの作者が通常行う必要のあるタスクについて触れます。"
 
 #. type: Title ====
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2158
 #, no-wrap
 msgid "Features and Capabilities"
-msgstr ""
+msgstr "フィーチャーとケイパビリティ"
 
 #. type: Title =====
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2160
@@ -4153,13 +4153,13 @@ msgstr "特徴"
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2164
 msgid "A _feature_ represents a functionality provided by an extension.  The name of the feature gets displayed in the log during application bootstrap."
-msgstr ""
+msgstr "_フィーチャー_ とは、エクステンションが提供する機能のことです。フィーチャーの名前は、アプリケーションの起動時にログに表示されます。"
 
 #. type: Block title
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2165
 #, no-wrap
 msgid "Example Startup Lines"
-msgstr ""
+msgstr "起動時の行の例"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2170
@@ -4172,18 +4172,18 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2172
 msgid "A list of features installed in the runtime image"
-msgstr ""
+msgstr "ランタイムイメージにインストールされているフィーチャーのリスト"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2174
 msgid "A feature can be registered in a <<Build Step Processors>> method that produces a `FeatureBuildItem`:"
-msgstr ""
+msgstr "フィーチャーは、 `FeatureBuildItem` を生成する link:#Build Step Processors[[Build Step Processors]]メソッドで登録することができます。"
 
 #. type: Block title
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2175
 #, no-wrap
 msgid "TestProcessor#feature()"
-msgstr ""
+msgstr "TestProcessor#feature()"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2182
@@ -4198,7 +4198,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2187
 msgid "The name of the feature should only contain lowercase characters, words are separated by dash; e.g. `security-jpa`.  An extension should provide at most one feature and the name must be unique.  If multiple extensions register a feature of the same name the build fails."
-msgstr ""
+msgstr "フィーチャー名には小文字のみを使用し、単語はダッシュで区切ります。例： `security-jpa` 。1 つのエクステンションが提供するフィーチャーは最大でも 1 つで、その名前は一意でなければなりません。複数のエクステンションが同じ名前のフィーチャーを登録した場合、ビルドは失敗します。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2191
@@ -4227,18 +4227,18 @@ msgstr "Capabilities"
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2209
 msgid "A _capability_ represents a technical capability that can be queried by other extensions.  An extension may provide multiple capabilities and multiple extensions can provide the same capability.  By default, capabilities are not displayed to users.  Capabilities should be used when checking for the presence of an extension rather than class path based checks."
-msgstr ""
+msgstr "_ケイパビリティ_ は、他のエクステンションから問い合わせ可能な技術的能力を表します。1つのエクステンションが複数のケイパビリティを提供することも、複数のエクステンションが同じケイパビリティを提供することもできます。デフォルトでは、ケイパビリティはユーザーに表示されません。エクステンションの存在を確認する際には、クラスパスベースのチェックではなく、ケイパビリティを使用する必要があります。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2211
 msgid "Capabilities can be registered in a <<Build Step Processors>> method that produces a `CapabilityBuildItem`:"
-msgstr ""
+msgstr "ケイパビリティは、 `CapabilityBuildItem` を生成する link:#Build Step Processors[[Build Step Processors]]メソッドで登録することができます。"
 
 #. type: Block title
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2212
 #, no-wrap
 msgid "TestProcessor#capability()"
-msgstr ""
+msgstr "TestProcessor#capability()"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2220
@@ -4254,13 +4254,13 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2223
 msgid "Extensions can consume registered capabilities using the `Capabilities` build item:"
-msgstr ""
+msgstr "エクステンションは、 `Capabilities` ビルドアイテムを使用して、登録されたケイパビリティを消費することができます。"
 
 #. type: Block title
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2224
 #, no-wrap
 msgid "TestProcessor#doSomeCoolStuff()"
-msgstr ""
+msgstr "TestProcessor#doSomeCoolStuff()"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2233
@@ -4374,12 +4374,12 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2283
 #, no-wrap
 msgid "Parsing Config to Objects"
-msgstr ""
+msgstr "コンフィグをオブジェクトにパースする"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2285
 msgid "One of the main things an extension is likely to do is completely separate the configuration phase of behavior from the runtime phase. Frameworks often do parsing/load of configuration on startup that can be done during build time to both reduce the runtime dependencies on frameworks like xml parsers as well as reducing the startup time the parsing incurs."
-msgstr ""
+msgstr "エクステンションの主な目的の1つは、動作の設定段階を実行段階から完全に分離することです。フレームワークは起動時に設定の解析や読み込みを行うことが多いですが、これをビルド時に行うことで、xmlパーサーなどのフレームワークへの実行時の依存を減らし、解析にかかる起動時間を短縮することができます。"
 
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2287
@@ -4451,7 +4451,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2325
 msgid "If your extension defines annotations or interfaces that mark beans needing to be processed, you can locate these beans using the Jandex API, a Java annotation indexer and offline reflection library. The following `TestProcessor#scanForBeans` method shows how to find the beans annotated with our `@TestAnnotation` that also implement the `IConfigConsumer` interface:"
-msgstr ""
+msgstr "エクステンションが、処理が必要なBeanをマークするアノテーションやインターフェースを定義している場合、Javaアノテーション・インデクサーとオフライン・リフレクション・ライブラリであるJandex APIを使って、これらのBeanを見つけることができます。以下の `TestProcessor#scanForBeans` メソッドは、 `IConfigConsumer` インターフェースも実装している `@TestAnnotation` でアノテーションされたビーンを見つける方法を示しています。"
 
 #. type: Block title
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2326
@@ -4798,7 +4798,7 @@ msgstr ""
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2487
 #, no-wrap
 msgid "Observing Container Startup"
-msgstr ""
+msgstr "コンテナの起動を観察"
 
 #. type: delimited block -
 #: upstream/_versions/1.11/guides/writing-extensions.adoc:2492

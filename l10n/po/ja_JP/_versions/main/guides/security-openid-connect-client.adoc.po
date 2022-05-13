@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-04 01:49+0900\n"
+"POT-Creation-Date: 2022-05-12 02:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr "OidcClient"
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-client.adoc:21
 #, fuzzy
-msgid "Add the following Maven dependency:"
+msgid "Add the following dependency:"
 msgstr "テストプロジェクトに以下の依存関係を追加します。"
 
 #. type: delimited block -
@@ -157,7 +157,7 @@ msgstr "`OidcClient` が `client_credentials` グラントを使用するよう�
 #: upstream/_versions/main/guides/security-openid-connect-client.adoc:70
 #, no-wrap
 msgid "Client Credentials Grant"
-msgstr ""
+msgstr "クライアントクレデンシャル・グラント"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-client.adoc:73
@@ -203,7 +203,7 @@ msgstr ""
 #: upstream/_versions/main/guides/security-openid-connect-client.adoc:93
 #, no-wrap
 msgid "Password Grant"
-msgstr ""
+msgstr "パスワード・グラント"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-client.adoc:96
@@ -1221,12 +1221,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-client.adoc:641
-msgid "Some OpenID Connect Providers may require that a client is authenticated as part of the `Mutual TLS` (`MTLS`) authentication process."
+msgid "Some OpenID Connect Providers may require that a client is authenticated as part of the `Mutual TLS` (`mTLS`) authentication process."
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-client.adoc:643
-msgid "`quarkus-oidc-client` can be configured as follows to support `MTLS`:"
+msgid "`quarkus-oidc-client` can be configured as follows to support `mTLS`:"
 msgstr ""
 
 #. type: delimited block -
@@ -1464,7 +1464,7 @@ msgstr "Keycloak"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-client.adoc:775
-msgid "If you work with Keycloak then you can use the same approach as described in the xref:security-openid-connect#integration-testing-keycloak.adoc[OpenID Connect Bearer Token Integration testing] `Keycloak` section."
+msgid "If you work with Keycloak then you can use the same approach as described in the xref:security-openid-connect#integration-testing-keycloak.adoc[OpenID Connect Bearer Token Integration testing] Keycloak section."
 msgstr ""
 
 #. type: Title ===

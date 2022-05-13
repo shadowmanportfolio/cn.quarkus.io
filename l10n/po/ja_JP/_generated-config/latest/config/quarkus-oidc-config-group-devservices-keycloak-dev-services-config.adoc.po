@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-08 17:08+0000\n"
+"POT-Creation-Date: 2022-04-12 10:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_generated-config/latest/config/quarkus-oidc-config-group-devservices-keycloak-dev-services-config.adoc:3
 msgid "icon:lock[title=Fixed at build time] Configuration property fixed at build time - All other configuration properties are overridable at runtime"
-msgstr ""
+msgstr "icon:lock[title=ビルド時に固定] ビルド時に固定される設定プロパティ - それ以外の設定プロパティは実行時に上書き可能"
 
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-oidc-config-group-devservices-keycloak-dev-services-config.adoc:8
@@ -77,8 +77,8 @@ msgid ""
 "\n"
 "[.description]\n"
 "--\n"
-"The container image name to use, for container based DevServices providers. Image with a Quarkus based Keycloak-X distribution is used by default. Image with a WildFly based Keycloak distribution can be selected instead, for example: 'quay.io/keycloak/keycloak:16.1.0'. \n"
-" Note Keycloak-X and Keycloak images are initialized differently. By default, Dev Services for Keycloak will assume it is a Keycloak-X image if the image name contains a 'keycloak-x' string. Set 'quarkus.devservices.keycloak.keycloak-x-image' to override this check.\n"
+"The container image name to use, for container based DevServices providers. Image with a Quarkus based distribution is used by default. Image with a WildFly based distribution can be selected instead, for example: 'quay.io/keycloak/keycloak:17.0.1-legacy'. \n"
+" Note Keycloak Quarkus and Keycloak WildFly images are initialized differently. By default, Dev Services for Keycloak will assume it is a Keycloak Quarkus image if the image version does not end with a '-legacy' string. Set 'quarkus.keycloak.devservices.keycloak-x-image' to override this check.\n"
 "--"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgstr "string"
 #. type: Table
 #: upstream/_generated-config/latest/config/quarkus-oidc-config-group-devservices-keycloak-dev-services-config.adoc:31
 #, no-wrap
-msgid "`quay.io/keycloak/keycloak-x:16.1.0`"
+msgid "`quay.io/keycloak/keycloak:17.0.1`"
 msgstr ""
 
 #. type: Table
@@ -106,7 +106,7 @@ msgid ""
 "\n"
 "[.description]\n"
 "--\n"
-"If Keycloak-X image is used. By default, Dev Services for Keycloak will assume a Keycloak-X image is used if the image name contains a 'keycloak-x' string. Set 'quarkus.devservices.keycloak.keycloak-x-image' to override this check which may be necessary if you build custom Keycloak-X or Keycloak images. You do not need to set this property if the default check works.\n"
+"If Keycloak-X image is used. By default, Dev Services for Keycloak will assume a Keycloak-X image is used if the image name contains a 'keycloak-x' string. Set 'quarkus.keycloak.devservices.keycloak-x-image' to override this check which may be necessary if you build custom Keycloak-X or Keycloak images. You do not need to set this property if the default check works.\n"
 "--"
 msgstr ""
 

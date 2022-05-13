@@ -3,46 +3,51 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-02-04 01:47+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-04-29 21:23+0900\n"
+"PO-Revision-Date: 2022-04-30 17:21+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#. type: Plain text
+#. type: YAML Front Matter: author
 #: upstream/_posts/2020-11-25-stylish-api.adoc:1
-#, fuzzy, no-wrap
-msgid "---\n"
-msgstr "---\n"
-
-#. type: Plain text
-#: upstream/_posts/2020-11-25-stylish-api.adoc:8
 #, no-wrap
-msgid ""
-"layout: post\n"
-"title: 'Stylish API'\n"
-"date: 2020-11-25\n"
-"tags: extension openapi swagger-ui\n"
-"synopsis: Swagger UI configuration and custom styling\n"
-"author: phillipkruger\n"
-"---\n"
-msgstr ""
-"layout: post\n"
-"title: スタイリッシュAPI\n"
-"date: 2020-11-25\n"
-"tags: extension openapi swagger-ui\n"
-"synopsis: SwaggerのUI設定とカスタムスタイリング\n"
-"author: phillipkruger\n"
-"---\n"
+msgid "phillipkruger"
+msgstr "phillipkruger"
+
+#. type: YAML Front Matter: date
+#: upstream/_posts/2020-11-25-stylish-api.adoc:1
+#, no-wrap
+msgid "2020-11-25"
+msgstr "2020-11-25"
+
+#. type: YAML Front Matter: layout
+#: upstream/_posts/2020-11-25-stylish-api.adoc:1
+#, no-wrap
+msgid "post"
+msgstr "post"
+
+#. type: YAML Front Matter: synopsis
+#: upstream/_posts/2020-11-25-stylish-api.adoc:1
+#, no-wrap
+msgid "Swagger UI configuration and custom styling"
+msgstr "Swagger UIの設定とカスタムスタイリング"
+
+#. type: YAML Front Matter: tags
+#: upstream/_posts/2020-11-25-stylish-api.adoc:1
+#, no-wrap
+msgid "extension openapi swagger-ui"
+msgstr "extension openapi swagger-ui"
 
 #. type: Title =
+#: upstream/_posts/2020-11-25-stylish-api.adoc:1
 #: upstream/_posts/2020-11-25-stylish-api.adoc:11
 #, no-wrap
 msgid "Stylish API"
@@ -77,7 +82,7 @@ msgstr "Swagger UIのデフォルトスタイルがバニラのSwagger UIからQ
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-11-25-stylish-api.adoc:23
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "quarkus_brand"
 msgstr "quarkus_brand"
 
@@ -118,7 +123,7 @@ msgstr ""
 #: upstream/_posts/2020-11-25-stylish-api.adoc:38
 #, fuzzy, no-wrap
 msgid "themed"
-msgstr "テーマ"
+msgstr "themed"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-11-25-stylish-api.adoc:38
@@ -140,7 +145,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_posts/2020-11-25-stylish-api.adoc:47
 #: upstream/_posts/2020-11-25-stylish-api.adoc:53
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "original"
 msgstr "オリジナル"
 
@@ -508,3 +513,24 @@ msgstr "同様に、以下のようにしてスキーマを無効にすること
 #, no-wrap
 msgid "java -jar -Dquarkus.smallrye-openapi.enable=false target/yourapp-1.0.0-runner.jar\n"
 msgstr ""
+
+#, fuzzy
+#~ msgid "---\n"
+#~ msgstr "---\n"
+
+#~ msgid ""
+#~ "layout: post\n"
+#~ "title: 'Stylish API'\n"
+#~ "date: 2020-11-25\n"
+#~ "tags: extension openapi swagger-ui\n"
+#~ "synopsis: Swagger UI configuration and custom styling\n"
+#~ "author: phillipkruger\n"
+#~ "---\n"
+#~ msgstr ""
+#~ "layout: post\n"
+#~ "title: スタイリッシュAPI\n"
+#~ "date: 2020-11-25\n"
+#~ "tags: extension openapi swagger-ui\n"
+#~ "synopsis: SwaggerのUI設定とカスタムスタイリング\n"
+#~ "author: phillipkruger\n"
+#~ "---\n"

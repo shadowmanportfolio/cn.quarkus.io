@@ -6,47 +6,56 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-02-04 01:47+0900\n"
-"PO-Revision-Date: 2021-02-06 10:51+0900\n"
+"POT-Creation-Date: 2022-04-29 21:23+0900\n"
+"PO-Revision-Date: 2022-04-30 17:16+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#. type: Plain text
+#. type: YAML Front Matter: author
 #: upstream/_posts/2020-12-08-resteasy-reactive.adoc:1
 #, no-wrap
-msgid "---\n"
-msgstr "---\n"
+msgid "geoand"
+msgstr "geoand"
 
-#. type: Plain text
-#: upstream/_posts/2020-12-08-resteasy-reactive.adoc:8
+#. type: YAML Front Matter: date
+#: upstream/_posts/2020-12-08-resteasy-reactive.adoc:1
 #, no-wrap
-msgid ""
-"layout: post\n"
-"title: Announcing RESTEasy Reactive\n"
-"date: 2020-12-07\n"
-"tags: reactive web rest resteasy\n"
-"synopsis: RESTEasy Reactive is ready to be tested\n"
-"author: geoand\n"
-"---\n"
-msgstr ""
-"layout: post\n"
-"title: RESTEasy Reactive 発表\n"
-"date: 2020-12-07\n"
-"tags: reactive web rest resteasy\n"
-"synopsis: RESTEasy Reactiveは、テストの準備ができています。\n"
-"author: geoand\n"
-"---\n"
+msgid "2020-12-07"
+msgstr "2020-12-07"
+
+#. type: YAML Front Matter: layout
+#: upstream/_posts/2020-12-08-resteasy-reactive.adoc:1
+#, no-wrap
+msgid "post"
+msgstr "post"
+
+#. type: YAML Front Matter: synopsis
+#: upstream/_posts/2020-12-08-resteasy-reactive.adoc:1
+#, no-wrap
+msgid "RESTEasy Reactive is ready to be tested"
+msgstr "RESTEasy Reactiveは、すぐにテストできます。"
+
+#. type: YAML Front Matter: tags
+#: upstream/_posts/2020-12-08-resteasy-reactive.adoc:1
+#, no-wrap
+msgid "reactive web rest resteasy"
+msgstr "reactive web rest resteasy"
+
+#. type: YAML Front Matter: title
+#: upstream/_posts/2020-12-08-resteasy-reactive.adoc:1
+#, no-wrap
+msgid "Announcing RESTEasy Reactive"
+msgstr "RESTEasy Reactiveの発表"
 
 #. type: Plain text
 #: upstream/_posts/2020-12-08-resteasy-reactive.adoc:12
-#, fuzzy
 msgid "It gives the Quarkus and RESTEasy teams great pleasure to announce that RESTEasy Reactive integration in Quarkus has landed in the main Quarkus repo footnote:disclaimer[Currently the main RESTEasy Reactive component resides at https://github.com/quarkusio/quarkus/tree/main/independent-projects/resteasy-reactive in the main Quarkus repository; the plan is however that once things settle, this code will move to https://github.com/resteasy/resteasy-reactive. This move should not affect users of the quarkus-resteasy-reactive extensions in any way, just a heads up if anyone reads this blog post in the future and can’t find it.] and will be part of the next Quarkus release 1.11."
-msgstr "QuarkusとRESTEasyのチームは、RESTEasy ReactiveのQuarkusへの統合がQuarkusのメインレポ<sup class=\"footnote\" id=\"_footnote_disclaimer\">[ link:#_footnotedef_1[1, id=_footnoteref_1, role=footnote, title=View footnote.]</sup>]に掲載され、次のQuarkusリリース1.11に含まれることを発表できることを大変嬉しく思います。"
+msgstr "QuarkusチームとRESTEasyチームは、QuarkusでのRESTEasyReactive統合がメインのQuarkusレポジトリ footnote:disclaimer[現在、メインのRESTEasy Reactiveコンポーネントは、メインのQuarkusリポジトリのhttps://github.com/quarkusio/quarkus/tree/main/independent-projects/resteasy-reactiveにあります。 ただし、問題が解決すると、このコードはhttps://github.com/resteasy/resteasy-reactiveに移動する予定です。 この動きは、quarkus-resteasy-reactiveエクステンションのユーザーにはまったく影響を与えないはずです。将来、誰かがこのブログ投稿を読んで見つからない場合は、注意が必要です。] に取り込まれたことを発表できることを非常に嬉しく思います。 そして次のQuarkusリリース1.11の一部になります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-12-08-resteasy-reactive.adoc:15
@@ -116,7 +125,7 @@ msgstr "スコアリングシステム"
 #. type: Plain text
 #: upstream/_posts/2020-12-08-resteasy-reactive.adoc:42
 msgid "On dev-mode startup, the application will show you a list of your endpoints, along with a performance score telling you why your endpoint is slower than an optimal version. This helps a lot in figuring out how to improve REST performance."
-msgstr "devモードで起動すると、アプリケーションはエンドポイントのリストを表示し、エンドポイントが最適なバージョンよりも遅い理由を示すパフォーマンススコアを表示します。これは、REST のパフォーマンスを向上させる方法を見つけるのに非常に役立ちます。"
+msgstr "開発モードで起動すると、アプリケーションはエンドポイントのリストを表示し、エンドポイントが最適なバージョンよりも遅い理由を示すパフォーマンススコアを表示します。これは、REST のパフォーマンスを向上させる方法を見つけるのに非常に役立ちます。"
 
 #. type: Labeled list
 #: upstream/_posts/2020-12-08-resteasy-reactive.adoc:43
@@ -462,3 +471,23 @@ msgstr "新しいエクステンションは通常の _1.11_ リリースで利�
 #: upstream/_posts/2020-12-08-resteasy-reactive.adoc:213
 msgid "We are very much looking forward to hearing your thoughts about and experience using RESTEasy Reactive in Quarkus and plan to put it to good use to further improve the project."
 msgstr "プロジェクトのさらなる改善の為に、RESTEasy ReactiveをQuarkusで使用した感想や経験を是非お聞かせ下さい。"
+
+#~ msgid "---\n"
+#~ msgstr "---\n"
+
+#~ msgid ""
+#~ "layout: post\n"
+#~ "title: Announcing RESTEasy Reactive\n"
+#~ "date: 2020-12-07\n"
+#~ "tags: reactive web rest resteasy\n"
+#~ "synopsis: RESTEasy Reactive is ready to be tested\n"
+#~ "author: geoand\n"
+#~ "---\n"
+#~ msgstr ""
+#~ "layout: post\n"
+#~ "title: RESTEasy Reactive 発表\n"
+#~ "date: 2020-12-07\n"
+#~ "tags: reactive web rest resteasy\n"
+#~ "synopsis: RESTEasy Reactiveは、テストの準備ができています。\n"
+#~ "author: geoand\n"
+#~ "---\n"
