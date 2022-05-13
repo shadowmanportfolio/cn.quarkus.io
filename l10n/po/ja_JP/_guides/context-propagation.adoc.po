@@ -34,7 +34,13 @@ msgid ""
 "passing them as parameters everywhere. Many Quarkus extensions require those contextual objects to operate\n"
 "properly: xref:rest-json.adoc[RESTEasy Reactive], xref:cdi-reference.adoc[ArC] and xref:transaction.adoc[Transaction]\n"
 "for example.\n"
-msgstr "従来のブロッキングコードでは  link:https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html[`ThreadLocal`]変数を使用してコンテキストオブジェクトを格納し、パラメータとして渡すことを避けていました。多くのQuarkusのエクステンションは、適切に動作するためにこれらのコンテキストオブジェクトを必要とします。例えば、 link:rest-json.html[RESTEasy]、 link:cdi-reference.html[ArC]、 link:transaction.html[Transaction]などです。\n"
+msgstr ""
+"従来のブロッキングコードでは  link:https://docs.oracle.com/en/java/javase/11/"
+"docs/api/java.base/java/lang/ThreadLocal.html[`ThreadLocal`]変数を使用してコ"
+"ンテキストオブジェクトを格納し、パラメータとして渡すことを避けていました。多"
+"くのQuarkusのエクステンションは、適切に動作するためにこれらのコンテキストオブ"
+"ジェクトを必要とします。例えば、 link:rest-json.html[RESTEasy]、 link:cdi-"
+"reference.html[ArC]、 link:transaction.html[Transaction]などです。\n"
 
 #. type: Plain text
 #: upstream/_guides/context-propagation.adoc:20
@@ -126,7 +132,8 @@ msgstr ""
 #: upstream/_guides/context-propagation.adoc:67
 #, fuzzy
 msgid "With this, you will get context propagation for ArC, RESTEasy Reactive and transactions, if you are using them."
-msgstr "これにより、ArC、RESTEasy、トランザクションを使用している場合は、コンテキストの伝播を得ることができます。"
+msgstr "これにより、ArC、RESTEasy、トランザクションを使用している場合は、コンテキスト"
+"の伝播を得ることができます。"
 
 #. type: Title ==
 #: upstream/_guides/context-propagation.adoc:68
@@ -149,7 +156,11 @@ msgstr "このセクションでは、Mutinyのリアクティブ型を使用し
 #: upstream/_guides/context-propagation.adoc:80
 #, fuzzy
 msgid "Let's write a REST endpoint that reads the next 3 items from a xref:kafka.adoc[Kafka topic], stores them in a database using xref:hibernate-orm-panache.adoc[Hibernate ORM with Panache] (all in the same transaction) before returning them to the client, you can do it like this:"
-msgstr "link:kafka.html[Kafkaトピック]から次の3つのアイテムを読み込み、 link:hibernate-orm-panache.html[Panacheを使ったHibernate ORM]でデータベースに格納してから（すべて同じトランザクションで）、クライアントに返すRESTエンドポイントを書くとしたら、次のようになります。"
+msgstr ""
+"link:kafka.html[Kafkaトピック]から次の3つのアイテムを読み込み、 link"
+":hibernate-orm-panache.html[Panacheを使ったHibernate ORM]でデータベースに格納"
+"してから（すべて同じトランザクションで）、クライアントに返すRESTエンドポイン"
+"トを書くとしたら、次のようになります。"
 
 #. type: delimited block -
 #: upstream/_guides/context-propagation.adoc:86
@@ -205,7 +216,17 @@ msgstr "`CompletionStage` の使用例"
 #: upstream/_guides/context-propagation.adoc:123
 #, fuzzy
 msgid "If you are using link:https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html[`CompletionStage`] you need manual context propagation. You can do that by injecting a `ThreadContext` or `ManagedExecutor` that will propagate every context. For example, here we use the xref:vertx.adoc[Vert.x Web Client] to get the list of Star Wars people, then store them in the database using xref:hibernate-orm-panache.adoc[Hibernate ORM with Panache] (all in the same transaction) before returning them to the client as JSON using xref:rest-json.adoc[Jackson or JSON-B]:"
-msgstr "を使用している場合は  link:https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html[`CompletionStage`]を使っている場合は、手動でのコンテキストの伝播が必要です。そのためには、すべてのコンテキストを伝搬する `ThreadContext` または `ManagedExecutor` を注入することができます。例えば、ここでは link:vertx.html[Vert.x Web Client]を使用してStar Warsの人々のリストを取得し、 link:hibernate-orm-panache.html[Panacheを使用したHibernate ORM]を使用してデータベースに格納し（すべて同じトランザクションで）、 link:rest-json.html[JacksonまたはJSON-B]を使用してJSONとしてクライアントに返しています。"
+msgstr ""
+"を使用している場合は  link:https://docs.oracle.com/en/java/javase/11/docs/"
+"api/java.base/java/util/concurrent/CompletionStage.html[`CompletionStage`]を"
+"使っている場合は、手動でのコンテキストの伝播が必要です。そのためには、"
+"すべてのコンテキストを伝搬する `ThreadContext` または `ManagedExecutor` "
+"を注入することができます。例えば、ここでは link:vertx.html[Vert.x Web Client]"
+"を使用してStar Warsの人々のリストを取得し、 link:hibernate-orm-panache.html["
+"Panacheを使用したHibernate "
+"ORM]を使用してデータベースに格納し（すべて同じトランザクションで）、 link"
+":rest-json."
+"html[JacksonまたはJSON-B]を使用してJSONとしてクライアントに返しています。"
 
 #. type: delimited block -
 #: upstream/_guides/context-propagation.adoc:129
@@ -333,7 +354,11 @@ msgstr "クリアされたコンテクストのコンマで区切られたセッ
 #: upstream/_guides/context-propagation.adoc:186
 #, fuzzy, no-wrap
 msgid "`None` (no context), unless neither the propagated nor cleared sets contain `Remaining`, in which case the default is `Remaining` (all non-explicitly listed contexts)"
-msgstr "`None` （コンテキストなし）。ただし、伝播されたセットとクリアされたセットのどちらにも `Remaining` が含まれていない場合は、デフォルトで `Remaining` （明示されていないすべてのコンテキスト）となる。"
+msgstr ""
+"`None` （コンテキストなし）。ただし、"
+"伝播されたセットとクリアされたセットのどちらにも `Remaining` "
+"が含まれていない場合は、デフォルトで `Remaining` "
+"（明示されていないすべてのコンテキスト）となる。"
 
 #. type: Table
 #: upstream/_guides/context-propagation.adoc:187
@@ -357,7 +382,8 @@ msgstr "`None` （コンテキストなし）"
 #: upstream/_guides/context-propagation.adoc:193
 #, fuzzy
 msgid "The following contexts are available in Quarkus either out of the box, or depending on whether you include their extensions:"
-msgstr "以下のコンテクストは、Quarkusですぐに使用できるか、エクステンションを含めるかどうかによって使用できます。"
+msgstr "以下のコンテクストは、Quarkusですぐに使用できるか、エクステンションを含めるか"
+"どうかによって使用できます。"
 
 #. type: Table
 #: upstream/_guides/context-propagation.adoc:196
@@ -381,13 +407,17 @@ msgstr "`None`"
 #: upstream/_guides/context-propagation.adoc:200
 #, fuzzy, no-wrap
 msgid "https://javadoc.io/static/org.eclipse.microprofile.context-propagation/microprofile-context-propagation-api/1.2/org/eclipse/microprofile/context/ThreadContext.html#NONE[`ThreadContext.NONE`]"
-msgstr "link:https://javadoc.io/static/org.eclipse.microprofile.context-propagation/microprofile-context-propagation-api/1.2/org/eclipse/microprofile/context/ThreadContext.html#NONE[`ThreadContext.NONE`]"
+msgstr ""
+"link:https://javadoc.io/static/org.eclipse.microprofile.context-propagation/"
+"microprofile-context-propagation-api/1.2/org/eclipse/microprofile/context/"
+"ThreadContext.html#NONE[`ThreadContext.NONE`]"
 
 #. type: Table
 #: upstream/_guides/context-propagation.adoc:202
 #, fuzzy, no-wrap
 msgid "Can be used to specify an empty set of contexts, but setting the value to empty works too"
-msgstr "コンテクストの空のセットを指定するために使用できますが、値を空に設定しても機能します。"
+msgstr "コンテクストの空のセットを指定するために使用できますが、値を空に設定しても機"
+"能します。"
 
 #. type: Table
 #: upstream/_guides/context-propagation.adoc:203
@@ -399,7 +429,10 @@ msgstr "`Remaining`"
 #: upstream/_guides/context-propagation.adoc:204
 #, fuzzy, no-wrap
 msgid "https://javadoc.io/static/org.eclipse.microprofile.context-propagation/microprofile-context-propagation-api/1.2/org/eclipse/microprofile/context/ThreadContext.html#ALL_REMAINING[`ThreadContext.ALL_REMAINING`]"
-msgstr "link:https://javadoc.io/static/org.eclipse.microprofile.context-propagation/microprofile-context-propagation-api/1.2/org/eclipse/microprofile/context/ThreadContext.html#ALL_REMAINING[`ThreadContext.ALL_REMAINING`]"
+msgstr ""
+"link:https://javadoc.io/static/org.eclipse.microprofile.context-propagation/"
+"microprofile-context-propagation-api/1.2/org/eclipse/microprofile/context/"
+"ThreadContext.html#ALL_REMAINING[`ThreadContext.ALL_REMAINING`]"
 
 #. type: Table
 #: upstream/_guides/context-propagation.adoc:206
@@ -435,7 +468,10 @@ msgstr "`CDI`"
 #: upstream/_guides/context-propagation.adoc:212
 #, fuzzy, no-wrap
 msgid "https://javadoc.io/static/org.eclipse.microprofile.context-propagation/microprofile-context-propagation-api/1.2/org/eclipse/microprofile/context/ThreadContext.html#CDI[`ThreadContext.CDI`]"
-msgstr "link:https://javadoc.io/static/org.eclipse.microprofile.context-propagation/microprofile-context-propagation-api/1.2/org/eclipse/microprofile/context/ThreadContext.html#CDI[`ThreadContext.CDI`]"
+msgstr ""
+"link:https://javadoc.io/static/org.eclipse.microprofile.context-propagation/"
+"microprofile-context-propagation-api/1.2/org/eclipse/microprofile/context/"
+"ThreadContext.html#CDI[`ThreadContext.CDI`]"
 
 #. type: Table
 #: upstream/_guides/context-propagation.adoc:214
@@ -502,7 +538,12 @@ msgstr "伝播されたコンテキストをアノテーションで上書きす
 #: upstream/_guides/context-propagation.adoc:232
 #, fuzzy
 msgid "In order for automatic context propagation, such as Mutiny uses, to be overridden in specific methods, you can use the https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/latest/io/smallrye/context/api/CurrentThreadContext.html[`@CurrentThreadContext`] annotation:"
-msgstr "Mutinyが使用しているような自動コンテキスト伝搬を、特定のメソッドでオーバーライドするためには  link:https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/latest/io/smallrye/context/api/CurrentThreadContext.html[`@CurrentThreadContext`]アノテーションを使用します。"
+msgstr ""
+"Mutinyが使用しているような自動コンテキスト伝搬を、"
+"特定のメソッドでオーバーライドするためには  link:https://javadoc.io/doc/io."
+"smallrye/smallrye-context-propagation-api/latest/io/smallrye/context/api/"
+"CurrentThreadContext."
+"html[`@CurrentThreadContext`]アノテーションを使用します。"
 
 #. type: delimited block -
 #: upstream/_guides/context-propagation.adoc:250
@@ -531,7 +572,11 @@ msgstr "CDIインジェクションを用いた伝搬されたコンテキスト
 #: upstream/_guides/context-propagation.adoc:255
 #, fuzzy
 msgid "You can also inject a custom-built `ThreadContext` using the https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/latest/io/smallrye/context/api/ThreadContextConfig.html[`@ThreadContextConfig`] annotation on your injection point:"
-msgstr "また、カスタムメイドの `ThreadContext` を注入することもできます。  link:https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/latest/io/smallrye/context/api/ThreadContextConfig.html[`@ThreadContextConfig`]アノテーションを使って、インジェクションポイントに"
+msgstr ""
+"また、カスタムメイドの `ThreadContext` を注入することもできます。  "
+"link:https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/"
+"latest/io/smallrye/context/api/ThreadContextConfig.html[`@ThreadContextConfig"
+"`]アノテーションを使って、インジェクションポイントに"
 
 #. type: delimited block -
 #: upstream/_guides/context-propagation.adoc:265
@@ -568,7 +613,11 @@ msgstr ""
 #: upstream/_guides/context-propagation.adoc:281
 #, fuzzy
 msgid "Likewise, there is a similar way to inject a configured instance of `ManagedExecutor` using the https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/latest/io/smallrye/context/api/ManagedExecutorConfig.html[`@ManagedExecutorConfig`] annotation:"
-msgstr "また、カスタムメイドの `ThreadContext` を注入することもできます。  link:https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/latest/io/smallrye/context/api/ThreadContextConfig.html[`@ThreadContextConfig`]アノテーションを使って、インジェクションポイントに"
+msgstr ""
+"また、カスタムメイドの `ThreadContext` を注入することもできます。  "
+"link:https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/"
+"latest/io/smallrye/context/api/ThreadContextConfig.html[`@ThreadContextConfig"
+"`]アノテーションを使って、インジェクションポイントに"
 
 #. type: delimited block -
 #: upstream/_guides/context-propagation.adoc:288
@@ -590,7 +639,16 @@ msgstr "ManagedExecutorとThreadContextの構成されたCDIインスタンス�
 #: upstream/_guides/context-propagation.adoc:295
 #, fuzzy
 msgid "If you need to inject the same `ManagedExecutor` or `ThreadContext` into several places and share it's capacity, you can name the instance with https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/latest/io/smallrye/context/api/NamedInstance.html[`@NamedInstance`] annotation.  `@NamedInstance` is a CDI qualifier and all injections of the same type and name will therefore share the same underlying instance.  If you also need to customize your instance, you can do so using `@ManagedExecutorConfig`/`ThreadContextConfig` annotation on one of its injection points:"
-msgstr "同じ `ManagedExecutor` や `ThreadContext` を複数の場所に注入し、その容量を共有する必要がある場合、そのインスタンスに  link:https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/latest/io/smallrye/context/api/NamedInstance.html[`@NamedInstance`] `@NamedInstance` はCDI修飾子であり、同じ型と名前のすべての注入は、したがって、同じ基礎となるインスタンスを共有します。インスタンスをカスタマイズする必要がある場合は、 `@ManagedExecutorConfig`/ `ThreadContextConfig` アノテーションを使用して、そのインジェクションポイントの1つをカスタマイズすることができます。"
+msgstr ""
+"同じ `ManagedExecutor` や `ThreadContext` "
+"を複数の場所に注入し、その容量を共有する必要がある場合、そのインスタンスに  "
+"link:https://javadoc.io/doc/io.smallrye/smallrye-context-propagation-api/"
+"latest/io/smallrye/context/api/NamedInstance.html[`@NamedInstance`] "
+"`@NamedInstance` はCDI修飾子であり、同じ型と名前のすべての注入は、したがって"
+"、同じ基礎となるインスタンスを共有します。インスタンスをカスタマイズする必要"
+"がある場合は、 `@ManagedExecutorConfig`/ `ThreadContextConfig` アノテーション"
+"を使用して、そのインジェクションポイントの1つをカスタマイズすることができます"
+"。"
 
 #. type: delimited block -
 #: upstream/_guides/context-propagation.adoc:303

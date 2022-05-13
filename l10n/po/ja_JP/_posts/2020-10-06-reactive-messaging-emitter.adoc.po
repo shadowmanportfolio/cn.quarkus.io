@@ -56,13 +56,18 @@ msgstr "エミッター - 命令型と反応型の世界の架け橋に"
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:11
 #, fuzzy
 msgid "In a https://quarkus.io/blog/kafka-avro/[previous blog post] about Kafka and Avro, we used an _emitter_ to send Kafka messages."
-msgstr "link:https://quarkus.io/blog/kafka-avro/[以前の]KafkaとAvroに関する link:https://quarkus.io/blog/kafka-avro/[ブログ記事]では、Kafkaメッセージを送信するために _エミッター_を使用しました。"
+msgstr ""
+"link:https://quarkus.io/blog/kafka-avro/[以前の]KafkaとAvroに関する "
+"link:https://quarkus.io/blog/kafka-avro/[ブログ記事]では、"
+"Kafkaメッセージを送信するために _エミッター_を使用しました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:13
 #, fuzzy
 msgid "image:/assets/images/posts/reactive-messaging-emitter/architecture.png[width=70%]"
-msgstr "image:/assets/images/posts/reactive-messaging-emitter/architecture.png[alt=architecture]"
+msgstr ""
+"image:/assets/images/posts/reactive-messaging-emitter/architecture."
+"png[alt=architecture]"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:15
@@ -80,7 +85,8 @@ msgstr "エミッターへの注入"
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:20
 #, fuzzy
 msgid "Injecting an emitter is straightforward.  You indicate the targeted channel, i.e., where do you send your messages:"
-msgstr "エミッタを注入する方法は簡単です。対象となるチャンネル、つまり、どこにメッセージを送るかを指定します。"
+msgstr "エミッタを注入する方法は簡単です。対象となるチャンネル、つまり、どこにメッセ"
+"ージを送るかを指定します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:24
@@ -92,13 +98,21 @@ msgstr ""
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:28
 #, fuzzy
 msgid "Remember that reactive messaging uses _channels_ as a primary abstraction.  They can be in-memory channels or mapped to a remote broker."
-msgstr "リアクティブ・メッセージングでは、主に _チャンネル_を抽象化して使用することを覚えておいてください。チャネルは、インメモリ・チャネルでも、リモート・ブローカーにマッピングされたものでも構いません。"
+msgstr ""
+"リアクティブ・メッセージングでは、主に _チャンネル_を抽象化して使用することを"
+"覚えておいてください。チャネルは、インメモリ・チャネルでも、リモート・ブロー"
+"カーにマッピングされたものでも構いません。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:33
 #, fuzzy
 msgid "In the previous code snippet, we inject an `Emitter<Movie>`.  It means you will send messages containing movies as payload.  So, the specified type is the payload type.  That lets you send: payloads directly (wrapped automatically in a message) or more detailed messages containing a movie as payload:"
-msgstr "先ほどのコードでは、 `Emitter<Movie>` を注入しています。これは、ムービーを含むメッセージをペイロードとして送信することを意味します。つまり、指定されたタイプはペイロードタイプとなります。これにより、次のものを送ることができます：ペイロードを直接（メッセージの中に自動的にラップする）、またはペイロードとしてムービーを含むより詳細なメッセージ。"
+msgstr ""
+"先ほどのコードでは、 `Emitter<Movie>` を注入しています。これは、ムービーを含"
+"むメッセージをペイロードとして送信することを意味します。つまり、指定されたタ"
+"イプはペイロードタイプとなります。これにより、次のものを送ることができます："
+"ペイロードを直接（メッセージの中に自動的にラップする）、またはペイロードとし"
+"てムービーを含むより詳細なメッセージ。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:37
@@ -132,13 +146,19 @@ msgstr "ペイロードの送信"
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:50
 #, fuzzy
 msgid "Sending payload is the simplest way to send data.  You just pass the payload to the `send` method like an instance of `Movie`.  Under the hood, it just creates a simple `Message` wrapping the payload."
-msgstr "ペイロードの送信は、データを送信する最も簡単な方法です。 `Movie` のインスタンスのように、ペイロードを `send` メソッドに渡すだけです。フードの下では、ペイロードをラップしたシンプルな `Message` が作成されるだけです。"
+msgstr ""
+"ペイロードの送信は、データを送信する最も簡単な方法です。 `Movie` "
+"のインスタンスのように、ペイロードを `send` "
+"メソッドに渡すだけです。フードの下では、ペイロードをラップしたシンプルな "
+"`Message` が作成されるだけです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:52
 #, fuzzy
 msgid "When used with payload, the `send` method returns a `CompletionStage` indicating if the message processing succeeded or failed:"
-msgstr "ペイロードと一緒に使用すると、 `send` メソッドは、メッセージ処理が成功したか失敗したかを示す `CompletionStage` を返します。"
+msgstr ""
+"ペイロードと一緒に使用すると、 `send` メソッドは、"
+"メッセージ処理が成功したか失敗したかを示す `CompletionStage` を返します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:63
@@ -158,7 +178,14 @@ msgstr ""
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:71
 #, fuzzy
 msgid "Processing, and will see later event the emission, happens asynchronously.  So, the returned `CompletionStage` lets you know when the message is processed.  The `CompletionStage` is completed successfully when the message is acknowledged.  Most of the time, it means that the processing has been completed smoothly, or the message has been sent to a broker successfully.  If something wrong happens, the `CompletionStage` is completed exceptionally.  The passed exception gives you an idea of the reason."
-msgstr "処理は非同期的に行われますが、これは後述するイベント「エミッション」で確認できます。そのため、返された `CompletionStage` は、メッセージがいつ処理されたかを知ることができます。メッセージが確認されると `CompletionStage` は正常に終了します。ほとんどの場合、それは処理がスムーズに完了したこと、またはメッセージが正常にブローカーに送信されたことを意味します。何か問題が起こった場合、 `CompletionStage` は例外的に完了します。渡された例外を見れば、その理由がわかります。"
+msgstr ""
+"処理は非同期的に行われますが、これは後述するイベント「エミッション」で確認で"
+"きます。そのため、返された `CompletionStage` "
+"は、メッセージがいつ処理されたかを知ることができます。"
+"メッセージが確認されると `CompletionStage` は正常に終了します。ほとんどの場合"
+"、それは処理がスムーズに完了したこと、またはメッセージが正常にブローカーに送"
+"信されたことを意味します。何か問題が起こった場合、 `CompletionStage` "
+"は例外的に完了します。渡された例外を見れば、その理由がわかります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:73
@@ -170,7 +197,13 @@ msgstr "メッセージの送信"
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:79
 #, fuzzy
 msgid "While sending payloads is more straightforward, sometimes you want to attach metadata to the message, like configuring how it should be written in Kafka, tracing information, etc.  The emitter also allows sending messages, and so attach the metadata you want.  In the following example, we configure the outbound Kafka record.  We set the key, the topic, and so on.  That way, you can dispatch messages to different topics and even decide dynamically:"
-msgstr "ペイロードの送信はより簡単ですが、Kafkaにどのように書き込むかの設定や、トレース情報など、メッセージにメタデータを添付したい場合があります。エミッターではメッセージの送信も可能なので、必要なメタデータを添付することができます。以下の例では、アウトバウンドのKafkaレコードを設定しています。キーやトピックなどを設定します。このようにして、異なるトピックにメッセージをディスパッチしたり、動的に決めることもできます。"
+msgstr ""
+"ペイロードの送信はより簡単ですが、Kafkaにどのように書き込むかの設定や、トレー"
+"ス情報など、メッセージにメタデータを添付したい場合があります。エミッターでは"
+"メッセージの送信も可能なので、必要なメタデータを添付することができます。以下"
+"の例では、アウトバウンドのKafkaレコードを設定しています。キーやトピックなどを"
+"設定します。このようにして、異なるトピックにメッセージをディスパッチしたり、"
+"動的に決めることもできます。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:87
@@ -193,19 +226,29 @@ msgstr "エミッションは非同期"
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:97
 #, fuzzy
 msgid "Emitters form a bridge between the imperative and the reactive worlds.  When you emit a message, this message is not processed immediately.  The downstream component consuming the message are part of a _Reactive Streams_.  Passing the message immediately would violate the Reactive Streams protocol.  We must be sure that the downstream components are ready to accept this message.  As a result, the emitter is not pushing the message directly, but enqueue it in a buffer used to handle the downstream capacity (requests in Reactive Streams lingo)."
-msgstr "エミッターは、命令型の世界と反応型の世界の橋渡しをします。メッセージをエミットしても、このメッセージはすぐには処理されません。メッセージを消費する下流のコンポーネントは、 _Reactive Streams_の一部です。メッセージをすぐに渡してしまうと、Reactive Streamsのプロトコルに違反してしまいます。下流のコンポーネントがこのメッセージを受け入れる準備ができていることを確認する必要があります。そのため、エミッターはメッセージを直接プッシュするのではなく、下流の容量（Reactive Streamsの用語ではリクエスト）を処理するために使用されるバッファにエンキューしています。"
+msgstr ""
+"エミッターは、命令型の世界と反応型の世界の橋渡しをします。メッセージをエミッ"
+"トしても、このメッセージはすぐには処理されません。メッセージを消費する下流の"
+"コンポーネントは、 _Reactive "
+"Streams_の一部です。メッセージをすぐに渡してしまうと、Reactive Streamsのプロ"
+"トコルに違反してしまいます。下流のコンポーネントがこのメッセージを受け入れる"
+"準備ができていることを確認する必要があります。そのため、エミッターはメッセー"
+"ジを直接プッシュするのではなく、下流の容量（Reactive Streamsの用語ではリクエ"
+"スト）を処理するために使用されるバッファにエンキューしています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:99
 #, fuzzy
 msgid "image:/assets/images/posts/reactive-messaging-emitter/buffer.png[width=90%]"
-msgstr "image:/assets/images/posts/reactive-messaging-emitter/buffer.png[alt=buffer]"
+msgstr ""
+"image:/assets/images/posts/reactive-messaging-emitter/buffer.png[alt=buffer]"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:101
 #, fuzzy
 msgid "The downstream component receives the messages according to the requests it makes, ensuring its capacity is never exceeded."
-msgstr "下流のコンポーネントは、要求に応じてメッセージを受信し、その容量を超えることはありません。"
+msgstr "下流のコンポーネントは、要求に応じてメッセージを受信し、その容量を超えること"
+"はありません。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:103
@@ -217,7 +260,16 @@ msgstr "オーバーフロー管理"
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:111
 #, fuzzy
 msgid "But with buffer comes... overflow.  If you emit too many messages and the downstream cannot keep up, the messages are stored in the buffer until it reaches its maximum capacity.  Then, you cannot emit anymore, and attempting to emit will throw exceptions.  But what can we do in this case? When injecting the emitter, you can configure an Overflow strategy.  For example, you can set the buffer size, use an unbounded buffer, drop the messages, fail, or just ignore the back pressure and let the downstream handle it.  By default, it uses a buffer, but depending on your use case, you may want to configure it differently:"
-msgstr "しかし、バッファには...オーバーフローがつきものです。メッセージを発信しすぎてダウンストリームが追いつかなくなると、メッセージはバッファが最大容量に達するまで保存されます。そうなると、それ以上は発信できなくなり、発信しようとすると例外が発生します。しかし、このような場合、どうすればよいのでしょうか？エミッタを注入する際に、Overflow戦略を設定することができます。例えば、バッファサイズを設定したり、束縛されていないバッファを使用したり、メッセージをドロップしたり、失敗したり、あるいはバックプレッシャーを無視してダウンストリームに処理させたりすることができます。デフォルトではバッファを使用しますが、ユースケースによっては別の設定をしたい場合もあります。"
+msgstr ""
+"しかし、バッファには...オーバーフローがつきものです。メッセージを発信しすぎて"
+"ダウンストリームが追いつかなくなると、メッセージはバッファが最大容量に達する"
+"まで保存されます。そうなると、それ以上は発信できなくなり、発信しようとすると"
+"例外が発生します。しかし、このような場合、どうすればよいのでしょうか？エミッ"
+"タを注入する際に、Overflow戦略を設定することができます。例えば、バッファサイ"
+"ズを設定したり、束縛されていないバッファを使用したり、メッセージをドロップし"
+"たり、失敗したり、あるいはバックプレッシャーを無視してダウンストリームに処理"
+"させたりすることができます。デフォルトではバッファを使用しますが、ユースケー"
+"スによっては別の設定をしたい場合もあります。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:118
@@ -258,13 +310,21 @@ msgstr "## まとめ"
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:134
 #, fuzzy
 msgid "This post is a brief introduction to the `Emitter` construct from Reactive Messaging.  More information is available on the https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/2.2/emitter/emitter.html[SmallRye Reactive Messaging documentation]."
-msgstr "この投稿は、Reactive Messagingの `Emitter` 構成について簡単に紹介しています。詳しい情報は link:https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/2.2/emitter/emitter.html[SmallRye Reactive Messaging]のドキュメントに掲載されています。"
+msgstr ""
+"この投稿は、Reactive Messagingの `Emitter` 構成について簡単に紹介しています。"
+"詳しい情報は link:https://smallrye.io/smallrye-reactive-messaging/"
+"smallrye-reactive-messaging/2.2/emitter/emitter.html[SmallRye Reactive "
+"Messaging]のドキュメントに掲載されています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:138
 #, fuzzy
 msgid "In the next Quarkus version (1.9), this feature will be improved with two very nice enhancements.  First, it will offer a Mutiny variant, easing the integration with Mutiny APIs.  Then, it would be possible for the Kafka case to directly emit key/value pairs without needing to use metadata."
-msgstr "次のQuarkusバージョン（1.9）では、この機能が2つの素晴らしい機能強化によって改善されます。まず、Mutinyのバリアントを提供し、Mutiny APIとの統合を容易にします。そして、Kafkaのケースでは、メタデータを使用しなくても、キーと値のペアを直接エミットすることが可能になります。"
+msgstr ""
+"次のQuarkusバージョン（1.9）では、この機能が2つの素晴らしい機能強化によって改"
+"善されます。まず、Mutinyのバリアントを提供し、Mutiny APIとの統合を容易にしま"
+"す。そして、Kafkaのケースでは、メタデータを使用しなくても、キーと値のペアを直"
+"接エミットすることが可能になります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-06-reactive-messaging-emitter.adoc:139

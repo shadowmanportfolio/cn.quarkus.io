@@ -148,7 +148,11 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_versions/main/guides/security-keycloak-authorization.adoc:71
 #, fuzzy
 msgid "This command generates a project, importing the `keycloak-authorization` extension which is an implementation of a Keycloak Adapter for Quarkus applications and provides all the necessary capabilities to integrate with a Keycloak Server and perform bearer token authorization."
-msgstr "このコマンドは、Quarkusアプリケーション用のKeycloakアダプターの実装であり、Keycloakサーバーと統合してベアラートークン認証を実行するために必要なすべての機能を提供する `keycloak-authorization` エクステンションをインポートして、Mavenプロジェクトを生成します。"
+msgstr ""
+"このコマンドは、Quarkusアプリケーション用のKeycloakアダプターの実装であり、Ke"
+"ycloakサーバーと統合してベアラートークン認証を実行するために必要なすべての機"
+"能を提供する `keycloak-authorization` "
+"エクステンションをインポートして、Mavenプロジェクトを生成します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-keycloak-authorization.adoc:74
@@ -420,7 +424,10 @@ msgstr ""
 #: upstream/_versions/main/guides/security-keycloak-authorization.adoc:209
 #, fuzzy
 msgid "You should be able to access your Keycloak Server at https://localhost:8543[localhost:8543]."
-msgstr "Keycloakサーバーには、 link:http://localhost:8180/auth[localhost:8180/auth] または link:https://localhost:8543/auth[localhost:8543/auth] でアクセスできるはずです。"
+msgstr ""
+"Keycloakサーバーには、 link:http://localhost:8180/auth[localhost:8180/auth] "
+"または link:https://localhost:8543/auth[localhost:8543/auth] "
+"でアクセスできるはずです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-keycloak-authorization.adoc:212

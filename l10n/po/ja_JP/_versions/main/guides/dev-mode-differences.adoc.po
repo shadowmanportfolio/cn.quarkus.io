@@ -23,7 +23,8 @@ msgstr ""
 #: upstream/_versions/main/guides/dev-mode-differences.adoc:6
 #, fuzzy, no-wrap
 msgid "How dev-mode differs from a production application"
-msgstr "このドキュメントでは、Quarkusのdev-modeが本番アプリケーションとどのように異なるかを説明します。"
+msgstr "このドキュメントでは、Quarkusのdev-"
+"modeが本番アプリケーションとどのように異なるかを説明します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/dev-mode-differences.adoc:11

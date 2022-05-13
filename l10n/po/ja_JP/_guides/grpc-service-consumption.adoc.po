@@ -46,7 +46,8 @@ msgstr "スタブとインジェクション"
 #: upstream/_guides/grpc-service-consumption.adoc:19
 #, fuzzy
 msgid "gRPC generation provides several stubs, providing different ways to consume a gRPC service.  You can inject:"
-msgstr "gRPCの生成には、いくつかのスタブが用意されており、gRPCサービスを利用するためのさまざまな方法を提供しています。注入することができます。"
+msgstr "gRPCの生成には、いくつかのスタブが用意されており、gRPCサービスを利用するため"
+"のさまざまな方法を提供しています。注入することができます。"
 
 #. type: Plain text
 #: upstream/_guides/grpc-service-consumption.adoc:21
@@ -140,19 +141,30 @@ msgstr "}\n"
 #: upstream/_guides/grpc-service-consumption.adoc:53
 #, fuzzy
 msgid "A gRPC client injection point must be annotated with the `@GrpcClient` qualifier. This qualifier can be used to specify the name that is used to configure the underlying gRPC client. For example, if you set it to `hello-service`, configuring the host of the service is done using the `quarkus.grpc.clients.**hello-service**.host`."
-msgstr "gRPCクライアントのインジェクションポイントには、 `@GrpcClient` の修飾子を付ける必要があります。この修飾子は、基礎となるgRPCクライアントの設定に使用される名前を指定するために使用できます。たとえば、この修飾子を `hello-service` に設定すると、サービスのホストを設定するのに `quarkus.grpc.clients. *hello-service*.host`."
+msgstr ""
+"gRPCクライアントのインジェクションポイントには、 `@GrpcClient` の修飾子を付け"
+"る必要があります。この修飾子は、基礎となるgRPCクライアントの設定に使用される"
+"名前を指定するために使用できます。たとえば、この修飾子を `hello-service` "
+"に設定すると、サービスのホストを設定するのに `quarkus.grpc.clients. *hello-"
+"service*.host`."
 
 #. type: Plain text
 #: upstream/_guides/grpc-service-consumption.adoc:54
 #, fuzzy
 msgid "If the name is not specified via the `GrpcClient#value()` then the field name is used instead, e.g. `helloService` in this particular case."
-msgstr "`GrpcClient#value()` で名前が指定されていない場合は、代わりにフィールド名が使用されます。例えば、この例では `helloService` です。"
+msgstr ""
+"`GrpcClient#value()` "
+"で名前が指定されていない場合は、代わりにフィールド名が使用されます。例えば、"
+"この例では `helloService` です。"
 
 #. type: Plain text
 #: upstream/_guides/grpc-service-consumption.adoc:57
 #, fuzzy
 msgid "The stub class names are derived from the service name used in your `proto` file.  For example, if you use `Greeter` as a service name as in:"
-msgstr "スタブクラス名は、 `proto` ファイルで使用されているサービス名に由来します。例えば、 `Greeter` のようにサービス名として使用している場合。"
+msgstr ""
+"スタブクラス名は、 `proto` "
+"ファイルで使用されているサービス名に由来します。例えば、 `Greeter` "
+"のようにサービス名として使用している場合。"
 
 #. type: delimited block -
 #: upstream/_guides/grpc-service-consumption.adoc:61
@@ -173,7 +185,10 @@ msgstr ""
 #: upstream/_guides/grpc-service-consumption.adoc:68
 #, fuzzy
 msgid "Then the service interface name is: `hello.Greeter`, the Mutiny stub name is: `hello.MutinyGreeterGrpc.MutinyGreeterStub` and the blocking stub name is: `hello.GreeterGrpc.GreeterBlockingStub`."
-msgstr "サービスインターフェース名は「 `hello.Greeter` 」、Mutiny stub名は「 `hello.MutinyGreeterGrpc.MutinyGreeterStub` 」、Blocking stub名は「 `hello.GreeterGrpc.GreeterBlockingStub` 」となります。"
+msgstr ""
+"サービスインターフェース名は「 `hello.Greeter` 」、Mutiny stub名は「 `hello."
+"MutinyGreeterGrpc.MutinyGreeterStub` 」、Blocking stub名は「 `hello."
+"GreeterGrpc.GreeterBlockingStub` 」となります。"
 
 #. type: Title ==
 #: upstream/_guides/grpc-service-consumption.adoc:69
@@ -251,7 +266,10 @@ msgstr ""
 #: upstream/_guides/grpc-service-consumption.adoc:100
 #, fuzzy
 msgid "The service name is derived from the injection point - the field name is used. The `quarkus.grpc.clients.hello.host` property must be set."
-msgstr "サービス名はインジェクションポイントに由来する - フィールド名を使用しています。 `quarkus.grpc.clients.hello.host` プロパティの設定が必要です。"
+msgstr ""
+"サービス名はインジェクションポイントに由来する - "
+"フィールド名を使用しています。 `quarkus.grpc.clients.hello.host` "
+"プロパティの設定が必要です。"
 
 #. type: Title ===
 #: upstream/_guides/grpc-service-consumption.adoc:101
@@ -427,13 +445,17 @@ msgstr "アプリケーションにインジェクトする各gRPCサービス�
 #: upstream/_guides/grpc-service-consumption.adoc:207
 #, fuzzy
 msgid "The `client-name` is the name set in the `@GrpcClient` or derived from the injection point if not explicitly defined."
-msgstr "`client-name` は、 `@GrpcClient` で設定された名称、または明示的に定義されていない場合は射出口から派生した名称です。"
+msgstr ""
+"`client-name` は、 `@GrpcClient` で設定された名称、または明示的に定義されてい"
+"ない場合は射出口から派生した名称です。"
 
 #. type: Plain text
 #: upstream/_guides/grpc-service-consumption.adoc:210
 #, fuzzy
 msgid "The following examples uses _hello_ as the client name.  Don't forget to replace it with the name you used in in the `@GrpcClient` annotation."
-msgstr "以下の例では、クライアント名として _hello_を使用しています。 `@GrpcClient` アノテーションで使用した名前に置き換えることをお忘れなく。"
+msgstr ""
+"以下の例では、クライアント名として _hello_を使用しています。 `@GrpcClient` "
+"アノテーションで使用した名前に置き換えることをお忘れなく。"
 
 #. type: Title ===
 #: upstream/_guides/grpc-service-consumption.adoc:211
@@ -504,7 +526,12 @@ msgstr "クライアントの締め切り"
 #: upstream/_guides/grpc-service-consumption.adoc:246
 #, fuzzy
 msgid "It's always reasonable to set a deadline (timeout) for a gRPC client, i.e. to specify a duration of time after which the RPC times out and the client receives the status error `DEADLINE_EXCEEDED`.  You can specify the deadline via the `quarkus.grpc.clients.\"service-name\".deadline` configuration property, e.g.:"
-msgstr "gRPCクライアントにデッドライン（タイムアウト）を設定することは常に合理的です。つまり、RPCがタイムアウトしてクライアントがステータスエラー `DEADLINE_EXCEEDED` を受け取るまでの時間を指定することです。デッドラインは、 `quarkus.grpc.clients.\"service-name\".deadline` の設定プロパティで指定できます。"
+msgstr ""
+"gRPCクライアントにデッドライン（タイムアウト）を設定することは常に合理的です"
+"。つまり、RPCがタイムアウトしてクライアントがステータスエラー "
+"`DEADLINE_EXCEEDED` を受け取るまでの時間を指定することです。デッドラインは、 "
+"`quarkus.grpc.clients.\"service-name\".deadline` "
+"の設定プロパティで指定できます。"
 
 #. type: delimited block -
 #: upstream/_guides/grpc-service-consumption.adoc:251
@@ -530,13 +557,15 @@ msgstr "gRPC ヘッダー"
 #: upstream/_guides/grpc-service-consumption.adoc:257
 #, fuzzy
 msgid "Similarly to HTTP, alongside the message, gRPC calls can carry headers.  Headers can be useful e.g. for authentication."
-msgstr "HTTPと同様に、gRPCコールには、メッセージの他にヘッダーを付けることができます。ヘッダーは、認証などに役立ちます。"
+msgstr "HTTPと同様に、gRPCコールには、メッセージの他にヘッダーを付けることができます"
+"。ヘッダーは、認証などに役立ちます。"
 
 #. type: Plain text
 #: upstream/_guides/grpc-service-consumption.adoc:259
 #, fuzzy
 msgid "To set headers for a gRPC call, create a client with headers attached and then perform the call on this client:"
-msgstr "gRPCコールにヘッダを設定するには、ヘッダを添付したクライアントを作成し、このクライアントでコールを実行します。"
+msgstr "gRPCコールにヘッダを設定するには、ヘッダを添付したクライアントを作成し、この"
+"クライアントでコールを実行します。"
 
 #. type: delimited block -
 #: upstream/_guides/grpc-service-consumption.adoc:262
@@ -603,7 +632,8 @@ msgstr "`extraHeaders` を付けたまま通話ができるようにクライア
 #: upstream/_guides/grpc-service-consumption.adoc:290
 #, fuzzy
 msgid "Perform the call with the altered client. The original client remains unmodified"
-msgstr "変更したクライアントで通話を行います。オリジナルのクライアントは変更されないまま"
+msgstr "変更したクライアントで通話を行います。オリジナルのクライアントは変更されない"
+"まま"
 
 #. type: Plain text
 #: upstream/_guides/grpc-service-consumption.adoc:292
@@ -621,7 +651,15 @@ msgstr "クライアントインターセプター"
 #: upstream/_guides/grpc-service-consumption.adoc:299
 #, fuzzy
 msgid "A gRPC client interceptor can be implemented by a CDI bean that also implements the `io.grpc.ClientInterceptor` interface.  You can annotate an injected client with `@io.quarkus.grpc.RegisterClientInterceptor` to register the specified interceptor for the particular client instance.  The `@RegisterClientInterceptor` annotation is repeatable.  Alternatively, if you want to apply the interceptor to any injected client then annotate the interceptor bean with `@io.quarkus.grpc.GlobalInterceptor`."
-msgstr "gRPC クライアント インターセプターは、 `io.grpc.ClientInterceptor` インターフェースも実装する CDI Bean で実装できます。注入されたクライアントに `@io.quarkus.grpc.RegisterClientInterceptor` をアノテーションすることで、特定のクライアントインスタンスに対して指定されたインターセプターを登録できます。 `@RegisterClientInterceptor` のアノテーションは繰り返し使用できます。また、注入されたクライアントにインターセプターを適用したい場合は、インターセプターBeanに `@io.quarkus.grpc.GlobalInterceptor` をアノテーションします。"
+msgstr ""
+"gRPC クライアント インターセプターは、 `io.grpc.ClientInterceptor` "
+"インターフェースも実装する CDI Bean で実装できます。注入されたクライアントに "
+"`@io.quarkus.grpc.RegisterClientInterceptor` をアノテーションすることで、特定"
+"のクライアントインスタンスに対して指定されたインターセプターを登録できます。 "
+"`@RegisterClientInterceptor` のアノテーションは繰り返し使用できます。また、注"
+"入されたクライアントにインターセプターを適用したい場合は、"
+"インターセプターBeanに `@io.quarkus.grpc.GlobalInterceptor` "
+"をアノテーションします。"
 
 #. type: Block title
 #: upstream/_guides/grpc-service-consumption.adoc:300
@@ -767,7 +805,11 @@ msgstr "メトリクスの収集を可能にする"
 #: upstream/_guides/grpc-service-consumption.adoc:369
 #, fuzzy
 msgid "gRPC client metrics are automatically enabled when the application also uses the xref:micrometer.adoc[`quarkus-micrometer`] extension.  Micrometer collects the metrics of all the gRPC clients used by the application."
-msgstr "アプリケーションがエクステンションを使用している場合、gRPCクライアント・メトリクスが自動的に有効になります。  link:micrometer.html[`quarkus-micrometer`]エクステンションを使用しています。Micrometerは、アプリケーションが使用するすべてのgRPCクライアントのメトリクスを収集します。"
+msgstr ""
+"アプリケーションがエクステンションを使用している場合、gRPCクライアント・メト"
+"リクスが自動的に有効になります。  link:micrometer.html[`quarkus-micrometer`]"
+"エクステンションを使用しています。Micrometerは、アプリケーションが使用するす"
+"べてのgRPCクライアントのメトリクスを収集します。"
 
 #. type: Plain text
 #: upstream/_guides/grpc-service-consumption.adoc:371
@@ -810,7 +852,9 @@ msgstr "メトリクス収集の無効化"
 #: upstream/_guides/grpc-service-consumption.adoc:394
 #, fuzzy
 msgid "To disable the gRPC client metrics when `quarkus-micrometer` is used, add the following property to the application configuration:"
-msgstr "`quarkus-micrometer` を使用しているときに gRPC クライアントメトリクスを無効にするには、アプリケーションの設定に以下のプロパティを追加します。"
+msgstr ""
+"`quarkus-micrometer` を使用しているときに gRPC クライアントメトリクスを無効に"
+"するには、アプリケーションの設定に以下のプロパティを追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/grpc-service-consumption.adoc:398

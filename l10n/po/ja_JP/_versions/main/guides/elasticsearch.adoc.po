@@ -97,7 +97,12 @@ msgstr "代わりに高レベルクライアントを使いたい場合は、 `e
 #: upstream/_versions/main/guides/elasticsearch.adoc:46
 #, fuzzy
 msgid "We use the `resteasy-reactive-jackson` extension here and not the JSON-B variant because we will use the Vert.x `JsonObject` helper to serialize/deserialize our objects to/from Elasticsearch and it uses Jackson under the hood."
-msgstr "ここでは JSON-B などではなく `resteasy-jackson` エクステンションを使用しています。これは Vert.x `JsonObject` ヘルパーを使用して Elasticsearch との間でオブジェクトをシリアライズ/デシリアライズし、Jackson を使用するからです。"
+msgstr ""
+"ここでは JSON-B などではなく `resteasy-jackson` "
+"エクステンションを使用しています。これは Vert.x `JsonObject` "
+"ヘルパーを使用して Elasticsearch "
+"との間でオブジェクトをシリアライズ/デシリアライズし、Jackson "
+"を使用するからです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/elasticsearch.adoc:49

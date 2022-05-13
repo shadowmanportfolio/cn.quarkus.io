@@ -38,7 +38,8 @@ msgstr "ポスト"
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:1
 #, fuzzy, no-wrap
 msgid "A handy guide to Quarkus sessions at Red Hat's free Summit Virtual Experience."
-msgstr "Red Hatが開催する無料のSummit Virtual ExperienceでのQuarkusセッションの便利なガイドです。"
+msgstr "Red Hatが開催する無料のSummit Virtual "
+"ExperienceでのQuarkusセッションの便利なガイドです。"
 
 #. type: YAML Front Matter: tags
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:1
@@ -56,13 +57,20 @@ msgstr "Red Hat SummitでQuarkusの無料セッションを実施"
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:11
 #, fuzzy
 msgid "In case you haven't heard, next week's https://www.redhat.com/en/summit[Red Hat Summit] is an online \"Virtual Experience\" with all of its content freely available (with registration)!"
-msgstr "ご存知ないかもしれませんが、来週の link:https://www.redhat.com/en/summit[Red Hat Summit] はオンラインの「バーチャル体験」で、すべてのコンテンツが自由に利用できるようになっています(登録制)!"
+msgstr ""
+"ご存知ないかもしれませんが、来週の link:https://www.redhat.com/en/summit[Red "
+"Hat Summit] はオンラインの「バーチャル体験」で、すべてのコンテンツが自由に利"
+"用できるようになっています(登録制)!"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:13
 #, fuzzy
 msgid "Here is a handy session guide for the <<keynote>>, <<technical>>, and <<stories>>, where Quarkus is either covered or is the central topic. Registration starts Monday."
-msgstr "ここでは、Quarkusが取り上げられている、または中心的なトピックである link:#keynote[[keynote]] 、[ link:#technical[technical]、] link:#stories[[stories]] の便利なセッションガイドをご紹介します。登録は月曜日からです。"
+msgstr ""
+"ここでは、Quarkusが取り上げられている、または中心的なトピックである "
+"link:#keynote[[keynote]] 、[ link:#technical[technical]、] "
+"link:#stories[[stories]] "
+"の便利なセッションガイドをご紹介します。登録は月曜日からです。"
 
 #. type: Title ==
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:14
@@ -114,7 +122,9 @@ msgstr "セッション #3 - プライベートデータセンターからエッ
 msgid ""
 "Wednesday 9:00am EDT +\n"
 "< ---- https://www.redhat.com/en/summit/agenda/agenda-at-a-glance[link] ---- >"
-msgstr "水曜日 午前9時00分 EDT < ---- link:https://www.redhat.com/en/summit/agenda/agenda-at-a-glance[リンク ----] >"
+msgstr ""
+"水曜日 午前9時00分 EDT < ---- link:https://www.redhat.com/en/summit/agenda/"
+"agenda-at-a-glance[リンク ----] >"
 
 #. type: Title ==
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:24
@@ -134,7 +144,9 @@ msgstr "Red Hatのミドルウェア戦略とJavaの未来"
 msgid ""
 "< ----\n"
 "https://summit.redhat.com/conference/sessions/details/7be205cc-0422-4b9a-8e10-e34fc4d941ca?sb=false[link] ---- >"
-msgstr "< ---- link:https://summit.redhat.com/conference/sessions/details/7be205cc-0422-4b9a-8e10-e34fc4d941ca?sb=false[リンク ----] >"
+msgstr ""
+"< ---- link:https://summit.redhat.com/conference/sessions/details/"
+"7be205cc-0422-4b9a-8e10-e34fc4d941ca?sb=false[リンク ----] >"
 
 #. type: Table
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:32
@@ -296,7 +308,8 @@ msgstr "4月29日 (水) 11:00 SGT"
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:96
 #, fuzzy, no-wrap
 msgid "Serverless COBOL: Migrating legacy copybooks to a containerized cloud-native environment"
-msgstr "サーバーレスCOBOL:レガシーコピーブックをコンテナー化されたクラウドネイティブ環境に移行する"
+msgstr "サーバーレスCOBOL:レガシーコピーブックをコンテナー化されたクラウドネイティブ"
+"環境に移行する"
 
 #. type: Table
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:102
@@ -313,7 +326,8 @@ msgstr "4月29日 (水) 10:00 am CEST"
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:102
 #, fuzzy, no-wrap
 msgid "Why building intelligent cloud-native business applications is easier with Kogito"
-msgstr "Kogitoでインテリジェントなクラウドネイティブビジネスアプリケーションを簡単に構築できる理由"
+msgstr "Kogitoでインテリジェントなクラウドネイティブビジネスアプリケーションを簡単に"
+"構築できる理由"
 
 #. type: Table
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:107
@@ -358,13 +372,16 @@ msgstr "Vault on OpenShiftを利用したマイクロサービスのクラウド
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:121
 #, fuzzy, no-wrap
 msgid "< ---- https://summit.redhat.com/conference/sessions/details/6b988f8d-ce9c-448a-830b-3d9f536eb520?sb=false[link] ---- >"
-msgstr "< ---- link:https://summit.redhat.com/conference/sessions/details/6b988f8d-ce9c-448a-830b-3d9f536eb520?sb=false[リンク ----] >"
+msgstr ""
+"< ---- link:https://summit.redhat.com/conference/sessions/details/6b988f8d-"
+"ce9c-448a-830b-3d9f536eb520?sb=false[リンク ----] >"
 
 #. type: Table
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:121
 #, fuzzy, no-wrap
 msgid "Solve the unsolvable: Why artificial intelligent systems can solve planning problems better than humans"
-msgstr "解決不可能な問題を解決する人工知能システムが人間よりも計画問題を解決できる理由"
+msgstr "解決不可能な問題を解決する人工知能システムが人間よりも計画問題を解決できる理"
+"由"
 
 #. type: Table
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:126
@@ -532,7 +549,9 @@ msgstr "BBVAで意思決定の自動化をクラウド型、FaaS型に変革"
 #: upstream/_posts/2020-04-24-quarkus-summit-2020.adoc:193
 #, fuzzy, no-wrap
 msgid "< ---- https://summit.redhat.com/conference/sessions/details/b007a212-3342-4ca3-9d25-8adf54b93def?sb=false[link] ---- >"
-msgstr "< ---- link:https://summit.redhat.com/conference/sessions/details/b007a212-3342-4ca3-9d25-8adf54b93def?sb=false[リンク ----] >"
+msgstr ""
+"< ---- link:https://summit.redhat.com/conference/sessions/details/"
+"b007a212-3342-4ca3-9d25-8adf54b93def?sb=false[リンク ----] >"
 
 #, fuzzy
 #~ msgid "---\n"

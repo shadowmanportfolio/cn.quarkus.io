@@ -29,7 +29,10 @@ msgstr "Spring Cloud Config Serverからのプロパティの読み込み"
 #: upstream/_guides/spring-cloud-config-client.adoc:11
 #, fuzzy
 msgid "This guide explains how your Quarkus application can read configuration properties at runtime from the https://cloud.spring.io/spring-cloud-config[Spring Cloud Config Server]."
-msgstr "このガイドでは、Quarkusアプリケーションが実行時に link:https://cloud.spring.io/spring-cloud-config[Spring Cloud Config Server]から構成プロパティを読み取る方法を説明します。"
+msgstr ""
+"このガイドでは、Quarkusアプリケーションが実行時に link:https://cloud.spring."
+"io/spring-cloud-config[Spring Cloud Config "
+"Server]から構成プロパティを読み取る方法を説明します。"
 
 #. type: Title ==
 #: upstream/_guides/spring-cloud-config-client.adoc:12
@@ -58,7 +61,13 @@ msgstr "Config Serverの起動"
 #: upstream/_guides/spring-cloud-config-client.adoc:24
 #, fuzzy
 msgid "To stand up the Config Server required for this guide, please follow the instructions outlined https://github.com/spring-guides/gs-centralized-configuration#stand-up-a-config-server[here].  The end result of that process is a running Config Server that will provide the `Hello world` value for a configuration property named `message` when the application querying the server is named `a-bootiful-client`."
-msgstr "このガイドに必要なコンフィグサーバーを立ち上げるには、 link:https://github.com/spring-guides/gs-centralized-configuration#stand-up-a-config-server[ここで]説明した手順に従ってください。このプロセスの最終結果は、実行中のConfig Serverであり、サーバに問い合わせるアプリケーションの名前が `a-bootiful-client` である場合に、 `message` という名前の構成プロパティに `Hello world` という値を提供します。"
+msgstr ""
+"このガイドに必要なコンフィグサーバーを立ち上げるには、 link:https://github."
+"com/spring-guides/gs-centralized-configuration#stand-up-a-config-"
+"server[ここで]説明した手順に従ってください。このプロセスの最終結果は、"
+"実行中のConfig Serverであり、サーバに問い合わせるアプリケーションの名前が `a"
+"-bootiful-client` である場合に、 `message` という名前の構成プロパティに `"
+"Hello world` という値を提供します。"
 
 #. type: Title ==
 #: upstream/_guides/spring-cloud-config-client.adoc:25
@@ -75,13 +84,18 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_guides/spring-cloud-config-client.adoc:34
 #, fuzzy
 msgid "This command generates a project which imports the `spring-cloud-config-client` extension."
-msgstr "このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-cloud-config-client` エクステンションをインポートします。"
+msgstr ""
+"このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-"
+"cloud-config-client` エクステンションをインポートします。"
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:37
 #, fuzzy
 msgid "If you already have your Quarkus project configured, you can add the `spring-cloud-config-client` extension to your project by running the following command in your project base directory:"
-msgstr "すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレクトリで以下のコマンドを実行することで、 `spring-cloud-config-client` エクステンションをプロジェクトに追加することができます。"
+msgstr ""
+"すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレク"
+"トリで以下のコマンドを実行することで、 `spring-cloud-config-client` "
+"エクステンションをプロジェクトに追加することができます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:42
@@ -127,7 +141,10 @@ msgstr "GreetingController"
 #: upstream/_guides/spring-cloud-config-client.adoc:62
 #, fuzzy
 msgid "First, create a simple `GreetingResource` JAX-RS resource in the `src/main/java/org/acme/spring/cloud/config/client/GreetingResource.java` file that looks like:"
-msgstr "Quarkus Mavenプラグインは、 `GreetingResource` JAX-RSリソースを `src/main/java/org/acme/spring/cloud/config/client/GreetingResource.java` ファイル内に以下のように自動生成しました。"
+msgstr ""
+"Quarkus Mavenプラグインは、 `GreetingResource` JAX-RSリソースを `src/main/"
+"java/org/acme/spring/cloud/config/client/GreetingResource.java` "
+"ファイル内に以下のように自動生成しました。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-cloud-config-client.adoc:66
@@ -219,7 +236,10 @@ msgstr "アプリケーションの設定"
 #: upstream/_guides/spring-cloud-config-client.adoc:113
 #, fuzzy
 msgid "Quarkus provides various configuration knobs under the `quarkus.spring-cloud-config` root. For the purposes of this guide, our Quarkus application is going to be configured in `application.properties` as follows:"
-msgstr "Quarkusでは、 `quarkus.spring-cloud-config` ルートに様々な設定ノブが用意されています。このガイドでは、 `application.properties` 、Quarkusアプリケーションを以下のように設定します。"
+msgstr ""
+"Quarkusでは、 `quarkus.spring-cloud-config` "
+"ルートに様々な設定ノブが用意されています。このガイドでは、 `application."
+"properties` 、Quarkusアプリケーションを以下のように設定します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-cloud-config-client.adoc:122
@@ -249,13 +269,16 @@ msgstr "アプリケーションの設定"
 #: upstream/_guides/spring-cloud-config-client.adoc:131
 #, fuzzy
 msgid "Open your browser to http://localhost:8080/greeting."
-msgstr "アプリケーションを実行するには、次の手順を実行します: `./mvnw compile quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
+msgstr ""
+"アプリケーションを実行するには、次の手順を実行します: `./mvnw compile "
+"quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:133
 #, fuzzy
 msgid "The result should be: `Hello world` as it is the value obtained from the Spring Cloud Config server."
-msgstr "結果は、Spring Cloud Configサーバから取得した値であるため、 `Hello world` となります。"
+msgstr "結果は、Spring Cloud Configサーバから取得した値であるため、 `Hello world` "
+"となります。"
 
 #. type: Title ==
 #: upstream/_guides/spring-cloud-config-client.adoc:134
@@ -267,7 +290,9 @@ msgstr "アプリケーションをネイティブ実行可能ファイルとし
 #: upstream/_guides/spring-cloud-config-client.adoc:137
 #, fuzzy
 msgid "You can of course create a native image using the instructions of the xref:building-native-image.adoc[Building a native executable guide]."
-msgstr "もちろん、 link:building-native-image.html[「Building a native executable」]の手順でネイティブイメージを作成することもできます。"
+msgstr ""
+"もちろん、 link:building-native-image.html[「Building a native "
+"executable」]の手順でネイティブイメージを作成することもできます。"
 
 #. type: Title ==
 #: upstream/_guides/spring-cloud-config-client.adoc:138
@@ -314,7 +339,8 @@ msgstr "link:spring-security.html[Quarkus - Spring Securityのエクステンシ
 #: upstream/_guides/spring-cloud-config-client.adoc:148
 #, fuzzy
 msgid "xref:spring-boot-properties.adoc[Quarkus - Extension for Spring Boot properties]"
-msgstr "link:spring-boot-properties.html[Quarkus - Spring Bootプロパティ用のエクステンション]"
+msgstr "link:spring-boot-properties.html[Quarkus - Spring "
+"Bootプロパティ用のエクステンション]"
 
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:149

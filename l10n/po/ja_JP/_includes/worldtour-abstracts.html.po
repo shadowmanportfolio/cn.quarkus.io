@@ -22,7 +22,12 @@ msgstr "Quarkus ワールドツアー - JUG プロモーション資料"
 #: upstream/_includes/worldtour-abstracts.html:5
 #, fuzzy
 msgid "These materials are for JUGs who have tour dates booked and want access to promotional materials to use to create excitement and drum up attendance. We've written a couple versions of the session abstracts so you could find one that fits your JUGs personality, or go for it and create your own! We've also created some graphic materials for social promotions a well."
-msgstr "これらの資料は、ツアーの日程が決まっていて、盛り上げて参加者を増やすためのプロモーション資料が欲しいJUGのためのものです。セッションのアブストラクトにはいくつかのバージョンが用意されているので、あなたのJUGの個性に合ったものを見つけてください。また、ソーシャルプロモーション用のグラフィック素材も用意しました。"
+msgstr ""
+"これらの資料は、ツアーの日程が決まっていて、盛り上げて参加者を増やすためのプ"
+"ロモーション資料が欲しいJUGのためのものです。セッションのアブストラクトにはい"
+"くつかのバージョンが用意されているので、あなたのJUGの個性に合ったものを見つけ"
+"てください。また、ソーシャルプロモーション用のグラフィック素材も用意しました"
+"。"
 
 #. type: Content of: <div><div><div><h3>
 #: upstream/_includes/worldtour-abstracts.html:14
@@ -39,25 +44,37 @@ msgstr "アブストラクトA - すべてのロックンロールとビッグ�
 #: upstream/_includes/worldtour-abstracts.html:16
 #, fuzzy
 msgid "In the spirit of the times, the Quarkus Team virtually presents a big, loud, and bold, rock & roll mega-stadium tour."
-msgstr "時代の流れに乗って、Quarkus Teamがバーチャルに贈る、大きくて、うるさくて、大胆な、ロックンロール・メガスタジアム・ツアー。"
+msgstr "時代の流れに乗って、Quarkus Teamがバーチャルに贈る、大きくて、うるさくて、大"
+"胆な、ロックンロール・メガスタジアム・ツアー。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/worldtour-abstracts.html:17
 #, fuzzy
 msgid "For the last 25 years, Java has performed for organizations across the world but you've never seen anything like this. We'll cover all the classics like \"Start Me Up\" and \"Living' on a VM\" and some new jams like \"Stairway to Native\" and \"Sweet JPA of Mine\" and more."
-msgstr "この25年間、Javaは世界中の組織のために演奏してきましたが、このようなものは見たことがありません。Start Me Up \"や \"Living' on a VM \"などの定番曲から、\"Stairway to Native \"や \"Sweet JPA of Mine \"などの新曲まで、幅広くカバーします。"
+msgstr ""
+"この25年間、Javaは世界中の組織のために演奏してきましたが、このようなものは見"
+"たことがありません。Start Me Up \"や \"Living' on a VM \"などの定番曲から、"
+"\"Stairway to Native \"や \"Sweet JPA of Mine \"などの新曲まで"
+"、幅広くカバーします。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/worldtour-abstracts.html:18
 #, fuzzy
 msgid "In this session the Quarkus Team will give you a unique, hands-on experience: An introduction to Quarkus, a follow-along hands-on demo or two and then a Q&A with some of the band, umm, developers involved."
-msgstr "このセッションでは、Quarkusチームがユニークなハンズオン体験を提供します。このセッションでは、Quarkusの紹介、ハンズオンデモ、そして開発者との質疑応答が行われます。"
+msgstr ""
+"このセッションでは、Quarkusチームがユニークなハンズオン体験を提供します。この"
+"セッションでは、Quarkusの紹介、ハンズオンデモ、そして開発者との質疑応答が行わ"
+"れます。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/worldtour-abstracts.html:19
 #, fuzzy
 msgid "So join us as we explore how Quarkus helps Java developers everywhere to be more productive, create modern masterpieces and, well, have more fun: 90 odd minutes of technical discussion, some live coding and a Q&A - it’s going to be a blast."
-msgstr "そこで、Quarkusがどのようにして世界中のJava開発者の生産性を向上させ、最新の傑作を作り、そしてより楽しむことができるのかを探るために参加してください。90分ほどの技術的なディスカッション、ライブコーディング、Q&amp;Aなど、盛りだくさんの内容になっています。"
+msgstr ""
+"そこで、Quarkusがどのようにして世界中のJava開発者の生産性を向上させ、最新の傑"
+"作を作り、そしてより楽しむことができるのかを探るために参加してください。90分"
+"ほどの技術的なディスカッション、ライブコーディング、Q&amp;Aなど、盛りだくさん"
+"の内容になっています。"
 
 #. type: Content of: <div><div><div><br><br><p>
 #: upstream/_includes/worldtour-abstracts.html:20
@@ -88,25 +105,35 @@ msgstr "Quarkus ワールドツアーへようこそ。"
 #: upstream/_includes/worldtour-abstracts.html:25
 #, fuzzy
 msgid "A unique experience with access to Quarkus experts designed to help you get started with Java in a Kubernetes world."
-msgstr "Kubernetesの世界でJavaを使い始めるのに役立つように設計された、Quarkusのエキスパートにアクセスできるユニークな体験です。"
+msgstr "Kubernetesの世界でJavaを使い始めるのに役立つように設計された、Quarkusのエキス"
+"パートにアクセスできるユニークな体験です。"
 
 #. type: Content of: <div><div><div><br><br><p>
 #: upstream/_includes/worldtour-abstracts.html:26
 #, fuzzy
 msgid "Quarkus is the rising star for Kube Native Java as it re-imagines the Java stack to give you the performance characteristics and developer experience you need to create modern, high performing applications. Quarkus helps you use your existing skills and code in new ways and greatly reduces the technical burden when moving to a Kubernetes-centric environment."
-msgstr "Quarkusは、Kube Native Javaの新星です。Javaスタックを再構築することで、最新の高性能なアプリケーションを作成するために必要なパフォーマンス特性と開発者エクスペリエンスを提供します。Quarkusは、既存のスキルやコードを新しい方法で使用することができ、Kubernetesを中心とした環境に移行する際の技術的負担を大幅に軽減します。"
+msgstr ""
+"Quarkusは、Kube Native Javaの新星です。Javaスタックを再構築することで、最新の"
+"高性能なアプリケーションを作成するために必要なパフォーマンス特性と開発者エク"
+"スペリエンスを提供します。Quarkusは、既存のスキルやコードを新しい方法で使用す"
+"ることができ、Kubernetesを中心とした環境に移行する際の技術的負担を大幅に軽減"
+"します。"
 
 #. type: Content of: <div><div><div><br><br><p>
 #: upstream/_includes/worldtour-abstracts.html:27
 #, fuzzy
 msgid "Join us as we explore how Quarkus helps Java developers everywhere to be more productive, create modern masterpieces and, have a little bit more fun."
-msgstr "Quarkusがどのようにして世界中のJava開発者の生産性を向上させ、最新の傑作を生み出し、さらには少しでも楽しい時間を過ごすことができるのか、一緒に考えてみましょう。"
+msgstr ""
+"Quarkusがどのようにして世界中のJava開発者の生産性を向上させ、最新の傑作を生み"
+"出し、さらには少しでも楽しい時間を過ごすことができるのか、一緒に考えてみまし"
+"ょう。"
 
 #. type: Content of: <div><div><div><br><br><p>
 #: upstream/_includes/worldtour-abstracts.html:28
 #, fuzzy
 msgid "It’s going to be a blast.  90 odd minutes of technical discussion, some live coding and a Q&A."
-msgstr "盛り上がること間違いなしです。技術的な議論、ライブコーディング、Q&amp;Aを90分ほど行います。"
+msgstr "盛り上がること間違いなしです。技術的な議論、ライブコーディング、Q&amp;Aを90分"
+"ほど行います。"
 
 #. type: Content of: <div><div><div><h3>
 #: upstream/_includes/worldtour-abstracts.html:33

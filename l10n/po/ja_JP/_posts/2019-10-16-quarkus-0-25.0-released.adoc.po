@@ -62,7 +62,10 @@ msgstr "0.24.0からわずか数日後、計画に沿って0.25.0をリリース
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:13
 #, fuzzy
 msgid "This release fixes a couple of issues, mostly related to the new HTTP layer and brings some updates to the currently being rewritten security layer."
-msgstr "このリリースでは、主に新しいHTTPレイヤーに関連するいくつかの問題が修正され、現在書き換え中のセキュリティレイヤーにもいくつかのアップデートが施されています。"
+msgstr ""
+"このリリースでは、主に新しいHTTPレイヤーに関連するいくつかの問題が修正され、"
+"現在書き換え中のセキュリティレイヤーにもいくつかのアップデートが施されていま"
+"す。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:14
@@ -80,13 +83,16 @@ msgstr "セキュリティ層の変更"
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:19
 #, fuzzy
 msgid "HTTP based permissions can now be defined in the `application.properties`."
-msgstr "HTTPベースのパーミッションは、 `application.properties` で定義できるようになりました。"
+msgstr "HTTPベースのパーミッションは、 `application.properties` "
+"で定義できるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:21
 #, fuzzy
 msgid "This new feature is fully documented in the link:/guides/security#securing-web-endpoints[Security guide]."
-msgstr "この新機能については、 link:/guides/security#securing-web-endpoints[セキュリティガイド]に詳細が記載されています。"
+msgstr ""
+"この新機能については、 link:/guides/security#securing-web-"
+"endpoints[セキュリティガイド]に詳細が記載されています。"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:22
@@ -98,7 +104,9 @@ msgstr "Windowsと開発モードの問題"
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:25
 #, fuzzy
 msgid "We had a https://github.com/quarkusio/quarkus/issues/3592[long-standing issue] with dev mode on Windows and, hopefully, this time, it is fixed."
-msgstr "Windowsの開発モードには link:https://github.com/quarkusio/quarkus/issues/3592[長年の問題]がありましたが、今回はうまくいけば解決します。"
+msgstr ""
+"Windowsの開発モードには link:https://github.com/quarkusio/quarkus/issues/"
+"3592[長年の問題]がありましたが、今回はうまくいけば解決します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:27
@@ -122,7 +130,10 @@ msgstr "Hibernate Searchを6.0.0.Beta1にアップデートしました。"
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:33
 #, fuzzy
 msgid "A few changes has been made to the APIs and please consider getting rid of the potential calls to deprecated methods in your code because they are going away in the next Hibernate Search release."
-msgstr "APIにはいくつかの変更が加えられており、次のHibernate Searchリリースでは廃止されるため、コード内で廃止されたメソッドの潜在的な呼び出しを取り除くことを検討してください。"
+msgstr ""
+"APIにはいくつかの変更が加えられており、次のHibernate Searchリリースでは廃止さ"
+"れるため、コード内で廃止されたメソッドの潜在的な呼び出しを取り除くことを検討"
+"してください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:35
@@ -134,19 +145,26 @@ msgstr "また、一部の設定プロパティも調整されています。"
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:37
 #, fuzzy
 msgid "`quarkus.hibernate-search.elasticsearch.automatic-indexing.synchronization-strategy` becomes `quarkus.hibernate-search.elasticsearch.automatic-indexing.synchronization.strategy`"
-msgstr "`quarkus.hibernate-search.elasticsearch.automatic-indexing.synchronization-strategy` になります。 `quarkus.hibernate-search.elasticsearch.automatic-indexing.synchronization.strategy`"
+msgstr ""
+"`quarkus.hibernate-search.elasticsearch.automatic-indexing.synchronization-"
+"strategy` になります。 `quarkus.hibernate-search.elasticsearch.automatic-"
+"indexing.synchronization.strategy`"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:38
 #, fuzzy
 msgid "`quarkus.hibernate-search.elasticsearch.analysis-configurer` becomes `quarkus.hibernate-search.elasticsearch.analysis.configurer`"
-msgstr "`quarkus.hibernate-search.elasticsearch.analysis-configurer` になります。 `quarkus.hibernate-search.elasticsearch.analysis.configurer`"
+msgstr ""
+"`quarkus.hibernate-search.elasticsearch.analysis-configurer` になります。 "
+"`quarkus.hibernate-search.elasticsearch.analysis.configurer`"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:40
 #, fuzzy
 msgid "link:/guides/hibernate-search-elasticsearch[The documentation] has been updated to reflect these changes."
-msgstr "これらの変更を反映して、 link:/guides/hibernate-search-elasticsearch[ドキュメント]を更新しました。"
+msgstr ""
+"これらの変更を反映して、 link:/guides/hibernate-search-"
+"elasticsearch[ドキュメント]を更新しました。"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:41
@@ -158,7 +176,10 @@ msgstr "デバッグ、サスペンド、デブモード"
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:44
 #, fuzzy
 msgid "Dev mode doesn't suspend the execution by default anymore when you use `-Ddebug=true` or `-Ddebug=<port>`. You need to explicitly use `-Dsuspend=true`."
-msgstr "`-Ddebug=true` または `-Ddebug=<port>` を使用した場合、Dev モードはデフォルトでは実行を一時停止しません。 `-Dsuspend=true` を明示的に使用する必要があります。"
+msgstr ""
+"`-Ddebug=true` または `-Ddebug=<port>` を使用した場合、Dev "
+"モードはデフォルトでは実行を一時停止しません。 `-Dsuspend=true` "
+"を明示的に使用する必要があります。"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:45
@@ -182,7 +203,10 @@ msgstr "RESTクライアントのマルチパートガイド"
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:52
 #, fuzzy
 msgid "We now have link:/guides/rest-client-multipart[a guide explaining how to do multipart with our REST client]. This allows you for instance to upload documents to a REST endpoint."
-msgstr "link:/guides/rest-client-multipart[RESTクライアントでマルチパートを行う方法を説明したガイド]ができました。これにより、例えば、RESTエンドポイントにドキュメントをアップロードすることができます。"
+msgstr ""
+"link:/guides/rest-client-multipart[RESTクライアントでマルチパートを行う方法を"
+"説明したガイド]ができました。これにより、例えば、RESTエンドポイントにドキュメ"
+"ントをアップロードすることができます。"
 
 #. type: Title ===
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:53
@@ -194,7 +218,11 @@ msgstr "完全な変更履歴"
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:56
 #, fuzzy
 msgid "We also fixed a few bugs and usability issues: get https://github.com/quarkusio/quarkus/releases/tag/0.25.0[the full changelog of 0.25.0 on GitHub]."
-msgstr "また、いくつかのバグや使い勝手の問題も修正しました。 link:https://github.com/quarkusio/quarkus/releases/tag/0.25.0[0.25.0の完全な変更履歴]は link:https://github.com/quarkusio/quarkus/releases/tag/0.25.0[GitHubで]ご覧ください。"
+msgstr ""
+"また、いくつかのバグや使い勝手の問題も修正しました。 link:https://github.com/"
+"quarkusio/quarkus/releases/tag/0.25.0[0.25.0の完全な変更履歴]は "
+"link:https://github.com/quarkusio/quarkus/releases/tag/0.25."
+"0[GitHubで]ご覧ください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:57
@@ -206,13 +234,23 @@ msgstr "コントリビューター"
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:61
 #, fuzzy
 msgid "Quarkus has now https://github.com/quarkusio/quarkus/graphs/contributors[163 contributors].  Many many thanks to each and everyone of them."
-msgstr "Quarkusには現在 link:https://github.com/quarkusio/quarkus/graphs/contributors[163名の方にご協力]いただいています。それぞれの方に感謝します。"
+msgstr ""
+"Quarkusには現在 link:https://github.com/quarkusio/quarkus/graphs/"
+"contributors[163名の方にご協力]いただいています。それぞれの方に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:63
 #, fuzzy
 msgid "In particular for this release, thanks to Alexey Loubyansky, Andrew Guibert, Aurea Munoz, Clement Escoffier, Daniel Petisme, Don Naro, Dusan Odalovic, George Gastaldi, Georgios Andrianakis, Guillaume Smet, Gwenneg Lepage, Harald Reinmüller, Jaikiran Pai, Jan Martiska, John O'Hara, Ken Finnigan, Luca Burgazzoli, Maciej Swiderski, Manyanda Chitimbo, Martin Kouba, Matej Novotny, Matthias Andreas Benkard, Peter Palaga, Rostislav Svoboda, Sanne Grinovero, Sergey Beryozkin, Simon Bengtsson, Stéphane Epardaud, Stuart Douglas, Timothy Power, William Burns and Yoann Rodière."
-msgstr "特に今回のリリースのために、Alexey Loubyansky、Andrew Guibert、Aurea Munoz、Clement Escoffier、Daniel Petisme、Don Naro、Dusan Odalovic、George Gastaldi、Georgios Andrianakis、Guillaume Smet、Gwenneg Lepage、Harald Reinmüller、Jaikiran Pai、Jan Martiska、John O'Haraに感謝します。Ken Finnigan, Luca Burgazzoli, Maciej Swiderski, Manyanda Chitimbo, Martin Kouba, Matej Novotny, Matthias Andreas Benkard, Peter Palaga, Rostislav Svoboda, Sanne Grinovero, Sergey Beryozkin, Simon Bengtsson, Stéphane Epardaud, Stuart Douglas, Timothy Power, William Burns, Yoann Rodière."
+msgstr ""
+"特に今回のリリースのために、Alexey Loubyansky、Andrew Guibert、Aurea Munoz、"
+"Clement Escoffier、Daniel Petisme、Don Naro、Dusan Odalovic、George "
+"Gastaldi、Georgios Andrianakis、Guillaume Smet、Gwenneg Lepage、Harald "
+"Reinmüller、Jaikiran Pai、Jan Martiska、John O'Haraに感謝します。Ken "
+"Finnigan, Luca Burgazzoli, Maciej Swiderski, Manyanda Chitimbo, Martin "
+"Kouba, Matej Novotny, Matthias Andreas Benkard, Peter Palaga, Rostislav "
+"Svoboda, Sanne Grinovero, Sergey Beryozkin, Simon Bengtsson, Stéphane "
+"Epardaud, Stuart Douglas, Timothy Power, William Burns, Yoann Rodière."
 
 #. type: Title ==
 #: upstream/_posts/2019-10-16-quarkus-0-25.0-released.adoc:64

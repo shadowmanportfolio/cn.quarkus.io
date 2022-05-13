@@ -26,7 +26,9 @@ msgstr "あなたのライセンスは何ですか？"
 #: upstream/_includes/faq.html:5
 #, fuzzy
 msgid "Quarkus is an Open Source project licensed under the <a href=\"https://www.apache.org/licenses/LICENSE-2.0\">Apache License version 2.0</a>."
-msgstr "Quarkusは、<a href=\"https://www.apache.org/licenses/LICENSE-2.0\">Apache License version 2.0</a>の下でライセンスされたオープンソースプロジェクトです。"
+msgstr ""
+"Quarkusは、<a href=\"https://www.apache.org/licenses/LICENSE-2.0\">Apache "
+"License version 2.0</a>の下でライセンスされたオープンソースプロジェクトです。"
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/faq.html:6
@@ -38,7 +40,11 @@ msgstr "どこで入手できますか？"
 #: upstream/_includes/faq.html:7
 #, fuzzy
 msgid "Quarkus is published in Maven Central, check out <a href=\"/extensions\">which extensions</a> you need and just import them in your <code>pom.xml</code> to get Quarkus. We recommend you start your Quarkus experience via our <a href=\"/get-started\">Getting Started guides</a>."
-msgstr "QuarkusはMaven Centralで公開されています。<a href=\"/extensions\">どのエクステンションが必要か</a>を確認し、<code>pom.xml</code>でインポートするだけでQuarkusを利用できます。<a href=\"/get-started\">入門ガイド</a>からQuarkusの使用を始めることをお勧めします。"
+msgstr ""
+"QuarkusはMaven Centralで公開されています。<a href=\"/extensions\""
+">どのエクステンションが必要か</a>を確認し、<code>pom."
+"xml</code>でインポートするだけでQuarkusを利用できます。<a href=\"/get-"
+"started\">入門ガイド</a>からQuarkusの使用を始めることをお勧めします。"
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/faq.html:8
@@ -50,13 +56,20 @@ msgstr "Quarkusは安定していますか？"
 #: upstream/_includes/faq.html:9
 #, fuzzy
 msgid "Yes, we consider Quarkus stable. Remember 95% of the features Quarkus apps use are provided by the ecosystem like Hibernate ORM, Eclipse Vert.x, Netty, RESTEasy, etc. These libraries are rock solid :)"
-msgstr "はい、Quarkusは安定していると考えています。Quarkusアプリが使用している機能の95％は、Hibernate ORM、Eclipse Vert.x、Netty、RESTEasyなどのエコシステムによって提供されていることを覚えておいてください。これらのライブラリはしっかりしています。）"
+msgstr ""
+"はい、Quarkusは安定していると考えています。Quarkusアプリが使用している機能の9"
+"5％は、Hibernate ORM、Eclipse Vert.x、Netty、RESTEasyなどのエコシステムによっ"
+"て提供されていることを覚えておいてください。これらのライブラリはしっかりして"
+"います。）"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/faq.html:10
 #, fuzzy
 msgid "You can go to <a href=\"https://code.quarkus.io/\">code.quarkus.io</a> to see if a particular extension is <em>stable</em> (default) or <em>preview</em>."
-msgstr "<a href=\"https://code.quarkus.io/\">code.quarkus.io</a>に行けば、特定の拡張機能が<em>stable</em>（デフォルト）なのか<em>preview</em>なのかを確認することができます。"
+msgstr ""
+"<a href=\"https://code.quarkus.io/\">code.quarkus.io</a>に行けば、特定の拡張"
+"機能が<em>stable</em>（デフォルト）なのか<em>preview</em>なのかを確認すること"
+"ができます。"
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/faq.html:11
@@ -68,13 +81,20 @@ msgstr "Quarkusの拡張機能とは何ですか？"
 #: upstream/_includes/faq.html:12
 #, fuzzy
 msgid "One of the main goals of Quarkus is ease of extensibility and to build a vibrant ecosystem."
-msgstr "Quarkusの主な目標の1つは、拡張性を容易にし、活気あるエコシステムを構築することです。"
+msgstr "Quarkusの主な目標の1つは、拡張性を容易にし、活気あるエコシステムを構築するこ"
+"とです。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/faq.html:13
 #, fuzzy
 msgid "Think of Quarkus extensions as your project dependencies. Extensions configure, boot and integrate a framework or technology into your Quarkus application. They also do all of the heavy lifting of providing the right information to GraalVM for your application to compile natively. This will allow 3rd party projects to easily take advantage of the work we have done to make it easier to target GraalVM."
-msgstr "Quarkusのエクステンションは、プロジェクトの依存関係と考えてください。エクステンションは、フレームワークやテクノロジーの設定、起動、Quarkusアプリケーションへの統合を行います。また、エクステンションは、アプリケーションがネイティブにコンパイルされるように、GraalVMに正しい情報を提供するためのすべての作業を行います。これにより、サードパーティのプロジェクトは、GraalVMをターゲットにしやすくするために我々が行った作業を簡単に利用することができます。"
+msgstr ""
+"Quarkusのエクステンションは、プロジェクトの依存関係と考えてください。エクステ"
+"ンションは、フレームワークやテクノロジーの設定、起動、Quarkusアプリケーション"
+"への統合を行います。また、エクステンションは、アプリケーションがネイティブに"
+"コンパイルされるように、GraalVMに正しい情報を提供するためのすべての作業を行い"
+"ます。これにより、サードパーティのプロジェクトは、GraalVMをターゲットにしやす"
+"くするために我々が行った作業を簡単に利用することができます。"
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/faq.html:14
@@ -86,31 +106,46 @@ msgstr "拡張子の状態はどうなっていますか？"
 #: upstream/_includes/faq.html:15
 #, fuzzy
 msgid "Extensions have a various degree of maturity when they enter the Quarkus ecosystem. A status offers the expectations you can rely on."
-msgstr "エクステンションは、Quarkusのエコシステムに入った時点で、さまざまな成熟度を持っています。ステータスは、信頼できる期待値を提供します。"
+msgstr "エクステンションは、Quarkusのエコシステムに入った時点で、さまざまな成熟度を持"
+"っています。ステータスは、信頼できる期待値を提供します。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/faq.html:16
 #, fuzzy
 msgid "<strong>Stable</strong>: backward compatibility and presence in the ecosystem are taken very seriously. An application can safely rely on these extensions. Extensions not marked as preview or experimental (the majority) are stable."
-msgstr "<strong>Stable</strong>: 後方互換性とエコシステムでの存在を非常に重視しています。アプリケーションは、これらの拡張機能に安全に依存することができます。プレビューやエクスペリメンタルとしてマークされていない拡張機能(大部分)は安定しています。"
+msgstr ""
+"<strong>Stable</strong>: 後方互換性とエコシステムでの存在を非常に重視していま"
+"す。アプリケーションは、これらの拡張機能に安全に依存することができます。プレ"
+"ビューやエクスペリメンタルとしてマークされていない拡張機能(大部分)は安定して"
+"います。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/faq.html:17
 #, fuzzy
 msgid "<strong>Preview</strong>: backward compatibility and presence in the ecosystem is not guaranteed. Specific improvements might require to change configuration or APIs and plans to become <em>stable</em> are under way. Such extensions are in the middle of their maturation process."
-msgstr "<strong>Preview</strong>: 後方互換性やエコシステムでの存在は保証されていません。具体的な改善には、構成やAPIの変更が必要になる場合があり、<em>安定</em>するための計画が進行中です。このような拡張機能は、成熟過程の真っ只中にあります。"
+msgstr ""
+"<strong>Preview</strong>: 後方互換性やエコシステムでの存在は保証されていませ"
+"ん。具体的な改善には、構成やAPIの変更が必要になる場合があり、<em>安定</em>す"
+"るための計画が進行中です。このような拡張機能は、成熟過程の真っ只中にあります"
+"。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/faq.html:18
 #, fuzzy
 msgid "<strong>Experimental</strong>: early feedback is requested to mature the idea. There is no guarantee of stability nor long term presence in the platform until the solution matures. Such extensions are at the beginning of their maturation process."
-msgstr "<strong>実験的</strong>：アイデアを成熟させるために、初期のフィードバックが求められます。ソリューションが成熟するまでは、プラットフォームの安定性や長期的な存在を保証するものではありません。このような拡張機能は、その成熟過程の初期段階にあります。"
+msgstr ""
+"<strong>実験的</strong>：アイデアを成熟させるために、初期のフィードバックが求"
+"められます。ソリューションが成熟するまでは、プラットフォームの安定性や長期的"
+"な存在を保証するものではありません。このような拡張機能は、その成熟過程の初期"
+"段階にあります。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/faq.html:19
 #, fuzzy
 msgid "You can find the extension status on <a href=\"https://code.quarkus.io\">code.quarkus.io</a> or in the extension <a href=\"/guides/\">guides</a>."
-msgstr "拡張機能のステータスは、<a href=\"https://code.quarkus.io\">code.quarkus.io</a>や、拡張機能の<a href=\"/guides/\">guides</a>で確認できます。"
+msgstr ""
+"拡張機能のステータスは、<a href=\"https://code.quarkus.io\">code.quarkus."
+"io</a>や、拡張機能の<a href=\"/guides/\">guides</a>で確認できます。"
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/faq.html:20
@@ -128,13 +163,28 @@ msgstr "そうですね。Quarkusの「初期」チーム以外で書かれた�
 #: upstream/_includes/faq.html:22
 #, fuzzy
 msgid "Quarkus is an open ecosystem and we hope to see all the extensions people need to write their apps. We are working as we speak to allow an extension to be published in separate repos and separate GAVs and thus published in Maven repos independently of Quarkus core. This will greatly simplify the publication process. Expect news soon."
-msgstr "Quarkusはオープンなエコシステムであり、人々がアプリを書くために必要なすべての拡張機能を見たいと思っています。現在、拡張機能を別のリポジトリや別のGAVで公開し、Quarkusコアとは別にMavenリポジトリで公開できるように取り組んでいます。これにより、公開プロセスが大幅に簡素化されます。近いうちにニュースをお届けします。"
+msgstr ""
+"Quarkusはオープンなエコシステムであり、人々がアプリを書くために必要なすべての"
+"拡張機能を見たいと思っています。現在、拡張機能を別のリポジトリや別のGAVで公開"
+"し、Quarkusコアとは別にMavenリポジトリで公開できるように取り組んでいます。こ"
+"れにより、公開プロセスが大幅に簡素化されます。近いうちにニュースをお届けしま"
+"す。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/faq.html:23
 #, fuzzy
 msgid "The one current restriction is that extensions should work in both OpenJDK and GraalVM native executables. That is the guarantee we give Quarkus users (a cross compilation for their app). We have a maturity model to improve an extension to be fully \"Quarked\" and benefit from Quarkus, all done in incremental steps. Just hop on our <a href=\"https://quarkus.io/community/#discussions\">mailing list</a> to discuss your ideas and get help. And you can start reading our <a href=\"https://quarkus.io/guides/writing-extensions\">Writing extensions guide</a> as well or more simply get inspiration from the <a href=\"https://github.com/quarkusio/quarkus/tree/master/extensions\">existing ones</a>."
-msgstr "現在の制限としては、拡張機能はOpenJDKとGraalVMの両方のネイティブ実行可能ファイルで動作する必要があります。これは、Quarkusのユーザーに与える保証です（アプリのクロスコンパイル）。拡張機能を完全に「Quarked」にしてQuarkusの恩恵を受けられるように改善するための成熟度モデルがあり、すべては段階的に行われます。私たちの<a href=\"https://quarkus.io/community/#discussions\">メーリングリスト</a>に参加して、アイデアを話し合ったり、助けを求めたりしてください。また、<a href=\"https://quarkus.io/guides/writing-extensions\">ライティングエクステンションガイド</a>を読み始めることもできますし、<a href=\"https://github.com/quarkusio/quarkus/tree/master/extensions\">既存のエクステンション</a>からインスピレーションを得ることもできます。"
+msgstr ""
+"現在の制限としては、拡張機能はOpenJDKとGraalVMの両方のネイティブ実行可能ファ"
+"イルで動作する必要があります。これは、Quarkusのユーザーに与える保証です（アプ"
+"リのクロスコンパイル）。拡張機能を完全に「Quarked」にしてQuarkusの恩恵を受け"
+"られるように改善するための成熟度モデルがあり、すべては段階的に行われます。"
+"私たちの<a href=\"https://quarkus.io/community/#discussions\">メーリングリス"
+"ト</a>に参加して、アイデアを話し合ったり、助けを求めたりしてください。また、"
+"<a href=\"https://quarkus.io/guides/writing-extensions\""
+">ライティングエクステンションガイド</a>を読み始めることもできますし、<a href="
+"\"https://github.com/quarkusio/quarkus/tree/master/extensions\""
+">既存のエクステンション</a>からインスピレーションを得ることもできます。"
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/faq.html:24
@@ -146,13 +196,27 @@ msgstr "GraalVMとは？"
 #: upstream/_includes/faq.html:25
 #, fuzzy
 msgid "<a href=\"https://www.graalvm.org\">GraalVM</a> is a universal virtual machine for running applications written in various different languages, as well as providing the ability to compile JVM bytecode to a native executable (this native executable runs a special virtual machine called SubstrateVM). These native executables start much faster and can use a lot less memory than a traditional JVM, however not every JVM feature is supported, and some are more limited than normal."
-msgstr "<a href=\"https://www.graalvm.org\">GraalVM</a>は、様々な言語で書かれたアプリケーションを実行するためのユニバーサルな仮想マシンであり、JVMバイトコードをネイティブ実行可能ファイルにコンパイルする機能も提供しています（このネイティブ実行可能ファイルはSubstrateVMと呼ばれる特別な仮想マシンを実行します）。これらのネイティブ実行可能ファイルは、従来のJVMよりもはるかに高速に起動し、メモリ使用量も大幅に削減できますが、すべてのJVM機能がサポートされているわけではなく、通常よりも制限されているものもあります。"
+msgstr ""
+"<a href=\"https://www.graalvm.org\">GraalVM</a>は、様々な言語で書かれたアプリ"
+"ケーションを実行するためのユニバーサルな仮想マシンであり、JVMバイトコードをネ"
+"イティブ実行可能ファイルにコンパイルする機能も提供しています（このネイティブ"
+"実行可能ファイルはSubstrateVMと呼ばれる特別な仮想マシンを実行します）。これら"
+"のネイティブ実行可能ファイルは、従来のJVMよりもはるかに高速に起動し、メモリ使"
+"用量も大幅に削減できますが、すべてのJVM機能がサポートされているわけではなく、"
+"通常よりも制限されているものもあります。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/faq.html:26
 #, fuzzy
 msgid "For example by default reflection in GraalVM will not work, unless a class/member has been explicitly registered for reflection. This is normally achieved by listing every class, method, field and constructor in a JSON file, and passing this as a parameter into the native image build. This obviously gets quite cumbersome for all but the most trivial projects. Quarkus provides a framework that makes it easy to work around these annotations, and programmatically determine what should be registered."
-msgstr "例えば、GraalVMのデフォルトのリフレクションは、クラス/メンバーが明示的にリフレクション用に登録されていない限り、動作しません。これは通常、すべてのクラス、メソッド、フィールド、コンストラクタをJSONファイルにリストアップし、これをネイティブ・イメージ・ビルドのパラメータとして渡すことで実現されます。これは、ごく些細なプロジェクトを除いては、明らかに非常に面倒です。Quarkusは、これらのアノテーションを簡単に回避し、何を登録すべきかをプログラムで決定するためのフレームワークを提供します。"
+msgstr ""
+"例えば、GraalVMのデフォルトのリフレクションは、クラス/メンバーが明示的にリフ"
+"レクション用に登録されていない限り、動作しません。これは通常、すべてのクラス"
+"、メソッド、フィールド、コンストラクタをJSONファイルにリストアップし、これを"
+"ネイティブ・イメージ・ビルドのパラメータとして渡すことで実現されます。これは"
+"、ごく些細なプロジェクトを除いては、明らかに非常に面倒です。Quarkusは、これら"
+"のアノテーションを簡単に回避し、何を登録すべきかをプログラムで決定するための"
+"フレームワークを提供します。"
 
 #. type: Content of: <div><div><div><h2>
 #: upstream/_includes/faq.html:27

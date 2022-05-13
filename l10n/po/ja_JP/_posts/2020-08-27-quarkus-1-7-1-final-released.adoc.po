@@ -56,7 +56,8 @@ msgstr "Quarkus 1.7.1.Final リリース - バグフィックス"
 #: upstream/_posts/2020-08-27-quarkus-1-7-1-final-released.adoc:11
 #, fuzzy
 msgid "Today, we released Quarkus 1.7.1.Final with some bugfixes and documentation improvements."
-msgstr "本日、Quarkus 1.7.1.Finalをリリースしました。いくつかのバグフィックスとドキュメントの改善を行いました。"
+msgstr "本日、Quarkus 1.7.1.Finalをリリースしました。いくつかのバグフィックスとドキュ"
+"メントの改善を行いました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-27-quarkus-1-7-1-final-released.adoc:13
@@ -74,19 +75,23 @@ msgstr "変更点"
 #: upstream/_posts/2020-08-27-quarkus-1-7-1-final-released.adoc:17
 #, fuzzy
 msgid "This release is a maintenance release that fixes various bugs found in 1.7.0.Final and provides some documentation updates."
-msgstr "このリリースは、1.7.0.Finalで見つかったさまざまなバグを修正し、いくつかのドキュメントを更新したメンテナンスリリースです。"
+msgstr "このリリースは、1.7.0.Finalで見つかったさまざまなバグを修正し、いくつかのドキ"
+"ュメントを更新したメンテナンスリリースです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-27-quarkus-1-7-1-final-released.adoc:19
 #, fuzzy
 msgid "Thanks to our contributors, we also made numerous improvements to the documentation."
-msgstr "また、ご協力いただいた方々のおかげで、ドキュメントにも多くの改良が加えられました。"
+msgstr "また、ご協力いただいた方々のおかげで、ドキュメントにも多くの改良が加えられま"
+"した。"
 
 #. type: Plain text
 #: upstream/_posts/2020-08-27-quarkus-1-7-1-final-released.adoc:21
 #, fuzzy
 msgid "You can get https://github.com/quarkusio/quarkus/releases/tag/1.7.1.Final[the full changelog of 1.7.1.Final on GitHub]."
-msgstr "link:https://github.com/quarkusio/quarkus/releases/tag/1.7.1.Final[1.7.1.Finalの完全な変更履歴はGitHubに]掲載されています。"
+msgstr ""
+"link:https://github.com/quarkusio/quarkus/releases/tag/1.7.1.Final[1.7.1."
+"Finalの完全な変更履歴はGitHubに]掲載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-08-27-quarkus-1-7-1-final-released.adoc:22

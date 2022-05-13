@@ -39,7 +39,10 @@ msgstr "Quarkusの Lambda は、Amazon Javaランタイムを使用してデプ�
 #: upstream/_guides/amazon-lambda.adoc:18
 #, fuzzy
 msgid "Quarkus's integration with lambdas also supports Quarkus's Live Coding development cycle.  You an bring up your Quarkus lambda project in dev or test mode and code on your project live."
-msgstr "Quarkusとラムダの統合は、Quarkusのライブコーディングの開発サイクルにも対応しています。開発モードまたはテストモードでQuarkusのラムダプロジェクトを立ち上げ、プロジェクトでライブコーディングすることができます。"
+msgstr ""
+"Quarkusとラムダの統合は、Quarkusのライブコーディングの開発サイクルにも対応し"
+"ています。開発モードまたはテストモードでQuarkusのラムダプロジェクトを立ち上げ"
+"、プロジェクトでライブコーディングすることができます。"
 
 #. type: Title ==
 #: upstream/_guides/amazon-lambda.adoc:19
@@ -66,7 +69,10 @@ msgstr "link:https://docs.aws.amazon.com/serverless-application-model/latest/dev
 #: upstream/_guides/amazon-lambda.adoc:28
 #, fuzzy
 msgid "For Gradle projects please <<gradle,see below>>, or for further reference consult the guide in the xref:gradle-tooling.adoc[Gradle setup page]."
-msgstr "Gradleプロジェクトについては、 link:#gradle[以下を参照し]てください。また、詳細については、 link:gradle-tooling.html[Gradleセットアップページ]のガイドを参照してください。"
+msgstr ""
+"Gradleプロジェクトについては、 "
+"link:#gradle[以下を参照し]てください。また、詳細については、 link:gradle-"
+"tooling.html[Gradleセットアップページ]のガイドを参照してください。"
 
 #. type: Title ==
 #: upstream/_guides/amazon-lambda.adoc:29
@@ -451,7 +457,12 @@ msgstr "Linux ホストの場合は、次のように実行します。"
 #: upstream/_guides/amazon-lambda.adoc:240
 #, fuzzy
 msgid "If you are building on a non-Linux system, you will need to also pass in a property instructing Quarkus to use a docker build as Amazon Lambda requires linux binaries.  You can do this by passing this property to your build: `-Dquarkus.native.container-build=true`. This requires you to have Docker installed locally, however."
-msgstr "Linux以外のシステムで構築する場合は、Amazon LambdaがLinuxのバイナリを必要とするため、QuarkusにDockerビルドを使用するよう指示するプロパティを渡す必要があります。これは、次のプロパティをビルドに渡すことで行うことができます： `-Dquarkus.native.container-build=true`.ただし、このためにはDockerがローカルにインストールされている必要があります。"
+msgstr ""
+"Linux以外のシステムで構築する場合は、Amazon LambdaがLinuxのバイナリを必要とす"
+"るため、QuarkusにDockerビルドを使用するよう指示するプロパティを渡す必要があり"
+"ます。これは、次のプロパティをビルドに渡すことで行うことができます： "
+"`-Dquarkus.native.container-build=true`."
+"ただし、このためにはDockerがローカルにインストールされている必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:246
@@ -500,7 +511,10 @@ msgstr "POMとGradleのビルドを調べる"
 #: upstream/_guides/amazon-lambda.adoc:274
 #, fuzzy
 msgid "There is nothing special about the POM other than the inclusion of the `quarkus-amazon-lambda` extension as a dependency.  The extension automatically generates everything you might need for your lambda deployment."
-msgstr "POMについては、 `quarkus-amazon-lambda` エクステンションを依存関係に含めること以外に特別なことはありません。このエクステンションは、ラムダのデプロイメントに必要となるすべてのものを自動的に生成します。"
+msgstr ""
+"POMについては、 `quarkus-amazon-lambda` エクステンションを依存関係に含めるこ"
+"と以外に特別なことはありません。このエクステンションは、ラムダのデプロイメン"
+"トに必要となるすべてのものを自動的に生成します。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:277
@@ -517,7 +531,10 @@ msgstr "Gradle ビルド"
 #: upstream/_guides/amazon-lambda.adoc:283
 #, fuzzy
 msgid "Similarly for Gradle projects, you also just have to add the `quarkus-amazon-lambda` dependency.  The extension automatically generates everything you might need for your lambda deployment."
-msgstr "Gradle プロジェクトの場合も同様に、 `quarkus-amazon-lambda` の依存関係を追加するだけでいいのです。このエクステンションは、ラムダのデプロイメントに必要なすべてのものを自動的に生成します。"
+msgstr ""
+"Gradle プロジェクトの場合も同様に、 `quarkus-amazon-lambda` の依存関係を追加"
+"するだけでいいのです。このエクステンションは、ラムダのデプロイメントに必要な"
+"すべてのものを自動的に生成します。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:285
@@ -553,13 +570,23 @@ msgstr "ライブコーディングとユニット/統合テスト"
 #: upstream/_guides/amazon-lambda.adoc:303
 #, fuzzy
 msgid "To mirror the AWS Lambda environment as closely as possible in a dev environment, the Quarkus Amazon Lambda extension boots up a mock AWS Lambda event server in Quarkus Dev and Test mode.  This mock event server simulates a true AWS Lambda environment."
-msgstr "開発環境でAWS Lambda環境を可能な限りミラーリングするために、Quarkus Amazon Lambda extensionは、Quarkus Dev and TestモードでモックAWS Lambdaイベントサーバーを起動します。このモックイベントサーバーは、真のAWS Lambda環境をシミュレートします。"
+msgstr ""
+"開発環境でAWS Lambda環境を可能な限りミラーリングするために、Quarkus Amazon "
+"Lambda extensionは、Quarkus Dev and TestモードでモックAWS "
+"Lambdaイベントサーバーを起動します。このモックイベントサーバーは、真のAWS "
+"Lambda環境をシミュレートします。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:307
 #, fuzzy
 msgid "While running in Quarkus Dev Mode, you can feed events to it by doing an HTTP POST to `http://localhost:8080`.  The mock event server will receive the events and your lambda will be invoked.  You can perform live coding on your lambda and changes will automatically be recompiled and available the next invocation you make.  Here's an example:"
-msgstr "Quarkus Dev Modeで動作しているときに、以下のHTTP POSTを行うことで、イベントをフィードすることができます。 `<a href=\"http://localhost:8080\" class=\"bare\">http://localhost:8080</a>`.モックイベントサーバーがイベントを受信し、ラムダが起動されます。ラムダに対してライブコーディングを行うことができ、変更は自動的に再コンパイルされ、次回の起動時に利用可能になります。以下はその例です。"
+msgstr ""
+"Quarkus Dev Modeで動作しているときに、以下のHTTP "
+"POSTを行うことで、イベントをフィードすることができます。 `<a href=\"http"
+"://localhost:8080\" class=\"bare\">http://localhost:8080</a>`.モックイベント"
+"サーバーがイベントを受信し、ラムダが起動されます。ラムダに対してライブコーデ"
+"ィングを行うことができ、変更は自動的に再コンパイルされ、次回の起動時に利用可"
+"能になります。以下はその例です。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda.adoc:313
@@ -571,7 +598,12 @@ msgstr ""
 #: upstream/_guides/amazon-lambda.adoc:319
 #, fuzzy
 msgid "For your unit tests, you can also invoke on the mock event server using any HTTP client you want.  Here's an example using rest-assured.  Quarkus starts up a separate Mock Event server under port 8081.  The default port for Rest Assured is automatically set to 8081 by Quarkus so you can invoke on this endpoint."
-msgstr "ユニットテストでは、任意のHTTPクライアントを使って、モックのイベントサーバを呼び出すこともできます。ここでは、rest-assuredを使用した例を示します。Quarkusは、ポート8081で別のモックイベントサーバを起動します。Rest Assuredのデフォルトポートは、Quarkusによって自動的に8081に設定されるため、このエンドポイントで起動することができます。"
+msgstr ""
+"ユニットテストでは、任意のHTTPクライアントを使って、モックのイベントサーバを"
+"呼び出すこともできます。ここでは、rest-assuredを使用した例を示します。Quarkus"
+"は、ポート8081で別のモックイベントサーバを起動します。Rest Assuredのデフォル"
+"トポートは、Quarkusによって自動的に8081に設定されるため、このエンドポイントで"
+"起動することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda.adoc:324
@@ -626,13 +658,19 @@ msgstr ""
 #: upstream/_guides/amazon-lambda.adoc:352
 #, fuzzy
 msgid "The mock event server is also started for `@NativeImageTest` and `@QuarkusIntegrationTest` tests so will work with native binaries too.  All this provides similar functionality to the SAM CLI local testing, without the overhead of Docker."
-msgstr "モックイベントサーバーは、 `@NativeImageTest` ユニットテスト用にも起動されるので、ネイティブバイナリでも動作します。これらはすべて、Dockerのオーバーヘッドなしに、SAM CLIのローカルテストと同様の機能を提供します。"
+msgstr ""
+"モックイベントサーバーは、 `@NativeImageTest` ユニットテスト用にも起動される"
+"ので、ネイティブバイナリでも動作します。これらはすべて、Dockerのオーバーヘッ"
+"ドなしに、SAM CLIのローカルテストと同様の機能を提供します。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:355
 #, fuzzy
 msgid "Finally, if port 8080 or port 8081 is not available on your computer, you can modify the dev and test mode ports with application.properties"
-msgstr "最後に、8080ポートまたは8081ポートがお使いのコンピューターで利用できない場合は、application.propertiesでdevおよびtestモードのポートを変更することができます。"
+msgstr ""
+"最後に、8080ポートまたは8081ポートがお使いのコンピューターで利用できない場合"
+"は、application."
+"propertiesでdevおよびtestモードのポートを変更することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda.adoc:360
@@ -658,7 +696,8 @@ msgstr "SAM CLI でのテスト"
 #: upstream/_guides/amazon-lambda.adoc:366
 #, fuzzy
 msgid "If you do not want to use the mock event server, you can test your lambdas with SAM CLI."
-msgstr "モックイベントサーバーを使用したくない場合は、SAM CLIでラムダをテストすることができます。"
+msgstr "モックイベントサーバーを使用したくない場合は、SAM "
+"CLIでラムダをテストすることができます。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:371
@@ -770,7 +809,12 @@ msgstr "HTTPS または SSL/TLS を使用する"
 #: upstream/_guides/amazon-lambda.adoc:437
 #, fuzzy
 msgid "If your code makes HTTPS calls, such as to a micro-service (or AWS service), you will need to add configuration to the native image, as GraalVM will only include the dependencies when explicitly declared.  Quarkus, by default enables this functionality on extensions that implicitly require it.  For further information, please consult the xref:native-and-ssl.adoc[Quarkus SSL guide]"
-msgstr "マイクロサービス（またはAWSサービス）など、コードがHTTPSコールを行う場合は、GraalVMが明示的に宣言された場合にのみ依存関係を含めるため、ネイティブイメージに設定を追加する必要があります。Quarkusはデフォルトで、暗黙的に必要とするエクステンションに対してこの機能を有効にしています。詳細については、 link:native-and-ssl.html[Quarkus SSLガイド]をご参照ください。"
+msgstr ""
+"マイクロサービス（またはAWSサービス）など、コードがHTTPSコールを行う場合は、G"
+"raalVMが明示的に宣言された場合にのみ依存関係を含めるため、ネイティブイメージ"
+"に設定を追加する必要があります。Quarkusはデフォルトで、暗黙的に必要とするエク"
+"ステンションに対してこの機能を有効にしています。詳細については、 link:native-"
+"and-ssl.html[Quarkus SSLガイド]をご参照ください。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:439
@@ -793,7 +837,11 @@ msgstr "AWS Java SDK v2 の利用"
 #: upstream/_guides/amazon-lambda.adoc:450
 #, fuzzy
 msgid "Quarkus now has extensions for DynamoDB, S3, SNS and SQS (more coming).  Please check link:{amazon-services-guide}[those guides] on how to use the various AWS Services with Quarkus, as opposed to wiring manually like below."
-msgstr "Quarkusは現在、DynamoDB、S3、SNS、SQSのエクステンションを備えています（今後さらに増える予定です）。以下のように手動で配線するのではなく、Quarkusで様々なAWSサービスを使用する方法については、 link:{amazon-services-guide}[これらのガイド]を確認してください。"
+msgstr ""
+"Quarkusは現在、DynamoDB、S3、SNS、SQSのエクステンションを備えています（今後さ"
+"らに増える予定です）。以下のように手動で配線するのではなく、Quarkusで様々なAW"
+"Sサービスを使用する方法については、 link:{amazon-services-"
+"guide}[これらのガイド]を確認してください。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:453
@@ -935,7 +983,12 @@ msgstr ""
 #: upstream/_guides/amazon-lambda.adoc:539
 #, fuzzy
 msgid "if you see `java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty` or similar SSL error, due to the current status of GraalVM, there is some additional work to bundle the `function.zip`, as below.  For more information, please see the xref:native-and-ssl.adoc[Quarkus Native SSL Guide]."
-msgstr "`java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty` または同様のSSLエラーが表示される場合、GraalVMの現在の状況により、 `function.zip` をバンドルするための追加作業が以下のように行われます。詳細については、 link:native-and-ssl.html[Quarkus Native SSL Guide]をご参照ください。"
+msgstr ""
+"`java.security.InvalidAlgorithmParameterException: the trustAnchors "
+"parameter must be non-empty` "
+"または同様のSSLエラーが表示される場合、GraalVMの現在の状況により、 `function."
+"zip` をバンドルするための追加作業が以下のように行われます。詳細については、 "
+"link:native-and-ssl.html[Quarkus Native SSL Guide]をご参照ください。"
 
 #. type: Title ==
 #: upstream/_guides/amazon-lambda.adoc:540
@@ -947,7 +1000,8 @@ msgstr "クライアントSSLの追加要件"
 #: upstream/_guides/amazon-lambda.adoc:543
 #, fuzzy
 msgid "The native executable requires some additional steps to enable client SSL that S3 and other AWS libraries need."
-msgstr "ネイティブ実行可能ファイルでは、S3や他のAWSライブラリが必要とするクライアントSSLを有効にするための追加手順が必要です。"
+msgstr "ネイティブ実行可能ファイルでは、S3や他のAWSライブラリが必要とするクライアント"
+"SSLを有効にするための追加手順が必要です。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda.adoc:545
@@ -1091,7 +1145,12 @@ msgstr "AWS Lambda Java ランタイムへのデプロイ"
 #: upstream/_guides/amazon-lambda.adoc:612
 #, fuzzy
 msgid "AWS Lambda supports creating your lambdas by referencing https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html[container images] rather than uploading ZIP files. This can have some benefits such as bypassing the size limit of the uploaded ZIP files. You can define lambda functions for both native builds as well as regular JVM builds."
-msgstr "AWS Lambdaは、ZIPファイルをアップロードするのではなく、 link:https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html[コンテナ]イメージを参照してラムダを作成することをサポートしています。これは、アップロードされたZIPファイルのサイズ制限を回避できるなどの利点があります。ネイティブビルドだけでなく、通常のJVMビルドでもラムダ関数を定義することができます。"
+msgstr ""
+"AWS Lambdaは、ZIPファイルをアップロードするのではなく、 link:https://docs.aws"
+".amazon.com/lambda/latest/dg/lambda-images.html[コンテナ]イメージを参照してラ"
+"ムダを作成することをサポートしています。これは、アップロードされたZIPファイル"
+"のサイズ制限を回避できるなどの利点があります。ネイティブビルドだけでなく、通"
+"常のJVMビルドでもラムダ関数を定義することができます。"
 
 #. type: Title ===
 #: upstream/_guides/amazon-lambda.adoc:613
@@ -1103,7 +1162,12 @@ msgstr "JVMコンテナイメージ"
 #: upstream/_guides/amazon-lambda.adoc:616
 #, fuzzy
 msgid "For a regular JVM distribution you need to base your image off the official AWS Java base images. Below is an example of a Dockerfile that would create a container image from your Quarkus Lambda project. It assumes that `mvn package` has been executed and binaries are available in the `target/` directory:"
-msgstr "通常のJVMディストリビューションの場合、AWSの公式Javaベースイメージをベースにする必要があります。以下は、Quarkus Lambdaプロジェクトからコンテナイメージを作成するためのDockerfileの例です。 `mvn package` が実行され、バイナリが `target/` ディレクトリにあることを想定しています。"
+msgstr ""
+"通常のJVMディストリビューションの場合、AWSの公式Javaベースイメージをベースに"
+"する必要があります。以下は、Quarkus "
+"Lambdaプロジェクトからコンテナイメージを作成するためのDockerfileの例です。 `"
+"mvn package` が実行され、バイナリが `target/` "
+"ディレクトリにあることを想定しています。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda.adoc:620
@@ -1136,7 +1200,14 @@ msgstr "ネイティブの実行可能なコンテナイメージ"
 #: upstream/_guides/amazon-lambda.adoc:630
 #, fuzzy
 msgid "To create a lambda container image that uses the native executable we'll need to do things a little differently. In this case, we won't need to use the `java:11` base image from AWS but instead we'll use a special image that assumes that the runtime environment for the lambda is provided. The example below creates such a container. It assumes that a Maven build has been executed (such as `mvn package -Dnative=true`) and has generated the native binary into the `target/` directory. The binary needs to be named `bootstrap` and be placed in `/var/runtime/`:"
-msgstr "ネイティブの実行ファイルを使用するラムダコンテナイメージを作成するには、少し異なる方法を取る必要があります。この場合、AWSの `java:11` ベースイメージを使う必要はなく、代わりにラムダ用の実行環境が提供されていることを前提とした特別なイメージを使います。以下の例では、そのようなコンテナを作成しています。Mavenビルドが実行され（ `mvn package -Dnative=true` など）、ネイティブバイナリが `target/` ディレクトリに生成されたと仮定しています。バイナリは `bootstrap` という名前で `/var/runtime/` に配置する必要があります。"
+msgstr ""
+"ネイティブの実行ファイルを使用するラムダコンテナイメージを作成するには、少し"
+"異なる方法を取る必要があります。この場合、AWSの `java:11` ベースイメージを使"
+"う必要はなく、代わりにラムダ用の実行環境が提供されていることを前提とした特別"
+"なイメージを使います。以下の例では、そのようなコンテナを作成しています。Maven"
+"ビルドが実行され（ `mvn package -Dnative=true` など）、ネイティブバイナリが `"
+"target/` ディレクトリに生成されたと仮定しています。バイナリは `bootstrap` "
+"という名前で `/var/runtime/` に配置する必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda.adoc:634
@@ -1162,7 +1233,11 @@ msgstr "コンテナイメージのラムダをデプロイする"
 #: upstream/_guides/amazon-lambda.adoc:644
 #, fuzzy
 msgid "Below, you can see how the container images created above can be built and deployed to AWS using the `docker` and `aws` command line tools. These instructions work for both native and jvm container images and assume that the `aws` command line tool has been logged in."
-msgstr "以下では、上記で作成したコンテナイメージを、 `docker` と `aws` のコマンドラインツールでビルドし、AWS にデプロイする方法をご紹介しています。これらの手順は、ネイティブとjvmの両方のコンテナイメージで動作し、 `aws` コマンドラインツールがログインされていることを前提としています。"
+msgstr ""
+"以下では、上記で作成したコンテナイメージを、 `docker` と `aws` "
+"のコマンドラインツールでビルドし、AWS にデプロイする方法をご紹介しています。"
+"これらの手順は、ネイティブとjvmの両方のコンテナイメージで動作し、 `aws` "
+"コマンドラインツールがログインされていることを前提としています。"
 
 #. type: Title ====
 #: upstream/_guides/amazon-lambda.adoc:645
@@ -1230,7 +1305,14 @@ msgstr "AWS CLIツールでAWS lambda関数を作成します。"
 #: upstream/_guides/amazon-lambda.adoc:682
 #, fuzzy
 msgid "Make sure you reference the image you uploaded previously (assumes that a role exists that can be used to run the lambda). Please note that it is not unlikely that for the JVM lambda function, the default memory limit of `128Mb` will not be enough to run the function. In that case, you can increase the memory limit when creating the function by providing the `--memory-size 256` parameter to your `aws lambda create-function` command. You can also adjust the function in the AWS console after you've created it."
-msgstr "以前アップロードした画像を参照していることを確認してください（ラムダを実行するために使用できるロールが存在することが前提です）。なお、JVMのラムダ関数では、デフォルトのメモリ制限（ `128Mb` ）では関数を実行するのに十分でない可能性が少なくないことに注意してください。その場合、 `aws lambda create-function` コマンドに `--memory-size 256` パラメータを与えることで、関数作成時にメモリ制限を増加させることができます。また、関数を作成した後、AWSコンソールで調整することもできます。"
+msgstr ""
+"以前アップロードした画像を参照していることを確認してください（ラムダを実行す"
+"るために使用できるロールが存在することが前提です）。なお、JVMのラムダ関数では"
+"、デフォルトのメモリ制限（ `128Mb` ）では関数を実行するのに十分でない可能性が"
+"少なくないことに注意してください。その場合、 `aws lambda create-function` "
+"コマンドに `--memory-size 256` パラメータを与えることで、関数作成時にメモリ制"
+"限を増加させることができます。また、関数を作成した後、AWSコンソールで調整する"
+"こともできます。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda.adoc:686
@@ -1242,7 +1324,8 @@ msgstr ""
 #: upstream/_guides/amazon-lambda.adoc:689
 #, fuzzy
 msgid "Now you can use the AWS console to view and test your new lambda function."
-msgstr "これで、AWSコンソールを使って新しいラムダ関数を表示し、テストすることができます。"
+msgstr "これで、AWSコンソールを使って新しいラムダ関数を表示し、テストすることができま"
+"す。"
 
 #. type: Title ==
 #: upstream/_guides/amazon-lambda.adoc:690
@@ -1254,7 +1337,10 @@ msgstr "Amazon Alexa 統合"
 #: upstream/_guides/amazon-lambda.adoc:693
 #, fuzzy
 msgid "To use Alexa with Quarkus native, you need to use the https://github.com/quarkiverse/quarkus-amazon-alexa[Quarkus Amazon Alexa extension hosted at the Quarkiverse Hub]."
-msgstr "QuarkusネイティブでAlexaを使用するには、 link:https://github.com/quarkiverse/quarkus-amazon-alexa[Quarkiverse HubでホストされているQuarkus Amazon Alexa extension]を使用する必要があります。"
+msgstr ""
+"QuarkusネイティブでAlexaを使用するには、 link:https://github.com/quarkiverse/"
+"quarkus-amazon-alexa[Quarkiverse HubでホストされているQuarkus Amazon Alexa "
+"extension]を使用する必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda.adoc:701

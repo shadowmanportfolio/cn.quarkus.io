@@ -131,19 +131,28 @@ msgstr "HTTP圧縮"
 #: upstream/_guides/http-reference.adoc:76
 #, fuzzy
 msgid "The response body of a static resource is not compressed by default.  You can enable the HTTP compression support by means of `quarkus.http.enable-compression=true`.  If compression support is enabled then the response body is compressed if the `Content-Type` header derived from the file name of a resource is a compressed media type as configured via `quarkus.http.compress-media-types`."
-msgstr "静的リソースのレスポンスボディは、デフォルトでは圧縮されない。HTTP 圧縮サポートを有効にするには、 `quarkus.http.enable-compression=true` で設定します。 圧縮サポートが有効な場合、リソースのファイル名から得られる `Content-Type` ヘッダーが `quarkus.http.compress-media-types` で設定した圧縮メディアタイプであれば、レスポンスボディは圧縮されます。"
+msgstr ""
+"静的リソースのレスポンスボディは、デフォルトでは圧縮されない。HTTP "
+"圧縮サポートを有効にするには、 `quarkus.http.enable-compression=true` "
+"で設定します。 圧縮サポートが有効な場合、リソースのファイル名から得られる "
+"`Content-Type` ヘッダーが `quarkus.http.compress-media-types` "
+"で設定した圧縮メディアタイプであれば、レスポンスボディは圧縮されます。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:78
 #, fuzzy
 msgid "By default, the following list of media types is compressed: `text/html`, `text/plain`, `text/xml`, `text/css`, `text/javascript` and `application/javascript`."
-msgstr "デフォルトでは、以下のメディアタイプのリストが圧縮されています。 `text/html` , `text/plain` , `text/xml` , `text/css` , `text/javascript` , `application/javascript` ."
+msgstr ""
+"デフォルトでは、以下のメディアタイプのリストが圧縮されています。 `text/html` "
+", `text/plain` , `text/xml` , `text/css` , `text/javascript` , `application/"
+"javascript` ."
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:80
 #, fuzzy
 msgid "If the client does not support HTTP compression then the response body is not compressed."
-msgstr "クライアントが HTTP 圧縮に対応していない場合、レスポンスボディは圧縮されません。"
+msgstr "クライアントが HTTP "
+"圧縮に対応していない場合、レスポンスボディは圧縮されません。"
 
 #. type: Title ==
 #: upstream/_guides/http-reference.adoc:82
@@ -175,31 +184,42 @@ msgstr "テストに REST Assured を使用し、`quarkus.http.root-path` が設
 #: upstream/_guides/http-reference.adoc:99
 #, fuzzy
 msgid "In general, path configurations for web content are interpreted relative to `quarkus.http.root-path` (which is / by default)."
-msgstr "一般に、ウェブコンテンツのパス設定は、 `quarkus.http.root-path` （デフォルトでは/）からの相対パスとして解釈されます。"
+msgstr ""
+"一般に、ウェブコンテンツのパス設定は、 `quarkus.http.root-path` "
+"（デフォルトでは/）からの相対パスとして解釈されます。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:101
 #, fuzzy
 msgid "To specify paths within this context root, use a relative path that does not begin with a forward slash."
-msgstr "このコンテキストルート内のパスを指定するには、フォワードスラッシュで始まらない相対パスを使用します。"
+msgstr "このコンテキストルート内のパスを指定するには、フォワードスラッシュで始まらな"
+"い相対パスを使用します。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:103
 #, fuzzy
 msgid "If you want to specify the URI explicitly, so it is always the same regardless of the value of `quarkus.http.root-path`, use an absolute path that begins with a forward slash."
-msgstr "URIを明示的に指定し、 `quarkus.http.root-path` の値にかかわらず常に同じになるようにしたい場合は、フォワードスラッシュで始まる絶対パスを使用します。"
+msgstr ""
+"URIを明示的に指定し、 `quarkus.http.root-path` の値にかかわらず常に同じになる"
+"ようにしたい場合は、フォワードスラッシュで始まる絶対パスを使用します。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:105
 #, fuzzy
 msgid "As an example, if an extension configures a `service` path, that endpoint will be served from `${quarkus.http.root-path}/service`. If you change the configuration of that path to `/service`, that endpoint will be served from `/service`."
-msgstr "例として、拡張機能が `service` のパスを設定した場合、そのエンドポイントは `${quarkus.http.root-path}/service` から提供されます。 そのパスの設定を `/service` に変更した場合、そのエンドポイントは `/service` から提供されます。"
+msgstr ""
+"例として、拡張機能が `service` のパスを設定した場合、そのエンドポイントは "
+"`${quarkus.http.root-path}/service` から提供されます。 そのパスの設定を "
+"`/service` に変更した場合、そのエンドポイントは `/service` から提供されます。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:107
 #, fuzzy
 msgid "The link:https://quarkus.io/blog/path-resolution-in-quarkus/[Path Resolution in Quarkus] blog post further explains how path resolution works for both user and extension defined paths."
-msgstr "link:https://quarkus.io/blog/path-resolution-in-quarkus/[Quarkusのパス解決に関する] ブログ記事では、ユーザー定義パスと拡張機能定義パスの両方に対するパス解決の仕組みについて詳しく説明しています。"
+msgstr ""
+"link:https://quarkus.io/blog/path-resolution-in-quarkus/"
+"[Quarkusのパス解決に関する] ブログ記事では、ユーザー定義パスと拡張機能定義パ"
+"スの両方に対するパス解決の仕組みについて詳しく説明しています。"
 
 #. type: Title ==
 #: upstream/_guides/http-reference.adoc:109
@@ -221,7 +241,9 @@ msgstr "いずれの場合も、パスワードを提供する必要がありま
 #: upstream/_guides/http-reference.adoc:118
 #, fuzzy
 msgid "To enable SSL support with native executables, please refer to our xref:native-and-ssl.adoc[Using SSL With Native Executables guide]."
-msgstr "ネイティブ実行可能ファイルでSSLサポートを有効にするには、 link:native-and-ssl.html[Using SSL With Native Executablesガイド]を参照してください。"
+msgstr ""
+"ネイティブ実行可能ファイルでSSLサポートを有効にするには、 link:native-and-ssl"
+".html[Using SSL With Native Executablesガイド]を参照してください。"
 
 #. type: Title ===
 #: upstream/_guides/http-reference.adoc:120
@@ -378,7 +400,8 @@ msgstr "追加のHTTPヘッダー"
 #: upstream/_guides/http-reference.adoc:187
 #, fuzzy
 msgid "To enable HTTP headers to be sent on every response, add the following properties:"
-msgstr "すべてのレスポンスにHTTPヘッダーを送信するようにするには、以下のプロパティを追加します。"
+msgstr "すべてのレスポンスにHTTPヘッダーを送信するようにするには、以下のプロパティを"
+"追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:191
@@ -390,13 +413,16 @@ msgstr ""
 #: upstream/_guides/http-reference.adoc:194
 #, fuzzy
 msgid "This will include the `X-Content-Type-Options: nosniff` HTTP Header on responses for requests performed on any resource in the application."
-msgstr "これにより、アプリケーション内の任意のリソースに対して実行されるリクエストのレスポンスに、 `X-Content-Type-Options: nosniff` HTTP ヘッダーが含まれます。"
+msgstr ""
+"これにより、アプリケーション内の任意のリソースに対して実行されるリクエストの"
+"レスポンスに、 `X-Content-Type-Options: nosniff` HTTP ヘッダーが含まれます。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:196
 #, fuzzy
 msgid "You can also specify a `path` pattern and the HTTP `methods` the header needs to be applied:"
-msgstr "また、 `path` パターンと、ヘッダーを適用する必要がある HTTP `methods` を指定することもできます。"
+msgstr "また、 `path` パターンと、ヘッダーを適用する必要がある HTTP `methods` "
+"を指定することもできます。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:202
@@ -411,7 +437,9 @@ msgstr ""
 #: upstream/_guides/http-reference.adoc:205
 #, fuzzy
 msgid "This will apply the `Pragma` header only when the `/headers/pragma` resource is called with a `GET` or a `HEAD` method"
-msgstr "これにより、 `/headers/pragma` リソースが `GET` または `HEAD` メソッドで呼び出された場合にのみ、 `Pragma` ヘッダーが適用されます。"
+msgstr ""
+"これにより、 `/headers/pragma` リソースが `GET` または `HEAD` "
+"メソッドで呼び出された場合にのみ、 `Pragma` ヘッダーが適用されます。"
 
 #. type: Title ===
 #: upstream/_guides/http-reference.adoc:208
@@ -423,7 +451,8 @@ msgstr "追加のHTTPヘッダー"
 #: upstream/_guides/http-reference.adoc:211
 #, fuzzy
 msgid "If you need different header values depending on the path, you can use the following configuration:"
-msgstr "パスによって異なるヘッダ値が必要な場合は、以下のような設定にすることができます。"
+msgstr "パスによって異なるヘッダ値が必要な場合は、以下のような設定にすることができま"
+"す。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:216
@@ -437,19 +466,23 @@ msgstr ""
 #: upstream/_guides/http-reference.adoc:218
 #, fuzzy
 msgid "This will set the `Cache-Control` header to `none` when `/index.html` is called."
-msgstr "これにより、 `/index.html` が呼び出されたときに、 `Cache-Control` のヘッダが `none` に設定されます。"
+msgstr "これにより、 `/index.html` が呼び出されたときに、 `Cache-Control` のヘッダが "
+"`none` に設定されます。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:220
 #, fuzzy
 msgid "The `index` after `quarkus.http.filter` in the key is used for grouping and (as an example) can be named as you like."
-msgstr "キーの `quarkus.http.filter` の後の `index` はグループ分けに使用され、（例として）好きな名前を付けることができます。"
+msgstr ""
+"キーの `quarkus.http.filter` の後の `index` "
+"はグループ分けに使用され、（例として）好きな名前を付けることができます。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:222
 #, fuzzy
 msgid "You can use a regular expression in the path and also specify the HTTP methods where the HTTP header will be set:"
-msgstr "パスには正規表現を使用でき、またHTTPヘッダーが設定されるHTTPメソッドも指定できます。"
+msgstr "パスには正規表現を使用でき、またHTTPヘッダーが設定されるHTTPメソッドも指定で"
+"きます。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:228
@@ -464,7 +497,10 @@ msgstr ""
 #: upstream/_guides/http-reference.adoc:232
 #, fuzzy
 msgid "In case of overlapping paths in the configuration, you can specify an order (higher values take precedence).  For example, having the following configuration:"
-msgstr "コンフィギュレーションでパスが重複している場合、順序を指定することができます（値の大きい方が優先されます）。例えば、以下のようなコンフィギュレーションを持つ場合。"
+msgstr ""
+"コンフィギュレーションでパスが重複している場合、順序を指定することができます"
+"（値の大きい方が優先されます）。例えば、以下のようなコンフィギュレーションを"
+"持つ場合。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:238
@@ -488,7 +524,8 @@ msgstr ""
 #: upstream/_guides/http-reference.adoc:245
 #, fuzzy
 msgid "Will include the `Cache-Control: max-age=1` header when `/paths/order` is requested."
-msgstr " `/paths/order` が要求されたときに `Cache-Control: max-age=1` ヘッダを含めます。"
+msgstr " `/paths/order` が要求されたときに `Cache-Control: max-age=1` "
+"ヘッダを含めます。"
 
 #. type: Title ==
 #: upstream/_guides/http-reference.adoc:249
@@ -559,7 +596,8 @@ msgstr "フィルターが有効になっていて、HTTP 要求がクロスオ�
 #: upstream/_guides/http-reference.adoc:296
 #, fuzzy
 msgid "Here's what a full CORS filter configuration could look like, including a regular expression defining an allowed origin:"
-msgstr "以下は、許可されるオリジンを定義する正規表現を含む、完全なCORSフィルタの構成です。"
+msgstr "以下は、許可されるオリジンを定義する正規表現を含む、完全なCORSフィルタの構成"
+"です。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:306
@@ -1069,19 +1107,28 @@ msgstr "リバースプロキシーの背後での実行"
 #: upstream/_guides/http-reference.adoc:361
 #, fuzzy
 msgid "Quarkus could be accessed through proxies that additionally generate headers (e.g. `X-Forwarded-Host`) to keep information from the client-facing side of the proxy servers that is altered or lost when they are involved.  In those scenarios, Quarkus can be configured to automatically update information like protocol, host, port and URI reflecting the values in these headers."
-msgstr "Quarkusは、プロキシサーバーが関与しているときに変更されたり失われたりするクライアント側の情報を保持するために、追加でヘッダー（例： `X-Forwarded-Host` ）を生成するプロキシを介してアクセスされる可能性があります。このようなシナリオでは、Quarkusは、これらのヘッダーの値を反映して、プロトコル、ホスト、ポート、URIなどの情報を自動的に更新するように設定できます。"
+msgstr ""
+"Quarkusは、プロキシサーバーが関与しているときに変更されたり失われたりするクラ"
+"イアント側の情報を保持するために、追加でヘッダー（例： `X-Forwarded-Host` ）"
+"を生成するプロキシを介してアクセスされる可能性があります。このようなシナリオ"
+"では、Quarkusは、これらのヘッダーの値を反映して、プロトコル、ホスト、ポート、"
+"URIなどの情報を自動的に更新するように設定できます。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:364
 #, fuzzy
 msgid "Activating this feature leaves the server exposed to several security issues (i.e. information spoofing).  Consider activate it only when running behind a reverse proxy."
-msgstr "この機能を有効にすると、サーバーはいくつかのセキュリティ上の問題（情報の偽装など）にさらされます。リバースプロキシを利用している場合のみ、この機能を有効にしてください。"
+msgstr ""
+"この機能を有効にすると、サーバーはいくつかのセキュリティ上の問題（情報の偽装"
+"など）にさらされます。リバースプロキシを利用している場合のみ、この機能を有効"
+"にしてください。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:366
 #, fuzzy
 msgid "To setup this feature, please include the following lines in `src/main/resources/application.properties`:"
-msgstr "この機能を設定するには、 `src/main/resources/application.properties` に以下の行を入れてください。"
+msgstr "この機能を設定するには、 `src/main/resources/application.properties` "
+"に以下の行を入れてください。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:369
@@ -1093,7 +1140,9 @@ msgstr "quarkus.http.cors=true\n"
 #: upstream/_guides/http-reference.adoc:372
 #, fuzzy
 msgid "To consider only de-facto standard header (`Forwarded` header), please include the following lines in `src/main/resources/application.properties`:"
-msgstr "デファクトスタンダードのヘッダー( `Forwarded` header )だけを考慮するために、 `src/main/resources/application.properties` に以下の行を入れてください。"
+msgstr ""
+"デファクトスタンダードのヘッダー( `Forwarded` header )だけを考慮するために、 "
+"`src/main/resources/application.properties` に以下の行を入れてください。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:375
@@ -1105,7 +1154,9 @@ msgstr "quarkus.http.cors=true\n"
 #: upstream/_guides/http-reference.adoc:378
 #, fuzzy
 msgid "To consider only non-standard headers, please include the following lines instead in `src/main/resources/application.properties`:"
-msgstr "非標準的なヘッダーのみを考慮するには、代わりに以下の行を `src/main/resources/application.properties` に入れてください。"
+msgstr ""
+"非標準的なヘッダーのみを考慮するには、代わりに以下の行を `src/main/resources/"
+"application.properties` に入れてください。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:384
@@ -1120,7 +1171,8 @@ msgstr ""
 #: upstream/_guides/http-reference.adoc:387
 #, fuzzy
 msgid "Both configurations related to standard and non-standard headers can be combined, although the standard headers configuration will have precedence."
-msgstr "標準ヘッダーと非標準ヘッダーに関する両方の設定を組み合わせることができますが、標準ヘッダーの設定が優先されます。"
+msgstr "標準ヘッダーと非標準ヘッダーに関する両方の設定を組み合わせることができますが"
+"、標準ヘッダーの設定が優先されます。"
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:389
@@ -1167,7 +1219,11 @@ msgstr "セイムサイト・クッキー"
 #: upstream/_guides/http-reference.adoc:401
 #, fuzzy
 msgid "One can easily add a https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite[SameSite] cookie property to any of the cookies set by a Quarkus endpoint by listing a cookie name and a `SameSite` attribute, for example:"
-msgstr "例えば、クッキー名と `SameSite` 属性を記載することで、Quarkusのエンドポイントによって設定された任意のクッキーに link:https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite[SameSite]クッキープロパティを簡単に追加することができます。"
+msgstr ""
+"例えば、クッキー名と `SameSite` 属性を記載することで、"
+"Quarkusのエンドポイントによって設定された任意のクッキーに "
+"link:https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/"
+"SameSite[SameSite]クッキープロパティを簡単に追加することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/http-reference.adoc:406
@@ -1181,7 +1237,9 @@ msgstr ""
 #: upstream/_guides/http-reference.adoc:409
 #, fuzzy
 msgid "Given this configuration, the `jwt` cookie will have a `SameSite=Lax` attribute and the `session` cookie will have a `SameSite=Strict` attribute."
-msgstr "この構成では、 `jwt` クッキーは `SameSite=Lax` 属性を持ち、 `session` クッキーは `SameSite=Strict` 属性を持つことになります。"
+msgstr ""
+"この構成では、 `jwt` クッキーは `SameSite=Lax` 属性を持ち、 `session` "
+"クッキーは `SameSite=Strict` 属性を持つことになります。"
 
 #. type: Title ==
 #: upstream/_guides/http-reference.adoc:410

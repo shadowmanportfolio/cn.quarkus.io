@@ -159,7 +159,12 @@ msgstr "まず、新しいプロジェクトを用意します。以下のコマ
 #: upstream/_guides/kogito-dmn.adoc:77
 #, fuzzy
 msgid "This command generates a Maven project, importing the `kogito-quarkus-decisions` extension that comes with all needed dependencies and configuration to equip your application with business automation.  It also imports the `resteasy-reactive-jackson` extension that is needed for Kogito to expose REST services."
-msgstr "このコマンドはMavenプロジェクトを生成し、アプリケーションにビジネス・オートメーションを装備するために必要な依存関係と構成をすべて備えた `kogito-quarkus-decisions` 拡張をインポートします。また、KogitoがRESTサービスを公開するのに必要な `resteasy-jackson` 拡張をインポートします。"
+msgstr ""
+"このコマンドはMavenプロジェクトを生成し、アプリケーションにビジネス・"
+"オートメーションを装備するために必要な依存関係と構成をすべて備えた `kogito-"
+"quarkus-decisions` 拡張をインポートします。また、"
+"KogitoがRESTサービスを公開するのに必要な `resteasy-jackson` "
+"拡張をインポートします。"
 
 #. type: Plain text
 #: upstream/_guides/kogito-dmn.adoc:80
@@ -387,7 +392,9 @@ msgstr "これは、生成されたバイナリーにランタイム技術が含
 #: upstream/_guides/kogito-dmn.adoc:178
 #, fuzzy
 msgid "Compilation will take a bit longer, so this step is disabled by default; let's build a native executable with the following command:"
-msgstr "コンパイルには少し時間がかかるので、このステップはデフォルトでは無効になっています。以下のコマンドでネイティブ実行可能ファイルをビルドしてみましょう。"
+msgstr ""
+"コンパイルには少し時間がかかるので、このステップはデフォルトでは無効になって"
+"います。以下のコマンドでネイティブ実行可能ファイルをビルドしてみましょう。"
 
 #. type: Plain text
 #: upstream/_guides/kogito-dmn.adoc:182

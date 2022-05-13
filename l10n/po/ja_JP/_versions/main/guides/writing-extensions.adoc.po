@@ -5983,7 +5983,9 @@ msgstr "`name`"
 #: upstream/_versions/main/guides/writing-extensions.adoc:3132
 #, fuzzy
 msgid "`description` (unless you have it already set in the ``runtime/pom.xml``'s `<description>` element, which is the recommended approach)"
-msgstr "`description` (推奨されるアプローチである、 `runtime/pom.xml` の `<description>` 要素にセット、がされていない限り)"
+msgstr ""
+"`description` (推奨されるアプローチである、 `runtime/pom.xml` の "
+"`<description>` 要素にセット、がされていない限り)"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/writing-extensions.adoc:3134

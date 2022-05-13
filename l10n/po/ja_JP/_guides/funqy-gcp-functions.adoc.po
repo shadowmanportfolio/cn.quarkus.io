@@ -150,13 +150,21 @@ msgstr "関数を作成する"
 #: upstream/_guides/funqy-gcp-functions.adoc:80
 #, fuzzy
 msgid "In this example, we will create two background functions and a cloud events function.  Background functions allow you to react to Google Cloud events like PubSub messages, Cloud Storage events, Firestore events, ...  Cloud events functions allow you to react to supported events using the Cloud Events specification."
-msgstr "この例では、2 つのバックグラウンド関数を作成します。バックグラウンド関数は、PubSub メッセージ、Cloud Storage イベント、Firestore イベントなどの Google Cloud イベントに反応することができます。"
+msgstr ""
+"この例では、2 つのバックグラウンド関数を作成します。バックグラウンド関数は、"
+"PubSub メッセージ、Cloud Storage イベント、Firestore イベントなどの Google "
+"Cloud イベントに反応することができます。"
 
 #. type: Plain text
 #: upstream/_guides/funqy-gcp-functions.adoc:82
 #, fuzzy
 msgid "Quarkus supports Cloud Functions gen 1 and gen 2. For an overview of Cloud Functions gen 2 see https://cloud.google.com/functions/docs/2nd-gen/overview[this page] on the Google Cloud Functions documentation. To use gen 2 you must use `gcloud beta` command and add the `--gen2` parameter."
-msgstr "Quarkusは、Cloud Functionsの第1世代と第2世代をサポートしています。Cloud Functions gen 2の概要については、Google Cloud Functionsのドキュメントの link:https://cloud.google.com/functions/docs/2nd-gen/overview[このページを]参照してください。gen 2を使用するには、 `gcloud beta` コマンドを使用し、 `--gen2` パラメータを追加する必要があります。"
+msgstr ""
+"Quarkusは、Cloud Functionsの第1世代と第2世代をサポートしています。Cloud "
+"Functions gen 2の概要については、Google Cloud Functionsのドキュメントの "
+"link:https://cloud.google.com/functions/docs/2nd-gen/"
+"overview[このページを]参照してください。gen 2を使用するには、 `gcloud beta` "
+"コマンドを使用し、 `--gen2` パラメータを追加する必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/funqy-gcp-functions.adoc:86
@@ -260,7 +268,10 @@ msgstr "これは、`io.quarkus.funqy.gcp.functions.event.StorageEvent` をパ�
 #: upstream/_guides/funqy-gcp-functions.adoc:128
 #, fuzzy
 msgid "This is a cloud events functions, that takes as parameter a `io.cloudevents.CloudEvent`, inside it the `getData()` method will return the event content, storage event in this case."
-msgstr "これはクラウドイベントの関数で、パラメータとして `io.cloudevents.CloudEvent` を受け取り、その内部で `getData()` メソッドがイベントの内容（この場合はストレージイベント）を返します。"
+msgstr ""
+"これはクラウドイベントの関数で、パラメータとして `io.cloudevents.CloudEvent` "
+"を受け取り、その内部で `getData()` "
+"メソッドがイベントの内容（この場合はストレージイベント）を返します。"
 
 #. type: Plain text
 #: upstream/_guides/funqy-gcp-functions.adoc:131
@@ -344,7 +355,8 @@ msgstr "Quarkus をブートストラップするのはこのクラスなので�
 #: upstream/_guides/funqy-gcp-functions.adoc:265
 #, fuzzy
 msgid "You can also use the new Java 17 runtime by using `--runtime=java17` in the gcloud command line."
-msgstr "また、gcloudのコマンドラインで `--runtime=java17` 、新しいJava 17ランタイムを使用することができます。"
+msgstr "また、gcloudのコマンドラインで `--runtime=java17` 、新しいJava "
+"17ランタイムを使用することができます。"
 
 #. type: Plain text
 #: upstream/_guides/funqy-gcp-functions.adoc:182
@@ -452,7 +464,10 @@ msgstr ""
 #: upstream/_guides/funqy-gcp-functions.adoc:260
 #, fuzzy
 msgid "The entry point always needs to be `io.quarkus.funqy.gcp.functions.FunqyCloudEventsFunction` as it will be this class that will bootstrap Quarkus."
-msgstr "Quarkus をブートストラップするのはこのクラスなので、エントリーポイントは常に `io.quarkus.funqy.gcp.functions.FunqyBackgroundFunction` である必要があります。"
+msgstr ""
+"Quarkus をブートストラップするのはこのクラスなので、エントリーポイントは常に "
+"`io.quarkus.funqy.gcp.functions.FunqyBackgroundFunction` "
+"である必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/funqy-gcp-functions.adoc:268
@@ -464,7 +479,8 @@ msgstr "`--trigger-bucket=` オプションは、Cloud Storage バケットの�
 #: upstream/_guides/funqy-gcp-functions.adoc:270
 #, fuzzy
 msgid "To trigger the event, you can send a file to the GCS `example-cloud-event` bucket."
-msgstr "イベントのトリガーとして、GCS `example-cloud-event` のバケットにファイルを送信することができます。"
+msgstr "イベントのトリガーとして、GCS `example-cloud-event` "
+"のバケットにファイルを送信することができます。"
 
 #. type: Title ==
 #: upstream/_guides/funqy-gcp-functions.adoc:271
@@ -559,7 +575,9 @@ msgstr "これは、Cloud Storage のイベント `{\"name\":\"file.txt\"}` (`fi
 #: upstream/_guides/funqy-gcp-functions.adoc:339
 #, fuzzy
 msgid "For cloud events functions, you launch the invoker with a target class of `io.quarkus.funqy.gcp.functions.FunqyCloudEventsFunction``."
-msgstr "バックグラウンド関数の場合は、 `io.quarkus.funqy.gcp.functions.FunqyBackgroundFunction` のターゲットクラスで invoker を起動します。"
+msgstr ""
+"バックグラウンド関数の場合は、 `io.quarkus.funqy.gcp.functions."
+"FunqyBackgroundFunction` のターゲットクラスで invoker を起動します。"
 
 #. type: delimited block -
 #: upstream/_guides/funqy-gcp-functions.adoc:375
@@ -593,7 +611,9 @@ msgstr ""
 #: upstream/_guides/funqy-gcp-functions.adoc:378
 #, fuzzy
 msgid "This will call your cloud events function with an event on the `\"MY_FILE.txt` file."
-msgstr "これは、Cloud Storage のイベント `{\"name\":\"file.txt\"}` (`file.txt` ファイル上のイベント) で PubSub のバックグラウンド関数を呼び出します。"
+msgstr ""
+"これは、Cloud Storage のイベント `{\"name\":\"file.txt\"}` (`file.txt` "
+"ファイル上のイベント) で PubSub のバックグラウンド関数を呼び出します。"
 
 #. type: Title ==
 #: upstream/_guides/funqy-gcp-functions.adoc:379
@@ -605,7 +625,10 @@ msgstr "次のステップ"
 #: upstream/_guides/funqy-gcp-functions.adoc:381
 #, fuzzy
 msgid "If you are looking for JAX-RS, Servlet or Vert.x support for Google Cloud Functions, we have it thanks to our xref:gcp-functions-http.adoc[Google Cloud Functions HTTP binding]."
-msgstr "Google Cloud FunctionsのJAX-RS、Servlet、Vert.xのサポートを探しているなら、 link:gcp-functions-http.html[Google Cloud FunctionsのHTTPバインディング]のおかげでそれが可能です。"
+msgstr ""
+"Google Cloud FunctionsのJAX-RS、Servlet、Vert.xのサポートを探しているなら、 "
+"link:gcp-functions-http.html[Google Cloud "
+"FunctionsのHTTPバインディング]のおかげでそれが可能です。"
 
 #~ msgid "}\n"
 #~ msgstr "}\n"

@@ -43,7 +43,8 @@ msgstr ""
 "title: 'Quarkus 0.21.2 released'\n"
 "date: 2019-09-05\n"
 "tags: release\n"
-"synopsis: Quarkus 0.21.2がリリースされ、いくつかのバグや使い勝手の問題が修正されました。アップグレードの時期です。\n"
+"synopsis: Quarkus 0.21.2がリリースされ、いくつかのバグや使い勝手の問題が修正"
+"されました。アップグレードの時期です。\n"
 "author: gsmet\n"
 "---\n"
 
@@ -75,13 +76,17 @@ msgstr "変更点"
 #: upstream/_posts/2019-09-05-quarkus-0-21-2-released.adoc:15
 #, fuzzy
 msgid "This release is all about fixing bugs, usability and documentation issues. We are still working on our next big release which will be 0.22.0."
-msgstr "このリリースでは、バグやユーザビリティ、ドキュメントの問題を修正しています。次のビッグリリースである0.22.0に向けてまだ作業を続けています。"
+msgstr ""
+"このリリースでは、バグやユーザビリティ、ドキュメントの問題を修正しています。"
+"次のビッグリリースである0.22.0に向けてまだ作業を続けています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-05-quarkus-0-21-2-released.adoc:17
 #, fuzzy
 msgid "You can find https://github.com/quarkusio/quarkus/releases/tag/0.21.2[the full changelog of 0.21.2] on GitHub."
-msgstr "link:https://github.com/quarkusio/quarkus/releases/tag/0.21.2[0.21.2の全変更履歴]はGitHubに掲載されています。"
+msgstr ""
+"link:https://github.com/quarkusio/quarkus/releases/tag/0.21.2[0.21."
+"2の全変更履歴]はGitHubに掲載されています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-05-quarkus-0-21-2-released.adoc:19
@@ -99,13 +104,21 @@ msgstr "コントリビューター"
 #: upstream/_posts/2019-09-05-quarkus-0-21-2-released.adoc:24
 #, fuzzy
 msgid "Quarkus has now https://github.com/quarkusio/quarkus/graphs/contributors[142 contributors].  Many many thanks to each and everyone of them."
-msgstr "Quarkusには現在 link:https://github.com/quarkusio/quarkus/graphs/contributors[142名の方にご協力]いただいております。それぞれの方に感謝します。"
+msgstr ""
+"Quarkusには現在 link:https://github.com/quarkusio/quarkus/graphs/"
+"contributors[142名の方にご協力]いただいております。それぞれの方に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-05-quarkus-0-21-2-released.adoc:26
 #, fuzzy
 msgid "In particular for this release, thanks to Bertrand Rousseau, chaminnk, Clement Escoffier, Daniel Ribeiro, David M. Lloyd, Dennis Baerten, George Gastaldi, Georgios Andrianakis, Guillaume Smet, Gunnar Morling, Gwenneg Lepage, Maciej Swiderski, Manyanda Chitimbo, Martin Kouba, Matej Novotny, Matteo Mortari, Rostislav Svoboda, Sergey Beryozkin, Stéphane Epardaud and Stuart Douglas."
-msgstr "特に今回のリリースでは、Bertrand Rousseau、chaminnk、Clement Escoffier、Daniel Ribeiro、David M.Lloyd, Dennis Baerten, George Gastaldi, Georgios Andrianakis, Guillaume Smet, Gunnar Morling, Gwenneg Lepage, Maciej Swiderski, Manyanda Chitimbo, Martin Kouba, Matej Novotny, Matteo Mortari, Rostislav Svoboda, Sergey Beryozkin, Stéphane Epardaud, Stuart Douglasに感謝します。"
+msgstr ""
+"特に今回のリリースでは、Bertrand Rousseau、chaminnk、Clement Escoffier、"
+"Daniel Ribeiro、David M.Lloyd, Dennis Baerten, George Gastaldi, Georgios "
+"Andrianakis, Guillaume Smet, Gunnar Morling, Gwenneg Lepage, Maciej "
+"Swiderski, Manyanda Chitimbo, Martin Kouba, Matej Novotny, Matteo Mortari, "
+"Rostislav Svoboda, Sergey Beryozkin, Stéphane Epardaud, Stuart "
+"Douglasに感謝します。"
 
 #. type: Title ==
 #: upstream/_posts/2019-09-05-quarkus-0-21-2-released.adoc:27

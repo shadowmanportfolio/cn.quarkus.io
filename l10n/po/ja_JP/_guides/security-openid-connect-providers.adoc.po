@@ -35,31 +35,54 @@ msgstr "はじめに"
 #: upstream/_guides/security-openid-connect-providers.adoc:13
 #, fuzzy
 msgid "If you use xref:security-openid-connect-web-authentication.adoc[OpenId Connect Authorization Code Flow] to protect Quarkus endpoints then you need to configure Quarkus to tell it how to connect to OpenId Connect providers, how to authenticate to such providers, which scopes to use, etc."
-msgstr "link:security-openid-connect-web-authentication.html[OpenId Connect Authorization Code Flowを] 使用してQuarkusのエンドポイントを保護する場合、OpenId Connectプロバイダーへの接続方法、プロバイダーへの認証方法、使用するスコープなどをQuarkusに伝えるよう設定する必要があります。"
+msgstr ""
+"link:security-openid-connect-web-authentication.html[OpenId Connect "
+"Authorization Code Flowを] 使用してQuarkusのエンドポイントを保護する場合、"
+"OpenId Connectプロバイダーへの接続方法、プロバイダーへの認証方法、使用するス"
+"コープなどをQuarkusに伝えるよう設定する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:15
 #, fuzzy
 msgid "Sometimes you need to use the configuration to workaround the fact that some providers do not implement `OpenId Connect` completely or when they are in fact xref:security-openid-connect-web-authentication.adoc#oauth2[OAuth2 providers only]."
-msgstr "プロバイダによっては、 `OpenId Connect` を完全に実装していない場合や、実際には link:security-openid-connect-web-authentication.html#oauth2[OAuth2 プロバイダのみ] である場合を回避するために、設定を使用する必要がある場合があります。"
+msgstr ""
+"プロバイダによっては、 `OpenId Connect` を完全に実装していない場合や、"
+"実際には link:security-openid-connect-web-authentication.html#oauth2[OAuth2 "
+"プロバイダのみ] "
+"である場合を回避するために、設定を使用する必要がある場合があります。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:17
 #, fuzzy
 msgid "The configuration of such providers can become complex, very technical and difficult to understand."
-msgstr "このようなプロバイダーの設定は、複雑でとても技術的で理解しにくいものになる可能性があります。"
+msgstr "このようなプロバイダーの設定は、複雑でとても技術的で理解しにくいものになる可"
+"能性があります。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:19
 #, fuzzy
 msgid "`quarkus.oidc.provider` configuration property has been introduced to refer to well-known `OpenId Connect` and `OAuth2` providers. This property can be used to refer to a provider such as `github` with only a minimum number of customizations required, typically, an account specific `client id`, `client secret` and some properties have to be set to complete the configuration."
-msgstr " `quarkus.oidc.provider` 構成プロパティは、よく知られた と プロバイダを参照するために導入されました。このプロパティは、最小限のカスタマイズしか必要としない のようなプロバイダを参照するために使用できます。通常、アカウント固有の , といくつかのプロパティを設定して、設定を完了させる必要があります。 `OpenId Connect` `OAuth2` `github` `client id` `client secret` "
+msgstr ""
+" `quarkus.oidc.provider` 構成プロパティは、よく知られた と "
+"プロバイダを参照するために導入されました。このプロパティは、"
+"最小限のカスタマイズしか必要としない "
+"のようなプロバイダを参照するために使用できます。通常、アカウント固有の , "
+"といくつかのプロパティを設定して、設定を完了させる必要があります。 `OpenId "
+"Connect` `OAuth2` `github` `client id` `client secret` "
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:21
 #, fuzzy
 msgid "This property can be used in `application.properties`, in xref:security-openid-connect-multitenancy.adoc[multi-tenant] set-ups if more than one provider has to be configured (for example, see https://quarkiverse.github.io/quarkiverse-docs/quarkus-renarde/dev/security.html#_using_oidc_for_login[Quarkus Renarde security documentation]), in custom xref:security-openid-connect-web-multitenancy.adoc#tenant-config-resolver[TenantConfigResolvers] if the tenant configurations are created dynamically."
-msgstr "このプロパティは、 `application.properties` 、複数のプロバイダを設定する必要がある link:security-openid-connect-multitenancy.html[マルチテナント] 設定（例： link:https://quarkiverse.github.io/quarkiverse-docs/quarkus-renarde/dev/security.html#_using_oidc_for_login[Quarkus Renardeセキュリティドキュメントを] 参照）、テナント設定が動的に作成される場合のカスタム link:security-openid-connect-web-multitenancy.html#tenant-config-resolver[TenantConfigResolversで] 使用することができます。"
+msgstr ""
+"このプロパティは、 `application.properties` 、"
+"複数のプロバイダを設定する必要がある link:security-openid-connect-"
+"multitenancy.html[マルチテナント] 設定（例： link:https://quarkiverse.github."
+"io/quarkiverse-docs/quarkus-renarde/dev/security.html#_using_oidc_for_login["
+"Quarkus Renardeセキュリティドキュメントを] 参照）、"
+"テナント設定が動的に作成される場合のカスタム link:security-openid-connect-"
+"web-multitenancy.html#tenant-config-resolver[TenantConfigResolversで] "
+"使用することができます。"
 
 #. type: Title ==
 #: upstream/_guides/security-openid-connect-providers.adoc:22
@@ -77,7 +100,10 @@ msgstr "ギズブ"
 #: upstream/_guides/security-openid-connect-providers.adoc:27
 #, fuzzy
 msgid "In order to set up OIDC for Github you need to create a new OAuth application in your https://github.com/settings/applications/new[GitHub developer settings]:"
-msgstr "GithubにOIDCを設定するためには、 link:https://github.com/settings/applications/new[GitHubの開発者] 設定で新しいOAuthアプリケーションを作成する必要があります。"
+msgstr ""
+"GithubにOIDCを設定するためには、 link:https://github.com/settings/"
+"applications/new[GitHubの開発者] "
+"設定で新しいOAuthアプリケーションを作成する必要があります。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:28
@@ -89,7 +115,11 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:32
 #, fuzzy
 msgid "Make sure to fill in the appropriate details, but more importantly the Authorization Callback URL, set to `http://localhost:8080/_renarde/security/github-success` (if you intend to test this using the Quarkus DEV mode)."
-msgstr "適切な詳細を入力し、さらに重要な点として、認証コールバックURLを `<a href=\"http://localhost:8080/_renarde/security/github-success\" class=\"bare\">http://localhost:8080/_renarde/security/github-success</a>` (に設定します（Quarkus DEVモードを使用してテストする場合）。"
+msgstr ""
+"適切な詳細を入力し、さらに重要な点として、認証コールバックURLを `<a href="
+"\"http://localhost:8080/_renarde/security/github-success\" class=\"bare\""
+">http://localhost:8080/_renarde/security/github-success</a>` (に設定します（"
+"Quarkus DEVモードを使用してテストする場合）。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:34
@@ -107,7 +137,11 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:40
 #, fuzzy
 msgid "You need to click on `Generate a new client secret`, confirm your credentials, and write down your Client ID and Client secret (especially that one, because you will not be able to see it again later from that page, but you can always recreate one, do don't worry too much):"
-msgstr " `Generate a new client secret` をクリックして認証情報を確認し、クライアントIDとクライアントシークレットをメモしてください（特にクライアントシークレットは、後でこのページから見ることができなくなりますが、いつでも再作成できますので、あまり気にしないでください）。"
+msgstr ""
+" `Generate a new client secret` をクリックして認証情報を確認し、クライアントI"
+"Dとクライアントシークレットをメモしてください（特にクライアントシークレットは"
+"、後でこのページから見ることができなくなりますが、いつでも再作成できますので"
+"、あまり気にしないでください）。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:41
@@ -140,7 +174,10 @@ msgstr "グーグル"
 #: upstream/_guides/security-openid-connect-providers.adoc:55
 #, fuzzy
 msgid "In order to set up OIDC for Google you need to create a new project in your https://console.cloud.google.com/projectcreate[Google Cloud Platform console]:"
-msgstr "OIDC for Googleを設定するためには、 link:https://console.cloud.google.com/projectcreate[Google Cloud Platformコンソールで] 新しいプロジェクトを作成する必要があります。"
+msgstr ""
+"OIDC for Googleを設定するためには、 link:https://console.cloud.google.com/"
+"projectcreate[Google Cloud Platformコンソールで] "
+"新しいプロジェクトを作成する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:57
@@ -158,7 +195,10 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:61
 #, fuzzy
 msgid "Now make sure you select your project in the top selector, and click on the left-hand bar menu on `APIs and Services > OAuth consent screen`:"
-msgstr "ここで、トップセレクターでプロジェクトを選択していることを確認し、左側のバーメニューから `APIs and Services > OAuth consent screen` をクリックします。"
+msgstr ""
+"ここで、トップセレクターでプロジェクトを選択していることを確認し、"
+"左側のバーメニューから `APIs and Services > OAuth consent screen` "
+"をクリックします。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:62
@@ -170,7 +210,8 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:65
 #, fuzzy
 msgid "Select `External` to authorise any Google user to log in to your application and press `CREATE`:"
-msgstr " `External` を選択して、任意の Google ユーザーにアプリケーションへのログインを許可し、 `CREATE` を押します。"
+msgstr " `External` を選択して、任意の Google "
+"ユーザーにアプリケーションへのログインを許可し、 `CREATE` を押します。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:66
@@ -182,7 +223,8 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:69
 #, fuzzy
 msgid "Now you can fill in your application name, your support email, your developer contact information and press `SAVE AND CONTINUE`:"
-msgstr "あとは、アプリケーション名、サポートメール、開発者の連絡先を記入し、 `SAVE AND CONTINUE` を押してください。"
+msgstr "あとは、アプリケーション名、サポートメール、開発者の連絡先を記入し、 `SAVE "
+"AND CONTINUE` を押してください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:70
@@ -206,7 +248,8 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:77
 #, fuzzy
 msgid "Do not add any test user on the next page, and press `SAVE AND CONTINUE`:"
-msgstr "次のページではテストユーザーを追加せず、 `SAVE AND CONTINUE` を押してください。"
+msgstr "次のページではテストユーザーを追加せず、 `SAVE AND CONTINUE` "
+"を押してください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:78
@@ -230,7 +273,11 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:86
 #, fuzzy
 msgid "Select `Web application` as `Application type`, and add `http://localhost:8080/_renarde/security/oidc-success` in the `Authorised redirect URIs` list, then press `CREATE`:"
-msgstr " `Web application` を `Application type` として選択し、追加 `<a href=\"http://localhost:8080/_renarde/security/oidc-success\" class=\"bare\">http://localhost:8080/_renarde/security/oidc-success</a>` を、 `Authorised redirect URIs` のリストで選択し、 `CREATE` を押します。"
+msgstr ""
+" `Web application` を `Application type` として選択し、追加 `<a href=\"http"
+"://localhost:8080/_renarde/security/oidc-success\" class=\"bare\""
+">http://localhost:8080/_renarde/security/oidc-success</a>` を、 `Authorised "
+"redirect URIs` のリストで選択し、 `CREATE` を押します。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:87
@@ -280,7 +327,10 @@ msgstr "マイクロソフト"
 #: upstream/_guides/security-openid-connect-providers.adoc:106
 #, fuzzy
 msgid "In order to set up OIDC for Microsoft you need to go to your https://portal.azure.com[Microsoft Azure Portal], and search for `Azure Active Directory`, then click on it:"
-msgstr "OIDC for Microsoft を設定するには、 link:https://portal.azure.com[Microsoft Azure ポータルに] アクセスし、 `Azure Active Directory` を検索して、クリックする必要があります。"
+msgstr ""
+"OIDC for Microsoft を設定するには、 link:https://portal.azure.com[Microsoft "
+"Azure ポータルに] アクセスし、 `Azure Active Directory` "
+"を検索して、クリックする必要があります。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:107
@@ -292,7 +342,9 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:110
 #, fuzzy
 msgid "Once there, on the left side under `Manage`, click on `App registrations` then click on `New registration`:"
-msgstr "左側の「 `Manage` 」の下にある「 `App registrations` 」をクリックし、「 `New registration` 」をクリックします。"
+msgstr ""
+"左側の「 `Manage` 」の下にある「 `App registrations` 」をクリックし、「 `New "
+"registration` 」をクリックします。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:111
@@ -304,7 +356,13 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:115
 #, fuzzy
 msgid "Fill in your application name, select `Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)` to allow anyone to log in, and add a `Web` Redirect URI as `http://localhost:8080/_renarde/security/oidc-success`, then click on `Register`:"
-msgstr "アプリケーション名を記入し、誰でもログインできるように `Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)` を選択し、 `Web` Redirect URI を以下のように追加します。 `<a href=\"http://localhost:8080/_renarde/security/oidc-success\" class=\"bare\">http://localhost:8080/_renarde/security/oidc-success</a>` を入力し、 `Register` をクリックします。"
+msgstr ""
+"アプリケーション名を記入し、誰でもログインできるように `Accounts in any "
+"organizational directory (Any Azure AD directory - Multitenant) and personal "
+"Microsoft accounts (e.g. Skype, Xbox)` を選択し、 `Web` Redirect URI "
+"を以下のように追加します。 `<a href=\"http://localhost:8080/_renarde/"
+"security/oidc-success\" class=\"bare\">http://localhost:8080/_renarde/"
+"security/oidc-success</a>` を入力し、 `Register` をクリックします。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:116
@@ -316,7 +374,9 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:119
 #, fuzzy
 msgid "On that resulting page, copy the `Client Id` (under `Application (client) ID`, then click on `Add a certificate or secret`:"
-msgstr "その結果のページで、 `Client Id` （ `Application (client) ID` の下にある、 `Add a certificate or secret` をクリック）をコピーしてください。"
+msgstr ""
+"その結果のページで、 `Client Id` （ `Application (client) ID` の下にある、 `"
+"Add a certificate or secret` をクリック）をコピーしてください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:120
@@ -328,7 +388,8 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:123
 #, fuzzy
 msgid "Now, under `Client secrets (0)`, click on `New client secret`:"
-msgstr "ここで、 `Client secrets (0)` の下にある、 `New client secret` をクリックします。"
+msgstr "ここで、 `Client secrets (0)` の下にある、 `New client secret` "
+"をクリックします。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:124
@@ -379,13 +440,20 @@ msgstr "アップル"
 #: upstream/_guides/security-openid-connect-providers.adoc:148
 #, fuzzy
 msgid "In order to set up OIDC for Apple you need to create a developer account, and sign up for the 99€/year program, but you cannot test your application on `localhost` like most other OIDC providers: you will need to run it over `https` and make it publicly accessible, so for development purposes you may want to use a service such as https://ngrok.com."
-msgstr "OIDC for Appleを設定するには、開発者アカウントを作成し、99ユーロ/年のプログラムに登録する必要がありますが、他の多くのOIDCプロバイダーのように、 `localhost` でアプリケーションをテストすることはできません。 `https` で実行し、一般公開する必要があるので、開発目的の場合は、 https://ngrok.com  などのサービスを利用することをお勧めします。"
+msgstr ""
+"OIDC for Appleを設定するには、開発者アカウントを作成し、99ユーロ/年のプログラ"
+"ムに登録する必要がありますが、他の多くのOIDCプロバイダーのように、 "
+"`localhost` でアプリケーションをテストすることはできません。 `https` "
+"で実行し、一般公開する必要があるので、開発目的の場合は、 https://ngrok.com  "
+"などのサービスを利用することをお勧めします。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:150
 #, fuzzy
 msgid "Go to https://developer.apple.com/account/resources/identifiers/list[Create a new identifier] and press `+`"
-msgstr "link:https://developer.apple.com/account/resources/identifiers/list[新しい識別子の] 作成に移動し `+` "
+msgstr ""
+"link:https://developer.apple.com/account/resources/identifiers/"
+"list[新しい識別子の] 作成に移動し `+` "
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:151
@@ -433,7 +501,9 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:166
 #, fuzzy
 msgid "Then scroll down to find the `Sign in with Apple` Capability, select it, and press `Continue`:"
-msgstr "次に、スクロールダウンして `Sign in with Apple` Capability を見つけ、それを選択し、 `Continue` を押します。"
+msgstr ""
+"次に、スクロールダウンして `Sign in with Apple` Capability "
+"を見つけ、それを選択し、 `Continue` を押します。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:167
@@ -481,7 +551,8 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:182
 #, fuzzy
 msgid "Enter a description and Bundle ID (use your application package name), then press `Continue`:"
-msgstr "説明とバンドルID（アプリケーションのパッケージ名を使用）を入力し、 `Continue` を押してください。"
+msgstr "説明とバンドルID（アプリケーションのパッケージ名を使用）を入力し、 `Continue`"
+" を押してください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:183
@@ -530,7 +601,9 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:198
 #, fuzzy
 msgid "Add your domain and return URL (set to `<host>/_renarde/security/oidc-success`) and press `Next`:"
-msgstr "ドメインとリターンURLを追加し（ `<host>/_renarde/security/oidc-success` に設定）、 `Next` を押してください。"
+msgstr ""
+"ドメインとリターンURLを追加し（ `<host>/_renarde/security/oidc-success` "
+"に設定）、 `Next` を押してください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:199
@@ -578,7 +651,9 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:214
 #, fuzzy
 msgid "Go to the https://developer.apple.com/account/resources/authkeys/list[Keys] page on the left menu, and press `+`:"
-msgstr "左メニューの「 link:https://developer.apple.com/account/resources/authkeys/list[キー」] ページを開き、 `+` を押します。"
+msgstr ""
+"左メニューの「 link:https://developer.apple.com/account/resources/authkeys/"
+"list[キー」] ページを開き、 `+` を押します。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:215
@@ -632,7 +707,9 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:234
 #, fuzzy
 msgid "Write down your `Key ID`, download your key and save it to your Quarkus application in `src/main/resources/AuthKey_<KEYID>.p8`:"
-msgstr " `Key ID` をメモして、キーをダウンロードし、Quarkus アプリケーションの `src/main/resources/AuthKey_<KEYID>.p8` に保存してください。"
+msgstr ""
+" `Key ID` をメモして、キーをダウンロードし、Quarkus アプリケーションの `src/"
+"main/resources/AuthKey_<KEYID>.p8` に保存してください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:235
@@ -662,13 +739,20 @@ msgstr "フェイスブック"
 #: upstream/_guides/security-openid-connect-providers.adoc:254
 #, fuzzy
 msgid "Facebook you will not be let you test your application on `localhost` like most other OIDC providers: you will need to run it over `https` and make it publicly accessible, so for development purposes you may want to use a service such as https://ngrok.com."
-msgstr "Facebookでは、他の多くのOIDCプロバイダーのように、 `localhost` でアプリケーションをテストすることはできません。 `https` でアプリケーションを実行し、一般に公開する必要があります。したがって、開発目的の場合は、 https://ngrok.com  などのサービスを使用することをお勧めします。"
+msgstr ""
+"Facebookでは、他の多くのOIDCプロバイダーのように、 `localhost` "
+"でアプリケーションをテストすることはできません。 `https` でアプリケーションを"
+"実行し、一般に公開する必要があります。したがって、開発目的の場合は、 https://"
+"ngrok.com  などのサービスを使用することをお勧めします。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:256
 #, fuzzy
 msgid "In order to set up OIDC for Facebook start by https://developers.facebook.com/apps/create/[Creating an application], select `None` as an app type, and press `Next`:"
-msgstr "OIDC for Facebook を設定するには、まず link:https://developers.facebook.com/apps/create/[アプリケーションを作成] し、アプリの種類として `None` を選択し、 `Next` を押してください。"
+msgstr ""
+"OIDC for Facebook を設定するには、まず link:https://developers.facebook.com/"
+"apps/create/[アプリケーションを作成] し、アプリの種類として `None` を選択し、"
+" `Next` を押してください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:257
@@ -704,7 +788,8 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:268
 #, fuzzy
 msgid "Quick the `Quickstarts` page and click on `Facebook login > Settings` on the left menu:"
-msgstr " `Quickstarts` ページをクイックして、左メニューの `Facebook login > Settings` をクリックします。"
+msgstr " `Quickstarts` ページをクイックして、左メニューの `Facebook login > Settings`"
+" をクリックします。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:269
@@ -716,7 +801,9 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:272
 #, fuzzy
 msgid "Enter your `Redirect URIs` (set to `<host>/_renarde/security/oidc-success`) and press `Save changes`:"
-msgstr " `Redirect URIs` （ `<host>/_renarde/security/oidc-success` に設定）を入力し、 `Save changes` を押してください。"
+msgstr ""
+" `Redirect URIs` （ `<host>/_renarde/security/oidc-success` "
+"に設定）を入力し、 `Save changes` を押してください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:273
@@ -728,7 +815,9 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:276
 #, fuzzy
 msgid "Now go to `Settings > Basic` on the left hand menu, and write down your `App ID` and `App secret`:"
-msgstr "次に、左側のメニューから `Settings > Basic` にアクセスし、 `App ID` と `App secret` を書き込んでください。"
+msgstr ""
+"次に、左側のメニューから `Settings > Basic` にアクセスし、 `App ID` と `App "
+"secret` を書き込んでください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:277
@@ -755,13 +844,19 @@ msgstr "ツイッター"
 #: upstream/_guides/security-openid-connect-providers.adoc:292
 #, fuzzy
 msgid "You can use Twitter for OIDC login, but at the moment, it restricts access to the user's email, which means you will have to obtain it and verify it yourself."
-msgstr "OIDCのログインにTwitterを利用することができますが、現時点ではユーザーのメールへのアクセスが制限されているため、自分でメールを取得して確認する必要があります。"
+msgstr ""
+"OIDCのログインにTwitterを利用することができますが、現時点ではユーザーのメール"
+"へのアクセスが制限されているため、自分でメールを取得して確認する必要がありま"
+"す。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:294
 #, fuzzy
 msgid "In order to set up OIDC for Twitter start by https://developer.twitter.com/en/portal/projects/new[Creating a project], enter a project name, and press `Next`:"
-msgstr "OIDC for Twitter を設定するには、まず link:https://developer.twitter.com/en/portal/projects/new[プロジェクトを作成] し、プロジェクト名を入力し、 `Next` を押します。"
+msgstr ""
+"OIDC for Twitter を設定するには、まず link:https://developer.twitter.com/en/"
+"portal/projects/new[プロジェクトを作成] し、プロジェクト名を入力し、 `Next` "
+"を押します。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:295
@@ -821,7 +916,8 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:314
 #, fuzzy
 msgid "Navigate down to the `User authentication settings` section and press `Set up`:"
-msgstr " `User authentication settings` セクションまで移動し、 `Set up` を押してください。"
+msgstr " `User authentication settings` セクションまで移動し、 `Set up` "
+"を押してください。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:315
@@ -845,13 +941,18 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:323
 #, fuzzy
 msgid "Select `Web App` as application type, then fill in your application details (use `<host>/_renarde/security/twitter-success` for the `Callback URI`)."
-msgstr "アプリケーションの種類として `Web App` を選択し、アプリケーションの詳細を入力します（ `Callback URI` の場合は `<host>/_renarde/security/twitter-success` を使用します）。"
+msgstr ""
+"アプリケーションの種類として `Web App` "
+"を選択し、アプリケーションの詳細を入力します（ `Callback URI` の場合は "
+"`<host>/_renarde/security/twitter-success` を使用します）。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:326
 #, fuzzy
 msgid "Twitter doesn't require https usage in practice, but won't accept your `Website URL` without it, so you can still use ngrok for it."
-msgstr "Twitterは実際にはhttpsの利用を要求していませんが、httpsでないと `Website URL` 、受け付けませんので、その場合でもngrokを利用することができます。"
+msgstr ""
+"Twitterは実際にはhttpsの利用を要求していませんが、httpsでないと `Website URL`"
+" 、受け付けませんので、その場合でもngrokを利用することができます。"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:328
@@ -869,7 +970,8 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:332
 #, fuzzy
 msgid "You can now copy your `Client ID` and `Client Secret` and press `Done`:"
-msgstr "これで、 `Client ID` と `Client Secret` をコピーして、 `Done` を押すことができます。"
+msgstr "これで、 `Client ID` と `Client Secret` をコピーして、 `Done` "
+"を押すことができます。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:333
@@ -896,7 +998,9 @@ msgstr "スポティファイ"
 #: upstream/_guides/security-openid-connect-providers.adoc:347
 #, fuzzy
 msgid "Create a https://developer.spotify.com/documentation/general/guides/authorization/app-settings/[Spotify application]:"
-msgstr "link:https://developer.spotify.com/documentation/general/guides/authorization/app-settings/[Spotifyのアプリケーションを] 作成します。"
+msgstr ""
+"link:https://developer.spotify.com/documentation/general/guides/"
+"authorization/app-settings/[Spotifyのアプリケーションを] 作成します。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:348
@@ -908,7 +1012,11 @@ msgstr ""
 #: upstream/_guides/security-openid-connect-providers.adoc:351
 #, fuzzy
 msgid "Don't forget to add `http://localhost:8080` as a redirect URI for testing during development purposes. You should get a client id and secret generated once a Spotify application setup has been complete, for example:"
-msgstr "開発時のテスト用に `<a href=\"http://localhost:8080\" class=\"bare\">http://localhost:8080</a>` をリダイレクト URI として追加することを忘れないでください。例えば、Spotifyアプリケーションのセットアップが完了したら、クライアントIDとシークレットが生成されるはずです。"
+msgstr ""
+"開発時のテスト用に `<a href=\"http://localhost:8080\" class=\"bare\""
+">http://localhost:8080</a>` をリダイレクト URI として追加することを忘れないで"
+"ください。例えば、Spotifyアプリケーションのセットアップが完了したら、クライア"
+"ントIDとシークレットが生成されるはずです。"
 
 #. type: Target for macro image
 #: upstream/_guides/security-openid-connect-providers.adoc:352
@@ -935,7 +1043,9 @@ msgstr "参照"
 #: upstream/_guides/security-openid-connect-providers.adoc:366
 #, fuzzy
 msgid "xref:security-openid-connect-web-authentication.adoc[Using OpenID Connect to Protect Web Applications]"
-msgstr "link:security-openid-connect-web-authentication.html[OpenID Connectを利用したWebアプリケーションの保護]"
+msgstr ""
+"link:security-openid-connect-web-authentication.html[OpenID "
+"Connectを利用したWebアプリケーションの保護]"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-providers.adoc:366

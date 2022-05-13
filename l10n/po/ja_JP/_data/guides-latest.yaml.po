@@ -568,7 +568,8 @@ msgstr "/guides/rest-json"
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
 msgid "Discover how to develop highly scalable REST services with JAX-RS and RESTEasy Reactive."
-msgstr "JAX-RSとRESTEasyReactiveを使用して拡張性の高いリアクティブRESTサービスを開発する方法を説明します。"
+msgstr "JAX-RSとRESTEasyReactiveを使用して拡張性の高いリアクティブRESTサービスを開発"
+"する方法を説明します。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
@@ -1686,7 +1687,9 @@ msgstr "/guides/rabbitmq-dev-services"
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
 msgid "This guide demonstrates how your Quarkus application can utilize SmallRye Reactive Messaging to consume and produce HTTP messages."
-msgstr "このガイドでは、QuarkusアプリケーションがSmallRye Reactive Messagingを利用してAMQPと対話する方法を説明します。"
+msgstr ""
+"このガイドでは、QuarkusアプリケーションがSmallRye Reactive "
+"Messagingを利用してAMQPと対話する方法を説明します。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
@@ -1704,7 +1707,9 @@ msgstr "/guides/reactive-messaging-http"
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
 msgid "This guide demonstrates how your Quarkus application can utilize SmallRye Reactive Messaging to consume and produce messages via WebSockets."
-msgstr "このガイドでは、QuarkusアプリケーションがSmallRye Reactive Messagingを利用してRabbitMQと対話する方法を説明します。"
+msgstr ""
+"このガイドでは、QuarkusアプリケーションがSmallRye Reactive "
+"Messagingを利用してRabbitMQと対話する方法を説明します。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
@@ -1788,7 +1793,9 @@ msgstr "Google Cloud Functions"
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
 msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/pubsub.html"
-msgstr "https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/amazon-s3.html"
+msgstr ""
+"https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/"
+"amazon-s3.html"
 
 #. type: Hash Value: categories guides keywords
 #: upstream/_data/guides-latest.yaml:0
@@ -1968,7 +1975,10 @@ msgstr "/guides/security-ldap"
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
 msgid "This guide demonstrates how to use the OpenID Connect extension to protect your Quarkus JAX-RS service application using Bearer Token Authorization where the tokens are issued by OpenID Connect Providers such as Keycloak."
-msgstr "このガイドでは、OpenID Connectエクステンションを使用して、KeycloakなどのOpenIdConnectプロバイダーによってトークンが発行されるBearerTokenAuthorizationを使用してQuarkusJAX-RSサービスアプリケーションを保護する方法を示します。"
+msgstr ""
+"このガイドでは、OpenID Connectエクステンションを使用して、KeycloakなどのOpenI"
+"dConnectプロバイダーによってトークンが発行されるBearerTokenAuthorizationを使"
+"用してQuarkusJAX-RSサービスアプリケーションを保護する方法を示します。"
 
 #. type: Hash Value: categories guides keywords
 #: upstream/_data/guides-latest.yaml:0
@@ -1992,7 +2002,10 @@ msgstr "/guides/security-openid-connect"
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
 msgid "This guide demonstrates how to use the OpenID Connect extension to protect your Quarkus JAX-RS web application using the Authorization Code Flow and OpenID Connect Providers such as Keycloak."
-msgstr "このガイドでは、Quarkusを使用してAuthorization Code Flowに基づいてWebアプリケーションを保護するためにOpenID Connect Extensionを使用する方法を説明します。"
+msgstr ""
+"このガイドでは、Quarkusを使用してAuthorization Code "
+"Flowに基づいてWebアプリケーションを保護するためにOpenID Connect "
+"Extensionを使用する方法を説明します。"
 
 #. type: Hash Value: categories guides keywords
 #: upstream/_data/guides-latest.yaml:0
@@ -2070,7 +2083,9 @@ msgstr "/guides/security-openid-connect-client"
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
 msgid "This guide explains how to configure Quarkus to authenticate against well-known OpenID Connect providers such as GitHub, Google, Microsoft, Apple..."
-msgstr "このガイドでは、GitHub、Google、Microsoft、Appleなどの有名なOpenID Connectプロバイダーに対して認証するためにQuarkusを設定する方法について説明します。"
+msgstr ""
+"このガイドでは、GitHub、Google、Microsoft、Appleなどの有名なOpenID Connectプ"
+"ロバイダーに対して認証するためにQuarkusを設定する方法について説明します。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
@@ -2274,7 +2289,8 @@ msgstr "/guides/credentials-provider"
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
 msgid "This guide demonstrates how your Quarkus application can use WebAuthn authentication instead of passwords."
-msgstr "このガイドでは、Quarkusアプリケーションがデータベースを使用してユーザーIDを保存する方法を説明します。"
+msgstr "このガイドでは、Quarkusアプリケーションがデータベースを使用してユーザーIDを保"
+"存する方法を説明します。"
 
 #. type: Hash Value: categories guides keywords
 #: upstream/_data/guides-latest.yaml:0

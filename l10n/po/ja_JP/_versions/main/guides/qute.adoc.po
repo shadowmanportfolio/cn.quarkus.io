@@ -61,7 +61,10 @@ msgstr ""
 #: upstream/_versions/main/guides/qute.adoc:29
 #, fuzzy
 msgid "If you want to use Qute in your JAX-RS application, you need to add an extension first:"
-msgstr "JAX-RS アプリケーションで Qute を使用する場合は、まず `quarkus-resteasy-qute` のエクステンションを追加する必要があります。 `pom.xml` ファイルに以下を追加します:"
+msgstr ""
+"JAX-RS アプリケーションで Qute を使用する場合は、まず `quarkus-resteasy-qute`"
+" のエクステンションを追加する必要があります。 `pom.xml` "
+"ファイルに以下を追加します:"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute.adoc:31
@@ -341,7 +344,9 @@ msgstr "パスが `templates/item.html` のテンプレートを注入します�
 #: upstream/_versions/main/guides/qute.adoc:169
 #, fuzzy
 msgid "`Templates.hello()` returns a new template instance that is returned from the resource method. Note that we don't trigger the rendering - this is done automatically by a special `ContainerResponseFilter` implementation."
-msgstr "レンダリングをトリガーしないことに注意してください - これは特別な `ContainerResponseFilter` の実装によって自動的に行われます。"
+msgstr ""
+"レンダリングをトリガーしないことに注意してください - これは特別な "
+"`ContainerResponseFilter` の実装によって自動的に行われます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute.adoc:171

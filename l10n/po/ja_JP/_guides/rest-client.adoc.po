@@ -44,7 +44,8 @@ msgstr "このガイドでは、MicroProfile REST Clientを使用して、ほと
 #: upstream/_guides/rest-client.adoc:23
 #, fuzzy
 msgid "there is another guide if you need to write server xref:rest-json.adoc[JSON REST APIs]."
-msgstr "サーバー link:rest-json.html[JSON REST API]を書く必要がある場合は、別のガイドがあります。"
+msgstr "サーバー link:rest-json.html[JSON REST "
+"API]を書く必要がある場合は、別のガイドがあります。"
 
 #. type: Title ==
 #: upstream/_guides/rest-client.adoc:24
@@ -918,7 +919,10 @@ msgstr "REST クライアントと RESTEasy インタラクション"
 #: upstream/_guides/rest-client.adoc:619
 #, fuzzy
 msgid "In Quarkus, the REST Client extension and xref:rest-json.adoc[the RESTEasy extension] share the same infrastructure.  One important consequence of this consideration is that they share the same list of providers (in the JAX-RS meaning of the word)."
-msgstr "Quarkusでは、REST Clientエクステンションと link:rest-json.html[RESTEasyエクステンション]は同じインフラストラクチャを共有しています。この考察の重要な結果の1つは、（JAX-RSの意味での）プロバイダの同じリストを共有していることです。"
+msgstr ""
+"Quarkusでは、REST Clientエクステンションと link:rest-json.html[RESTEasyエクス"
+"テンション]は同じインフラストラクチャを共有しています。この考察の重要な結果の"
+"1つは、（JAX-RSの意味での）プロバイダの同じリストを共有していることです。"
 
 #. type: Plain text
 #: upstream/_guides/rest-client.adoc:622

@@ -50,7 +50,11 @@ msgstr "Quarkus Tools for Eclipse 4.15.0.最終リリース!"
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:14
 #, fuzzy
 msgid "In a previous link:../eclipse-got-quarkused[post], we announced the first version of Quarkus Tools for Eclipse. We're now announcing a new version for Quarkus Tools for Eclipse, including better support for Eclipse Microprofile, Java 11 and enhancements to the wizard."
-msgstr "前回の link:../eclipse-got-quarkused[記事]では、Quarkus Tools for Eclipseの最初のバージョンを発表しました。今回は、Eclipse MicroprofileやJava 11のサポート強化、ウィザードの強化など、Quarkus Tools for Eclipseの新バージョンを発表します。"
+msgstr ""
+"前回の link:../eclipse-got-quarkused[記事]では、Quarkus Tools for "
+"Eclipseの最初のバージョンを発表しました。今回は、Eclipse MicroprofileやJava "
+"11のサポート強化、ウィザードの強化など、Quarkus Tools for "
+"Eclipseの新バージョンを発表します。"
 
 #. type: Title ==
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:15
@@ -62,7 +66,9 @@ msgstr "Kubernetes、Openshift、S2i、Dockerのプロパティの言語サポ�
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:19
 #, fuzzy
 msgid "There is now completion, hover, documentation and validation for kubernetes.*, openshift.*, s2i.*, docker.* properties"
-msgstr "kubernetesのための補完、ホバー、ドキュメント、検証が行われるようになりました。 *, openshift.*, s2i. *, docker.*プロパティ"
+msgstr ""
+"kubernetesのための補完、ホバー、ドキュメント、検証が行われるようになりました"
+"。 *, openshift.*, s2i. *, docker.*プロパティ"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:20
@@ -116,13 +122,15 @@ msgstr "MicroProfile REST Clientプロパティの言語サポート"
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:38
 #, fuzzy
 msgid "Likewise, there is now completion, hover, documentation and validation for the MicroProfile properties from REST Client."
-msgstr "同様に、RESTクライアントからのMicroProfileプロパティについても、補完、ホバー、ドキュメント、検証が可能になりました。"
+msgstr "同様に、RESTクライアントからのMicroProfileプロパティについても、補完、ホバー"
+"、ドキュメント、検証が可能になりました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:40
 #, fuzzy
 msgid "After registering a REST client using `@RegisterRestClient` like so:"
-msgstr "`@RegisterRestClient` を使ってRESTクライアントを登録した後、次のようにします。"
+msgstr "`@RegisterRestClient` "
+"を使ってRESTクライアントを登録した後、次のようにします。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:43
@@ -166,7 +174,8 @@ msgstr ""
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:60
 #, fuzzy
 msgid "The related MicroProfile Rest config properties will have language feature support (completion, hover, validation, etc.)."
-msgstr "関連するMicroProfile Restの設定プロパティには、言語機能のサポート（補完、ホバー、検証など）があります。"
+msgstr "関連するMicroProfile Restの設定プロパティには、言語機能のサポート（補完、ホバ"
+"ー、検証など）があります。"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:61
@@ -214,7 +223,8 @@ msgstr "MicroProfile Healthの言語サポート"
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:90
 #, fuzzy
 msgid "Likewise, there is now completion, hover, documentation and validation for the MicroProfile Health artifacts."
-msgstr "同様に、MicroProfile Healthの成果物についても、完成度、ホバリング、文書化、検証が行われるようになりました。"
+msgstr "同様に、MicroProfile Healthの成果物についても、完成度、ホバリング、文書化、検"
+"証が行われるようになりました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:92
@@ -247,7 +257,8 @@ msgstr "}\n"
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:107
 #, fuzzy
 msgid "you will get a validation error (as the class does not implement the `HealthCheck` interface:"
-msgstr "を使用すると、検証エラーが発生します（このクラスは `HealthCheck` インターフェースを実装していないため）。"
+msgstr "を使用すると、検証エラーが発生します（このクラスは `HealthCheck` "
+"インターフェースを実装していないため）。"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:108
@@ -259,7 +270,9 @@ msgstr ""
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:111
 #, fuzzy
 msgid "Similarely, if you have a class that implements `HealthCheck` but is not annotated with `Health`, some workflow applies:"
-msgstr "同様に、 `HealthCheck` を実装しているが `Health` でアノテーションされていないクラスがある場合、いくつかのワークフローが適用されます。"
+msgstr ""
+"同様に、 `HealthCheck` を実装しているが `Health` でアノテーションされていない"
+"クラスがある場合、いくつかのワークフローが適用されます。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:118
@@ -290,7 +303,8 @@ msgstr ""
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:132
 #, fuzzy
 msgid "you will get a validation error (as the class is not annotated with `Health` interface:"
-msgstr "を使用すると、検証エラーが発生します（クラスが `Health` インターフェースでアノテーションされていないため）。"
+msgstr "を使用すると、検証エラーが発生します（クラスが `Health` "
+"インターフェースでアノテーションされていないため）。"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:133
@@ -302,7 +316,8 @@ msgstr ""
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:136
 #, fuzzy
 msgid "As there are several ways to fix the problem, then several quick fixes are proposed."
-msgstr "問題を解決するにはいくつかの方法がありますが、その中でもいくつかのクイックフィックスを提案します。"
+msgstr "問題を解決するにはいくつかの方法がありますが、その中でもいくつかのクイックフ"
+"ィックスを提案します。"
 
 #. type: Title ==
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:137
@@ -314,13 +329,17 @@ msgstr "Quarkusプロジェクトウィザードでのエクステンション�
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:141
 #, fuzzy
 msgid "With the Quarkus extensions ecosystem growing, we improved information about extensions in the Quarkus project wizard."
-msgstr "Quarkusのエクステンションエコシステムの成長に伴い、Quarkusのプロジェクトウィザードでエクステンションに関する情報を改善しました。"
+msgstr "Quarkusのエクステンションエコシステムの成長に伴い、Quarkusのプロジェクトウィ"
+"ザードでエクステンションに関する情報を改善しました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:146
 #, fuzzy
 msgid "When you select an extension in the wizard, you will see the extension description in the lower side of the wizard. If the extension has a guide on the Quarkus web site, a link will also be displayed and clicking on that link will open the guide on your local web browser."
-msgstr "ウィザードで拡張機能を選択すると、ウィザードの下側に拡張機能の説明が表示されます。その拡張機能がQuarkusのWebサイトにガイドがある場合は、リンクも表示され、そのリンクをクリックするとローカルのWebブラウザでガイドが表示されます。"
+msgstr ""
+"ウィザードで拡張機能を選択すると、ウィザードの下側に拡張機能の説明が表示され"
+"ます。その拡張機能がQuarkusのWebサイトにガイドがある場合は、リンクも表示され"
+"、そのリンクをクリックするとローカルのWebブラウザでガイドが表示されます。"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:147
@@ -344,7 +363,10 @@ msgstr "将来"
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:155
 #, fuzzy
 msgid "If you have any questions, suggestions or feedback, by all means please https://issues.redhat.com/secure/CreateIssueDetails!init.jspa?pid=10020&issuetype=1&summary=Summary&components=12333057[open an issue]."
-msgstr "ご質問、ご提案、ご意見などがございましたら、ぜひ link:https://issues.redhat.com/secure/CreateIssueDetails!init.jspa?pid=10020&amp;issuetype=1&amp;summary=Summary&amp;components=12333057[問題]提起をお願いいたします。"
+msgstr ""
+"ご質問、ご提案、ご意見などがございましたら、ぜひ link:https://issues.redhat."
+"com/secure/CreateIssueDetails!init.jspa?pid=10020&amp;issuetype=1&amp;summary"
+"=Summary&amp;components=12333057[問題]提起をお願いいたします。"
 
 #. type: Plain text
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:157
@@ -373,7 +395,9 @@ msgstr "GitHub リポジトリ: https://github.com/jbosstools/jbosstools-quarkus
 #: upstream/_posts/2020-04-28-eclipse-quarkus-tools-4.15.0.Final.adoc:164
 #, fuzzy
 msgid "Open an issue: https://issues.redhat.com/secure/CreateIssueDetails!init.jspa?pid=10020&issuetype=1&summary=Summary&components=12333057"
-msgstr "課題を開く https://issues.redhat.com/secure/CreateIssueDetails!init.jspa?pid=10020&amp;issuetype=1&amp;summary=Summary&amp;components=12333057"
+msgstr ""
+"課題を開く https://issues.redhat.com/secure/CreateIssueDetails!init."
+"jspa?pid=10020&amp;issuetype=1&amp;summary=Summary&amp;components=12333057"
 
 #, fuzzy
 #~ msgid "---\n"

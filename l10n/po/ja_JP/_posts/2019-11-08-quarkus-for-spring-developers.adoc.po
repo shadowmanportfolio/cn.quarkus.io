@@ -51,7 +51,14 @@ msgstr "Spring開発者のためのQuarkus"
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:12
 #, fuzzy
 msgid "The arrival of Quarkus 1.0 brings an innovative platform for developing Linux container- and kubernetes-native Java microservices. Developers typically have to set aside their existing knowledge as they begin to evaluate new and innovative runtime frameworks. Quarkus is different because it was created by a collection of engineers with a deep expertise in a broad collection of Java technologies. This includes Spring API compatibility, brought to Quarkus by the same engineers that bring Spring Boot support to https://www.redhat.com/en/products/runtimes[Red Hat Runtimes]."
-msgstr "Quarkus 1.0の登場により、LinuxコンテナやkubernetesネイティブなJavaマイクロサービスを開発するための革新的なプラットフォームが登場しました。開発者は通常、新しく革新的なランタイムフレームワークの評価を始める際に、既存の知識を捨てなければなりません。Quarkusは、幅広いJavaテクノロジーに精通したエンジニアが集まって作られた点が異なります。これにはSpring APIの互換性も含まれており、 link:https://www.redhat.com/en/products/runtimes[Red Hat] RuntimesにSpring Bootのサポートをもたらしたのと同じエンジニアがQuarkusにもたらしました。"
+msgstr ""
+"Quarkus 1.0の登場により、LinuxコンテナやkubernetesネイティブなJavaマイクロサ"
+"ービスを開発するための革新的なプラットフォームが登場しました。開発者は通常、"
+"新しく革新的なランタイムフレームワークの評価を始める際に、既存の知識を捨てな"
+"ければなりません。Quarkusは、幅広いJavaテクノロジーに精通したエンジニアが集ま"
+"って作られた点が異なります。これにはSpring APIの互換性も含まれており、 "
+"link:https://www.redhat.com/en/products/runtimes[Red Hat] RuntimesにSpring "
+"Bootのサポートをもたらしたのと同じエンジニアがQuarkusにもたらしました。"
 
 #. type: Target for macro image
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:16
@@ -63,7 +70,10 @@ msgstr ""
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:19
 #, fuzzy
 msgid "A free 140-page book, https://red.ht/quarkus-spring-devs[Quarkus for Spring Developers], is now available that discusses this topic in greater, and updated, detail."
-msgstr "現在、140ページの無料書籍「 link:https://red.ht/quarkus-spring-devs[Quarkus for Spring] Developers」が発売されており、このトピックについてより詳しく、また最新の情報が記載されています。"
+msgstr ""
+"現在、140ページの無料書籍「 link:https://red.ht/quarkus-spring-devs[Quarkus "
+"for Spring] Developers」が発売されており、このトピックについてより詳しく、ま"
+"た最新の情報が記載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:22
@@ -75,7 +85,17 @@ msgstr "私はSpringの開発者です。なぜQuarkusなのか？"
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:24
 #, fuzzy
 msgid "It is becoming increasingly apparent that containerization in general and Kubernetes in particular is forcing a re-evaluation of Java for the development of cloud native applications. Kubernetes is a highly dynamic shared infrastructure that becomes more cost effective as the number of applications a cluster can host grows and the responsiveness to application lifecycle changes improves, like redeployments and scaling up/down. Traditional Java cloud native runtimes have layered new functionality on an existing stack, without really re-thinking the underlying stack itself. This results in larger memory consumption and slower startup times, to the point where organizations are now willing to forgo their deep Java expertise to retrain and retool for Go and Node.js to drive more value out of their large investment in Kubernetes clusters."
-msgstr "一般的なコンテナ化、特にKubernetesは、クラウドネイティブアプリケーションの開発において、Javaの再評価を迫るものであることが明らかになりつつあります。Kubernetesは非常にダイナミックな共有インフラであり、クラスターがホストできるアプリケーションの数が増え、再デプロイやスケールアップ/ダウンなどのアプリケーションのライフサイクルの変化に対する応答性が向上するほど、コスト効率が向上します。従来のJavaクラウド・ネイティブ・ランタイムは、既存のスタックに新しい機能を重ねていましたが、基礎となるスタック自体を再考することはありませんでした。その結果、メモリ消費量が多くなり、起動時間も遅くなります。現在、企業は、Kubernetesクラスターへの大規模な投資からより多くの価値を引き出すために、Javaの深い専門知識を捨てて、GoやNode.jsのために再教育や再編成を行うことを望んでいます。"
+msgstr ""
+"一般的なコンテナ化、特にKubernetesは、クラウドネイティブアプリケーションの開"
+"発において、Javaの再評価を迫るものであることが明らかになりつつあります。Kuber"
+"netesは非常にダイナミックな共有インフラであり、クラスターがホストできるアプリ"
+"ケーションの数が増え、再デプロイやスケールアップ/ダウンなどのアプリケーション"
+"のライフサイクルの変化に対する応答性が向上するほど、コスト効率が向上します。"
+"従来のJavaクラウド・ネイティブ・ランタイムは、既存のスタックに新しい機能を重"
+"ねていましたが、基礎となるスタック自体を再考することはありませんでした。その"
+"結果、メモリ消費量が多くなり、起動時間も遅くなります。現在、企業は、Kubernete"
+"sクラスターへの大規模な投資からより多くの価値を引き出すために、Javaの深い専門"
+"知識を捨てて、GoやNode.jsのために再教育や再編成を行うことを望んでいます。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:25
@@ -93,7 +113,21 @@ msgstr ""
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:28
 #, fuzzy
 msgid "This is the very problem that Quarkus addresses.  Quarkus is optimized for memory density and rapid startup time. Quarkus applications running on the JVM can deliver nearly twice as many application instances in the same amount of RAM when compared to other cloud native Java stacks, and up to 7x more instances when packaged as a native binary. This is more than simply compiling to a native binary using https://github.com/oracle/graal/tree/master/substratevm[SubstrateVM] (a feature of https://www.graalvm.org/[GraalVM]). Quarkus has optimized traditionally “highly dynamic” frameworks for Kubernetes immutable infrastructure, resulting in reduced memory utilization and faster initialization. These optimized and https://quarkus.io/guides/[well-documented] frameworks, called “extensions”, consist of best of breed and standard APIs. The result is https://quarkus.io/assets/images/quarkus_metrics_graphic_bootmem_wide.png[significant improvements in runtime efficiency]."
-msgstr "これこそが、Quarkusが取り組んでいる問題です。Quarkusは、メモリ密度と迅速なスタートアップタイムのために最適化されています。JVM上で動作するQuarkusアプリケーションは、他のクラウドネイティブJavaスタックと比較して、同じRAM量で約2倍のアプリケーションインスタンスを提供することができ、ネイティブバイナリとしてパッケージ化された場合は最大7倍のインスタンスを提供することができます。これは、（ link:https://www.graalvm.org/[GraalVM]の機能である） link:https://github.com/oracle/graal/tree/master/substratevm[SubstrateVM]を使って単にネイティブバイナリにコンパイルしただけではありません。Quarkusは、従来の「高度に動的な」フレームワークをKubernetesの不変的なインフラに最適化し、メモリ使用量の削減と初期化の高速化を実現しました。これらの最適化された link:https://quarkus.io/guides/[文書化され]たフレームワークは「エクステンション」と呼ばれ、ベストオブブリードと標準APIで構成されています。その結果、 link:https://quarkus.io/assets/images/quarkus_metrics_graphic_bootmem_wide.png[実行時の効率が大幅に改善され]ました。"
+msgstr ""
+"これこそが、Quarkusが取り組んでいる問題です。Quarkusは、メモリ密度と迅速なス"
+"タートアップタイムのために最適化されています。JVM上で動作するQuarkusアプリケ"
+"ーションは、他のクラウドネイティブJavaスタックと比較して、同じRAM量で約2倍の"
+"アプリケーションインスタンスを提供することができ、ネイティブバイナリとしてパ"
+"ッケージ化された場合は最大7倍のインスタンスを提供することができます。これは、"
+"（ link:https://www.graalvm.org/[GraalVM]の機能である） link:https://github."
+"com/oracle/graal/tree/master/substratevm[SubstrateVM]を使って単にネイティブバ"
+"イナリにコンパイルしただけではありません。Quarkusは、従来の「高度に動的な」フ"
+"レームワークをKubernetesの不変的なインフラに最適化し、メモリ使用量の削減と初"
+"期化の高速化を実現しました。これらの最適化された link:https://quarkus.io/"
+"guides/[文書化され]たフレームワークは「エクステンション」と呼ばれ、ベストオブ"
+"ブリードと標準APIで構成されています。その結果、 link:https://quarkus.io/"
+"assets/images/quarkus_metrics_graphic_bootmem_wide."
+"png[実行時の効率が大幅に改善され]ました。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:29
@@ -117,13 +151,36 @@ msgstr "Spring開発者はどのような既存の知識をQuarkusにもたら�
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:33
 #, fuzzy
 msgid "Quarkus’ Spring API compatibility includes https://quarkus.io/guides/spring-di-guide[Spring DI], https://quarkus.io/guides/spring-web-guide[Spring Web], and https://quarkus.io/guides/spring-data-jpa-guide[Spring Data JPA]. Additional Spring APIs are being planned like Spring Security and Spring Config. When running on the JVM, Quarkus applications can utilize virtually any Java library. Many libraries, as long as they do not use Java reflection, will compile to native\". Lombok, a popular library among Spring developers for example, works with native compilation. To be clear, the Spring API compatibility in Quarkus is not intended to be a complete Spring platform to re-host existing Spring applications. The intent is to offer enough Spring API compatibility to make developing new applications with Quarkus a natural getting started experience. When combined with pre-optimized extensions, Quarkus delivers an https://quarkus.io/guides/[amazing amount of functionality] for microservices development. With all this being said, developers have successfully migrated Spring applications to Quarkus :-)"
-msgstr "QuarkusのSpring APIの互換性は、 link:https://quarkus.io/guides/spring-di-guide[Spring DI]、 link:https://quarkus.io/guides/spring-web-guide[Spring Web]、および link:https://quarkus.io/guides/spring-data-jpa-guide[Spring Data JPA]です。また、Spring SecurityやSpring Configなどの追加のSpring APIも計画されています。JVM上で実行する場合、Quarkusのアプリケーションは事実上すべてのJavaライブラリを利用できます。多くのライブラリは、Javaリフレクションを使用していない限り、ネイティブにコンパイルされます。例えば、Spring開発者の間で人気のあるライブラリであるLombokは、ネイティブコンパイルで動作します。明確にしておきたいのは、QuarkusのSpring API互換性は、既存のSpringアプリケーションを再ホストするための完全なSpringプラットフォームになることを意図したものではないということです。意図しているのは、Quarkusで新しいアプリケーションを開発することが自然に始められるような、十分なSpring APIの互換性を提供することです。最適化された拡張機能と組み合わせることで、Quarkusはマイクロサービス開発のための link:https://quarkus.io/guides/[驚くべき機能]を提供します。このようにして、開発者はSpringアプリケーションをQuarkusに移行することに成功しています :-)"
+msgstr ""
+"QuarkusのSpring APIの互換性は、 link:https://quarkus.io/guides/spring-di-"
+"guide[Spring DI]、 link:https://quarkus.io/guides/spring-web-guide[Spring "
+"Web]、および link:https://quarkus.io/guides/spring-data-jpa-guide[Spring "
+"Data JPA]です。また、Spring SecurityやSpring Configなどの追加のSpring APIも計"
+"画されています。JVM上で実行する場合、Quarkusのアプリケーションは事実上すべて"
+"のJavaライブラリを利用できます。多くのライブラリは、Javaリフレクションを使用"
+"していない限り、ネイティブにコンパイルされます。例えば、Spring開発者の間で人"
+"気のあるライブラリであるLombokは、ネイティブコンパイルで動作します。明確にし"
+"ておきたいのは、QuarkusのSpring API互換性は、既存のSpringアプリケーションを再"
+"ホストするための完全なSpringプラットフォームになることを意図したものではない"
+"ということです。意図しているのは、Quarkusで新しいアプリケーションを開発するこ"
+"とが自然に始められるような、十分なSpring "
+"APIの互換性を提供することです。最適化された拡張機能と組み合わせることで、"
+"Quarkusはマイクロサービス開発のための link:https://quarkus.io/guides/"
+"[驚くべき機能]を提供します。このようにして、"
+"開発者はSpringアプリケーションをQuarkusに移行することに成功しています :-)"
 
 #. type: delimited block =
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:37
 #, fuzzy
 msgid "The Spring Framework is highly dynamic in nature. To address this, the Quarkus Spring compatibility extensions map Spring APIs to APIs in existing extensions that have already been optimized for fast startup, reduced memory utilization and native compilation, like RestEasy and CDI. Also, the Quarkus Spring compatibility extensions do not utilize the Spring application context. For these reasons, attempting to utilize additional Spring libraries will likely not work."
-msgstr "Spring Frameworkは非常に動的な性質を持っています。これに対応するために、Quarkus Spring互換拡張機能は、RestEasyやCDIのように、高速起動、メモリ使用量の削減、ネイティブコンパイルのためにすでに最適化されている既存の拡張機能のAPIにSpring APIをマッピングしています。また、Quarkus Spring互換エクステンションは、Springアプリケーションコンテキストを利用しません。これらの理由から、追加のSpringライブラリを利用しようとしても、おそらくうまくいかないでしょう。"
+msgstr ""
+"Spring Frameworkは非常に動的な性質を持っています。これに対応するために、"
+"Quarkus "
+"Spring互換拡張機能は、RestEasyやCDIのように、高速起動、メモリ使用量の削減、ネ"
+"イティブコンパイルのためにすでに最適化されている既存の拡張機能のAPIにSpring "
+"APIをマッピングしています。また、Quarkus Spring互換エクステンションは、Spring"
+"アプリケーションコンテキストを利用しません。これらの理由から、追加のSpringラ"
+"イブラリを利用しようとしても、おそらくうまくいかないでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:40
@@ -258,37 +315,58 @@ msgstr "Springの開発者にとって、さらなるメリットはあります
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:104
 #, fuzzy
 msgid "In addition to the improved memory utilization and startup time, Quarkus offers the following benefits to Spring developers:"
-msgstr "メモリ使用量や起動時間の改善に加えて、QuarkusはSpring開発者に以下のようなメリットをもたらします。"
+msgstr "メモリ使用量や起動時間の改善に加えて、QuarkusはSpring開発者に以下のようなメリ"
+"ットをもたらします。"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:106
 #, fuzzy, no-wrap
 msgid "*Function-as-a-Service (FaaS) Runtime.* When compiled to a native binary, Quarkus applications can start in under .0015 seconds, making it possible to use the existing Spring and Java API knowledge with FaaS functions. (https://quarkus.io/guides/azure-functions-http[Azure], https://quarkus.io/guides/amazon-lambda[AWS Lambda])\n"
-msgstr "*Function-as-a-Service（FaaS）ランタイム。*ネイティブバイナリにコンパイルすると、Quarkusのアプリケーションは0.0015秒以下で起動することができ、既存のSpringやJava APIの知識を使ってFaaS機能を利用することができます。 link:https://quarkus.io/guides/azure-functions-http[(Azure], link:https://quarkus.io/guides/amazon-lambda[AWS Lambda])"
+msgstr ""
+"*Function-as-a-Service（FaaS）ランタイム。*ネイティブバイナリにコンパイルする"
+"と、Quarkusのアプリケーションは0.0015秒以下で起動することができ、"
+"既存のSpringやJava APIの知識を使ってFaaS機能を利用することができます。 "
+"link:https://quarkus.io/guides/azure-functions-http[(Azure], "
+"link:https://quarkus.io/guides/amazon-lambda[AWS Lambda])"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:107
 #, fuzzy, no-wrap
 msgid "*Live Coding.* Start with a “Hello World” sample app and transform it into a complex microservice without ever restarting the app. Just save and reload browser to see changes along the way. Quarkus live coding “just works” out of the box, regardless of IDE.\n"
-msgstr "*ライブコーディング。*Hello World」のサンプルアプリから始めて、アプリを再起動することなく、複雑なマイクロサービスに変換します。保存してブラウザを再読み込みするだけで、途中の変更を確認できます。Quarkusのライブコーディングは、IDEに関係なく、すぐに「動作する」のです。"
+msgstr ""
+"*ライブコーディング。*Hello World」のサンプルアプリから始めて、アプリを再起動"
+"することなく、複雑なマイクロサービスに変換します。保存してブラウザを再読み込"
+"みするだけで、途中の変更を確認できます。Quarkusのライブコーディングは、IDEに"
+"関係なく、すぐに「動作する」のです。"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:108
 #, fuzzy, no-wrap
 msgid "*Support for reactive and imperative models.* Quarkus has a reactive core that supports the traditional imperative model, reactive model, or both in the same application.\n"
-msgstr "*リアクティブモデルと命令型モデルのサポート。*Quarkusにはリアクティブコアがあり、従来の命令型モデル、リアクティブモデル、またはその両方を同じアプリケーションでサポートしています。"
+msgstr ""
+"*リアクティブモデルと命令型モデルのサポート。*Quarkusにはリアクティブコアがあ"
+"り、従来の命令型モデル、リアクティブモデル、またはその両方を同じアプリケーシ"
+"ョンでサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:109
 #, fuzzy, no-wrap
 msgid "*Early detection of dependency injection errors.* Quarkus catches dependency injection errors during compilation instead of at runtime.\n"
-msgstr "*依存性注入エラーの早期発見。Q*uarkusは、実行時ではなくコンパイル時に依存性注入のエラーを検出します。"
+msgstr "*依存性注入エラーの早期発見。Q*uarkusは、実行時ではなくコンパイル時に依存性注"
+"入のエラーを検出します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:110
 #, fuzzy, no-wrap
 msgid "*Use best of breed frameworks and standards together.* Quarkus supports Spring API compatibility, Eclipse Vert.x, MicroProfile (JAX-RS, CDI, etc), reactive streams and messaging, and more in the same application. Read https://developers.redhat.com/blog/2019/10/02/autowire-microprofile-into-spring-with-quarkus/[“@Autowire MicroProfile into Spring Boot”] for using Spring and MicroProfile APIs together in the same project.\n"
-msgstr "*ベストオブブリードのフレームワークと標準を一緒に使う。*Quarkusは、Spring APIの互換性、Eclipse Vert.x、MicroProfile（JAX-RS、CDIなど）、リアクティブストリームとメッセージングなどを同じアプリケーションでサポートしています。SpringとMicroProfileのAPIを同じプロジェクトで一緒に使うには、 link:https://developers.redhat.com/blog/2019/10/02/autowire-microprofile-into-spring-with-quarkus/[「@Autowire MicroProfile into Spring Boot」]をお読みください。"
+msgstr ""
+"*ベストオブブリードのフレームワークと標準を一緒に使う。*Quarkusは、Spring "
+"APIの互換性、Eclipse Vert.x、MicroProfile（JAX-RS、CDIなど）、リアクティブス"
+"トリームとメッセージングなどを同じアプリケーションでサポートしています。Sprin"
+"gとMicroProfileのAPIを同じプロジェクトで一緒に使うには、 "
+"link:https://developers.redhat.com/blog/2019/10/02/"
+"autowire-microprofile-into-spring-with-quarkus/[「@Autowire MicroProfile "
+"into Spring Boot」]をお読みください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:112
@@ -306,25 +384,35 @@ msgstr "推奨されるステップは以下の通りです。"
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:116
 #, fuzzy
 msgid "Follow the https://quarkus.io/get-started/[Getting Started Guide] as a general Quarkus introduction."
-msgstr "一般的なQuarkusの紹介として、 link:https://quarkus.io/get-started/[Getting Started Guide]に従ってください。"
+msgstr ""
+"一般的なQuarkusの紹介として、 link:https://quarkus.io/get-started/[Getting "
+"Started Guide]に従ってください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:117
 #, fuzzy
 msgid "Follow the https://quarkus.io/guides/spring-di-guide[Spring DI], https://quarkus.io/guides/spring-web-guide[Spring Web], and https://quarkus.io/guides/spring-data-jpa-guide[Spring Data JPA] guides."
-msgstr "link:https://quarkus.io/guides/spring-di-guide[Spring DI]、 link:https://quarkus.io/guides/spring-web-guide[Spring Web]、 link:https://quarkus.io/guides/spring-data-jpa-guide[Spring Data JPA]の各ガイドに従います。"
+msgstr ""
+"link:https://quarkus.io/guides/spring-di-guide[Spring DI]、 "
+"link:https://quarkus.io/guides/spring-web-guide[Spring Web]、 "
+"link:https://quarkus.io/guides/spring-data-jpa-guide[Spring Data "
+"JPA]の各ガイドに従います。"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:118
 #, fuzzy
 msgid "Create a new app using https://code.quarkus.io/[code.quarkus.io]."
-msgstr "link:https://code.quarkus.io/[code.quarkus.io]を使って新しいアプリを作成します。"
+msgstr "link:https://code.quarkus.io/[code.quarkus."
+"io]を使って新しいアプリを作成します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-11-08-quarkus-for-spring-developers.adoc:118
 #, fuzzy
 msgid "Optionally watch https://www.youtube.com/watch?v=9wJm8g83vqA&list=PLsM3ZE5tGAVYUKfQRUC6Gp61oV1WJEIPJ&index=10&t=0s[Kubernetes Native Spring Apps on Quarkus] Devoxx presentation"
-msgstr "オプションとして、 link:https://www.youtube.com/watch?v=9wJm8g83vqA&amp;list=PLsM3ZE5tGAVYUKfQRUC6Gp61oV1WJEIPJ&amp;index=10&amp;t=0s[Kubernetes Native Spring Apps on Quarkus]Devoxxのプレゼンテーションをご覧ください。"
+msgstr ""
+"オプションとして、 link:https://www.youtube.com/watch?v=9wJm8g83vqA&amp;list="
+"PLsM3ZE5tGAVYUKfQRUC6Gp61oV1WJEIPJ&amp;index=10&amp;t=0s[Kubernetes Native "
+"Spring Apps on Quarkus]Devoxxのプレゼンテーションをご覧ください。"
 
 #, fuzzy
 #~ msgid "---\n"

@@ -38,7 +38,8 @@ msgstr "ポスト"
 #: upstream/_posts/2020-02-19-quarkus-1-2-1-final-released.adoc:1
 #, fuzzy, no-wrap
 msgid "1.2.1.Final fixes several issues in Quarkus and the documentation."
-msgstr "1.2.1.Final では、Quarkus およびドキュメントのいくつかの問題が修正されました。"
+msgstr "1.2.1.Final では、Quarkus "
+"およびドキュメントのいくつかの問題が修正されました。"
 
 #. type: YAML Front Matter: tags
 #: upstream/_posts/2020-02-19-quarkus-1-2-1-final-released.adoc:1
@@ -56,7 +57,8 @@ msgstr "Quarkus 1.2.1.Final リリース - バグフィックスのみ"
 #: upstream/_posts/2020-02-19-quarkus-1-2-1-final-released.adoc:11
 #, fuzzy
 msgid "Today, we released 1.2.1.Final which is a small iteration on top of 1.2.0.Final with only bugfixes and documentation fixes."
-msgstr "本日、1.2.0.Finalのバグフィックスとドキュメントの修正のみを行った1.2.1.Finalをリリースしました。"
+msgstr "本日、1.2.0.Finalのバグフィックスとドキュメントの修正のみを行った1.2.1."
+"Finalをリリースしました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-19-quarkus-1-2-1-final-released.adoc:13
@@ -80,13 +82,17 @@ msgstr "バグフィックスとドキュメントの改善"
 #: upstream/_posts/2020-02-19-quarkus-1-2-1-final-released.adoc:19
 #, fuzzy
 msgid "The most important issue we fixed is the regression in the MariaDB driver when building native executables."
-msgstr "今回修正した最も重要な問題は、ネイティブ実行可能ファイルをビルドする際のMariaDBドライバのリグレッションです。"
+msgstr "今回修正した最も重要な問題は、ネイティブ実行可能ファイルをビルドする際のMaria"
+"DBドライバのリグレッションです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-19-quarkus-1-2-1-final-released.adoc:22
 #, fuzzy
 msgid "But we fixed other issues and some inaccuracies in the documentation.  You can get https://github.com/quarkusio/quarkus/releases/tag/1.2.1.Final[the full changelog of 1.2.1.Final on GitHub]."
-msgstr "しかし、他の問題やドキュメントの不正確な部分も修正しました。 link:https://github.com/quarkusio/quarkus/releases/tag/1.2.1.Final[1.2.1.Finalの完全な変更履歴はGitHubで]ご覧いただけます。"
+msgstr ""
+"しかし、他の問題やドキュメントの不正確な部分も修正しました。 "
+"link:https://github.com/quarkusio/quarkus/releases/tag/1.2.1.Final[1.2.1."
+"Finalの完全な変更履歴はGitHubで]ご覧いただけます。"
 
 #. type: Title ==
 #: upstream/_posts/2020-02-19-quarkus-1-2-1-final-released.adoc:23

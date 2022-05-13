@@ -88,7 +88,8 @@ msgstr "まず、以下のコマンドで新しいQuarkusプロジェクトを�
 #: upstream/_versions/main/guides/cache.adoc:45
 #, fuzzy
 msgid "This command generates the project and imports the `cache` and `resteasy-reactive-jackson` extensions."
-msgstr "このコマンドは、プロジェクトを生成し、 `cache` と `resteasy-jackson` のエクステンションをインポートします。"
+msgstr "このコマンドは、プロジェクトを生成し、 `cache` と `resteasy-jackson` "
+"のエクステンションをインポートします。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/cache.adoc:48
@@ -286,7 +287,10 @@ msgstr ""
 #: upstream/_versions/main/guides/cache.adoc:144
 #, fuzzy
 msgid "Now, we just need to create the REST resource.  Create the `src/main/java/org/acme/cache/WeatherForecastResource.java` file with this content:"
-msgstr "まずは、外部気象サービスへの非常に遅い呼び出しをシミュレートするサービスを作成してみましょう。以下の内容で `src/main/java/org/acme/cache/WeatherForecastService.java` を作成します。"
+msgstr ""
+"まずは、外部気象サービスへの非常に遅い呼び出しをシミュレートするサービスを作"
+"成してみましょう。以下の内容で `src/main/java/org/acme/cache/"
+"WeatherForecastService.java` を作成します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/cache.adoc:152

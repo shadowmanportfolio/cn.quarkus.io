@@ -1236,7 +1236,8 @@ msgstr "このガイドでは、Vert.x Web、Servlet、またはRESTEasyマイ�
 #: upstream/_data/guides-1-7.yaml:0
 #, fuzzy, no-wrap
 msgid "Azure Functions (Serverless) with Vert.x Web, Servlet, or RESTEasy"
-msgstr "Vert.x Web、Servlet、またはRESTEasyを使用したAzure Functions（サーバーレス）。"
+msgstr "Vert.x Web、Servlet、またはRESTEasyを使用したAzure "
+"Functions（サーバーレス）。"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-1-7.yaml:0
@@ -1410,7 +1411,8 @@ msgstr "/guides/funqy-knative-events"
 #: upstream/_data/guides-1-7.yaml:0
 #, fuzzy, no-wrap
 msgid "This guide explains Funqy's Azure Functions HTTP binding"
-msgstr "このガイドでは、FunqyのAzure FunctionsのHTTPバインディングについて説明しています。"
+msgstr "このガイドでは、FunqyのAzure "
+"FunctionsのHTTPバインディングについて説明しています。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-1-7.yaml:0

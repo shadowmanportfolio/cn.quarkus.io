@@ -149,7 +149,10 @@ msgstr "関数を作成する"
 #: upstream/_versions/main/guides/funqy-gcp-functions.adoc:80
 #, fuzzy
 msgid "In this example, we will create two background functions and a cloud events function.  Background functions allow you to react to Google Cloud events like PubSub messages, Cloud Storage events, Firestore events, ...  Cloud events functions allow you to react to supported events using the Cloud Events specification."
-msgstr "この例では、2 つのバックグラウンド関数を作成します。バックグラウンド関数は、PubSub メッセージ、Cloud Storage イベント、Firestore イベントなどの Google Cloud イベントに反応することができます。"
+msgstr ""
+"この例では、2 つのバックグラウンド関数を作成します。バックグラウンド関数は、"
+"PubSub メッセージ、Cloud Storage イベント、Firestore イベントなどの Google "
+"Cloud イベントに反応することができます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/funqy-gcp-functions.adoc:82
@@ -447,7 +450,10 @@ msgstr ""
 #: upstream/_versions/main/guides/funqy-gcp-functions.adoc:260
 #, fuzzy
 msgid "The entry point always needs to be `io.quarkus.funqy.gcp.functions.FunqyCloudEventsFunction` as it will be this class that will bootstrap Quarkus."
-msgstr "Quarkus をブートストラップするのはこのクラスなので、エントリーポイントは常に `io.quarkus.funqy.gcp.functions.FunqyBackgroundFunction` である必要があります。"
+msgstr ""
+"Quarkus をブートストラップするのはこのクラスなので、エントリーポイントは常に "
+"`io.quarkus.funqy.gcp.functions.FunqyBackgroundFunction` "
+"である必要があります。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/funqy-gcp-functions.adoc:268
@@ -551,7 +557,9 @@ msgstr "これは、Cloud Storage のイベント `{\"name\":\"file.txt\"}` (`fi
 #: upstream/_versions/main/guides/funqy-gcp-functions.adoc:339
 #, fuzzy
 msgid "For cloud events functions, you launch the invoker with a target class of `io.quarkus.funqy.gcp.functions.FunqyCloudEventsFunction``."
-msgstr "バックグラウンド関数の場合は、 `io.quarkus.funqy.gcp.functions.FunqyBackgroundFunction` のターゲットクラスで invoker を起動します。"
+msgstr ""
+"バックグラウンド関数の場合は、 `io.quarkus.funqy.gcp.functions."
+"FunqyBackgroundFunction` のターゲットクラスで invoker を起動します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/funqy-gcp-functions.adoc:375
@@ -585,7 +593,9 @@ msgstr ""
 #: upstream/_versions/main/guides/funqy-gcp-functions.adoc:378
 #, fuzzy
 msgid "This will call your cloud events function with an event on the `\"MY_FILE.txt` file."
-msgstr "これは、Cloud Storage のイベント `{\"name\":\"file.txt\"}` (`file.txt` ファイル上のイベント) で PubSub のバックグラウンド関数を呼び出します。"
+msgstr ""
+"これは、Cloud Storage のイベント `{\"name\":\"file.txt\"}` (`file.txt` "
+"ファイル上のイベント) で PubSub のバックグラウンド関数を呼び出します。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/funqy-gcp-functions.adoc:379

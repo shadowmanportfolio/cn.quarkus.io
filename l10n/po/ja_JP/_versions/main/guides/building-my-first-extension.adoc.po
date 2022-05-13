@@ -829,7 +829,8 @@ msgstr "Gradle"
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:397
 #, fuzzy
 msgid "Quarkus does not provide any way to initialize a Gradle project for extensions yet."
-msgstr "Quarkus は、 `create-extension` Maven Mojo を提供し、拡張プロジェクトを初期化します。"
+msgstr "Quarkus は、 `create-extension` Maven Mojo "
+"を提供し、拡張プロジェクトを初期化します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:399
@@ -992,7 +993,8 @@ msgstr "ランタイムモジュールは `quarkus-arc` アーティファクト
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:471
 #, fuzzy
 msgid "Add `quarkus-extension-process` as annotation processor to both modules."
-msgstr "コンパイラーのアノテーションプロセッサーに `quarkus-extension-processor` を追加します。"
+msgstr "コンパイラーのアノテーションプロセッサーに `quarkus-extension-processor` "
+"を追加します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:472
@@ -1039,7 +1041,8 @@ msgstr "`io.quarkus.extension` プラグインを適用します。"
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:491
 #, fuzzy
 msgid "By convention, the runtime module doesn't have a suffix (and thus is named `greeting-extension`) as it is the artifact exposed to the end user."
-msgstr "決まりとして、ランタイムモジュールはエンドユーザーに公開されるアーティファクトであるため、接尾辞 (`greeting`) を持たない。"
+msgstr "決まりとして、ランタイムモジュールはエンドユーザーに公開されるアーティファク"
+"トであるため、接尾辞 (`greeting`) を持たない。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/building-my-first-extension.adoc:492

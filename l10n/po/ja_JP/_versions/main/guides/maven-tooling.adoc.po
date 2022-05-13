@@ -40,7 +40,8 @@ msgstr "次のように新しいMavenプロジェクトの枠組を生成する�
 #: upstream/_versions/main/guides/maven-tooling.adoc:23
 #, fuzzy
 msgid "If you are using the CLI, you can get the list of available options with:"
-msgstr "Quarkusプロジェクトの内部から、利用可能なエクステンションのリストを取得することができます。"
+msgstr "Quarkusプロジェクトの内部から、利用可能なエクステンションのリストを取得するこ"
+"とができます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/maven-tooling.adoc:27

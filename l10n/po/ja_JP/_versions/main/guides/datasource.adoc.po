@@ -106,7 +106,12 @@ msgstr "ゼロコンフィグセットアップ（DevServices）"
 #: upstream/_versions/main/guides/datasource.adoc:49
 #, fuzzy
 msgid "When testing or running in dev mode Quarkus can even provide you with a zero config database out of the box, a feature we refer to as Dev Services. Depending on your database type you may need Docker installed in order to use this feature.  Dev Services is supported for the following databases:"
-msgstr "Quarkusでは、テストや開発モードで実行する際に、ゼロコンフィグでデータベースをすぐに提供することができます。これは、私たちがDevServicesと呼ぶ機能です。データベースの種類によっては、この機能を使用するためにdockerをインストールする必要があります。DevServicesは以下のオープンソースデータベースでサポートされています。"
+msgstr ""
+"Quarkusでは、テストや開発モードで実行する際に、ゼロコンフィグでデータベースを"
+"すぐに提供することができます。これは、私たちがDevServicesと呼ぶ機能です。デー"
+"タベースの種類によっては、この機能を使用するためにdockerをインストールする必"
+"要があります。DevServicesは以下のオープンソースデータベースでサポートされてい"
+"ます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/datasource.adoc:51
@@ -266,7 +271,10 @@ msgstr "リアクティブデータソース"
 #: upstream/_versions/main/guides/datasource.adoc:120
 #, fuzzy
 msgid "Add the correct reactive extension for the database you are using: `reactive-db2-client`, `reactive-mssql-client`, `reactive-mysql-client`, `reactive-oracle-client`, or `reactive-pg-client`."
-msgstr "使用しているデータベースに適切なリアクティブエクステンションを追加します。`reactive-pg-client` , `reactive-mysql-client`、または `reactive-db2-client`。"
+msgstr ""
+"使用しているデータベースに適切なリアクティブエクステンションを追加します"
+"。`reactive-pg-client` , `reactive-mysql-client`、または `reactive-"
+"db2-client`。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/datasource.adoc:122
@@ -825,7 +833,9 @@ msgstr "上記の例では、型は `AgroalDataSource` であり、 `javax.sql.D
 #: upstream/_versions/main/guides/datasource.adoc:359
 #, fuzzy
 msgid "If you prefer using a reactive datasource, Quarkus offers DB2, MariaDB/MySQL, Microsoft SQL Server, Oracle and PostgreSQL reactive clients."
-msgstr "リアクティブデータソースを使用したい場合は、Quarkus では、DB2、MySQL/MariaDB、PostgreSQL リアクティブクライアントを利用できます。"
+msgstr ""
+"リアクティブデータソースを使用したい場合は、Quarkus では、DB2、MySQL/"
+"MariaDB、PostgreSQL リアクティブクライアントを利用できます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/datasource.adoc:363

@@ -239,7 +239,8 @@ msgstr ""
 #: upstream/_guides/scripting.adoc:117
 #, fuzzy
 msgid "illustrate how you add dependencies to this script. This is a feature of JBang."
-msgstr "このスクリプトに依存関係を追加する方法を説明しています。これは `jbang` の機能です。"
+msgstr "このスクリプトに依存関係を追加する方法を説明しています。これは `jbang` "
+"の機能です。"
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:119
@@ -259,7 +260,10 @@ msgstr ""
 #: upstream/_guides/scripting.adoc:127
 #, fuzzy
 msgid "Now, run `jbang quarkusapp.java` and you will see JBang resolving this dependency and building the jar with help from Quarkus' JBang integration."
-msgstr "さて、 `jbang quarkusapp.java` を実行すると、 `jbang` がこの依存関係を解決し、Quarkus の jbang 統合の助けを借りて jar をビルドしていることがわかります。"
+msgstr ""
+"さて、 `jbang quarkusapp.java` を実行すると、 `jbang` "
+"がこの依存関係を解決し、Quarkus の jbang 統合の助けを借りて jar "
+"をビルドしていることがわかります。"
 
 #. type: delimited block -
 #: upstream/_guides/scripting.adoc:131 upstream/_guides/scripting.adoc:202
@@ -308,7 +312,10 @@ msgstr "Linux/macOSでは、 `<idecommand> `jbang edit quarkusapp.java`` で実�
 #: upstream/_guides/scripting.adoc:156
 #, fuzzy
 msgid "If you add dependencies while editing, you can get JBang to automatically refresh the IDE project using `jbang edit --live=<idecommand> quarkusapp.java`."
-msgstr "編集中に依存関係を追加した場合は、 `jbang edit --live=<idecommand> quarkusapp.java` を使用して、IDE プロジェクトを自動的に更新するように jbang を設定することができます。"
+msgstr ""
+"編集中に依存関係を追加した場合は、 `jbang edit --live=<idecommand> quarkusapp"
+".java` を使用して、IDE プロジェクトを自動的に更新するように jbang "
+"を設定することができます。"
 
 #. type: Title ===
 #: upstream/_guides/scripting.adoc:159
@@ -432,7 +439,11 @@ msgstr "`quarkus-resteasy-reactive` が解決されないのはなぜですか?"
 #: upstream/_guides/scripting.adoc:239
 #, fuzzy
 msgid "In this second run you should not see a line saying it is resolving `quarkus-resteasy-reactive` as JBang caches the dependency resolution between runs.  If you want to clear the caches to force resolution use `jbang cache clear`."
-msgstr "この2回目の実行では、jbangが実行間の依存関係の解決をキャッシュしているため、 `quarkus-resteasy` を解決しているという行は表示されないはずです。キャッシュをクリアして強制的に解決したい場合は `jbang cache clear` を利用します。"
+msgstr ""
+"この2回目の実行では、jbangが実行間の依存関係の解決をキャッシュしているため、 "
+"`quarkus-resteasy` を解決しているという行は表示されないはずです。"
+"キャッシュをクリアして強制的に解決したい場合は `jbang cache clear` "
+"を利用します。"
 
 #. type: Title ==
 #: upstream/_guides/scripting.adoc:241
@@ -568,7 +579,10 @@ msgstr "さて、予想に反して、なぜそれは `hello quarkus` ではな�
 #: upstream/_guides/scripting.adoc:336
 #, fuzzy
 msgid "The reason is that RESTEasy Reactive relies on the `-parameters` compiler flag to be set to be able to map `{name}` to the `name` parameter."
-msgstr "これは、JAX-RS `@PathParam` は `{name}` を `name` パラメーターにマッピングできるように `-parameters` コンパイラフラグを設定することに依存しているためです。"
+msgstr ""
+"これは、JAX-RS `@PathParam` は `{name}` を `name` "
+"パラメーターにマッピングできるように `-parameters` "
+"コンパイラフラグを設定することに依存しているためです。"
 
 #. type: Plain text
 #: upstream/_guides/scripting.adoc:338
@@ -609,7 +623,8 @@ msgstr "`jbang --debug=5005 quarkusapp.java` アプリケーションのデバ�
 #: upstream/_guides/scripting.adoc:358
 #, fuzzy
 msgid "Note: JBang debugging always suspends thus you need to connect the debugger to have the application run."
-msgstr "注意: `jbang` デバッグは常にサスペンドしているので、アプリケーションを実行させるにはデバッガーを接続する必要があります。"
+msgstr "注意: `jbang` デバッグは常にサスペンドしているので、アプリケーションを実行さ"
+"せるにはデバッガーを接続する必要があります。"
 
 #. type: Title ==
 #: upstream/_guides/scripting.adoc:359
@@ -728,7 +743,10 @@ msgstr ""
 #: upstream/_guides/scripting.adoc:425
 #, fuzzy
 msgid "This native build will take some time on first run but any subsequent runs (without changing `quarkusapp.java`) will be close to instant thanks to JBang cache:"
-msgstr "このネイティブビルドは最初の実行時には時間がかかりますが、その後の実行では ( `quarkusapp.java` を変更せずに) jbang キャッシュのおかげですぐに実行できるようになります。"
+msgstr ""
+"このネイティブビルドは最初の実行時には時間がかかりますが、その後の実行では ( "
+"`quarkusapp.java` を変更せずに) jbang "
+"キャッシュのおかげですぐに実行できるようになります。"
 
 #. type: delimited block -
 #: upstream/_guides/scripting.adoc:436
@@ -754,7 +772,11 @@ msgstr "まとめ"
 #: upstream/_guides/scripting.adoc:440
 #, fuzzy
 msgid "If you want to get started with Quarkus or write something quickly, Quarkus Scripting with jbang lets you do that. No Maven, no Gradle - just a Java file. In this guide we outlined the very basics on using Quarkus with JBang; if you want to learn more about what JBang can do, go see https://jbang.dev."
-msgstr "Quarkusを使い始めたい場合や、何かを素早く書きたい場合は、Quarkus Scripting with jbangを使用すると、それが可能になります。MavenもGradleも必要ありません。このガイドでは、jbangを使ったQuarkusの使い方の基本を説明しました。jbangで何ができるのかをもっと知りたい方は、 https://jbang.dev をご覧ください。"
+msgstr ""
+"Quarkusを使い始めたい場合や、何かを素早く書きたい場合は、Quarkus Scripting "
+"with jbangを使用すると、それが可能になります。MavenもGradleも必要ありません。"
+"このガイドでは、jbangを使ったQuarkusの使い方の基本を説明しました。jbangで何が"
+"できるのかをもっと知りたい方は、 https://jbang.dev をご覧ください。"
 
 #~ msgid "To complete this guide, you need:"
 #~ msgstr "このガイドを完成させるには、以下が必要です:"

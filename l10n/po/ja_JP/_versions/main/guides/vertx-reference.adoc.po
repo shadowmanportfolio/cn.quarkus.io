@@ -415,7 +415,9 @@ msgstr "使用例"
 #: upstream/_versions/main/guides/vertx-reference.adoc:146
 #, fuzzy
 msgid "This section gives an example using the Vert.x `WebClient` in the context of a RESTEasy Reactive application.  As indicated in the table above, add the following dependency to your project:"
-msgstr "このセクションでは、Vert.x `WebClient` を使った例を紹介します。上の表にあるように、プロジェクトに以下の依存関係を追加します。"
+msgstr ""
+"このセクションでは、Vert.x `WebClient` を使った例を紹介します。上の表にあるよ"
+"うに、プロジェクトに以下の依存関係を追加します。"
 
 #. type: Block title
 #: upstream/_versions/main/guides/vertx-reference.adoc:148
@@ -432,7 +434,8 @@ msgid ""
 "    <groupId>io.smallrye.reactive</groupId>\n"
 "    <artifactId>smallrye-mutiny-vertx-web-client</artifactId>\n"
 "</dependency>\n"
-msgstr "`io.smallrye.reactive:smallrye-mutiny-vertx-web-client` (external dependency)"
+msgstr ""
+"`io.smallrye.reactive:smallrye-mutiny-vertx-web-client` (external dependency)"
 
 #. type: Block title
 #: upstream/_versions/main/guides/vertx-reference.adoc:157
@@ -445,7 +448,8 @@ msgstr "build.gradle"
 #: upstream/_versions/main/guides/vertx-reference.adoc:160
 #, fuzzy, no-wrap
 msgid "implementation(\"io.smallrye.reactive:smallrye-mutiny-vertx-web-client\")\n"
-msgstr "`io.smallrye.reactive:smallrye-mutiny-vertx-web-client` (external dependency)"
+msgstr ""
+"`io.smallrye.reactive:smallrye-mutiny-vertx-web-client` (external dependency)"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/vertx-reference.adoc:163

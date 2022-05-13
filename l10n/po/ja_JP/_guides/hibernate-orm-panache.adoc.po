@@ -40,7 +40,8 @@ msgstr "最初に:一例"
 #: upstream/_guides/hibernate-orm-panache.adoc:18
 #, fuzzy
 msgid "What we're doing in Panache is to allow you to write your Hibernate ORM entities like this:"
-msgstr "Panacheでやっていることは、Hibernate ORMエンティティーをこのように書けるようにすることです。"
+msgstr "Panacheでやっていることは、Hibernate "
+"ORMエンティティーをこのように書けるようにすることです。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:25
@@ -160,13 +161,16 @@ msgstr "エンティティにアノテーションを `@Entity`"
 #: upstream/_guides/hibernate-orm-panache.adoc:71
 #, fuzzy
 msgid "make your entities extend `PanacheEntity` (optional if you are using the repository pattern)"
-msgstr "エンティティが `PanacheEntity` を拡張するようにする（リポジトリパターンを使用している場合はオプション）。"
+msgstr "エンティティが `PanacheEntity` "
+"を拡張するようにする（リポジトリパターンを使用している場合はオプション）。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:73
 #, fuzzy
 msgid "Follow the xref:hibernate-orm.adoc#setting-up-and-configuring-hibernate-orm[Hibernate set-up guide for all configuration]."
-msgstr "link:hibernate-orm.html#setting-up-and-configuring-hibernate-orm[すべての設定は、Hibernateセットアップガイド]に従ってください。"
+msgstr ""
+"link:hibernate-orm.html#setting-up-and-configuring-hibernate-"
+"orm[すべての設定は、Hibernateセットアップガイド]に従ってください。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:75
@@ -294,7 +298,10 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:138
 #, fuzzy
 msgid "You can put all your JPA column annotations on the public fields. If you need a field to not be persisted, use the `@Transient` annotation on it. If you need to write accessors, you can:"
-msgstr "JPAのカラムアノテーションをすべてパブリックフィールドにつけることができます。永続化されないフィールドが必要な場合は、 `@Transient` アノテーションを使用します。アクセサを書く必要があれば、それも可能です。"
+msgstr ""
+"JPAのカラムアノテーションをすべてパブリックフィールドにつけることができます。"
+"永続化されないフィールドが必要な場合は、 `@Transient` "
+"アノテーションを使用します。アクセサを書く必要があれば、それも可能です。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:151
@@ -321,7 +328,12 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:162
 #, fuzzy
 msgid "And thanks to our field access rewrite, when your users read `person.name` they will actually call your `getName()` accessor, and similarly for field writes and the setter.  This allows for proper encapsulation at runtime as all fields calls will be replaced by the corresponding getter/setter calls."
-msgstr "また、当社のフィールドアクセスリライトのおかげで、ユーザーが `person.name` を読むときには、実際に `getName()` アクセサが呼び出され、フィールドの書き込みやセッターについても同様です。これにより、すべてのフィールドの呼び出しが、対応するゲッター/セッターの呼び出しに置き換えられるため、実行時に適切なカプセル化が可能になります。"
+msgstr ""
+"また、当社のフィールドアクセスリライトのおかげで、ユーザーが `person.name` "
+"を読むときには、実際に `getName()` アクセサが呼び出され、フィールドの書き込み"
+"やセッターについても同様です。これにより、すべてのフィールドの呼び出しが、対"
+"応するゲッター/セッターの呼び出しに置き換えられるため、実行時に適切なカプセル"
+"化が可能になります。"
 
 #. type: Title ===
 #: upstream/_guides/hibernate-orm-panache.adoc:163
@@ -477,7 +489,12 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:235
 #, fuzzy
 msgid "The `stream` methods require a transaction to work. + As they perform I/O operations, they should be closed via the `close()` method or via a try-with-resource to close the underlying `ResultSet`.  If not, you will see warnings from Agroal that will close the underlying `ResultSet` for you."
-msgstr "`stream` のメソッドは、動作にトランザクションを必要とします。+ これらのメソッドは I/O 操作を行うため、 `close()` メソッドを介して、または try-with-resource を介して、基礎となる `ResultSet` を閉じなければなりません。そうしないと、Agroal からの警告が表示され、基礎となる `ResultSet` を閉じてくれます。"
+msgstr ""
+"`stream` のメソッドは、動作にトランザクションを必要とします。+ "
+"これらのメソッドは I/O 操作を行うため、 `close()` メソッドを介して、または "
+"try-with-resource を介して、基礎となる `ResultSet` "
+"を閉じなければなりません。そうしないと、Agroal からの警告が表示され、"
+"基礎となる `ResultSet` を閉じてくれます。"
 
 #. type: Title ===
 #: upstream/_guides/hibernate-orm-panache.adoc:236
@@ -489,7 +506,12 @@ msgstr "エンティティメソッドの追加"
 #: upstream/_guides/hibernate-orm-panache.adoc:241
 #, fuzzy
 msgid "Add custom queries on your entities inside the entities themselves.  That way, you and your co-workers can find them easily, and queries are co-located with the object they operate on.  Adding them as static methods in your entity class is the Panache Active Record way."
-msgstr "エンティティに対するカスタムクエリを、エンティティ自体の中に追加できます。そうすることで、自分や同僚が簡単に見つけることができ、クエリは操作するオブジェクトと一緒に配置されます。エンティティクラスにスタティックメソッドとして追加するのがPanache Active Recordのやり方です。"
+msgstr ""
+"エンティティに対するカスタムクエリを、エンティティ自体の中に追加できます。そ"
+"うすることで、自分や同僚が簡単に見つけることができ、クエリは操作するオブジェ"
+"クトと一緒に配置されます。"
+"エンティティクラスにスタティックメソッドとして追加するのがPanache Active "
+"Recordのやり方です。"
 
 #. type: Title ==
 #: upstream/_guides/hibernate-orm-panache.adoc:264
@@ -549,7 +571,10 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:309
 #, fuzzy
 msgid "If you don't want to bother defining getters/setters for your entities, you can make them extend `PanacheEntityBase` and Quarkus will generate them for you. You can even extend `PanacheEntity` and take advantage of the default ID it provides."
-msgstr "エンティティにゲッター/セッターを定義するのが面倒な場合は、 `PanacheEntityBase` を拡張するようにすれば、Quarkusが生成してくれます。また、 `PanacheEntity` を拡張して、デフォルトのIDを利用することもできます。"
+msgstr ""
+"エンティティにゲッター/セッターを定義するのが面倒な場合は、 "
+"`PanacheEntityBase` を拡張するようにすれば、Quarkusが生成してくれます。また、"
+" `PanacheEntity` を拡張して、デフォルトのIDを利用することもできます。"
 
 #. type: Title ===
 #: upstream/_guides/hibernate-orm-panache.adoc:310
@@ -561,7 +586,10 @@ msgstr "エンティティーの定義"
 #: upstream/_guides/hibernate-orm-panache.adoc:314
 #, fuzzy
 msgid "When using Repositories, you get the exact same convenient methods as with the active record pattern, injected in your Repository, by making them implements `PanacheRepository`:"
-msgstr "リポジトリを使用する場合、アクティブレコードパターンとまったく同じ便利なメソッドをリポジトリに注入し、implements `PanacheRepository` にすることで得られます。"
+msgstr ""
+"リポジトリを使用する場合、アクティブレコードパターンとまったく同じ便利なメソ"
+"ッドをリポジトリに注入し、implements `PanacheRepository` "
+"にすることで得られます。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:319
@@ -776,13 +804,17 @@ msgstr "JAX-RSリソースの記述"
 #: upstream/_guides/hibernate-orm-panache.adoc:427
 #, fuzzy
 msgid "First, include one of the RESTEasy Reactive extensions to enable JAX-RS endpoints, for example, add the `io.quarkus:quarkus-resteasy-reactive-jackson` dependency for JAX-RS and JSON support."
-msgstr "まず、JAX-RSエンドポイントを有効にするために、RESTEasyのエクステンションの1つを含めます。例えば、JAX-RSとJSONのサポートのために、 `io.quarkus:quarkus-resteasy-jackson` の依存関係を追加します。"
+msgstr ""
+"まず、JAX-RSエンドポイントを有効にするために、RESTEasyのエクステンションの1つ"
+"を含めます。例えば、JAX-RSとJSONのサポートのために、 `io.quarkus:quarkus-"
+"resteasy-jackson` の依存関係を追加します。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:429
 #, fuzzy
 msgid "Then, you can create the following resource to create/read/update/delete your Person entity:"
-msgstr "そして、次のようなリソースを作成することで、Personエンティティの作成/読み取り/更新/削除が可能になります。"
+msgstr "そして、次のようなリソースを作成することで、Personエンティティの作成/読み取り"
+"/更新/削除が可能になります。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:436
@@ -900,7 +932,10 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:497
 #, fuzzy
 msgid "Be careful to use the `@Transactional` annotation on the operations that modify the database, you can add the annotation at the class level for simplicity purpose."
-msgstr "データベースを変更する操作には `@Transactional` アノテーションを使用するように注意してください。わかりやすくするために、クラスレベルでアノテーションを追加することもできます。"
+msgstr ""
+"データベースを変更する操作には `@Transactional` アノテーションを使用するよう"
+"に注意してください。わかりやすくするために、クラスレベルでアノテーションを追"
+"加することもできます。"
 
 #. type: Title ==
 #: upstream/_guides/hibernate-orm-panache.adoc:498
@@ -918,7 +953,10 @@ msgstr "ページング"
 #: upstream/_guides/hibernate-orm-panache.adoc:504
 #, fuzzy
 msgid "You should only use `list` and `stream` methods if your table contains small enough data sets. For larger data sets you can use the `find` method equivalents, which return a `PanacheQuery` on which you can do paging:"
-msgstr "`list` および `stream` メソッドは、テーブルに含まれるデータセットが十分に小さい場合にのみ使用してください。より大きなデータセットの場合は、同等の `find` メソッドを使用して、ページングが可能な `PanacheQuery` を返すことができます。"
+msgstr ""
+"`list` および `stream` メソッドは、テーブルに含まれるデータセットが十分に小さ"
+"い場合にのみ使用してください。より大きなデータセットの場合は、同等の `find` "
+"メソッドを使用して、ページングが可能な `PanacheQuery` を返すことができます。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:509
@@ -992,7 +1030,8 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:536
 #, fuzzy
 msgid "The `PanacheQuery` type has many other methods to deal with paging and returning streams."
-msgstr "`PanacheQuery` タイプには、ページングやリターンストリームを処理するための他の多くのメソッドがあります。"
+msgstr "`PanacheQuery` タイプには、ページングやリターンストリームを処理するための他の"
+"多くのメソッドがあります。"
 
 #. type: Title ===
 #: upstream/_guides/hibernate-orm-panache.adoc:537
@@ -1034,7 +1073,11 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:560
 #, fuzzy
 msgid "You cannot mix ranges and pages: if you use a range, all methods that depend on having a current page will throw an `UnsupportedOperationException`; you can switch back to paging using `page(Page)` or `page(int, int)`."
-msgstr "`page(Page)` `page(int, int)`範囲とページを混在させることはできません。範囲を使用した場合、現在のページを持っていることに依存するすべてのメソッドは `UnsupportedOperationException` をスローします。"
+msgstr ""
+"`page(Page)` `page(int, "
+"int)`範囲とページを混在させることはできません。範囲を使用した場合、"
+"現在のページを持っていることに依存するすべてのメソッドは "
+"`UnsupportedOperationException` をスローします。"
 
 #. type: Title ===
 #: upstream/_guides/hibernate-orm-panache.adoc:562
@@ -1046,7 +1089,8 @@ msgstr "ソート"
 #: upstream/_guides/hibernate-orm-panache.adoc:565
 #, fuzzy
 msgid "All methods accepting a query string also accept the following simplified query form:"
-msgstr "クエリ文字列を受け付けるすべてのメソッドは、以下の簡略化されたクエリ形式も受け付けます。"
+msgstr "クエリ文字列を受け付けるすべてのメソッドは、以下の簡略化されたクエリ形式も受"
+"け付けます。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:569
@@ -1058,7 +1102,8 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:572
 #, fuzzy
 msgid "But these methods also accept an optional `Sort` parameter, which allows your to abstract your sorting:"
-msgstr "しかし、これらのメソッドには、オプションで `Sort` というパラメータが用意されており、これによってソートの抽象化が可能になります。"
+msgstr "しかし、これらのメソッドには、オプションで `Sort` というパラメータが用意され"
+"ており、これによってソートの抽象化が可能になります。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:576
@@ -1078,7 +1123,8 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:582
 #, fuzzy
 msgid "The `Sort` class has plenty of methods for adding columns and specifying sort direction."
-msgstr "`Sort` クラスには、列を追加したり、ソート方向を指定したりするメソッドが豊富に用意されています。"
+msgstr "`Sort` クラスには、列を追加したり、ソート方向を指定したりするメソッドが豊富に"
+"用意されています。"
 
 #. type: Title ===
 #: upstream/_guides/hibernate-orm-panache.adoc:583
@@ -1090,13 +1136,16 @@ msgstr "シンプルなクエリ"
 #: upstream/_guides/hibernate-orm-panache.adoc:587
 #, fuzzy
 msgid "Normally, HQL queries are of this form: `from EntityName [where ...] [order by ...]`, with optional elements at the end."
-msgstr "通常、HQLのクエリは、 `from EntityName [where …​] [order by …​]` 、最後にオプションの要素を持つという形式になっています。"
+msgstr ""
+"通常、HQLのクエリは、 `from EntityName [where …​] [order by …​]` "
+"、最後にオプションの要素を持つという形式になっています。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:589
 #, fuzzy
 msgid "If your select query does not start with `from`, we support the following additional forms:"
-msgstr "セレクトクエリが `from` で始まらない場合は、以下の追加フォームをサポートしています。"
+msgstr "セレクトクエリが `from` "
+"で始まらない場合は、以下の追加フォームをサポートしています。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:591
@@ -1108,7 +1157,9 @@ msgstr "`order by …​` に拡大する予定です。 `from EntityName order 
 #: upstream/_guides/hibernate-orm-panache.adoc:592
 #, fuzzy
 msgid "`<singleColumnName>` (and single parameter) which will expand to `from EntityName where <singleColumnName> = ?`"
-msgstr "`<singleColumnName>` （およびシングルパラメータ）に展開されます。 `from EntityName where <singleColumnName> = ?`"
+msgstr ""
+"`<singleColumnName>` （およびシングルパラメータ）に展開されます。 `from "
+"EntityName where <singleColumnName> = ?`"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:593
@@ -1120,7 +1171,8 @@ msgstr "`<query>` に展開します。 `from EntityName where <query>`"
 #: upstream/_guides/hibernate-orm-panache.adoc:595
 #, fuzzy
 msgid "If your update query does not start with `update`, we support the following additional forms:"
-msgstr "更新クエリが `update` で始まらない場合は、以下の追加フォームをサポートしています。"
+msgstr "更新クエリが `update` "
+"で始まらない場合は、以下の追加フォームをサポートしています。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:597
@@ -1132,19 +1184,24 @@ msgstr "`from EntityName …​` に拡大する予定です。 `update from Ent
 #: upstream/_guides/hibernate-orm-panache.adoc:598
 #, fuzzy
 msgid "`set? <singleColumnName>` (and single parameter) which will expand to `update from EntityName set <singleColumnName> = ?`"
-msgstr "`set? <singleColumnName>` （およびシングルパラメータ）に展開されます。 `update from EntityName set <singleColumnName> = ?`"
+msgstr ""
+"`set? <singleColumnName>` （およびシングルパラメータ）に展開されます。 `"
+"update from EntityName set <singleColumnName> = ?`"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:599
 #, fuzzy
 msgid "`set? <update-query>` will expand to `update from EntityName set <update-query>`"
-msgstr "`set? <update-query>` に展開します。 `update from EntityName set <update-query>`"
+msgstr ""
+"`set? <update-query>` に展開します。 `update from EntityName set <update-"
+"query>`"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:601
 #, fuzzy
 msgid "If your delete query does not start with `delete`, we support the following additional forms:"
-msgstr "削除クエリが `delete` で始まらない場合は、以下の追加フォームをサポートしています。"
+msgstr "削除クエリが `delete` "
+"で始まらない場合は、以下の追加フォームをサポートしています。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:603
@@ -1156,7 +1213,9 @@ msgstr "`from EntityName …​` に拡大する予定です。 `delete from Ent
 #: upstream/_guides/hibernate-orm-panache.adoc:604
 #, fuzzy
 msgid "`<singleColumnName>` (and single parameter) which will expand to `delete from EntityName where <singleColumnName> = ?`"
-msgstr "`<singleColumnName>` （およびシングルパラメータ）に展開されます。 `delete from EntityName where <singleColumnName> = ?`"
+msgstr ""
+"`<singleColumnName>` （およびシングルパラメータ）に展開されます。 `delete "
+"from EntityName where <singleColumnName> = ?`"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:605
@@ -1168,7 +1227,10 @@ msgstr "`<query>` に展開します。 `delete from EntityName where <query>`"
 #: upstream/_guides/hibernate-orm-panache.adoc:608
 #, fuzzy
 msgid "You can also write your queries in plain link:https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#hql[HQL]:"
-msgstr "また、クエリをプレーンな link:https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#hql[HQL]で書くこともできます。"
+msgstr ""
+"また、クエリをプレーンな link:https://docs.jboss.org/hibernate/orm/5.4/"
+"userguide/html_single/Hibernate_User_Guide."
+"html#hql[HQL]で書くこともできます。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:613
@@ -1188,7 +1250,10 @@ msgstr "ネームドクエリー"
 #: upstream/_guides/hibernate-orm-panache.adoc:618
 #, fuzzy
 msgid "You can reference a named query instead of a (simplified) HQL query by prefixing its name with the '#' character. You can also use named queries for count, update and delete queries."
-msgstr "名前付きのクエリは、その名前の前に「#」文字を付けることで、（簡易）HQLクエリの代わりに参照することができます。また、名前付きのクエリは、カウント、アップデート、削除のクエリにも使用できます。"
+msgstr ""
+"名前付きのクエリは、その名前の前に「#」文字を付けることで、（簡易）HQLクエリ"
+"の代わりに参照することができます。また、名前付きのクエリは、カウント、アップ"
+"デート、削除のクエリにも使用できます。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:628
@@ -1254,7 +1319,10 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:656
 #, fuzzy
 msgid "Named queries can only be defined inside your JPA entity classes (being the Panache entity class, or the repository parameterized type), or on one of its super classes."
-msgstr "名前付き問い合わせは、JPAのエンティティクラス（Panacheのエンティティクラスやリポジトリのパラメータ付きタイプ）の内部、またはそのスーパークラスのいずれかでしか定義できません。"
+msgstr ""
+"名前付き問い合わせは、JPAのエンティティクラス（Panacheのエンティティクラスや"
+"リポジトリのパラメータ付きタイプ）の内部、またはそのスーパークラスのいずれか"
+"でしか定義できません。"
 
 #. type: Title ===
 #: upstream/_guides/hibernate-orm-panache.adoc:658
@@ -1294,7 +1362,8 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:678
 #, fuzzy
 msgid "Or using the convenience class `Parameters` either as is or to build a `Map`:"
-msgstr "または、コンビニエンスクラス `Parameters` をそのまま使用するか、 `Map` を構築する。"
+msgstr "または、コンビニエンスクラス `Parameters` をそのまま使用するか、 `Map` "
+"を構築する。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:684
@@ -1318,7 +1387,9 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:691
 #, fuzzy
 msgid "Every query operation accepts passing parameters by index (`Object...`), or by name (`Map<String,Object>` or `Parameters`)."
-msgstr "すべてのクエリ操作は、インデックス( `Object…​`)または名前( `Map<String,Object>` または `Parameters`)でパラメータを渡すことができます。"
+msgstr ""
+"すべてのクエリ操作は、インデックス( `Object…​`)または名前( "
+"`Map<String,Object>` または `Parameters`)でパラメータを渡すことができます。"
 
 #. type: Title ===
 #: upstream/_guides/hibernate-orm-panache.adoc:692
@@ -1330,7 +1401,9 @@ msgstr "クエリの投影"
 #: upstream/_guides/hibernate-orm-panache.adoc:695
 #, fuzzy
 msgid "Query projection can be done with the `project(Class)` method on the `PanacheQuery` object that is returned by the `find()` methods."
-msgstr "クエリの投影は、 `find()` のメソッドが返す `PanacheQuery` オブジェクトに対して `project(Class)` のメソッドで行うことができます。"
+msgstr ""
+"クエリの投影は、 `find()` のメソッドが返す `PanacheQuery` "
+"オブジェクトに対して `project(Class)` のメソッドで行うことができます。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:697
@@ -1342,13 +1415,23 @@ msgstr "これを使って、データベースから返されるフィールド
 #: upstream/_guides/hibernate-orm-panache.adoc:701
 #, fuzzy
 msgid "Hibernate will use **DTO projection** and generate a SELECT clause with the attributes from the projection class.  This is also called **dynamic instantiation** or **constructor expression**, more info can be found on the Hibernate guide: link:https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#hql-select-clause[hql select clause]"
-msgstr "Hibernateは *DTOプロジェクション*を使用して、プロジェクションクラスの属性を持つSELECT句を生成します。これは、 *動的インスタンス化*またはコンス *トラクタ式*とも呼ばれ、詳細はHibernateガイドの link:https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#hql-select-clause[hql select clause]を参照してください。"
+msgstr ""
+"Hibernateは *DTOプロジェクション*を使用して、プロジェクションクラスの属性を持"
+"つSELECT句を生成します。これは、 *動的インスタンス化*またはコンス "
+"*トラクタ式*とも呼ばれ、詳細はHibernateガイドの link:https://docs.jboss.org/"
+"hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#hql-"
+"select-clause[hql select clause]を参照してください。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:704
 #, fuzzy
 msgid "The projection class needs to be a valid Java Bean and have a constructor that contains all its attributes, this constructor will be used to instantiate the projection DTO instead of using the entity class. This class must have a matching constructor with all the class attributes as parameters."
-msgstr "プロジェクションクラスは、有効な Java Bean であり、すべての属性を含むコンストラクタを持つ必要があります。このコンストラクタは、エンティティクラスを使用する代わりに、プロジェクション DTO をインスタンス化するために使用されます。このクラスは、すべてのクラス属性をパラメータとして持つ一致するコンストラクタを持つ必要があります。"
+msgstr ""
+"プロジェクションクラスは、有効な Java Bean であり、すべての属性を含むコンスト"
+"ラクタを持つ必要があります。このコンストラクタは、エンティティクラスを使用す"
+"る代わりに、プロジェクション DTO をインスタンス化するために使用されます。この"
+"クラスは、すべてのクラス属性をパラメータとして持つ一致するコンストラクタを持"
+"つ必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:709
@@ -1392,25 +1475,39 @@ msgstr "`@RegisterForReflection` アノテーションは、ネイティブコ�
 #: upstream/_guides/hibernate-orm-panache.adoc:724
 #, fuzzy
 msgid "We use public fields here, but you can use private fields and getters/setters if you prefer."
-msgstr "ここではパブリックフィールドを使用していますが、必要に応じてプライベートフィールドやゲッター/セッターを使用することもできます。"
+msgstr "ここではパブリックフィールドを使用していますが、必要に応じてプライベートフィ"
+"ールドやゲッター/セッターを使用することもできます。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:725
 #, fuzzy
 msgid "This constructor will be used by Hibernate, it must be the only constructor in your class and have all the class attributes as parameters."
-msgstr "このコンストラクタは、Hibernate によって使用されます。このコンストラクタは、クラス内の唯一のコンストラクタであり、パラメータとしてすべてのクラス属性を持つ必要があります。"
+msgstr ""
+"このコンストラクタは、Hibernate によって使用されます。このコンストラクタは、"
+"クラス内の唯一のコンストラクタであり、パラメータとしてすべてのクラス属性を持"
+"つ必要があります。"
 
 #. type: delimited block =
 #: upstream/_guides/hibernate-orm-panache.adoc:732
 #, fuzzy
 msgid "The implementation of the `project(Class)` method uses the constructor's parameter names to build the select clause of the query, so the compiler must be configured to store parameter names inside the compiled class.  This is enabled by default if you are using the Quarkus Maven archetype. If you are not using it, add the property `<maven.compiler.parameters>true</maven.compiler.parameters>` to your `pom.xml`."
-msgstr "`project(Class)` メソッドの実装では、コンストラクタのパラメータ名を使用してクエリの select 節を構築するため、コンパイルされたクラスの内部にパラメータ名を格納するようにコンパイラを設定する必要があります。Quarkus Mavenアーキタイプを使用している場合、これはデフォルトで有効になっています。これを使用していない場合は、プロパティ `<maven.compiler.parameters>true</maven.compiler.parameters>` を `pom.xml` に追加してください。"
+msgstr ""
+"`project(Class)` メソッドの実装では、"
+"コンストラクタのパラメータ名を使用してクエリの select 節を構築するため、コン"
+"パイルされたクラスの内部にパラメータ名を格納するようにコンパイラを設定する必"
+"要があります。Quarkus Mavenアーキタイプを使用している場合、これはデフォルトで"
+"有効になっています。これを使用していない場合は、プロパティ `<maven.compiler."
+"parameters>true</maven.compiler.parameters>` を `pom.xml` "
+"に追加してください。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:735
 #, fuzzy
 msgid "If in the DTO projection object you have a field from a referenced entity, you can use the `@ProjectedFieldName` annotation to provide the path for the SELECT statement."
-msgstr "DTO プロジェクション・オブジェクトに、参照されるエンティティのフィールドがある場合、 `@ProjectedFieldName` アノテーションを使用して、SELECT 文のパスを提供することができます。"
+msgstr ""
+"DTO プロジェクション・オブジェクトに、参照されるエンティティのフィールドがあ"
+"る場合、 `@ProjectedFieldName` アノテーションを使用して、SELECT "
+"文のパスを提供することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:745
@@ -1456,7 +1553,8 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:760
 #, fuzzy
 msgid "The `ownerName` DTO constructor's parameter will be loaded from the `owner.name` HQL property."
-msgstr "`ownerName` DTOコンストラクタのパラメータは、 `owner.name` HQLプロパティから読み込まれます。"
+msgstr "`ownerName` DTOコンストラクタのパラメータは、 `owner.name` "
+"HQLプロパティから読み込まれます。"
 
 #. type: Title ==
 #: upstream/_guides/hibernate-orm-panache.adoc:761
@@ -1468,7 +1566,9 @@ msgstr "複数の永続性ユニット"
 #: upstream/_guides/hibernate-orm-panache.adoc:764
 #, fuzzy
 msgid "The support for multiple persistence units is described in detail in xref:hibernate-orm.adoc#multiple-persistence-units[the Hibernate ORM guide]."
-msgstr "複数の永続化ユニットのサポートについては、 link:hibernate-orm.html#multiple-persistence-units[Hibernate ORMガイド]で詳しく説明されています。"
+msgstr ""
+"複数の永続化ユニットのサポートについては、 link:hibernate-orm.html#multiple-"
+"persistence-units[Hibernate ORMガイド]で詳しく説明されています。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:766
@@ -1486,7 +1586,9 @@ msgstr "1つのPanacheエンティティは、1つの永続性ユニットにし
 #: upstream/_guides/hibernate-orm-panache.adoc:769
 #, fuzzy
 msgid "Given that, Panache already provides the necessary plumbing to transparently find the appropriate `EntityManager` associated to a Panache entity."
-msgstr "そう考えると、Panacheはすでに、Panacheエンティティに関連する適切な `EntityManager` を透過的に見つけるために必要な配管を提供しています。"
+msgstr ""
+"そう考えると、Panacheはすでに、Panacheエンティティに関連する適切な "
+"`EntityManager` を透過的に見つけるために必要な配管を提供しています。"
 
 #. type: Title ==
 #: upstream/_guides/hibernate-orm-panache.adoc:770
@@ -1503,13 +1605,25 @@ msgstr "データベースを変更するメソッド (例: `entity.persist()` )
 #: upstream/_guides/hibernate-orm-panache.adoc:781
 #, fuzzy
 msgid "JPA batches changes you make to your entities and sends changes (it's called flush) at the end of the transaction or before a query.  This is usually a good thing as it's more efficient.  But if you want to check optimistic locking failures, do object validation right away or generally want to get immediate feedback, you can force the flush operation by calling `entity.flush()` or even use `entity.persistAndFlush()` to make it a single method call. This will allow you to catch any `PersistenceException` that could occur when JPA send those changes to the database.  Remember, this is less efficient so don't abuse it.  And your transaction still has to be committed."
-msgstr "JPAは、エンティティに加えた変更をバッチ処理し、トランザクションの最後やクエリの前に変更を送信します（これをフラッシュと呼びます）。これは通常、より効率的で良いことです。しかし、楽観的なロックの失敗をチェックしたり、すぐにオブジェクトの検証を行ったり、一般的にすぐにフィードバックを得たい場合は、 `entity.flush()` を呼び出して強制的にフラッシュ操作を行うか、あるいは `entity.persistAndFlush()` を使用して単一のメソッド呼び出しとすることができます。これにより、JPAが変更をデータベースに送信する際に発生する可能性のある `PersistenceException` をキャッチすることができます。ただし、これは効率が悪いので悪用しないでください。また、トランザクションは依然としてコミットされなければなりません。"
+msgstr ""
+"JPAは、エンティティに加えた変更をバッチ処理し、トランザクションの最後やクエリ"
+"の前に変更を送信します（これをフラッシュと呼びます）。これは通常、より効率的"
+"で良いことです。しかし、楽観的なロックの失敗をチェックしたり、すぐにオブジェ"
+"クトの検証を行ったり、一般的にすぐにフィードバックを得たい場合は、 `entity."
+"flush()` を呼び出して強制的にフラッシュ操作を行うか、あるいは `entity."
+"persistAndFlush()` "
+"を使用して単一のメソッド呼び出しとすることができます。これにより、"
+"JPAが変更をデータベースに送信する際に発生する可能性のある "
+"`PersistenceException` をキャッチすることができます。ただし、これは効率が悪い"
+"ので悪用しないでください。また、トランザクションは依然としてコミットされなけ"
+"ればなりません。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:783
 #, fuzzy
 msgid "Here is an example of the usage of the flush method to allow making a specific action in case of `PersistenceException`:"
-msgstr "ここでは、 `PersistenceException` の場合に特定の動作を可能にする flush メソッドの使用例を示します。"
+msgstr "ここでは、 `PersistenceException` の場合に特定の動作を可能にする flush "
+"メソッドの使用例を示します。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:797
@@ -1539,13 +1653,17 @@ msgstr "ロック管理"
 #: upstream/_guides/hibernate-orm-panache.adoc:802
 #, fuzzy
 msgid "Panache provides direct support for database locking with your entity/repository, using `findById(Object, LockModeType)` or `find().withLock(LockModeType)`."
-msgstr "Panacheは、 `findById(Object, LockModeType)` または `find().withLock(LockModeType)` を使用して、お客様のエンティティ/リポジトリでデータベースロックを直接サポートします。"
+msgstr ""
+"Panacheは、 `findById(Object, LockModeType)` または `find()."
+"withLock(LockModeType)` を使用して、お客様のエンティティ/リポジトリでデータベ"
+"ースロックを直接サポートします。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:804
 #, fuzzy
 msgid "The following examples are for the active record pattern, but the same can be used with repositories."
-msgstr "以下の例は、アクティブレコードパターンの場合ですが、リポジトリでも同じように使用できます。"
+msgstr "以下の例は、アクティブレコードパターンの場合ですが、リポジトリでも同じように"
+"使用できます。"
 
 #. type: Title ===
 #: upstream/_guides/hibernate-orm-panache.adoc:805
@@ -1603,7 +1721,10 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:840
 #, fuzzy
 msgid "Be careful that locks are released when the transaction ends, so the method that invokes the lock query must be annotated with the `@Transactional` annotation."
-msgstr "トランザクションが終了するとロックが解放されるので、ロッククエリを呼び出すメソッドには `@Transactional` アノテーションを付ける必要がありますのでご注意ください。"
+msgstr ""
+"トランザクションが終了するとロックが解放されるので、"
+"ロッククエリを呼び出すメソッドには `@Transactional` "
+"アノテーションを付ける必要がありますのでご注意ください。"
 
 #. type: Title ==
 #: upstream/_guides/hibernate-orm-panache.adoc:841
@@ -1615,13 +1736,17 @@ msgstr "カスタムID"
 #: upstream/_guides/hibernate-orm-panache.adoc:845
 #, fuzzy
 msgid "IDs are often a touchy subject, and not everyone's up for letting them handled by the framework, once again we have you covered."
-msgstr "IDは微妙な問題で、誰もがフレームワークに任せることができるわけではありませんが、私たちがサポートします。"
+msgstr "IDは微妙な問題で、誰もがフレームワークに任せることができるわけではありません"
+"が、私たちがサポートします。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:848
 #, fuzzy
 msgid "You can specify your own ID strategy by extending `PanacheEntityBase` instead of `PanacheEntity`. Then you just declare whatever ID you want as a public field:"
-msgstr "`PanacheEntity` ではなく `PanacheEntityBase` を拡張することで、独自のID戦略を指定することができます。そうすれば、好きなIDをパブリック・フィールドとして宣言するだけです。"
+msgstr ""
+"`PanacheEntity` ではなく `PanacheEntityBase` を拡張することで、独自のID戦略を"
+"指定することができます。そうすれば、好きなIDをパブリック・フィールドとして宣"
+"言するだけです。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:853
@@ -1657,7 +1782,10 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:869
 #, fuzzy
 msgid "If you're using repositories, then you will want to extend `PanacheRepositoryBase` instead of `PanacheRepository` and specify your ID type as an extra type parameter:"
-msgstr "リポジトリを使用している場合は、 `PanacheRepository` の代わりに `PanacheRepositoryBase` を拡張し、ID タイプを追加のタイプパラメータとして指定することになります。"
+msgstr ""
+"リポジトリを使用している場合は、 `PanacheRepository` の代わりに "
+"`PanacheRepositoryBase` を拡張し、ID "
+"タイプを追加のタイプパラメータとして指定することになります。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:876
@@ -1685,7 +1813,12 @@ msgstr "アクティブレコードパターンの使用"
 #: upstream/_guides/hibernate-orm-panache.adoc:885
 #, fuzzy
 msgid "If you are using the active record pattern you cannot use Mockito directly as it does not support mocking static methods, but you can use the `quarkus-panache-mock` module which allows you to use Mockito to mock all provided static methods, including your own."
-msgstr "アクティブ・レコード・パターンを使用している場合、Mockitoはスタティック・メソッドのモックをサポートしていないため、直接使用することはできませんが、 `quarkus-panache-mock` モジュールを使用することで、Mockitoを使用して、あなた自身のメソッドを含む、提供されたすべてのスタティック・メソッドをモックすることができます。"
+msgstr ""
+"アクティブ・レコード・パターンを使用している場合、Mockitoはスタティック・メソ"
+"ッドのモックをサポートしていないため、直接使用することはできませんが、 "
+"`quarkus-panache-mock` モジュールを使用することで、Mockitoを使用して、あなた"
+"自身のメソッドを含む、提供されたすべてのスタティック・メソッドをモックするこ"
+"とができます。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:887
@@ -1892,7 +2025,10 @@ msgstr ""
 #: upstream/_guides/hibernate-orm-panache.adoc:990
 #, fuzzy
 msgid "Be sure to call your `verify` and `do*` methods on `PanacheMock` rather than `Mockito`, otherwise you won't know what mock object to pass."
-msgstr "`verify` と `do*` のメソッドは、必ず `Mockito` ではなく `PanacheMock` で呼び出すようにしてください。そうしないと、どのモックオブジェクトを渡せばいいのかわからなくなってしまいます。"
+msgstr ""
+"`verify` と `do*` のメソッドは、必ず `Mockito` ではなく `PanacheMock` で呼び"
+"出すようにしてください。そうしないと、どのモックオブジェクトを渡せばいいのか"
+"わからなくなってしまいます。"
 
 #. type: Title ====
 #: upstream/_guides/hibernate-orm-panache.adoc:991
@@ -1904,7 +2040,10 @@ msgstr "`EntityManager`, `Session`, エンティティインスタンスメソ�
 #: upstream/_guides/hibernate-orm-panache.adoc:994
 #, fuzzy
 msgid "If you need to mock entity instance methods, such as `persist()` you can do it by mocking the Hibernate ORM `Session` object:"
-msgstr "`persist()` のようなエンティティインスタンスのメソッドをモックする必要がある場合は、Hibernate ORM `Session` オブジェクトをモックすることで実現できます。"
+msgstr ""
+"`persist()` "
+"のようなエンティティインスタンスのメソッドをモックする必要がある場合は、"
+"Hibernate ORM `Session` オブジェクトをモックすることで実現できます。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:999
@@ -1966,7 +2105,10 @@ msgstr "アクティブレコードパターンの使用"
 #: upstream/_guides/hibernate-orm-panache.adoc:1027
 #, fuzzy
 msgid "If you are using the repository pattern you can use Mockito directly, using the `quarkus-junit5-mockito` module, which makes mocking beans much easier:"
-msgstr "リポジトリパターンを使用している場合は、 `quarkus-junit5-mockito` モジュールを使用して、Mockito を直接使用することができます。これにより、ビーンのモッキングが非常に簡単になります。"
+msgstr ""
+"リポジトリパターンを使用している場合は、 `quarkus-junit5-mockito` "
+"モジュールを使用して、Mockito を直接使用することができます。これにより、ビー"
+"ンのモッキングが非常に簡単になります。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:1035
@@ -2137,7 +2279,13 @@ msgstr "IDロジックの重複:ほとんどのエンティティにはIDが必�
 #: upstream/_guides/hibernate-orm-panache.adoc:1127
 #, fuzzy
 msgid "Traditional EE patterns advise to split entity definition (the model) from the operations you can do on them (DAOs, Repositories), but really that requires a split between the state and its operations even though we would never do something like that for regular objects in the Object Oriented architecture, where state and methods are in the same class. Moreover, this requires two classes per entity, and requires injection of the DAO or Repository where you need to do entity operations, which breaks your edit flow and requires you to get out of the code you're writing to set up an injection point before coming back to use it."
-msgstr "伝統的なEEパターンでは、エンティティの定義（モデル）とそれに対する操作（DAOやリポジトリ）を分離することが推奨されていますが、実際には、状態とその操作を分離する必要があります。さらに、エンティティごとに2つのクラスが必要となり、エンティティの操作を行う必要があるDAOやリポジトリをインジェクションする必要があります。これにより、編集フローが崩れ、インジェクションポイントを設定するために書いているコードから抜け出して、戻ってきて使用する必要があります。"
+msgstr ""
+"伝統的なEEパターンでは、エンティティの定義（モデル）とそれに対する操作（DAOや"
+"リポジトリ）を分離することが推奨されていますが、実際には、状態とその操作を分"
+"離する必要があります。さらに、エンティティごとに2つのクラスが必要となり、エン"
+"ティティの操作を行う必要があるDAOやリポジトリをインジェクションする必要があり"
+"ます。これにより、編集フローが崩れ、インジェクションポイントを設定するために"
+"書いているコードから抜け出して、戻ってきて使用する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:1129
@@ -2158,31 +2306,51 @@ msgstr "Panacheでは、これらの問題に対して、定見に基づいた�
 #: upstream/_guides/hibernate-orm-panache.adoc:1136
 #, fuzzy
 msgid "Make your entities extend `PanacheEntity`: it has an ID field that is auto-generated. If you require a custom ID strategy, you can extend `PanacheEntityBase` instead and handle the ID yourself."
-msgstr "エンティティは `PanacheEntity` を拡張するようにしてください：自動生成されるIDフィールドがあります。カスタムのID戦略が必要な場合は、代わりに `PanacheEntityBase` を拡張して、IDを自分で処理することができます。"
+msgstr ""
+"エンティティは `PanacheEntity` を拡張するようにしてください：自動生成されるID"
+"フィールドがあります。カスタムのID戦略が必要な場合は、代わりに "
+"`PanacheEntityBase` を拡張して、IDを自分で処理することができます。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:1139
 #, fuzzy
 msgid "Use public fields. Get rid of dumb getter and setters. Hibernate ORM w/o Panache also doesn't require you to use getters and setters, but Panache will additionally generate all getters and setters that are missing, and rewrite every access to these fields to use the accessor methods. This way you can still write _useful_ accessors when you need them, which will be used even though your entity users still use field accesses. This implies that from the Hibernate perspective you're using accessors via getters and setters even while it looks like field accessors."
-msgstr "パブリックフィールドを使う。馬鹿げたゲッターとセッターを取り除きます。Panacheを持たないHibernate ORMでもゲッターとセッターを使う必要はありませんが、Panacheはさらに不足しているすべてのゲッターとセッターを生成し、これらのフィールドへのすべてのアクセスをアクセサメソッドを使うように書き換えます。このようにして、必要なときに _有用な_アクセサを書くことができ、エンティティユーザがフィールドアクセスを使用していても、それが使用されます。これは、Hibernateの観点からは、フィールドアクセサのように見えても、ゲッターとセッターを介してアクセサを使用していることを意味します。"
+msgstr ""
+"パブリックフィールドを使う。馬鹿げたゲッターとセッターを取り除きます。"
+"Panacheを持たないHibernate ORMでもゲッターとセッターを使う必要はありませんが"
+"、Panacheはさらに不足しているすべてのゲッターとセッターを生成し、これらのフィ"
+"ールドへのすべてのアクセスをアクセサメソッドを使うように書き換えます。このよ"
+"うにして、必要なときに _有用な_アクセサを書くことができ、エンティティユーザが"
+"フィールドアクセスを使用していても、それが使用されます。これは、Hibernateの観"
+"点からは、フィールドアクセサのように見えても、ゲッターとセッターを介してアク"
+"セサを使用していることを意味します。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:1142
 #, fuzzy
 msgid "With the active record pattern: put all your entity logic in static methods in your entity class and don't create DAOs.  Your entity superclass comes with lots of super useful static methods, and you can add your own in your entity class.  Users can just start using your entity `Person` by typing `Person.` and getting completion for all the operations in a single place."
-msgstr "アクティブレコードパターンでは、すべてのエンティティロジックをエンティティクラスのスタティックメソッドに置き、DAOを作りません。エンティティスーパークラスには、非常に便利なスタティックメソッドがたくさん用意されていますし、エンティティクラスに独自のメソッドを追加することもできます。 `Person.` ユーザーは、 `Person` と入力するだけで、すべての操作を一か所で完了させることができます。"
+msgstr ""
+"アクティブレコードパターンでは、すべてのエンティティロジックをエンティティク"
+"ラスのスタティックメソッドに置き、DAOを作りません。エンティティスーパークラス"
+"には、非常に便利なスタティックメソッドがたくさん用意されていますし、エンティ"
+"ティクラスに独自のメソッドを追加することもできます。 `Person.` ユーザーは、 "
+"`Person` と入力するだけで、すべての操作を一か所で完了させることができます。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:1145
 #, fuzzy
 msgid "Don't write parts of the query that you don't need: write `Person.find(\"order by name\")` or `Person.find(\"name = ?1 and status = ?2\", \"stef\", Status.Alive)` or even better `Person.find(\"name\", \"stef\")`."
-msgstr "`Person.find(\"order by name\")` や `Person.find(\"name = ?1 and status = ?2\", \"stef\", Status.Alive)` 、さらには `Person.find(\"name\", \"stef\")` のように、必要のない部分を書かないようにしましょう。"
+msgstr ""
+"`Person.find(\"order by name\")` や `Person.find(\"name = ?1 and status = ?"
+"2\", \"stef\", Status.Alive)` 、さらには `Person.find(\"name\", \"stef\")` "
+"のように、必要のない部分を書かないようにしましょう。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:1147
 #, fuzzy
 msgid "That's all there is to it: with Panache, Hibernate ORM has never looked so trim and neat."
-msgstr "以上、Panacheを使えば、Hibernate ORMがこれほどまでに整然としたものになるのか、ということです。"
+msgstr "以上、Panacheを使えば、Hibernate "
+"ORMがこれほどまでに整然としたものになるのか、ということです。"
 
 #. type: Title ==
 #: upstream/_guides/hibernate-orm-panache.adoc:1148
@@ -2204,7 +2372,10 @@ msgstr "この機能は、マーカーファイル `META-INF/panache-archive.mar
 #: upstream/_guides/hibernate-orm-panache.adoc:1161
 #, fuzzy
 msgid "If you include the jpa-modelgen annotation processor this will exclude the Panache annotation processor by default. If you do this you should either create the marker file yourself, or add the `quarkus-panache-common` as well, as shown below:"
-msgstr "jpa-modelgenアノテーションプロセッサをインクルードすると、デフォルトでPanacheアノテーションプロセッサが除外されます。この場合、マーカーファイルを自分で作成するか、以下のように `quarkus-panache-common` も追加する必要があります。"
+msgstr ""
+"jpa-modelgenアノテーションプロセッサをインクルードすると、デフォルトでPanache"
+"アノテーションプロセッサが除外されます。この場合、マーカーファイルを自分で作"
+"成するか、以下のように `quarkus-panache-common` も追加する必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:1182

@@ -26,7 +26,9 @@ msgstr "真"
 #: upstream/_redirects/guides/amazon-dynamodb.md:1
 #, fuzzy, no-wrap
 msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/amazon-dynamodb.html"
-msgstr "https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/amazon-dynamodb.html"
+msgstr ""
+"https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/"
+"amazon-dynamodb.html"
 
 #. type: YAML Front Matter: permalink
 #: upstream/_redirects/guides/amazon-dynamodb.md:1

@@ -62,19 +62,33 @@ msgstr "イントロ"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:14
 #, fuzzy
 msgid "When I've been introduced to Quarkus, back in December 2018, I suddenly had the feeling the Quarkus runtime has the potential of covering ~95% of the software use-cases.  My friend Sanne demoed Quarkus on his laptop when the runtime was still in an alpha state, far from being the large, extended and mature framework everybody knows nowadays. And still, I could experience a new way of think, implement and deploy java apps."
-msgstr "2018年12月にQuarkusを紹介されたとき、Quarkusのランタイムはソフトウェアのユースケースの~95%をカバーする可能性があると突然感じました。友人のSanneが彼のラップトップでQuarkusをデモしたのは、ランタイムがまだアルファ状態で、今では誰もが知っている大規模で拡張された成熟したフレームワークとは程遠い状態でした。それでも私は、Javaアプリケーションを考え、実装し、展開する新しい方法を体験することができました。"
+msgstr ""
+"2018年12月にQuarkusを紹介されたとき、Quarkusのランタイムはソフトウェアのユー"
+"スケースの~95%をカバーする可能性があると突然感じました。友人のSanneが彼のラッ"
+"プトップでQuarkusをデモしたのは、ランタイムがまだアルファ状態で、今では誰もが"
+"知っている大規模で拡張された成熟したフレームワークとは程遠い状態でした。それ"
+"でも私は、Javaアプリケーションを考え、実装し、展開する新しい方法を体験するこ"
+"とができました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:16
 #, fuzzy
 msgid "I’ve been recently working on a Hackfest for Red Hat EMEA partners to spread awareness about the potential and the performance of the Quarkus framework. My main technical goal was to demonstrate Quarkus can run everywhere and thanks to its performance capabilities coming from the native compilation process it definitely is the runtime of choice for IoT devices (a.k.a. Far Edge)."
-msgstr "私は最近、Red Hat EMEAパートナー向けのHackfestに参加し、Quarkusフレームワークの可能性とパフォーマンスについての認識を広めました。私の主な技術的目標は、Quarkusがあらゆる場所で実行可能であり、ネイティブなコンパイルプロセスによるパフォーマンス能力のおかげで、IoTデバイス（別名ファーエッジ）に最適なランタイムであることを実証することでした。"
+msgstr ""
+"私は最近、Red Hat EMEAパートナー向けのHackfestに参加し、Quarkusフレームワーク"
+"の可能性とパフォーマンスについての認識を広めました。私の主な技術的目標は、Qua"
+"rkusがあらゆる場所で実行可能であり、ネイティブなコンパイルプロセスによるパフ"
+"ォーマンス能力のおかげで、IoTデバイス（別名ファーエッジ）に最適なランタイムで"
+"あることを実証することでした。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:18
 #, fuzzy
 msgid "To achieve the above goal, I’ve picked up a single-board computer with an integrated ARM-compatible central processing unit and made a Quarkus native app running into a container on top of a Linux based operating system. Here is how:"
-msgstr "上記の目標を達成するために、私はARM互換の中央処理装置を内蔵したシングルボードコンピュータをピックアップし、Linuxベースのオペレーティングシステムの上でコンテナに実行されるQuarkusネイティブアプリを作りました。その方法を紹介します。"
+msgstr ""
+"上記の目標を達成するために、私はARM互換の中央処理装置を内蔵したシングルボード"
+"コンピュータをピックアップし、Linuxベースのオペレーティングシステムの上でコン"
+"テナに実行されるQuarkusネイティブアプリを作りました。その方法を紹介します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:20
@@ -86,7 +100,8 @@ msgstr "前提条件"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:22
 #, fuzzy, no-wrap
 msgid "*Single-board computer:* The ARM-compatible CPU integrated into the single-board computer must support 64-bit mode. \n"
-msgstr "*シングルボードコンピュータ。*シングルボードコンピュータに内蔵されているARM互換のCPUが64ビットモードに対応していること。"
+msgstr "*シングルボードコンピュータ。*シングルボードコンピュータに内蔵されているARM互"
+"換のCPUが64ビットモードに対応していること。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:24
@@ -98,37 +113,46 @@ msgstr "*オペレーティングシステムです。*"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:25
 #, fuzzy, no-wrap
 msgid "To make a Quarkus native container image run in a container, a 64-bit Linux OS is required;\n"
-msgstr "Quarkusのネイティブコンテナイメージをコンテナ内で動作させるには、64ビットのLinux OSが必要です。"
+msgstr "Quarkusのネイティブコンテナイメージをコンテナ内で動作させるには、"
+"64ビットのLinux OSが必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:27
 #, fuzzy
 msgid "The OS must support aarch64 CPUs, which leads us to the need for an aarch64-base distribution available for that OS;"
-msgstr "OSはaarch64のCPUをサポートしていなければならず、そのためにはそのOSで利用できるaarch64ベースのディストリビューションが必要になります。"
+msgstr ""
+"OSはaarch64のCPUをサポートしていなければならず、そのためにはそのOSで利用でき"
+"るaarch64ベースのディストリビューションが必要になります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:29
 #, fuzzy
 msgid "Nice to have: the target OS should fully support the target single-board computer.**"
-msgstr "Nice to have: ターゲットOSは、ターゲットのシングルボードコンピュータを完全にサポートする必要があります。"
+msgstr "Nice to have: ターゲットOSは、ターゲットのシングルボードコンピュータを完全に"
+"サポートする必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:31
 #, fuzzy, no-wrap
 msgid "*Container technology:* surprise, surprise! an OCI standard container engine is compulsory to run containers on Linux :-)\n"
-msgstr "*コンテナ技術：*驚いたことに、Linux上でコンテナを実行するには、OCI標準のコンテナエンジンが必須です :-)"
+msgstr "*コンテナ技術：*驚いたことに、Linux上でコンテナを実行するには、"
+"OCI標準のコンテナエンジンが必須です :-)"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:33
 #, fuzzy, no-wrap
 msgid "*Build tools:* as per the large amount of resources required by the GraalVM to compile Quarkus in native mode, an additional we need an ARM server / Virtual machine to achieve that goal. The server should meet the following minimum requirements: \n"
-msgstr "*ビルドツール*：QuarkusをネイティブモードでコンパイルするためにGraalVMが必要とする大量のリソースがあるため、その目標を達成するためにARMサーバー／仮想マシンが必要となります。サーバーは以下の最低要件を満たす必要があります。"
+msgstr ""
+"*ビルドツール*：QuarkusをネイティブモードでコンパイルするためにGraalVMが必要"
+"とする大量のリソースがあるため、その目標を達成するためにARMサーバー／仮想マシ"
+"ンが必要となります。サーバーは以下の最低要件を満たす必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:34
 #, fuzzy, no-wrap
 msgid "CPU: same ARM model as the one embedded in the target single-board computer\n"
-msgstr "CPU：ターゲットのシングルボードコンピュータに内蔵されているものと同じARMモデル"
+msgstr "CPU：ターゲットのシングルボードコンピュータに内蔵されているものと同じARMモデ"
+"ル"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:35
@@ -152,7 +176,10 @@ msgstr "ディスク容量：20Gb"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:39
 #, fuzzy, no-wrap
 msgid "*Container registry:* In order to be able to deploy onto the single-board computer the container image containing the Quarkus native app built in the ARM server, an account on a remote container registry is required.\n"
-msgstr "*コンテナレジストリ。*ARMサーバーで構築されたQuarkusネイティブアプリを含むコンテナイメージをシングルボードコンピュータに展開するためには、リモートコンテナレジストリのアカウントが必要です。"
+msgstr ""
+"*コンテナレジストリ。*ARMサーバーで構築されたQuarkusネイティブアプリを含むコ"
+"ンテナイメージをシングルボードコンピュータに展開するためには、リモートコンテ"
+"ナレジストリのアカウントが必要です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:45
@@ -170,7 +197,8 @@ msgstr "シングルセンサーボード"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:49
 #, fuzzy
 msgid "Choosing the target single-board computer model has been quite an easy task: I already had a Raspberry Pi meeting the requirements above:"
-msgstr "上記の条件を満たすRaspberry Piをすでに持っていたので、シングルボードコンピュータのモデルを選ぶのはとても簡単でした。"
+msgstr "上記の条件を満たすRaspberry Piをすでに持っていたので、シングルボードコンピュ"
+"ータのモデルを選ぶのはとても簡単でした。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:51
@@ -206,7 +234,10 @@ msgstr "_WIFI。_デュアルバンド802.11ac無線LAN（2.4GHz、5GHz）、Blu
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:56
 #, fuzzy
 msgid "_Ethernet:_ Gigabit Ethernet over USB 2.0 (max 300 Mbps). Power-over-Ethernet support (with separate PoE HAT). Improved PXE network and USB mass-storage booting."
-msgstr "_イーサネット。_Gigabit Ethernet over USB 2.0（最大300Mbps）。Power-over-Ethernetに対応（別途PoE HATが必要）。PXEによるネットワークおよびUSBマスストレージの起動の改善"
+msgstr ""
+"_イーサネット。_Gigabit Ethernet over USB 2.0（最大300Mbps）。Power-over-"
+"Ethernetに対応（別途PoE "
+"HATが必要）。PXEによるネットワークおよびUSBマスストレージの起動の改善"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:57
@@ -260,7 +291,11 @@ msgstr "OS"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:68
 #, fuzzy
 msgid "I’ve tried a few operating system meeting the requirements listed above. The two possible solutions were Fedora Internet of Things Edition and Gentoo.  After some tests, I’ve picked up https://iot.fedoraproject.org/[Fedora IoT] for the following reasons:"
-msgstr "上記の要件を満たすOSをいくつか試してみました。その結果、Fedora Internet of Things EditionとGentooの2つが候補に挙がりました。いくつか試した結果、以下の理由から link:https://iot.fedoraproject.org/[Fedora IoT]をピックアップしました。"
+msgstr ""
+"上記の要件を満たすOSをいくつか試してみました。その結果、Fedora Internet of "
+"Things EditionとGentooの2つが候補に挙がりました。いくつか試した結果、"
+"以下の理由から link:https://iot.fedoraproject.org/[Fedora "
+"IoT]をピックアップしました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:70
@@ -307,19 +342,31 @@ msgstr "コンテナ技術"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:79
 #, fuzzy
 msgid "This one has been an easy task as well: https://podman.io/[Podman]. Podman is a daemonless container engine for developing, managing, and running OCI Containers on your Linux System. Containers can either be run as root or in rootless mode. Moreover, there’s no need for installing additional components/layers to Fedora IoT basic installation as the Podman container engine is already available in the OS distribution."
-msgstr "こちらも簡単にできました。 link:https://podman.io/[Podman]です。Podmanは、Linuxシステム上でOCIコンテナを開発、管理、実行するためのデーモンレスのコンテナエンジンです。コンテナは、rootとしてもrootlessモードでも実行できます。さらに、Fedora IoTの基本的なインストールでは、PodmanコンテナエンジンがすでにOSディストリビューションに含まれているため、追加のコンポーネントやレイヤーをインストールする必要はありません。"
+msgstr ""
+"こちらも簡単にできました。 link:https://podman.io/[Podman]です。Podmanは、Lin"
+"uxシステム上でOCIコンテナを開発、管理、実行するためのデーモンレスのコンテナエ"
+"ンジンです。コンテナは、rootとしてもrootlessモードでも実行できます。さらに、"
+"Fedora IoTの基本的なインストールでは、PodmanコンテナエンジンがすでにOSディス"
+"トリビューションに含まれているため、追加のコンポーネントやレイヤーをインスト"
+"ールする必要はありません。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:82
 #, fuzzy
 msgid "Moreover, from a deeper technical perspective, due to the fact cgroups on fedora is now v2 using Docker would force you to appy several tweeks and to downgrade the cgroups versio to v1 in order to avoid getting warning and eventually failures."
-msgstr "さらに、技術的な観点から言うと、fedoraのcgroupsがv2になっているため、Dockerを使用すると、警告や最終的な失敗を回避するために、いくつかの調整を行い、cgroupsのバージョンをv1にダウングレードする必要があります。"
+msgstr ""
+"さらに、技術的な観点から言うと、fedoraのcgroupsがv2になっているため、Dockerを"
+"使用すると、警告や最終的な失敗を回避するために、いくつかの調整を行い、cgroups"
+"のバージョンをv1にダウングレードする必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:85
 #, fuzzy
 msgid "The reason why Podman is the contained of choice is very well explained in the following https://podman.io/blogs/2019/10/29/podman-crun-f31.html[article].  I'm quoting the quick explanation:"
-msgstr "Podmanが選ばれている理由は、以下の link:https://podman.io/blogs/2019/10/29/podman-crun-f31.html[記事]でとてもよく説明されています。ざっくりとした説明を引用します。"
+msgstr ""
+"Podmanが選ばれている理由は、以下の link:https://podman.io/blogs/2019/10/29/"
+"podman-crun-f31."
+"html[記事]でとてもよく説明されています。ざっくりとした説明を引用します。"
 
 #. type: Positional ($2) AttributeList argument for style 'quote'
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:86
@@ -331,7 +378,14 @@ msgstr "Rūmī"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:89
 #, fuzzy
 msgid "The crun command is the runtime the allows for cgroup V2 support and is supplied starting with Fedora 31. Other container systems use the runc runtime. However, runc only supports cgroup V1. The cgroup kernel feature allows you to allocate resources such as CPU time, network bandwidth and system memory to a container. Version 1 of cgroup only supports containers that are run by root, while version 2 supports containers that are run by root or a non-privileged user."
-msgstr "crunコマンドは、cgroup V2のサポートを可能にするランタイムで、Fedora 31から提供されています。他のコンテナシステムは、runc ランタイムを使用します。しかし、runc は cgroup V1 しかサポートしていません。cgroupカーネル機能は、CPU時間、ネットワーク帯域幅、システムメモリなどのリソースをコンテナに割り当てることができます。cgroupのバージョン1は、rootが実行するコンテナのみをサポートし、バージョン2は、rootまたは非特権ユーザーが実行するコンテナをサポートします。"
+msgstr ""
+"crunコマンドは、cgroup V2のサポートを可能にするランタイムで、Fedora "
+"31から提供されています。他のコンテナシステムは、runc "
+"ランタイムを使用します。しかし、runc は cgroup V1 しかサポートしていません。c"
+"groupカーネル機能は、CPU時間、ネットワーク帯域幅、システムメモリなどのリソー"
+"スをコンテナに割り当てることができます。cgroupのバージョン1は、rootが実行する"
+"コンテナのみをサポートし、バージョン2は、rootまたは非特権ユーザーが実行するコ"
+"ンテナをサポートします。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:92
@@ -360,7 +414,11 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:108
 #, fuzzy
 msgid "Meaning the Podman version already included in Fedora IoT 31 and later fully supports cgroup v2 thanks to the fact it uses \"crun\" runtime rather than the classic \"runc\" runtime, embedded in the other linux distributions and in the fedora releases before v31."
-msgstr "つまり、Fedora IoT 31以降にすでに含まれているPodmanバージョンは、他のLinuxディストリビューションやFedora v31以前のリリースに組み込まれている古典的な「runc」ランタイムではなく、「crun」ランタイムを使用しているため、cgroup v2を完全にサポートしているということになります。"
+msgstr ""
+"つまり、Fedora IoT 31以降にすでに含まれているPodmanバージョンは、"
+"他のLinuxディストリビューションやFedora v31以前のリリースに組み込まれている古"
+"典的な「runc」ランタイムではなく、「crun」ランタイムを使用しているため、"
+"cgroup v2を完全にサポートしているということになります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:110
@@ -372,19 +430,22 @@ msgstr "ビルドツール"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:112
 #, fuzzy
 msgid "There are multiple ways of provisioning an aarch64 server shipped with enough resources to build quarkus in native mode nowadays:"
-msgstr "最近では、ネイティブモードでQuarkusを構築するのに十分なリソースを搭載したaarch64サーバーを用意する方法が複数あります。"
+msgstr "最近では、ネイティブモードでQuarkusを構築するのに十分なリソースを搭載したaarc"
+"h64サーバーを用意する方法が複数あります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:114
 #, fuzzy
 msgid "Spend a reasonable, but not small, budget to purchase a physical ARM server (don’t do this at home);"
-msgstr "物理的なARMサーバーを購入するために、少額ではないが妥当な予算を使う（自宅ではやらないこと）。"
+msgstr "物理的なARMサーバーを購入するために、少額ではないが妥当な予算を使う（自宅では"
+"やらないこと）。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:115
 #, fuzzy
 msgid "Spend a very small budget to provision an ARM VM on the public cloud (fastest, recommended if you are not running a Linux os on your host);"
-msgstr "非常に少ない予算でパブリッククラウド上にARM VMをプロビジョニングする（最速、ホスト上でLinux OSを実行していない場合は推奨）。"
+msgstr "非常に少ない予算でパブリッククラウド上にARM VMをプロビジョニングする（最速、"
+"ホスト上でLinux OSを実行していない場合は推奨）。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:116
@@ -396,19 +457,24 @@ msgstr "QEmuを使って、ホストマシン上にVMをプロビジョニング
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:117
 #, fuzzy
 msgid "__Run QEmu within a container, emulating the quarkus container images (still under investigation and tests)__."
-msgstr "_QEmuをコンテナ内で実行し、quarkusコンテナイメージをエミュレートする（まだ調査・テスト中_）。"
+msgstr "_QEmuをコンテナ内で実行し、quarkusコンテナイメージをエミュレートする（まだ調"
+"査・テスト中_）。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:119
 #, fuzzy
 msgid "As I’m running Fedora Workstation on my desktop, I’ve picked up the 3rd option."
-msgstr "私はデスクトップでFedora Workstationを動かしているので、3番目のオプションを選びました。"
+msgstr "私はデスクトップでFedora "
+"Workstationを動かしているので、3番目のオプションを選びました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:122
 #, fuzzy
 msgid "### Container registry The remote container registry of choice is https://quay.io/[Quay.io]. More details about setting up the account created on quay.io will be shared in a dedicated section of this article."
-msgstr "コンテナ・レジストリ リモート・コンテナ・レジストリとして、 link:https://quay.io/[Quay.io]を選択します。quay.ioで作成したアカウントの設定については、本記事の専用セクションで詳しく説明します。"
+msgstr ""
+"コンテナ・レジストリ リモート・コンテナ・レジストリとして、 link:https://quay"
+".io/[Quay.io]を選択します。quay.ioで作成したアカウントの設定については、本記"
+"事の専用セクションで詳しく説明します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:129
@@ -462,7 +528,11 @@ msgstr "1.VMのセットアップ"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:146
 #, fuzzy
 msgid "This goal can be achieved using VM technology based on QEmu.  QEmu plays an important role in this task, cause that’s the best upstream tool to use to make a virtual machine emulating the target cpu architecture."
-msgstr "この目標は、QEmuをベースにしたVM技術を使って達成することができます。QEmuは、ターゲットとなるCPUアーキテクチャをエミュレートした仮想マシンを作成するために使用する最適なアップストリームツールであるため、このタスクにおいて重要な役割を果たしています。"
+msgstr ""
+"この目標は、QEmuをベースにしたVM技術を使って達成することができます。QEmuは、"
+"ターゲットとなるCPUアーキテクチャをエミュレートした仮想マシンを作成するために"
+"使用する最適なアップストリームツールであるため、このタスクにおいて重要な役割"
+"を果たしています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:148
@@ -518,25 +588,34 @@ msgstr "ネットワーク：ブリッジ"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:164
 #, fuzzy
 msgid "OS: Fedora Minimal (latest stable) - aarch64 (https://download.fedoraproject.org/pub/fedora-secondary/releases/32/Spins/aarch64/images/Fedora-Minimal-32-1.6.aarch64.raw.xz[link])"
-msgstr "OSFedora Minimal (latest stable) - aarch64 link:https://download.fedoraproject.org/pub/fedora-secondary/releases/32/Spins/aarch64/images/Fedora-Minimal-32-1.6.aarch64.raw.xz[(link])"
+msgstr ""
+"OSFedora Minimal (latest stable) - aarch64 link:https://download."
+"fedoraproject.org/pub/fedora-secondary/releases/32/Spins/aarch64/images/"
+"Fedora-Minimal-32-1.6.aarch64.raw.xz[(link])"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:165
 #, fuzzy
 msgid "Runtime: GraalVM (latest) - aarch64 (https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.2.0/graalvm-ce-java11-linux-aarch64-20.2.0.tar.gz[link])"
-msgstr "ランタイムGraalVM (最新) - aarch64 link:https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.2.0/graalvm-ce-java11-linux-aarch64-20.2.0.tar.gz[(リンク])"
+msgstr ""
+"ランタイムGraalVM (最新) - aarch64 link:https://github.com/graalvm/"
+"graalvm-ce-builds/releases/download/vm-20.2.0/graalvm-ce-java11-linux-"
+"aarch64-20.2.0.tar.gz[(リンク])"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:167
 #, fuzzy
 msgid "image:/assets/images/posts/quarkus-native-on-a-raspberry-pi/vm-cpu-config.png[width=100%]"
-msgstr "image:/assets/images/posts/quarkus-native-on-a-raspberry-pi/vm-cpu-config.png[alt=vm cpu config]"
+msgstr ""
+"image:/assets/images/posts/quarkus-native-on-a-raspberry-pi/vm-cpu-config."
+"png[alt=vm cpu config]"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:169
 #, fuzzy
 msgid "As a side note, please consider increasing the disk sizing of the VM in case you want to reuse it for additional builds and tests."
-msgstr "なお、追加のビルドやテストに再利用したい場合は、VMのディスクサイズを大きくすることを検討してください。"
+msgstr "なお、追加のビルドやテストに再利用したい場合は、VMのディスクサイズを大きくす"
+"ることを検討してください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:171
@@ -548,7 +627,8 @@ msgstr "GraalVM環境の構築"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:173
 #, fuzzy
 msgid "On your VM, you will need GCC, and the glibc and zlib headers. Examples for common distributions:"
-msgstr "VM上では、GCCおよびglibcとzlibのヘッダーが必要です。一般的なディストリビューションの例"
+msgstr "VM上では、GCCおよびglibcとzlibのヘッダーが必要です。一般的なディストリビュー"
+"ションの例"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:177
@@ -572,13 +652,19 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:188
 #, fuzzy
 msgid "Download the latest version of graalvm for your architecture (aarch64) from https://github.com/graalvm/graalvm-ce-builds/releases[here] and unpack it.  Detailed instructions https://www.graalvm.org/docs/getting-started-with-graalvm/linux/[here]."
-msgstr "お使いのアーキテクチャ（aarch64）に対応した最新版のgraalvmを link:https://github.com/graalvm/graalvm-ce-builds/releases[こちら]からダウンロードし、解凍してください。詳しい手順は link:https://www.graalvm.org/docs/getting-started-with-graalvm/linux/[こちら]。"
+msgstr ""
+"お使いのアーキテクチャ（aarch64）に対応した最新版のgraalvmを "
+"link:https://github.com/graalvm/graalvm-ce-builds/"
+"releases[こちら]からダウンロードし、解凍してください。詳しい手順は "
+"link:https://www.graalvm.org/docs/getting-started-with-graalvm/linux/"
+"[こちら]。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:190
 #, fuzzy
 msgid "Move the graalvm content into /usr/lib/graalvm and set the environment variables adding the following code snippet into /etc/profile:"
-msgstr "/usr/lib/graalvmにgraalvmのコンテンツを移動し、/etc/profileに以下のコードを追加して環境変数を設定します。"
+msgstr "/usr/lib/graalvmにgraalvmのコンテンツを移動し、/etc/"
+"profileに以下のコードを追加して環境変数を設定します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:203
@@ -653,7 +739,10 @@ msgstr "最新のFedora IoTディストロのダウンロード"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:240
 #, fuzzy
 msgid "Download the stable and fully supported version of Fedora IoT for Raspberry Pi from https://dl.fedoraproject.org/pub/alt/iot/[here]. Pick up the raw image for aarch64."
-msgstr "安定した完全サポート版のFedora IoT for Raspberry Piを link:https://dl.fedoraproject.org/pub/alt/iot/[ここ]からダウンロードします。aarch64のrawイメージをピックアップします。"
+msgstr ""
+"安定した完全サポート版のFedora IoT for Raspberry Piを link:https://dl."
+"fedoraproject.org/pub/alt/iot/"
+"[ここ]からダウンロードします。aarch64のrawイメージをピックアップします。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:242
@@ -671,13 +760,23 @@ msgstr "非Linux OS"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:248
 #, fuzzy
 msgid "If you are not running any linux based OS on hour host, in order to easily, safely and quickly install the OS image on the MicroSD card I highly recommended to download the official Raspberry Imager tool from https://www.raspberrypi.org/downloads/[here].  The Raspberry Pi Imager how-to can be found https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/[here].  The good news is that we have already gone through the creation of the ARM-based virtual machine, so you already have a linux distro to use to flash the Fedora IoT OS on the SD card!"
-msgstr "もしあなたがLinuxベースのOSを起動していないのであれば、OSイメージをMicroSDカードに簡単に、安全に、素早くインストールするために、公式のRaspberry Imagerツールを link:https://www.raspberrypi.org/downloads/[ここ]からダウンロードすることを強くお勧めします。Raspberry Pi Imagerのハウツーは link:https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/[こちら]をご覧ください。良いニュースは、すでにARMベースの仮想マシンの作成を行っているので、SDカードにFedora IoT OSをフラッシュするために使用するLinuxディストロがすでにあるということです。"
+msgstr ""
+"もしあなたがLinuxベースのOSを起動していないのであれば、OSイメージをMicroSDカ"
+"ードに簡単に、安全に、素早くインストールするために、公式のRaspberry "
+"Imagerツールを link:https://www.raspberrypi.org/downloads/"
+"[ここ]からダウンロードすることを強くお勧めします。Raspberry Pi "
+"Imagerのハウツーは link:https://www.raspberrypi.org/blog/"
+"raspberry-pi-imager-imaging-utility/[こちら]をご覧ください。良いニュースは、"
+"すでにARMベースの仮想マシンの作成を行っているので、SDカードにFedora IoT "
+"OSをフラッシュするために使用するLinuxディストロがすでにあるということです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:252
 #, fuzzy
 msgid "#### On a Linux distro Fedora OS linux distro provides a tool that dramatically simplifies the task: fedora-arm-installer.  Let's add the tool to the OS:"
-msgstr "LinuxディストロのFedora OSでは、この作業を劇的に簡略化するツール「fedora-arm-installer」が提供されています。このツールをOSに追加してみましょう。"
+msgstr ""
+"LinuxディストロのFedora OSでは、この作業を劇的に簡略化するツール「fedora-arm-"
+"installer」が提供されています。このツールをOSに追加してみましょう。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:256
@@ -701,7 +800,10 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:267
 #, fuzzy
 msgid "please refer to the official tool guide to get additional insights about it.  The tool is described https://docs.fedoraproject.org/en-US/iot/physical-device-setup/#_scripted_image_transfer_with_arm_image_installer[here]."
-msgstr "ツールの詳細については、公式ツールガイドを参照してください。ツールの説明は link:https://docs.fedoraproject.org/en-US/iot/physical-device-setup/#_scripted_image_transfer_with_arm_image_installer[こちら]です。"
+msgstr ""
+"ツールの詳細については、公式ツールガイドを参照してください。ツールの説明は "
+"link:https://docs.fedoraproject.org/en-US/iot/physical-device-setup/"
+"#_scripted_image_transfer_with_arm_image_installer[こちら]です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:269
@@ -731,7 +833,9 @@ msgstr "_Root_- SDカードの未割り当ての残りの領域を占める"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:275
 #, fuzzy
 msgid "image:/assets/images/posts/quarkus-native-on-a-raspberry-pi/sd-card-partitions.png[width=100%]"
-msgstr "image:/assets/images/posts/quarkus-native-on-a-raspberry-pi/sd-card-partitions.png[alt=sd card partitions]"
+msgstr ""
+"image:/assets/images/posts/quarkus-native-on-a-raspberry-pi/sd-card-"
+"partitions.png[alt=sd card partitions]"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:278
@@ -743,7 +847,11 @@ msgstr "RPi cpuで64bitを有効にする"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:281
 #, fuzzy
 msgid "After the flashing operation has completed successfully, it's important to have a look at the config file of the operating system. edit the file _config.txt_ and make sure the section *[all]* starts with the following key-value pairs: arm_control=0x200, arm_64bit=1"
-msgstr "フラッシュ動作が正常に完了したら、OSのコンフィグファイルを見てみましょう。 _config.txt_を編集して、 *[all]*セクションが次のキーと値のペアで始まっていることを確認してください： arm_control=0x200, arm_64bit=1"
+msgstr ""
+"フラッシュ動作が正常に完了したら、OSのコンフィグファイルを見てみましょう。 "
+"_config.txt_を編集して、 "
+"*[all]*セクションが次のキーと値のペアで始まっていることを確認してください： "
+"arm_control=0x200, arm_64bit=1"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:283
@@ -772,7 +880,8 @@ msgstr "初回起動後"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:300
 #, fuzzy
 msgid "The following steps may not be necessary if you are happy with the fault keyboard layout or if you are connecting your RPi to the network with aLAN cable..."
-msgstr "キーボードのレイアウトに問題がない場合や、RPiをLANケーブルでネットワークに接続している場合には、以下の手順は必要ないかもしれません。"
+msgstr "キーボードのレイアウトに問題がない場合や、RPiをLANケーブルでネットワークに接"
+"続している場合には、以下の手順は必要ないかもしれません。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:302
@@ -784,7 +893,8 @@ msgstr "キーボードレイアウト"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:304
 #, fuzzy
 msgid "Find your keymap of choice in the list obtained by issuing the following command:"
-msgstr "以下のコマンドで得られたリストの中から、希望するキーマップを見つけてください。"
+msgstr "以下のコマンドで得られたリストの中から、希望するキーマップを見つけてください"
+"。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:308
@@ -864,7 +974,11 @@ msgstr "デバイスの新規ユーザーを作成する"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:349
 #, fuzzy
 msgid "Thanks to the fedora-arm-installer tool, we've added out public key to the root user.  Using root user on a linux system is never a good idea or, let’s say, a good practice.  For this reason, we’re going to add a new administrative user with wheel privileges to our OS:"
-msgstr "fedora-arm-installerツールのおかげで、rootユーザーに公開鍵を追加することができました。Linuxシステムでrootユーザーを使うことは、決して良い考えではありませんし、良い習慣とは言えません。このため、wheel権限を持つ新しい管理ユーザーをOSに追加します。"
+msgstr ""
+"fedora-arm-installerツールのおかげで、rootユーザーに公開鍵を追加することがで"
+"きました。Linuxシステムでrootユーザーを使うことは、決して良い考えではありませ"
+"んし、良い習慣とは言えません。このため、wheel権限を持つ新しい管理ユーザーをOS"
+"に追加します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:355
@@ -891,13 +1005,15 @@ msgstr "まだお持ちでない方は、quay.ioで無料のアカウントを�
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:368
 #, fuzzy
 msgid "### Sign into Quay.io To sign into Quay.io, execute the podman login quay.io command:"
-msgstr "Quay.ioへのサインイン Quay.ioにサインインするには、podman login quay.ioコマンドを実行します。"
+msgstr "Quay.ioへのサインイン Quay.ioにサインインするには、podman login quay."
+"ioコマンドを実行します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:370
 #, fuzzy
 msgid "Note: If you go to your Quay account settings you can create an encrypted password for more security."
-msgstr "注：Quayのアカウント設定では、より安全な暗号化されたパスワードを作成することができます。"
+msgstr "注：Quayのアカウント設定では、より安全な暗号化されたパスワードを作成すること"
+"ができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:376
@@ -942,7 +1058,8 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:396
 #, fuzzy
 msgid "Clone the quarkus quickstarts repository and pick up the quarkus quickstart of choice."
-msgstr "quarkus quickstarts リポジトリをクローンし、好みの quarkus quickstart をピックアップします。"
+msgstr "quarkus quickstarts リポジトリをクローンし、好みの quarkus quickstart "
+"をピックアップします。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:400
@@ -954,7 +1071,8 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:403
 #, fuzzy
 msgid "Enter the root directory of the quickstart of choice (e.g. __getting-started__) and start the build:"
-msgstr "選択したクイックスタート（例： _get-started_）のルートディレクトリを入力し、ビルドを開始します。"
+msgstr "選択したクイックスタート（例： _get-"
+"started_）のルートディレクトリを入力し、ビルドを開始します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:407
@@ -966,7 +1084,10 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:410
 #, fuzzy
 msgid "The whole Maven process takes roughly 40 mins. Blease be aware that this could take longer in case of a sarvice with more features (i.e. importing and using more modules):"
-msgstr "Mavenのプロセス全体で約40分かかります。ただし、より多くの機能(例：より多くのモジュールをインポートして使用する)を持つサーバーの場合は、さらに時間がかかる可能性があることをご了承ください。"
+msgstr ""
+"Mavenのプロセス全体で約40分かかります。ただし、より多くの機能(例：より多くの"
+"モジュールをインポートして使用する)を持つサーバーの場合は、さらに時間がかかる"
+"可能性があることをご了承ください。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:445
@@ -1011,7 +1132,11 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:448
 #, fuzzy
 msgid "The native quarkus executable must be packaged into a container image in order to be able to run it on a container runtime. To achieve this goal, let’s ask the container runtime already installed into your VM to build the container image:"
-msgstr "ネイティブのquarkus実行ファイルをコンテナランタイムで実行できるようにするには、コンテナイメージにパッケージ化する必要があります。この目的を達成するために、VMにすでにインストールされているコンテナランタイムにコンテナイメージの構築を依頼してみましょう。"
+msgstr ""
+"ネイティブのquarkus実行ファイルをコンテナランタイムで実行できるようにするには"
+"、コンテナイメージにパッケージ化する必要があります。この目的を達成するために"
+"、VMにすでにインストールされているコンテナランタイムにコンテナイメージの構築"
+"を依頼してみましょう。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:452
@@ -1023,7 +1148,8 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:455
 #, fuzzy
 msgid "Push the container image to the container registry of choice to share it with the edge device:"
-msgstr "コンテナイメージを選択したコンテナレジストリにプッシュして、エッジデバイスと共有します。"
+msgstr "コンテナイメージを選択したコンテナレジストリにプッシュして、エッジデバイスと"
+"共有します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:459
@@ -1096,7 +1222,10 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:500
 #, fuzzy
 msgid "The application starts in 55 ms and stops in 7 ms. This is impressive if you consider the Quarkus native app is running on the RPi3 cpu (Please have another look at the cpu specs at the very beginning of this article)!"
-msgstr "アプリケーションは55msで起動し、7msで停止しました。これは、QuarkusのネイティブアプリがRPi3のCPUで動作していることを考えれば、非常に素晴らしいことです（この記事の一番最初にあるCPUのスペックをもう一度ご覧ください）。"
+msgstr ""
+"アプリケーションは55msで起動し、7msで停止しました。これは、Quarkusのネイティ"
+"ブアプリがRPi3のCPUで動作していることを考えれば、非常に素晴らしいことです（こ"
+"の記事の一番最初にあるCPUのスペックをもう一度ご覧ください）。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:502
@@ -1108,7 +1237,9 @@ msgstr "メモリーフットプリント。"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:504
 #, fuzzy
 msgid "The following screenshot of the output of the \"top\" command on the RPi shows how cheap it is to run Quarkus native apps on top of the container technology:"
-msgstr "次のRPi上の「top」コマンドの出力画面では、コンテナ技術の上でQuarkusのネイティブアプリを実行することがいかに安価であるかを示しています。"
+msgstr ""
+"次のRPi上の「top」コマンドの出力画面では、コンテナ技術の上でQuarkusのネイティ"
+"ブアプリを実行することがいかに安価であるかを示しています。"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:505
@@ -1120,7 +1251,8 @@ msgstr ""
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:508
 #, fuzzy
 msgid "Roughly 22 megs for a java-based application exposing a simple web page and a REST API!"
-msgstr "シンプルなWebページとREST APIを公開するJavaベースのアプリケーションの場合、約22メガバイトです。"
+msgstr "シンプルなWebページとREST "
+"APIを公開するJavaベースのアプリケーションの場合、約22メガバイトです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:510
@@ -1132,7 +1264,9 @@ msgstr "サービスへの接続"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:512
 #, fuzzy
 msgid "The following screenshot shows the webpage served by the quarkus microservice running natively on podman installed in the RPi:"
-msgstr "次のスクリーンショットは、RPiにインストールされたpodman上でネイティブに動作するquarkusマイクロサービスが提供するWebページです。"
+msgstr ""
+"次のスクリーンショットは、RPiにインストールされたpodman上でネイティブに動作す"
+"るquarkusマイクロサービスが提供するWebページです。"
 
 #. type: Target for macro image
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:513
@@ -1156,7 +1290,11 @@ msgstr "ビッグピクチャー"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:528
 #, fuzzy
 msgid "This article reproduces the steps to compile and run a Quarkus native app on a Raspberry Pi cpu. This process is potentially valid for all the cpus belonging to the ARM v8 family, with some potential exceptions due to the fact the architecture of few ARM based cpus may differ from the standard one for that version."
-msgstr "この記事では、Raspberry Pi CPU上でQuarkusネイティブアプリをコンパイルして実行する手順を再現しています。この手順は、ARM v8ファミリーに属するすべてのcpuに有効ですが、一部のARMベースのcpuのアーキテクチャがそのバージョンの標準的なものと異なるため、いくつかの例外があります。"
+msgstr ""
+"この記事では、Raspberry Pi CPU上でQuarkusネイティブアプリをコンパイルして実行"
+"する手順を再現しています。この手順は、ARM v8ファミリーに属するすべてのcpuに有"
+"効ですが、一部のARMベースのcpuのアーキテクチャがそのバージョンの標準的なもの"
+"と異なるため、いくつかの例外があります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:530
@@ -1168,13 +1306,21 @@ msgstr "ツールの構築"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:532
 #, fuzzy
 msgid "For this PoC I've used a QEmu-base VM. That promotes reusability, but it's still expensive in terms of usability (QEmu works like a charm on linux OS, but not on Windows and MacOS). As stated at the beginning of this article, a more flexible, portable and scalable solution still based on cpu emulation and container technology is under investiogation at the moment. That would help the delegation and scalability of build process."
-msgstr "今回のPoCでは、QEmuベースのVMを使用しました。これは再利用性を高めるものですが、使い勝手の面ではまだ高いものです（QEmuはLINUX OSでは魅力的に動作しますが、WindowsとMacOSでは動作しません）。この記事の冒頭で述べたように、CPUエミュレーションとコンテナ技術をベースにした、より柔軟でポータブルかつスケーラブルなソリューションが、現在研究されています。これにより、ビルドプロセスの委譲とスケーラビリティが向上するでしょう。"
+msgstr ""
+"今回のPoCでは、QEmuベースのVMを使用しました。これは再利用性を高めるものですが"
+"、使い勝手の面ではまだ高いものです（QEmuはLINUX OSでは魅力的に動作しますが、W"
+"indowsとMacOSでは動作しません）。この記事の冒頭で述べたように、CPUエミュレー"
+"ションとコンテナ技術をベースにした、より柔軟でポータブルかつスケーラブルなソ"
+"リューションが、現在研究されています。これにより、ビルドプロセスの委譲とスケ"
+"ーラビリティが向上するでしょう。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:534
 #, fuzzy
 msgid "Be aware that QEmu-based tools are still a workaround. GraalVM is missing the cross-compile feature and it will take a while to release it."
-msgstr "QEmuベースのツールはまだ回避策であることに注意してください。GraalVMはクロスコンパイル機能が欠けており、リリースにはしばらく時間がかかりそうです。"
+msgstr ""
+"QEmuベースのツールはまだ回避策であることに注意してください。GraalVMはクロスコ"
+"ンパイル機能が欠けており、リリースにはしばらく時間がかかりそうです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:536
@@ -1186,19 +1332,26 @@ msgstr "どこでもQuarkus"
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:538
 #, fuzzy
 msgid "It's clear that Quarkus can potentially run everywhere. It is, of course, a matter of supportability from GraalVM to the underlying architecture."
-msgstr "Quarkusが潜在的にどこでも実行できることは明らかです。もちろん、GraalVMから基礎となるアーキテクチャへのサポート性の問題もあります。"
+msgstr ""
+"Quarkusが潜在的にどこでも実行できることは明らかです。もちろん、GraalVMから基"
+"礎となるアーキテクチャへのサポート性の問題もあります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:540
 #, fuzzy
 msgid "So far I feel comfortable in stating that this is just the beginning and lots more features and capabilities are yet to come."
-msgstr "これまでのところ、これはほんの始まりに過ぎず、まだまだ多くの機能や性能を備えていると断言できます。"
+msgstr "これまでのところ、これはほんの始まりに過ぎず、まだまだ多くの機能や性能を備え"
+"ていると断言できます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-11-02-quarkus-native-on-a-raspberry-pi.adoc:541
 #, fuzzy
 msgid "It would very nice to have a distribution of Mandrel for aarch64. Mandrel is aligned with the `native-image` capabilities from GraalVM with OpenJDK and Red Hat Enterprise Linux libraries to improve maintainability. Looking forward to testing it ;-)"
-msgstr "aarch64用のMandrelのディストリビューションがあれば、とても嬉しいです。Mandrelは、メンテナンス性を向上させるために、OpenJDKとRed Hat Enterprise Linuxのライブラリを使って、GraalVMから `native-image` の機能を揃えています。テストするのを楽しみにしています ;-)"
+msgstr ""
+"aarch64用のMandrelのディストリビューションがあれば、とても嬉しいです。Mandrel"
+"は、メンテナンス性を向上させるために、OpenJDKとRed Hat Enterprise "
+"Linuxのライブラリを使って、GraalVMから `native-image` の機能を揃えています。"
+"テストするのを楽しみにしています ;-)"
 
 #, fuzzy
 #~ msgid "---\n"

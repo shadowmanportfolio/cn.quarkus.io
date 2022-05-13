@@ -61,7 +61,8 @@ msgstr "以下の例はすべて、以下の手順で作成できる同じアプ
 #: upstream/_guides/centralized-log-management.adoc:30
 #, fuzzy
 msgid "Create an application with the `quarkus-logging-gelf` extension. You can use the following command to create it:"
-msgstr "`quarkus-logging-gelf` のエクステンションを持つアプリケーションを作成します。以下のコマンドで作成することができます。"
+msgstr "`quarkus-logging-gelf` のエクステンションを持つアプリケーションを作成します。"
+"以下のコマンドで作成することができます。"
 
 #. type: Plain text
 #: upstream/_guides/centralized-log-management.adoc:37
@@ -198,7 +199,9 @@ msgstr "Graylog"
 #: upstream/_guides/centralized-log-management.adoc:355
 #, fuzzy
 msgid "You can do this via the following `docker-compose.yml` file that you can launch via `docker-compose up -d`:"
-msgstr "これは、次の `docker-compose.yml` ファイルを介して行うことができます。 `docker-compose up -d` を介して起動します。"
+msgstr ""
+"これは、次の `docker-compose.yml` ファイルを介して行うことができます。 "
+"`docker-compose up -d` を介して起動します。"
 
 #. type: delimited block -
 #: upstream/_guides/centralized-log-management.adoc:103
@@ -641,7 +644,13 @@ msgstr "Elasticsearch インデックスの検討"
 #: upstream/_guides/centralized-log-management.adoc:416
 #, fuzzy
 msgid "Be careful that, by default, Elasticsearch will automatically map unknown fields (if not disabled in the index settings) by detecting their type.  This can become tricky if you use log parameters (which are included by default), or if you enable MDC inclusion (disabled by default), as the first log will define the type of the message parameter (or MDC parameter) field inside the index."
-msgstr "デフォルトでは、Elasticsearch は未知のフィールド（インデックス設定で無効になっていない場合）を、そのタイプを検出して自動的にマッピングすることに注意してください。これは、ログパラメータ（デフォルトで含まれている）を使用する場合や、MDC インクルード（デフォルトでは無効）を有効にする場合、最初のログがインデックス内のメッセージパラメータ（または MDC パラメータ）フィールドのタイプを定義するため、厄介なことになる可能性があります。"
+msgstr ""
+"デフォルトでは、Elasticsearch は未知のフィールド（インデックス設定で無効にな"
+"っていない場合）を、そのタイプを検出して自動的にマッピングすることに注意して"
+"ください。これは、ログパラメータ（デフォルトで含まれている）を使用する場合や"
+"、MDC インクルード（デフォルトでは無効）を有効にする場合、最初のログがインデ"
+"ックス内のメッセージパラメータ（または MDC パラメータ）フィールドのタイプを定"
+"義するため、厄介なことになる可能性があります。"
 
 #. type: Plain text
 #: upstream/_guides/centralized-log-management.adoc:418
@@ -661,19 +670,34 @@ msgstr ""
 #: upstream/_guides/centralized-log-management.adoc:428
 #, fuzzy
 msgid "With log message parameters enabled, the first log message sent to Elasticsearch will have a `MessageParam0` parameter with an `int` type; this will configure the index with a field of type `integer`.  When the second message will arrive to Elasticsearch, it will have a `MessageParam0` parameter with the boolean value `true`, and this will generate an indexing error."
-msgstr "ログメッセージのパラメータを有効にすると、Elasticsearch に送信される最初のログメッセージは `int` タイプの `MessageParam0` パラメータを持ち、これにより `integer` タイプのフィールドでインデックスが構成されます。2 番目のメッセージが Elasticsearch に到着すると、ブーリアン値 `true` を持つ `MessageParam0` パラメータを持ち、これによりインデックスエラーが発生します。"
+msgstr ""
+"ログメッセージのパラメータを有効にすると、Elasticsearch "
+"に送信される最初のログメッセージは `int` タイプの `MessageParam0` "
+"パラメータを持ち、これにより `integer` "
+"タイプのフィールドでインデックスが構成されます。2 番目のメッセージが "
+"Elasticsearch に到着すると、ブーリアン値 `true` を持つ `MessageParam0` "
+"パラメータを持ち、これによりインデックスエラーが発生します。"
 
 #. type: Plain text
 #: upstream/_guides/centralized-log-management.adoc:431
 #, fuzzy
 msgid "To work around this limitation, you can disable sending log message parameters via `logging-gelf` by configuring `quarkus.log.handler.gelf.include-log-message-parameters=false`, or you can configure your Elasticsearch index to store those fields as text or keyword, Elasticsearch will then automatically make the translation from int/boolean to a String."
-msgstr "この制限を回避するには、 `quarkus.log.handler.gelf.include-log-message-parameters=false` を設定して `logging-gelf` を介したログメッセージパラメータの送信を無効にするか、Elasticsearch インデックスを設定してそれらのフィールドをテキストまたはキーワードとして保存すると、Elasticsearch は int/boolean から String への変換を自動的に行います。"
+msgstr ""
+"この制限を回避するには、 `quarkus.log.handler.gelf.include-log-message-"
+"parameters=false` を設定して `logging-gelf` "
+"を介したログメッセージパラメータの送信を無効にするか、Elasticsearch インデッ"
+"クスを設定してそれらのフィールドをテキストまたはキーワードとして保存すると、"
+"Elasticsearch は int/boolean から String への変換を自動的に行います。"
 
 #. type: Plain text
 #: upstream/_guides/centralized-log-management.adoc:433
 #, fuzzy
 msgid "See the following documentation for Graylog (but the same issue exists for the other central logging stacks): link:https://docs.graylog.org/en/3.2/pages/configuration/elasticsearch.html#custom-index-mappings[Custom Index Mappings]."
-msgstr "Graylogに関する以下のドキュメントを参照してください（ただし、他のセントラルロギングスタックにも同じ問題があります）。 link:https://docs.graylog.org/en/3.2/pages/configuration/elasticsearch.html#custom-index-mappings[カスタム インデックス マッピング]。"
+msgstr ""
+"Graylogに関する以下のドキュメントを参照してください（ただし、他のセントラルロ"
+"ギングスタックにも同じ問題があります）。 link:https://docs.graylog.org/en/3."
+"2/pages/configuration/elasticsearch.html#custom-index-mappings[カスタム "
+"インデックス マッピング]。"
 
 #. type: Title ==
 #: upstream/_guides/centralized-log-management.adoc:435

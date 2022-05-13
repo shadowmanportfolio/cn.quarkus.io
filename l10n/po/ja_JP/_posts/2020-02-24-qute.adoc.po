@@ -38,7 +38,8 @@ msgstr "ポスト"
 #: upstream/_posts/2020-02-24-qute.adoc:1
 #, fuzzy, no-wrap
 msgid "Qute - a templating engine designed specifically to meet the Quarkus needs."
-msgstr "Qute - Quarkusのニーズを満たすために特別に設計されたテンプレートエンジンです。"
+msgstr "Qute - "
+"Quarkusのニーズを満たすために特別に設計されたテンプレートエンジンです。"
 
 #. type: YAML Front Matter: title
 #: upstream/_posts/2020-02-24-qute.adoc:1
@@ -56,19 +57,31 @@ msgstr "Quteは実験的な機能です。"
 #: upstream/_posts/2020-02-24-qute.adoc:14
 #, fuzzy
 msgid "There is no guarantee of stability nor long term presence in the platform until the solution matures."
-msgstr "ソリューションが成熟するまで、プラットフォームの安定性や長期的な存在感を保証するものではありません。"
+msgstr "ソリューションが成熟するまで、プラットフォームの安定性や長期的な存在感を保証"
+"するものではありません。"
 
 #. type: delimited block =
 #: upstream/_posts/2020-02-24-qute.adoc:16
 #, fuzzy
 msgid "An https://quarkus.io/guides/qute[introduction guide] and a more comprehensive https://quarkus.io/guides/qute-reference[reference guide] are available."
-msgstr "link:https://quarkus.io/guides/qute[導入ガイド]と、より包括的な link:https://quarkus.io/guides/qute-reference[リファレンスガイド]が用意されています。"
+msgstr ""
+"link:https://quarkus.io/guides/qute[導入ガイド]と、より包括的な "
+"link:https://quarkus.io/guides/qute-"
+"reference[リファレンスガイド]が用意されています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:25
 #, fuzzy
 msgid "Let's start with a very good question: _\"Why yet another templating engine?\"_.  There are plenty of templating libraries in Java.  And Quarkus is known to build on top of \"Best of Breed Libraries and Standards\".  That's true.  On the other hand, the Quarkus community is also a powerful innovation catalyst.  And so we decided to start Qute (QUarkus TEmplates) - a templating engine designed specifically to meet the Quarkus needs.  We believe that we can bring new ideas even to such an explored area as the templating is."
-msgstr "まずは、とても良い質問から始めましょう。「 _なぜまた別のテンプレート・エンジンを？_Javaにはたくさんのテンプレート作成ライブラリがあります。そして、Quarkusは「Best of Breed Libraries and Standards」の上に構築されていることで知られています。確かにそうですね。その一方で、Quarkusのコミュニティは強力なイノベーションの触媒でもあります。そこで私たちは、Quarkusのニーズを満たすために特別に設計されたテンプレートエンジン、Qute（QUarkus TEmplates）を始めることにしました。私たちは、テンプレートのような未開拓の分野にも新しいアイデアをもたらすことができると信じています。"
+msgstr ""
+"まずは、とても良い質問から始めましょう。「 _なぜまた別のテンプレート・エンジ"
+"ンを？_Javaにはたくさんのテンプレート作成ライブラリがあります。そして、Quarku"
+"sは「Best of Breed Libraries and Standards」の上に構築されていることで知られ"
+"ています。確かにそうですね。その一方で、Quarkusのコミュニティは強力なイノベー"
+"ションの触媒でもあります。そこで私たちは、Quarkusのニーズを満たすために特別に"
+"設計されたテンプレートエンジン、Qute（QUarkus TEmplates）を始めることにしまし"
+"た。私たちは、テンプレートのような未開拓の分野にも新しいアイデアをもたらすこ"
+"とができると信じています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-02-24-qute.adoc:26
@@ -80,37 +93,58 @@ msgstr "基本的な考え方"
 #: upstream/_posts/2020-02-24-qute.adoc:32
 #, fuzzy
 msgid "Our main goal is to provide an opinionated innovative templating engine.  But we don't want to reinvent the wheel.  Instead, we got inspired by existing technologies.  Just a few examples:"
-msgstr "私たちの主な目標は、意見のある革新的なテンプレート・エンジンを提供することです。しかし、私たちは車輪の再発明はしたくありません。その代わりに、既存のテクノロジーからインスピレーションを得ました。いくつかの例を挙げてみましょう。"
+msgstr ""
+"私たちの主な目標は、意見のある革新的なテンプレート・エンジンを提供することで"
+"す。しかし、私たちは車輪の再発明はしたくありません。その代わりに、既存のテク"
+"ノロジーからインスピレーションを得ました。いくつかの例を挙げてみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:34
 #, fuzzy
 msgid "The https://quarkus.io/guides/qute-reference#syntax-and-building-blocks[syntax] is mainly inspired by https://handlebarsjs.com/[Handlebars] and https://www.dustjs.com/[Dust.js]."
-msgstr "link:https://quarkus.io/guides/qute-reference#syntax-and-building-blocks[構文]は主に link:https://handlebarsjs.com/[Handlebars]と link:https://www.dustjs.com/[Dust.js]からヒントを得ています。"
+msgstr ""
+"link:https://quarkus.io/guides/qute-reference#syntax-and-building-"
+"blocks[構文]は主に link:https://handlebarsjs.com/[Handlebars]と "
+"link:https://www.dustjs.com/[Dust.js]からヒントを得ています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:35
 #, fuzzy
 msgid "The https://quarkus.io/guides/qute-reference#include_helper[template inheritance] is inspired by https://en.wikipedia.org/wiki/Facelets[Facelets] and https://docs.djangoproject.com/en/3.0/ref/templates/language/[Django]."
-msgstr "link:https://quarkus.io/guides/qute-reference#include_helper[テンプレートの継承]は、 link:https://en.wikipedia.org/wiki/Facelets[Facelets]や link:https://docs.djangoproject.com/en/3.0/ref/templates/language/[Django]からヒントを得ています。"
+msgstr ""
+"link:https://quarkus.io/guides/qute-"
+"reference#include_helper[テンプレートの継承]は、 link:https://en.wikipedia."
+"org/wiki/Facelets[Facelets]や link:https://docs.djangoproject.com/en/3.0/ref/"
+"templates/language/[Django]からヒントを得ています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:36
 #, fuzzy
 msgid "Qute supports the https://en.wikipedia.org/wiki/Elvis_operator[elvis operator] you might be familiar with from https://groovy-lang.org/[Groovy] and https://kotlinlang.org/[Kotlin]."
-msgstr "Quteは、 link:https://groovy-lang.org/[Groovy]や link:https://kotlinlang.org/[Kotlin]でお馴染みの link:https://en.wikipedia.org/wiki/Elvis_operator[elvis演算]子をサポートしています。"
+msgstr ""
+"Quteは、 link:https://groovy-lang.org/[Groovy]や link:https://kotlinlang.org/"
+"[Kotlin]でお馴染みの link:https://en.wikipedia.org/wiki/"
+"Elvis_operator[elvis演算]子をサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:37
 #, fuzzy
 msgid "https://quarkus.io/guides/qute-reference#template_extension_methods[Extension methods] that can be used to extend the data classes with new functionality are also inspired by modern languages."
-msgstr "データクラスを新しい機能で拡張するために使用できる link:https://quarkus.io/guides/qute-reference#template_extension_methods[拡張メソッド]も、現代の言語からヒントを得ています。"
+msgstr ""
+"データクラスを新しい機能で拡張するために使用できる link:https://quarkus.io/"
+"guides/qute-reference#template_extension_methods[拡張メソッド]も、現代の言語"
+"からヒントを得ています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:38
 #, fuzzy
 msgid "If you come from the world of JSP/JSF/Facelets you'll appreciate that `@Named` CDI beans can be referenced directly in any template through the `inject` namespace, e.g. `{inject:foo.price}`. See https://quarkus.io/guides/qute-reference#injecting-beans-directly-in-templates[Injecting Beans Directly In Templates] for more information."
-msgstr "JSP/JSF/Faceletの世界から来た人は、 `@Named` CDI Beanが `inject` 名前空間を通じて、どのテンプレートでも直接参照できることを理解できるでしょう。例えば、 `{inject:foo.price}` 。詳しくは、 link:https://quarkus.io/guides/qute-reference#injecting-beans-directly-in-templates[「テンプレートに直接Beanを注入する]」をご覧ください。"
+msgstr ""
+"JSP/JSF/Faceletの世界から来た人は、 `@Named` CDI Beanが `inject` 名前空間を通"
+"じて、どのテンプレートでも直接参照できることを理解できるでしょう。例えば、 "
+"`{inject:foo.price}` 。詳しくは、 link:https://quarkus.io/guides/qute-"
+"reference#injecting-beans-directly-in-"
+"templates[「テンプレートに直接Beanを注入する]」をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:41
@@ -128,7 +162,12 @@ msgstr "非同期のデータ解決 - リアクティブへの道のり"
 #: upstream/_posts/2020-02-24-qute.adoc:47
 #, fuzzy
 msgid "When we started to design Qute we had one important aspect in mind - the data resolution API should be asynchronous.  This allows for better resource utilization and fits the Quarkus reactive model.  Another consequence of this design decision is that it's possible to leverage non-blocking clients directly from a template, i.e. to asynchronously fetch data from various sources."
-msgstr "Quteの設計を始めたとき、1つの重要な点を念頭に置いていました。それは、データ解決APIを非同期にすることです。これにより、リソースの有効活用が可能になり、Quarkusのリアクティブモデルに適合します。この設計上の決定のもう1つの結果は、テンプレートから直接ノンブロッキングクライアントを活用できること、つまり様々なソースから非同期にデータを取得できることです。"
+msgstr ""
+"Quteの設計を始めたとき、1つの重要な点を念頭に置いていました。それは、データ解"
+"決APIを非同期にすることです。これにより、リソースの有効活用が可能になり、Quar"
+"kusのリアクティブモデルに適合します。この設計上の決定のもう1つの結果は、テン"
+"プレートから直接ノンブロッキングクライアントを活用できること、つまり様々なソ"
+"ースから非同期にデータを取得できることです。"
 
 #. type: Block title
 #: upstream/_posts/2020-02-24-qute.adoc:48
@@ -155,13 +194,18 @@ msgstr ""
 #: upstream/_posts/2020-02-24-qute.adoc:62
 #, fuzzy
 msgid "Parameter declaration - maps `client` to `org.acme.Client`. See the <<type-safe-templates,next section>> for more information."
-msgstr "パラメータ宣言 - `client` から `org.acme.Client` へのマッピング。詳細は link:#type-safe-templates[次のセクション]を参照してください。"
+msgstr ""
+"パラメータ宣言 - `client` から `org.acme.Client` へのマッピング。詳細は link"
+":#type-safe-templates[次のセクション]を参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:63
 #, fuzzy
 msgid "`org.acme.Client#getPullRequests()` is using a non-blocking Vert.x client to fetch the data directly from the GitHub API. Since the data resolution is asynchronous the thread is not blocked and can continue performing some other tasks:"
-msgstr "`org.acme.Client#getPullRequests()` は、ノンブロッキングの Vert.x クライアントを使って GitHub API から直接データを取得しています。データの解決は非同期なので、スレッドはブロックされず、他のタスクを継続して実行できます。"
+msgstr ""
+"`org.acme.Client#getPullRequests()` は、ノンブロッキングの Vert.x "
+"クライアントを使って GitHub API から直接データを取得しています。データの解決"
+"は非同期なので、スレッドはブロックされず、他のタスクを継続して実行できます。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-02-24-qute.adoc:79
@@ -192,31 +236,47 @@ msgstr "タイプセーフテンプレート"
 #: upstream/_posts/2020-02-24-qute.adoc:92
 #, fuzzy
 msgid "Most of the templating engines are not type-safe, ie. do not prevent type errors.  It's quite natural because dynamicity in templates is very often practical.  On the other hand, a user is not protected from tedious errors caused by typos and various refactoring consequences.  Qute templates can be _optionally_ type-safe.  What does it actually mean? A template may contain one or more *parameter declarations*.  A parameter declaration binds a concrete type information to a given identifier in the current context.  And what are the advantages of having a type-safe template?"
-msgstr "ほとんどのテンプレートエンジンはタイプセーフではありません、つまりタイプエラーを防ぎません。テンプレートの動的性はしばしば実用的であるため、これは非常に自然なことです。その一方で、ユーザはタイプミスによる面倒なエラーや、様々なリファクタリングの結果から保護されません。Quteのテンプレートは、 _オプションで_型安全にすることができます。実際にはどのような意味があるのでしょうか？テンプレートは、1 つ以上の *パラメータ宣言*を含むことができます。パラメータ宣言は、具体的な型情報を、現在のコンテキストで与えられた識別子にバインドします。型安全なテンプレートの利点は何ですか？"
+msgstr ""
+"ほとんどのテンプレートエンジンはタイプセーフではありません、つまりタイプエラ"
+"ーを防ぎません。テンプレートの動的性はしばしば実用的であるため、これは非常に"
+"自然なことです。その一方で、ユーザはタイプミスによる面倒なエラーや、様々なリ"
+"ファクタリングの結果から保護されません。Quteのテンプレートは、 _オプションで_"
+"型安全にすることができます。実際にはどのような意味があるのでしょうか？テンプ"
+"レートは、1 つ以上の *パラメータ宣言*を含むことができます。パラメータ宣言は、"
+"具体的な型情報を、現在のコンテキストで与えられた識別子にバインドします。型安"
+"全なテンプレートの利点は何ですか？"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:94
 #, fuzzy
 msgid "Quarkus validates _all expressions_ that reference a parameter declaration. If an invalid/incorrect expression is found the build fails."
-msgstr "Quarkusは、パラメータ宣言を参照する _すべての式_を検証します。無効または不適切な式が見つかった場合、ビルドは失敗します。"
+msgstr "Quarkusは、パラメータ宣言を参照する _すべての式_を検証します。無効または不適"
+"切な式が見つかった場合、ビルドは失敗します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:96
 #, fuzzy
 msgid "In development mode, all files located in the `src/main/resources/templates` directory are watched for changes and modifications are immediately visible. That also implies that your application fails fast whenever a type error occurs."
-msgstr "開発モードでは、 `src/main/resources/templates` ディレクトリにあるすべてのファイルの変更が監視され、変更内容がすぐに表示されます。これはまた、タイプエラーが発生した場合に、アプリケーションが迅速に失敗することを意味します。"
+msgstr ""
+"開発モードでは、 `src/main/resources/templates` ディレクトリにあるすべてのフ"
+"ァイルの変更が監視され、変更内容がすぐに表示されます。これはまた、タイプエラ"
+"ーが発生した場合に、アプリケーションが迅速に失敗することを意味します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:98
 #, fuzzy
 msgid "A _value resolver_ is generated for all types used in parameter declarations so that it’s possible to access its properties without reflection. This is very useful when targeting GraalVM native images."
-msgstr "パラメータ宣言で使用されているすべての型に対して、 _値のリゾルバ_が生成されるため、リフレクションなしでプロパティにアクセスすることができます。これは、GraalVMのネイティブ・イメージを対象とする場合に非常に便利です。"
+msgstr ""
+"パラメータ宣言で使用されているすべての型に対して、 _値のリゾルバ_が生成される"
+"ため、リフレクションなしでプロパティにアクセスすることができます。これは、Gra"
+"alVMのネイティブ・イメージを対象とする場合に非常に便利です。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:99
 #, fuzzy
 msgid "We have few more ideas in our TODO list, such as performance optimizations for type-safe expressions, etc."
-msgstr "TODOリストには、型安全式のパフォーマンス最適化など、さらにいくつかのアイデアがあります。"
+msgstr "TODOリストには、型安全式のパフォーマンス最適化など、さらにいくつかのアイデア"
+"があります。"
 
 #. type: Block title
 #: upstream/_posts/2020-02-24-qute.adoc:100
@@ -260,19 +320,25 @@ msgstr "`{title}` is not validated - not match a param declaration."
 #: upstream/_posts/2020-02-24-qute.adoc:122
 #, fuzzy
 msgid "`{foo.message}` is validated. `org.acme.Foo` must have a property `message` or a matching template extension method must exist."
-msgstr "`{foo.message}` は検証されています。 `org.acme.Foo` は、プロパティ `message` を持つか、一致するテンプレート拡張メソッドが存在する必要があります。"
+msgstr ""
+"`{foo.message}` は検証されています。 `org.acme.Foo` は、プロパティ `message` "
+"を持つか、一致するテンプレート拡張メソッドが存在する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:123
 #, fuzzy
 msgid "`{foo.message}` is not validated because `foo` is overridden in the loop section and there is no type information available."
-msgstr "`{foo.message}` は、 `foo` がループセクションでオーバーライドされており、利用可能なタイプ情報がないため、検証されません。"
+msgstr ""
+"`{foo.message}` は、 `foo` がループセクションでオーバーライドされており、利用"
+"可能なタイプ情報がないため、検証されません。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:125
 #, fuzzy
 msgid "Only properties are currently validated in expressions; \"virtual methods\" such as `foo.getBar(baz.name)` are currently ignored."
-msgstr "現在、式の中で検証されるのはプロパティのみで、 `foo.getBar(baz.name)` のような「仮想メソッド」は現在のところ無視されます。"
+msgstr ""
+"現在、式の中で検証されるのはプロパティのみで、 `foo.getBar(baz.name)` "
+"のような「仮想メソッド」は現在のところ無視されます。"
 
 #. type: Title ==
 #: upstream/_posts/2020-02-24-qute.adoc:126
@@ -284,13 +350,17 @@ msgstr "一流のクォークス・シチズン"
 #: upstream/_posts/2020-02-24-qute.adoc:129
 #, fuzzy
 msgid "Despite the fact that Qute is highly optimized for Quarkus the core engine is developed as an independent library that could be integrated in any environment."
-msgstr "QuteはQuarkusに高度に最適化されていますが、コアエンジンは独立したライブラリとして開発されており、どのような環境でも統合することができます。"
+msgstr ""
+"QuteはQuarkusに高度に最適化されていますが、コアエンジンは独立したライブラリと"
+"して開発されており、どのような環境でも統合することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:131
 #, fuzzy
 msgid "In Quarkus, all templates located in the `src/main/resources/templates` directory are validated and can be easily injected."
-msgstr "Quarkusでは、 `src/main/resources/templates` ディレクトリにあるすべてのテンプレートが検証され、簡単に注入することができます。"
+msgstr ""
+"Quarkusでは、 `src/main/resources/templates` ディレクトリにあるすべてのテンプ"
+"レートが検証され、簡単に注入することができます。"
 
 #. type: Block title
 #: upstream/_posts/2020-02-24-qute.adoc:132
@@ -346,19 +416,27 @@ msgstr ""
 #: upstream/_posts/2020-02-24-qute.adoc:153
 #, fuzzy
 msgid "The field name is used to locate the template. In this particular case, the container will attempt to locate a template with path `src/main/resources/templates/items.html`. If there is no such template available the build fails."
-msgstr "フィールド名は、テンプレートを見つけるために使用されます。この例では、コンテナはパス `src/main/resources/templates/items.html` のテンプレートを探そうとします。そのようなテンプレートがない場合、ビルドは失敗します。"
+msgstr ""
+"フィールド名は、テンプレートを見つけるために使用されます。この例では、"
+"コンテナはパス `src/main/resources/templates/items.html` のテンプレートを探そ"
+"うとします。そのようなテンプレートがない場合、ビルドは失敗します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:154
 #, fuzzy
 msgid "See the https://quarkus.io/guides/qute-reference#hello-world-example[Hello World Example] to explore the basic workflow."
-msgstr "基本的なワークフローについては、「 link:https://quarkus.io/guides/qute-reference#hello-world-example[Hello World Example]」をご覧ください。"
+msgstr ""
+"基本的なワークフローについては、「 link:https://quarkus.io/guides/qute-"
+"reference#hello-world-example[Hello World Example]」をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:157
 #, fuzzy
 msgid "Moreover, a preconfigured `Engine` instance is provided and available for injection.  The `Engine` is a central point for template management and provides some low-level API."
-msgstr "さらに、あらかじめ設定された `Engine` インスタンスが提供され、インジェクションに利用できます。 `Engine` は、テンプレート管理の中心となるもので、いくつかの低レベルAPIを提供しています。"
+msgstr ""
+"さらに、あらかじめ設定された `Engine` "
+"インスタンスが提供され、インジェクションに利用できます。 `Engine` は、テンプ"
+"レート管理の中心となるもので、いくつかの低レベルAPIを提供しています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-02-24-qute.adoc:158
@@ -370,7 +448,11 @@ msgstr "RESTEasyの統合"
 #: upstream/_posts/2020-02-24-qute.adoc:162
 #, fuzzy
 msgid "If used together with RESTEasy a resource method may return a `TemplateInstance` and the integration code takes care of all the necessary steps and renders the output to the response.  See https://quarkus.io/guides/qute-reference#resteasy-integration[RESTEasy Integration] for more information."
-msgstr "RESTEasyと一緒に使用すると、リソース・メソッドは `TemplateInstance` を返し、統合コードは必要なすべてのステップを処理し、レスポンスに出力をレンダリングします。詳細は、「 link:https://quarkus.io/guides/qute-reference#resteasy-integration[RESTEasyの統合]」を参照してください。"
+msgstr ""
+"RESTEasyと一緒に使用すると、リソース・メソッドは `TemplateInstance` を返し、"
+"統合コードは必要なすべてのステップを処理し、レスポンスに出力をレンダリングし"
+"ます。詳細は、「 link:https://quarkus.io/guides/qute-reference#resteasy-"
+"integration[RESTEasyの統合]」を参照してください。"
 
 #. type: Block title
 #: upstream/_posts/2020-02-24-qute.adoc:163
@@ -421,7 +503,9 @@ msgstr ""
 #: upstream/_posts/2020-02-24-qute.adoc:186
 #, fuzzy
 msgid "The field name is used to locate the template. In this particular case, we're injecting a template with path `templates/hello.txt`."
-msgstr "フィールド名は、テンプレートの位置を特定するために使用されます。この例では、パス `templates/hello.txt` のテンプレートを注入しています。"
+msgstr ""
+"フィールド名は、テンプレートの位置を特定するために使用されます。この例では、"
+"パス `templates/hello.txt` のテンプレートを注入しています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-02-24-qute.adoc:187
@@ -443,7 +527,13 @@ msgstr "メーラーの統合"
 #: upstream/_posts/2020-02-24-qute.adoc:196
 #, fuzzy
 msgid "Templates may come in handy when creating e-mail messages.  The Mailer extension integrates with Qute to provide a convenient way of sending e-mails.  In particular, the message body is automatically created using `+*.html+` and `+*.txt+` templates from the `src/main/resources/templates` directory.  See the https://quarkus.io/guides/mailer#message-body-based-on-qute-templates[Sending Emails] guide for more details."
-msgstr "テンプレートは、電子メールのメッセージを作成する際に便利な機能です。拡張機能 Mailer は Qute と統合して、電子メールを送信する便利な方法を提供します。特に、 `src/main/resources/templates` ディレクトリにある `*.html` と `*.txt` のテンプレートを使って、メッセージ本文が自動的に作成されます。詳細については、「 link:https://quarkus.io/guides/mailer#message-body-based-on-qute-templates[電子メールの送信]」を参照してください。"
+msgstr ""
+"テンプレートは、電子メールのメッセージを作成する際に便利な機能です。拡張機能 "
+"Mailer は Qute と統合して、電子メールを送信する便利な方法を提供します。特に、"
+" `src/main/resources/templates` ディレクトリにある `*.html` と `*.txt` のテン"
+"プレートを使って、メッセージ本文が自動的に作成されます。詳細については、「 "
+"link:https://quarkus.io/guides/mailer#message-body-based-on-qute-"
+"templates[電子メールの送信]」を参照してください。"
 
 #. type: Title ==
 #: upstream/_posts/2020-02-24-qute.adoc:197
@@ -455,7 +545,10 @@ msgstr "まとめ"
 #: upstream/_posts/2020-02-24-qute.adoc:201
 #, fuzzy
 msgid "Qute first landed in Quarkus 1.1.0.Final.  Since then we fixed many bugs and implemented some feature requests.  Feel free to join our community to stabilize the API, harden the implementation and explore the new possibilities!"
-msgstr "Quteが初めて登場したのは、Quarkus 1.1.0.Finalでした。それ以来、多くのバグを修正し、いくつかの機能要求を実装しました。APIを安定させ、実装を強化し、新しい可能性を追求するために、気軽にコミュニティに参加してください。"
+msgstr ""
+"Quteが初めて登場したのは、Quarkus 1.1.0.Finalでした。それ以来、多くのバグを修"
+"正し、いくつかの機能要求を実装しました。APIを安定させ、実装を強化し、新しい可"
+"能性を追求するために、気軽にコミュニティに参加してください。"
 
 #, fuzzy
 #~ msgid "---\n"

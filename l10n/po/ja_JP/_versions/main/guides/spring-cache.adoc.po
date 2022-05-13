@@ -61,7 +61,9 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_versions/main/guides/spring-cache.adoc:28
 #, fuzzy
 msgid "This command generates a project which imports the `spring-cache` and `spring-di` extensions."
-msgstr "このコマンドは、REST エンドポイントを持つ Maven プロジェクトを生成し、 `spring-cache` と `spring-di` のエクステンションをインポートします。"
+msgstr ""
+"このコマンドは、REST エンドポイントを持つ Maven プロジェクトを生成し、 "
+"`spring-cache` と `spring-di` のエクステンションをインポートします。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/spring-cache.adoc:31
@@ -246,7 +248,8 @@ msgstr ""
 #: upstream/_versions/main/guides/spring-cache.adoc:126
 #, fuzzy
 msgid "Now, we just need to create the `src/main/java/org/acme/spring/cache/WeatherForecastResource.java` class to use the service and response:"
-msgstr "あとは、サービスとレスポンスを使用するために生成された `WeatherForecastResource` クラスを更新するだけです。"
+msgstr "あとは、サービスとレスポンスを使用するために生成された "
+"`WeatherForecastResource` クラスを更新するだけです。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/spring-cache.adoc:134

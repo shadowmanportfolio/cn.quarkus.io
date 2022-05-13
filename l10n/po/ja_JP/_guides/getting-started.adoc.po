@@ -360,7 +360,8 @@ msgstr ""
 #: upstream/_guides/getting-started.adoc:179
 #, fuzzy
 msgid "It's a very simple REST endpoint, returning \"Hello from RESTEasy Reactive\" to requests on \"/hello\"."
-msgstr "これは非常にシンプルな REST エンドポイントで、\"/hello\" 上のリクエストに \"Hello RESTEasy\" と返します。"
+msgstr "これは非常にシンプルな REST エンドポイントで、\"/hello\" 上のリクエストに "
+"\"Hello RESTEasy\" と返します。"
 
 #. type: Block title
 #: upstream/_guides/getting-started.adoc:181
@@ -457,7 +458,8 @@ msgstr "Quarkus は CDI 機能のサブセットのみを実装しており、�
 #: upstream/_guides/getting-started.adoc:239
 #, fuzzy
 msgid "ArC comes as a dependency of `quarkus-resteasy-reactive` so you already have it handy."
-msgstr "ArC は `quarkus-resteasy` の依存関係として提供されているので、すでに追加済です。"
+msgstr "ArC は `quarkus-resteasy` "
+"の依存関係として提供されているので、すでに追加済です。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:242
@@ -558,7 +560,10 @@ msgstr ""
 #: upstream/_guides/getting-started.adoc:295
 #, fuzzy
 msgid "If you stopped the application (keep in mind you don't have to do it, changes will be automatically deployed by our live reload feature), restart the application with:"
-msgstr "アプリケーションを停止した場合（ライブリロード機能によって変更が自動的にデプロイされるので、停止する必要はありません）、次のようにしてアプリケーションを再起動します。"
+msgstr ""
+"アプリケーションを停止した場合（ライブリロード機能によって変更が自動的にデプ"
+"ロイされるので、停止する必要はありません）、次のようにしてアプリケーションを"
+"再起動します。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:299

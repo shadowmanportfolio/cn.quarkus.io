@@ -23,19 +23,28 @@ msgstr ""
 #: upstream/_guides/gcp-functions-http.adoc:6
 #, fuzzy, no-wrap
 msgid "Google Cloud Functions (Serverless) with RESTEasy Reactive, Undertow, or Reactive Routes"
-msgstr "Google Cloud Functions (Serverless) with RESTEasy, Undertow, or Reactive Routes"
+msgstr ""
+"Google Cloud Functions (Serverless) with RESTEasy, Undertow, or Reactive "
+"Routes"
 
 #. type: Plain text
 #: upstream/_guides/gcp-functions-http.adoc:13
 #, fuzzy
 msgid "The `quarkus-google-cloud-functions-http` extension allows you to write microservices with RESTEasy Reactive (JAX-RS), Undertow (Servlet), Reactive Routes, or xref:funqy-http.adoc[Funqy HTTP], and make these microservices deployable to the Google Cloud Functions runtime."
-msgstr "`quarkus-google-cloud-functions-http` エクステンションは、RESTEasy（JAX-RS）、Undertow（Servlet）、Reactive Routes、 link:funqy-http.html[Funqy HTTP]でマイクロサービスを記述し、これらのマイクロサービスをGoogle Cloud Functionsランタイムにデプロイ可能にします。"
+msgstr ""
+"`quarkus-google-cloud-functions-http` エクステンションは、RESTEasy（JAX-"
+"RS）、Undertow（Servlet）、Reactive Routes、 link:funqy-http.html[Funqy "
+"HTTP]でマイクロサービスを記述し、これらのマイクロサービスをGoogle Cloud "
+"Functionsランタイムにデプロイ可能にします。"
 
 #. type: Plain text
 #: upstream/_guides/gcp-functions-http.adoc:15
 #, fuzzy
 msgid "One Google Cloud Functions deployment can represent any number of JAX-RS, Servlet, Reactive Routes, or xref:funqy-http.adoc[Funqy HTTP] endpoints."
-msgstr "1つのGoogle Cloud Functionsのデプロイメントは、JAX-RS、Servlet、Reactive Routes、 link:funqy-http.html[FunqyのHTTP]エンドポイントをいくつでも表すことができます。"
+msgstr ""
+"1つのGoogle Cloud Functionsのデプロイメントは、JAX-RS、Servlet、Reactive "
+"Routes、 link:funqy-http."
+"html[FunqyのHTTP]エンドポイントをいくつでも表すことができます。"
 
 #. type: Title ==
 #: upstream/_guides/gcp-functions-http.adoc:18
@@ -47,7 +56,8 @@ msgstr "前提条件"
 #: upstream/_guides/gcp-functions-http.adoc:23
 #, fuzzy
 msgid "https://cloud.google.com/[A Google Cloud Account]. Free accounts work."
-msgstr "link:https://cloud.google.com/[Google Cloudのアカウントです]。無料のアカウントが使える"
+msgstr "link:https://cloud.google.com/[Google "
+"Cloudのアカウントです]。無料のアカウントが使える"
 
 #. type: Plain text
 #: upstream/_guides/gcp-functions-http.adoc:24
@@ -64,7 +74,11 @@ msgstr "ソリューション"
 #: upstream/_guides/gcp-functions-http.adoc:30
 #, fuzzy
 msgid "This guide walks you through generating a sample project followed by creating three HTTP endpoints written with JAX-RS APIs, Servlet APIs, Reactive Routes, or xref:funqy-http.adoc[Funqy HTTP] APIs. Once built, you will be able to deploy the project to Google Cloud."
-msgstr "このガイドでは、サンプルプロジェクトを生成し、JAX-RS API、Servlet API、Reactive Routes、または link:funqy-http.html[Funqy HTTP]APIで記述された3つのHTTPエンドポイントを作成する手順を説明します。構築後は、プロジェクトをGoogle Cloudにデプロイします。"
+msgstr ""
+"このガイドでは、サンプルプロジェクトを生成し、JAX-RS API、Servlet API、"
+"Reactive Routes、または link:funqy-http.html[Funqy HTTP]APIで記述された3つのH"
+"TTPエンドポイントを作成する手順を説明します。構築後は、プロジェクトをGoogle "
+"Cloudにデプロイします。"
 
 #. type: Plain text
 #: upstream/_guides/gcp-functions-http.adoc:32
@@ -80,7 +94,9 @@ msgstr "Gitレポジトリをクローンするか `git clone {quickstarts-clone
 #: upstream/_guides/gcp-functions-http.adoc:36
 #, fuzzy
 msgid "The solution is located in the `google-cloud-functions-http-quickstart` {quickstarts-tree-url}/google-cloud-functions-http-quickstart[directory]."
-msgstr "このソリューションは、 `google-cloud-functions-http-quickstart` {quickstarts-tree-url}/google-cloud-functions-http-quickstart[directory]にあります。"
+msgstr ""
+"このソリューションは、 `google-cloud-functions-http-quickstart` {quickstarts-"
+"tree-url}/google-cloud-functions-http-quickstart[directory]にあります。"
 
 #. type: Title ==
 #: upstream/_guides/gcp-functions-http.adoc:37
@@ -92,7 +108,9 @@ msgstr "Maven デプロイメントプロジェクトの作成"
 #: upstream/_guides/gcp-functions-http.adoc:41
 #, fuzzy
 msgid "Create an application with the `quarkus-google-cloud-functions-http` extension.  You can use the following Maven command to create it:"
-msgstr "`quarkus-google-cloud-functions-http` のエクステンションを持つアプリケーションを作成します。以下のMavenコマンドで作成することができます。"
+msgstr ""
+"`quarkus-google-cloud-functions-http` のエクステンションを持つアプリケーショ"
+"ンを作成します。以下のMavenコマンドで作成することができます。"
 
 #. type: Title ==
 #: upstream/_guides/gcp-functions-http.adoc:46
@@ -121,25 +139,36 @@ msgstr "エンドポイントの作成"
 #: upstream/_guides/gcp-functions-http.adoc:59
 #, fuzzy
 msgid "For this example project, we will create four endpoints, one for RESTEasy (JAX-RS), one for Undertow (Servlet), one for Reactive routes and one for xref:funqy-http.adoc[Funqy HTTP]."
-msgstr "このサンプルプロジェクトでは、RESTEasy（JAX-RS）用、Undertow（Servlet）用、Reactive routes用、 link:funqy-http.html[Funqy HTTP]用の4つのエンドポイントを作成します。"
+msgstr ""
+"このサンプルプロジェクトでは、RESTEasy（JAX-RS）用、Undertow（Servlet）用、"
+"Reactive routes用、 link:funqy-http.html[Funqy "
+"HTTP]用の4つのエンドポイントを作成します。"
 
 #. type: delimited block =
 #: upstream/_guides/gcp-functions-http.adoc:64
 #, fuzzy
 msgid "These various endpoints are for demonstration purposes.  For real life applications, you should choose one of this technology and stick to it."
-msgstr "これらの様々なエンドポイントは、デモンストレーションのためのものです。実際のアプリケーションでは、これらの技術の中から1つを選び、それにこだわるべきです。"
+msgstr ""
+"これらの様々なエンドポイントは、デモンストレーションのためのものです。実際の"
+"アプリケーションでは、これらの技術の中から1つを選び、それにこだわるべきです。"
 
 #. type: Plain text
 #: upstream/_guides/gcp-functions-http.adoc:67
 #, fuzzy
 msgid "If you don't need endpoints of each type, you can remove the corresponding extensions from your `pom.xml`."
-msgstr "各タイプのエンドポイントが不要な場合は、対応するエクステンションを `pom.xml` から削除することができます。"
+msgstr "各タイプのエンドポイントが不要な場合は、対応するエクステンションを `pom.xml` "
+"から削除することができます。"
 
 #. type: Plain text
 #: upstream/_guides/gcp-functions-http.adoc:69
 #, fuzzy
 msgid "Quarkus supports Cloud Functions gen 1 and gen 2. For an overview of Cloud Functions gen 2 see https://cloud.google.com/functions/docs/2nd-gen/overview[this page] on the Google Cloud Functions documentation. To use gen 2 you must use `gcloud beta` command and add the `--gen2` parameter."
-msgstr "Quarkusは、Cloud Functionsの第1世代と第2世代をサポートしています。Cloud Functions gen 2の概要については、Google Cloud Functionsのドキュメントの link:https://cloud.google.com/functions/docs/2nd-gen/overview[このページを]参照してください。gen 2を使用するには、 `gcloud beta` コマンドを使用し、 `--gen2` パラメータを追加する必要があります。"
+msgstr ""
+"Quarkusは、Cloud Functionsの第1世代と第2世代をサポートしています。Cloud "
+"Functions gen 2の概要については、Google Cloud Functionsのドキュメントの "
+"link:https://cloud.google.com/functions/docs/2nd-gen/"
+"overview[このページを]参照してください。gen 2を使用するには、 `gcloud beta` "
+"コマンドを使用し、 `--gen2` パラメータを追加する必要があります。"
 
 #. type: Title ===
 #: upstream/_guides/gcp-functions-http.adoc:70
@@ -305,19 +334,25 @@ msgstr "ビルドとGoogle Cloudへのデプロイ"
 #: upstream/_guides/gcp-functions-http.adoc:156
 #, fuzzy
 msgid "Quarkus forces a packaging of type `uber-jar` for your function as Google Cloud Function deployment requires a single JAR."
-msgstr "Google Cloud Functionの展開には1つのJARが必要なため、Quarkusでは強制的に `uber-jar` タイプのパッケージを作成しています。"
+msgstr ""
+"Google Cloud Functionの展開には1つのJARが必要なため、Quarkusでは強制的に "
+"`uber-jar` タイプのパッケージを作成しています。"
 
 #. type: Plain text
 #: upstream/_guides/gcp-functions-http.adoc:159
 #, fuzzy
 msgid "Package your application using the standard `mvn clean package` command.  The result of the previous command is a single JAR file inside the `target/deployment` directory that contains the classes and the dependencies of the project."
-msgstr "標準の `mvn clean package` コマンドを使用して、アプリケーションをパッケージ化します。前述のコマンドの結果、 `target/deployment` ディレクトリ内に、プロジェクトのクラスと依存関係を含む単一の JAR ファイルが作成されます。"
+msgstr ""
+"標準の `mvn clean package` コマンドを使用して、アプリケーションをパッケージ化"
+"します。前述のコマンドの結果、 `target/deployment` ディレクトリ内に、"
+"プロジェクトのクラスと依存関係を含む単一の JAR ファイルが作成されます。"
 
 #. type: Plain text
 #: upstream/_guides/gcp-functions-http.adoc:161
 #, fuzzy
 msgid "Then you will be able to use `gcloud` to deploy your function to Google Cloud."
-msgstr "そして、 `gcloud` を使って、機能を Google Cloud にデプロイすることができるようになります。"
+msgstr "そして、 `gcloud` を使って、機能を Google Cloud "
+"にデプロイすることができるようになります。"
 
 #. type: delimited block -
 #: upstream/_guides/gcp-functions-http.adoc:167
@@ -332,13 +367,17 @@ msgstr ""
 #: upstream/_guides/gcp-functions-http.adoc:172
 #, fuzzy
 msgid "The entry point must always be set to `io.quarkus.gcp.functions.http.QuarkusHttpFunction` as this is the class that integrates Cloud Functions with Quarkus."
-msgstr "このクラスはCloud FunctionsとQuarkusを統合するクラスであるため、エントリーポイントは常に `io.quarkus.gcp.functions.http.QuarkusHttpFunction` に設定する必要があります。"
+msgstr ""
+"このクラスはCloud FunctionsとQuarkusを統合するクラスであるため、"
+"エントリーポイントは常に `io.quarkus.gcp.functions.http.QuarkusHttpFunction` "
+"に設定する必要があります。"
 
 #. type: delimited block =
 #: upstream/_guides/gcp-functions-http.adoc:177
 #, fuzzy
 msgid "You can also use the new Java 17 runtime by using `--runtime=java17` in the gcloud command line."
-msgstr "また、gcloudのコマンドラインで `--runtime=java17` 、新しいJava 17ランタイムを使用することができます。"
+msgstr "また、gcloudのコマンドラインで `--runtime=java17` 、新しいJava "
+"17ランタイムを使用することができます。"
 
 #. type: delimited block =
 #: upstream/_guides/gcp-functions-http.adoc:182
@@ -456,7 +495,11 @@ msgstr "次のステップ"
 #: upstream/_guides/gcp-functions-http.adoc:230
 #, fuzzy
 msgid "You can use our xref:funqy-gcp-functions.adoc[Google Cloud Functions Funqy binding] to use Funqy, a provider agnostic function as a service framework, that allow to deploy HTTP function or Background function to Google Cloud."
-msgstr "Google link:funqy-gcp-functions.html[Cloud Functions Funqy バインディング]を使用すると、プロバイダに依存しない Service as a Service フレームワークである Funqy を使用することができ、HTTP 関数や Background 関数を Google Cloud に展開することができます。"
+msgstr ""
+"Google link:funqy-gcp-functions.html[Cloud Functions Funqy "
+"バインディング]を使用すると、プロバイダに依存しない Service as a Service "
+"フレームワークである Funqy を使用することができ、HTTP 関数や Background "
+"関数を Google Cloud に展開することができます。"
 
 #~ msgid "To complete this guide, you need:"
 #~ msgstr "このガイドを完成させるには、以下が必要です:"

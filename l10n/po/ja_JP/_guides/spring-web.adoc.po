@@ -29,13 +29,18 @@ msgstr "Spring Web APIのためのQuarkus Extension"
 #: upstream/_guides/spring-web.adoc:11
 #, fuzzy
 msgid "While users are encouraged to use JAX-RS annotation for defining REST endpoints, Quarkus provides a compatibility layer for Spring Web in the form of the `spring-web` extension."
-msgstr "RESTエンドポイントの定義にはJAX-RSアノテーションを使用することが推奨されていますが、Quarkusでは、 `spring-web` エクステンションという形でSpring Web用の互換レイヤーを提供しています。"
+msgstr ""
+"RESTエンドポイントの定義にはJAX-"
+"RSアノテーションを使用することが推奨されていますが、Quarkusでは、 `spring-"
+"web` エクステンションという形でSpring Web用の互換レイヤーを提供しています。"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:13
 #, fuzzy
 msgid "This guide explains how a Quarkus application can leverage the well known Spring Web annotations to define RESTful services."
-msgstr "このガイドでは、よく知られているSpring Webアノテーションを利用して、QuarkusアプリケーションでRESTfulサービスを定義する方法を説明します。"
+msgstr ""
+"このガイドでは、よく知られているSpring Webアノテーションを利用して、Quarkusア"
+"プリケーションでRESTfulサービスを定義する方法を説明します。"
 
 #. type: Title ==
 #: upstream/_guides/spring-web.adoc:14
@@ -68,7 +73,9 @@ msgstr "Gitレポジトリをクローンするか `git clone {quickstarts-clone
 #: upstream/_guides/spring-web.adoc:28
 #, fuzzy
 msgid "The solution is located in the `spring-web-quickstart` {quickstarts-tree-url}/spring-web-quickstart[directory]."
-msgstr "このソリューションは `spring-web-quickstart` {quickstarts-tree-url}/spring-web-quickstart[directory]にあります。"
+msgstr ""
+"このソリューションは `spring-web-quickstart` {quickstarts-tree-url}/spring-"
+"web-quickstart[directory]にあります。"
 
 #. type: Title ==
 #: upstream/_guides/spring-web.adoc:29
@@ -85,13 +92,17 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_guides/spring-web.adoc:38
 #, fuzzy
 msgid "This command generates a project which imports the `spring-web` extension."
-msgstr "このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-web` エクステンションをインポートします。"
+msgstr "このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-"
+"web` エクステンションをインポートします。"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:41
 #, fuzzy
 msgid "If you already have your Quarkus project configured, you can add the `spring-web` extension to your project by running the following command in your project base directory:"
-msgstr "すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレクトリで以下のコマンドを実行することで、 `spring-web` エクステンションをプロジェクトに追加することができます。"
+msgstr ""
+"すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレク"
+"トリで以下のコマンドを実行することで、 `spring-web` "
+"エクステンションをプロジェクトに追加することができます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:46
@@ -137,7 +148,9 @@ msgstr ""
 #: upstream/_guides/spring-web.adoc:70
 #, fuzzy
 msgid "`quarkus-spring-web` needs to be complemented with either `quarkus-resteasy-reactive-jackson` or `quarkus-resteasy-jackson` in order to work."
-msgstr "`quarkus-spring-web` は、 `quarkus-resteasy-jackson` または `quarkus-resteasy-reactive-jackson` のいずれかで補完されないと動作しません。"
+msgstr ""
+"`quarkus-spring-web` は、 `quarkus-resteasy-jackson` または `quarkus-"
+"resteasy-reactive-jackson` のいずれかで補完されないと動作しません。"
 
 #. type: Title ==
 #: upstream/_guides/spring-web.adoc:72
@@ -149,7 +162,10 @@ msgstr "@RestController"
 #: upstream/_guides/spring-web.adoc:75
 #, fuzzy
 msgid "Create the `src/main/java/org/acme/spring/web/GreetingController.java` file, a controller with the Spring Web annotations to define our REST endpoint, as follows:"
-msgstr "RESTエンドポイントを定義するためのSpring Webアノテーションを持つコントローラである `src/main/java/org/acme/spring/web/GreetingController.java` ファイルを以下のように作成します。"
+msgstr ""
+"RESTエンドポイントを定義するためのSpring "
+"Webアノテーションを持つコントローラである `src/main/java/org/acme/spring/web/"
+"GreetingController.java` ファイルを以下のように作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-web.adoc:79 upstream/_guides/spring-web.adoc:102
@@ -259,7 +275,9 @@ msgstr "アプリケーションをネイティブ実行可能ファイルとし
 #: upstream/_guides/spring-web.adoc:131
 #, fuzzy
 msgid "Open your browser to http://localhost:8080/greeting."
-msgstr "アプリケーションを実行するには、次の手順を実行します: `./mvnw compile quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
+msgstr ""
+"アプリケーションを実行するには、次の手順を実行します: `./mvnw compile "
+"quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:133
@@ -289,7 +307,10 @@ msgstr "JSONを返すエンドポイントでさらに進化"
 #: upstream/_guides/spring-web.adoc:144
 #, fuzzy
 msgid "The `GreetingController` above was an example of a very simple endpoint. In many cases however it is required to return JSON content.  The following example illustrates how that could be achieved using a Spring RestController:"
-msgstr "上の `GreetingController` は、非常にシンプルなエンドポイントの例でした。しかし、多くの場合、JSONコンテンツを返さなければなりません。次の例では、Spring RestControllerを使用して、これを実現しています。"
+msgstr ""
+"上の `GreetingController` は、非常にシンプルなエンドポイントの例でした。しか"
+"し、多くの場合、JSONコンテンツを返さなければなりません。次の例では、Spring "
+"RestControllerを使用して、これを実現しています。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-web.adoc:151
@@ -363,7 +384,10 @@ msgstr ""
 #: upstream/_guides/spring-web.adoc:203
 #, fuzzy
 msgid "It should be noted that when using the Spring Web support in Quarkus, link:https://github.com/FasterXML/jackson[Jackson] is automatically added to the classpath and properly setup."
-msgstr "なお、QuarkusでSpring Webサポートを使用する場合、 link:https://github.com/FasterXML/jackson[Jackson]は自動的にクラスパスに追加され、適切に設定されます。"
+msgstr ""
+"なお、QuarkusでSpring Webサポートを使用する場合、 link:https://github.com/"
+"FasterXML/"
+"jackson[Jackson]は自動的にクラスパスに追加され、適切に設定されます。"
 
 #. type: Title ==
 #: upstream/_guides/spring-web.adoc:204
@@ -375,7 +399,10 @@ msgstr "OpenAPIとSwagger-UIの追加"
 #: upstream/_guides/spring-web.adoc:207
 #, fuzzy
 msgid "You can add support for link:https://www.openapis.org/[OpenAPI] and link:https://swagger.io/tools/swagger-ui/[Swagger-UI] by using the `quarkus-smallrye-openapi` extension."
-msgstr "`quarkus-smallrye-openapi` エクステンションを使うことで、 link:https://www.openapis.org/[OpenAPI]と link:https://swagger.io/tools/swagger-ui/[Swagger-UI]のサポートを追加することができます。"
+msgstr ""
+"`quarkus-smallrye-openapi` エクステンションを使うことで、 link:https://www."
+"openapis.org/[OpenAPI]と link:https://swagger.io/tools/swagger-ui/[Swagger-"
+"UI]のサポートを追加することができます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:209
@@ -407,7 +434,8 @@ msgstr ""
 #: upstream/_guides/spring-web.adoc:226
 #, fuzzy
 msgid "This is enough to generate a basic OpenAPI schema document from your REST Endpoints:"
-msgstr "これは、RESTエンドポイントから基本的なOpenAPIスキーマドキュメントを生成するのに十分です。"
+msgstr "これは、RESTエンドポイントから基本的なOpenAPIスキーマドキュメントを生成するの"
+"に十分です。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-web.adoc:230
@@ -485,7 +513,10 @@ msgstr "MicroProfile OpenAPIアノテーションの追加"
 #: upstream/_guides/spring-web.adoc:281
 #, fuzzy
 msgid "You can use link:https://github.com/eclipse/microprofile-open-api[MicroProfile OpenAPI] to better document your schema, example, adding the following to the class level of the `GreetingController`:"
-msgstr "link:https://github.com/eclipse/microprofile-open-api[MicroProfile OpenAPI]を使用して、スキーマをより良く文書化することができます。例えば、 `GreetingController` のクラスレベルに以下を追加します。"
+msgstr ""
+"link:https://github.com/eclipse/microprofile-open-api[MicroProfile "
+"OpenAPI]を使用して、スキーマをより良く文書化することができます。例えば、 "
+"`GreetingController` のクラスレベルに以下を追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-web.adoc:296
@@ -607,7 +638,11 @@ msgstr "Swagger UIの使用"
 #: upstream/_guides/spring-web.adoc:378
 #, fuzzy
 msgid "Swagger UI is included by default when running in `Dev` or `Test` mode, and can optionally added to `Prod` mode.  See xref:openapi-swaggerui.adoc#use-swagger-ui-for-development[the Swagger UI] Guide for more details."
-msgstr "Swagger UIは、 `Dev` または `Test` モードで実行するとデフォルトで含まれており、オプションで `Prod` モードに追加することができます。詳細は「 link:openapi-swaggerui.html#use-swagger-ui-for-development[Swagger UI]Guide」をご覧ください。"
+msgstr ""
+"Swagger UIは、 `Dev` または `Test` "
+"モードで実行するとデフォルトで含まれており、オプションで `Prod` "
+"モードに追加することができます。詳細は「 link:openapi-swaggerui.html#use-"
+"swagger-ui-for-development[Swagger UI]Guide」をご覧ください。"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:380
@@ -630,7 +665,11 @@ msgstr "サポートされているSpring Webの機能"
 #: upstream/_guides/spring-web.adoc:387
 #, fuzzy
 msgid "Quarkus currently supports a subset of the functionalities that Spring Web provides. More specifically Quarkus supports the REST related features of Spring Web (think of `@RestController` instead of `@Controller`)."
-msgstr "Quarkusは現在、Spring Webが提供する機能のサブセットをサポートしています。具体的には、QuarkusはSpring WebのREST関連の機能をサポートしています（ `@Controller` の代わりに `@RestController` を考えてみてください）。"
+msgstr ""
+"Quarkusは現在、Spring "
+"Webが提供する機能のサブセットをサポートしています。具体的には、"
+"QuarkusはSpring WebのREST関連の機能をサポートしています（ `@Controller` "
+"の代わりに `@RestController` を考えてみてください）。"
 
 #. type: Title ===
 #: upstream/_guides/spring-web.adoc:388
@@ -810,7 +849,12 @@ msgstr "コントローラメソッドの戻り値の型"
 #: upstream/_guides/spring-web.adoc:445
 #, fuzzy
 msgid "In addition to the method parameters that can be annotated with the appropriate Spring Web annotations from the previous table, `javax.servlet.http.HttpServletRequest` and `javax.servlet.http.HttpServletResponse` are also supported.  For this to function however, users need to add the `quarkus-undertow` dependency."
-msgstr "前述の表の適切なSpring Webアノテーションでアノテーションできるメソッドパラメータに加えて、 `javax.servlet.http.HttpServletRequest` と `javax.servlet.http.HttpServletResponse` もサポートされています。ただし、これが機能するためには、ユーザーは `quarkus-undertow` の依存関係を追加する必要があります。"
+msgstr ""
+"前述の表の適切なSpring "
+"Webアノテーションでアノテーションできるメソッドパラメータに加えて、 `javax."
+"servlet.http.HttpServletRequest` と `javax.servlet.http.HttpServletResponse` "
+"もサポートされています。ただし、これが機能するためには、ユーザーは `quarkus-"
+"undertow` の依存関係を追加する必要があります。"
 
 #. type: Title ===
 #: upstream/_guides/spring-web.adoc:446
@@ -827,7 +871,11 @@ msgstr "`java.util.Map`"
 #: upstream/_guides/spring-web.adoc:454
 #, fuzzy
 msgid "Other return types mentioned in the Spring `https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/ExceptionHandler.html[ExceptionHandler javadoc]` are not supported."
-msgstr "Springに記載されているその他のリターンタイプは `<a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/ExceptionHandler.html\">ExceptionHandler javadoc</a>`はサポートされていません。"
+msgstr ""
+"Springに記載されているその他のリターンタイプは `<a href=\"https://docs.spring"
+".io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/"
+"annotation/ExceptionHandler.html\">ExceptionHandler "
+"javadoc</a>`はサポートされていません。"
 
 #. type: Title ===
 #: upstream/_guides/spring-web.adoc:455
@@ -845,19 +893,31 @@ msgstr "以下のメソッドの戻り値の型がサポートされています
 #: upstream/_guides/spring-web.adoc:460
 #, fuzzy
 msgid "An exception argument: declared as a general `Exception` or as a more specific exception. This also serves as a mapping hint if the annotation itself does not narrow the exception types through its `value()`."
-msgstr "例外の引数：一般的な `Exception` として、またはより具体的な例外として宣言されています。これは、アノテーション自体が `value()` を通して例外タイプを狭めていない場合、マッピングのヒントにもなります。"
+msgstr ""
+"例外の引数：一般的な `Exception` "
+"として、またはより具体的な例外として宣言されています。これは、"
+"アノテーション自体が `value()` "
+"を通して例外タイプを狭めていない場合、マッピングのヒントにもなります。"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:461
 #, fuzzy
 msgid "Request and/or response objects (typically from the Servlet API). You may choose any specific request/response type, e.g. `ServletRequest` / `HttpServletRequest`. To use Servlet API, the `quarkus-undertow` dependency needs to be added."
-msgstr "リクエストおよび／またはレスポンスオブジェクト（通常、サーブレットAPIからのもの）。 `ServletRequest` / `HttpServletRequest` のように、特定のリクエスト/レスポンスタイプを選択することができます。Servlet APIを使用するには、 `quarkus-undertow` の依存関係を追加する必要があります。"
+msgstr ""
+"リクエストおよび／またはレスポンスオブジェクト（通常、サーブレットAPIからのも"
+"の）。 `ServletRequest` / `HttpServletRequest` "
+"のように、特定のリクエスト/レスポンスタイプを選択することができます。Servlet "
+"APIを使用するには、 `quarkus-undertow` の依存関係を追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:463
 #, fuzzy
 msgid "Other parameter types mentioned in the Spring `https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/ExceptionHandler.html[ExceptionHandler javadoc]` are not supported."
-msgstr "Springに記載されているその他のパラメータタイプは `<a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/ExceptionHandler.html\">ExceptionHandler javadoc</a>`に記載されているその他のパラメータタイプはサポートされていません。"
+msgstr ""
+"Springに記載されているその他のパラメータタイプは `<a href=\"https://docs."
+"spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/"
+"bind/annotation/ExceptionHandler.html\">ExceptionHandler javadoc</a>`に記載さ"
+"れているその他のパラメータタイプはサポートされていません。"
 
 #. type: Title ==
 #: upstream/_guides/spring-web.adoc:464
@@ -869,7 +929,14 @@ msgstr "重要なテクニカルノート"
 #: upstream/_guides/spring-web.adoc:470
 #, fuzzy
 msgid "Please note that the Spring support in Quarkus does not start a Spring Application Context nor are any Spring infrastructure classes run.  Spring classes and annotations are only used for reading metadata and / or are used as user code method return types or parameter types.  What that means for end users, is that adding arbitrary Spring libraries will not have any effect. Moreover Spring infrastructure classes (like `org.springframework.beans.factory.config.BeanPostProcessor` for example) will not be executed."
-msgstr "QuarkusのSpringサポートでは、Spring Application Contextは起動せず、Springインフラストラクチャクラスも実行されないことに注意してください。Springのクラスやアノテーションは、メタデータを読み込んだり、ユーザーコードのメソッドの戻り値の型やパラメータの型として使用されるだけです。エンドユーザーにとっての意味は、任意のSpringライブラリを追加しても何の効果もないということです。さらに、Springのインフラクラス（例えば `org.springframework.beans.factory.config.BeanPostProcessor` ）は実行されません。"
+msgstr ""
+"QuarkusのSpringサポートでは、Spring Application Contextは起動せず、Springイン"
+"フラストラクチャクラスも実行されないことに注意してください。Springのクラスや"
+"アノテーションは、メタデータを読み込んだり、ユーザーコードのメソッドの戻り値"
+"の型やパラメータの型として使用されるだけです。エンドユーザーにとっての意味は"
+"、任意のSpringライブラリを追加しても何の効果もないということです。さらに、Spr"
+"ingのインフラクラス（例えば `org.springframework.beans.factory.config."
+"BeanPostProcessor` ）は実行されません。"
 
 #. type: Title ==
 #: upstream/_guides/spring-web.adoc:471
@@ -881,7 +948,8 @@ msgstr "変換テーブル"
 #: upstream/_guides/spring-web.adoc:474
 #, fuzzy
 msgid "The following table shows how Spring Web annotations can be converted to JAX-RS annotations."
-msgstr "以下の表は、Spring WebアノテーションをJAX-RSアノテーションに変換する方法を示しています。"
+msgstr "以下の表は、Spring WebアノテーションをJAX-"
+"RSアノテーションに変換する方法を示しています。"
 
 #. type: Table
 #: upstream/_guides/spring-web.adoc:476
@@ -899,7 +967,8 @@ msgstr "JAX-RS"
 #: upstream/_guides/spring-web.adoc:482
 #, fuzzy, no-wrap
 msgid "There is no equivalent in JAX-RS. Annotating a class with @Path suffices"
-msgstr "JAX-RSにはこれに相当するものはありません。クラスのアノテーションは@Pathで十分です。"
+msgstr "JAX-RSにはこれに相当するものはありません。クラスのアノテーションは@Pathで十分"
+"です。"
 
 #. type: Table
 #: upstream/_guides/spring-web.adoc:483
@@ -953,7 +1022,9 @@ msgstr "@PathParam"
 #: upstream/_guides/spring-web.adoc:506
 #, fuzzy, no-wrap
 msgid "No equivalent in JAX-RS. Method parameters corresponding to the body of the request are handled in JAX-RS without requiring any annotation"
-msgstr "JAX-RSでは同等のものはありません。JAX-RSでは、リクエストのボディに対応するメソッド・パラメータは、アノテーションを必要とせずに処理されます。"
+msgstr ""
+"JAX-RSでは同等のものはありません。JAX-RSでは、リクエストのボディに対応するメ"
+"ソッド・パラメータは、アノテーションを必要とせずに処理されます。"
 
 #. type: Table
 #: upstream/_guides/spring-web.adoc:510 upstream/_guides/spring-web.adoc:514
@@ -965,7 +1036,8 @@ msgstr "JAX-RSには同等のものはありません。"
 #: upstream/_guides/spring-web.adoc:517
 #, fuzzy, no-wrap
 msgid "No equivalent annotation in JAX-RS. Exceptions are handled by implementing `javax.ws.rs.ext.ExceptionMapper`"
-msgstr "JAX-RSには同等のアノテーションはありません。例外を処理するには `javax.ws.rs.ext.ExceptionMapper`"
+msgstr "JAX-RSには同等のアノテーションはありません。例外を処理するには `javax.ws.rs."
+"ext.ExceptionMapper`"
 
 #. type: Title ==
 #: upstream/_guides/spring-web.adoc:519
@@ -1006,13 +1078,16 @@ msgstr "link:spring-security.html[Quarkus - Spring Securityのエクステンシ
 #: upstream/_guides/spring-web.adoc:528
 #, fuzzy
 msgid "xref:spring-cloud-config-client.adoc[Quarkus - Reading properties from Spring Cloud Config Server]"
-msgstr "link:spring-cloud-config-client.html[Quarkus - Spring Cloud Config Serverからプロパティを読み込む]"
+msgstr ""
+"link:spring-cloud-config-client.html[Quarkus - Spring Cloud Config "
+"Serverからプロパティを読み込む]"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:529
 #, fuzzy
 msgid "xref:spring-boot-properties.adoc[Quarkus - Extension for Spring Boot properties]"
-msgstr "link:spring-boot-properties.html[Quarkus - Spring Bootプロパティ用のエクステンション]"
+msgstr "link:spring-boot-properties.html[Quarkus - Spring "
+"Bootプロパティ用のエクステンション]"
 
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:530

@@ -93,7 +93,9 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_guides/smallrye-fault-tolerance.adoc:49
 #, fuzzy
 msgid "This command generates a project, importing the extensions for RESTEasy Reactive/JAX-RS and SmallRye Fault Tolerance."
-msgstr "このコマンドは、RESTEasy/JAX-RSとSmallRye Fault ToleranceのエクステンションをインポートしたMaven構造を生成します。"
+msgstr ""
+"このコマンドは、RESTEasy/JAX-RSとSmallRye Fault "
+"ToleranceのエクステンションをインポートしたMaven構造を生成します。"
 
 #. type: Plain text
 #: upstream/_guides/smallrye-fault-tolerance.adoc:52
@@ -280,7 +282,9 @@ msgstr ""
 #: upstream/_guides/smallrye-fault-tolerance.adoc:149
 #, fuzzy
 msgid "Finally, create the `org.acme.microprofile.faulttolerance.CoffeeResource` class as follows:"
-msgstr "最後に、 `org.acme.microprofile.faulttolerance.CoffeeResource` クラスを以下のように編集します。"
+msgstr ""
+"最後に、 `org.acme.microprofile.faulttolerance.CoffeeResource` "
+"クラスを以下のように編集します。"
 
 #. type: delimited block -
 #: upstream/_guides/smallrye-fault-tolerance.adoc:160
@@ -831,49 +835,71 @@ msgstr "追加リソース"
 #: upstream/_guides/smallrye-fault-tolerance.adoc:504
 #, fuzzy
 msgid "SmallRye Fault Tolerance has more features than shown here.  Please check the link:https://smallrye.io/docs/smallrye-fault-tolerance/5.4.0/index.html[SmallRye Fault Tolerance documentation] to learn about them."
-msgstr "SmallRye Fault Toleranceには、ここで紹介した以外にも様々な機能があります。それらについては、 link:https://smallrye.io/docs/smallrye-fault-tolerance/5.2.0/index.html[SmallRye Fault Toleranceのドキュメント]をご確認ください。"
+msgstr ""
+"SmallRye Fault "
+"Toleranceには、ここで紹介した以外にも様々な機能があります。それらについては、"
+" link:https://smallrye.io/docs/smallrye-fault-tolerance/5.2.0/index.html["
+"SmallRye Fault Toleranceのドキュメント]をご確認ください。"
 
 #. type: Plain text
 #: upstream/_guides/smallrye-fault-tolerance.adoc:506
 #, fuzzy
 msgid "In Quarkus, you can use the SmallRye Fault Tolerance optional features out of the box."
-msgstr "Quarkusでは、SmallRye Fault Toleranceのオプション機能をすぐに使用することができます。"
+msgstr "Quarkusでは、SmallRye Fault "
+"Toleranceのオプション機能をすぐに使用することができます。"
 
 #. type: Plain text
 #: upstream/_guides/smallrye-fault-tolerance.adoc:508
 #, fuzzy
 msgid "Support for Mutiny is present, so your asynchronous methods can return `Uni` in addition to `CompletionStage`."
-msgstr "Mutinyがサポートされているので、非同期のメソッドは `CompletionStage` に加えて `Uni` を返すことができます。"
+msgstr "Mutinyがサポートされているので、非同期のメソッドは `CompletionStage` "
+"に加えて `Uni` を返すことができます。"
 
 #. type: Plain text
 #: upstream/_guides/smallrye-fault-tolerance.adoc:510
 #, fuzzy
 msgid "MicroProfile Context Propagation is integrated with Fault Tolerance, so existing contexts are automatically propagated to your asynchronous methods."
-msgstr "MicroProfileのContext PropagationはFault Toleranceと統合されており、既存のContextが自動的に非同期メソッドに伝搬されます。"
+msgstr ""
+"MicroProfileのContext PropagationはFault Toleranceと統合されており、既存のCon"
+"textが自動的に非同期メソッドに伝搬されます。"
 
 #. type: delimited block =
 #: upstream/_guides/smallrye-fault-tolerance.adoc:515
 #, fuzzy
 msgid "This also applies to the CDI request context: if it is active on the original thread, it is propagated to the new thread, but if it's not, then the new thread won't have it either.  This is contrary to MicroProfile Fault Tolerance specification, which states that the request context must be active during the `@Asynchronous` method invocation."
-msgstr "これは、CDI リクエストコンテキストにも当てはまります。元のスレッドでアクティブであれば、新しいスレッドに伝わりますが、アクティブでなければ、新しいスレッドにも伝わりません。これは MicroProfile Fault Tolerance の仕様に反しており、 `@Asynchronous` メソッドの呼び出し時にリクエストコンテキストがアクティブでなければならないとしています。"
+msgstr ""
+"これは、CDI リクエストコンテキストにも当てはまります。元のスレッドでアクティ"
+"ブであれば、新しいスレッドに伝わりますが、アクティブでなければ、新しいスレッ"
+"ドにも伝わりません。これは MicroProfile Fault Tolerance の仕様に反しており、 "
+"`@Asynchronous` メソッドの呼び出し時にリクエストコンテキストがアクティブでな"
+"ければならないとしています。"
 
 #. type: delimited block =
 #: upstream/_guides/smallrye-fault-tolerance.adoc:518
 #, fuzzy
 msgid "We believe that in presence of MicroProfile Context Propagation, this requirement should not apply.  The entire point of context propagation is to make sure the new thread has the same contexts as the original thread."
-msgstr "MicroProfile Context Propagationがある場合、この要件は適用されるべきではないと考えています。コンテキスト伝搬の目的は、新しいスレッドが元のスレッドと同じコンテキストを持っていることを確認することにあります。"
+msgstr ""
+"MicroProfile Context Propagationがある場合、この要件は適用されるべきではない"
+"と考えています。コンテキスト伝搬の目的は、新しいスレッドが元のスレッドと同じ"
+"コンテキストを持っていることを確認することにあります。"
 
 #. type: Plain text
 #: upstream/_guides/smallrye-fault-tolerance.adoc:523
 #, fuzzy
 msgid "Non-compatible mode is enabled by default.  This means that methods that return `CompletionStage` (or `Uni`) have asynchronous fault tolerance applied without any `@Asynchronous`, `@Blocking` or `@NonBlocking` annotation.  It also means that circuit breaker, fallback and retry automatically inspect the exception cause chain if the exception itself is insufficient to decide what should happen."
-msgstr "非互換モードはデフォルトで有効になっているので、 `CompletionStage` (または `Uni`) を返すメソッドには、 `@Asynchronous` 、 `@Blocking` 、 `@NonBlocking` のようなアノテーションがなくても、非同期フォールトトレランスが適用されます。"
+msgstr ""
+"非互換モードはデフォルトで有効になっているので、 `CompletionStage` (または "
+"`Uni`) を返すメソッドには、 `@Asynchronous` 、 `@Blocking` 、 `@NonBlocking` "
+"のようなアノテーションがなくても、非同期フォールトトレランスが適用されます。"
 
 #. type: delimited block =
 #: upstream/_guides/smallrye-fault-tolerance.adoc:528
 #, fuzzy
 msgid "This mode is not compatible with the MicroProfile Fault Tolerance specification, albeit the incompatibility is very small.  To restore full compatibility, add this configuration property:"
-msgstr "このモードは、MicroProfile Fault Tolerance仕様との互換性はありませんが、互換性の低下はごくわずかです。完全な互換性を回復するには、この構成プロパティを追加します。"
+msgstr ""
+"このモードは、MicroProfile Fault Tolerance仕様との互換性はありませんが、互換"
+"性の低下はごくわずかです。完全な互換性を回復するには、この構成プロパティを追"
+"加します。"
 
 #. type: delimited block -
 #: upstream/_guides/smallrye-fault-tolerance.adoc:532
@@ -885,13 +911,21 @@ msgstr ""
 #: upstream/_guides/smallrye-fault-tolerance.adoc:537
 #, fuzzy
 msgid "The link:https://smallrye.io/docs/smallrye-fault-tolerance/5.4.0/usage/programmatic-api.html[programmatic API] is present, including Mutiny support, and integrated with the declarative, annotation-based API.  You can use the `FaultTolerance` and `MutinyFaultTolerance` APIs out of the box."
-msgstr "Mutinyのサポートを含む link:https://smallrye.io/docs/smallrye-fault-tolerance/5.3.1/usage/programmatic-api.html[プログラム的なAPIが]存在し、宣言的でアノテーションベースのAPIと統合されています。 `FaultTolerance` と `MutinyFaultTolerance` の API をすぐに使うことができます。"
+msgstr ""
+"Mutinyのサポートを含む link:https://smallrye.io/docs/"
+"smallrye-fault-tolerance/5.3.1/usage/programmatic-api.html[プログラム的なAPI"
+"が]存在し、宣言的でアノテーションベースのAPIと統合されています。 "
+"`FaultTolerance` と `MutinyFaultTolerance` の API "
+"をすぐに使うことができます。"
 
 #. type: delimited block =
 #: upstream/_guides/smallrye-fault-tolerance.adoc:538
 #, fuzzy
 msgid "Support for Kotlin is present (assuming you use the Quarkus extension for Kotlin), so you can guard your `suspend` functions with fault tolerance annotations."
-msgstr "Kotlinのサポートがあるため（Kotlin用のQuarkus拡張機能を使用することが前提）、フォールトトレランスのアノテーションで `suspend` 関数を保護することができます。"
+msgstr ""
+"Kotlinのサポートがあるため（Kotlin用のQuarkus拡張機能を使用することが前提）、"
+"フォールトトレランスのアノテーションで `suspend` "
+"関数を保護することができます。"
 
 #~ msgid "To complete this guide, you need:"
 #~ msgstr "このガイドを完成させるには、以下が必要です:"

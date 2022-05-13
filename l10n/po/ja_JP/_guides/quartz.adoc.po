@@ -400,7 +400,10 @@ msgstr "Quartz APIを使用して新しいジョブをスケジュールしま�
 #: upstream/_guides/quartz.adoc:193
 #, fuzzy
 msgid "Invoke the `TaskBean#performTask()` method from the job. Jobs are also xref:cdi.adoc[container-managed] beans if they belong to a link:cdi-reference[bean archive]."
-msgstr "ジョブから `TaskBean#performTask()` メソッドを呼び出します。ジョブは、 link:cdi-reference[ビーンアーカイブ]に属している場合、 link:cdi.html[コンテナ管理された]ビーンでもあります。"
+msgstr ""
+"ジョブから `TaskBean#performTask()` メソッドを呼び出します。ジョブは、 link"
+":cdi-reference[ビーンアーカイブ]に属している場合、 link:cdi."
+"html[コンテナ管理された]ビーンでもあります。"
 
 #. type: Plain text
 #: upstream/_guides/quartz.adoc:195
@@ -482,7 +485,14 @@ msgstr "誤爆ポリシーは、ジョブごとに設定できます。 `task-jo
 #: upstream/_guides/quartz.adoc:231
 #, fuzzy
 msgid "Valid misfire policy for cron jobs are: `smart-policy`, `ignore-misfire-policy`, `fire-now` and `cron-trigger-do-nothing`.  Valid misfire policy for interval jobs are: `smart-policy`, `ignore-misfire-policy`, `fire-now`, `simple-trigger-reschedule-now-with-existing-repeat-count`, `simple-trigger-reschedule-now-with-remaining-repeat-count`, `simple-trigger-reschedule-next-with-existing-count` and `simple-trigger-reschedule-next-with-remaining-count`."
-msgstr "cronジョブの有効な誤動作防止ポリシーは以下の通りです。 `smart-policy`, `ignore-misfire-policy`, `fire-now` および `cron-trigger-do-nothing` 。インターバルジョブの有効なミスファイアポリシーは次のとおりです。 `smart-policy` `ignore-misfire-policy`, `fire-now`, `simple-trigger-reschedule-now-with-existing-repeat-count`, `simple-trigger-reschedule-now-with-remaining-repeat-count`, `simple-trigger-reschedule-next-with-existing-count` および `simple-trigger-reschedule-next-with-remaining-count` 。"
+msgstr ""
+"cronジョブの有効な誤動作防止ポリシーは以下の通りです。 `smart-policy`, "
+"`ignore-misfire-policy`, `fire-now` および `cron-trigger-do-nothing` "
+"。インターバルジョブの有効なミスファイアポリシーは次のとおりです。 `smart-"
+"policy` `ignore-misfire-policy`, `fire-now`, `simple-trigger-reschedule-now-"
+"with-existing-repeat-count`, `simple-trigger-reschedule-now-with-remaining-"
+"repeat-count`, `simple-trigger-reschedule-next-with-existing-count` および "
+"`simple-trigger-reschedule-next-with-remaining-count` 。"
 
 #. type: Title ==
 #: upstream/_guides/quartz.adoc:232
@@ -543,7 +553,8 @@ msgstr "作成されたタスクのリストをデータベースから取得し
 #: upstream/_guides/quartz.adoc:259
 #, fuzzy
 msgid "You also have the option to create a `org.acme.quartz.TaskResourceTest` test with the following content:"
-msgstr "ルートディレクトリーに、以下の内容の `docker-compose.yml` ファイルを作成します。"
+msgstr "ルートディレクトリーに、以下の内容の `docker-compose.yml` "
+"ファイルを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/quartz.adoc:265

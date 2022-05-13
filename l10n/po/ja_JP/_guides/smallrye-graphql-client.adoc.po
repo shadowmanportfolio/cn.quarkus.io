@@ -29,7 +29,14 @@ msgstr "SmallRye GraphQLクライアント"
 #: upstream/_guides/smallrye-graphql-client.adoc:15
 #, fuzzy
 msgid "This guide demonstrates how your Quarkus application can use the GraphQL client library.  The client is implemented by the https://github.com/smallrye/smallrye-graphql/[SmallRye GraphQL] project.  This guide is specifically geared towards the client side, so if you need an introduction to GraphQL in general, first refer to the xref:smallrye-graphql.adoc[SmallRye GraphQL guide], which provides an introduction to the GraphQL query language, general concepts and server-side development."
-msgstr "このガイドでは、QuarkusアプリケーションでGraphQLクライアントライブラリを使用する方法を説明します。このクライアントは、 link:https://github.com/smallrye/smallrye-graphql/[SmallRye GraphQL]プロジェクトによって実装されています。このガイドは特にクライアント側を対象としていますので、GraphQL全般の紹介が必要な場合は、まず link:smallrye-graphql.html[SmallRye GraphQLガイド]を参照してください。このガイドでは、GraphQLのクエリ言語、一般的なコンセプト、サーバーサイドの開発について紹介しています。"
+msgstr ""
+"このガイドでは、QuarkusアプリケーションでGraphQLクライアントライブラリを使用"
+"する方法を説明します。このクライアントは、 link:https://github.com/smallrye/"
+"smallrye-graphql/[SmallRye GraphQL]プロジェクトによって実装されています。この"
+"ガイドは特にクライアント側を対象としていますので、GraphQL全般の紹介が必要な場"
+"合は、まず link:smallrye-graphql.html[SmallRye GraphQLガイド]を参照してくださ"
+"い。このガイドでは、GraphQLのクエリ言語、一般的なコンセプト、サーバーサイドの"
+"開発について紹介しています。"
 
 #. type: Plain text
 #: upstream/_guides/smallrye-graphql-client.adoc:20
@@ -104,7 +111,16 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_guides/smallrye-graphql-client.adoc:68
 #, fuzzy
 msgid "The typesafe GraphQL client depends on REST client, thus we included the `rest-client-reactive` extension in the `extensions` list. You may also switch to the traditional non-reactive `rest-client` if the rest of your application depends on the non-reactive RESTEasy stack (you can't mix reactive and non-reactive RESTEasy).  If you're only going to use the dynamic GraphQL client and don't use RESTEasy in your application, you may leave out the REST client dependency completely.  This command generates a project, importing the `smallrye-graphql-client` extension."
-msgstr "typesafe GraphQLクライアントはRESTクライアントに依存しているため、 `rest-client-reactive` エクステンションを `extensions` リストに含めました。また、アプリケーションの他の部分が非リアクティブ型のRESTEasyスタックに依存している場合は、従来の非リアクティブ型の `rest-client` に切り替えても構いません（リアクティブ型と非リアクティブ型のRESTEasyを混在させることはできません）。動的なGraphQLクライアントのみを使用し、アプリケーションにRESTEasyを使用しない場合は、RESTクライアントの依存関係を完全に省くことができます。このコマンドは、 `smallrye-graphql-client` のエクステンションをインポートして Maven プロジェクトを生成します。"
+msgstr ""
+"typesafe GraphQLクライアントはRESTクライアントに依存しているため、 `rest-"
+"client-reactive` エクステンションを `extensions` リストに含めました。また、ア"
+"プリケーションの他の部分が非リアクティブ型のRESTEasyスタックに依存している場"
+"合は、従来の非リアクティブ型の `rest-client` に切り替えても構いません（リアク"
+"ティブ型と非リアクティブ型のRESTEasyを混在させることはできません）。動的なGra"
+"phQLクライアントのみを使用し、アプリケーションにRESTEasyを使用しない場合は、R"
+"ESTクライアントの依存関係を完全に省くことができます。このコマンドは、 "
+"`smallrye-graphql-client` のエクステンションをインポートして Maven "
+"プロジェクトを生成します。"
 
 #. type: Plain text
 #: upstream/_guides/smallrye-graphql-client.adoc:71
@@ -398,7 +414,11 @@ msgstr "わかりやすくするために、 `allFilms` という名前のクエ
 #: upstream/_guides/smallrye-graphql-client.adoc:227
 #, fuzzy
 msgid "The client also needs some configuration, namely at least the URL of the remote service. We can either specify that within the `@GraphQLClientApi` annotation (by setting the `endpoint` parameter), or move this over to the configuration file, `application.properties`:"
-msgstr "クライアントにも設定が必要で、少なくともリモートサービスのURLが必要です。これは、 `@GraphQLClientApi` アノテーション内で指定する（ `endpoint` パラメータを設定する）か、設定ファイル（ `application.properties` ）に移すことができます。"
+msgstr ""
+"クライアントにも設定が必要で、少なくともリモートサービスのURLが必要です。これ"
+"は、 `@GraphQLClientApi` アノテーション内で指定する（ `endpoint` "
+"パラメータを設定する）か、設定ファイル（ `application.properties` "
+"）に移すことができます。"
 
 #. type: delimited block -
 #: upstream/_guides/smallrye-graphql-client.adoc:230
@@ -410,13 +430,21 @@ msgstr ""
 #: upstream/_guides/smallrye-graphql-client.adoc:235
 #, fuzzy
 msgid "`star-wars-typesafe` is the name of the configured client instance, and corresponds to the `configKey` in the `@GraphQLClientApi` annotation. If you don't want to specify a custom name, you can leave out the `configKey`, and then refer to it by using the fully qualified name of the interface."
-msgstr "`star-wars-typesafe` は構成されたクライアントインスタンスの名前で、 `@GraphQLClientApi` アノテーションの `configKey` に対応しています。カスタム名を指定したくない場合は、 `configKey` を省略して、インターフェイスの完全修飾名を使って参照することができます。"
+msgstr ""
+"`star-wars-typesafe` は構成されたクライアントインスタンスの名前で、 "
+"`@GraphQLClientApi` アノテーションの `configKey` "
+"に対応しています。カスタム名を指定したくない場合は、 `configKey` "
+"を省略して、インターフェイスの完全修飾名を使って参照することができます。"
 
 #. type: Plain text
 #: upstream/_guides/smallrye-graphql-client.adoc:239
 #, fuzzy
 msgid "Now that we have the client instance properly configured, we need a way to have it perform something when we start the application. For that, we will use a REST endpoint that, when called by a user, obtains the client instance and lets it execute the query."
-msgstr "クライアント・インスタンスが適切に設定されたので、アプリケーションの起動時にクライアント・インスタンスに何かを実行させる方法が必要になります。そのために、RESTエンドポイントを使用します。ユーザーが呼び出すと、クライアント・インスタンスを取得して、クエリを実行させます。"
+msgstr ""
+"クライアント・インスタンスが適切に設定されたので、アプリケーションの起動時に"
+"クライアント・インスタンスに何かを実行させる方法が必要になります。そのために"
+"、RESTエンドポイントを使用します。ユーザーが呼び出すと、クライアント・インス"
+"タンスを取得して、クエリを実行させます。"
 
 #. type: delimited block -
 #: upstream/_guides/smallrye-graphql-client.adoc:246
@@ -446,7 +474,11 @@ msgstr ""
 #: upstream/_guides/smallrye-graphql-client.adoc:260
 #, fuzzy
 msgid "With this REST endpoint included in your application, you can simply send a GET request to `/typesafe`, and the application will use an injected typesafe client instance to call the remote service, obtain the films and planets, and return the JSON representation of the resulting list."
-msgstr "この REST エンドポイントをアプリケーションに組み込むと、 `/typesafe` に GET リクエストを送信するだけで、アプリケーションは注入された typesafe クライアントのインスタンスを使用してリモートサービスを呼び出し、映画と惑星を取得し、結果のリストの JSON 表現を返します。"
+msgstr ""
+"この REST エンドポイントをアプリケーションに組み込むと、 `/typesafe` に GET "
+"リクエストを送信するだけで、アプリケーションは注入された typesafe クライアン"
+"トのインスタンスを使用してリモートサービスを呼び出し、映画と惑星を取得し、"
+"結果のリストの JSON 表現を返します。"
 
 #. type: Title ==
 #: upstream/_guides/smallrye-graphql-client.adoc:261
@@ -552,7 +584,10 @@ msgstr "インジェクションポイントを修飾することで、どの名
 #: upstream/_guides/smallrye-graphql-client.adoc:323
 #, fuzzy
 msgid "Here we build a document representing the GraphQL query, using the provided DSL language.  We use static imports to make the code easier to read. The DSL is designed in a way that it looks quite similar to writing a GraphQL query as a string."
-msgstr "ここでは、提供されているDSL言語を使って、GraphQLクエリを表すドキュメントを構築します。コードを読みやすくするために、静的なインポートを使用しています。このDSLは、GraphQLクエリを文字列で記述するのとよく似た方法で設計されています。"
+msgstr ""
+"ここでは、提供されているDSL言語を使って、GraphQLクエリを表すドキュメントを構"
+"築します。コードを読みやすくするために、静的なインポートを使用しています。こ"
+"のDSLは、GraphQLクエリを文字列で記述するのとよく似た方法で設計されています。"
 
 #. type: Plain text
 #: upstream/_guides/smallrye-graphql-client.adoc:326
@@ -563,7 +598,11 @@ msgstr "クエリを実行し、応答を待つ間にブロックします。ま
 #: upstream/_guides/smallrye-graphql-client.adoc:331
 #, fuzzy
 msgid "Here we did the optional step of converting the response to instances of our model classes, because we have the classes available. If you don't have the classes available or don't want to use them, simply calling `response.getData()` would get you a `JsonObject` representing all the returned data."
-msgstr "ここでは、利用可能なクラスがあるため、オプションのステップとして、レスポンスをモデルクラスのインスタンスに変換しています。利用可能なクラスがない場合や、利用したくない場合は、単に `response.getData()` を呼べば、返されたすべてのデータを表す `JsonObject` を得ることができます。"
+msgstr ""
+"ここでは、利用可能なクラスがあるため、オプションのステップとして、レスポンス"
+"をモデルクラスのインスタンスに変換しています。利用可能なクラスがない場合や、"
+"利用したくない場合は、単に `response.getData()` を呼べば、"
+"返されたすべてのデータを表す `JsonObject` を得ることができます。"
 
 #. type: Title ==
 #: upstream/_guides/smallrye-graphql-client.adoc:332

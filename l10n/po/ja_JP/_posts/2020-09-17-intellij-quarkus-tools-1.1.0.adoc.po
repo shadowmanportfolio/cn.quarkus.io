@@ -50,7 +50,9 @@ msgstr "Quarkus Tools for IntelliJ 1.1.0 リリース!"
 #: upstream/_posts/2020-09-17-intellij-quarkus-tools-1.1.0.adoc:12
 #, fuzzy
 msgid "We are very pleased to announce the 1.1.0 release of Quarkus Tools for IntelliJ.  This release brings support for YAML configuration files and bug fixes."
-msgstr "Quarkus Tools for IntelliJの1.1.0リリースを発表できることを嬉しく思います。このリリースでは、YAML設定ファイルのサポートとバグ修正が行われています。"
+msgstr ""
+"Quarkus Tools for IntelliJの1.1.0リリースを発表できることを嬉しく思います。こ"
+"のリリースでは、YAML設定ファイルのサポートとバグ修正が行われています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-09-17-intellij-quarkus-tools-1.1.0.adoc:13
@@ -138,7 +140,9 @@ msgstr "GitHub リポジトリ: https://github.com/redhat-developer/intellij-qua
 #: upstream/_posts/2020-09-17-intellij-quarkus-tools-1.1.0.adoc:43
 #, fuzzy
 msgid "Open an issue: https://github.com/redhat-developer/intellij-quarkus/issues"
-msgstr "ご質問、ご意見、ご感想などがありましたら、ぜひ link:https://github.com/redhat-developer/intellij-quarkus/issues[イシューを開いて]ください。"
+msgstr ""
+"ご質問、ご意見、ご感想などがありましたら、ぜひ link:https://github.com/"
+"redhat-developer/intellij-quarkus/issues[イシューを開いて]ください。"
 
 #, fuzzy
 #~ msgid "---\n"

@@ -228,7 +228,10 @@ msgstr ""
 #: upstream/_versions/main/guides/container-image.adoc:129
 #, fuzzy
 msgid "To run tests on the resulting image, `quarkus.container-image.build=true` needs to be set using any of the ways that Quarkus supports."
-msgstr "プロジェクト用のコンテナーイメージを作成するには、Quarkus がサポートしている方法のいずれかで、 `quarkus.container-image.build=true` を設定する必要があります。"
+msgstr ""
+"プロジェクト用のコンテナーイメージを作成するには、Quarkus "
+"がサポートしている方法のいずれかで、 `quarkus.container-image.build=true` "
+"を設定する必要があります。"
 
 #. type: Block title
 #: upstream/_versions/main/guides/container-image.adoc:131

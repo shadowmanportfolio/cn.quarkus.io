@@ -62,13 +62,17 @@ msgstr "長らくお待たせしましたニュースレター#8!"
 #: upstream/_posts/2020-09-28-quarkus-newsletter-8.adoc:14
 #, fuzzy
 msgid "Quarkus team and the great community been busy - so busy in fact I missing sending out last months newsletter."
-msgstr "Quarkusチームと偉大なコミュニティは忙しく、先月のニュースレターの配信を見逃してしまうほど忙しかった。"
+msgstr "Quarkusチームと偉大なコミュニティは忙しく、先月のニュースレターの配信を見逃し"
+"てしまうほど忙しかった。"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-28-quarkus-newsletter-8.adoc:16
 #, fuzzy
 msgid "Besides the collection of found stories online (let me know if I missed yours!) we also got a new landing page for Quarkus Insights at: https://quarkus.io/insights."
-msgstr "オンラインで見つけたストーリーのコレクションに加えて(もしあなたのものを見逃していたらお知らせください!)、Quarkus Insightsの新しいランディングページを https://quarkus.io/insights に開設しました。"
+msgstr ""
+"オンラインで見つけたストーリーのコレクションに加えて(もしあなたのものを見逃し"
+"ていたらお知らせください!)、Quarkus Insightsの新しいランディングページを "
+"https://quarkus.io/insights に開設しました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-28-quarkus-newsletter-8.adoc:18
@@ -80,7 +84,13 @@ msgstr "次のエピソードは、今日はIoT部門のQuarkusハッカソン�
 #: upstream/_posts/2020-09-28-quarkus-newsletter-8.adoc:20
 #, fuzzy
 msgid "For the news below - give it a read and if you feel something is missing or have an article coming out for future Quarkus Newsletter install the https://github.com/maxandersen/url2quarkuspub[bookmarklet] on your laptop and phone to easily submit a story. If you prefer the manual way please https://github.com/quarkusio/quarkusio.github.io/issues[open an issue] with a short description and a url"
-msgstr "もし、何かが欠けていると感じたり、将来のQuarkusニュースレターに掲載される記事をお持ちの場合は、 link:https://github.com/maxandersen/url2quarkuspub[ブックマークレットを] ラップトップや携帯電話にインストールして、簡単に記事を投稿してください。あなたが手動の方法を好む場合は、短い説明とURLで link:https://github.com/quarkusio/quarkusio.github.io/issues[問題を開い] てください"
+msgstr ""
+"もし、何かが欠けていると感じたり、将来のQuarkusニュースレターに掲載される記事"
+"をお持ちの場合は、 link:https://github.com/maxandersen/"
+"url2quarkuspub[ブックマークレットを] ラップトップや携帯電話にインストールして"
+"、簡単に記事を投稿してください。あなたが手動の方法を好む場合は、"
+"短い説明とURLで link:https://github.com/quarkusio/quarkusio.github.io/"
+"issues[問題を開い] てください"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-28-quarkus-newsletter-8.adoc:21

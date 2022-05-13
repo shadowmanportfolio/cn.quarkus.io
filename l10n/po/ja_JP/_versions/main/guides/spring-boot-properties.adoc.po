@@ -127,7 +127,10 @@ msgstr "GreetingController"
 #: upstream/_versions/main/guides/spring-boot-properties.adoc:66
 #, fuzzy
 msgid "First, create a `GreetingResource` JAX-RS resource in the `src/main/java/org/acme/spring/boot/properties/GreetingResource.java` file that looks like:"
-msgstr "Quarkus Mavenプラグインは、 `src/main/java/org/acme/spring/boot/properties/GreetingResource.java` ファイルに以下のような `GreetingResource` JAX-RSリソースを自動的に生成します。"
+msgstr ""
+"Quarkus Mavenプラグインは、 `src/main/java/org/acme/spring/boot/properties/"
+"GreetingResource.java` ファイルに以下のような `GreetingResource` JAX-"
+"RSリソースを自動的に生成します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/spring-boot-properties.adoc:70
@@ -310,7 +313,9 @@ msgstr ""
 #: upstream/_versions/main/guides/spring-boot-properties.adoc:149
 #, fuzzy
 msgid "Open your browser to http://localhost:8080/greeting."
-msgstr "アプリケーションを実行するには、次の手順を実行します: `./mvnw compile quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
+msgstr ""
+"アプリケーションを実行するには、次の手順を実行します: `./mvnw compile "
+"quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/spring-boot-properties.adoc:151

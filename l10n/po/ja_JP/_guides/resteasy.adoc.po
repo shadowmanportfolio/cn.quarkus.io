@@ -29,19 +29,28 @@ msgstr "RESTEasy Classic"
 #: upstream/_guides/resteasy.adoc:13
 #, fuzzy
 msgid "This guide is about https://resteasy.dev[RESTEasy Classic] which used to be the default JAX-RS implementation until Quarkus 2.8."
-msgstr "このガイドは、Quarkus 2.8までデフォルトのJAX-RS実装として使用されていた link:https://resteasy.dev[RESTEasy Classicについて]です。"
+msgstr ""
+"このガイドは、Quarkus 2.8までデフォルトのJAX-RS実装として使用されていた "
+"link:https://resteasy.dev[RESTEasy Classicについて]です。"
 
 #. type: delimited block =
 #: upstream/_guides/resteasy.adoc:17
 #, fuzzy
 msgid "It is now recommended to use RESTEasy Reactive, which supports equally well traditional blocking workloads and reactive workloads.  For more information about RESTEasy Reactive, please see the xref:rest-json.adoc[introductory REST JSON guide] or the more detailed xref:resteasy-reactive.adoc[RESTEasy Reactive guide]."
-msgstr "現在では、従来のブロック型ワークロードとリアクティブ型ワークロードを同様にサポートするRESTEasy Reactiveの使用が推奨されています。RESTEasy Reactiveの詳細については、 link:rest-json.html[入門編のREST JSONガイド]または詳細な link:resteasy-reactive.html[RESTEasy Reactiveガイドを]参照してください。"
+msgstr ""
+"現在では、従来のブロック型ワークロードとリアクティブ型ワークロードを同様にサ"
+"ポートするRESTEasy Reactiveの使用が推奨されています。RESTEasy "
+"Reactiveの詳細については、 link:rest-json.html[入門編のREST JSONガイド]"
+"または詳細な link:resteasy-reactive.html[RESTEasy "
+"Reactiveガイドを]参照してください。"
 
 #. type: Plain text
 #: upstream/_guides/resteasy.adoc:20
 #, fuzzy
 msgid "there is another guide if you need a xref:rest-client.adoc[REST client based on RESTEasy Classic] (including support for JSON)."
-msgstr "link:rest-client.html[RESTEasy ClassicをベースにしたRESTクライアント]（JSONのサポートを含む）が必要な場合は、別のガイドを参照してください。"
+msgstr ""
+"link:rest-client.html[RESTEasy ClassicをベースにしたRESTクライアント]（JSONの"
+"サポートを含む）が必要な場合は、別のガイドを参照してください。"
 
 #. type: Title ==
 #: upstream/_guides/resteasy.adoc:21
@@ -74,7 +83,10 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_guides/resteasy.adoc:37
 #, fuzzy
 msgid "This command generates a new project importing the RESTEasy/JAX-RS and https://github.com/FasterXML/jackson[Jackson] extensions, and in particular adds the following dependency:"
-msgstr "このコマンドは、RESTEasy/JAX-RS および link:https://github.com/FasterXML/jackson[Jackson]拡張をインポートする新しいプロジェクトを生成し、特に次の依存関係を追加します。"
+msgstr ""
+"このコマンドは、RESTEasy/JAX-RS および link:https://github.com/FasterXML/jack"
+"son[Jackson]拡張をインポートする新しいプロジェクトを生成し、特に次の依存関係"
+"を追加します。"
 
 #. type: Block title
 #: upstream/_guides/resteasy.adoc:39 upstream/_guides/resteasy.adoc:68
@@ -120,7 +132,10 @@ msgstr "Quarkusは https://eclipse-ee4j.github.io/jsonb-api/[JSON-B] もサポ�
 #: upstream/_guides/resteasy.adoc:66
 #, fuzzy
 msgid "This command generates a new project importing the RESTEasy/JAX-RS and https://eclipse-ee4j.github.io/jsonb-api/[JSON-B] extensions, and in particular adds the following dependency:"
-msgstr "このコマンドは、RESTEasy/JAX-RS および link:https://eclipse-ee4j.github.io/jsonb-api/[JSON-B]拡張をインポートする新しいプロジェクトを生成し、特に次の依存関係を追加します。"
+msgstr ""
+"このコマンドは、RESTEasy/JAX-RS および link:https://eclipse-ee4j.github.io/"
+"jsonb-api/[JSON-B]拡張をインポートする新しいプロジェクトを生成し、特に次の依"
+"存関係を追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/resteasy.adoc:74
@@ -876,7 +891,9 @@ msgstr "リアクティブであること"
 #: upstream/_guides/resteasy.adoc:491
 #, fuzzy
 msgid "For reactive workloads, please always use xref:resteasy-reactive.adoc[RESTEasy Reactive]."
-msgstr "リアクティブなワークロードには、必ず link:resteasy-reactive.html[RESTEasy Reactiveを]使用してください。"
+msgstr ""
+"リアクティブなワークロードには、必ず link:resteasy-reactive.html[RESTEasy "
+"Reactiveを]使用してください。"
 
 #. type: Plain text
 #: upstream/_guides/resteasy.adoc:495
@@ -1066,7 +1083,10 @@ msgstr "link:https://en.wikipedia.org/wiki/Cross-origin_resource_sharing[クロ�
 #: upstream/_guides/resteasy.adoc:601
 #, fuzzy
 msgid "Quarkus comes with a CORS filter. Read the xref:http-reference.adoc#cors-filter[HTTP Reference Documentation] to learn how to use it."
-msgstr "Quarkusには、CORSフィルターが付属しています。使用方法については、『 link:http-reference.html#cors-filter[HTTP Reference Documentation]』を参照してください。"
+msgstr ""
+"Quarkusには、CORSフィルターが付属しています。使用方法については、『 link"
+":http-reference.html#cors-filter[HTTP Reference "
+"Documentation]』を参照してください。"
 
 #. type: Title ==
 #: upstream/_guides/resteasy.adoc:602
@@ -1106,7 +1126,9 @@ msgstr "GZip サポートが有効になったら、エンドポイントメソ�
 #: upstream/_guides/resteasy.adoc:619
 #, fuzzy
 msgid "The configuration property `quarkus.http.enable-compression` has no effect on compression support of RESTEasy Classic endpoints."
-msgstr "構成プロパティ `quarkus.http.enable-compression` は、RESTEasy Classic エンドポイントの圧縮サポートに影響を与えません。"
+msgstr ""
+"構成プロパティ `quarkus.http.enable-compression` は、RESTEasy Classic "
+"エンドポイントの圧縮サポートに影響を与えません。"
 
 #. type: Title ==
 #: upstream/_guides/resteasy.adoc:620
@@ -1160,7 +1182,10 @@ msgstr "RESTEasyとRESTクライアントの相互作用"
 #: upstream/_guides/resteasy.adoc:647
 #, fuzzy
 msgid "In Quarkus, the RESTEasy extension and xref:rest-client.adoc[the REST Client extension] share the same infrastructure.  One important consequence of this consideration is that they share the same list of providers (in the JAX-RS meaning of the word)."
-msgstr "Quarkusでは、RESTEasy拡張と link:rest-client.html[REST Client拡張は]同じインフラストラクチャを共有しています。この考慮の重要な結果の1つは、（JAX-RSの意味で）同じプロバイダリストを共有することです。"
+msgstr ""
+"Quarkusでは、RESTEasy拡張と link:rest-client.html[REST Client拡張は]同じイン"
+"フラストラクチャを共有しています。この考慮の重要な結果の1つは、（JAX-"
+"RSの意味で）同じプロバイダリストを共有することです。"
 
 #. type: Plain text
 #: upstream/_guides/resteasy.adoc:650

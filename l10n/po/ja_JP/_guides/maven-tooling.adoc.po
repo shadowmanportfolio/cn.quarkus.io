@@ -713,7 +713,10 @@ msgstr "ゴールには、次のようなオプションのパラメーターを
 #: upstream/_guides/maven-tooling.adoc:354
 #, fuzzy
 msgid "`mode` - the default value is `prod`, i.e. the production build dependency tree. Alternatively, it accepts values `test` to display the test dependency tree and `dev` to display the dev mode dependency tree;"
-msgstr "`mode` - デフォルト値は `prod` で、これはプロダクションビルドの依存関係ツリーを意味します。また、 `test` はテスト版の依存関係ツリーを、 `dev` は開発版の依存関係ツリーを表示します。"
+msgstr ""
+"`mode` - デフォルト値は `prod` "
+"で、これはプロダクションビルドの依存関係ツリーを意味します。また、 `test` "
+"はテスト版の依存関係ツリーを、 `dev` は開発版の依存関係ツリーを表示します。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:355
@@ -725,25 +728,41 @@ msgstr "`outputFile` - ディペンデンシーツリーを永続化するファ
 #: upstream/_guides/maven-tooling.adoc:356
 #, fuzzy
 msgid "`appendOutput` - the default value is `false`, indicates whether the output to the command should be appended to the file specified with the `outputFile` parameter or it should be overriden."
-msgstr "`appendOutput` - デフォルト値は `false` で、コマンドの出力を `outputFile` パラメータで指定したファイルに追加するか、上書きするかを示します。"
+msgstr ""
+"`appendOutput` - デフォルト値は `false` で、コマンドの出力を `outputFile` "
+"パラメータで指定したファイルに追加するか、上書きするかを示します。"
 
 #. type: Title ==
 #: upstream/_guides/maven-tooling.adoc:357
 #, fuzzy, no-wrap
 msgid "Downloading Maven artifact dependencies for offline development and testing"
-msgstr "オフラインでの開発・テストのためのMavenアーティファクトの依存関係のダウンロード"
+msgstr "オフラインでの開発・テストのためのMavenアーティファクトの依存関係のダウンロー"
+"ド"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:362
 #, fuzzy
 msgid "Quarkus extension dependencies are divided into the runtime extension dependencies that end up on the application runtime classpath and the deployment (or build time) extension dependencies that are resolved by Quarkus only at application build time to create the build classpath. Application developers are expected to express dependencies only on the runtime artifacts of Quarkus extensions. As a consequence, the deployment extension dependencies aren't visible to Maven plugins that aren't aware of the Quarkus extension dependency model, such as the `maven-dependency-plugin`, `go-offline-maven-plugin`, etc. That means those plugins can not be used to pre-download all the application dependencies to be able to build and test the application later in offline mode."
-msgstr "Quarkusのエクステンションの依存性は、アプリケーションのランタイムクラスパス上で終了するランタイムエクステンションの依存性と、アプリケーションのビルド時にQuarkusによって解決されてビルドクラスパスを作成する配置（またはビルド時）エクステンションの依存性に分けられます。アプリケーション開発者は、Quarkusのエクステンションのランタイムアーティファクトにのみ依存性を表現することが期待されます。その結果、 `maven-dependency-plugin` 、 `go-offline-maven-plugin` など、Quarkus拡張の依存性モデルを認識していないMavenプラグインには、展開拡張の依存性が表示されません。つまり、これらのプラグインは、後でオフラインモードでアプリケーションを構築してテストできるように、すべてのアプリケーションの依存関係を事前にダウンロードするためには使用できません。"
+msgstr ""
+"Quarkusのエクステンションの依存性は、アプリケーションのランタイムクラスパス上"
+"で終了するランタイムエクステンションの依存性と、アプリケーションのビルド時にQ"
+"uarkusによって解決されてビルドクラスパスを作成する配置（またはビルド時）エク"
+"ステンションの依存性に分けられます。アプリケーション開発者は、Quarkusのエクス"
+"テンションのランタイムアーティファクトにのみ依存性を表現することが期待されま"
+"す。その結果、 `maven-dependency-plugin` 、 `go-offline-maven-plugin` など、Q"
+"uarkus拡張の依存性モデルを認識していないMavenプラグインには、展開拡張の依存性"
+"が表示されません。つまり、これらのプラグインは、後でオフラインモードでアプリ"
+"ケーションを構築してテストできるように、すべてのアプリケーションの依存関係を"
+"事前にダウンロードするためには使用できません。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:364
 #, fuzzy
 msgid "To enable the use-case of building and testing a Quarkus application offline, the `quarkus-maven-plugin` includes the `go-offline` goal that could be called from the command line like this:"
-msgstr "オフラインでQuarkusアプリケーションを構築してテストするというユースケースを可能にするために、 `quarkus-maven-plugin` には `go-offline` というゴールが含まれており、これはコマンドラインから次のように呼び出すことができます。"
+msgstr ""
+"オフラインでQuarkusアプリケーションを構築してテストするというユースケースを可"
+"能にするために、 `quarkus-maven-plugin` には `go-offline` というゴールが含ま"
+"れており、これはコマンドラインから次のように呼び出すことができます。"
 
 #. type: delimited block -
 #: upstream/_guides/maven-tooling.adoc:368
@@ -755,7 +774,10 @@ msgstr ""
 #: upstream/_guides/maven-tooling.adoc:371
 #, fuzzy
 msgid "This goal will resolve all the runtime, build time, test and dev mode dependencies of the application downloading them to the configured local Maven repository."
-msgstr "このゴールは、アプリケーションのランタイム、ビルドタイム、テスト、および開発モードの依存関係をすべて解決し、設定されたローカルMavenリポジトリにダウンロードします。"
+msgstr ""
+"このゴールは、アプリケーションのランタイム、ビルドタイム、テスト、および開発"
+"モードの依存関係をすべて解決し、設定されたローカルMavenリポジトリにダウンロー"
+"ドします。"
 
 #. type: Title ==
 #: upstream/_guides/maven-tooling.adoc:372
@@ -998,7 +1020,13 @@ msgstr "`native`  パッケージタイプを有効にします。そのため�
 #: upstream/_guides/maven-tooling.adoc:536
 #, fuzzy
 msgid "If you want to test your native executable with Integration Tests, add the following plugin configuration. Test names `*IT` and annotated `@NativeImageTest` or `@QuarkusIntegrationTest` will be run against the native executable. See the xref:building-native-image.adoc[Native executable guide] for more info."
-msgstr "統合テストでネイティブ実行可能ファイルをテストしたい場合は、以下のプラグイン設定を追加してください。テスト名 `*IT` とアノテーション付き `@NativeImageTest` は、ネイティブ実行可能ファイルに対して実行されます。詳細については、 link:building-native-image.html[ネイティブ実行可能ファイルのガイド]を参照してください。"
+msgstr ""
+"統合テストでネイティブ実行可能ファイルをテストしたい場合は、以下のプラグイン"
+"設定を追加してください。テスト名 `*IT` とアノテーション付き "
+"`@NativeImageTest` "
+"は、ネイティブ実行可能ファイルに対して実行されます。詳細については、 link"
+":building-native-image."
+"html[ネイティブ実行可能ファイルのガイド]を参照してください。"
 
 #. type: Title ===
 #: upstream/_guides/maven-tooling.adoc:538
@@ -1015,7 +1043,8 @@ msgstr "`fast-jar` は、デフォルトの quarkus パッケージタイプで�
 #: upstream/_guides/maven-tooling.adoc:543
 #, fuzzy
 msgid "The result of the build is a directory under `target` named `quarkus-app`."
-msgstr "ビルドの結果、 `target` の下に `quarkus-app` という名前のディレクトリができます。"
+msgstr "ビルドの結果、 `target` の下に `quarkus-app` "
+"という名前のディレクトリができます。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:545
@@ -1106,7 +1135,9 @@ msgstr ""
 #: upstream/_guides/maven-tooling.adoc:598
 #, fuzzy
 msgid "More information on this topic can be found on the xref:cdi-reference.adoc#bean_discovery[Bean Discovery] section of the CDI guide."
-msgstr "このトピックの詳細については、CDIガイドの link:cdi-reference.html#bean_discovery[「Bean Discovery]」セクションを参照してください。"
+msgstr ""
+"このトピックの詳細については、CDIガイドの link:cdi-reference."
+"html#bean_discovery[「Bean Discovery]」セクションを参照してください。"
 
 #. type: Title ===
 #: upstream/_guides/maven-tooling.adoc:600
@@ -1123,13 +1154,18 @@ msgstr "Quarkusは、対象となる環境に応じて特定の設定を提供�
 #: upstream/_guides/maven-tooling.adoc:605
 #, fuzzy
 msgid "The profile can be provided directly in the Maven build's command thanks to the system property `quarkus.profile` with a command of type:"
-msgstr "プロファイルは、 `quarkus.profile` with a command of typeのシステムプロパティにより、Mavenビルドのコマンドで直接提供することができます。"
+msgstr ""
+"プロファイルは、 `quarkus.profile` with a command of typeのシステムプロパティ"
+"により、Mavenビルドのコマンドで直接提供することができます。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:612
 #, fuzzy
 msgid "However it is also possible to specify the profile directly in the POM file of the project using project properties, the Quarkus Maven plugin configuration properties or system properties set in the Quarkus Maven plugin configuration."
-msgstr "ただし、プロジェクトのプロパティ、Quarkus Mavenプラグインの設定プロパティ、またはQuarkus Mavenプラグインの設定で設定されたシステムプロパティを使用して、プロジェクトのPOMファイルでプロファイルを直接指定することも可能です。"
+msgstr ""
+"ただし、プロジェクトのプロパティ、Quarkus Mavenプラグインの設定プロパティ、"
+"またはQuarkus Mavenプラグインの設定で設定されたシステムプロパティを使用して、"
+"プロジェクトのPOMファイルでプロファイルを直接指定することも可能です。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:614
@@ -1237,7 +1273,9 @@ msgstr ""
 #: upstream/_guides/maven-tooling.adoc:690
 #, fuzzy
 msgid "Whatever the approach is chosen, the profile can still be overridden with the `quarkus.profile` system property or the `QUARKUS_PROFILE` environment variable."
-msgstr "どのような方法を選択しても、 `quarkus.profile` システムプロパティまたは `QUARKUS_PROFILE` 環境変数でプロファイルを上書きすることができます。"
+msgstr ""
+"どのような方法を選択しても、 `quarkus.profile` システムプロパティまたは "
+"`QUARKUS_PROFILE` 環境変数でプロファイルを上書きすることができます。"
 
 #. type: Title ===
 #: upstream/_guides/maven-tooling.adoc:692
@@ -1249,19 +1287,26 @@ msgstr "1つのモジュールから複数のアーティファクトの作成"
 #: upstream/_guides/maven-tooling.adoc:696
 #, fuzzy
 msgid "In some particular use cases, it can be interesting to build several artifacts of your application from the same module.  A typical example is when you want to build your application with different configuration profiles."
-msgstr "特定のユースケースでは、同じモジュールからアプリケーションの複数の成果物を構築することが興味深い場合があります。典型的な例は、異なる設定プロファイルでアプリケーションを構築したい場合です。"
+msgstr ""
+"特定のユースケースでは、同じモジュールからアプリケーションの複数の成果物を構"
+"築することが興味深い場合があります。典型的な例は、異なる設定プロファイルでア"
+"プリケーションを構築したい場合です。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:698
 #, fuzzy
 msgid "In that case, it is possible to add as many executions as needed to the Quarkus Maven plugin configuration."
-msgstr "その場合、Quarkus Mavenプラグインの設定に必要な数の実行を追加することが可能です。"
+msgstr "その場合、Quarkus "
+"Mavenプラグインの設定に必要な数の実行を追加することが可能です。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:700
 #, fuzzy
 msgid "Below is an example of a Quarkus Maven plugin configuration that will produce two builds of the same application: one using the `prod-oracle` profile and the other one using the `prod-postgresql` profile."
-msgstr "以下は、同じアプリケーションの2つのビルドを作成するQuarkus Mavenプラグイン設定の例です。1つは `prod-oracle` プロファイルを使用し、もう1つは `prod-postgresql` プロファイルを使用します。"
+msgstr ""
+"以下は、同じアプリケーションの2つのビルドを作成するQuarkus "
+"Mavenプラグイン設定の例です。1つは `prod-oracle` プロファイルを使用し、"
+"もう1つは `prod-postgresql` プロファイルを使用します。"
 
 #. type: delimited block -
 #: upstream/_guides/maven-tooling.adoc:746
@@ -1316,13 +1361,16 @@ msgstr ""
 #: upstream/_guides/maven-tooling.adoc:748
 #, fuzzy
 msgid "The default configuration profile of the first execution of the plugin is `prod-oracle`."
-msgstr "プラグインの最初の実行時のデフォルトの構成プロファイルは、 `prod-oracle` です。"
+msgstr "プラグインの最初の実行時のデフォルトの構成プロファイルは、 `prod-oracle` "
+"です。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:749
 #, fuzzy
 msgid "The output directory of the first execution of the plugin is set to `oracle-quarkus-app` instead of `quarkus-app` to have a dedicated directory."
-msgstr "プラグインの初回実行時の出力ディレクトリを `quarkus-app` ではなく `oracle-quarkus-app` に設定することで、専用のディレクトリを持つことができます。"
+msgstr ""
+"プラグインの初回実行時の出力ディレクトリを `quarkus-app` ではなく `oracle-"
+"quarkus-app` に設定することで、専用のディレクトリを持つことができます。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:750
@@ -1334,19 +1382,28 @@ msgstr "`foo`  設定プロファイルがテストの実行に使用されま�
 #: upstream/_guides/maven-tooling.adoc:751
 #, fuzzy
 msgid "The output directory of the second execution of the plugin is set to `postgresql-quarkus-app` instead of `quarkus-app` to have a dedicated directory."
-msgstr "プラグインの2回目の実行時の出力ディレクトリを `quarkus-app` ではなく `postgresql-quarkus-app` に設定することで、専用のディレクトリを持つことができます。"
+msgstr ""
+"プラグインの2回目の実行時の出力ディレクトリを `quarkus-app` ではなく "
+"`postgresql-quarkus-app` "
+"に設定することで、専用のディレクトリを持つことができます。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:753
 #, fuzzy
 msgid "With the configuration above, both profile builds will be using the same dependencies, so if we added dependencies on the Oracle and PostgreSQL drivers to the application, both of the drivers will appear in both builds."
-msgstr "上記の構成では、両方のプロファイルのビルドが同じ依存関係を使用することになるので、アプリケーションにOracleとPostgreSQLのドライバーの依存関係を追加した場合、両方のドライバーが両方のビルドに表示されることになります。"
+msgstr ""
+"上記の構成では、両方のプロファイルのビルドが同じ依存関係を使用することになる"
+"ので、アプリケーションにOracleとPostgreSQLのドライバーの依存関係を追加した場"
+"合、両方のドライバーが両方のビルドに表示されることになります。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:756
 #, fuzzy
 msgid "To isolate profile-specific dependencies from other profiles, the JDBC drivers could be added as optional dependencies to the application but configured to be included in each profile that requires them, e.g.:"
-msgstr "プロファイル固有の依存関係を他のプロファイルから分離するために、JDBCドライバをアプリケーションにオプションの依存関係として追加し、それらを必要とする各プロファイルに含まれるように設定することができます。"
+msgstr ""
+"プロファイル固有の依存関係を他のプロファイルから分離するために、JDBCドライバ"
+"をアプリケーションにオプションの依存関係として追加し、それらを必要とする各プ"
+"ロファイルに含まれるように設定することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/maven-tooling.adoc:802
@@ -1438,7 +1495,11 @@ msgstr "JVMモードでのカスタムテスト構成プロファイル"
 #: upstream/_guides/maven-tooling.adoc:823
 #, fuzzy
 msgid "By default, Quarkus tests in JVM mode are run using the `test` configuration profile. If you are not familiar with Quarkus configuration profiles, everything you need to know is explained in the xref:config.adoc#configuration-profiles[Configuration Profiles Documentation]."
-msgstr "デフォルトでは、JVMモードのQuarkusテストは、 `test` 構成プロファイルを使用して実行されます。Quarkusの設定プロファイルに慣れていない場合は、 link:config.html#configuration-profiles[設定プロファイル]のドキュメントで必要な情報がすべて説明されていますので、そちらを参照してください。"
+msgstr ""
+"デフォルトでは、JVMモードのQuarkusテストは、 `test` 構成プロファイルを使用し"
+"て実行されます。Quarkusの設定プロファイルに慣れていない場合は、 link:config."
+"html#configuration-profiles[設定プロファイル]のドキュメントで必要な情報がすべ"
+"て説明されていますので、そちらを参照してください。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:827
@@ -1503,13 +1564,24 @@ msgstr "Bootstrap Mavenのプロパティ"
 #: upstream/_guides/maven-tooling.adoc:876
 #, fuzzy
 msgid "Quarkus bootstrap includes a Maven resolver implementation that is used to resolve application runtime and build time dependencies. The Quarkus Maven resolver is initialized from the same Maven command line that launched the build, test or dev mode. Typically, there is no need to add any extra configuration for it. However, there could be cases where an extra configuration option may be necessary to properly resolve application dependencies in test or dev modes, or IDEs."
-msgstr "Quarkusのブートストラップには、アプリケーションのランタイムおよびビルドタイムの依存関係を解決するために使用されるMavenリゾルバの実装が含まれています。QuarkusのMavenリゾルバは、ビルド、テスト、または開発モードを起動したのと同じMavenコマンドラインから初期化されます。通常は、追加の設定を行う必要はありません。ただし、テストモード、開発モード、またはIDEでアプリケーションの依存関係を適切に解決するために、追加の設定オプションが必要な場合があります。"
+msgstr ""
+"Quarkusのブートストラップには、アプリケーションのランタイムおよびビルドタイム"
+"の依存関係を解決するために使用されるMavenリゾルバの実装が含まれています。Quar"
+"kusのMavenリゾルバは、ビルド、テスト、または開発モードを起動したのと同じMaven"
+"コマンドラインから初期化されます。通常は、追加の設定を行う必要はありません。"
+"ただし、テストモード、開発モード、またはIDEでアプリケーションの依存関係を適切"
+"に解決するために、追加の設定オプションが必要な場合があります。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:878
 #, fuzzy
 msgid "Maven test plugins (such as `surefire` and `failsafe`), for example, are not propagating build system properties to the running tests by default. Which means some of the system properties set by the Maven CLI aren't available for the Quarkus Maven resolver initialized for the tests, which may result in test dependencies being resolved using different settings than the main Maven build."
-msgstr "たとえば、Mavenテストプラグイン（ `surefire` や `failsafe` など）は、デフォルトではビルドシステムプロパティを実行中のテストに伝播しません。これは、Maven CLIによって設定されたシステムプロパティの一部が、テスト用に初期化されたQuarkus Mavenリゾルバで利用できないことを意味し、テストの依存関係がメインのMavenビルドと異なる設定で解決される可能性があります。"
+msgstr ""
+"たとえば、Mavenテストプラグイン（ `surefire` や `failsafe` など）は、デフォル"
+"トではビルドシステムプロパティを実行中のテストに伝播しません。これは、Maven "
+"CLIによって設定されたシステムプロパティの一部が、"
+"テスト用に初期化されたQuarkus Mavenリゾルバで利用できないことを意味し、テスト"
+"の依存関係がメインのMavenビルドと異なる設定で解決される可能性があります。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:880
@@ -1592,7 +1664,14 @@ msgstr "none"
 #: upstream/_guides/maven-tooling.adoc:903
 #, fuzzy, no-wrap
 msgid "This property may be useful to help the Maven resolver identify the top-level Maven project in the workspace. By default, the Maven resolver will be discovering a project's workspace by navigating the parent-module POM relationship. However there could be project layouts that are using an aggregator module which isn't appearing as the parent for its modules. In this case, this property will help the Quarkus Maven resolver to properly discover the workspace."
-msgstr "このプロパティは、Maven リゾルバがワークスペース内のトップレベルの Maven プロジェクトを識別するのに役立つ場合があります。デフォルトでは、Maven リゾルバは親モジュール POM 関係をナビゲートしてプロジェクトのワークスペースを検出します。しかし、モジュールの親として表示されていないアグリゲータモジュールを使用しているプロジェクトレイアウトがあるかもしれません。この場合、このプロパティは、Quarkus Mavenリゾルバがワークスペースを適切に検出するのに役立ちます。"
+msgstr ""
+"このプロパティは、Maven リゾルバがワークスペース内のトップレベルの Maven "
+"プロジェクトを識別するのに役立つ場合があります。デフォルトでは、Maven "
+"リゾルバは親モジュール POM 関係をナビゲートしてプロジェクトのワークスペースを"
+"検出します。しかし、モジュールの親として表示されていないアグリゲータモジュー"
+"ルを使用しているプロジェクトレイアウトがあるかもしれません。この場合、このプ"
+"ロパティは、Quarkus "
+"Mavenリゾルバがワークスペースを適切に検出するのに役立ちます。"
 
 #. type: Table
 #: upstream/_guides/maven-tooling.adoc:904
@@ -1610,13 +1689,25 @@ msgstr "`false`"
 #: upstream/_guides/maven-tooling.adoc:907
 #, fuzzy, no-wrap
 msgid "By default, the Quarkus Maven resolver is reading project's POMs directly when discovering the project's layout. While in most cases it works well enough and relatively fast, reading raw POMs has its limitation. E.g. if a POM includes modules in a profile, these modules will not be discovered. This system property enables project's layout discovery based on the effective POM models, that are properly interpolated, instead of the raw ones. The reason this option is not enabled by default is it may appear to be significantly more time consuming that could increase, e.g. CI testing times. Until there is a better approach found that could be used by default, projects that require it should enable this option."
-msgstr "デフォルトでは、QuarkusのMavenリゾルバは、プロジェクトのレイアウトを発見する際に、プロジェクトのPOMを直接読みます。ほとんどの場合、これは十分に機能し、比較的高速ですが、生のPOMを読み込むことには限界があります。例えば、POMにプロファイルのモジュールが含まれている場合、これらのモジュールは検出されません。このシステム・プロパティは、生のPOMではなく、適切に補間された効果的なPOMモデルに基づいて、プロジェクトのレイアウト・ディスカバリーを可能にします。このオプションがデフォルトで有効になっていない理由は、CIテスト時間などを増加させる可能性があり、かなり時間がかかると思われるためです。デフォルトで使用できるより良い方法が見つかるまでは、このオプションを必要とするプロジェクトでは有効にしてください。"
+msgstr ""
+"デフォルトでは、QuarkusのMavenリゾルバは、プロジェクトのレイアウトを発見する"
+"際に、プロジェクトのPOMを直接読みます。ほとんどの場合、これは十分に機能し、比"
+"較的高速ですが、生のPOMを読み込むことには限界があります。例えば、POMにプロフ"
+"ァイルのモジュールが含まれている場合、これらのモジュールは検出されません。こ"
+"のシステム・プロパティは、生のPOMではなく、適切に補間された効果的なPOMモデル"
+"に基づいて、プロジェクトのレイアウト・ディスカバリーを可能にします。このオプ"
+"ションがデフォルトで有効になっていない理由は、CIテスト時間などを増加させる可"
+"能性があり、かなり時間がかかると思われるためです。デフォルトで使用できるより"
+"良い方法が見つかるまでは、このオプションを必要とするプロジェクトでは有効にし"
+"てください。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:910
 #, fuzzy
 msgid "These system properties above could be added to, e.g., a `surefire` and/or `failsafe` plugin configuration as"
-msgstr "上記のシステムプロパティは、例えば、 `surefire` および/または `failsafe` のプラグイン設定に以下のように追加することができます。"
+msgstr ""
+"上記のシステムプロパティは、例えば、 `surefire` および/または `failsafe` "
+"のプラグイン設定に以下のように追加することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/maven-tooling.adoc:934
@@ -1650,7 +1741,8 @@ msgstr ""
 #: upstream/_guides/maven-tooling.adoc:937
 #, fuzzy
 msgid "Propagate `maven.home` system property set by the Maven CLI to the tests"
-msgstr "Maven CLIによって設定された `maven.home` システムプロパティをテストに伝搬する。"
+msgstr "Maven CLIによって設定された `maven.home` "
+"システムプロパティをテストに伝搬する。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:938
@@ -1692,13 +1784,23 @@ msgstr "`maven.multiModuleProjectDirectory` は、Maven コード自体が参照
 #: upstream/_guides/maven-tooling.adoc:952
 #, fuzzy
 msgid "The `${maven.multiModuleProjectDirectory}` will be resolved to the first directory that contains `.mvn` directory as its child going up the workspace file system tree starting from the current directory (or the one specified with the `-f` argument) from which the `mvn` command was launched. If the `.mvn` directory was not found, however, the `${maven.multiModuleProjectDirectory}` will be pointing to the directory from which the `mvn` command was launched (or the one targeted with the `-f` argument)."
-msgstr "`${maven.multiModuleProjectDirectory}` は、 `mvn` コマンドを起動したカレント・ディレクトリ（または `-f` 引数で指定したディレクトリ）からワークスペース・ファイル・システム・ツリーをさかのぼり、 `.mvn` ディレクトリを子として含む最初のディレクトリを指すように解決されます。しかし、 `.mvn` ディレクトリが見つからなかった場合、 `${maven.multiModuleProjectDirectory}` は、 `mvn` コマンドが起動されたディレクトリ（または `-f` 引数で指定されたディレクトリ）を指します。"
+msgstr ""
+"`${maven.multiModuleProjectDirectory}` は、 `mvn` "
+"コマンドを起動したカレント・ディレクトリ（または `-f` 引数で指定したディレク"
+"トリ）からワークスペース・ファイル・システム・ツリーをさかのぼり、 `.mvn` デ"
+"ィレクトリを子として含む最初のディレクトリを指すように解決されます。しかし、 "
+"`.mvn` ディレクトリが見つからなかった場合、 `${maven."
+"multiModuleProjectDirectory}` は、 `mvn` コマンドが起動されたディレクトリ（"
+"または `-f` 引数で指定されたディレクトリ）を指します。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:955
 #, fuzzy
 msgid "The `${session.topLevelProject.basedir.absolutePath}` will be pointing either to the directory from which the `mvn` command was launched or to the directory targeted with the `-f` argument, if it was specified."
-msgstr "`${session.topLevelProject.basedir.absolutePath}` は、 `mvn` コマンドが起動されたディレクトリか、 `-f` 引数が指定されていた場合は、その引数で指定されたディレクトリを指します。"
+msgstr ""
+"`${session.topLevelProject.basedir.absolutePath}` は、 `mvn` "
+"コマンドが起動されたディレクトリか、 `-f` "
+"引数が指定されていた場合は、その引数で指定されたディレクトリを指します。"
 
 #. type: Title ==
 #: upstream/_guides/maven-tooling.adoc:957
@@ -1711,19 +1813,29 @@ msgstr "Quarkusプロジェクト情報"
 #: upstream/_guides/maven-tooling.adoc:1037
 #, fuzzy
 msgid "This goal was introduced in Quarkus Maven plugin 2.7.0.Final and can be used in projects that are based on Quarkus version 2.0.0.Final or later."
-msgstr "この目標はQuarkus Mavenプラグイン2.7.0.Finalで導入され、Quarkusバージョン2.0.0.Final以降をベースにしたプロジェクトで使用することが可能です。"
+msgstr ""
+"この目標はQuarkus Mavenプラグイン2.7.0.Finalで導入され、Quarkusバージョン2.0."
+"0.Final以降をベースにしたプロジェクトで使用することが可能です。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:963
 #, fuzzy
 msgid "The Quarkus Maven plugin includes a goal called `info` (currently marked as 'experimental') that logs Quarkus-specific information about the project, such as: the imported Quarkus platform BOMs and the Quarkus extensions found among the project dependencies.  In a multi-module project `quarkus:info` will assume that the current module, in which it is executed, is the main module of the application."
-msgstr "Quarkus Mavenプラグインには、 `info` （現在「experimental」と表示されています）というゴールがあり、インポートされたQuarkusプラットフォームBOMやプロジェクトの依存関係の中で見つかったQuarkusエクステンションなど、プロジェクトに関するQuarkus固有の情報をログに記録しています。マルチモジュールプロジェクトでは、 `quarkus:info` は、実行されている現在のモジュールがアプリケーションのメインモジュールであると仮定します。"
+msgstr ""
+"Quarkus Mavenプラグインには、 `info` （現在「experimental」と表示されています"
+"）というゴールがあり、インポートされたQuarkusプラットフォームBOMやプロジェク"
+"トの依存関係の中で見つかったQuarkusエクステンションなど、プロジェクトに関する"
+"Quarkus固有の情報をログに記録しています。マルチモジュールプロジェクトでは、 "
+"`quarkus:info` は、実行されている現在のモジュールがアプリケーションのメインモ"
+"ジュールであると仮定します。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:965
 #, fuzzy
 msgid "The report generated by `quarkus:info` is not currently including the Quarkus Maven plugin information, however it's planned to be added in the future releases."
-msgstr "`quarkus:info` によって生成されるレポートには、現在のところ Quarkus Maven プラグインの情報は含まれていませんが、今後のリリースで追加される予定です。"
+msgstr ""
+"`quarkus:info` によって生成されるレポートには、現在のところ Quarkus Maven "
+"プラグインの情報は含まれていませんが、今後のリリースで追加される予定です。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:967
@@ -1766,7 +1878,8 @@ msgstr ""
 #: upstream/_guides/maven-tooling.adoc:997
 #, fuzzy
 msgid "Quarkus platform BOMs imported in the project (BOMs imported by parent POMs will also be reported)"
-msgstr "プロジェクトにインポートされたQuarkusプラットフォームBOM（親POMによってインポートされたBOMも報告されます。）"
+msgstr "プロジェクトにインポートされたQuarkusプラットフォームBOM（親POMによってインポ"
+"ートされたBOMも報告されます。）"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:998
@@ -1790,13 +1903,18 @@ msgstr "が管理するQuarkus拡張の直接的な依存関係。 `quarkus-came
 #: upstream/_guides/maven-tooling.adoc:1001
 #, fuzzy
 msgid "Direct Quarkus extensions dependencies that aren't managed by Quarkus BOMs but found in the Quarkus extension registry"
-msgstr "Quarkus BOMで管理されていないが、Quarkusエクステンションレジストリで検出された、Quarkusエクステンションの直接的な依存関係"
+msgstr ""
+"Quarkus BOMで管理されていないが、Quarkusエクステンションレジストリで検出され"
+"た、Quarkusエクステンションの直接的な依存関係"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:1003
 #, fuzzy
 msgid "`quarkus:info` will also report Quarkus extensions that aren't found in the Quarkus extension registries if those are present among the project dependencies, indicating they have an 'unknown origin'."
-msgstr "`quarkus:info` また、プロジェクトの依存関係の中にQuarkusエクステンションがある場合、Quarkusエクステンションレジストリにないエクステンションが報告され、「不明な起源」であることが示されます。"
+msgstr ""
+"`quarkus:info` また、プロジェクトの依存関係の中にQuarkusエクステンションがあ"
+"る場合、Quarkusエクステンションレジストリにないエクステンションが報告され、「"
+"不明な起源」であることが示されます。"
 
 #. type: Title ===
 #: upstream/_guides/maven-tooling.adoc:1005
@@ -1808,7 +1926,13 @@ msgstr "ズレたバージョンの高さ調整"
 #: upstream/_guides/maven-tooling.adoc:1008
 #, fuzzy
 msgid "`quarkus:info` will also highlight basic Quarkus dependency version misalignments, in case they are detected. For example, if we modify the project mentioned above by removing the `kogito-quarkus-decisions` extension from the dependencies and adding a `2.6.3.Final` `<version>` element to the `quarkus-resteasy-reactive` dependency that is managed by the `quarkus-bom` and then run `quarkus:info` again, we'll see something like:"
-msgstr "`quarkus:info` は、基本的なQuarkusの依存関係のバージョンの不整合が検出された場合にも、それを強調表示します。例えば、上記のプロジェクトを修正して、依存関係から `kogito-quarkus-decisions` 拡張を削除し、 `quarkus-bom` が管理している `quarkus-resteasy-reactive` の依存関係に `2.6.3.Final` `&amp;lt;version&amp;gt;` の要素を追加して、再度 `quarkus:info` を実行すると、次のような表示になります。"
+msgstr ""
+"`quarkus:info` は、基本的なQuarkusの依存関係のバージョンの不整合が検出された"
+"場合にも、それを強調表示します。例えば、上記のプロジェクトを修正して、"
+"依存関係から `kogito-quarkus-decisions` 拡張を削除し、 `quarkus-bom` "
+"が管理している `quarkus-resteasy-reactive` の依存関係に `2.6.3.Final` "
+"`&amp;lt;version&amp;gt;` の要素を追加して、再度 `quarkus:info` "
+"を実行すると、次のような表示になります。"
 
 #. type: delimited block -
 #: upstream/_guides/maven-tooling.adoc:1028
@@ -1837,13 +1961,19 @@ msgstr ""
 #: upstream/_guides/maven-tooling.adoc:1031
 #, fuzzy
 msgid "The `quarkus-kogito-bom` import is now reported as 'unnecessary' since none of the Quarkus extensions it includes are found among the project dependencies"
-msgstr "`quarkus-kogito-bom` のインポートは、プロジェクトの依存関係の中にQuarkusのエクステンションがないため、「不要」と報告されるようになりました。"
+msgstr ""
+"`quarkus-kogito-bom` のインポートは、プロジェクトの依存関係の中にQuarkusのエ"
+"クステンションがないため、「不要」と報告されるようになりました。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:1032
 #, fuzzy
 msgid "The version `2.6.3.Final` of the `quarkus-resteasy-reactive` is now reported as being misaligned with the version managed by the Quarkus platform BOM imported in the project, which is {quarkus-version}"
-msgstr "`quarkus-resteasy-reactive` のバージョン `2.6.3.Final` が、プロジェクトにインポートされた Quarkus プラットフォームの BOM で管理されているバージョンとずれていることが報告されるようになり、{quarkus-version}となりました。"
+msgstr ""
+"`quarkus-resteasy-reactive` のバージョン `2.6.3.Final` が、"
+"プロジェクトにインポートされた Quarkus プラットフォームの BOM "
+"で管理されているバージョンとずれていることが報告されるようになり、{quarkus-"
+"version}となりました。"
 
 #. type: Title ==
 #: upstream/_guides/maven-tooling.adoc:1034
@@ -1855,31 +1985,53 @@ msgstr "Quarkusプロジェクト・アップデート"
 #: upstream/_guides/maven-tooling.adoc:1039
 #, fuzzy
 msgid "The `quarkus:update` goal (currently marked as 'experimental') provided by the Quarkus Maven plugin can be used to check whether there are Quarkus-related updates available for a project, such as: new releases of the relevant Quarkus platform BOMs and non-platform Quarkus extensions present in the project. In a multi-module project the `update` goal is meant to be executed from the main Quarkus application module."
-msgstr "Quarkus Mavenプラグインで提供される `quarkus:update` （現在は「experimental」とマークされています）を使用して、プロジェクトで利用できるQuarkus関連の更新があるかどうかを確認できます。たとえば、関連するQuarkusプラットフォームBOMの新しいリリースやプロジェクトにあるプラットフォーム以外のQuarkus拡張機能などが挙げられます。マルチモジュールプロジェクトでは、メインQuarkusアプリケーションモジュールから `update` を実行することを想定しています。"
+msgstr ""
+"Quarkus Mavenプラグインで提供される `quarkus:update` （現在は「experimental」"
+"とマークされています）を使用して、プロジェクトで利用できるQuarkus関連の更新が"
+"あるかどうかを確認できます。たとえば、関連するQuarkusプラットフォームBOMの新"
+"しいリリースやプロジェクトにあるプラットフォーム以外のQuarkus拡張機能などが挙"
+"げられます。マルチモジュールプロジェクトでは、"
+"メインQuarkusアプリケーションモジュールから `update` "
+"を実行することを想定しています。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:1041
 #, fuzzy
 msgid "At this point, the `quarkus:update` goal does not actually apply the recommended updates but simply reports what they are and how to apply them manually."
-msgstr "この時点では、 `quarkus:update` の目標は、推奨されるアップデートを実際に適用するのではなく、単にその内容や手動での適用方法を報告するものです。"
+msgstr ""
+"この時点では、 `quarkus:update` の目標は、推奨されるアップデートを実際に適用"
+"するのではなく、単にその内容や手動での適用方法を報告するものです。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:1043
 #, fuzzy
 msgid "The Quarkus Maven plugin version isn't currently included in the update report, however it's planned to be added in the future releases."
-msgstr "Quarkus Mavenプラグインのバージョンは、現在、アップデートレポートに含まれていませんが、将来のリリースで追加される予定です。"
+msgstr "Quarkus Mavenプラグインのバージョンは、現在、アップデートレポートに含まれてい"
+"ませんが、将来のリリースで追加される予定です。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:1045
 #, fuzzy
 msgid "The way `quarkus:update` works, first, all the direct Quarkus extension dependencies of the project are collected (those that are managed by the Quarkus platform BOMs and those that aren't but found in the Quarkus extension registries). Then the configured Quarkus extension registries (typically the `registry.quarkus.io`) will be queried for the latest recommended/supported Quarkus platform versions and non-platform Quarkus extensions compatible with them. The algorithm will then select the latest compatible combination of all the extensions found in the project, assuming such a combination actually exists. Otherwise, no updates will be suggested."
-msgstr "`quarkus:update` の動作は、まず、プロジェクトのQuarkus拡張機能の直接的な依存関係をすべて収集します（QuarkusプラットフォームBOMによって管理されているものと、そうでなくQuarkus拡張機能レジストリで見つかるもの）。次に、設定されたQuarkus拡張機能レジストリ（通常は `registry.quarkus.io` ）に、推奨／サポートされる最新のQuarkusプラットフォームバージョンと、それと互換性のあるプラットフォーム以外のQuarkus拡張機能が照会されます。アルゴリズムは、プロジェクトで見つかったすべての拡張機能の最新の互換性のある組み合わせを選択します（そのような組み合わせが実際に存在すると仮定します）。そうでない場合は、更新は提案されません。"
+msgstr ""
+"`quarkus:update` の動作は、まず、プロジェクトのQuarkus拡張機能の直接的な依存"
+"関係をすべて収集します（QuarkusプラットフォームBOMによって管理されているもの"
+"と、そうでなくQuarkus拡張機能レジストリで見つかるもの）。次に、設定されたQuar"
+"kus拡張機能レジストリ（通常は `registry.quarkus.io` ）に、推奨／サポートされ"
+"る最新のQuarkusプラットフォームバージョンと、それと互換性のあるプラットフォー"
+"ム以外のQuarkus拡張機能が照会されます。アルゴリズムは、プロジェクトで見つかっ"
+"たすべての拡張機能の最新の互換性のある組み合わせを選択します（そのような組み"
+"合わせが実際に存在すると仮定します）。そうでない場合は、更新は提案されません"
+"。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:1047
 #, fuzzy
 msgid "Assuming we have a project including Kogito, Camel and core Quarkus extensions available in the Quarkus platform based on Quarkus `2.7.1.Final`, the output of the `quarkus:update` would look like:"
-msgstr "Quarkus `2.7.1.Final` に基づいてQuarkusプラットフォームで利用できるKogito、Camel、コアQuarkus拡張を含むプロジェクトがあると仮定すると、 `quarkus:update` の出力は次のようになります。"
+msgstr ""
+"Quarkus `2.7.1.Final` に基づいてQuarkusプラットフォームで利用できるKogito、Ca"
+"mel、コアQuarkus拡張を含むプロジェクトがあると仮定すると、 `quarkus:update` "
+"の出力は次のようになります。"
 
 #. type: delimited block -
 #: upstream/_guides/maven-tooling.adoc:1063
@@ -1911,13 +2063,20 @@ msgstr "現在推奨されているQuarkusプラットフォームのBOMアッ�
 #: upstream/_guides/maven-tooling.adoc:1068
 #, fuzzy
 msgid "Typically, a single project property will be used to manage all the Quarkus platform BOMs but the implementation isn't currently smart enough to point that out and will report updates for each BOM individually."
-msgstr "通常、1つのプロジェクトプロパティを使用して、すべてのQuarkusプラットフォームBOMを管理しますが、現在の実装はその点を十分に考慮しておらず、各BOMの更新が個別に報告されます。"
+msgstr ""
+"通常、1つのプロジェクトプロパティを使用して、すべてのQuarkusプラットフォームB"
+"OMを管理しますが、現在の実装はその点を十分に考慮しておらず、各BOMの更新が個別"
+"に報告されます。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:1070
 #, fuzzy
 msgid "If we modify the project to remove all the Kogito extensions from the project, change the version of the `quarkus-resteasy-reactive` extension to `2.6.3.Final` and downgrade `quarkus-prettytime` which is not included in the Quarkus platform BOMs to `0.2.0`, `quarkus:update` will report something like:"
-msgstr "プロジェクトを修正して、プロジェクトからKogito拡張機能をすべて削除し、 `quarkus-resteasy-reactive` 拡張機能のバージョンを `2.6.3.Final` に変更し、QuarkusプラットフォームのBOMに含まれない `quarkus-prettytime` を `0.2.0` にダウングレードすると、 `quarkus:update` のように報告されます。"
+msgstr ""
+"プロジェクトを修正して、プロジェクトからKogito拡張機能をすべて削除し、 "
+"`quarkus-resteasy-reactive` 拡張機能のバージョンを `2.6.3.Final` に変更し、"
+"QuarkusプラットフォームのBOMに含まれない `quarkus-prettytime` を `0.2.0` "
+"にダウングレードすると、 `quarkus:update` のように報告されます。"
 
 #. type: delimited block -
 #: upstream/_guides/maven-tooling.adoc:1083
@@ -1945,13 +2104,16 @@ msgstr "プロジェクトで現在推奨されているQuarkusプラットフ�
 #: upstream/_guides/maven-tooling.adoc:1087
 #, fuzzy
 msgid "Given that the project does not include any Kogito extensions, the BOM import is recommended to be removed"
-msgstr "プロジェクトにKogitoの拡張機能が含まれていないため、BOMのインポートを削除することをお勧めします。"
+msgstr "プロジェクトにKogitoの拡張機能が含まれていないため、BOMのインポートを削除する"
+"ことをお勧めします。"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:1088
 #, fuzzy
 msgid "An outdated version of the `quarkus-resteasy-reactive` is recommended to be removed in favor of the one managed by the `quarkus-bom`"
-msgstr "で管理されている古いバージョンの `quarkus-resteasy-reactive` は削除することをお勧めします。 `quarkus-bom`"
+msgstr ""
+"で管理されている古いバージョンの `quarkus-resteasy-reactive` "
+"は削除することをお勧めします。 `quarkus-bom`"
 
 #. type: Plain text
 #: upstream/_guides/maven-tooling.adoc:1089
@@ -1969,7 +2131,12 @@ msgstr "Quarkusプロジェクトの修正"
 #: upstream/_guides/maven-tooling.adoc:1093
 #, fuzzy
 msgid "As was mentioned above, `quarkus:info`, besides reporting Quarkus platform and extension versions, performs a quick version alignment check, to make sure the extension versions used in the project are compatible with the imported Quarkus platform BOMs. If misalignments are detected, the following warning message will be logged:"
-msgstr "前述のとおり、 `quarkus:info` は、Quarkusプラットフォームと拡張機能のバージョンをレポートするだけでなく、プロジェクトで使用されている拡張機能のバージョンとインポートしたQuarkusプラットフォームBOMの互換性を確認するために、バージョンのクイックアライメントチェックを実行します。不整合が検出された場合、次の警告メッセージが記録されます。"
+msgstr ""
+"前述のとおり、 `quarkus:info` は、Quarkusプラットフォームと拡張機能のバージョ"
+"ンをレポートするだけでなく、プロジェクトで使用されている拡張機能のバージョン"
+"とインポートしたQuarkusプラットフォームBOMの互換性を確認するために、バージョ"
+"ンのクイックアライメントチェックを実行します。不整合が検出された場合、次の警"
+"告メッセージが記録されます。"
 
 #. type: delimited block -
 #: upstream/_guides/maven-tooling.adoc:1097
@@ -1981,7 +2148,11 @@ msgstr ""
 #: upstream/_guides/maven-tooling.adoc:1099
 #, fuzzy
 msgid "When the `rectify` option is enabled, `quarkus:update`, instead of suggesting the latest recommended Quarkus version updates, will log update instructions to simply align the extension dependency versions found in the project with the currently imported Quarkus platform BOMs."
-msgstr "`rectify` オプションを有効にすると、 `quarkus:update` 、推奨されるQuarkusの最新バージョンへの更新が提案されるのではなく、プロジェクトで見つかった拡張機能の依存バージョンを現在インポートされているQuarkusプラットフォームBOMと合わせるだけの更新指示がログに記録されます。"
+msgstr ""
+"`rectify` オプションを有効にすると、 `quarkus:update` 、推奨されるQuarkusの最"
+"新バージョンへの更新が提案されるのではなく、プロジェクトで見つかった拡張機能"
+"の依存バージョンを現在インポートされているQuarkusプラットフォームBOMと合わせ"
+"るだけの更新指示がログに記録されます。"
 
 #~ msgid "If you decide to generate a REST resource (using the `className` attribute), the endpoint is exposed at: `http://localhost:8080/$path`.  If you use the default `path`, the URL is: http://localhost:8080/hello."
 #~ msgstr "REST リソースを生成することにした場合 ( `className` 属性を使用)、エンドポイントは次の場所で公開されます: `http://localhost:8080/$path` 。デフォルトの `path` を使用する場合、URL は http://localhost:8080/hello です。"

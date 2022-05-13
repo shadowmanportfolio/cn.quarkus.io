@@ -133,7 +133,8 @@ msgstr "<li> <p>開発者の喜び</p> </li>"
 #: upstream/_guides/0-glossary.adoc:17
 #, fuzzy
 msgid "for everything going from live reload to the opinionated layer to a single config file"
-msgstr "ライブリロードからオピニオンレイヤー、単一のコンフィグファイルまですべてに対応"
+msgstr "ライブリロードからオピニオンレイヤー、単一のコンフィグファイルまですべてに対"
+"応"
 
 #. type: Labeled list
 #: upstream/_guides/0-glossary.adoc:17

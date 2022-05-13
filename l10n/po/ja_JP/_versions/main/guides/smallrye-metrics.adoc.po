@@ -34,7 +34,9 @@ msgstr ""
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:15
 #, fuzzy
 msgid "SmallRye Metrics allows applications to gather metrics and statistics that provide insights into what is happening inside an application. The metrics can be read remotely using the JSON or OpenMetrics format to be processed by additional tools such as Prometheus and stored for analysis and visualization."
-msgstr "SmallRye Metricsでは、アプリケーションが様々なメトリクスや統計情報を収集し、アプリケーション内で何が起こっているかを把握することができます。"
+msgstr ""
+"SmallRye Metricsでは、アプリケーションが様々なメトリクスや統計情報を収集し、"
+"アプリケーション内で何が起こっているかを把握することができます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/smallrye-metrics.adoc:17

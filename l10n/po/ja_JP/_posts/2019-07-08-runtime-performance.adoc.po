@@ -38,7 +38,11 @@ msgstr "ポスト"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:1
 #, fuzzy, no-wrap
 msgid "Quarkus has so far been focused on start-up time and memory footprint, but runtime performance is important as well. Find out how well Quarkus performs in both Native and JVM modes."
-msgstr "layout: post date: 2019-07-08 00:00 +0100 author: johara tags: performance synopsis:Quarkusはこれまで起動時間やメモリフットプリントに注目してきましたが、ランタイムパフォーマンスも重要です。QuarkusがNativeモードとJVMモードの両方でどのくらいのパフォーマンスを発揮するのかを調べてみましょう。---"
+msgstr ""
+"layout: post date: 2019-07-08 00:00 +0100 author: johara tags: performance sy"
+"nopsis:Quarkusはこれまで起動時間やメモリフットプリントに注目してきましたが、"
+"ランタイムパフォーマンスも重要です。QuarkusがNativeモードとJVMモードの両方で"
+"どのくらいのパフォーマンスを発揮するのかを調べてみましょう。---"
 
 #. type: YAML Front Matter: tags
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:1
@@ -56,19 +60,26 @@ msgstr "Quarkusのランタイムパフォーマンス"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:13
 #, fuzzy
 msgid "This the first part of a blog series that delves deeper into Quarkus performance.  There are many aspects to the performance of a framework from bootstrap time to memory usage, compile time and runtime performance."
-msgstr "今回は、Quarkusのパフォーマンスをより深く掘り下げるブログシリーズの第一弾です。フレームワークのパフォーマンスには、起動時間、メモリ使用量、コンパイル時、実行時のパフォーマンスなど、さまざまな側面があります。"
+msgstr ""
+"今回は、Quarkusのパフォーマンスをより深く掘り下げるブログシリーズの第一弾です"
+"。フレームワークのパフォーマンスには、起動時間、メモリ使用量、コンパイル時、"
+"実行時のパフォーマンスなど、さまざまな側面があります。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:15
 #, fuzzy
 msgid "The definition of _\"performance\"_ is contextual and these series of blog posts aims to investigate the performance of Quarkus in varying contexts."
-msgstr "_パフォーマンス」_の定義は文脈によって異なりますが、この一連のブログ記事は、さまざまな文脈におけるQuarkusのパフォーマンスを調査することを目的としています。"
+msgstr ""
+"_パフォーマンス」_の定義は文脈によって異なりますが、この一連のブログ記事は、"
+"さまざまな文脈におけるQuarkusのパフォーマンスを調査することを目的としています"
+"。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:17
 #, fuzzy
 msgid "This article will focus on **runtime performance** of applications built with Quarkus."
-msgstr "この記事では、Quarkusで構築されたアプリケーションの *ランタイムパフォーマンス*に焦点を当てます。"
+msgstr "この記事では、Quarkusで構築されたアプリケーションの "
+"*ランタイムパフォーマンス*に焦点を当てます。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:59
@@ -80,43 +91,74 @@ msgstr "tl;dr - まとめ"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:62
 #, fuzzy
 msgid "A REST application that retrieves data from a postgres database using transactions was created to compare the throughput and response latencies of Quarkus and Thorntail.  The application was put under varying degrees of load, to demonstrate how Quarkus scales."
-msgstr "トランザクションを使用してpostgresデータベースからデータを取得するRESTアプリケーションを作成し、QuarkusとThorntailのスループットとレスポンスレイテンシーを比較しました。このアプリケーションは、Quarkusがどのようにスケールするかを示すために、さまざまな負荷をかけました。"
+msgstr ""
+"トランザクションを使用してpostgresデータベースからデータを取得するRESTアプリ"
+"ケーションを作成し、QuarkusとThorntailのスループットとレスポンスレイテンシー"
+"を比較しました。このアプリケーションは、Quarkusがどのようにスケールするかを示"
+"すために、さまざまな負荷をかけました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:64
 #, fuzzy
 msgid "Quarkus running in native mode, supporting 40 concurrent connections, has shown to provide up to an {quarkusNativeMaxThroughputIncrease}% increase in maximum throughput whilst reducing maximum response time latencies by up to {quarkusnativemaxresponsetimereduction}% compared to Thorntail for a single process."
-msgstr "ネイティブモードで動作するQuarkusは、40の同時接続をサポートしており、単一プロセスのThorntailと比較して、最大スループットが最大{quarkusNativeMaxThroughputIncrease}%向上し、最大応答時間のレイテンシーが最大{quarkusnativemaxresponsetimereduction}%削減されることが示されています。"
+msgstr ""
+"ネイティブモードで動作するQuarkusは、40の同時接続をサポートしており、単一プロ"
+"セスのThorntailと比較して、最大スループットが最大{quarkusNativeMaxThroughputI"
+"ncrease}%向上し、最大応答時間のレイテンシーが最大{quarkusnativemaxresponsetim"
+"ereduction}%削減されることが示されています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:66
 #, fuzzy
 msgid "Quarkus running in JVM mode, supporting 40 concurrent connections, has shown to provide up to an {quarkusJvmMaxThroughputIncrease}% increase in maximum throughput whilst reducing maximum response time latencies by up to {quarkusJvmmaxresponsetimereduction}% compared to Thorntail, for a single process."
-msgstr "JVMモードで動作するQuarkusは、40の同時接続をサポートしており、単一のプロセスにおいて、Thorntailと比較して最大{quarkusJvmMaxThroughputIncrease}%の最大スループットの向上を実現し、最大応答時間の遅延を最大{quarkusJvmmaxresponsetimereduction}%削減したことが示されています。"
+msgstr ""
+"JVMモードで動作するQuarkusは、40の同時接続をサポートしており、単一のプロセス"
+"において、Thorntailと比較して最大{quarkusJvmMaxThroughputIncrease}%の最大スル"
+"ープットの向上を実現し、最大応答時間の遅延を最大{quarkusJvmmaxresponsetimered"
+"uction}%削減したことが示されています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:68
 #, fuzzy
 msgid "Quarkus running on the JVM provides improved throughput and response time compared to Native mode for a single process, but uses up to {2gQuarkusJvmMaxCompareThorntail}% more memory (RSS)."
-msgstr "JVM上で実行されるQuarkusは、単一のプロセスではNativeモードと比較してスループットと応答時間が向上しますが、最大で{2gQuarkusJvmMaxCompareThorntail}%多くのメモリを使用します（RSS）。"
+msgstr ""
+"JVM上で実行されるQuarkusは、単一のプロセスではNativeモードと比較してスループ"
+"ットと応答時間が向上しますが、最大で{2gQuarkusJvmMaxCompareThorntail}%多くの"
+"メモリを使用します（RSS）。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:70
 #, fuzzy
 msgid "For applications running in containers, constrained to 2048MB of RAM, it is theoretically possible to improve application throughput by up to *{2gQuarkusJvmMaxCompareThorntailIncrease}%* by running multiple instances of a Quarkus application in JVM mode, or *{2gQuarkusNativeMaxCompareThorntailIncrease}%* running multiple Quarkus instances in Native mode, compared to a Thorntail application."
-msgstr "2048MBのRAMに制限されたコンテナ内で実行されるアプリケーションの場合、理論的には、Thorntailアプリケーションと比較して、Quarkusアプリケーションの複数のインスタンスをJVMモードで実行することにより、 *{2gQuarkusJvmMaxCompareThorntailIncrease}%*まで、または、複数のQuarkusインスタンスをNativeモードで実行することにより *、{2gQuarkusNativeMaxCompareThorntailIncrease}%*まで、アプリケーションのスループットを向上させることが可能です。"
+msgstr ""
+"2048MBのRAMに制限されたコンテナ内で実行されるアプリケーションの場合、理論的に"
+"は、Thorntailアプリケーションと比較して、Quarkusアプリケーションの複数のイン"
+"スタンスをJVMモードで実行することにより、 "
+"*{2gQuarkusJvmMaxCompareThorntailIncrease}%*まで、または、"
+"複数のQuarkusインスタンスをNativeモードで実行することにより *、{2gQuarkusNati"
+"veMaxCompareThorntailIncrease}%*まで、アプリケーションのスループットを向上さ"
+"せることが可能です。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:72
 #, fuzzy
 msgid "Native images are **not just** for short running processes. The tests ran for up to 3 hours, without process restarts, and the native image served over *{quarkusNativeNumberRequestsMillion} MILLION* requests!"
-msgstr "ネイティブイメージは、短時間のプロセス *だけではありませ*ん。このテストでは、プロセスの再起動なしに最大3時間動作し、ネイティブイメージは *{quarkusNativeNumberRequestsMillion}*以上のリクエストを処理しました。 *100万*回以上のリクエストがありました。"
+msgstr ""
+"ネイティブイメージは、短時間のプロセス "
+"*だけではありませ*ん。このテストでは、プロセスの再起動なしに最大3時間動作し、"
+"ネイティブイメージは "
+"*{quarkusNativeNumberRequestsMillion}*以上のリクエストを処理しました。 "
+"*100万*回以上のリクエストがありました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:74
 #, fuzzy, no-wrap
 msgid "**One size does not fit all! Quarkus gives you the option to scale up in JVM mode if you need a single instance with a larger heap, or scale out in Native mode if you need more, lighter-weight instances**\n"
-msgstr "*1つのサイズがすべてに合うわけではありません。Quarkusでは、より大きなヒープを持つ単一のインスタンスが必要な場合はJVMモードでスケールアップし、より軽量なインスタンスが必要な場合はNativeモードでスケールアウトするというオプションがあります。*"
+msgstr ""
+"*1つのサイズがすべてに合うわけではありません。Quarkusでは、より大きなヒープを"
+"持つ単一のインスタンスが必要な場合はJVMモードでスケールアップし、より軽量なイ"
+"ンスタンスが必要な場合はNativeモードでスケールアウトするというオプションがあ"
+"ります。*"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:75
@@ -128,13 +170,15 @@ msgstr "エレファント・イン・ザ・ルーム"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:78
 #, fuzzy, no-wrap
 msgid "*\"It's all well and good optimizing for bootstrap start-up times and image size, but response time is still important\"*. \n"
-msgstr "\" *起動時間や画像サイズを最適化するのは良いことですが、レスポンスタイムはやはり重要です*。"
+msgstr "\" *起動時間や画像サイズを最適化するのは良いことですが、レスポンスタイムはや"
+"はり重要です*。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:80
 #, fuzzy
 msgid "Let us first address the elephant in the room, Quarkus has so far been focused on start-up time and Memory Footprint."
-msgstr "Quarkusはこれまで、スタートアップタイムとメモリフットプリントに焦点を当ててきましたが、ここではまず、部屋の中の象について説明します。"
+msgstr "Quarkusはこれまで、スタートアップタイムとメモリフットプリントに焦点を当ててき"
+"ましたが、ここではまず、部屋の中の象について説明します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:82
@@ -146,13 +190,16 @@ msgstr "*\"それは、ネイティブのパフォーマンスが悪いからで
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:84
 #, fuzzy
 msgid "By running a sample application, retrieving data from a PostgreSQL database via transactional REST HTTP requests, I will address"
-msgstr "トランザクショナルなREST HTTPリクエストによってPostgreSQLデータベースからデータを取得するサンプルアプリケーションを実行することで、以下の点を説明します。"
+msgstr ""
+"トランザクショナルなREST HTTPリクエストによってPostgreSQLデータベースからデー"
+"タを取得するサンプルアプリケーションを実行することで、以下の点を説明します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:86
 #, fuzzy
 msgid "Single process Throughput and Reponse Time in Native mode and JVM mode, compared to Thorntail"
-msgstr "ネイティブモードおよびJVMモードでのシングルプロセスのスループットと応答時間、Thorntailとの比較"
+msgstr "ネイティブモードおよびJVMモードでのシングルプロセスのスループットと応答時間、"
+"Thorntailとの比較"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:87
@@ -164,7 +211,9 @@ msgstr "長時間動作するプロセスのネイティブイメージ"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:89
 #, fuzzy
 msgid "Details of the application and test methodology can be found at the end of this post in the <<Test Application>> section."
-msgstr "アプリケーションとテスト方法の詳細は、この記事の最後にある link:#Test Application[[Test Application]]セクションでご覧いただけます。"
+msgstr ""
+"アプリケーションとテスト方法の詳細は、この記事の最後にある link:#Test "
+"Application[[Test Application]]セクションでご覧いただけます。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:90
@@ -176,19 +225,26 @@ msgstr "Quarkusはあなたに何を与えますか？"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:93
 #, fuzzy
 msgid "Quarkus provides you with a choice of 2 run modes.  You can either run as a native binary *or* as bytecode on a JVM."
-msgstr "Quarkusでは、2つの実行モードを選択することができます。ネイティブのバイナリとして実行すること *も、*JVM上のバイトコードとして実行することもできます。"
+msgstr ""
+"Quarkusでは、2つの実行モードを選択することができます。"
+"ネイティブのバイナリとして実行すること "
+"*も、*JVM上のバイトコードとして実行することもできます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:95
 #, fuzzy
 msgid "That means you can choose the runtime that meets *your* needs for *your* application. If a native image doesn't give you what you need, no problem, choose your favourite JVM."
-msgstr "つまり *、*アプリケーションのニーズに合ったランタイムを選ぶことができるのです。ネイティブイメージでは必要なものが得られない場合でも、お気に入りのJVMを選べば問題ありません。"
+msgstr ""
+"つまり *、*アプリケーションのニーズに合ったランタイムを選ぶことができるのです"
+"。ネイティブイメージでは必要なものが得られない場合でも、お気に入りのJVMを選べ"
+"ば問題ありません。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:97
 #, fuzzy
 msgid "But don't think that running on the JVM is a second rate citizen, Quarkus is optimized for running on the JVM as well as in native mode"
-msgstr "Quarkusはネイティブモードだけでなく、JVM上で動作するようにも最適化されていますので、JVM上での動作が二の次になることはありません。"
+msgstr "Quarkusはネイティブモードだけでなく、JVM上で動作するようにも最適化されていま"
+"すので、JVM上での動作が二の次になることはありません。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:98
@@ -200,7 +256,15 @@ msgstr "なぜソーンテールと比較するのか？"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:101
 #, fuzzy
 msgid "Thorntail is a more traditional cloud-native stack that has its base from the WildFly community and we decided that it's fair to compare with a runtime that we know how to optimize. The point of this performance test is not to compare frameworks vs framework, but to show that the optimizations done in Quarkus goes beyond just startup time and initial memory consumption. Thorntail is a great runtime, but just like other traditional cloud-native stacks the runtime dynamics behavior that wasn't a concern on a standalone deployment is turning out to be a cause of significant overhead for modern deployment scenarios."
-msgstr "Thorntailはより伝統的なクラウドネイティブスタックで、WildFlyコミュニティをベースにしており、最適化の方法がわかっているランタイムと比較するのが妥当だと判断しました。このパフォーマンステストの目的は、フレームワーク対フレームワークの比較ではなく、Quarkusで行われている最適化が起動時間や初期のメモリ消費だけではないことを示すことです。Thorntailは素晴らしいランタイムですが、他の伝統的なクラウドネイティブスタックと同様に、スタンドアロンの展開では気にならなかったランタイムダイナミクスの動作が、最新の展開シナリオでは大きなオーバーヘッドの原因となることがわかりました。"
+msgstr ""
+"Thorntailはより伝統的なクラウドネイティブスタックで、WildFlyコミュニティをベ"
+"ースにしており、最適化の方法がわかっているランタイムと比較するのが妥当だと判"
+"断しました。このパフォーマンステストの目的は、フレームワーク対フレームワーク"
+"の比較ではなく、Quarkusで行われている最適化が起動時間や初期のメモリ消費だけで"
+"はないことを示すことです。Thorntailは素晴らしいランタイムですが、他の伝統的な"
+"クラウドネイティブスタックと同様に、スタンドアロンの展開では気にならなかった"
+"ランタイムダイナミクスの動作が、最新の展開シナリオでは大きなオーバーヘッドの"
+"原因となることがわかりました。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:102
@@ -212,25 +276,36 @@ msgstr "スループット（Req/Sec）"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:105
 #, fuzzy
 msgid "Maximum throughput, measured in requests per second (Req/Sec) tells us the maximum number of request the single process application can service per second.  The higher the maximum throughput, the better."
-msgstr "最大スループットは、1秒あたりのリクエスト数（Req/Sec）で測定され、シングルプロセスのアプリケーションが1秒間に処理できるリクエストの最大数を示します。最大スループットが高ければ高いほど良いです。"
+msgstr ""
+"最大スループットは、1秒あたりのリクエスト数（Req/Sec）で測定され、シングルプ"
+"ロセスのアプリケーションが1秒間に処理できるリクエストの最大数を示します。最大"
+"スループットが高ければ高いほど良いです。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:107
 #, fuzzy
 msgid "Comparing a native Quarkus application to Thorntail running on a JVM, the maximum throughput is consistent as the number of concurrent users increases."
-msgstr "ネイティブのQuarkusアプリケーションとJVM上で動作するThorntailを比較すると、同時ユーザー数の増加に伴い、最大スループットが安定しています。"
+msgstr ""
+"ネイティブのQuarkusアプリケーションとJVM上で動作するThorntailを比較すると、同"
+"時ユーザー数の増加に伴い、最大スループットが安定しています。"
 
 #. type: delimited block =
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:111
 #, fuzzy, no-wrap
 msgid "**Quarkus {quarkusVersion}, running a single instance in Native mode with 40 concurrent connections, provides a {quarkusNativeMaxThroughputIncrease}% increase in maximum throughput compared to Thorntail {thorntailVersion} running on the JVM**.\n"
-msgstr "*Quarkus {quarkusVersion}は、Nativeモードで1つのインスタンスを40の同時接続で実行した場合、JVM上で実行しているThorntail {thorntailVersion}と比較して、最大スループットが{quarkusNativeMaxThroughputIncrease}%増加し*ました。"
+msgstr ""
+"*Quarkus {quarkusVersion}は、Nativeモードで1つのインスタンスを40の同時接続で"
+"実行した場合、JVM上で実行しているThorntail {thorntailVersion}と比較して、最大"
+"スループットが{quarkusNativeMaxThroughputIncrease}%増加し*ました。"
 
 #. type: delimited block =
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:116
 #, fuzzy, no-wrap
 msgid "**Quarkus {quarkusVersion}, running a single instance in JVM mode with 40 concurrent connections, out-performs Thorntail {thorntailVersion} by {quarkusJvmMaxThroughputIncrease}%**.\n"
-msgstr "*Quarkus {quarkusVersion}のシングルインスタンスをJVMモードで実行し、40の同時接続を行った場合、Thorntail {thorntailVersion}よりも{quarkusJvmMaxThroughputIncrease}%*優れていました。"
+msgstr ""
+"*Quarkus {quarkusVersion}のシングルインスタンスをJVMモードで実行し、40の同時"
+"接続を行った場合、Thorntail "
+"{thorntailVersion}よりも{quarkusJvmMaxThroughputIncrease}%*優れていました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:118
@@ -533,43 +608,71 @@ msgstr "応答時間(ms)"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:141
 #, fuzzy
 msgid "I would like to start this section with the statement that **\"Everything You Know About Latency Is Wrong\"** footnote:[https://bravenewgeek.com/everything-you-know-about-latency-is-wrong/]"
-msgstr "このセクションでは、 *「Everything You Know About Latency Is Wrong（レイテンシーについて知っていることはすべて間違っている）* <sup class=\"footnote\">」[ link:#_footnotedef_1[1, id=_footnoteref_1, role=footnote, title=View footnote.]</sup>]という言葉から始めたいと思います。"
+msgstr ""
+"このセクションでは、 *「Everything You Know About Latency Is "
+"Wrong（レイテンシーについて知っていることはすべて間違っている）* <sup class="
+"\"footnote\">」[ link:#_footnotedef_1[1, id=_footnoteref_1, role=footnote, "
+"title=View footnote.]</sup>]という言葉から始めたいと思います。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:143
 #, fuzzy
 msgid "Response time is a measure of the time it takes for the application to respond to a request. The lower the response time, the better. But mean response time is not the overall picture of application responsiveness.  Maximum response time tells us more about user experience than mean response time."
-msgstr "レスポンスタイムとは、リクエストに対してアプリケーションが応答するまでの時間を示す指標です。レスポンスタイムが低いほど良いと言えます。しかし、平均応答時間は、アプリケーションの応答性の全体像ではありません。最大レスポンスタイムは、平均レスポンスタイムよりもユーザーエクスペリエンスについてより多くのことを教えてくれます。"
+msgstr ""
+"レスポンスタイムとは、リクエストに対してアプリケーションが応答するまでの時間"
+"を示す指標です。レスポンスタイムが低いほど良いと言えます。しかし、平均応答時"
+"間は、アプリケーションの応答性の全体像ではありません。最大レスポンスタイムは"
+"、平均レスポンスタイムよりもユーザーエクスペリエンスについてより多くのことを"
+"教えてくれます。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:145
 #, fuzzy
 msgid "Why is this important? **Maximum response time tells us the worst case scenario, and between 26-93% of page loads will experience the 99th centile response time footnote:[https://bravenewgeek.com/everything-you-know-about-latency-is-wrong/].  Having a super low, super stable maximum response latency increases application responsiveness.**"
-msgstr "なぜこれが重要なのでしょうか？ *最大応答時間は、最悪のケースのシナリオを示しており、ページロードの26～93%が99センタイルの応答時間を経験することになります<sup class=\"footnote\">[<a id=\"_footnoteref_1\" class=\"footnote\" href=\"#_footnotedef_1\" title=\"View footnote.\">1</a></sup>*]。最大応答時間が極めて短く、極めて安定していると、アプリケーションの応答性が向上します。"
+msgstr ""
+"なぜこれが重要なのでしょうか？ "
+"*最大応答時間は、最悪のケースのシナリオを示しており、ページロードの26～"
+"93%が99センタイルの応答時間を経験することになります<sup class=\"footnote\">["
+"<a id=\"_footnoteref_1\" class=\"footnote\" href=\"#_footnotedef_1\" title="
+"\"View footnote.\">1</a></sup>*]。最大応答時間が極めて短く、極めて安定してい"
+"ると、アプリケーションの応答性が向上します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:147
 #, fuzzy
 msgid "Under high numbers of concurrent users; Mean response time for Quarkus in JVM mode is {quarkusJvmMeanResponseTime40}ms vs {thorntailMeanResponseTime40}ms for Thorntail. When running in Native mode, mean response time shifts to {quarkusNativeMeanResponseTime40}ms in exchange for the lower memory utilization."
-msgstr "多数の同時使用ユーザーがいる場合、JVMモードのQuarkusの平均応答時間は{quarkusJvmMeanResponseTime40}msであり、Thorntailの{thorntailMeanResponseTime40}msと比較しています。ネイティブモードで実行すると、メモリ使用量が少ない代わりに、平均応答時間が{quarkusNativeMeanResponseTime40}msにシフトします。"
+msgstr ""
+"多数の同時使用ユーザーがいる場合、JVMモードのQuarkusの平均応答時間は{quarkusJ"
+"vmMeanResponseTime40}msであり、Thorntailの{thorntailMeanResponseTime40}msと比"
+"較しています。ネイティブモードで実行すると、メモリ使用量が少ない代わりに、平"
+"均応答時間が{quarkusNativeMeanResponseTime40}msにシフトします。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:149
 #, fuzzy
 msgid "If we look at the Maximum response time; Thorntail took {thorntailMaxResponseTime}ms to service at least one request, compared to {quarkusJvmMaxResponseTime}ms for Quarkus JVM and {quarkusNativeMaxResponseTime}ms for Quarkus Native."
-msgstr "最大応答時間を見てみると、Thorntailは少なくとも1つのリクエストを処理するのに{thorntailMaxResponseTime}msかかっており、Quarkus JVMの{quarkusJvmMaxResponseTime}msやQuarkus Nativeの{quarkusNativeMaxResponseTime}msと比較しています。"
+msgstr ""
+"最大応答時間を見てみると、Thorntailは少なくとも1つのリクエストを処理するのに{"
+"thorntailMaxResponseTime}msかかっており、Quarkus "
+"JVMの{quarkusJvmMaxResponseTime}msやQuarkus "
+"Nativeの{quarkusNativeMaxResponseTime}msと比較しています。"
 
 #. type: delimited block =
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:153
 #, fuzzy
 msgid "The maximum response time for Quarkus in native mode is super-stable and up to {quarkusNativeMaxResponseTimeReduction}% lower than Thorntail."
-msgstr "ネイティブモードでのQuarkusの最大レスポンスタイムは超安定しており、Thorntailと比べて最大で{quarkusNativeMaxResponseTimeReduction}%低くなっています。"
+msgstr ""
+"ネイティブモードでのQuarkusの最大レスポンスタイムは超安定しており、Thorntail"
+"と比べて最大で{quarkusNativeMaxResponseTimeReduction}%低くなっています。"
 
 #. type: delimited block =
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:158
 #, fuzzy
 msgid "The lower mean response time latencies running on the JVM are due to the GC implementations available in the JVM are superior to the GC implementation currently available in GraalVM. Quarkus is currently still a Beta release, and improvements are planned for running in native mode"
-msgstr "JVM上で動作する平均応答時間のレイテンシーが低いのは、JVMで利用可能なGCの実装が、現在GraalVMで利用可能なGCの実装よりも優れているためです。Quarkusは現在まだベータ版であり、ネイティブモードでの動作については改善が予定されています。"
+msgstr ""
+"JVM上で動作する平均応答時間のレイテンシーが低いのは、JVMで利用可能なGCの実装"
+"が、現在GraalVMで利用可能なGCの実装よりも優れているためです。Quarkusは現在ま"
+"だベータ版であり、ネイティブモードでの動作については改善が予定されています。"
 
 #. type: Block title
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:161
@@ -968,7 +1071,9 @@ msgstr "応募開始時間"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:187
 #, fuzzy
 msgid "start-up times and memory usage were measured for each runtime using the method described here https://quarkus.io/guides/performance-measure"
-msgstr "起動時間とメモリ使用量は、ここに記載されている方法で各ランタイムごとに測定しました。 https://quarkus.io/guides/performance-measure"
+msgstr ""
+"起動時間とメモリ使用量は、ここに記載されている方法で各ランタイムごとに測定し"
+"ました。 https://quarkus.io/guides/performance-measure"
 
 #. type: Table
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:190
@@ -1010,7 +1115,8 @@ msgstr "最大メモリ使用量"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:201
 #, fuzzy
 msgid "Memory for each application process was measured with `ps` ``` $ ps -o rss -p <PID> ```"
-msgstr "各アプリケーションプロセスのメモリは、 `ps` `` $ ps -o rss -p <PID>` `で計測しました。"
+msgstr "各アプリケーションプロセスのメモリは、 `ps` `` $ ps -o rss -p <PID>` "
+"`で計測しました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:203
@@ -1046,13 +1152,21 @@ msgstr "{sp}  \n"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:214
 #, fuzzy
 msgid "Compared to Thorntail, Quarkus in native mode used only *{quarkusNativeRssCompareThorntail}%* of memory to service *{quarkusNativeThroughputCompareThorntail}% more requests* and Quarkus in JVM mode used *{quarkusJvmRssCompareThorntail}%* of memory to service *{quarkusJvmThroughputCompareThorntail}%* more requests"
-msgstr "Thorntailと比較して、ネイティブモードのQuarkusは *{* *quarkusNativeRssCompareThorntail}%*のメモリを使用して *{quarkusNativeThroughputCompareThorntail}%のリクエスト*を処理し、JVMモードのQuarkusは *{quarkusJvmRssCompareThorntail}%の*メモリを使用して *{quarkusJvmThroughputCompareThorntail}%*のリクエストを処理しました。"
+msgstr ""
+"Thorntailと比較して、ネイティブモードのQuarkusは *{* "
+"*quarkusNativeRssCompareThorntail}%*のメモリを使用して "
+"*{quarkusNativeThroughputCompareThorntail}%のリクエスト*を処理し、"
+"JVMモードのQuarkusは *{quarkusJvmRssCompareThorntail}%の*メモリを使用して "
+"*{quarkusJvmThroughputCompareThorntail}%*のリクエストを処理しました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:217
 #, fuzzy
 msgid "Therefore, **using a machine with 2048MB of memory**, running more than one process (not constrained by CPU), it should be possible to achieve the following increases in throughput over Thorntail;"
-msgstr "したがって、 *2048MBのメモリを搭載したマシンで*、複数のプロセスを動作させた場合（CPUの制約を受けない）、Thorntailと比較して以下のようなスループットの向上が期待できます。"
+msgstr ""
+"したがって、 *2048MBのメモリを搭載したマシンで*、複数のプロセスを動作させた場"
+"合（CPUの制約を受けない）、Thorntailと比較して以下のようなスループットの向上"
+"が期待できます。"
 
 #. type: Table
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:220
@@ -1202,7 +1316,11 @@ msgstr "{sp} \n"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:230
 #, fuzzy
 msgid "For applications running in cloud environments, it is theoretically possible to improve application throughput by up to *{2gQuarkusNativeMaxCompareThorntailIncrease}%* for the same amount of memory by running multiple instances of a Quarkus application in native mode."
-msgstr "クラウド環境で動作するアプリケーションでは、Quarkusアプリケーションの複数のインスタンスをネイティブモードで動作させることで、理論的には、同じメモリ量でアプリケーションのスループットを最大 *{2gQuarkusNativeMaxCompareThorntailIncrease}%*向上させることが可能です。"
+msgstr ""
+"クラウド環境で動作するアプリケーションでは、Quarkusアプリケーションの複数のイ"
+"ンスタンスをネイティブモードで動作させることで、理論的には、"
+"同じメモリ量でアプリケーションのスループットを最大 "
+"*{2gQuarkusNativeMaxCompareThorntailIncrease}%*向上させることが可能です。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:232
@@ -1214,19 +1332,22 @@ msgstr "Quarkus Native - 長時間稼働するプロセス"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:235
 #, fuzzy
 msgid "Another concern is that Quarkus running in native mode is not suitable for long running processes."
-msgstr "また、ネイティブモードで動作するQuarkusは、長時間の処理には適していないという懸念もあります。"
+msgstr "また、ネイティブモードで動作するQuarkusは、長時間の処理には適していないという"
+"懸念もあります。"
 
 #. type: delimited block =
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:240
 #, fuzzy
 msgid "During testing, Quarkus was running in native mode for more than 3hrs at a time, and serviced over *51,890,000* requests!"
-msgstr "テスト期間中、Quarkusはネイティブモードで一度に3時間以上稼働し、 *51,890,000*以上のリクエストに対応しました。"
+msgstr "テスト期間中、Quarkusはネイティブモードで一度に3時間以上稼働し、 "
+"*51,890,000*以上のリクエストに対応しました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:243
 #, fuzzy
 msgid "These requests caused hundreds of Full GC cycles, and the process remained stable throughout."
-msgstr "これらのリクエストは数百のFull GCサイクルを引き起こし、プロセスは終始安定していました。"
+msgstr "これらのリクエストは数百のFull "
+"GCサイクルを引き起こし、プロセスは終始安定していました。"
 
 #. type: Title ==
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:244
@@ -1238,7 +1359,10 @@ msgstr "テストアプリケーション"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:247
 #, fuzzy
 msgid "The test application is a Transactional REST/JPA application that makes calls to a PostgreSQL database. The application and database were both running inside a Docker container."
-msgstr "テストアプリケーションは、PostgreSQLデータベースへのコールを行うTransactional REST/JPAアプリケーションです。アプリケーションとデータベースは、Dockerコンテナ内で動作していました。"
+msgstr ""
+"テストアプリケーションは、"
+"PostgreSQLデータベースへのコールを行うTransactional REST/JPAアプリケーション"
+"です。アプリケーションとデータベースは、Dockerコンテナ内で動作していました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:249
@@ -1348,7 +1472,8 @@ msgid ""
 "\tdocker.io/postgres:10.5\n"
 "```\n"
 msgstr ""
-"<pre class=\"highlight\"> `docker run -d --rm -p 5432:5432 --network host  \\\n"
+"<pre class=\"highlight\"> `docker run -d --rm -p 5432:5432 --network host  \\"
+"\n"
 "\t-e POSTGRES_DB='rest-crud' \\\n"
 "\t-e POSTGRES_USER='restcrud'  \\\n"
 "\t-e POSTGRES_PASSWORD='restcrud' \\\n"
@@ -1416,7 +1541,9 @@ msgstr "<pre class=\"highlight\"> ``</pre>"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:323
 #, fuzzy
 msgid "HTTP/1.1 200 OK Connection: keep-alive Content-Type: application/json Content-Length: 75 Date: Mon, 01 Apr 2019 07:57:17 GMT"
-msgstr "HTTP/1.1 200 OK Connection: keep-alive Content-Type: application/json Content-Length: 75 Date:Mon, 01 Apr 2019 07:57:17 GMT"
+msgstr ""
+"HTTP/1.1 200 OK Connection: keep-alive Content-Type: application/json "
+"Content-Length: 75 Date:Mon, 01 Apr 2019 07:57:17 GMT"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:326
@@ -1434,7 +1561,8 @@ msgstr "ランタイム・パフォーマンス・メトリクス"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:330
 #, fuzzy
 msgid "Throughput and Response Time were measured using the wrk command line tool https://github.com/wg/wrk."
-msgstr "スループットとレスポンスタイムは、wrkコマンドラインツール https://github.com/wg/wrk ）を用いて測定しました。"
+msgstr "スループットとレスポンスタイムは、wrkコマンドラインツール https://github.com/"
+"wg/wrk ）を用いて測定しました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:335
@@ -1464,7 +1592,9 @@ msgstr "CPU:32 x Intel® Xeon® CPU E5-2640 v3 @ 2.60GHz"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:342
 #, fuzzy
 msgid "Operating System: Red Hat Enterprise Linux Server release 7.6 (3.10.0-693.25.2.el7.x86_64)"
-msgstr "オペレーティングシステム。Red Hat Enterprise Linux Server release 7.6 (3.10.0-693.25.2.el7.x86_64)"
+msgstr ""
+"オペレーティングシステム。Red Hat Enterprise Linux Server release 7.6 (3.10."
+"0-693.25.2.el7.x86_64)"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:344
@@ -1476,7 +1606,8 @@ msgstr "メモリ：262GB"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:346
 #, fuzzy
 msgid "Ethernet: Solarflare Communications SFC9020 10G Ethernet Controller"
-msgstr "イーサネットソーラーフレア・コミュニケーションズ SFC9020 10Gイーサネット・コントローラー"
+msgstr "イーサネットソーラーフレア・コミュニケーションズ SFC9020 "
+"10Gイーサネット・コントローラー"
 
 #. type: Title ===
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:347
@@ -1494,7 +1625,9 @@ msgstr "CPU: 24 x Intel® Xeon® CPU E5-2640 @ 2.80GHz"
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:352
 #, fuzzy
 msgid "Operating System: Red Hat Enterprise Linux Server release 7.6 (3.10.0-229.el7.x86_64)"
-msgstr "オペレーティングシステム。Red Hat Enterprise Linux Server release 7.6 (3.10.0-229.el7.x86_64)"
+msgstr ""
+"オペレーティングシステム。Red Hat Enterprise Linux Server release 7.6 (3.10."
+"0-229.el7.x86_64)"
 
 #. type: Plain text
 #: upstream/_posts/2019-07-08-runtime-performance.adoc:354

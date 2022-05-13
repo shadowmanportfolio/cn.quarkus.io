@@ -112,7 +112,10 @@ msgstr ""
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:65
 #, fuzzy
 msgid "you will notice amongst the other files that are created, two files named `kubernetes.json` and `kubernetes.yml` in the `target/kubernetes/` directory."
-msgstr "`./mvnw package` の実行後、作成された他のファイルの中に `knative.json` と `knative.yml` という名前のファイルが `target/kubernetes/` ディレクトリーにあることに気づくでしょう。"
+msgstr ""
+"`./mvnw package` の実行後、作成された他のファイルの中に `knative.json` と "
+"`knative.yml` という名前のファイルが `target/kubernetes/` "
+"ディレクトリーにあることに気づくでしょう。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:67
@@ -262,7 +265,10 @@ msgstr "名前空間"
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:181
 #, fuzzy
 msgid "By default Quarkus omits the namespace in the generated manifests, rather than enforce the `default` namespace. That means that you can apply the manifest to your chosen namespace when using `kubectl`, which in the example below is `test`:"
-msgstr "デフォルトでは、Quarkusは生成されたマニフェストの名前空間を省略し、 `default` 名前空間を強制しません。つまり、 `kubctl` (以下の例では `test` )を使用している場合は、選択したネームスペースにマニフェストを適用することができます。"
+msgstr ""
+"デフォルトでは、Quarkusは生成されたマニフェストの名前空間を省略し、 `default`"
+" 名前空間を強制しません。つまり、 `kubctl` (以下の例では `test` )を使用してい"
+"る場合は、選択したネームスペースにマニフェストを適用することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:185
@@ -1174,7 +1180,12 @@ msgstr "デプロイ"
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:667
 #, fuzzy
 msgid "https://kind.sigs.k8s.io/[Kind] is an other popular tool used as a Kubernetes cluster for development purposes. To make the deployment to Kind experience as frictionless as possible, Quarkus provides the `quarkus-kind` extension. This extension can be added to a project like so:"
-msgstr "https://github.com/kubernetes/minikube[Minikube] は、開発目的でKubernetesクラスタが必要な場合に非常に人気があります。Minikubeへのデプロイをできるだけ摩擦のないものにするために、Quarkusは `quarkus-minikube` エクステンションを提供しています。このエクステンションは、以下のようなプロジェクトに追加することができます。"
+msgstr ""
+"https://github.com/kubernetes/minikube[Minikube] は、開発目的でKubernetesクラ"
+"スタが必要な場合に非常に人気があります。Minikubeへのデプロイをできるだけ摩擦"
+"のないものにするために、Quarkusは `quarkus-minikube` エクステンションを提供し"
+"ています。このエクステンションは、以下のようなプロジェクトに追加することがで"
+"きます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:674
@@ -2747,7 +2758,10 @@ msgstr ""
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:992
 #, fuzzy
 msgid "Following the execution of `./mvnw package -Dquarkus.container-image.build=true` you will notice amongst the other files that are created, two files named `openshift.json` and `openshift.yml` in the `target/kubernetes/` directory."
-msgstr "`./mvnw package -Dquarkus.container-image.build=true` の実行後に、 `target/kubernetes/` ディレクトリーに `openshift.json` と `openshift.yml` という名前の2つのファイルが作成されたことに気づくでしょう。"
+msgstr ""
+"`./mvnw package -Dquarkus.container-image.build=true` の実行後に、 `target/"
+"kubernetes/` ディレクトリーに `openshift.json` と `openshift.yml` "
+"という名前の2つのファイルが作成されたことに気づくでしょう。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:994
@@ -2764,7 +2778,8 @@ msgstr ""
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1001
 #, fuzzy
 msgid "OpenShift users might want to use `oc` rather than `kubectl`:"
-msgstr "OpenShiftユーザーは、 `kubectl` の代わりに `oc` を使用した方が良いかもしれません。"
+msgstr "OpenShiftユーザーは、 `kubectl` の代わりに `oc` "
+"を使用した方が良いかもしれません。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1005
@@ -3910,13 +3925,23 @@ msgstr "提供されたレプリカ <1>, ラベル <2>, 環境変数 <3> はそ�
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1381
 #, fuzzy
 msgid "When the resource name does not match the application name (or the overridden name) rather than reusing the resource a new one will be added. Same goes for the container."
-msgstr "リソース名がアプリケーション名(またはオーバーライドされた名前)と一致しない場合は、リソースを再利用する代わりに新しいリソースが追加されます。コンテナーについても同様です。コンテナーの名前がアプリケーション名 (またはオーバーライドされた名前) と一致しない場合、コンテナー固有の設定は無視されます。"
+msgstr ""
+"リソース名がアプリケーション名(またはオーバーライドされた名前)と一致しない場"
+"合は、リソースを再利用する代わりに新しいリソースが追加されます。コンテナーに"
+"ついても同様です。コンテナーの名前がアプリケーション名 "
+"(またはオーバーライドされた名前) "
+"と一致しない場合、コンテナー固有の設定は無視されます。"
 
 #. type: delimited block =
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1383
 #, fuzzy
 msgid "When the name of the container does not match the application name (or the overridden name), container specific configuration will be ignored."
-msgstr "リソース名がアプリケーション名(またはオーバーライドされた名前)と一致しない場合は、リソースを再利用する代わりに新しいリソースが追加されます。コンテナーについても同様です。コンテナーの名前がアプリケーション名 (またはオーバーライドされた名前) と一致しない場合、コンテナー固有の設定は無視されます。"
+msgstr ""
+"リソース名がアプリケーション名(またはオーバーライドされた名前)と一致しない場"
+"合は、リソースを再利用する代わりに新しいリソースが追加されます。コンテナーに"
+"ついても同様です。コンテナーの名前がアプリケーション名 "
+"(またはオーバーライドされた名前) "
+"と一致しない場合、コンテナー固有の設定は無視されます。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1385
@@ -3938,7 +3963,10 @@ msgstr ""
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1392
 #, fuzzy
 msgid "To enable Service Binding for supported extensions, add the `quarkus-kubernetes-service-binding` extension to the application dependencies."
-msgstr "サービスバインディングのサポートを有効にするには、現在サポートされているエクステンションの1つに加えて、アプリケーションの依存関係に `quarkus-kubernetes-service-binding` エクステンションを追加する必要があります。"
+msgstr ""
+"サービスバインディングのサポートを有効にするには、現在サポートされているエク"
+"ステンションの1つに加えて、アプリケーションの依存関係に `quarkus-kubernetes-"
+"service-binding` エクステンションを追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1394
@@ -4353,7 +4381,8 @@ msgstr ""
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1565
 #, fuzzy
 msgid "The generated `service` contains the following:"
-msgstr "生成されたサービスは、以下のプロパティーを使用してカスタマイズすることができます:"
+msgstr "生成されたサービスは、以下のプロパティーを使用してカスタマイズすることができ"
+"ます:"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1572
@@ -4471,7 +4500,8 @@ msgstr ""
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1621
 #, fuzzy
 msgid "This has the same effect as the following configuration:"
-msgstr "追加のカスタムラベルを追加するには、例えば `foo=bar` を設定する場合、以下の設定を適用するだけです。"
+msgstr "追加のカスタムラベルを追加するには、例えば `foo=bar` "
+"を設定する場合、以下の設定を適用するだけです。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/deploying-to-kubernetes.adoc:1627

@@ -115,7 +115,10 @@ msgstr "Cloud Functions の関数を作成する"
 #: upstream/_versions/main/guides/gcp-functions.adoc:59
 #, fuzzy
 msgid "For this example project, we will create four functions, one `HttpFunction`, one `BackgroundFunction` (Storage event), one `RawBackgroundFunction` (PubSub event) and one `CloudEventsFunction` (storage event using the Cloud Events specification)."
-msgstr "このプロジェクトの例では、 `HttpFunction` 、 `BackgroundFunction` (ストレージイベント)、 `RawBackgroundFunction` (PubSubイベント)の3つの関数を作成します。"
+msgstr ""
+"このプロジェクトの例では、 `HttpFunction` 、 `BackgroundFunction` "
+"(ストレージイベント)、 `RawBackgroundFunction` "
+"(PubSubイベント)の3つの関数を作成します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/gcp-functions.adoc:61
@@ -132,7 +135,13 @@ msgstr "functionの選択"
 #: upstream/_versions/main/guides/gcp-functions.adoc:67
 #, fuzzy
 msgid "The `quarkus-google-cloud-functions` extension scans your project for a class that directly implements the Google Cloud `HttpFunction`, `BackgroundFunction`, `RawBackgroundFunction` or `CloudEventsFunction` interface.  It must find a class in your project that implements one of these interfaces or it will throw a build time failure.  If it finds more than one function classes, a build time exception will also be thrown."
-msgstr "`quarkus-google-cloud-functions` エクステンションは、プロジェクト内からGoogle Cloud `HttpFunction` 、 `BackgroundFunction` 、または `RawBackgroundFunction` インターフェイスを直接実装しているクラスをプロジェクト内でスキャンします。これらのインターフェイスを実装しているクラスがプロジェクト内で見つからない場合やインターフェイスを実装しているクラスが複数見つかった場合は、ビルド時に例外がスローされます。"
+msgstr ""
+"`quarkus-google-cloud-functions` エクステンションは、"
+"プロジェクト内からGoogle Cloud `HttpFunction` 、 `BackgroundFunction` 、"
+"または `RawBackgroundFunction` インターフェイスを直接実装しているクラスをプロ"
+"ジェクト内でスキャンします。これらのインターフェイスを実装しているクラスがプ"
+"ロジェクト内で見つからない場合やインターフェイスを実装しているクラスが複数見"
+"つかった場合は、ビルド時に例外がスローされます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/gcp-functions.adoc:71
@@ -390,7 +399,10 @@ msgstr ""
 #: upstream/_versions/main/guides/gcp-functions.adoc:202
 #, fuzzy
 msgid "This `CloudEventsFunction` is triggered by a Cloud Events Storage event, you can use any Cloud Events supported by Google Cloud instead."
-msgstr "この `BackgroundFunction` はストレージイベントによってトリガーされる以外にも、Google Cloud でサポートされているトリガーイベントを使用できます。"
+msgstr ""
+"この `BackgroundFunction` "
+"はストレージイベントによってトリガーされる以外にも、Google Cloud "
+"でサポートされているトリガーイベントを使用できます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/gcp-functions.adoc:208
@@ -445,13 +457,16 @@ msgstr ""
 #: upstream/_versions/main/guides/gcp-functions.adoc:233
 #, fuzzy
 msgid "This is a regular Google Cloud Function implementation, so it needs to implement `com.google.cloud.functions.CloudEventsFunction`."
-msgstr "Google Cloud Functionで実行するためには、実行する対象のクラスは`com.google.cloud.functions.HttpFunction`インターフェースをImplementsする必要があります ."
+msgstr ""
+"Google Cloud Functionで実行するためには、実行する対象のクラスは`com.google."
+"cloud.functions.HttpFunction`インターフェースをImplementsする必要があります ."
 
 #. type: Plain text
 #: upstream/_versions/main/guides/gcp-functions.adoc:235
 #, fuzzy
 msgid "This is standard Google Cloud Function implementation, nothing fancy here except that it receives a `io.cloudevents.CloudEvent`."
-msgstr "これは標準的な Google Cloud Function の実装であり、ここでは何も派手なことはしていません。"
+msgstr "これは標準的な Google Cloud Function "
+"の実装であり、ここでは何も派手なことはしていません。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/gcp-functions.adoc:236
@@ -605,7 +620,12 @@ msgstr ""
 #: upstream/_versions/main/guides/gcp-functions.adoc:354
 #, fuzzy
 msgid "This is an example command to deploy your `CloudEventsFunction` to Google Cloud, as the function is triggered by a Storage event, it needs to use `--trigger-bucket` parameter with the name of a previously created bucket:"
-msgstr "これは `BackgroundFunction` を Google Cloud にデプロイするためのコマンドの例です。この関数は Storage イベントによってトリガーされるため、 `--trigger-event google.storage.object.finalize` と `--trigger-resource` パラメーターに先の手順で作成したバケットの名前を指定する必要があります。"
+msgstr ""
+"これは `BackgroundFunction` を Google Cloud "
+"にデプロイするためのコマンドの例です。この関数は Storage "
+"イベントによってトリガーされるため、 `--trigger-event google.storage.object."
+"finalize` と `--trigger-resource` "
+"パラメーターに先の手順で作成したバケットの名前を指定する必要があります。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/gcp-functions.adoc:360
@@ -620,13 +640,18 @@ msgstr ""
 #: upstream/_versions/main/guides/gcp-functions.adoc:365
 #, fuzzy
 msgid "The entry point must always be set to `io.quarkus.gcp.functions.QuarkusCloudEventsFunction` as this is the class that integrates Cloud Functions with Quarkus."
-msgstr "エントリーポイントは常に `io.quarkus.gcp.functions.QuarkusHttpFunction` に設定する必要があります。このクラスはQuarkusとCloud Functionsを統合するクラスです。"
+msgstr ""
+"エントリーポイントは常に `io.quarkus.gcp.functions.QuarkusHttpFunction` "
+"に設定する必要があります。このクラスはQuarkusとCloud "
+"Functionsを統合するクラスです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/gcp-functions.adoc:373
 #, fuzzy
 msgid "To trigger the event, you can send a file to the GCS `example-cloud-event` bucket."
-msgstr "イベントをトリガーするには、GCS `quarkus-hello` バケットにファイルを送るか、gcloudコマンドを使ってシミュレーションすることができます。"
+msgstr ""
+"イベントをトリガーするには、GCS `quarkus-hello` バケットにファイルを送るか、g"
+"cloudコマンドを使ってシミュレーションすることができます。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/gcp-functions.adoc:374
@@ -738,7 +763,9 @@ msgstr ""
 #: upstream/_versions/main/guides/gcp-functions.adoc:455
 #, fuzzy
 msgid "For cloud events functions, you launch the invoker with a target class of `io.quarkus.gcp.functions.QuarkusCloudEventsFunction`."
-msgstr "BackgroundFunction関数の場合は、 `io.quarkus.gcp.functions.BackgroundFunction` のターゲットクラスでinvokerを起動します。"
+msgstr ""
+"BackgroundFunction関数の場合は、 `io.quarkus.gcp.functions."
+"BackgroundFunction` のターゲットクラスでinvokerを起動します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/gcp-functions.adoc:461
@@ -753,7 +780,8 @@ msgstr ""
 #: upstream/_versions/main/guides/gcp-functions.adoc:466
 #, fuzzy
 msgid "Then you can call your cloud events function via an HTTP call with a payload containing the event:"
-msgstr "起動後、HTTP 呼び出しにイベントを含むペイロードを付与することでバックグラウンド関数を呼び出すことができます。"
+msgstr "起動後、HTTP 呼び出しにイベントを含むペイロードを付与することでバックグラウン"
+"ド関数を呼び出すことができます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/gcp-functions.adoc:491
@@ -787,7 +815,10 @@ msgstr ""
 #: upstream/_versions/main/guides/gcp-functions.adoc:493
 #, fuzzy
 msgid "This will call your cloud events function with an event on the `\"MY_FILE.txt` file."
-msgstr "このコマンドにより、イベント `{\"name\":\"hello.txt\"}` でBackgroundFunctionを呼び出します。これは、`hello.txt`をCloud Storageに保存した際のイベントをテストするのと同じです。"
+msgstr ""
+"このコマンドにより、イベント `{\"name\":\"hello.txt\"}` "
+"でBackgroundFunctionを呼び出します。これは、`hello.txt`をCloud "
+"Storageに保存した際のイベントをテストするのと同じです。"
 
 #~ msgid "To complete this guide, you need:"
 #~ msgstr "このガイドを完成させるには、以下が必要です:"

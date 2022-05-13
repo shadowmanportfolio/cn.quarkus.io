@@ -108,7 +108,8 @@ msgstr "link:https://webauthn.guide/[WebAuthn] は、パスワードを置き換
 #: upstream/_versions/main/guides/security.adoc:46
 #, fuzzy
 msgid "Please see xref:security-webauthn.adoc[our dedicated WebAuthn documentation] for more information."
-msgstr "詳しくは link:security-built-in-authentication#mutual-tls[相互TLS認証] をご覧ください。"
+msgstr "詳しくは link:security-built-in-authentication#mutual-tls[相互TLS認証] "
+"をご覧ください。"
 
 #. type: Title ===
 #: upstream/_versions/main/guides/security.adoc:47
@@ -181,7 +182,11 @@ msgstr ""
 #: upstream/_versions/main/guides/security.adoc:84
 #, fuzzy
 msgid "If you need to configure Keycloak programmatically then consider using https://www.keycloak.org/docs/latest/server_development/#admin-rest-api[Keycloak Admin REST API] with the help of the `quarkus-keycloak-admin-client` or `quarkus-keycloak-admin-client-reactive` (if the application uses `quarkus-rest-client-reactive`) extension."
-msgstr "Keycloakをプログラムで設定する必要がある場合は、 `quarkus-keycloak-admin-client` エクステンションの助けを借りて、 link:https://www.keycloak.org/docs/latest/server_development/#admin-rest-api[Keycloak Admin REST API]の使用を検討してください。"
+msgstr ""
+"Keycloakをプログラムで設定する必要がある場合は、 `quarkus-keycloak-admin-"
+"client` エクステンションの助けを借りて、 link:https://www.keycloak.org/docs/"
+"latest/server_development/#admin-rest-api[Keycloak Admin REST "
+"API]の使用を検討してください。"
 
 #. type: Title ===
 #: upstream/_versions/main/guides/security.adoc:86

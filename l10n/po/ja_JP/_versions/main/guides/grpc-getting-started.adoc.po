@@ -270,7 +270,11 @@ msgstr "`groupId1:artifactId1,groupId2:artifactId2` - リスト内のグルー�
 #: upstream/_versions/main/guides/grpc-getting-started.adoc:162
 #, fuzzy
 msgid "If not specified, the property is set to `com.google.protobuf:protobuf-java`.  To override it, set the `quarkus.generate-code.grpc.scan-for-imports` property in your application.properties to the desired value, e.g."
-msgstr "指定されていない場合、このプロパティーは `com.google.protobuf:protobuf-java` に設定されます。これを上書きするには、pom.xml (または gradle.properties) の `quarkus.generate-code.grpc.scan-for-imports` プロパティーを希望の値に設定します。"
+msgstr ""
+"指定されていない場合、このプロパティーは `com.google.protobuf:protobuf-java` "
+"に設定されます。これを上書きするには、pom.xml (または gradle.properties) の "
+"`quarkus.generate-code.grpc.scan-for-imports` "
+"プロパティーを希望の値に設定します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/grpc-getting-started.adoc:166

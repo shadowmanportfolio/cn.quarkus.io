@@ -532,7 +532,8 @@ msgstr ""
 #: upstream/_versions/main/guides/hibernate-search-orm-elasticsearch.adoc:277
 #, fuzzy
 msgid "Nothing out of the ordinary here: it is just good old Hibernate ORM with Panache operations in a REST service."
-msgstr "ここでは何も特別なことはありません。標準的なJAX-RSサービスでPanache操作を行う古き良きHibernate ORMです。"
+msgstr "ここでは何も特別なことはありません。標準的なJAX-"
+"RSサービスでPanache操作を行う古き良きHibernate ORMです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/hibernate-search-orm-elasticsearch.adoc:279
@@ -1260,7 +1261,11 @@ msgstr ""
 #: upstream/_versions/main/guides/hibernate-search-orm-elasticsearch.adoc:667
 #, fuzzy
 msgid "You can find more information about compatible distributions and versions of Elasticsearch in link:{hibernate-search-doc-prefix}#getting-started-compatibility[this section of Hibernate Search's reference documentation]."
-msgstr "他の形式も認められていますが、高度なユースケースでのみ有用です。詳細については、 link:{hibernate-search-doc-prefix}#configuration-bean-reference-parsing[Hibernate Searchのリファレンスドキュメントのこのセクション] を参照してください。"
+msgstr ""
+"他の形式も認められていますが、高度なユースケースでのみ有用です。詳細について"
+"は、 link:{hibernate-search-doc-prefix}#configuration-bean-reference-parsing["
+"Hibernate Searchのリファレンスドキュメントのこのセクション] "
+"を参照してください。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/hibernate-search-orm-elasticsearch.adoc:669
@@ -1632,7 +1637,10 @@ msgstr ""
 #: upstream/_versions/main/guides/hibernate-search-orm-elasticsearch.adoc:889
 #, fuzzy
 msgid "For more information about coordination in Hibernate Search, see link:{hibernate-search-doc-prefix}#coordination[this section of the reference documentation]."
-msgstr "Hibernate Search 6について詳しく知りたい方は、Hibernateチームが link:{hibernate-search-doc-prefix}[広範なリファレンスドキュメント] を公開しています。"
+msgstr ""
+"Hibernate Search 6について詳しく知りたい方は、Hibernateチームが link"
+":{hibernate-search-doc-prefix}[広範なリファレンスドキュメント] "
+"を公開しています。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/hibernate-search-orm-elasticsearch.adoc:892

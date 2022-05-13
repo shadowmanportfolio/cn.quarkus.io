@@ -41,10 +41,12 @@ msgstr "ポスト"
 msgid "Quarkus 1.8 has been released with multiple persistence units support, a Micrometer extension, jbang integration and an update to GraalVM 20.2."
 msgstr ""
 "layout: post\n"
-"title: 'Quarkus 1.8 released - Multiple Persistence Units, Micrometer, jbang, GraalVM 20.2'\n"
+"title: 'Quarkus 1.8 released - Multiple Persistence Units, Micrometer, "
+"jbang, GraalVM 20.2'\n"
 "date: 2020-09-15\n"
 "tags: release\n"
-"synopsis: Quarkus 1.8がリリースされ、複数の永続化ユニットのサポート、Micrometer拡張、jbangの統合、GraalVM 20.2へのアップデートが行われました。\n"
+"synopsis: Quarkus 1.8がリリースされ、複数の永続化ユニットのサポート、Micromet"
+"er拡張、jbangの統合、GraalVM 20.2へのアップデートが行われました。\n"
 "author: gsmet\n"
 "---\n"
 
@@ -58,7 +60,8 @@ msgstr "リリース"
 #: upstream/_posts/2020-09-15-quarkus-1-8-0-final-released.adoc:1
 #, fuzzy, no-wrap
 msgid "Quarkus 1.8 released - Multiple Persistence Units, Micrometer, jbang, GraalVM 20.2"
-msgstr "Quarkus 1.8リリース - 複数永続化ユニット、マイクロメーター、jbang、GraalVM 20.2。"
+msgstr "Quarkus 1.8リリース - 複数永続化ユニット、マイクロメーター、jbang、GraalVM 20"
+".2。"
 
 #. type: Plain text
 #: upstream/_posts/2020-09-15-quarkus-1-8-0-final-released.adoc:11

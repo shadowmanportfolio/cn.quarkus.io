@@ -544,7 +544,8 @@ msgstr "作成されたタスクのリストをデータベースから取得し
 #: upstream/_versions/main/guides/quartz.adoc:259
 #, fuzzy
 msgid "You also have the option to create a `org.acme.quartz.TaskResourceTest` test with the following content:"
-msgstr "ルートディレクトリーに、以下の内容の `docker-compose.yml` ファイルを作成します。"
+msgstr "ルートディレクトリーに、以下の内容の `docker-compose.yml` "
+"ファイルを作成します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/quartz.adoc:265
@@ -787,7 +788,11 @@ msgstr "アプリケーションを開発モードで実行します。"
 #: upstream/_versions/main/guides/quartz.adoc:386
 #, fuzzy
 msgid "After a few seconds, open another terminal and run `curl localhost:8080/tasks` to verify that we have at least one task created."
-msgstr "`./mvnw quarkus:dev` でアプリケーションを実行します。数秒後、別のターミナルを開き、 `curl localhost:8080/tasks` を実行して、少なくとも 1 つのタスクが作成されていることを確認します。"
+msgstr ""
+"`./mvnw quarkus:dev` "
+"でアプリケーションを実行します。数秒後、別のターミナルを開き、 `curl "
+"localhost:8080/tasks` を実行して、少なくとも 1 "
+"つのタスクが作成されていることを確認します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/quartz.adoc:388
@@ -804,7 +809,8 @@ msgstr "そして次のコマンドで実行できます。 `java -jar target/qu
 #: upstream/_versions/main/guides/quartz.adoc:414
 #, fuzzy
 msgid "You can also generate the native executable with:"
-msgstr "`./mvnw clean package -Pnative` でネイティブ実行可能ファイルを生成することもできます。"
+msgstr "`./mvnw clean package -Pnative` "
+"でネイティブ実行可能ファイルを生成することもできます。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/quartz.adoc:397

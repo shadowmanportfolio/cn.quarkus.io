@@ -1315,7 +1315,9 @@ msgstr ""
 #: upstream/_versions/main/guides/reactive-routes.adoc:693
 #, fuzzy
 msgid "the route method is annotated with `@io.quarkus.vertx.http.Compressed`, or"
-msgstr "リクエストボディは、 `@io.quarkus.vertx.web.Body` でアノテーションされたメソッドパラメーターに注入することができます。"
+msgstr ""
+"リクエストボディは、 `@io.quarkus.vertx.web.Body` "
+"でアノテーションされたメソッドパラメーターに注入することができます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-routes.adoc:694
@@ -1331,7 +1333,9 @@ msgstr ""
 #: upstream/_versions/main/guides/reactive-routes.adoc:698
 #, fuzzy
 msgid "the route method is annotated with `@io.quarkus.vertx.http.Uncompressed`, or"
-msgstr "リクエストボディは、 `@io.quarkus.vertx.web.Body` でアノテーションされたメソッドパラメーターに注入することができます。"
+msgstr ""
+"リクエストボディは、 `@io.quarkus.vertx.web.Body` "
+"でアノテーションされたメソッドパラメーターに注入することができます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-routes.adoc:699

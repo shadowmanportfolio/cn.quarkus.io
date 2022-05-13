@@ -360,7 +360,8 @@ msgstr ""
 #: upstream/_versions/main/guides/getting-started.adoc:179
 #, fuzzy
 msgid "It's a very simple REST endpoint, returning \"Hello from RESTEasy Reactive\" to requests on \"/hello\"."
-msgstr "これは非常にシンプルな REST エンドポイントで、\"/hello\" 上のリクエストに \"Hello RESTEasy\" と返します。"
+msgstr "これは非常にシンプルな REST エンドポイントで、\"/hello\" 上のリクエストに "
+"\"Hello RESTEasy\" と返します。"
 
 #. type: Block title
 #: upstream/_versions/main/guides/getting-started.adoc:181
@@ -457,7 +458,8 @@ msgstr "Quarkus は CDI 機能のサブセットのみを実装しており、�
 #: upstream/_versions/main/guides/getting-started.adoc:239
 #, fuzzy
 msgid "ArC comes as a dependency of `quarkus-resteasy-reactive` so you already have it handy."
-msgstr "ArCは `quarkus-resteasy` の依存関係として提供されているので、すでに追加済です。"
+msgstr "ArCは `quarkus-resteasy` "
+"の依存関係として提供されているので、すでに追加済です。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:242

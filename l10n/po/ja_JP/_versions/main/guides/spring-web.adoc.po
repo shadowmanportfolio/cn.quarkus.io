@@ -257,7 +257,9 @@ msgstr "アプリケーションをネイティブ実行可能ファイルとし
 #: upstream/_versions/main/guides/spring-web.adoc:131
 #, fuzzy
 msgid "Open your browser to http://localhost:8080/greeting."
-msgstr "アプリケーションを実行するには、次の手順を実行します: `./mvnw compile quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
+msgstr ""
+"アプリケーションを実行するには、次の手順を実行します: `./mvnw compile "
+"quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/spring-web.adoc:133

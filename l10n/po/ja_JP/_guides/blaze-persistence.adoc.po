@@ -433,7 +433,13 @@ msgstr "ここに記載されている設定プロパティーでは、このよ
 #: upstream/_guides/blaze-persistence.adoc:228
 #, fuzzy
 msgid "Apart from these configuration options, further configuration and customization can be applied by observing a `CriteriaBuilderConfiguration` or `EntityViewConfiguration` events and applying customizations on these objects. The various customization use cases can be found in the link:https://persistence.blazebit.com/documentation/entity-view/manual/en_US/index.html#quarkus-customization[Quarkus section of the entity-view documentation]."
-msgstr "これらの設定オプションとは別に、 `CriteriaBuilderConfiguration` や `EntityViewConfiguration` のイベントを観察し、これらのオブジェクトにカスタマイズを適用することで、さらなる設定やカスタマイズを適用することができます。様々なカスタマイズの使用例については、 link:https://persistence.blazebit.com/documentation/entity-view/manual/en_US/index.html#quarkus-customization[エンティティビューのドキュメントのQuarkusのセクション]を参照してください。"
+msgstr ""
+"これらの設定オプションとは別に、 `CriteriaBuilderConfiguration` や "
+"`EntityViewConfiguration` のイベントを観察し、これらのオブジェクトにカスタマ"
+"イズを適用することで、さらなる設定やカスタマイズを適用することができます。様"
+"々なカスタマイズの使用例については、 link:https://persistence.blazebit.com/"
+"documentation/entity-view/manual/en_US/index.html#quarkus-customization[エン"
+"ティティビューのドキュメントのQuarkusのセクション]を参照してください。"
 
 #. type: Block title
 #: upstream/_guides/blaze-persistence.adoc:230

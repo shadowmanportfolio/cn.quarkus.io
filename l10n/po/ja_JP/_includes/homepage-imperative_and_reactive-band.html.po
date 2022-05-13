@@ -26,7 +26,10 @@ msgstr "ImperativeとReactiveの統一"
 #: upstream/_includes/homepage-imperative_and_reactive-band.html:7
 #, fuzzy
 msgid "Combine both the familiar imperative code and the reactive style when developing applications.  <a href=\"/vision/continuum\">Learn more</a>."
-msgstr "慣れ親しんだ命令型のコードとリアクティブなスタイルの両方を組み合わせてアプリケーションを開発することができます。 <a href=\"/vision/continuum\">詳しくはこちら</a>をご覧ください。"
+msgstr ""
+"慣れ親しんだ命令型のコードとリアクティブなスタイルの両方を組み合わせてアプリ"
+"ケーションを開発することができます。 <a href=\"/vision/continuum\""
+">詳しくはこちら</a>をご覧ください。"
 
 #. type: Content of: <div><div><div><div><div><div>
 #: upstream/_includes/homepage-imperative_and_reactive-band.html:13

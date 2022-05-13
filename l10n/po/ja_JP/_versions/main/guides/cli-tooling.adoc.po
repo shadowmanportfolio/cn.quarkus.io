@@ -333,7 +333,8 @@ msgstr ""
 #: upstream/_versions/main/guides/cli-tooling.adoc:185
 #, fuzzy
 msgid "https://chocolatey.org[Chocolatey] is a package manager for Windows."
-msgstr "link:https://chocolatey.org[Chocolatey]のようなほかの手段も近々利用できるようになるでしょう。"
+msgstr "link:https://chocolatey."
+"org[Chocolatey]のようなほかの手段も近々利用できるようになるでしょう。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/cli-tooling.adoc:187

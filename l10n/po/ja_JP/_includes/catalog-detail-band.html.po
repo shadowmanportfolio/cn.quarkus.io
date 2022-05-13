@@ -20,7 +20,9 @@ msgstr ""
 #: upstream/_includes/catalog-detail-band.html:4
 #, fuzzy
 msgid "<a href=\"{{site.baseurl}}/catalog\">Extension Catalog</a> <i class=\"fas fa-chevron-right\"></i> {{ page.title }}"
-msgstr "<a href=\"{{site.baseurl}}/catalog\">エクステンションカタログ</a> <i class=\"fas fa-chevron-right\"></i> {{page.title }}。"
+msgstr ""
+"<a href=\"{{site.baseurl}}/catalog\">エクステンションカタログ</a> <i class="
+"\"fas fa-chevron-right\"></i> {{page.title }}。"
 
 #. type: Content of: <div><div><div><h1>
 #: upstream/_includes/catalog-detail-band.html:11
@@ -38,7 +40,9 @@ msgstr "提供：JBeretプロジェクトチーム"
 #: upstream/_includes/catalog-detail-band.html:13
 #, fuzzy
 msgid "The Quarkus JBeret Extension adds support for JSR-352 Batch Applications for the Java Platform. JBeret is an implementation of the JSR-352."
-msgstr "Quarkus JBeret Extensionは、JSR-352 Batch Application for the Java Platformのサポートを追加するものです。JBeretは、JSR-352の実装です。"
+msgstr ""
+"Quarkus JBeret Extensionは、JSR-352 Batch Application for the Java "
+"Platformのサポートを追加するものです。JBeretは、JSR-352の実装です。"
 
 #. type: Content of: <div><div><div><h3>
 #: upstream/_includes/catalog-detail-band.html:14
@@ -92,7 +96,8 @@ msgstr "USAGE"
 #: upstream/_includes/catalog-detail-band.html:24
 #, fuzzy
 msgid "To use the extension, add the dependency to the target project:"
-msgstr "このエクステンションを使用するには、ターゲットプロジェクトに依存関係を追加します。"
+msgstr "このエクステンションを使用するには、ターゲットプロジェクトに依存関係を追加し"
+"ます。"
 
 #. type: Content of: <div><div><div><pre>
 #: upstream/_includes/catalog-detail-band.html:25
@@ -119,13 +124,19 @@ msgid ""
 "   <span class=\"hljs-keyword\">public</span> String name;\n"
 "\n"
 "}</code>"
-msgstr "<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-keyword\">package</span> org.acme.hibernate.asm.panache;"
+msgstr ""
+"<code class=\"language-java hljs\" data-lang=\"java\"><span class=\"hljs-"
+"keyword\">package</span> org.acme.hibernate.asm.panache;"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/catalog-detail-band.html:41
 #, fuzzy
 msgid "The Batch API and Runtime will be available out of the box. Please refer to the <a href=\"#\">Batch documentation</a>, or the <a href=\"#\">JBeret documentation</a> to learn about Batch Applications."
-msgstr "Batch API と Runtime はすぐに利用できるようになります。Batchアプリケーションについては、<a href<mark>=\"\">Batch documentation</a>、または<a href=\"\"></mark>JBeret documentation</a>をご参照ください。"
+msgstr ""
+"Batch API と Runtime "
+"はすぐに利用できるようになります。Batchアプリケーションについては、<a "
+"href<mark>=\"\">Batch documentation</a>、または<a href=\"\"></mark>JBeret "
+"documentation</a>をご参照ください。"
 
 #. type: Content of: <div><div><div><h3>
 #: upstream/_includes/catalog-detail-band.html:42
@@ -175,7 +186,8 @@ msgstr "<code>quarkus.jberet.repository</code>を使用しています。"
 #: upstream/_includes/catalog-detail-band.html:71
 #, fuzzy
 msgid "The repository type to store JBeret and Job data. A jdbc type requires a JDBC datasource."
-msgstr "JBeretとJobのデータを保存するためのリポジトリタイプです。jdbcタイプは、JDBCデータソースが必要です。"
+msgstr "JBeretとJobのデータを保存するためのリポジトリタイプです。jdbcタイプは、JDBCデ"
+"ータソースが必要です。"
 
 #. type: Content of: <div><div><div><table><tr><td>
 #: upstream/_includes/catalog-detail-band.html:52
@@ -213,13 +225,21 @@ msgstr "標準外の機能"
 #: upstream/_includes/catalog-detail-band.html:80
 #, fuzzy
 msgid "The Batch API requires the @BatchProperty annotation to inject the specific configuration from the batch definition file. Instead, you can use the @ConfigProperty annotation, which is used to inject configuration properties in Quarkus using the MicroProfile Config API and keep consistency:"
-msgstr "Batch APIでは、バッチ定義ファイルから特定の構成を注入するために、@BatchPropertyアノテーションが必要です。代わりに、@ConfigPropertyアノテーションを使用することができます。これは、MicroProfile Config APIを使用してQuarkusで構成プロパティを注入し、一貫性を保つために使用されます。"
+msgstr ""
+"Batch APIでは、バッチ定義ファイルから特定の構成を注入するために、@BatchProper"
+"tyアノテーションが必要です。代わりに、@ConfigPropertyアノテーションを使用する"
+"ことができます。これは、MicroProfile Config APIを使用してQuarkusで構成プロパ"
+"ティを注入し、一貫性を保つために使用されます。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/catalog-detail-band.html:97
 #, fuzzy
 msgid "Although, there is a slight limitation: since job configuration is mostly dynamic and only injected on job execution, Quarkus may fail to start due to invalid configuration (can’t find the Job configuration values). In this case, configuration injection points with the @ConfigProperty annotation need to set a default value or use an Optional."
-msgstr "ジョブ構成はほとんどが動的で、ジョブ実行時にのみ注入されるため、Quarkusは無効な構成（ジョブ構成値が見つからない）のために起動に失敗する可能性があります。この場合、@ConfigPropertyアノテーションを使用した設定注入ポイントでは、デフォルト値を設定するか、Optionalを使用する必要があります。"
+msgstr ""
+"ジョブ構成はほとんどが動的で、ジョブ実行時にのみ注入されるため、Quarkusは無効"
+"な構成（ジョブ構成値が見つからない）のために起動に失敗する可能性があります。"
+"この場合、@ConfigPropertyアノテーションを使用した設定注入ポイントでは、デフォ"
+"ルト値を設定するか、Optionalを使用する必要があります。"
 
 #. type: Content of: <div><div><div><h4>
 #: upstream/_includes/catalog-detail-band.html:98
@@ -231,7 +251,9 @@ msgstr "CDIビーンズ"
 #: upstream/_includes/catalog-detail-band.html:99
 #, fuzzy
 msgid "The Batch APIs JobOperator and JobRepository are available as CDI beans, so they can be injected directly into any code:"
-msgstr "Batch APIのJobOperatorとJobRepositoryは、CDI Beanとして提供されているので、どんなコードにも直接注入することができます。"
+msgstr ""
+"Batch APIのJobOperatorとJobRepositoryは、CDI "
+"Beanとして提供されているので、どんなコードにも直接注入することができます。"
 
 #. type: Content of: <div><div><div><h4>
 #: upstream/_includes/catalog-detail-band.html:116
@@ -249,13 +271,17 @@ msgstr "JBeretのSchedulerは、この拡張機能にすぐに統合されてい
 #: upstream/_includes/catalog-detail-band.html:118
 #, fuzzy
 msgid "To schedule a Job execution, please refer to the quarkus.jberet.job.”job-name”.cron and quarkus.jberet.job.”job-name”.params.”param-key” configurations."
-msgstr "ジョブの実行をスケジュールするには、quarkus.jberet.job. \"job-name\".cronおよびquarkus.jberet.job. \"job-name\".params. \"param-key \"の設定を参照してください。"
+msgstr ""
+"ジョブの実行をスケジュールするには、quarkus.jberet.job. \"job-name\"."
+"cronおよびquarkus.jberet.job. \"job-name\".params. \"param-key "
+"\"の設定を参照してください。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/catalog-detail-band.html:119
 #, fuzzy
 msgid "A Job can also be scheduled programmatically, using the JobScheduler API and the Quarkus startup event:"
-msgstr "ジョブは、JobScheduler APIとQuarkusのスタートアップイベントを使用して、プログラムでスケジュールすることもできます。"
+msgstr "ジョブは、JobScheduler APIとQuarkusのスタートアップイベントを使用して、プログ"
+"ラムでスケジュールすることもできます。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/catalog-detail-band.html:136
@@ -273,13 +299,18 @@ msgstr "REST API"
 #: upstream/_includes/catalog-detail-band.html:138
 #, fuzzy
 msgid "The JBeret REST is integrated as separate extension that can be easily added to the target project with the following dependency:"
-msgstr "JBeret RESTは独立した拡張機能として統合されており、以下の依存関係でターゲットプロジェクトに簡単に追加することができます。"
+msgstr "JBeret RESTは独立した拡張機能として統合されており、以下の依存関係でターゲット"
+"プロジェクトに簡単に追加することができます。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/catalog-detail-band.html:155
 #, fuzzy
 msgid "The JBeret REST API, provides REST resources to several operations around the Batch API: starting and stopping jobs, querying the status of a job, schedule a job, and many more. The extension includes a REST client to simplify the REST API calls:"
-msgstr "JBeret REST APIは、ジョブの開始と停止、ジョブのステータスの問い合わせ、ジョブのスケジュールなど、Batch API周辺のいくつかの操作にRESTリソースを提供します。この拡張機能には、REST APIの呼び出しを簡素化するRESTクライアントが含まれています。"
+msgstr ""
+"JBeret REST APIは、ジョブの開始と停止、ジョブのステータスの問い合わせ、ジョブ"
+"のスケジュールなど、Batch "
+"API周辺のいくつかの操作にRESTリソースを提供します。この拡張機能には、REST "
+"APIの呼び出しを簡素化するRESTクライアントが含まれています。"
 
 #. type: Content of: <div><div><div><h3>
 #: upstream/_includes/catalog-detail-band.html:173
@@ -291,13 +322,16 @@ msgstr "アプリケーション例"
 #: upstream/_includes/catalog-detail-band.html:175
 #, fuzzy
 msgid "<code>chunk</code> - A simple Job that reads, processes, and stores data from a file."
-msgstr "<code>chunk</code> - ファイルからデータを読み込み、処理し、保存するシンプルなジョブ。"
+msgstr "<code>chunk</code> - "
+"ファイルからデータを読み込み、処理し、保存するシンプルなジョブ。"
 
 #. type: Content of: <div><div><div><ul><li>
 #: upstream/_includes/catalog-detail-band.html:176
 #, fuzzy
 msgid "<code>jdbc-repository</code> - A Job that uses a jdbc datasource to store JBeret and Job metadata."
-msgstr "<code>jdbc-repository</code> - JBeretとジョブのメタデータを保存するために、jdbcデータソースを使用するジョブです。"
+msgstr ""
+"<code>jdbc-repository</code> - JBeretとジョブのメタデータを保存するために、jd"
+"bcデータソースを使用するジョブです。"
 
 #. type: Content of: <div><div><div><ul><li>
 #: upstream/_includes/catalog-detail-band.html:177
@@ -309,7 +343,10 @@ msgstr "<code>scheduler</code> - 10秒ごとにジョブを実行するように
 #: upstream/_includes/catalog-detail-band.html:179
 #, fuzzy
 msgid "Or take a look into the World of Warcraft Auctions - Batch Application. It downloads the World of Warcraft Auction House data and provides statistics about items prices."
-msgstr "また、「World of Warcraft Auctions - Batch Application」を見てみましょう。これは、World of Warcraftのオークションハウスのデータをダウンロードし、アイテムの価格に関する統計を提供します。"
+msgstr ""
+"また、「World of Warcraft Auctions - Batch "
+"Application」を見てみましょう。これは、World of Warcraftのオークションハウス"
+"のデータをダウンロードし、アイテムの価格に関する統計を提供します。"
 
 #. type: Content of: <div><div><div><h3>
 #: upstream/_includes/catalog-detail-band.html:181
@@ -327,7 +364,8 @@ msgstr "このような素晴らしい方々に感謝しています。"
 #: upstream/_includes/catalog-detail-band.html:183
 #, fuzzy
 msgid "This project follows the <a href=\"#\">all-contributors</a> specification. Contributions of any kind welcome!"
-msgstr "このプロジェクトは、<a href=\"#\">all-contributors</a>の仕様に従っています。あらゆる種類の貢献を歓迎します。"
+msgstr "このプロジェクトは、<a href=\"#\">all-"
+"contributors</a>の仕様に従っています。あらゆる種類の貢献を歓迎します。"
 
 #. type: Content of: <div><div><div><h3>
 #: upstream/_includes/catalog-detail-band.html:184
@@ -363,7 +401,9 @@ msgstr "Quarkusとの互換性"
 #: upstream/_includes/catalog-detail-band.html:198
 #, fuzzy
 msgid "<a href=\"#\">1.0</a>, <a href=\"#\">1.1</a>, <a href=\"#\">1.2</a>, <a href=\"#\">1.4</a>"
-msgstr "<a href<mark>=\"\">1.0</a>, <a href=\"\"></mark>1.1</a>, <a href<mark>=\"\">1.2</a>, <a href=\"\"></mark>1.4</a>となります。"
+msgstr ""
+"<a href<mark>=\"\">1.0</a>, <a href=\"\"></mark>1.1</a>, <a href<mark>=\"\">1"
+".2</a>, <a href=\"\"></mark>1.4</a>となります。"
 
 #. type: Content of: <div><div><div><div><div><p>
 #: upstream/_includes/catalog-detail-band.html:203

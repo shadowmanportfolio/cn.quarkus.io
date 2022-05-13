@@ -412,7 +412,9 @@ msgstr ""
 #: upstream/_versions/main/guides/security-openid-connect.adoc:194
 #, fuzzy
 msgid "You should be able to access your Keycloak Server at http://localhost:8180[localhost:8180]."
-msgstr "Keycloakサーバーには、 link:http://localhost:8180/auth[localhost:8180/auth] でアクセスできるはずです。"
+msgstr ""
+"Keycloakサーバーには、 link:http://localhost:8180/auth[localhost:8180/auth] "
+"でアクセスできるはずです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect.adoc:196
@@ -428,7 +430,10 @@ msgstr "新しいレルムを作成するには、{quickstarts-tree-url}/securit
 #: upstream/_versions/main/guides/security-openid-connect.adoc:201
 #, fuzzy
 msgid "If you want to use the Keycloak Admin Client to configure your server from your application you need to include the either `quarkus-keycloak-admin-client` or the `quarkus-keycloak-admin-client-reactive` (if the application uses `quarkus-rest-client-reactive`) extension."
-msgstr "Keycloak Admin Clientを使用して、アプリケーションからサーバーを設定したい場合は、 `quarkus-keycloak-admin-client` エクステンションを含める必要があります。"
+msgstr ""
+"Keycloak Admin "
+"Clientを使用して、アプリケーションからサーバーを設定したい場合は、 `quarkus-"
+"keycloak-admin-client` エクステンションを含める必要があります。"
 
 #. type: Title ===
 #: upstream/_versions/main/guides/security-openid-connect.adoc:203
@@ -446,7 +451,8 @@ msgstr "アプリケーションのテスト"
 #: upstream/_versions/main/guides/security-openid-connect.adoc:210
 #, fuzzy
 msgid "xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak] will launch a Keycloak container and import a `quarkus-realm.json`."
-msgstr "xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak]"
+msgstr ""
+"xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak]"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect.adoc:212

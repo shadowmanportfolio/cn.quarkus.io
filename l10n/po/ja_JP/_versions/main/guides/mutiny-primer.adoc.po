@@ -754,7 +754,9 @@ msgstr "uni.eventually) → System.out.println(\"eventually\""
 #: upstream/_versions/main/guides/mutiny-primer.adoc:300
 #, fuzzy, no-wrap
 msgid "uni.onItemOrFailure().invoke((ignoredItem, ignoredException) → System.out.println(\"eventually\"))"
-msgstr "uni.onItemOrFailure().invokeignoredItem, ignoredException) → System.out.println(\"eventually\""
+msgstr ""
+"uni.onItemOrFailure().invokeignoredItem, ignoredException) → System.out."
+"println(\"eventually\""
 
 #. type: Table
 #: upstream/_versions/main/guides/mutiny-primer.adoc:300

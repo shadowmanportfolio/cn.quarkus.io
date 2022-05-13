@@ -82,7 +82,12 @@ msgstr "Reactive SQL Client for Oracleは _実験的な_ものと考えられま
 #: upstream/_guides/reactive-sql-clients.adoc:27
 #, fuzzy
 msgid "In _tech preview_ mode, early feedback is requested to mature the idea.  There is no guarantee of stability in the platform until the solution matures.  Feedback is welcome on our https://groups.google.com/d/forum/quarkus-dev[mailing list] or as issues in our https://github.com/quarkusio/quarkus/issues[GitHub issue tracker]."
-msgstr "_experimental_ モードでは、アイデアを成熟させるために早期のフィードバックが求められます。ソリューションが成熟するまでの間、プラットフォームの安定性や長期的な存在を保証するものではありません。フィードバックは link:https://groups.google.com/d/forum/quarkus-dev[メーリングリスト] や link:https://github.com/quarkusio/quarkus/issues[GitHubの課題管理] で受け付けています。"
+msgstr ""
+"_experimental_ モードでは、アイデアを成熟させるために早期のフィードバックが求"
+"められます。ソリューションが成熟するまでの間、プラットフォームの安定性や長期"
+"的な存在を保証するものではありません。フィードバックは link:https://groups."
+"google.com/d/forum/quarkus-dev[メーリングリスト] や link:https://github.com/"
+"quarkusio/quarkus/issues[GitHubの課題管理] で受け付けています。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:30
@@ -98,7 +103,9 @@ msgstr "各クライアントのエクステンションと接続プールのク
 #: upstream/_guides/reactive-sql-clients.adoc:34
 #, fuzzy
 msgid "If you are not familiar with the Quarkus Vert.x extension, consider reading the xref:vertx.adoc[Using Eclipse Vert.x] guide first."
-msgstr "Quarkus Vert.xエクステンションに慣れていない場合は、まず link:vertx.html[Using Eclipse Vert.x]ガイドをお読みください。"
+msgstr ""
+"Quarkus Vert.xエクステンションに慣れていない場合は、まず link:vertx.html["
+"Using Eclipse Vert.x]ガイドをお読みください。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:36
@@ -180,7 +187,10 @@ msgstr "Reactive PostgreSQLクライアントエクステンション"
 #: upstream/_guides/reactive-sql-clients.adoc:75
 #, fuzzy
 msgid "First, make sure your project has the `quarkus-reactive-pg-client` extension enabled.  If you are creating a new project, use the following command:"
-msgstr "まず、プロジェクトで `quarkus-reactive-pg-client` のエクステンションが有効になっていることを確認します。新しいプロジェクトを作成する場合は、 `extensions` パラメーターを以下のように設定します。"
+msgstr ""
+"まず、プロジェクトで `quarkus-reactive-pg-client` のエクステンションが有効に"
+"なっていることを確認します。新しいプロジェクトを作成する場合は、 `extensions`"
+" パラメーターを以下のように設定します。"
 
 #. type: delimited block =
 #: upstream/_guides/reactive-sql-clients.adoc:81
@@ -191,7 +201,8 @@ msgstr "すでに作成済みのプロジェクトがある場合は、`add-exte
 #: upstream/_guides/reactive-sql-clients.adoc:86
 #, fuzzy
 msgid "Otherwise, you can manually add the dependency to your build file:"
-msgstr "そうでなければ、 `pom.xml` ファイルの依存関係セクションに手動で追加することもできます。"
+msgstr "そうでなければ、 `pom.xml` "
+"ファイルの依存関係セクションに手動で追加することもできます。"
 
 #. type: Block title
 #: upstream/_guides/reactive-sql-clients.adoc:88
@@ -233,13 +244,17 @@ msgstr "Mutiny"
 #: upstream/_guides/reactive-sql-clients.adoc:105
 #, fuzzy
 msgid "RESTEasy Reactive includes supports for Mutiny types (e.g. `Uni` and `Multi`) out of the box."
-msgstr "RESTEasy Reactiveは、Mutinyタイプ（例えば、 `Uni` と `Multi` ）に最初から対応しています。"
+msgstr "RESTEasy Reactiveは、Mutinyタイプ（例えば、 `Uni` と `Multi` "
+"）に最初から対応しています。"
 
 #. type: delimited block =
 #: upstream/_guides/reactive-sql-clients.adoc:110
 #, fuzzy
 msgid "In this guide, we will use the Mutiny API of the Reactive PostgreSQL Client.  If you are not familiar with Mutiny, check xref:mutiny-primer.adoc[Mutiny - an intuitive reactive programming library]."
-msgstr "このガイドでは、Reactive PostgreSQL ClientのMutiny APIを使用します。Mutinyに慣れていない方は、 link:mutiny-primer.html[Mutiny - an intuitive reactive programming library]をご覧ください。"
+msgstr ""
+"このガイドでは、Reactive PostgreSQL ClientのMutiny "
+"APIを使用します。Mutinyに慣れていない方は、 link:mutiny-primer.html[Mutiny - "
+"an intuitive reactive programming library]をご覧ください。"
 
 #. type: Title ===
 #: upstream/_guides/reactive-sql-clients.adoc:112
@@ -251,13 +266,16 @@ msgstr "JSON バインディング"
 #: upstream/_guides/reactive-sql-clients.adoc:116
 #, fuzzy
 msgid "We will expose `Fruit` instances over HTTP in the JSON format.  Consequently, you also need to add the `quarkus-resteasy-reactive-jackson` extension:"
-msgstr "JSON 形式で HTTP 経由で `Fruit` インスタンスを公開します。そのため、 `quarkus-resteasy-jackson` のエクステンションも追加する必要があります。"
+msgstr ""
+"JSON 形式で HTTP 経由で `Fruit` インスタンスを公開します。そのため、 "
+"`quarkus-resteasy-jackson` のエクステンションも追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:121
 #, fuzzy
 msgid "If you prefer not to use the command line, manually add the dependency to your build file:"
-msgstr "コマンドラインを使いたくない場合は、 `pom.xml` ファイルの依存関係セクションに以下を手動で追加してください。"
+msgstr "コマンドラインを使いたくない場合は、 `pom.xml` "
+"ファイルの依存関係セクションに以下を手動で追加してください。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:129
@@ -350,13 +368,19 @@ msgstr "データベーススキーマとシードデータ"
 #: upstream/_guides/reactive-sql-clients.adoc:169
 #, fuzzy
 msgid "Before we implement the REST endpoint and data management code, we need to setup the database schema.  It would also be convenient to have some data inserted up-front."
-msgstr "RESTエンドポイントとデータ管理コードを実装する前に、データベーススキーマを設定する必要があります。また、いくつかのデータを前もって挿入しておくと便利です。"
+msgstr ""
+"RESTエンドポイントとデータ管理コードを実装する前に、データベーススキーマを設"
+"定する必要があります。また、いくつかのデータを前もって挿入しておくと便利です"
+"。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:172
 #, fuzzy
 msgid "For production we would recommend to use something like the xref:flyway.adoc[Flyway database migration tool].  But for development we can simply drop and create the tables on startup, and then insert a few fruits."
-msgstr "本番環境では、 link:flyway.html[Flywayのデータベース移行ツール]のようなものを使うことをお勧めします。しかし、開発のためには、起動時にテーブルをドロップして作成し、いくつかの果物を挿入するだけです。"
+msgstr ""
+"本番環境では、 link:flyway.html[Flywayのデータベース移行ツール]のようなものを"
+"使うことをお勧めします。しかし、開発のためには、起動時にテーブルをドロップし"
+"て作成し、いくつかの果物を挿入するだけです。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:179
@@ -392,13 +416,18 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:193
 #, fuzzy
 msgid "You may override the default value of the `myapp.schema.create` property in the `application.properties` file."
-msgstr "`myapp.schema.create` プロパティのデフォルト値を `application.properties` ファイルで上書きすることができます。"
+msgstr ""
+"`myapp.schema.create` プロパティのデフォルト値を `application.properties` "
+"ファイルで上書きすることができます。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:197
 #, fuzzy
 msgid "Almost ready! To initialize the DB in development mode, we will use the client simple `query` method.  It returns a `Uni` and thus can be composed to execute queries sequentially:"
-msgstr "ほぼ準備完了です。開発モードでDBを初期化するために、クライアントのシンプルな `query` メソッドを使用します。このメソッドは `Uni` を返すので、クエリを逐次実行するように構成することができます。"
+msgstr ""
+"ほぼ準備完了です。開発モードでDBを初期化するために、クライアントのシンプルな "
+"`query` メソッドを使用します。このメソッドは `Uni` "
+"を返すので、クエリを逐次実行するように構成することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:206
@@ -416,13 +445,20 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:211
 #, fuzzy
 msgid "Wondering why we need block until the latest query is completed? This code is part of a `@PostConstruct` method and Quarkus invokes it synchronously.  As a consequence, returning prematurely could lead to serving requests while the database is not ready yet."
-msgstr "なぜ最新のクエリが完了するまでブロックする必要があるのか疑問に思いませんか？このコードは、 `@PostConstruct` メソッドの一部であり、Quarkusはこれを同期的に呼び出します。そのため、早々に返すと、データベースの準備ができていないのにリクエストに対応してしまう可能性があります。"
+msgstr ""
+"なぜ最新のクエリが完了するまでブロックする必要があるのか疑問に思いませんか？"
+"このコードは、 `@PostConstruct` メソッドの一部であり、Quarkusはこれを同期的に"
+"呼び出します。そのため、早々に返すと、データベースの準備ができていないのにリ"
+"クエストに対応してしまう可能性があります。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:215
 #, fuzzy
 msgid "That's it! So far we have seen how to configure a pooled client and execute simple queries.  We are now ready to develop the data management code and implement our RESTful endpoint."
-msgstr "以上で終了です。これまでに、プールされたクライアントを構成し、簡単なクエリを実行する方法を見てきました。これで、データ管理コードの開発とRESTfulエンドポイントの実装の準備が整いました。"
+msgstr ""
+"以上で終了です。これまでに、プールされたクライアントを構成し、簡単なクエリを"
+"実行する方法を見てきました。これで、データ管理コードの開発とRESTfulエンドポイ"
+"ントの実装の準備が整いました。"
 
 #. type: Title ==
 #: upstream/_guides/reactive-sql-clients.adoc:216
@@ -440,7 +476,10 @@ msgstr "検索結果のトラバーサル"
 #: upstream/_guides/reactive-sql-clients.adoc:222
 #, fuzzy
 msgid "In development mode, the database is set up with a few rows in the `fruits` table.  To retrieve all the data, we will use the `query` method again:"
-msgstr "開発モードでは、データベースは `fruits` テーブルに数行が設定されています。すべてのデータを取得するために、再び `query` メソッドを使用します。"
+msgstr ""
+"開発モードでは、データベースは `fruits` "
+"テーブルに数行が設定されています。すべてのデータを取得するために、再び "
+"`query` メソッドを使用します。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:226
@@ -452,7 +491,10 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:230
 #, fuzzy
 msgid "When the operation completes, we will get a `RowSet` that has all the rows buffered in memory.  A `RowSet` is an `java.lang.Iterable<Row>` and thus can be converted to a `Multi`:"
-msgstr "操作が完了すると、すべての行をメモリにバッファリングした `RowSet` が得られます。 `RowSet` は `java.lang.Iterable<Row>` なので、 `Multi` に変換することができます。"
+msgstr ""
+"操作が完了すると、すべての行をメモリにバッファリングした `RowSet` "
+"が得られます。 `RowSet` は `java.lang.Iterable<Row>` なので、 `Multi` "
+"に変換することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:236
@@ -467,7 +509,9 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:240
 #, fuzzy
 msgid "The `Fruit#from` method converts a `Row` instance to a `Fruit` instance.  It is extracted as a convenience for the implementation of the other data management methods:"
-msgstr "`Fruit#from` メソッドは、 `Row` インスタンスを `Fruit` インスタンスに変換します。他のデータ管理方法を実装する際の利便性のために抽出されたものです。"
+msgstr ""
+"`Fruit#from` メソッドは、 `Row` インスタンスを `Fruit` インスタンスに変換しま"
+"す。他のデータ管理方法を実装する際の利便性のために抽出されたものです。"
 
 #. type: Block title
 #: upstream/_guides/reactive-sql-clients.adoc:242
@@ -531,7 +575,8 @@ msgstr "ここで、 `dev` モードでQuarkusを起動します。"
 #: upstream/_guides/reactive-sql-clients.adoc:277
 #, fuzzy
 msgid "Lastly, open your browser and navigate to http://localhost:8080/fruits, you should see:"
-msgstr "最後に、ブラウザを開いて http://localhost:8080/fruits  に移動すると、表示されるはずです。"
+msgstr "最後に、ブラウザを開いて http://localhost:8080/fruits  "
+"に移動すると、表示されるはずです。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:281
@@ -549,7 +594,8 @@ msgstr "プリペアド・クエリ"
 #: upstream/_guides/reactive-sql-clients.adoc:286
 #, fuzzy
 msgid "The Reactive PostgreSQL Client can also prepare queries and take parameters that are replaced in the SQL statement at execution time:"
-msgstr "Reactive PostgreSQL Clientは、クエリを準備して、実行時にSQL文に置き換えられるパラメータを取ることもできます。"
+msgstr "Reactive PostgreSQL Clientは、クエリを準備して、実行時にSQL文に置き換えられる"
+"パラメータを取ることもできます。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:290
@@ -561,13 +607,20 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:294
 #, fuzzy
 msgid "For PostgreSQL, the SQL string can refer to parameters by position, using `$1`, `$2`, ...etc.  Please refer to the <<Database Clients details>> section for other databases."
-msgstr "PostgreSQLでは、 `$1`, `$2`, ...などのように、SQL文字列でパラメータを位置ごとに参照することができます。その他のデータベースについては、 link:#Database Clients details[「データベースクライアントの詳細]」をご参照ください。"
+msgstr ""
+"PostgreSQLでは、 `$1`, `$2`, ...などのように、SQL文字列でパラメータを位置ごと"
+"に参照することができます。その他のデータベースについては、 link:#Database "
+"Clients details[「データベースクライアントの詳細]」をご参照ください。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:297
 #, fuzzy
 msgid "Similar to the simple `query` method, `preparedQuery` returns an instance of `PreparedQuery<RowSet<Row>>`.  Equipped with this tooling, we are able to safely use an `id` provided by the user to get the details of a particular fruit:"
-msgstr "単純な `query` メソッドと同様に、 `preparedQuery` は `PreparedQuery<RowSet<Row>>` のインスタンスを返します。このツールを使えば、ユーザーが提供した `id` を安全に使って、特定の果物の詳細を得ることができます。"
+msgstr ""
+"単純な `query` メソッドと同様に、 `preparedQuery` は "
+"`PreparedQuery<RowSet<Row>>` のインスタンスを返します。このツールを使えば、"
+"ユーザーが提供した `id` "
+"を安全に使って、特定の果物の詳細を得ることができます。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:306
@@ -596,7 +649,8 @@ msgstr "`RowSet` の結果で `Iterator` を得る。"
 #: upstream/_guides/reactive-sql-clients.adoc:310
 #, fuzzy
 msgid "Create a `Fruit` instance from the `Row` if an entity was found."
-msgstr "エンティティが見つかった場合は、 `Row` から `Fruit` インスタンスを作成します。"
+msgstr "エンティティが見つかった場合は、 `Row` から `Fruit` "
+"インスタンスを作成します。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:312
@@ -621,7 +675,8 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:325
 #, fuzzy
 msgid "Prepare a JAX-RS response with either the `Fruit` instance if found or the `404` status code."
-msgstr "見つかった場合は `Fruit` インスタンスを、見つかった場合は `404` ステータスコードを含む JAX-RS レスポンスを準備します。"
+msgstr "見つかった場合は `Fruit` インスタンスを、見つかった場合は `404` "
+"ステータスコードを含む JAX-RS レスポンスを準備します。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:326
@@ -672,13 +727,15 @@ msgstr "結果メタデータ"
 #: upstream/_guides/reactive-sql-clients.adoc:354
 #, fuzzy
 msgid "A `RowSet` does not only hold your data in memory, it also gives you some information about the data itself, such as:"
-msgstr "`RowSet` は、データをメモリ上に保持するだけでなく、データそのものに関する情報も提供しています。"
+msgstr "`RowSet` は、データをメモリ上に保持するだけでなく、データそのものに関する情報"
+"も提供しています。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:356
 #, fuzzy
 msgid "the number of rows affected by the query (inserted/deleted/updated/retrieved depending on the query type),"
-msgstr "クエリの影響を受ける行の数（クエリの種類に応じて、挿入/削除/更新/取得されます）。"
+msgstr "クエリの影響を受ける行の数（クエリの種類に応じて、挿入/削除/更新/取得されます"
+"）。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:357
@@ -731,7 +788,12 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:386
 #, fuzzy
 msgid "With `GET`, `POST` and `DELETE` methods implemented, we may now create a minimal web page to try the RESTful application out.  We will use https://jquery.com/[jQuery] to simplify interactions with the backend:"
-msgstr "`GET` 、 `POST` 、 `DELETE` のメソッドが実装されたので、RESTful アプリケーションを試すための最小限の Web ページを作成してみましょう。ここでは、バックエンドとのやりとりを簡単にするために link:https://jquery.com/[jQuery]を使用します。"
+msgstr ""
+"`GET` 、 `POST` 、 `DELETE` のメソッドが実装されたので、RESTful "
+"アプリケーションを試すための最小限の Web "
+"ページを作成してみましょう。ここでは、"
+"バックエンドとのやりとりを簡単にするために link:https://jquery.com/"
+"[jQuery]を使用します。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:399
@@ -880,7 +942,9 @@ msgstr "データベースが空の場合、 `fruits` パラメータは定義�
 #: upstream/_guides/reactive-sql-clients.adoc:467
 #, fuzzy
 msgid "All done! Navigate to http://localhost:8080/fruits.html and read/create/delete some fruits."
-msgstr "すべて完了しました。 http://localhost:8080/fruits.html に移動して、いくつかのフルーツを読み/作成/削除してください。"
+msgstr ""
+"すべて完了しました。 http://localhost:8080/fruits.html "
+"に移動して、いくつかのフルーツを読み/作成/削除してください。"
 
 #. type: Title ==
 #: upstream/_guides/reactive-sql-clients.adoc:469
@@ -1002,7 +1066,12 @@ msgstr "トランザクション"
 #: upstream/_guides/reactive-sql-clients.adoc:506
 #, fuzzy
 msgid "The reactive SQL clients support transactions.  A transaction is started with `io.vertx.mutiny.sqlclient.SqlConnection#begin` and terminated with either `io.vertx.mutiny.sqlclient.Transaction#commit` or `io.vertx.mutiny.sqlclient.Transaction#rollback`.  All these operations are asynchronous:"
-msgstr "リアクティブSQLクライアントはトランザクションをサポートしています。トランザクションは `io.vertx.mutiny.sqlclient.SqlConnection#begin` で開始され， `io.vertx.mutiny.sqlclient.Transaction#commit` または `io.vertx.mutiny.sqlclient.Transaction#rollback` で終了します．これらの操作はすべて非同期です。"
+msgstr ""
+"リアクティブSQLクライアントはトランザクションをサポートしています。"
+"トランザクションは `io.vertx.mutiny.sqlclient.SqlConnection#begin` "
+"で開始され， `io.vertx.mutiny.sqlclient.Transaction#commit` または `io.vertx."
+"mutiny.sqlclient.Transaction#rollback` "
+"で終了します．これらの操作はすべて非同期です。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:508
@@ -1020,13 +1089,18 @@ msgstr "`transaction.commit()` と `transaction.rollback()` のリターン `Uni
 #: upstream/_guides/reactive-sql-clients.adoc:512
 #, fuzzy
 msgid "Managing transactions in the reactive programming world can be cumbersome.  Instead of writing repetitive and complex (thus error-prone!) code, you can use the `io.vertx.mutiny.sqlclient.Pool#withTransaction` helper method."
-msgstr "リアクティブプログラミングの世界では、トランザクションの管理が面倒です。反復的で複雑な（つまりエラーになりやすい！）コードを書く代わりに、 `io.vertx.mutiny.sqlclient.Pool#withTransaction` ヘルパー・メソッドを使うことができます。"
+msgstr ""
+"リアクティブプログラミングの世界では、トランザクションの管理が面倒です。反復"
+"的で複雑な（つまりエラーになりやすい！）コードを書く代わりに、 `io.vertx."
+"mutiny.sqlclient.Pool#withTransaction` "
+"ヘルパー・メソッドを使うことができます。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:514
 #, fuzzy
 msgid "The following snippet shows how to run 2 insertions in the same transaction:"
-msgstr "次のスニペットは、2つの挿入を同じトランザクションで実行する方法を示しています。"
+msgstr "次のスニペットは、2つの挿入を同じトランザクションで実行する方法を示しています"
+"。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:523
@@ -1055,7 +1129,8 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:532
 #, fuzzy
 msgid "In this example, the transaction is automatically committed on success or rolled back on failure."
-msgstr "この例では、トランザクションは成功時には自動的にコミットされ、失敗時にはロールバックされます。"
+msgstr "この例では、トランザクションは成功時には自動的にコミットされ、失敗時にはロー"
+"ルバックされます。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:534
@@ -1101,13 +1176,18 @@ msgstr "バッチクエリの結果を利用する"
 #: upstream/_guides/reactive-sql-clients.adoc:552
 #, fuzzy
 msgid "When executing batch queries, reactive SQL clients return a `RowSet` that corresponds to the results of the first element in the batch.  To get the results of the following batch elements, you must invoke the `RowSet#next` method until it returns `null`."
-msgstr "バッチクエリを実行する際、リアクティブSQLクライアントは、バッチの最初の要素の結果に対応する `RowSet` を返します。次のバッチ要素の結果を得るためには、 `null` が返ってくるまで `RowSet#next` メソッドを呼び出す必要があります。"
+msgstr ""
+"バッチクエリを実行する際、リアクティブSQLクライアントは、"
+"バッチの最初の要素の結果に対応する `RowSet` "
+"を返します。次のバッチ要素の結果を得るためには、 `null` が返ってくるまで "
+"`RowSet#next` メソッドを呼び出す必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:555
 #, fuzzy
 msgid "Let's say you want to update some rows and compute the total number of affected rows.  You must inspect each `RowSet`:"
-msgstr "いくつかの行を更新して、影響を受ける行の総数を計算したいとします。そのためには，各 `RowSet` を調べる必要があります．"
+msgstr "いくつかの行を更新して、影響を受ける行の総数を計算したいとします。そのために"
+"は，各 `RowSet` を調べる必要があります．"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:559
@@ -1154,7 +1234,8 @@ msgstr "`null` を返すまで `RowSet#next` を起動します。"
 #: upstream/_guides/reactive-sql-clients.adoc:577
 #, fuzzy
 msgid "As another example, if you want to load all the rows you just inserted, you must concatenate the contents of each `RowSet`:"
-msgstr "別の例として、先ほど挿入したすべての行を読み込みたい場合は、各 `RowSet` の内容を連結する必要があります。"
+msgstr "別の例として、先ほど挿入したすべての行を読み込みたい場合は、各 `RowSet` "
+"の内容を連結する必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/reactive-sql-clients.adoc:581
@@ -1300,13 +1381,15 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:649
 #, fuzzy
 msgid "Injecting the client for the default datasource does not require anything special."
-msgstr "デフォルトのデータソース用のクライアントをインジェクトするのに、特別なことは何も必要ありません。"
+msgstr "デフォルトのデータソース用のクライアントをインジェクトするのに、特別なことは"
+"何も必要ありません。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:650
 #, fuzzy
 msgid "For a named datasource, you use the `@ReactiveDataSource` CDI qualifier with the datasource name as its value."
-msgstr "名前付きのデータソースの場合は、 `@ReactiveDataSource` CDI修飾子を使用し、その値としてデータソース名を指定します。"
+msgstr "名前付きのデータソースの場合は、 `@ReactiveDataSource` "
+"CDI修飾子を使用し、その値としてデータソース名を指定します。"
 
 #. type: Title ==
 #: upstream/_guides/reactive-sql-clients.adoc:651
@@ -1318,25 +1401,30 @@ msgstr "UNIXドメインソケット接続"
 #: upstream/_guides/reactive-sql-clients.adoc:654
 #, fuzzy
 msgid "The PostgreSQL and MariaDB/MySQL clients can be configured to connect to the server through a UNIX domain socket."
-msgstr "PostgreSQLとMariaDB/MySQLのクライアントは、UNIXドメインソケットを介してサーバーに接続するように設定できます。"
+msgstr "PostgreSQLとMariaDB/MySQLのクライアントは、UNIXドメインソケットを介してサーバ"
+"ーに接続するように設定できます。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:656
 #, fuzzy
 msgid "First make sure that xref:vertx-reference.adoc#native-transport[native transport support] is enabled."
-msgstr "まず、 link:vertx-reference.html#native-transport[ネイティブトランスポートのサポート]が有効になっていることを確認します。"
+msgstr ""
+"まず、 link:vertx-reference.html#native-transport[ネイティブトランスポートの"
+"サポート]が有効になっていることを確認します。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:659
 #, fuzzy
 msgid "Then configure the database connection url.  This step depends on the database type."
-msgstr "次に、データベースの接続URLを設定します。この手順は、データベースの種類によって異なります。"
+msgstr "次に、データベースの接続URLを設定します。この手順は、データベースの種類によっ"
+"て異なります。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:663
 #, fuzzy
 msgid "PostgresSQL domain socket paths have the following form: `<directory>/.s.PGSQL.<port>`"
-msgstr "PostgresSQLドメインのソケットパスは以下のような形式になります。 `<directory>/.s.PGSQL.<port>`"
+msgstr "PostgresSQLドメインのソケットパスは以下のような形式になります。 `<directory>/"
+".s.PGSQL.<port>`"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:665
@@ -1360,7 +1448,8 @@ msgstr "`port` は、ソケットパスの `port` です。"
 #: upstream/_guides/reactive-sql-clients.adoc:670
 #, fuzzy
 msgid "Consider the following socket path: `/var/run/postgresql/.s.PGSQL.5432`."
-msgstr "次のようなソケットのパスを考えてみましょう。 `/var/run/postgresql/.s.PGSQL.5432`."
+msgstr "次のようなソケットのパスを考えてみましょう。 `/var/run/postgresql/.s.PGSQL."
+"5432`."
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:672
@@ -1379,7 +1468,8 @@ msgstr ""
 #: upstream/_guides/reactive-sql-clients.adoc:681
 #, fuzzy
 msgid "The database connection url must be configured so that the `host` is the socket path."
-msgstr "データベースの接続URLは、 `host` がソケットのパスになるように設定する必要があります。"
+msgstr "データベースの接続URLは、 `host` "
+"がソケットのパスになるように設定する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:683
@@ -1403,7 +1493,10 @@ msgstr "プーリング接続 `idle-timeout`"
 #: upstream/_guides/reactive-sql-clients.adoc:695
 #, fuzzy
 msgid "Reactive datasources can be configured with an `idle-timeout` (in milliseconds).  It is the maximum time a connection remains unused in the pool before it is closed."
-msgstr "リアクティブデータソースには、 `idle-timeout` （ミリ秒単位）を設定することができます。これは、接続がプール内で使用されずに残った場合、その接続が閉じられるまでの最大時間です。"
+msgstr ""
+"リアクティブデータソースには、 `idle-timeout` （ミリ秒単位）を設定することが"
+"できます。これは、接続がプール内で使用されずに残った場合、その接続が閉じられ"
+"るまでの最大時間です。"
 
 #. type: Plain text
 #: upstream/_guides/reactive-sql-clients.adoc:697

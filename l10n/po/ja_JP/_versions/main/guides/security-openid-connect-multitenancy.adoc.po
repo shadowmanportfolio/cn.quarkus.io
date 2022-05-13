@@ -487,7 +487,9 @@ msgstr ""
 #: upstream/_versions/main/guides/security-openid-connect-multitenancy.adoc:264
 #, fuzzy
 msgid "You should be able to access your Keycloak Server at http://localhost:8180[localhost:8180]."
-msgstr "Keycloakサーバーには、 link:http://localhost:8180/auth[localhost:8180/auth] でアクセスできるはずです。"
+msgstr ""
+"Keycloakサーバーには、 link:http://localhost:8180/auth[localhost:8180/auth] "
+"でアクセスできるはずです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-multitenancy.adoc:266
@@ -530,7 +532,8 @@ msgstr "デベロッパーモードでの実行"
 #: upstream/_versions/main/guides/security-openid-connect-multitenancy.adoc:279
 #, fuzzy
 msgid "To run the microservice in dev mode, use:"
-msgstr "マイクロサービスをdevモードで実行するには、 `./mvnw clean compile quarkus:dev` を使用します。"
+msgstr "マイクロサービスをdevモードで実行するには、 `./mvnw clean compile "
+"quarkus:dev` を使用します。"
 
 #. type: Title ===
 #: upstream/_versions/main/guides/security-openid-connect-multitenancy.adoc:282
@@ -542,7 +545,8 @@ msgstr ""
 #: upstream/_versions/main/guides/security-openid-connect-multitenancy.adoc:285
 #, fuzzy
 msgid "When you're done playing with dev mode, you can run it as a standard Java application."
-msgstr "\"dev-mode\" で遊び終わったら、標準のJavaアプリケーションとして実行することができます。"
+msgstr "\"dev-mode\" "
+"で遊び終わったら、標準のJavaアプリケーションとして実行することができます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-multitenancy.adoc:287
@@ -580,7 +584,9 @@ msgstr "これは、生成されたバイナリーにランタイム技術が含
 #: upstream/_versions/main/guides/security-openid-connect-multitenancy.adoc:307
 #, fuzzy
 msgid "Compilation will take a bit longer, so this step is disabled by default; let's build again by enabling the native build:"
-msgstr "コンパイルには少し時間がかかるので、このステップはデフォルトで無効になっています。 `native` プロファイルを有効にして再度ビルドしてみましょう。"
+msgstr ""
+"コンパイルには少し時間がかかるので、このステップはデフォルトで無効になってい"
+"ます。 `native` プロファイルを有効にして再度ビルドしてみましょう。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-multitenancy.adoc:311

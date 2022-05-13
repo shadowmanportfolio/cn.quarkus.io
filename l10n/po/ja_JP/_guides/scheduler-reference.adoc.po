@@ -45,13 +45,23 @@ msgstr "スケジュールされたメソッド"
 #: upstream/_guides/scheduler-reference.adoc:29
 #, fuzzy
 msgid "A method annotated with `@io.quarkus.scheduler.Scheduled` is automatically scheduled for invocation.  A scheduled method must not be abstract or private.  It may be either static or non-static.  A scheduled method can be annotated with interceptor bindings, such as `@javax.transaction.Transactional` and `@org.eclipse.microprofile.metrics.annotation.Counted`."
-msgstr "メソッドに `@io.quarkus.scheduler.Scheduled` をアノテーションすると、自動的に呼び出されるようにスケジュールされます。実際には、そのようなメソッドはCDI Beanの非プライベート非静的メソッドでなければなりません。CDI Beanのメソッドであることの結果として、スケジュールされたメソッドは、 `@javax.transaction.Transactional` や `@org.eclipse.microprofile.metrics.annotation.Counted` のようなインターセプターバインディングでアノテーションすることができます。"
+msgstr ""
+"メソッドに `@io.quarkus.scheduler.Scheduled` をアノテーションすると、自動的に"
+"呼び出されるようにスケジュールされます。実際には、そのようなメソッドはCDI "
+"Beanの非プライベート非静的メソッドでなければなりません。CDI "
+"Beanのメソッドであることの結果として、スケジュールされたメソッドは、 `@javax."
+"transaction.Transactional` や `@org.eclipse.microprofile.metrics.annotation."
+"Counted` "
+"のようなインターセプターバインディングでアノテーションすることができます。"
 
 #. type: Plain text
 #: upstream/_guides/scheduler-reference.adoc:31
 #, fuzzy
 msgid "If there is a bean class that has no scope and declares at least one non-static method annotated with `@Scheduled` then `@Singleton` is used."
-msgstr "スコープを持たないBeanクラスで、 `@Scheduled` でアノテーションされた非静的メソッドが少なくとも一つ宣言されている場合、 `@Singleton` が使用されます。"
+msgstr ""
+"スコープを持たないBeanクラスで、 `@Scheduled` "
+"でアノテーションされた非静的メソッドが少なくとも一つ宣言されている場合、 "
+"`@Singleton` が使用されます。"
 
 #. type: Plain text
 #: upstream/_guides/scheduler-reference.adoc:33
@@ -67,7 +77,10 @@ msgstr "アノテーションは繰り返し可能なので、1つのメソッ�
 #: upstream/_guides/scheduler-reference.adoc:39
 #, fuzzy
 msgid "Subclasses never inherit the metadata of a `@Scheduled` method declared on a superclass. In the following example, the `everySecond()` method is only invoked upon the instance of `Jobs`."
-msgstr "サブクラスは、スーパークラスで宣言された `@Scheduled` メソッドのメタデータを継承することはありません。次の例では、 `everySecond()` メソッドは `Jobs` のインスタンスに対してのみ呼び出されます。"
+msgstr ""
+"サブクラスは、スーパークラスで宣言された `@Scheduled` "
+"メソッドのメタデータを継承することはありません。次の例では、 `everySecond()` "
+"メソッドは `Jobs` のインスタンスに対してのみ呼び出されます。"
 
 #. type: delimited block -
 #: upstream/_guides/scheduler-reference.adoc:42
@@ -102,7 +115,11 @@ msgstr ""
 #: upstream/_guides/scheduler-reference.adoc:56
 #, fuzzy
 msgid "A CDI event of type `io.quarkus.scheduler.SuccessfulExecution` is fired synchronously and asynchronously when an execution of a scheduled method is successful. A CDI event of type `io.quarkus.scheduler.FailedExecution` is fired synchronously and asynchronously when an execution of a scheduled method throws an exception."
-msgstr "`io.quarkus.scheduler.SuccessfulExecution` 型の CDI イベントは、スケジュールされたメソッドの実行が成功したときに、同期および非同期で発生します。 `io.quarkus.scheduler.FailedExecution` タイプの CDI イベントは、スケジュールされたメソッドの実行が例外をスローしたときに、同期および非同期で発生します。"
+msgstr ""
+"`io.quarkus.scheduler.SuccessfulExecution` 型の CDI イベントは、スケジュール"
+"されたメソッドの実行が成功したときに、同期および非同期で発生します。 `io."
+"quarkus.scheduler.FailedExecution` タイプの CDI イベントは、スケジュールされ"
+"たメソッドの実行が例外をスローしたときに、同期および非同期で発生します。"
 
 #. type: Title ===
 #: upstream/_guides/scheduler-reference.adoc:57
@@ -114,7 +131,11 @@ msgstr "トリガー"
 #: upstream/_guides/scheduler-reference.adoc:62
 #, fuzzy
 msgid "A trigger is defined either by the `@Scheduled#cron()` or by the `@Scheduled#every()` attribute.  If both are specified, the cron expression takes precedence.  If none is specified, the build fails with an `IllegalStateException`."
-msgstr "トリガーは、 `@Scheduled#cron()` 属性または `@Scheduled#every()` 属性によって定義されます。両方が指定されている場合、cron 式が優先されます。何も指定されていない場合、ビルドは `IllegalStateException` で失敗します。"
+msgstr ""
+"トリガーは、 `@Scheduled#cron()` 属性または `@Scheduled#every()` "
+"属性によって定義されます。両方が指定されている場合、cron "
+"式が優先されます。何も指定されていない場合、ビルドは `IllegalStateException` "
+"で失敗します。"
 
 #. type: Title ====
 #: upstream/_guides/scheduler-reference.adoc:63
@@ -280,7 +301,10 @@ msgstr "アイデンティティ"
 #: upstream/_guides/scheduler-reference.adoc:149
 #, fuzzy
 msgid "By default, a unique identifier is generated for each scheduled method.  This identifier is used in log messages, during debugging and as a parameter of some `io.quarkus.scheduler.Scheduler` methods.  Therefore, a possibility to specify an explicit identifier may come in handy."
-msgstr "デフォルトでは、スケジュールされた各メソッドに対して一意の ID が生成されます。このIDはログメッセージやデバッグ中に使用されます。時には、明示的な id を指定することが便利な場合もあります。"
+msgstr ""
+"デフォルトでは、スケジュールされた各メソッドに対して一意の ID "
+"が生成されます。このIDはログメッセージやデバッグ中に使用されます。時には、"
+"明示的な id を指定することが便利な場合もあります。"
 
 #. type: Block title
 #: upstream/_guides/scheduler-reference.adoc:150
@@ -519,7 +543,15 @@ msgstr "ノンブロッキング方式"
 #: upstream/_guides/scheduler-reference.adoc:286
 #, fuzzy
 msgid "By default, a scheduled method is executed on the main executor for blocking tasks.  As a result, a technology that is designed to run on a Vert.x event loop (such as Hibernate Reactive) cannot be used inside the method body.  For this reason, a scheduled method that returns `java.util.concurrent.CompletionStage<Void>` or `io.smallrye.mutiny.Uni<Void>`, or is annotated with `@io.smallrye.common.annotation.NonBlocking` is executed on the Vert.x event loop instead."
-msgstr "デフォルトでは、スケジュールされたメソッドは、ブロックするタスクのメインエクゼキュータ上で実行されます。そのため、Vert.xイベントループ上で実行するように設計された技術（Hibernate Reactiveなど）は、メソッド本体内で使用することができない。このため、 `java.util.concurrent.CompletionStage<Void>` または `io.smallrye.mutiny.Uni<Void>` を返す、あるいは `@io.smallrye.common.annotation.NonBlocking` でアノテーションされたスケジュール型メソッドは、代わりに Vert.x のイベントループで実行されます。"
+msgstr ""
+"デフォルトでは、スケジュールされたメソッドは、ブロックするタスクのメインエク"
+"ゼキュータ上で実行されます。そのため、Vert."
+"xイベントループ上で実行するように設計された技術（Hibernate "
+"Reactiveなど）は、メソッド本体内で使用することができない。このため、 `java."
+"util.concurrent.CompletionStage<Void>` または `io.smallrye.mutiny.Uni<Void>` "
+"を返す、あるいは `@io.smallrye.common.annotation.NonBlocking` "
+"でアノテーションされたスケジュール型メソッドは、代わりに Vert.x "
+"のイベントループで実行されます。"
 
 #. type: delimited block -
 #: upstream/_guides/scheduler-reference.adoc:296
@@ -536,7 +568,8 @@ msgstr ""
 #: upstream/_guides/scheduler-reference.adoc:298
 #, fuzzy
 msgid "The return type `Uni<Void>` instructs the scheduler to execute the method on the Vert.x event loop."
-msgstr "リターンタイプ `Uni<Void>` は、Vert.xのイベントループでメソッドを実行するようにスケジューラに指示します。"
+msgstr "リターンタイプ `Uni<Void>` は、Vert."
+"xのイベントループでメソッドを実行するようにスケジューラに指示します。"
 
 #. type: Title ==
 #: upstream/_guides/scheduler-reference.adoc:299
@@ -632,7 +665,9 @@ msgstr "スケジュールされた特定のメソッドを、そのIDで再開�
 #: upstream/_guides/scheduler-reference.adoc:336
 #, fuzzy
 msgid "You can configure the grace period for isOverdue() with quarkus.scheduler.overdue-grace-period"
-msgstr "isOverdue()の猶予期間は、quarkus.scheduler.overdue-grace-periodを使用して設定することができます。"
+msgstr ""
+"isOverdue()の猶予期間は、quarkus.scheduler.overdue-grace-"
+"periodを使用して設定することができます。"
 
 #. type: Title ==
 #: upstream/_guides/scheduler-reference.adoc:337

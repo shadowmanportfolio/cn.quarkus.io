@@ -26,7 +26,9 @@ msgstr "真"
 #: upstream/_redirects/guides/consul-config.md:1
 #, fuzzy, no-wrap
 msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-config-extensions/dev/consul.html"
-msgstr "https://quarkiverse.github.io/quarkiverse-docs/quarkus-config-extensions/dev/consul.html"
+msgstr ""
+"https://quarkiverse.github.io/quarkiverse-docs/quarkus-config-extensions/dev/"
+"consul.html"
 
 #. type: YAML Front Matter: permalink
 #: upstream/_redirects/guides/consul-config.md:1

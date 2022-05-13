@@ -29,13 +29,21 @@ msgstr " Schema RegistryとAvroと共にApache Kafkaを使用"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:12
 #, fuzzy
 msgid "This guide shows how your Quarkus application can use Apache Kafka, http://avro.apache.org/docs/current/[Avro] serialized records, and connect to a schema registry (such as the https://docs.confluent.io/platform/current/schema-registry/index.html[Confluent Schema Registry] or https://www.apicur.io/registry/[Apicurio Registry])."
-msgstr "このガイドでは、Quarkusアプリケーションが、Apache Kafka、 link:http://avro.apache.org/docs/current/[Avro]シリアライズドレコードを使用し、スキーマレジストリ（ link:https://docs.confluent.io/platform/current/schema-registry/index.html[Confluent Schema Registry]や link:https://www.apicur.io/registry/[Apicurio Registry]など）に接続する方法を説明します。"
+msgstr ""
+"このガイドでは、Quarkusアプリケーションが、Apache Kafka、 link:http://avro."
+"apache.org/docs/current/"
+"[Avro]シリアライズドレコードを使用し、スキーマレジストリ（ link:https://docs."
+"confluent.io/platform/current/schema-registry/index.html[Confluent Schema "
+"Registry]や link:https://www.apicur.io/registry/[Apicurio "
+"Registry]など）に接続する方法を説明します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:15
 #, fuzzy
 msgid "If you are not familiar with Kafka and Kafka in Quarkus in particular, consider first going through the xref:kafka.adoc[Using Apache Kafka with Reactive Messaging] guide."
-msgstr "KafkaやKafka in Quarkusに慣れていない場合は、まず link:kafka.html[「Using Apache Kafka with Reactive Messaging]」のガイドをご覧ください。"
+msgstr ""
+"KafkaやKafka in Quarkusに慣れていない場合は、まず link:kafka.html[「Using "
+"Apache Kafka with Reactive Messaging]」のガイドをご覧ください。"
 
 #. type: Title ==
 #: upstream/_guides/kafka-schema-registry-avro.adoc:16
@@ -53,19 +61,27 @@ msgstr "アーキテクチャ"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:26
 #, fuzzy
 msgid "In this guide we are going to implement a REST resource, namely `MovieResource`, that will consume movie DTOs and put them in a Kafka topic."
-msgstr "このガイドでは、ムービーのDTOを消費してKafkaトピックに格納するRESTリソース（ `MovieResource` ）を実装します。"
+msgstr "このガイドでは、ムービーのDTOを消費してKafkaトピックに格納するRESTリソース（ "
+"`MovieResource` ）を実装します。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:30
 #, fuzzy
 msgid "Then, we will implement a consumer that will consume and collect messages from the same topic.  The collected messages will be then exposed by another resource, `ConsumedMovieResource`, via https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events[Server-Sent Events]."
-msgstr "次に、同じトピックからのメッセージを消費・収集するコンシューマーを実装します。収集したメッセージは、 link:https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events[Server-Sent Events]を介して、別のリソース（ `ConsumedMovieResource` ）から公開されます。"
+msgstr ""
+"次に、同じトピックからのメッセージを消費・収集するコンシューマーを実装します"
+"。収集したメッセージは、 link:https://developer.mozilla.org/en-US/docs/Web/"
+"API/Server-sent_events/Using_server-sent_events[Server-Sent "
+"Events]を介して、別のリソース（ `ConsumedMovieResource` ）から公開されます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:34
 #, fuzzy
 msgid "The _Movies_ will be serialized and deserialized using Avro.  The schema, describing the _Movie_, is stored in Apicurio Registry.  The same concept applies if you are using the Confluent Avro _serde_ and Confluent Schema Registry."
-msgstr "_ムービー_はAvroを使ってシリアル化、デシリアル化されます。 _Movie_を記述したスキーマはApicurio Registryに保存されます。Confluent Avro _serde_とConfluent Schema Registryを使用している場合も同じ考え方です。"
+msgstr ""
+"_ムービー_はAvroを使ってシリアル化、デシリアル化されます。 "
+"_Movie_を記述したスキーマはApicurio Registryに保存されます。Confluent Avro "
+"_serde_とConfluent Schema Registryを使用している場合も同じ考え方です。"
 
 #. type: Title ==
 #: upstream/_guides/kafka-schema-registry-avro.adoc:35
@@ -87,7 +103,9 @@ msgstr "Gitレポジトリをクローンするか `git clone {quickstarts-clone
 #: upstream/_guides/kafka-schema-registry-avro.adoc:43
 #, fuzzy
 msgid "The solution is located in the `kafka-avro-schema-quickstart` {quickstarts-tree-url}/kafka-avro-schema-quickstart[directory]."
-msgstr "このソリューションは `kafka-avro-schema-quickstart` {quickstarts-tree-url}/kafka-avro-schema-quickstart[directory]にあります。"
+msgstr ""
+"このソリューションは `kafka-avro-schema-quickstart` {quickstarts-tree-url"
+"}/kafka-avro-schema-quickstart[directory]にあります。"
 
 #. type: Title ==
 #: upstream/_guides/kafka-schema-registry-avro.adoc:44
@@ -104,7 +122,11 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_guides/kafka-schema-registry-avro.adoc:57
 #, fuzzy
 msgid "If you use Confluent Schema Registry, you don't need the `quarkus-apicurio-registry-avro` extension.  Instead, you need the `quarkus-confluent-registry-avro` extension and a few more dependencies.  Also, you need to add the Confluent Maven repository to your build file:"
-msgstr "Confluent Schema Registryを使用している場合は、 `quarkus-apicurio-registry-avro` のエクステンションは必要ありません。代わりに、以下の依存関係とConfluent Mavenリポジトリをビルドファイルに追加する必要があります。"
+msgstr ""
+"Confluent Schema Registryを使用している場合は、 `quarkus-apicurio-registry-"
+"avro` のエクステンションは必要ありません。代わりに、"
+"以下の依存関係とConfluent "
+"Mavenリポジトリをビルドファイルに追加する必要があります。"
 
 #. type: Block title
 #: upstream/_guides/kafka-schema-registry-avro.adoc:59
@@ -226,7 +248,11 @@ msgstr "Avro スキーマ"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:127
 #, fuzzy
 msgid "Apache Avro is a data serialization system. Data structures are described using schemas.  The first thing we need to do is to create a schema describing the `Movie` structure.  Create a file called `src/main/avro/movie.avsc` with the schema for our record (Kafka message):"
-msgstr "Apache Avro はデータシリアライズシステムです。データ構造はスキーマを使って記述する。まず必要なのは、 `Movie` 構造を記述するスキーマを作成することです。レコード（Kafka メッセージ）のスキーマを記述した `src/main/avro/movie.avsc` というファイルを作成します。"
+msgstr ""
+"Apache Avro はデータシリアライズシステムです。データ構造はスキーマを使って記"
+"述する。まず必要なのは、 `Movie` "
+"構造を記述するスキーマを作成することです。レコード（Kafka メッセージ）"
+"のスキーマを記述した `src/main/avro/movie.avsc` というファイルを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:144
@@ -259,19 +285,26 @@ msgstr "で構築した場合。"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:152
 #, fuzzy
 msgid "the `movies.avsc` will get compiled to a `Movie.java` file placed in the `target/generated-sources/avsc` directory."
-msgstr "`movies.avsc` は、 `target/generated-sources/avsc` ディレクトリに置かれた `Movie.java` ファイルにコンパイルされます。"
+msgstr ""
+"`movies.avsc` は、 `target/generated-sources/avsc` ディレクトリに置かれた "
+"`Movie.java` ファイルにコンパイルされます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:155
 #, fuzzy
 msgid "Take a look at the https://avro.apache.org/docs/current/spec.html#schemas[Avro specification] to learn more about the Avro syntax and supported types."
-msgstr "Avro の構文やサポートされている型の詳細については、 link:https://avro.apache.org/docs/current/spec.html#schemas[Avro の仕様]をご覧ください。"
+msgstr ""
+"Avro の構文やサポートされている型の詳細については、 link:https://avro.apache."
+"org/docs/current/spec.html#schemas[Avro の仕様]をご覧ください。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:157
 #, fuzzy
 msgid "With Quarkus, there's no need to use a specific Maven plugin to process the Avro schema, this is all done for you by the `quarkus-avro` extension!"
-msgstr "Quarkusでは、Avroスキーマを処理するために特定のMavenプラグインを使用する必要はありません。これはすべて、 `quarkus-avro` エクステンションによって行われます。"
+msgstr ""
+"Quarkusでは、Avroスキーマを処理するために特定のMavenプラグインを使用する必要"
+"はありません。これはすべて、 `quarkus-avro` "
+"エクステンションによって行われます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:159
@@ -283,7 +316,8 @@ msgstr "でプロジェクトを実行した場合。"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:164
 #, fuzzy
 msgid "the changes you do to the schema file will be automatically applied to the generated Java files."
-msgstr "スキーマファイルに加えた変更は、生成されるJavaファイルにも自動的に適用されます。"
+msgstr "スキーマファイルに加えた変更は、生成されるJavaファイルにも自動的に適用されま"
+"す。"
 
 #. type: Title ==
 #: upstream/_guides/kafka-schema-registry-avro.adoc:165
@@ -301,7 +335,10 @@ msgstr "スキーマを定義した後は、 `MovieResource` の実装に移る�
 #: upstream/_guides/kafka-schema-registry-avro.adoc:171
 #, fuzzy
 msgid "Let's open the `MovieResource`, inject an https://quarkus.io/blog/reactive-messaging-emitter/[`Emitter`] of `Movie` DTO and implement a `@POST` method that consumes `Movie` and sends it through the `Emitter`:"
-msgstr "`MovieResource` を開き、 の DTO を注入します。  link:https://quarkus.io/blog/reactive-messaging-emitter/[`Emitter`] `Movie` そして、 `Movie` を消費し、 `Emitter` を通して送信する `@POST` メソッドを実装します。"
+msgstr ""
+"`MovieResource` を開き、 の DTO を注入します。  link:https://quarkus.io/blog/"
+"reactive-messaging-emitter/[`Emitter`] `Movie` そして、 `Movie` を消費し、 "
+"`Emitter` を通して送信する `@POST` メソッドを実装します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:175
@@ -371,7 +408,10 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:204
 #, fuzzy
 msgid "Now, we need to _map_ the `movies` channel (the `Emitter` emits to this channel) to a Kafka topic.  To achieve this, edit the `application.properties` file, and add the following content:"
-msgstr "さて、 `movies` のチャンネル（このチャンネルに `Emitter` が発信する）を Kafka のトピックに _マッピング_する必要があります。そのためには、 `application.properties` ファイルを編集して、以下の内容を追加します。"
+msgstr ""
+"さて、 `movies` のチャンネル（このチャンネルに `Emitter` が発信する）を "
+"Kafka のトピックに _マッピング_する必要があります。そのためには、 "
+"`application.properties` ファイルを編集して、以下の内容を追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:209
@@ -401,13 +441,25 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:222
 #, fuzzy
 msgid "You might have noticed that we didn't define the `value.serializer`.  That's because Quarkus can xref:kafka.adoc#serialization-autodetection[autodetect] that `io.apicurio.registry.serde.avro.AvroKafkaSerializer` is appropriate here, based on the `@Channel` declaration, structure of the `Movie` type, and presence of the Apicurio Registry libraries.  We still have to define the `apicurio.registry.auto-register` property."
-msgstr "`value.serializer` を定義していないことにお気づきでしょうか。これは、 `@Channel` 宣言、 `Movie` 型の構造、Apicurio レジストリライブラリの存在に基づいて、Quarkusが `io.apicurio.registry.serde.avro.AvroKafkaSerializer` が適切であることを link:kafka.html#serialization-autodetection[自動]検出するためです。まだ、 `apicurio.registry.auto-register` プロパティを定義する必要があります。"
+msgstr ""
+"`value.serializer` を定義していないことにお気づきでしょうか。これは、 "
+"`@Channel` 宣言、 `Movie` 型の構造、Apicurio "
+"レジストリライブラリの存在に基づいて、Quarkusが `io.apicurio.registry.serde."
+"avro.AvroKafkaSerializer` が適切であることを link:kafka.html#serialization-"
+"autodetection[自動]検出するためです。まだ、 `apicurio.registry.auto-register`"
+" プロパティを定義する必要があります。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka-schema-registry-avro.adoc:228
 #, fuzzy
 msgid "If you use Confluent Schema Registry, you don't have to configure `value.serializer` either.  It is also detected automatically.  The Confluent Schema Registry analogue of `apicurio.registry.auto-register` is called `auto.register.schemas`.  It defaults to `true`, so it doesn't have to be configured in this example.  It can be explicitly set to `false` if you want to disable automatic schema registration."
-msgstr "Confluent Schema Registryを使用している場合、 `value.serializer` も設定する必要はありません。また、自動的に検出されます。 `apicurio.registry.auto-register` の Confluent Schema Registry の類似品は `auto.register.schemas` と呼ばれます。デフォルトでは `true` となっているため、この例では設定する必要はありません。スキーマの自動登録を無効にしたい場合は、明示的に `false` に設定することができます。"
+msgstr ""
+"Confluent Schema Registryを使用している場合、 `value.serializer` "
+"も設定する必要はありません。また、自動的に検出されます。 `apicurio.registry."
+"auto-register` の Confluent Schema Registry の類似品は `auto.register."
+"schemas` と呼ばれます。デフォルトでは `true` となっているため、この例では設定"
+"する必要はありません。スキーマの自動登録を無効にしたい場合は、明示的に "
+"`false` に設定することができます。"
 
 #. type: Title ==
 #: upstream/_guides/kafka-schema-registry-avro.adoc:230
@@ -419,13 +471,18 @@ msgstr "`Movie` の消費者"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:235
 #, fuzzy
 msgid "So, we can write records into Kafka containing our `Movie` data.  That data is serialized using Avro.  Now, it's time to implement a consumer for them."
-msgstr "そのため、 `Movie` のデータを含むレコードを Kafka に書き込むことができます。そのデータは Avro を使ってシリアライズされます。さて、いよいよデータのコンシューマーを実装しましょう。"
+msgstr ""
+"そのため、 `Movie` のデータを含むレコードを Kafka に書き込むことができます。"
+"そのデータは Avro を使ってシリアライズされます。さて、いよいよデータのコンシ"
+"ューマーを実装しましょう。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:238
 #, fuzzy
 msgid "Let's create `ConsumedMovieResource` that will consume `Movie` messages from the `movies-from-kafka` channel and will expose it via Server-Sent Events:"
-msgstr "`movies-from-kafka` チャンネルから `Movie` メッセージを消費し、Server-Sent Events 経由で公開する `ConsumedMovieResource` を作成してみましょう。"
+msgstr ""
+"`movies-from-kafka` チャンネルから `Movie` メッセージを消費し、Server-Sent "
+"Events 経由で公開する `ConsumedMovieResource` を作成してみましょう。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:248
@@ -487,7 +544,9 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:273
 #, fuzzy
 msgid "The last bit of the application's code is the configuration of the `movies-from-kafka` channel in `application.properties`:"
-msgstr "アプリケーションのコードの最後の部分は、 `application.properties` の `movies-from-kafka` チャンネルの設定です。"
+msgstr ""
+"アプリケーションのコードの最後の部分は、 `application.properties` の `movies-"
+"from-kafka` チャンネルの設定です。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:278
@@ -523,13 +582,23 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:293
 #, fuzzy
 msgid "You might have noticed that we didn't define the `value.deserializer`.  That's because Quarkus can xref:kafka.adoc#serialization-autodetection[autodetect] that `io.apicurio.registry.serde.avro.AvroKafkaDeserializer` is appropriate here, based on the `@Channel` declaration, structure of the `Movie` type, and presence of the Apicurio Registry libraries.  We don't have to define the `apicurio.registry.use-specific-avro-reader` property either, that is also configured automatically."
-msgstr "`value.deserializer` を定義していないことにお気づきでしょうか。これは、 `@Channel` 宣言、 `Movie` タイプの構造、Apicurioレジストリライブラリの存在に基づいて、 `io.apicurio.registry.serde.avro.AvroKafkaDeserializer` が適切であることをQuarkusが link:kafka.html#serialization-autodetection[自動検出]するためです。 `apicurio.registry.use-specific-avro-reader` プロパティも定義する必要はなく、これも自動的に設定されます。"
+msgstr ""
+"`value.deserializer` を定義していないことにお気づきでしょうか。これは、 "
+"`@Channel` 宣言、 `Movie` "
+"タイプの構造、Apicurioレジストリライブラリの存在に基づいて、 `io.apicurio."
+"registry.serde.avro.AvroKafkaDeserializer` が適切であることをQuarkusが "
+"link:kafka.html#serialization-autodetection[自動検出]するためです。 `apicurio"
+".registry.use-specific-avro-reader` "
+"プロパティも定義する必要はなく、これも自動的に設定されます。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka-schema-registry-avro.adoc:296
 #, fuzzy
 msgid "If you use Confluent Schema Registry, you don't have to configure `value.deserializer` or `specific.avro.reader` either.  They are both detected automatically."
-msgstr "Confluent Schema Registryを使用している場合は、 `value.deserializer` や `specific.avro.reader` も設定する必要はありません。どちらも自動的に検出されます。"
+msgstr ""
+"Confluent Schema Registryを使用している場合は、 `value.deserializer` や "
+"`specific.avro.reader` "
+"も設定する必要はありません。どちらも自動的に検出されます。"
 
 #. type: Title ==
 #: upstream/_guides/kafka-schema-registry-avro.adoc:298
@@ -547,25 +616,39 @@ msgstr "アプリケーションを開発モードで起動します。"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:306
 #, fuzzy
 msgid "Kafka broker and Apicurio Registry instance are started automatically thanks to Dev Services.  See xref:kafka-dev-services.adoc[Dev Services for Kafka] and xref:apicurio-registry-dev-services.adoc[Dev Services for Apicurio Registry] for more details."
-msgstr "Kafka ブローカーと Apicurio レジストリのインスタンスは、Dev Services によって自動的に起動されます。詳細は、Dev link:kafka-dev-services.html[Services for Kafka]と link:apicurio-registry-dev-services.html[Dev Services for Apicurio]Registryを参照してください。"
+msgstr ""
+"Kafka ブローカーと Apicurio レジストリのインスタンスは、Dev Services "
+"によって自動的に起動されます。詳細は、Dev link:kafka-dev-services.html["
+"Services for Kafka]と link:apicurio-registry-dev-services.html[Dev Services "
+"for Apicurio]Registryを参照してください。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka-schema-registry-avro.adoc:311
 #, fuzzy
 msgid "You might have noticed that we didn't configure the schema registry URL anywhere.  This is because Dev Services for Apicurio Registry configures all Kafka channels in SmallRye Reactive Messaging to use the automatically started registry instance."
-msgstr "スキーマ・レジストリのURLをどこにも設定していないことに気づいたかもしれません。これは、Dev Services for Apicurio RegistryがSmallRye Reactive MessagingのすべてのKafkaチャンネルに、自動的に起動されたレジストリ・インスタンスを使用するように設定するためです。"
+msgstr ""
+"スキーマ・レジストリのURLをどこにも設定していないことに気づいたかもしれません"
+"。これは、Dev Services for Apicurio RegistryがSmallRye Reactive Messagingのす"
+"べてのKafkaチャンネルに、自動的に起動されたレジストリ・インスタンスを使用する"
+"ように設定するためです。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka-schema-registry-avro.adoc:314
 #, fuzzy
 msgid "Apicurio Registry, in addition to its native API, also exposes an endpoint that is API-compatible with Confluent Schema Registry.  Therefore, this automatic configuration works both for Apicurio Registry serde and Confluent Schema Registry serde."
-msgstr "Apicurio Registry はネイティブ API に加えて、Confluent Schema Registry と API 互換のエンドポイントも公開しています。そのため、この自動設定は Apicurio Registry serde と Confluent Schema Registry serde の両方に対して機能します。"
+msgstr ""
+"Apicurio Registry はネイティブ API に加えて、Confluent Schema Registry と "
+"API 互換のエンドポイントも公開しています。そのため、この自動設定は Apicurio "
+"Registry serde と Confluent Schema Registry serde の両方に対して機能します。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka-schema-registry-avro.adoc:317
 #, fuzzy
 msgid "However, note that there's no Dev Services support for running Confluent Schema Registry itself.  If you want to use a running instance of Confluent Schema Registry, configure its URL, together with the URL of a Kafka broker:"
-msgstr "Confluent Schema Registryに対するDev Servicesのサポートはありません。Confluent Schema Registryの実行中のインスタンスを使用したい場合は、そのURLとKafkaブローカーのURLを設定してください。"
+msgstr ""
+"Confluent Schema Registryに対するDev Servicesのサポートはありません。"
+"Confluent Schema Registryの実行中のインスタンスを使用したい場合は、そのURLとK"
+"afkaブローカーのURLを設定してください。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:322
@@ -637,7 +720,8 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:358
 #, fuzzy
 msgid "Observe what is printed in the second terminal. You should see something along the lines of:"
-msgstr "2つ目のターミナルに表示される内容を確認してください。次のような内容が表示されるはずです。"
+msgstr "2つ目のターミナルに表示される内容を確認してください。次のような内容が表示され"
+"るはずです。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:362
@@ -673,19 +757,26 @@ msgstr "JVMまたはNativeモードでの実行"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:374
 #, fuzzy
 msgid "When not running in dev or test mode, you will need to start your own Kafka broker and Apicurio Registry.  The easiest way to get them running is to use `docker-compose` to start the appropriate containers."
-msgstr "開発モードやテストモードでない場合は、自分でKafkaブローカーとApicurioレジストリを起動する必要があります。これらを起動する最も簡単な方法は、 `docker-compose` を使って適切なコンテナを起動することです。"
+msgstr ""
+"開発モードやテストモードでない場合は、自分でKafkaブローカーとApicurioレジスト"
+"リを起動する必要があります。これらを起動する最も簡単な方法は、 `docker-"
+"compose` を使って適切なコンテナを起動することです。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:377
 #, fuzzy
 msgid "If you use Confluent Schema Registry, you already have a Kafka broker and Confluent Schema Registry instance running and configured.  You can ignore the `docker-compose` instructions here, as well as the Apicurio Registry configuration."
-msgstr "Confluent Schema Registryを使用する場合は、すでにKafkaブローカーとConfluent Schema Registryインスタンスが稼働し、設定されています。ここでの `docker-compose` の説明は、Apicurio Registry の設定と同様に無視して構いません。"
+msgstr ""
+"Confluent Schema Registryを使用する場合は、すでにKafkaブローカーとConfluent "
+"Schema Registryインスタンスが稼働し、設定されています。ここでの `docker-"
+"compose` の説明は、Apicurio Registry の設定と同様に無視して構いません。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:379
 #, fuzzy
 msgid "Create a `docker-compose.yaml` file at the root of the project with the following content:"
-msgstr "まず、新しいプロジェクトが必要です。以下のコマンドで新規プロジェクトを作成します。"
+msgstr "まず、新しいプロジェクトが必要です。以下のコマンドで新規プロジェクトを作成し"
+"ます。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:383
@@ -754,7 +845,8 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:424
 #, fuzzy
 msgid "Before starting the application, let's first start the Kafka broker and Apicurio Registry:"
-msgstr "アプリケーションを起動する前に、まずはKafkaブローカーとApicurioレジストリを起動してみましょう。"
+msgstr "アプリケーションを起動する前に、まずはKafkaブローカーとApicurioレジストリを起"
+"動してみましょう。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:428
@@ -766,7 +858,9 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:432
 #, fuzzy
 msgid "To stop the containers, use `docker-compose down`. You can also clean up the containers with `docker-compose rm`"
-msgstr "コンテナを停止するには、 `docker-compose down` を使用します。また、コンテナをクリーンアップするには `docker-compose rm`"
+msgstr ""
+"コンテナを停止するには、 `docker-compose down` を使用します。また、"
+"コンテナをクリーンアップするには `docker-compose rm`"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:434
@@ -790,13 +884,19 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:446
 #, fuzzy
 msgid "By default, the application tries to connect to a Kafka broker listening at `localhost:9092`.  You can configure the bootstrap server using: `java -Dkafka.bootstrap.servers=\\... -jar target/quarkus-app/quarkus-run.jar`"
-msgstr "デフォルトでは、アプリケーションは `localhost:9092` をリッスンする Kafka ブローカーへの接続を試みます。ブートストラップサーバーの設定は、以下の方法で行います。 `java -Dkafka.bootstrap.servers=... -jar target/quarkus-app/quarkus-run.jar`"
+msgstr ""
+"デフォルトでは、アプリケーションは `localhost:9092` をリッスンする Kafka ブロ"
+"ーカーへの接続を試みます。ブートストラップサーバーの設定は、以下の方法で行い"
+"ます。 `java -Dkafka.bootstrap.servers=... -jar target/quarkus-app/quarkus-"
+"run.jar`"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:448
 #, fuzzy
 msgid "Specifying the registry URL on the command line is not very convenient, so you can add a configuration property only for the `prod` profile:"
-msgstr "コマンドラインでレジストリのURLを指定するのはあまり便利ではないので、 `prod` のプロファイルに対してのみ構成プロパティを追加することができます。"
+msgstr ""
+"コマンドラインでレジストリのURLを指定するのはあまり便利ではないので、 `prod` "
+"のプロファイルに対してのみ構成プロパティを追加することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:452
@@ -832,13 +932,18 @@ msgstr "アプリケーションの実行"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:470
 #, fuzzy
 msgid "As mentioned above, Dev Services for Kafka and Apicurio Registry automatically start and configure a Kafka broker and Apicurio Registry instance in dev mode and for tests.  Hence, we don't have to set up Kafka and Apicurio Registry ourselves.  We can just focus on writing the test."
-msgstr "前述したように、Dev Services for KafkaとApicurio Registryは、KafkaブローカーとApicurio Registryのインスタンスを開発モードとテスト用に自動的に起動して設定します。したがって、私たち自身でKafkaとApicurio Registryを設定する必要はありません。テストの作成に集中することができます。"
+msgstr ""
+"前述したように、Dev Services for KafkaとApicurio Registryは、"
+"KafkaブローカーとApicurio Registryのインスタンスを開発モードとテスト用に自動"
+"的に起動して設定します。したがって、私たち自身でKafkaとApicurio "
+"Registryを設定する必要はありません。テストの作成に集中することができます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:472
 #, fuzzy
 msgid "First, let's add test dependencies on REST Client and Awaitility to the build file:"
-msgstr "まず、REST ClientとAwaitilityのテスト依存関係をビルドファイルに追加しましょう。"
+msgstr "まず、REST "
+"ClientとAwaitilityのテスト依存関係をビルドファイルに追加しましょう。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:487
@@ -869,7 +974,8 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:498
 #, fuzzy
 msgid "In the test, we will send movies in a loop and check if the `ConsumedMovieResource` returns what we send."
-msgstr "テストでは、ループでムービーを送信し、 `ConsumedMovieResource` が送信したものを返すかどうかを確認します。"
+msgstr "テストでは、ループでムービーを送信し、 `ConsumedMovieResource` "
+"が送信したものを返すかどうかを確認します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:509
@@ -1034,7 +1140,12 @@ msgstr ""
 #: upstream/_guides/kafka-schema-registry-avro.adoc:595
 #, fuzzy
 msgid "We modified the `MovieResourceTest` that was generated together with the project. This test class has a subclass, `NativeMovieResourceIT`, that runs the same test against the native executable.  To run it, execute:"
-msgstr "プロジェクトと一緒に生成された `MovieResourceTest` を修正しました。このテストクラスには、ネイティブ実行可能ファイルに対して同じテストを実行する `NativeMovieResourceIT` というサブクラスがあります。これを実行するには、execute:"
+msgstr ""
+"プロジェクトと一緒に生成された `MovieResourceTest` "
+"を修正しました。このテストクラスには、"
+"ネイティブ実行可能ファイルに対して同じテストを実行する "
+"`NativeMovieResourceIT` "
+"というサブクラスがあります。これを実行するには、execute:"
 
 #. type: Title ===
 #: upstream/_guides/kafka-schema-registry-avro.adoc:598
@@ -1046,7 +1157,10 @@ msgstr "マニュアル設定"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:601
 #, fuzzy
 msgid "If we couldn't use Dev Services and wanted to start a Kafka broker and Apicurio Registry instance manually, we would define a xref:getting-started-testing.adoc#quarkus-test-resource[QuarkusTestResourceLifecycleManager]."
-msgstr "Dev Servicesを使用できず、KafkaブローカーとApicurioレジストリのインスタンスを手動で起動したい場合は、 link:getting-started-testing.html#quarkus-test-resource[QuarkusTestResourceLifecycleManager]を定義します。"
+msgstr ""
+"Dev Servicesを使用できず、KafkaブローカーとApicurioレジストリのインスタンスを"
+"手動で起動したい場合は、 link:getting-started-testing.html#quarkus-test-"
+"resource[QuarkusTestResourceLifecycleManager]を定義します。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka-schema-registry-avro.adoc:617
@@ -1167,13 +1281,15 @@ msgstr "アブロコード生成の詳細"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:680
 #, fuzzy
 msgid "In this guide we used the Quarkus code generation mechanism to generate Java files from Avro schema."
-msgstr "このガイドでは、Quarkusのコード生成メカニズムを使用して、AvroスキーマからJavaファイルを生成しました。"
+msgstr "このガイドでは、Quarkusのコード生成メカニズムを使用して、AvroスキーマからJava"
+"ファイルを生成しました。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:682
 #, fuzzy
 msgid "Under the hood, the mechanism uses `org.apache.avro:avro-compiler`."
-msgstr "ボンネットの中で、このメカニズムは `org.apache.avro:avro-compiler` を使用しています。"
+msgstr "ボンネットの中で、このメカニズムは `org.apache.avro:avro-compiler` "
+"を使用しています。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:684
@@ -1185,43 +1301,63 @@ msgstr "以下の設定プロパティを使用して、動作を変更するこ
 #: upstream/_guides/kafka-schema-registry-avro.adoc:688
 #, fuzzy
 msgid "`avro.codegen.[avsc|avdl|avpr].imports` - a list of files or directories that should be compiled first thus making them importable by subsequently compiled schemas. Note that imported files should not reference each other. All paths should be relative to the `src/[main|test]/avro` directory. Passed as a comma-separated list."
-msgstr "`avro.codegen.[avsc|avdl|avpr].imports` - 最初にコンパイルされるべきファイルまたはディレクトリのリストで、後にコンパイルされるスキーマがそれらをインポートできるようにします。インポートされたファイルは相互に参照してはいけないことに注意してください。すべてのパスは `src/[main|test]/avro` ディレクトリからの相対パスです。コンマで区切られたリストとして渡されます。"
+msgstr ""
+"`avro.codegen.[avsc|avdl|avpr].imports` - 最初にコンパイルされるべきファイル"
+"またはディレクトリのリストで、後にコンパイルされるスキーマがそれらをインポー"
+"トできるようにします。インポートされたファイルは相互に参照してはいけないこと"
+"に注意してください。すべてのパスは `src/[main|test]/avro` "
+"ディレクトリからの相対パスです。コンマで区切られたリストとして渡されます。"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:690
 #, fuzzy
 msgid "`avro.codegen.stringType` - the Java type to use for Avro strings. May be one of `CharSequence`, `String` or `Utf8`. Defaults to `String`"
-msgstr "`avro.codegen.stringType` - Avro 文字列に使用する Java タイプです。 `CharSequence`, `String`, `Utf8` のいずれかとなります。デフォルトは `String`"
+msgstr ""
+"`avro.codegen.stringType` - Avro 文字列に使用する Java タイプです。 "
+"`CharSequence`, `String`, `Utf8` のいずれかとなります。デフォルトは `String`"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:692
 #, fuzzy
 msgid "`avro.codegen.createOptionalGetters` - enables generating the `getOptional...` methods that return an Optional of the requested type. Defaults to `false`"
-msgstr "`avro.codegen.createOptionalGetters` - 要求されたタイプの Optional を返す `getOptional…​` メソッドの生成を有効にします。デフォルトは `false`"
+msgstr ""
+"`avro.codegen.createOptionalGetters` - 要求されたタイプの Optional を返す "
+"`getOptional…​` メソッドの生成を有効にします。デフォルトは `false`"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:693
 #, fuzzy
 msgid "`avro.codegen.enableDecimalLogicalType` - determines whether to use Java classes for decimal types, defaults to `false`"
-msgstr "`avro.codegen.enableDecimalLogicalType` - 10進数型にJavaクラスを使用するかどうかを決定します、デフォルトは `false`"
+msgstr ""
+"`avro.codegen.enableDecimalLogicalType` - "
+"10進数型にJavaクラスを使用するかどうかを決定します、デフォルトは `false`"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:695
 #, fuzzy
 msgid "`avro.codegen.createSetters` - determines whether to create setters for the fields of the record.  Defaults to `false`"
-msgstr "`avro.codegen.createSetters` - レコードのフィールドにセッターを作成するかどうかを決定します。デフォルトは `false`"
+msgstr ""
+"`avro.codegen.createSetters` - "
+"レコードのフィールドにセッターを作成するかどうかを決定します。デフォルトは "
+"`false`"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:697
 #, fuzzy
 msgid "`avro.codegen.gettersReturnOptional` - enables generating `get...` methods that return an Optional of the requested type. Defaults to `false`"
-msgstr "`avro.codegen.gettersReturnOptional` - 要求されたタイプの Optional を返す `get…​` メソッドの生成を有効にします。デフォルトは `false`"
+msgstr ""
+"`avro.codegen.gettersReturnOptional` - 要求されたタイプの Optional を返す "
+"`get…​` メソッドの生成を有効にします。デフォルトは `false`"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:700
 #, fuzzy
 msgid "`avro.codegen.optionalGettersForNullableFieldsOnly`, works in conjunction with `gettersReturnOptional` option.  If it is set, `Optional` getters will be generated only for fields that are nullable. If the field is mandatory, regular getter will be generated. Defaults to `false`"
-msgstr "`avro.codegen.optionalGettersForNullableFieldsOnly`, `gettersReturnOptional` オプションと連動して動作します。これが設定されていると、 `Optional` ゲッターは nullable なフィールドに対してのみ生成されます。フィールドが必須の場合は、通常のゲッターが生成されます。デフォルトでは `false`"
+msgstr ""
+"`avro.codegen.optionalGettersForNullableFieldsOnly`, `gettersReturnOptional` "
+"オプションと連動して動作します。これが設定されていると、 `Optional` "
+"ゲッターは nullable なフィールドに対してのみ生成されます。フィールドが必須の"
+"場合は、通常のゲッターが生成されます。デフォルトでは `false`"
 
 #. type: Title ==
 #: upstream/_guides/kafka-schema-registry-avro.adoc:701
@@ -1233,13 +1369,19 @@ msgstr "さらに詳しく"
 #: upstream/_guides/kafka-schema-registry-avro.adoc:704
 #, fuzzy
 msgid "link:https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/2.9/kafka/kafka.html[SmallRye Reactive Messaging Kafka] documentation"
-msgstr "link:https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/2.9/kafka/kafka.html[SmallRye Reactive Messaging Kafka]ドキュメント"
+msgstr ""
+"link:https://smallrye.io/smallrye-reactive-messaging/"
+"smallrye-reactive-messaging/2.9/kafka/kafka.html[SmallRye Reactive Messaging "
+"Kafka]ドキュメント"
 
 #. type: Plain text
 #: upstream/_guides/kafka-schema-registry-avro.adoc:705
 #, fuzzy
 msgid "link:https://quarkus.io/blog/kafka-avro/[How to Use Kafka, Schema Registry and Avro with Quarkus] - a blog post on which the guide is based. It gives a good introduction to Avro and the concept of schema registry"
-msgstr "link:https://quarkus.io/blog/kafka-avro/[How to Use Kafka, Schema Registry and Avro with Quarkus]- このガイドのベースとなっているブログ記事です。Avroとスキーマレジストリのコンセプトについての良い紹介になっています。"
+msgstr ""
+"link:https://quarkus.io/blog/kafka-avro/[How to Use Kafka, Schema Registry "
+"and Avro with Quarkus]- このガイドのベースとなっているブログ記事です。Avroと"
+"スキーマレジストリのコンセプトについての良い紹介になっています。"
 
 #~ msgid "To complete this guide, you need:"
 #~ msgstr "このガイドを完成させるには、以下が必要です:"

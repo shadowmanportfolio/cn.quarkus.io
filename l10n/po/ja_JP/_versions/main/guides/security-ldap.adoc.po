@@ -108,7 +108,11 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_versions/main/guides/security-ldap.adoc:51
 #, fuzzy
 msgid "This command generates a project, importing the `elytron-security-ldap` extension which is a `wildfly-elytron-realm-ldap` adapter for Quarkus applications."
-msgstr "このコマンドは、 `elytron-security-ldap` のエクステンションをインポートして Maven プロジェクトを生成します。 link:https://docs.wildfly.org/19/WildFly_Elytron_Security.html#ldap-security-realm[`wildfly-elytron-realm-ldap`] のQuarkusアプリケーション用のアダプターです。"
+msgstr ""
+"このコマンドは、 `elytron-security-ldap` のエクステンションをインポートして "
+"Maven プロジェクトを生成します。 link:https://docs.wildfly.org/19/"
+"WildFly_Elytron_Security.html#ldap-security-realm[`wildfly-elytron-realm-"
+"ldap`] のQuarkusアプリケーション用のアダプターです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-ldap.adoc:54
@@ -334,13 +338,19 @@ msgstr "アプリケーションのテスト"
 #: upstream/_versions/main/guides/security-ldap.adoc:179
 #, fuzzy
 msgid "The application is now protected and the identities are provided by our LDAP server.  Let's start the application in dev mode:"
-msgstr "アプリケーションは保護され、アイデンティティはLDAPサーバーによって提供されるようになりました。まず最初に確認すべきことは、匿名アクセスが機能することを確認することです。"
+msgstr ""
+"アプリケーションは保護され、アイデンティティはLDAPサーバーによって提供される"
+"ようになりました。まず最初に確認すべきことは、匿名アクセスが機能することを確"
+"認することです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-ldap.adoc:183
 #, fuzzy
 msgid "The very first thing to check is to ensure the anonymous access works."
-msgstr "アプリケーションは保護され、アイデンティティはLDAPサーバーによって提供されるようになりました。まず最初に確認すべきことは、匿名アクセスが機能することを確認することです。"
+msgstr ""
+"アプリケーションは保護され、アイデンティティはLDAPサーバーによって提供される"
+"ようになりました。まず最初に確認すべきことは、匿名アクセスが機能することを確"
+"認することです。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/security-ldap.adoc:190

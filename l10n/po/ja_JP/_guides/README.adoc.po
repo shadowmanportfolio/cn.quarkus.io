@@ -26,7 +26,8 @@ msgstr "Quarkusドキュメントの作成方法"
 #: upstream/_guides/README.adoc:5
 #, fuzzy
 msgid "This guide describes the asciidoc format and conventions that Quarkus has adopted."
-msgstr "このガイドでは、Quarkusが採用しているasciidoc形式や規約について説明しています。"
+msgstr "このガイドでは、Quarkusが採用しているasciidoc形式や規約について説明しています"
+"。"
 
 #. type: Title ==
 #: upstream/_guides/README.adoc:6
@@ -44,19 +45,24 @@ msgstr "以下のリンクは、一般的な規約とAsciidocの構文に関す�
 #: upstream/_guides/README.adoc:11
 #, fuzzy
 msgid "https://redhat-documentation.github.io/asciidoc-markup-conventions/[AsciiDoc Mark-up Quick Reference for Documentation]"
-msgstr "link:https://redhat-documentation.github.io/asciidoc-markup-conventions/[ドキュメントのためのAsciiDocマークアップ・クイック・リファレンス]"
+msgstr ""
+"link:https://redhat-documentation.github.io/asciidoc-markup-conventions/"
+"[ドキュメントのためのAsciiDocマークアップ・クイック・リファレンス]"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:12
 #, fuzzy
 msgid "http://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual]"
-msgstr "link:http://asciidoctor.org/docs/user-manual/[アスキードクター ユーザーマニュアル]"
+msgstr "link:http://asciidoctor.org/docs/user-manual/[アスキードクター "
+"ユーザーマニュアル]"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:13
 #, fuzzy
 msgid "http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Syntax Quick Reference]"
-msgstr "link:http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc 構文クイック・リファレンス]"
+msgstr ""
+"link:http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc "
+"構文クイック・リファレンス]"
 
 #. type: Title ==
 #: upstream/_guides/README.adoc:14
@@ -68,7 +74,10 @@ msgstr "ドキュメント内で使用する変数"
 #: upstream/_guides/README.adoc:19
 #, fuzzy
 msgid "The following variables externalize key information that can change over time, and so references to such information should be done by using the variable inside of {} curly brackets. The complete list of externalized variables for use is given in the following table:"
-msgstr "以下の変数は、時間の経過とともに変化する可能性のある重要な情報を外部化したものであり、そのような情報を参照する場合は、{}の中に変数を入れて使用します。外部化された変数の一覧を以下の表に示しますので、ご利用ください。"
+msgstr ""
+"以下の変数は、時間の経過とともに変化する可能性のある重要な情報を外部化したも"
+"のであり、そのような情報を参照する場合は、{}の中に変数を入れて使用します。外"
+"部化された変数の一覧を以下の表に示しますので、ご利用ください。"
 
 #. type: Block title
 #: upstream/_guides/README.adoc:20
@@ -254,7 +263,8 @@ msgstr "{quarkus-tree-url}"
 #: upstream/_guides/README.adoc:34
 #, fuzzy, no-wrap
 msgid "Quarkus URL to main source tree root; used for referencing directories."
-msgstr "メインのソースツリーのルートに対するQuarkusのURLで、ディレクトリの参照に使用されます。"
+msgstr "メインのソースツリーのルートに対するQuarkusのURLで、ディレクトリの参照に使用"
+"されます。"
 
 #. type: Table
 #: upstream/_guides/README.adoc:34
@@ -416,7 +426,8 @@ msgstr "{quickstarts-blob-url}。"
 #: upstream/_guides/README.adoc:45
 #, fuzzy, no-wrap
 msgid "Quickstarts URL to main blob source tree; used for referencing source files."
-msgstr "メインのblobソースツリーへのクイックスタートURL、ソースファイルの参照に使用されます。"
+msgstr "メインのblobソースツリーへのクイックスタートURL、ソースファイルの参照に使用さ"
+"れます。"
 
 #. type: Table
 #: upstream/_guides/README.adoc:45
@@ -470,4 +481,5 @@ msgstr "{graalvm-flavor}"
 #: upstream/_guides/README.adoc:49
 #, fuzzy, no-wrap
 msgid "The full flavor of GraalVM to use e.g. `19.3.1-java11`. Make sure to use a `java11` version."
-msgstr "使用するGraalVMのフルフレーバー（例： `19.3.1-java11` ）。必ず `java11` のバージョンを使用してください。"
+msgstr "使用するGraalVMのフルフレーバー（例： `19.3.1-java11` ）。必ず `java11` "
+"のバージョンを使用してください。"

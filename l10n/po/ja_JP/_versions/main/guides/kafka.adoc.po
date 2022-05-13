@@ -1021,7 +1021,9 @@ msgstr ""
 #, fuzzy
 msgid "Unlike the `ConsumerRebalanceListener` from Apache Kafka, the `io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` methods pass the Kafka Consumer and the set of topics/partitions."
 msgstr ""
-"`io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` を実装するBeanの `javax.inject.Named` で設定された名前です。設定された場合、このリバランスリスナーはコンシューマーに適用されます。\n"
+"`io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` "
+"を実装するBeanの `javax.inject.Named` で設定された名前です。設定された場合、"
+"このリバランスリスナーはコンシューマーに適用されます。\n"
 "\n"
 "Type: _string_"
 
@@ -2249,7 +2251,8 @@ msgstr ""
 "# Configure the Kafka source (we read from it)\n"
 "mp.messaging.incoming.fruit-in.connector=smallrye-kafka\n"
 "mp.messaging.incoming.fruit-in.topic=fruit-in\n"
-"mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jsonb.FruitDeserializer\n"
+"mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jsonb."
+"FruitDeserializer\n"
 
 #. type: Title ====
 #: upstream/_versions/main/guides/kafka.adoc:1254
@@ -2500,8 +2503,10 @@ msgid ""
 "public class FruitProcessor {\n"
 msgstr ""
 "/**\n"
-" * A bean consuming data from the \"prices\" Kafka topic and applying some conversion.\n"
-" * The result is pushed to the \"my-data-stream\" stream which is an in-memory stream.\n"
+" * A bean consuming data from the \"prices\" Kafka topic and applying some "
+"conversion.\n"
+" * The result is pushed to the \"my-data-stream\" stream which is an in-"
+"memory stream.\n"
 " */\n"
 "@ApplicationScoped\n"
 "public class PriceConverter {\n"
@@ -2606,7 +2611,8 @@ msgstr ""
 "# Configure the Kafka source (we read from it)\n"
 "mp.messaging.incoming.fruit-in.connector=smallrye-kafka\n"
 "mp.messaging.incoming.fruit-in.topic=fruit-in\n"
-"mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jsonb.FruitDeserializer\n"
+"mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jsonb."
+"FruitDeserializer\n"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/kafka.adoc:1446
@@ -2619,7 +2625,8 @@ msgstr ""
 "# Configure the Kafka sink (we write to it)\n"
 "mp.messaging.outgoing.fruit-out.connector=smallrye-kafka\n"
 "mp.messaging.outgoing.fruit-out.topic=fruit-out\n"
-"mp.messaging.outgoing.fruit-out.value.serializer=io.quarkus.kafka.client.serialization.JsonbSerializer\n"
+"mp.messaging.outgoing.fruit-out.value.serializer=io.quarkus.kafka.client."
+"serialization.JsonbSerializer\n"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/kafka.adoc:1450
@@ -2638,7 +2645,8 @@ msgid ""
 "import java.util.List;\n"
 "import com.fasterxml.jackson.core.type.TypeReference;\n"
 "import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;\n"
-msgstr "import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;\n"
+msgstr ""
+"import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;\n"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/kafka.adoc:1466
@@ -2757,7 +2765,8 @@ msgstr ""
 #: upstream/_versions/main/guides/kafka.adoc:1527
 #, fuzzy
 msgid "Now, your Kafka messages will contain a JSON-B serialized representation of your `Fruit` data object."
-msgstr "これで、Kafka メッセージには、Fruit pojo の Jackson によるシリアライズ表現が含まれるようになります。"
+msgstr "これで、Kafka メッセージには、Fruit pojo の Jackson "
+"によるシリアライズ表現が含まれるようになります。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/kafka.adoc:1529
@@ -3499,7 +3508,8 @@ msgstr "受信チャンネルを取得します (`orders`) - テストリソー�
 #: upstream/_versions/main/guides/kafka.adoc:1870
 #, fuzzy
 msgid "Retrieve the outgoing channel (`beverages`) - the channel must have been switched to in-memory in the test resource."
-msgstr "受信チャンネルを取得します (`orders`) - テストリソース内でチャンネルがインメモリーに切り替えられている必要があります。"
+msgstr "受信チャンネルを取得します (`orders`) - テストリソース内でチャンネルがインメ"
+"モリーに切り替えられている必要があります。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/kafka.adoc:1872
@@ -4090,7 +4100,9 @@ msgstr "`Emitter<String>` を注入"
 #: upstream/_versions/main/guides/kafka.adoc:2167
 #, fuzzy
 msgid "The HTTP method receives the payload and returns a `CompletionStage` completed when the message is written to Kafka"
-msgstr "新しい `Emitter.send` メソッドは、生成されたメッセージが確認されると、`CompletionStage` の完了を返します。"
+msgstr "新しい `Emitter.send` "
+"メソッドは、生成されたメッセージが確認されると、`CompletionStage` "
+"の完了を返します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/kafka.adoc:2168
@@ -4288,7 +4300,8 @@ msgstr ""
 "# Configure the Kafka source (we read from it)\n"
 "mp.messaging.incoming.fruit-in.connector=smallrye-kafka\n"
 "mp.messaging.incoming.fruit-in.topic=fruit-in\n"
-"mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jsonb.FruitDeserializer\n"
+"mp.messaging.incoming.fruit-in.value.deserializer=com.acme.fruit.jsonb."
+"FruitDeserializer\n"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/kafka.adoc:2299
@@ -5133,7 +5146,8 @@ msgstr ""
 #: upstream/_versions/main/guides/kafka.adoc:2759
 #, fuzzy
 msgid "To allow your Quarkus application to use that secret, add the following line to the `application.properties` file:"
-msgstr "以下の行を `application.properties` に追加することで、設定を上書きすることができます。"
+msgstr "以下の行を `application.properties` "
+"に追加することで、設定を上書きすることができます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/kafka.adoc:2763

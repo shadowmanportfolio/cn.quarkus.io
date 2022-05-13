@@ -34,7 +34,8 @@ msgstr "このガイドは、 link:building-native-image.html[ネイティブ実
 #: upstream/_versions/main/guides/native-reference.adoc:19
 #, fuzzy
 msgid "This reference guide takes as input the application developed in the xref:getting-started.adoc[Getting Started Guide].  You can find instructions on how to quickly set up this application in this guide."
-msgstr "このリファレンスガイドは、 link:getting-started.html[入門ガイド]で開発されたアプリケーションを入力としています。"
+msgstr "このリファレンスガイドは、 link:getting-started."
+"html[入門ガイド]で開発されたアプリケーションを入力としています。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/native-reference.adoc:20
@@ -77,7 +78,10 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:42
 #, fuzzy
 msgid "Finally, this guide assumes the use of the link:https://github.com/graalvm/mandrel[Mandrel distribution] of GraalVM for building native executables, and these are built within a container so there is no need for installing Mandrel on the host."
-msgstr "最後に、このガイドでは、ネイティブ実行可能ファイルをビルドするために、GraalVMのMandrelディストリビューションの使用を想定しており、これらはコンテナ内でビルドされます。"
+msgstr ""
+"最後に、このガイドでは、ネイティブ実行可能ファイルをビルドするために、GraalVM"
+"のMandrelディストリビューションの使用を想定しており、これらはコンテナ内でビル"
+"ドされます。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/native-reference.adoc:43
@@ -141,7 +145,8 @@ msgstr "最初のデバッグ手順"
 #: upstream/_versions/main/guides/native-reference.adoc:78
 #, fuzzy
 msgid "As a first step, change to the project directory and build the native executable for the application:"
-msgstr "まず最初のステップとして、アプリケーションのネイティブ実行可能ファイルをビルドします。"
+msgstr "まず最初のステップとして、アプリケーションのネイティブ実行可能ファイルをビル"
+"ドします。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:82
@@ -177,7 +182,10 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:101
 #, fuzzy
 msgid "The rest of this section explores ways to build the native executable with extra information, but first, stop the running application.  We can obtain this information while building the native executable by adding additional native-image build options using `-Dquarkus.native.additional-build-args`, e.g."
-msgstr "ネイティブ実行可能ファイルをビルドする際に `-Dquarkus.native.additional-build-args` というネイティブイメージのビルドオプションを追加することで、基本的な追加情報を得ることができます。"
+msgstr ""
+"ネイティブ実行可能ファイルをビルドする際に `-Dquarkus.native.additional-"
+"build-args` というネイティブイメージのビルドオプションを追加することで、基本"
+"的な追加情報を得ることができます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:106
@@ -348,7 +356,8 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:213
 #, fuzzy
 msgid "Using docker in the non-Linux environment, you can create an image using this Dockerfile via:"
-msgstr "非Linux環境で `docker` を使用すると、この `Dockerfile` 経由でイメージを作成することができます。"
+msgstr "非Linux環境で `docker` を使用すると、この `Dockerfile` "
+"経由でイメージを作成することができます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:217
@@ -434,7 +443,11 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:267
 #, fuzzy
 msgid "The reports will be created under `target/debugging-native-1.0.0-SNAPSHOT-native-image-source-jar/reports/`.  These reports are some of the most useful resources when encountering issues with missing methods/classes, or encountering forbidden methods by Mandrel."
-msgstr "このレポートは `target/code-with-quarkus-1.0.0-SNAPSHOT-native-image-source-jar/reports/` の下に作成されます。これらのレポートは、メソッドやクラスが見つからない問題や、Mandrelで禁止されているメソッドに遭遇したときに、最も役に立つリソースの一部です。"
+msgstr ""
+"このレポートは `target/code-with-quarkus-1.0."
+"0-SNAPSHOT-native-image-source-jar/reports/` の下に作成されます。これらのレポ"
+"ートは、メソッドやクラスが見つからない問題や、Mandrelで禁止されているメソッド"
+"に遭遇したときに、最も役に立つリソースの一部です。"
 
 #. type: Title ===
 #: upstream/_versions/main/guides/native-reference.adoc:268
@@ -465,7 +478,11 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:287
 #, fuzzy
 msgid "These can in turn be imported into a graph database, such as Neo4j, to inspect them more easily and run queries against the call tree.  Let’s see this in action."
-msgstr "Mandrel 21.3.0.0-Final以降、コールツリーはCSVファイルのグループとしても報告されるようになりました。これらは、Neo4jなどのグラフデータベースにインポートすることで、より簡単に検査したり、コールツリーに対するクエリを実行したりすることができます。では、実際に使ってみましょう。"
+msgstr ""
+"Mandrel 21.3.0.0-Final以降、コールツリーはCSVファイルのグループとしても報告さ"
+"れるようになりました。これらは、Neo4jなどのグラフデータベースにインポートする"
+"ことで、より簡単に検査したり、コールツリーに対するクエリを実行したりすること"
+"ができます。では、実際に使ってみましょう。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-reference.adoc:289
@@ -490,7 +507,10 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:305
 #, fuzzy
 msgid "Once the container is running, you can access the link:http://localhost:7474[Neo4j browser].  Use `neo4j` as the username and the value of `NEO_PASS` as the password to log in."
-msgstr "コンテナが起動したら、 http://localhost:7474  から Neo4j ブラウザにアクセスできます。ユーザー名には `neo4j` を、パスワードには `NEO_PASS` の値を使用してログインします。"
+msgstr ""
+"コンテナが起動したら、 http://localhost:7474  から Neo4j "
+"ブラウザにアクセスできます。ユーザー名には `neo4j` を、パスワードには "
+"`NEO_PASS` の値を使用してログインします。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-reference.adoc:308
@@ -701,7 +721,8 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:412
 #, fuzzy
 msgid "Once the import completes (shouldn't take more than a couple of minutes), go to the link:http://localhost:7474[Neo4j browser], and you'll be able to observe a small summary of the data in the graph:"
-msgstr "インポートが完了したら（数分以上はかからないはず）、Neo4jブラウザにアクセスして、データの小さなサマリーをグラフで見ることができます。"
+msgstr "インポートが完了したら（数分以上はかからないはず）、Neo4jブラウザにアクセスし"
+"て、データの小さなサマリーをグラフで見ることができます。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_versions/main/guides/native-reference.adoc:413
@@ -835,7 +856,8 @@ msgstr "つまり、インラインで初期化されたスタティック変数
 #: upstream/_versions/main/guides/native-reference.adoc:500
 #, fuzzy
 msgid "To see this in action with a very basic example, add a new `TimestampResource` to the application that looks like this:"
-msgstr "非常に基本的な例で動作を確認するために、アプリケーションの `GreetingResource` を以下のように変更します。"
+msgstr "非常に基本的な例で動作を確認するために、アプリケーションの `GreetingResource`"
+" を以下のように変更します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:504
@@ -918,7 +940,11 @@ msgstr "現在の時刻がどのようにバイナリに焼き付けられてい
 #: upstream/_versions/main/guides/native-reference.adoc:552
 #, fuzzy
 msgid "In some situations, built time initializations can lead to errors when building native executables.  One example is when a value gets computed at build time which is forbidden to reside in the heap of the JVM that gets baked into the binary.  To see this in action, add this REST resource:"
-msgstr "場合によっては、ビルド時の初期化がネイティブ実行可能ファイルのビルド時にエラーを引き起こすことがあります。例えば、バイナリに焼きこまれるJVMのヒープに存在することが禁止されている値が、ビルド時に計算された場合です。この現象を確認するには、この例をRESTリソースと同じパッケージに追加します。"
+msgstr ""
+"場合によっては、ビルド時の初期化がネイティブ実行可能ファイルのビルド時にエラ"
+"ーを引き起こすことがあります。例えば、バイナリに焼きこまれるJVMのヒープに存在"
+"することが禁止されている値が、ビルド時に計算された場合です。この現象を確認す"
+"るには、この例をRESTリソースと同じパッケージに追加します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:565
@@ -1045,13 +1071,21 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:631
 #, fuzzy
 msgid "So, what the message above is telling us is that our application caches a value that is supposed to be random as a constant.  This is not desirable because something that's supposed to be random is no longer so, because the seed is baked in the image.  The message above makes it quite clear what is causing this, but in other situations the cause might be more obfuscated.  As a next step, we'll add some extra flags to the native executable generation to get more information."
-msgstr "さて、上記のメッセージは、私たちのアプリケーションが `KeyPairGenerator$Delegate` のインスタンスを参照し、そのインスタンスに `SecureRandom` のインスタンスが含まれていることを示しています。これは好ましいことではありません。というのも、シードがイメージに組み込まれているため、ランダムであるはずのものがそうではなくなってしまうからです。次のステップとして、何が原因でこのようなインスタンスがヒープイメージに残っているのかを知りたいと思います。"
+msgstr ""
+"さて、上記のメッセージは、私たちのアプリケーションが "
+"`KeyPairGenerator$Delegate` のインスタンスを参照し、そのインスタンスに "
+"`SecureRandom` のインスタンスが含まれていることを示しています。これは好ましい"
+"ことではありません。というのも、シードがイメージに組み込まれているため、ラン"
+"ダムであるはずのものがそうではなくなってしまうからです。次のステップとして、"
+"何が原因でこのようなインスタンスがヒープイメージに残っているのかを知りたいと"
+"思います。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-reference.adoc:633
 #, fuzzy
 msgid "As suggested by the message, let's start by adding an option to track object instantiation:"
-msgstr "オブジェクトのインスタンス化を追跡するオプションを追加して、もう一度試してみましょう。"
+msgstr "オブジェクトのインスタンス化を追跡するオプションを追加して、もう一度試してみ"
+"ましょう。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:663
@@ -1090,7 +1124,13 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:672
 #, fuzzy
 msgid "The error messages point to the code in the example, but it can be suprising that a reference to `DnsClient` appears.  Why is that? The key is in what happens inside `KeyPairGenerator.initialize()` method call.  It uses `JCAUtil.getSecureRandom()` which is why this is problematic, but sometimes the tracing options can show some stack traces that do not represent what happens in reality.  The best option is to dig through the source code and use tracing output for guidance but not as full truth."
-msgstr "`DnsClient` は今回の例とどう関係があるのでしょうか？鍵となるのは、 `KeyPairGenerator.initialize()` メソッドコールの内部で起こることです。 `JCAUtil.getSecureRandom()` を使用していることが問題となっていますが、トレースオプションでは、実際に起こっていることを表さないスタックトレースが表示されることがあります。ベストの方法は、ソースコードを調査し、トレース出力を完全な真実ではなく、ガイダンスとして使用することです。"
+msgstr ""
+"`DnsClient` は今回の例とどう関係があるのでしょうか？鍵となるのは、 "
+"`KeyPairGenerator.initialize()` メソッドコールの内部で起こることです。 "
+"`JCAUtil.getSecureRandom()` を使用していることが問題となっていますが、トレー"
+"スオプションでは、実際に起こっていることを表さないスタックトレースが表示され"
+"ることがあります。ベストの方法は、ソースコードを調査し、トレース出力を完全な"
+"真実ではなく、ガイダンスとして使用することです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-reference.adoc:674
@@ -1123,7 +1163,11 @@ msgstr "この演習では、ネイティブ実行可能ファイルにコンパ
 #: upstream/_versions/main/guides/native-reference.adoc:686
 #, fuzzy
 msgid "Add a REST resource with the following code (example courtesy of link:https://github.com/apangin/java-profiling-presentation/blob/master/src/demo1/StringBuilderTest.java[Andrei Pangin's Java Profiling presentation]):"
-msgstr "GreetingResourceの実装を以下のコードで置き換えてください（例は link:https://github.com/apangin/java-profiling-presentation/blob/master/src/demo1/StringBuilderTest.java[Andrei Pangin氏のJava Profilingのプレゼンテーション]を参考にしています）。"
+msgstr ""
+"GreetingResourceの実装を以下のコードで置き換えてください（例は "
+"link:https://github.com/apangin/java-profiling-presentation/blob/master/src/"
+"demo1/StringBuilderTest.java[Andrei Pangin氏のJava "
+"Profilingのプレゼンテーション]を参考にしています）。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:698
@@ -1189,7 +1233,10 @@ msgstr "しかし、ここで私たちが答えようとしているのは、そ
 #: upstream/_versions/main/guides/native-reference.adoc:735
 #, fuzzy
 msgid "Since we're dealing with a linux native executable, we can use tools like `perf` directly.  To use `perf`, go to the root of the project and start the tools container created earlier as a privileged user:"
-msgstr "ここでは、linuxのネイティブ実行可能ファイルを扱っているので、 `perf` のようなツールを直接使うことができます。 `perf` を使用するには、管理者になるか、または、以下のように設定する必要があります。"
+msgstr ""
+"ここでは、linuxのネイティブ実行可能ファイルを扱っているので、 `perf` "
+"のようなツールを直接使うことができます。 `perf` "
+"を使用するには、管理者になるか、または、以下のように設定する必要があります。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:739
@@ -1248,7 +1295,14 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:784
 #, fuzzy
 msgid "After a few seconds, halt the `perf record` process.  This will generate a `perf.data` file.  We could use `perf report` to inspect the perf data, but you can often get a better picture showing that data as a flame graph.  To generate flame graphs, we will use https://github.com/brendangregg/FlameGraph[FlameGraph GitHub repository], which has already been installed inside the tools container."
-msgstr "数秒後、 `perf record` のプロセスを停止します。これにより、 `perf.data` ファイルが生成されます。 `perf report` を使用して perf データを検査することもできますが、そのデータをフレームグラフとして表示した方がより的確なイメージが得られることがよくあります。フレームグラフを生成するには、 link:https://github.com/brendangregg/FlameGraph[FlameGraphのGitHubリポジトリ]をローカルでチェックアウトし、その場所を環境変数 `FG_HOME` でエクスポートしてください。例:"
+msgstr ""
+"数秒後、 `perf record` のプロセスを停止します。これにより、 `perf.data` "
+"ファイルが生成されます。 `perf report` を使用して perf データを検査することも"
+"できますが、そのデータをフレームグラフとして表示した方がより的確なイメージが"
+"得られることがよくあります。フレームグラフを生成するには、 "
+"link:https://github.com/brendangregg/"
+"FlameGraph[FlameGraphのGitHubリポジトリ]をローカルでチェックアウトし、"
+"その場所を環境変数 `FG_HOME` でエクスポートしてください。例:"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-reference.adoc:786
@@ -1285,7 +1339,12 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:805
 #, fuzzy
 msgid "We see a big majority of time spent in what is supposed to be our main, but we see no trace of the `StringBuilderResource` class, nor the `StringBuilder` class we're calling.  We should look at the symbol table of the binary: can we find symbols for our class and `StringBuilder`? We need those in order to get meaningful data.  From within the tools container, query the symbol table:"
-msgstr "メインと思われる部分に大部分の時間が費やされていますが、 `GreetingResource` クラスや、私たちが呼んでいる `StringBuilder` クラスの痕跡は見当たりません。バイナリのシンボルテーブルを見てみましょう。私たちのクラスと `StringBuilder` のシンボルが見つかりますか？意味のあるデータを得るためには、これらのシンボルが必要です。"
+msgstr ""
+"メインと思われる部分に大部分の時間が費やされていますが、 `GreetingResource` "
+"クラスや、私たちが呼んでいる `StringBuilder` "
+"クラスの痕跡は見当たりません。バイナリのシンボルテーブルを見てみましょう。"
+"私たちのクラスと `StringBuilder` のシンボルが見つかりますか？意味のあるデータ"
+"を得るためには、これらのシンボルが必要です。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:810
@@ -1299,13 +1358,19 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:816
 #, fuzzy
 msgid "No output appears when querying the symbol table.  This is why we don't see any call graphs in the flame graphs.  This is a deliberate decision that native-image makes.  By default, it removes symbols from the binary."
-msgstr "どれも本当に何も示していません。フレームグラフの中にコールグラフが見当たらないのはそのためです。これはnative-imageが意図的に行っていることです。デフォルトでは、バイナリからシンボルを削除します。"
+msgstr ""
+"どれも本当に何も示していません。フレームグラフの中にコールグラフが見当たらな"
+"いのはそのためです。これはnative-imageが意図的に行っていることです。デフォル"
+"トでは、バイナリからシンボルを削除します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-reference.adoc:820
 #, fuzzy
 msgid "To regain the symbols, we need to rebuild the binary instructing GraalVM not to delete the symbols.  On top of that, enable DWARF debug info so that the stack traces can be populated with that information.  From outside the tools container, execute:"
-msgstr "シンボルを回復するためには、GraalVMにシンボルを削除しないように指示して、バイナリを再ビルドする必要があります。その上で、DWARFのデバッグ情報を有効にして、スタックトレースにその情報を入力できるようにします。"
+msgstr ""
+"シンボルを回復するためには、GraalVMにシンボルを削除しないように指示して、バイ"
+"ナリを再ビルドする必要があります。その上で、DWARFのデバッグ情報を有効にして、"
+"スタックトレースにその情報を入力できるようにします。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:826
@@ -1321,7 +1386,8 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:831
 #, fuzzy
 msgid "Next, re-enter the tools container if you exited, and inspect the native executable with `objdump`, and see how the symbols are now present:"
-msgstr "`objdump` でネイティブ実行可能ファイルを検査し、シンボルがどのように存在するようになったかを確認します。"
+msgstr "`objdump` でネイティブ実行可能ファイルを検査し、シンボルがどのように存在する"
+"ようになったかを確認します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:838
@@ -1391,7 +1457,13 @@ msgstr "マルチスレッド"
 #: upstream/_versions/main/guides/native-reference.adoc:869
 #, fuzzy
 msgid "Multi-threaded programs might require special attention when trying to understand their runtime behaviour.  To demonstrate this, add this `MulticastResource` code to your project (example courtesy of link:https://github.com/apangin/java-profiling-presentation/blob/master/src/demo6/DatagramTest.java[Andrei Pangin's Java Profiling presentation]):"
-msgstr "マルチスレッドのプログラムは、その実行時の動作を理解するために特別な注意が必要な場合があります。このことを説明するために、 `GreetingResource` のコードを以下のように置き換えてみましょう（例は link:https://github.com/apangin/java-profiling-presentation/blob/master/src/demo6/DatagramTest.java[Andrei Pangin の Java プロファイリングのプレゼンテーション]を参考にしています）。"
+msgstr ""
+"マルチスレッドのプログラムは、その実行時の動作を理解するために特別な注意が必"
+"要な場合があります。このことを説明するために、 `GreetingResource` "
+"のコードを以下のように置き換えてみましょう（例は link:https://github.com/"
+"apangin/java-profiling-presentation/blob/master/src/demo6/DatagramTest.java["
+"Andrei Pangin の Java "
+"プロファイリングのプレゼンテーション]を参考にしています）。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:885
@@ -1604,7 +1676,14 @@ msgstr "ネイティブ・クラッシュのデバッグ"
 #: upstream/_versions/main/guides/native-reference.adoc:1007
 #, fuzzy
 msgid "One of the drawbacks of using native executables is that they cannot be debugged using the standard Java debuggers, instead we need to debug them using `gdb`, the GNU Project debugger.  To demonstrate how to do this, we are going to generate a native Quarkus application that crashes due to a Segmentation Fault when accessing http://localhost:8080/crash.  To achieve this, add the following REST resource to the project:"
-msgstr "ネイティブ実行可能ファイルを使用することの欠点は、標準的なJavaデバッガを使用してデバッグできないことです。代わりに、GNU Projectデバッガである `gdb` を使用してデバッグする必要があります。この方法を説明するために、 http://localhost:8080/hello  へのアクセス時にセグメンテーション・フォールトによりクラッシュするネイティブの Quarkus アプリケーションを作成します。これを実現するには、 `GreetingResource` のコードを以下のように置き換えます。"
+msgstr ""
+"ネイティブ実行可能ファイルを使用することの欠点は、標準的なJavaデバッガを使用"
+"してデバッグできないことです。代わりに、GNU Projectデバッガである `gdb` "
+"を使用してデバッグする必要があります。この方法を説明するために、 "
+"http://localhost:8080/hello  へのアクセス時にセグメンテーション・"
+"フォールトによりクラッシュするネイティブの Quarkus "
+"アプリケーションを作成します。これを実現するには、 `GreetingResource` "
+"のコードを以下のように置き換えます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:1013
@@ -1761,7 +1840,12 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:1116
 #, fuzzy
 msgid "This is because we didn’t compile the Quarkus application with `-Dquarkus.native.debug.enabled`, so `gdb` cannot find debugging symbols for our native executable, as indicated by the \"_No debugging symbols found in ./target/debugging-native-1.0.0-SNAPSHOT-runner_\" message in the beginning of `gdb`."
-msgstr "これは、 `-Dquarkus.native.debug.enabled` でQuarkusアプリケーションをコンパイルしていないため、 `gdb` はネイティブ実行可能ファイルのデバッグシンボルを見つけることができません。 `gdb` の最初に _\"No debugging symbols found in ./target/code-with-quarkus-1.0.0-SNAPSHOT-runner_\" というメッセージが表示されています。"
+msgstr ""
+"これは、 `-Dquarkus.native.debug.enabled` "
+"でQuarkusアプリケーションをコンパイルしていないため、 `gdb` "
+"はネイティブ実行可能ファイルのデバッグシンボルを見つけることができません。 "
+"`gdb` の最初に _\"No debugging symbols found in ./target/code-with-quarkus-1."
+"0.0-SNAPSHOT-runner_\" というメッセージが表示されています。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-reference.adoc:1119
@@ -1977,7 +2061,11 @@ msgstr ""
 #: upstream/_versions/main/guides/native-reference.adoc:1281
 #, fuzzy
 msgid "This is because `gdb` is not aware of the location of the source files.  We are running the executable outside of the target directory.  To fix this we can either rerun `gdb` from the target directory or, run `directory target/debugging-native-1.0.0-SNAPSHOT-native-image-source-jar/sources` e.g.:"
-msgstr "これは、 `gdb` がソースファイルの場所を認識していないためです。ターゲットディレクトリの外で実行ファイルを実行しているのです。この問題を解決するには、ターゲットディレクトリから `gdb` を再実行するか、 `directory target/code-with-quarkus-1.0.0-SNAPSHOT-native-image-source-jar/sources` を実行します。"
+msgstr ""
+"これは、 `gdb` がソースファイルの場所を認識していないためです。ターゲットディ"
+"レクトリの外で実行ファイルを実行しているのです。この問題を解決するには、"
+"ターゲットディレクトリから `gdb` を再実行するか、 `directory target/code-"
+"with-quarkus-1.0.0-SNAPSHOT-native-image-source-jar/sources` を実行します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/native-reference.adoc:1297
@@ -2209,7 +2297,12 @@ msgstr "このサンプルをコンテナの外でLinuxでビルドして実行�
 #: upstream/_versions/main/guides/native-reference.adoc:1439
 #, fuzzy
 msgid "Yes you can.  In fact, debugging native executables on a Linux bare metal box offers the best possible experience.  In this kind of environments, root access is not needed except to install packages required to run some debug steps, or to enable `perf` to gather events at the kernel."
-msgstr "Quarkusのネイティブ実行可能ファイルのデバッグは、Linux環境で行うのが最適です。一部のデバッグ手順を実行するために必要なパッケージをインストールする場合や、 `perf` でカーネルのイベントを収集できるようにする場合を除き、ルートアクセスは必要ありません。macOSやWindows環境でのデバッグは、コンテナ環境でも機能します（ link:#macwindows[FAQエントリ]を参照）。"
+msgstr ""
+"Quarkusのネイティブ実行可能ファイルのデバッグは、Linux環境で行うのが最適です"
+"。一部のデバッグ手順を実行するために必要なパッケージをインストールする場合や"
+"、 `perf` でカーネルのイベントを収集できるようにする場合を除き、ルートアクセ"
+"スは必要ありません。macOSやWindows環境でのデバッグは、コンテナ環境でも機能し"
+"ます（ link:#macwindows[FAQエントリ]を参照）。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-reference.adoc:1441
@@ -2340,7 +2433,16 @@ msgstr "JFR/JMCを使って、ネイティブバイナリのデバッグやプ�
 #: upstream/_versions/main/guides/native-reference.adoc:1542
 #, fuzzy
 msgid "https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/about.htm#JFRUH170[Java Flight Recorder (JFR)] and https://www.oracle.com/java/technologies/jdk-mission-control.html[JDK Mission Control (JMC)] can be used to profile native binaries since GraalVM CE 21.2.0.  However, JFR in GraalVM is currently significantly limited in capabilities compared to HotSpot.  The custom event API is fully supported, but many VM level features are unavailable.  They will be added in future releases. Current limitations are:"
-msgstr "link:https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/about.htm#JFRUH170[Java Flight Recorder(JFR)]と link:https://www.oracle.com/java/technologies/jdk-mission-control.html[JDK Mission Control(JMC)]は、GraalVM CE 21.2.0以降、プロファイル・ネイティブ・バイナリのデバッグに使用することができます。 しかし、GraalVMのJFRは現在、HotSpotと比較して機能が大幅に制限されています。カスタムイベントAPIは完全にサポートされていますが、多くのVMレベルの機能は利用できません。これらは将来のリリースで追加される予定です。現在の制限事項は以下の通りです。"
+msgstr ""
+"link:https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/about."
+"htm#JFRUH170[Java Flight Recorder(JFR)]と link:https://www.oracle.com/java/"
+"technologies/jdk-mission-control.html[JDK Mission Control(JMC)]は、GraalVM "
+"CE 21.2."
+"0以降、プロファイル・ネイティブ・バイナリのデバッグに使用することができます。"
+" しかし、GraalVMのJFRは現在、HotSpotと比較して機能が大幅に制限されています。"
+"カスタムイベントAPIは完全にサポートされていますが、多くのVMレベルの機能は利用"
+"できません。これらは将来のリリースで追加される予定です。現在の制限事項は以下"
+"の通りです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/native-reference.adoc:1544

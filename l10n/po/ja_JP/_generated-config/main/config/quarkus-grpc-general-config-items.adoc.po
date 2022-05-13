@@ -507,7 +507,10 @@ msgid ""
 "The deadline used for each call. \n"
 " The format uses the standard `java.time.Duration` format. You can also provide duration values starting with a number. In this case, if the value consists only of a number, the converter treats the value as seconds. Otherwise, `PT` is implicitly prepended to the value to obtain a standard `java.time.Duration` format.\n"
 "--"
-msgstr "数値で始まる期間の値を指定することもできます。この場合、値が数値のみで構成されている場合、コンバーターは値を秒として扱います。そうでない場合は、 `PT` が暗黙的に値の前に付加され、標準の `java.time.Duration` 形式が得られます。"
+msgstr ""
+"数値で始まる期間の値を指定することもできます。この場合、値が数値のみで構成さ"
+"れている場合、コンバーターは値を秒として扱います。そうでない場合は、 `PT` "
+"が暗黙的に値の前に付加され、標準の `java.time.Duration` 形式が得られます。"
 
 #. type: Table
 #: upstream/_generated-config/main/config/quarkus-grpc-general-config-items.adoc:266

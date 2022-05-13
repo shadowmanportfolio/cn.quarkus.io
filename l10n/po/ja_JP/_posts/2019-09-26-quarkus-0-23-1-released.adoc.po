@@ -68,13 +68,21 @@ msgstr "0.23.1には重大なメモリのリグレッションがあることが
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:20
 #, fuzzy
 msgid "We just released Quarkus 0.23.1.  This version is an important milestone for us as it materializes one of our major objectives: relying on https://vertx.io/[Vert.x] for our entire HTTP layer.  It also comes with a lot of improvements and bugfixes contributed by our vibrant community."
-msgstr "Quarkus 0.23.1をリリースしました。このバージョンは、私たちの主要な目標の1つである「HTTPレイヤー全体を link:https://vertx.io/[Vert.x]に依存する」ことを実現する、私たちにとって重要なマイルストーンです。また、Quarkus 0.23.1には、活発なコミュニティから寄せられた多くの改良やバグフィックスが含まれています。"
+msgstr ""
+"Quarkus 0.23."
+"1をリリースしました。このバージョンは、私たちの主要な目標の1つである「"
+"HTTPレイヤー全体を link:https://vertx.io/[Vert."
+"x]に依存する」ことを実現する、私たちにとって重要なマイルストーンです。また、"
+"Quarkus 0.23.1には、活発なコミュニティから寄せられた多くの改良やバグフィック"
+"スが含まれています。"
 
 #. type: delimited block =
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:24
 #, fuzzy
 msgid "The recommended version of GraalVM is now 19.2.0.1 so https://www.graalvm.org/downloads/[please upgrade]!"
-msgstr "GraalVMの推奨バージョンは19.2.0.1になっていますので、 link:https://www.graalvm.org/downloads/[ぜひアップグレードしてください]。"
+msgstr ""
+"GraalVMの推奨バージョンは19.2.0.1になっていますので、 link:https://www."
+"graalvm.org/downloads/[ぜひアップグレードしてください]。"
 
 #. type: Title ==
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:26
@@ -92,13 +100,19 @@ msgstr "新しいHTTPレイヤー"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:31
 #, fuzzy
 msgid "We are making progress on basing our entire HTTP layer (meaning Undertow, our servlet implementation, and RESTEasy, our JAX-RS implementation) on top of Vert.x."
-msgstr "HTTPレイヤー全体（サーブレット実装のUndertowやJAX-RS実装のRESTEasyなど）をVert.xの上に乗せる作業を進めています。"
+msgstr ""
+"HTTPレイヤー全体（サーブレット実装のUndertowやJAX-"
+"RS実装のRESTEasyなど）をVert.xの上に乗せる作業を進めています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:33
 #, fuzzy
 msgid "0.23 is the first step of this major change: our servlet implementation is now making use of Vert.x under the hood. Note that this is only the first change of many to come as, in our next version, RESTEasy will be able to avoid servlets entirely and leverage Vert.x directly."
-msgstr "0.23はこの大きな変化の最初のステップで、サーブレットの実装にVert.xが利用されています。次のバージョンでは、RESTEasyはサーブレットを完全に回避し、Vert.xを直接利用できるようになるので、これは多くの変化のうちの最初の変化に過ぎないことに注意してください。"
+msgstr ""
+"0.23はこの大きな変化の最初のステップで、サーブレットの実装にVert.xが利用され"
+"ています。次のバージョンでは、RESTEasyはサーブレットを完全に回避し、Vert.xを"
+"直接利用できるようになるので、これは多くの変化のうちの最初の変化に過ぎないこ"
+"とに注意してください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:35
@@ -116,13 +130,15 @@ msgstr "JDK 12+のサポート"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:39
 #, fuzzy
 msgid "Until now, Quarkus only supported JDK 8 and 11 (the so-called LTS JDKs). We now support JDK 12 and 13."
-msgstr "これまでQuarkusはJDK 8と11（いわゆるLTS JDK）のみをサポートしていました。現在は、JDK 12と13をサポートしています。"
+msgstr "これまでQuarkusはJDK 8と11（いわゆるLTS "
+"JDK）のみをサポートしていました。現在は、JDK 12と13をサポートしています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:41
 #, fuzzy
 msgid "Note that if you want to build GraalVM native executables, you are still limited to JDK 8 for the time being."
-msgstr "なお、GraalVMのネイティブ実行可能ファイルをビルドしたい場合、当面はJDK8に限定されます。"
+msgstr "なお、GraalVMのネイティブ実行可能ファイルをビルドしたい場合、当面はJDK8に限定"
+"されます。"
 
 #. type: Title ===
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:42
@@ -140,7 +156,10 @@ msgstr "Azureの機能"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:47
 #, fuzzy
 msgid "Slightly related to our new HTTP layer, we now have an extension for Azure functions support and https://quarkus.io/guides/azure-functions-http[a guide] explaining all you need to know to deploy Azure functions based on Quarkus."
-msgstr "新しいHTTPレイヤーに少し関連して、Azure関数をサポートする拡張機能と、QuarkusをベースにAzure関数を展開するために必要なことを説明する link:https://quarkus.io/guides/azure-functions-http[ガイド]ができました。"
+msgstr ""
+"新しいHTTPレイヤーに少し関連して、Azure関数をサポートする拡張機能と、"
+"QuarkusをベースにAzure関数を展開するために必要なことを説明する "
+"link:https://quarkus.io/guides/azure-functions-http[ガイド]ができました。"
 
 #. type: Title ====
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:48
@@ -152,19 +171,22 @@ msgstr "MySQL、ここに来て"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:51
 #, fuzzy
 msgid "We have been a bit shy on our MySQL support as we prioritized the support of MariaDB."
-msgstr "私たちはMariaDBのサポートを優先したため、MySQLのサポートについては少し遠慮していました。"
+msgstr "私たちはMariaDBのサポートを優先したため、MySQLのサポートについては少し遠慮し"
+"ていました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:53
 #, fuzzy
 msgid "As good news never come alone, it's not one extension we added but two:"
-msgstr "朗報は一人で来るものではないので、1つのエクステンションではなく、2つのエクステンションを追加しました。"
+msgstr "朗報は一人で来るものではないので、1つのエクステンションではなく、2つのエクス"
+"テンションを追加しました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:55
 #, fuzzy
 msgid "`quarkus-jdbc-mysql` - An extension for the official MySQL JDBC driver you can use with Hibernate ORM"
-msgstr "`quarkus-jdbc-mysql` - Hibernate ORM で使用できる公式 MySQL JDBC ドライバの拡張機能。"
+msgstr "`quarkus-jdbc-mysql` - Hibernate ORM で使用できる公式 MySQL JDBC "
+"ドライバの拡張機能。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:56
@@ -182,7 +204,10 @@ msgstr "ActiveMQ Artemis"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:60
 #, fuzzy
 msgid "If you are into messaging, we have one more option for you, https://activemq.apache.org/components/artemis/[ActiveMQ Artemis], in the form of the `quarkus-artemis-core` and `quarkus-artemis-jms` extensions."
-msgstr "メッセージングに興味のある方には、 link:https://activemq.apache.org/components/artemis/[ActiveMQ Artemis]に、 `quarkus-artemis-core` と `quarkus-artemis-jms` の拡張機能という形で、もう一つの選択肢があります。"
+msgstr ""
+"メッセージングに興味のある方には、 link:https://activemq.apache.org/"
+"components/artemis/[ActiveMQ Artemis]に、 `quarkus-artemis-core` と `quarkus-"
+"artemis-jms` の拡張機能という形で、もう一つの選択肢があります。"
 
 #. type: Title ====
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:61
@@ -194,7 +219,9 @@ msgstr "JGit"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:64
 #, fuzzy
 msgid "We have added an extension for JGit: say hello to `quarkus-jgit`. More information in the https://quarkus.io/guides/jgit[JGit extension guide]."
-msgstr "JGitのための拡張機能を追加しました: say hello to `quarkus-jgit` 。詳しくは link:https://quarkus.io/guides/jgit[JGit extension guide]をご覧ください。"
+msgstr ""
+"JGitのための拡張機能を追加しました: say hello to `quarkus-jgit` 。詳しくは "
+"link:https://quarkus.io/guides/jgit[JGit extension guide]をご覧ください。"
 
 #. type: Title ===
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:65
@@ -212,7 +239,10 @@ msgstr "Amazon DynamoDB"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:69
 #, fuzzy
 msgid "The Amazon DynamoDB extension is now fully \"quarked\": you can configure it fully via our centralized `application.properties` and inject the appropriate beans in your applications. We also have [a brand new guide]."
-msgstr "Amazon DynamoDBエクステンションが完全に \"quarked \"になりました。集中管理された `application.properties` を通して完全に設定し、アプリケーションに適切なBeanを注入することができます。また、[全く新しいガイド]もあります。"
+msgstr ""
+"Amazon DynamoDBエクステンションが完全に \"quarked \"になりました。"
+"集中管理された `application.properties` を通して完全に設定し、アプリケーショ"
+"ンに適切なBeanを注入することができます。また、[全く新しいガイド]もあります。"
 
 #. type: Labeled list
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:70
@@ -224,7 +254,10 @@ msgstr "アパッチ・ティカ"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:72
 #, fuzzy
 msgid "You can now define the parsers you want to use: only these parsers are included in the native image, greatly reducing its size. See https://quarkus.io/guides/tika[the Apache Tika guide] for more information."
-msgstr "使用したいパーサーを定義できるようになりました。これらのパーサーのみがネイティブイメージに含まれ、サイズが大幅に削減されます。詳しくは、 link:https://quarkus.io/guides/tika[Apache Tika のガイド]をご覧ください。"
+msgstr ""
+"使用したいパーサーを定義できるようになりました。これらのパーサーのみがネイテ"
+"ィブイメージに含まれ、サイズが大幅に削減されます。詳しくは、 "
+"link:https://quarkus.io/guides/tika[Apache Tika のガイド]をご覧ください。"
 
 #. type: Labeled list
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:73
@@ -236,7 +269,11 @@ msgstr "Hibernate ORM"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:75
 #, fuzzy
 msgid "The default value of `quarkus.hibernate-orm.sql-load-script` has been changed from `import.sql` to `no-file` by default *when the `prod` profile is enabled*. That means that if you want to load data in `prod` mode, you need to explicitly point to your import file."
-msgstr "*<code>prod</code>* プロファイルを有効にすると、 `quarkus.hibernate-orm.sql-load-script` のデフォルト値が `import.sql` から `no-file` に変更されます。つまり、 `prod` モードでデータを読み込みたい場合は、インポートファイルを明示的に指定する必要があります。"
+msgstr ""
+"*<code>prod</code>* プロファイルを有効にすると、 `quarkus.hibernate-orm.sql-"
+"load-script` のデフォルト値が `import.sql` から `no-file` "
+"に変更されます。つまり、 `prod` モードでデータを読み込みたい場合は、インポー"
+"トファイルを明示的に指定する必要があります。"
 
 #. type: Labeled list
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:76
@@ -248,7 +285,8 @@ msgstr "イェーガー"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:78
 #, fuzzy
 msgid "The metrics were wrongly added to the `base` metrics: they are now added to the `vendor` metrics."
-msgstr "`base` メトリクスに誤って追加されていました。現在は `vendor` メトリクスに追加されています。"
+msgstr "`base` メトリクスに誤って追加されていました。現在は `vendor` "
+"メトリクスに追加されています。"
 
 #. type: Labeled list
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:79
@@ -260,7 +298,8 @@ msgstr "Kafka ストリーム"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:81
 #, fuzzy
 msgid "You can now leverage the awesomeness of Live Coding when developing Kafka Streams applications."
-msgstr "Kafka Streamsアプリケーションを開発する際に、Live Codingの素晴らしさを活用できるようになりました。"
+msgstr "Kafka Streamsアプリケーションを開発する際に、Live "
+"Codingの素晴らしさを活用できるようになりました。"
 
 #. type: Title ===
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:82
@@ -272,7 +311,11 @@ msgstr "Scalaのサポート"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:85
 #, fuzzy
 msgid "Together with Java and Kotlin, we now also support Scala. Just add the `quarkus-scala` extension when creating a new project (using https://code.quarkus.io/[code.quarkus.io] or the command line) and you will get a Scala project."
-msgstr "JavaとKotlinに加えて、Scalaもサポートしています。 link:https://code.quarkus.io/[code.quarkus.io]やコマンドラインで新しいプロジェクトを作成する際に、 `quarkus-scala` というエクステンションを追加するだけで、Scalaのプロジェクトが作成されます。"
+msgstr ""
+"JavaとKotlinに加えて、Scalaもサポートしています。 link:https://code.quarkus."
+"io/[code.quarkus.io]やコマンドラインで新しいプロジェクトを作成する際に、 "
+"`quarkus-scala` "
+"というエクステンションを追加するだけで、Scalaのプロジェクトが作成されます。"
 
 #. type: Title ===
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:86
@@ -284,7 +327,9 @@ msgstr "非推奨事項"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:89
 #, fuzzy
 msgid "The `quarkus-junit4` extension has been retired. You may use the `quarkus-junit5` extension and move your tests to JUnit 5."
-msgstr "`quarkus-junit4` のエクステンションは引退しました。 `quarkus-junit5` のエクステンションを使用して、テストを JUnit 5 に移行することができます。"
+msgstr ""
+"`quarkus-junit4` のエクステンションは引退しました。 `quarkus-junit5` "
+"のエクステンションを使用して、テストを JUnit 5 に移行することができます。"
 
 #. type: Title ===
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:90
@@ -296,7 +341,11 @@ msgstr "完全な変更履歴"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:93
 #, fuzzy
 msgid "We also fixed a few bugs and usability issues: get https://github.com/quarkusio/quarkus/releases/tag/0.23.0[the full changelog of 0.23.0 on GitHub] - and, if you're really curious, https://github.com/quarkusio/quarkus/releases/tag/0.23.1[the issue we fixed in 0.23.1]."
-msgstr "link:https://github.com/quarkusio/quarkus/releases/tag/0.23.1[0]  link:https://github.com/quarkusio/quarkus/releases/tag/0.23.0[.23.0の全変更履歴]は link:https://github.com/quarkusio/quarkus/releases/tag/0.23.0[GitHubで]ご覧いただけます。"
+msgstr ""
+"link:https://github.com/quarkusio/quarkus/releases/tag/0.23.1[0]  "
+"link:https://github.com/quarkusio/quarkus/releases/tag/0.23.0[.23."
+"0の全変更履歴]は link:https://github.com/quarkusio/quarkus/releases/tag/0.23."
+"0[GitHubで]ご覧いただけます。"
 
 #. type: Title ==
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:94
@@ -308,13 +357,30 @@ msgstr "コントリビューター"
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:98
 #, fuzzy
 msgid "Quarkus has now https://github.com/quarkusio/quarkus/graphs/contributors[149 contributors].  Many many thanks to each and everyone of them."
-msgstr "Quarkusには現在 link:https://github.com/quarkusio/quarkus/graphs/contributors[149名の方にご協力]いただいています。それぞれの方に感謝します。"
+msgstr ""
+"Quarkusには現在 link:https://github.com/quarkusio/quarkus/graphs/"
+"contributors[149名の方にご協力]いただいています。それぞれの方に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:100
 #, fuzzy
 msgid "In particular for this release, thanks to Alessio Soldano, Alex Soto, Alexey Loubyansky, Andy Damevin, Andy Muir, Arne Mejlholm, Aurea Munoz, Bill Burke, chaminnk, Clement Escoffier, Cristiano Nicolai, Damien, Daniel Ribeiro, David M. Lloyd, Dennis Baerten, Emmanuel Bernard, Galder Zamarreño, George Gastaldi, Georgios Andrianakis, Guillaume Dufour, Guillaume Smet, Gunnar Morling, Gwenneg Lepage, Jacob Middag, Jaikiran Pai, Jan Martiska, Jason T. Greene, Justin Lee, Ken Finnigan, Libor Krzyzanek, Loïc Mathieu, Maarten Mulders, Maciej Swiderski, Manyanda Chitimbo, Marcin Czeczko, Martin Kouba, Matej Novotny, Matteo Mortari, Max Rydahl Andersen, Michal Szynkiewicz, Minto van der Sluis, Mitesh Aghera, Moncef Aoudia, Paweł Żalejko, Peter Palaga, Roberto Gamarra, Rostislav Svoboda, Sanne Grinovero, Sergey Beryozkin, soberich, Stuart Douglas, Stéphane Épardaud, Thomas Segismont, Vincent Sevel, William Burns and William Siqueira."
-msgstr "特に今回のリリースでは、Alessio Soldano、Alex Soto、Alexey Loubyansky、Andy Damevin、Andy Muir、Arne Mejlholm、Aurea Munoz、Bill Burke、chaminnk、Clement Escoffier、Cristiano Nicolai、Damien、Daniel Ribeiro、David M. Lloyd、Dennis Baerten、Emmanuel Bernard、Georgios Andrianakis、Guillaume Dufour、Guillaume Smet、Gunnar Morenに感謝します。Lloyd, Dennis Baerten, Emmanuel Bernard, Galder Zamarreño, George Gastaldi, Georgios Andrianakis, Guillaume Dufour, Guillaume Smet, Gunnar Morling, Gwenneg Lepage, Jacob Middag, Jaikiran Pai, Jan Martiska, Jason T.Greene, Justin Lee, Ken Finnigan, Libor Krzyzanek, Loïc Mathieu, Maarten Mulders, Maciej Swiderski, Manyanda Chitimbo, Marcin Czeczko, Martin Kouba, Matej Novotny, Matteo Mortari, Max Rydahl Andersen, Michal Szynkiewicz, Minto van der Sluis,Mitesh Aghera, Moncef Aoudia, Paweł Żalejko, Peter Palaga, Roberto Gamarra, Rostislav Svoboda, Sanne Grinovero, Sergey Beryozkin, soberich, Stuart Douglas, Stéphane Épardaud, Thomas Segismont, Vincent Sevel, William Burns, William Siqueira."
+msgstr ""
+"特に今回のリリースでは、Alessio Soldano、Alex Soto、Alexey Loubyansky、Andy "
+"Damevin、Andy Muir、Arne Mejlholm、Aurea Munoz、Bill Burke、chaminnk、"
+"Clement Escoffier、Cristiano Nicolai、Damien、Daniel Ribeiro、David M. "
+"Lloyd、Dennis Baerten、Emmanuel Bernard、Georgios Andrianakis、Guillaume "
+"Dufour、Guillaume Smet、Gunnar Morenに感謝します。Lloyd, Dennis Baerten, "
+"Emmanuel Bernard, Galder Zamarreño, George Gastaldi, Georgios Andrianakis, "
+"Guillaume Dufour, Guillaume Smet, Gunnar Morling, Gwenneg Lepage, Jacob "
+"Middag, Jaikiran Pai, Jan Martiska, Jason T.Greene, Justin Lee, Ken "
+"Finnigan, Libor Krzyzanek, Loïc Mathieu, Maarten Mulders, Maciej Swiderski, "
+"Manyanda Chitimbo, Marcin Czeczko, Martin Kouba, Matej Novotny, Matteo "
+"Mortari, Max Rydahl Andersen, Michal Szynkiewicz, Minto van der Sluis,Mitesh "
+"Aghera, Moncef Aoudia, Paweł Żalejko, Peter Palaga, Roberto Gamarra, "
+"Rostislav Svoboda, Sanne Grinovero, Sergey Beryozkin, soberich, Stuart "
+"Douglas, Stéphane Épardaud, Thomas Segismont, Vincent Sevel, William Burns, "
+"William Siqueira."
 
 #. type: Title ==
 #: upstream/_posts/2019-09-26-quarkus-0-23-1-released.adoc:101

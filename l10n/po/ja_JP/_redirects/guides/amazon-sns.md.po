@@ -26,7 +26,9 @@ msgstr "真"
 #: upstream/_redirects/guides/amazon-sns.md:1
 #, fuzzy, no-wrap
 msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/amazon-sns.html"
-msgstr "https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/amazon-ses.html"
+msgstr ""
+"https://quarkiverse.github.io/quarkiverse-docs/quarkus-amazon-services/dev/"
+"amazon-ses.html"
 
 #. type: YAML Front Matter: permalink
 #: upstream/_redirects/guides/amazon-sns.md:1

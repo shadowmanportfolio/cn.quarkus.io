@@ -83,7 +83,9 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_versions/main/guides/security-jwt.adoc:43
 #, fuzzy
 msgid "This command generates the Maven project and imports the `smallrye-jwt` extension, which includes the {mp-jwt} support."
-msgstr "このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、{mp-jwt}サポートを含む `smallrye-jwt` エクステンションをインポートします。"
+msgstr ""
+"このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、{mp-jwt}"
+"サポートを含む `smallrye-jwt` エクステンションをインポートします。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-jwt.adoc:46
@@ -144,7 +146,9 @@ msgstr ""
 #: upstream/_versions/main/guides/security-jwt.adoc:75
 #, fuzzy
 msgid "Create a REST endpoint in `src/main/java/org/acme/security/jwt/TokenSecuredResource.java` with the following content:"
-msgstr "`src/main/java/org/acme/security/jwt/TokenSecuredResource.java` ファイルを開くと、以下のような内容が表示されます。"
+msgstr ""
+"`src/main/java/org/acme/security/jwt/TokenSecuredResource.java` "
+"ファイルを開くと、以下のような内容が表示されます。"
 
 #. type: Block title
 #: upstream/_versions/main/guides/security-jwt.adoc:76
@@ -1013,7 +1017,8 @@ msgstr ""
 #: upstream/_versions/main/guides/security-jwt.adoc:578
 #, fuzzy
 msgid "You can also generate the native executable with:"
-msgstr "`./mvnw clean package -Pnative` でネイティブ実行可能ファイルを生成することもできます。"
+msgstr "`./mvnw clean package -Pnative` "
+"でネイティブ実行可能ファイルを生成することもできます。"
 
 #. type: Block title
 #: upstream/_versions/main/guides/security-jwt.adoc:581

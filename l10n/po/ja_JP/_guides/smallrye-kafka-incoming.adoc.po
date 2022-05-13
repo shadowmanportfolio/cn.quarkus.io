@@ -62,7 +62,8 @@ msgid ""
 "A comma-separated list of host:port to use for establishing the initial connection to the Kafka cluster.\n"
 "\n"
 "Type: _string_"
-msgstr "Kafkaクラスターへの初期接続を確立するために使用するhost:portをカンマで区切ったリスト。"
+msgstr "Kafkaクラスターへの初期接続を確立するために使用するhost:portをカンマで区切っ"
+"たリスト。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:10
@@ -127,7 +128,8 @@ msgid ""
 "The consumed / populated Kafka topic. If neither this property nor the `topics` properties are set, the channel name is used\n"
 "\n"
 "Type: _string_"
-msgstr "消費/投入されたKafkaトピック。このプロパティも `topics` のプロパティも設定されていない場合は、チャネル名が使用されます。"
+msgstr "消費/投入されたKafkaトピック。このプロパティも `topics` "
+"のプロパティも設定されていない場合は、チャネル名が使用されます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:16
@@ -185,7 +187,11 @@ msgid ""
 "_deprecated_ - Whether the readiness check should verify that topics exist on the broker. Default to false. Enabling it requires an admin connection. Deprecated: Use 'health-topic-verification-enabled' instead.\n"
 "\n"
 "Type: _boolean_"
-msgstr "_deprecated_- ブローカにトピックが存在するかどうかをレディネスチェックで確認するかどうか。デフォルトはfalseです。これを有効にするには、管理者の接続が必要です。非推奨です。代わりに 'health-topic-verification-enabled' を使用してください。"
+msgstr ""
+"_deprecated_- ブローカにトピックが存在するかどうかをレディネスチェックで確認"
+"するかどうか。デフォルトはfalseです。これを有効にするには、管理者の接続が必要"
+"です。非推奨です。代わりに 'health-topic-verification-enabled' "
+"を使用してください。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:28
@@ -200,7 +206,11 @@ msgid ""
 "_deprecated_ - During the readiness health check, the connector connects to the broker and retrieves the list of topics. This attribute specifies the maximum duration (in ms) for the retrieval. If exceeded, the channel is considered not-ready. Deprecated: Use 'health-topic-verification-timeout' instead.\n"
 "\n"
 "Type: _long_"
-msgstr "_deprecated_- 準備状態の健全性チェックの間、コネクタはブローカーに接続し、トピックのリストを取得します。この属性は、検索の最大継続時間（ms）を指定します。これを超えると、チャネルは準備完了ではないとみなされます。非推奨です。代わりに 'health-topic-verification-timeout' を使用してください。"
+msgstr ""
+"_deprecated_- 準備状態の健全性チェックの間、コネクタはブローカーに接続し、ト"
+"ピックのリストを取得します。この属性は、検索の最大継続時間（ms）を指定します"
+"。これを超えると、チャネルは準備完了ではないとみなされます。非推奨です。"
+"代わりに 'health-topic-verification-timeout' を使用してください。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:32
@@ -215,7 +225,10 @@ msgid ""
 "Whether the startup and readiness check should verify that topics exist on the broker. Default to false. Enabling it requires an admin client connection.\n"
 "\n"
 "Type: _boolean_"
-msgstr "起動時および準備完了時のチェックで、ブローカにトピックが存在するかどうかを確認するかどうかを指定します。デフォルトはfalseです。これを有効にするには、アドミンクライアント接続が必要です。"
+msgstr ""
+"起動時および準備完了時のチェックで、ブローカにトピックが存在するかどうかを確"
+"認するかどうかを指定します。デフォルトはfalseです。これを有効にするには、アド"
+"ミンクライアント接続が必要です。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:36
@@ -240,7 +253,10 @@ msgid ""
 "During the startup and readiness health check, the connector connects to the broker and retrieves the list of topics. This attribute specifies the maximum duration (in ms) for the retrieval. If exceeded, the channel is considered not-ready.\n"
 "\n"
 "Type: _long_"
-msgstr "起動時およびレディネス・ヘルスチェック時に、コネクタはブローカーに接続し、トピックのリストを取得します。この属性では、検索にかかる最大時間（ms）を指定します。これを超えると、チャネルは準備ができていないとみなされます。"
+msgstr ""
+"起動時およびレディネス・ヘルスチェック時に、コネクタはブローカーに接続し、ト"
+"ピックのリストを取得します。この属性では、検索にかかる最大時間（ms）を指定し"
+"ます。これを超えると、チャネルは準備ができていないとみなされます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:40
@@ -276,7 +292,12 @@ msgid ""
 "Enables (default) or disables the Cloud Event support. If enabled on an _incoming_ channel, the connector analyzes the incoming records and try to create Cloud Event metadata. If enabled on an _outgoing_, the connector sends the outgoing messages as Cloud Event if the message includes Cloud Event Metadata.\n"
 "\n"
 "Type: _boolean_"
-msgstr "クラウド イベント サポートを有効（デフォルト）または無効にします。 _受信_チャネルで有効にすると、コネクタは受信レコードを分析し、Cloud Event メタデータの作成を試みます。 _発信_側で有効にすると、メッセージに Cloud Event Metadata が含まれている場合、コネクタは発信メッセージを Cloud Event として送信します。"
+msgstr ""
+"クラウド イベント サポートを有効（デフォルト）または無効にします。 "
+"_受信_チャネルで有効にすると、コネクタは受信レコードを分析し、Cloud Event "
+"メタデータの作成を試みます。 _発信_側で有効にすると、メッセージに Cloud "
+"Event Metadata が含まれている場合、コネクタは発信メッセージを Cloud Event "
+"として送信します。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:48
@@ -291,7 +312,12 @@ msgid ""
 "Identifier of a CDI bean that provides the default Kafka consumer/producer configuration for this channel. The channel configuration can still override any attribute. The bean must have a type of Map<String, Object> and must use the @io.smallrye.common.annotation.Identifier qualifier to set the identifier.\n"
 "\n"
 "Type: _string_"
-msgstr "このチャネルのデフォルトのKafkaコンシューマ/プロデューサ構成を提供するCDI Beanの識別子です。チャネル構成は、任意の属性をオーバーライドできます。このBeanはMap<String, Object>のタイプを持ち、@io.smallrye.common.annotation.Identifier qualifierを使用して識別子を設定する必要があります。"
+msgstr ""
+"このチャネルのデフォルトのKafkaコンシューマ/プロデューサ構成を提供するCDI "
+"Beanの識別子です。チャネル構成は、任意の属性をオーバーライドできます。"
+"このBeanはMap<String, Object>のタイプを持ち、@"
+"io.smallrye.common.annotation.Identifier "
+"qualifierを使用して識別子を設定する必要があります。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:52
@@ -306,7 +332,8 @@ msgid ""
 "A comma-separating list of topics to be consumed. Cannot be used with the `topic` or `pattern` properties\n"
 "\n"
 "Type: _string_"
-msgstr "消費されるトピックのコンマ区切りのリスト。 `topic` または `pattern` のプロパティとは併用できません。"
+msgstr "消費されるトピックのコンマ区切りのリスト。 `topic` または `pattern` "
+"のプロパティとは併用できません。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:56
@@ -321,7 +348,9 @@ msgid ""
 "Indicate that the `topic` property is a regular expression. Must be used with the `topic` property. Cannot be used with the `topics` property\n"
 "\n"
 "Type: _boolean_"
-msgstr "`topic` プロパティが正規表現であることを示す。 `topic` プロパティと併用する必要があります。 `topics` プロパティとは併用できません。"
+msgstr ""
+"`topic` プロパティが正規表現であることを示す。 `topic` "
+"プロパティと併用する必要があります。 `topics` プロパティとは併用できません。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:60
@@ -378,7 +407,11 @@ msgid ""
 "The minimum amount of data the server should return for a fetch request. The default setting of 1 byte means that fetch requests are answered as soon as a single byte of data is available or the fetch request times out waiting for data to arrive.\n"
 "\n"
 "Type: _int_"
-msgstr "フェッチ・リクエストに対してサーバーが返すべきデータの最小量。デフォルトの1バイトの設定は、1バイトのデータが利用可能になるか、データの到着を待ってフェッチリクエストがタイムアウトするとすぐにフェッチリクエストに応答することを意味します。"
+msgstr ""
+"フェッチ・リクエストに対してサーバーが返すべきデータの最小量。デフォルトの1バ"
+"イトの設定は、1バイトのデータが利用可能になるか、データの到着を待ってフェッチ"
+"リクエストがタイムアウトするとすぐにフェッチリクエストに応答することを意味し"
+"ます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:72
@@ -407,7 +440,8 @@ msgid ""
 "You can explicitly ask for automatically generated unique id by setting this property to `${quarkus.uuid}`.\n"
 "\n"
 "Type: _string_"
-msgstr "アプリケーションが所属するコンシューマーグループを識別するための一意の文字列。"
+msgstr "アプリケーションが所属するコンシューマーグループを識別するための一意の文字列"
+"。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:83
@@ -422,7 +456,11 @@ msgid ""
 "If enabled, consumer's offset will be periodically committed in the background by the underlying Kafka client, ignoring the actual processing outcome of the records. It is recommended to NOT enable this setting and let Reactive Messaging handles the commit.\n"
 "\n"
 "Type: _boolean_"
-msgstr "この設定を有効にすると、コンシューマーのオフセットは、レコードの実際の処理結果を無視して、基礎となるKafkaクライアントによってバックグラウンドで定期的にコミットされます。この設定を有効にしないで、Reactive Messaging にコミットを任せることをお勧めします。"
+msgstr ""
+"この設定を有効にすると、コンシューマーのオフセットは、レコードの実際の処理結"
+"果を無視して、基礎となるKafkaクライアントによってバックグラウンドで定期的にコ"
+"ミットされます。この設定を有効にしないで、Reactive Messaging "
+"にコミットを任せることをお勧めします。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:87
@@ -509,7 +547,8 @@ msgid ""
 "What to do when there is no initial offset in Kafka.Accepted values are earliest, latest and none\n"
 "\n"
 "Type: _string_"
-msgstr "Kafkaで初期オフセットがない場合の対処法。許容される値はearliest、latest、none。"
+msgstr "Kafkaで初期オフセットがない場合の対処法。許容される値はearliest、latest、none"
+"。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:107
@@ -530,7 +569,10 @@ msgid ""
 "Specify the failure strategy to apply when a message produced from a record is acknowledged negatively (nack). Values can be `fail` (default), `ignore`, or `dead-letter-queue`\n"
 "\n"
 "Type: _string_"
-msgstr "レコードから生成されたメッセージが否定的に確認された（nack）場合に適用する失敗戦略を指定します。値は、 `fail` （デフォルト）、 `ignore` 、または `dead-letter-queue`"
+msgstr ""
+"レコードから生成されたメッセージが否定的に確認された（nack）場合に適用する失"
+"敗戦略を指定します。値は、 `fail` （デフォルト）、 `ignore` 、または `dead-"
+"letter-queue`"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:111
@@ -551,7 +593,10 @@ msgid ""
 "Specify the commit strategy to apply when a message produced from a record is acknowledged. Values can be `latest`, `ignore` or `throttled`. If `enable.auto.commit` is true then the default is `ignore` otherwise it is `throttled`\n"
 "\n"
 "Type: _string_"
-msgstr "レコードから生成されたメッセージが確認されたときに適用するコミットストラテジーを指定します。値は、 `latest` 、 `ignore` 、 `throttled` のいずれかです。 `enable.auto.commit` が真であれば、デフォルトは `ignore` です。 `throttled`"
+msgstr ""
+"レコードから生成されたメッセージが確認されたときに適用するコミットストラテジ"
+"ーを指定します。値は、 `latest` 、 `ignore` 、 `throttled` のいずれかです。 "
+"`enable.auto.commit` が真であれば、デフォルトは `ignore` です。 `throttled`"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:115
@@ -566,7 +611,9 @@ msgid ""
 "While using the `throttled` commit-strategy, specify the max age in milliseconds that an unprocessed message can be before the connector is marked as unhealthy. Setting this attribute to 0 disables this monitoring.\n"
 "\n"
 "Type: _int_"
-msgstr "`throttled` commit-strategy を使用している場合は、コネクタが不健全であるとマークされるまでの未処理メッセージの最大経過時間をミリ秒単位で指定します。"
+msgstr ""
+"`throttled` commit-strategy を使用している場合は、コネクタが不健全であるとマ"
+"ークされるまでの未処理メッセージの最大経過時間をミリ秒単位で指定します。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:119
@@ -587,7 +634,10 @@ msgid ""
 "When the `failure-strategy` is set to `dead-letter-queue` indicates on which topic the record is sent. Defaults is `dead-letter-topic-$channel`\n"
 "\n"
 "Type: _string_"
-msgstr "`failure-strategy` が `dead-letter-queue` に設定されている場合、どのトピックにレコードが送信されるかを示します。デフォルトでは `dead-letter-topic-$channel`"
+msgstr ""
+"`failure-strategy` が `dead-letter-queue` "
+"に設定されている場合、どのトピックにレコードが送信されるかを示します。"
+"デフォルトでは `dead-letter-topic-$channel`"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:123
@@ -602,7 +652,10 @@ msgid ""
 "When the `failure-strategy` is set to `dead-letter-queue` indicates the key serializer to use. If not set the serializer associated to the key deserializer is used\n"
 "\n"
 "Type: _string_"
-msgstr "`failure-strategy` が設定されている場合、 `dead-letter-queue` は使用するキーシリアライザを示します。設定されていない場合は、キーデシリアライザに関連付けられたシリアライザが使用されます。"
+msgstr ""
+"`failure-strategy` が設定されている場合、 `dead-letter-queue` は使用するキー"
+"シリアライザを示します。設定されていない場合は、キーデシリアライザに関連付け"
+"られたシリアライザが使用されます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:127
@@ -617,7 +670,10 @@ msgid ""
 "When the `failure-strategy` is set to `dead-letter-queue` indicates the value serializer to use. If not set the serializer associated to the value deserializer is used\n"
 "\n"
 "Type: _string_"
-msgstr "`failure-strategy` が設定されている場合、 `dead-letter-queue` は、使用する値のシリアライザを示します。設定されていない場合は、値のデシリアライザに関連付けられたシリアライザが使用されます。"
+msgstr ""
+"`failure-strategy` が設定されている場合、 `dead-letter-queue` は、使用する値"
+"のシリアライザを示します。設定されていない場合は、値のデシリアライザに関連付"
+"けられたシリアライザが使用されます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:131
@@ -632,7 +688,10 @@ msgid ""
 "The number of partitions to be consumed concurrently. The connector creates the specified amount of Kafka consumers. It should match the number of partition of the targeted topic\n"
 "\n"
 "Type: _int_"
-msgstr "同時に消費されるパーティションの数です。コネクタは、指定された数のKafkaコンシューマーを作成します。これは、対象となるトピックのパーティション数と一致する必要があります。"
+msgstr ""
+"同時に消費されるパーティションの数です。コネクタは、指定された数のKafkaコンシ"
+"ューマーを作成します。これは、対象となるトピックのパーティション数と一致する"
+"必要があります。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:135
@@ -647,7 +706,8 @@ msgid ""
 "When `partitions` is greater than 1, this attribute allows configuring how many records are requested by each consumers every time.\n"
 "\n"
 "Type: _int_"
-msgstr "`partitions` が 1 より大きい場合、この属性により、各消費者が毎回要求するレコードの数を設定することができます。"
+msgstr "`partitions` が 1 より大きい場合、この属性により、各消費者が毎回要求するレコ"
+"ードの数を設定することができます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:139
@@ -668,7 +728,10 @@ msgid ""
 "The name set in `@Identifier` of a bean that implements `io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener`. If set, this rebalance listener is applied to the consumer.\n"
 "\n"
 "Type: _string_"
-msgstr "`io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` を実装するBeanの `@Identifier` で設定された名前です。設定された場合、このリバランスリスナーはコンシューマーに適用されます。"
+msgstr ""
+"`io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` "
+"を実装するBeanの `@Identifier` で設定された名前です。設定された場合、このリバ"
+"ランスリスナーはコンシューマーに適用されます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:143
@@ -683,7 +746,11 @@ msgid ""
 "The name set in `@Identifier` of a bean that implements `io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler`. If set, deserialization failure happening when deserializing keys are delegated to this handler which may retry or provide a fallback value.\n"
 "\n"
 "Type: _string_"
-msgstr "`io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler` を実装するBeanの `@Identifier` で設定された名前です。設定された場合、キーをデシリアライズする際に起こるデシリアライズの失敗は、フォールバック値を提供することができるこのハンドラに委ねられます。"
+msgstr ""
+"`io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler` "
+"を実装するBeanの `@Identifier` で設定された名前です。設定された場合、キーをデ"
+"シリアライズする際に起こるデシリアライズの失敗は、フォールバック値を提供する"
+"ことができるこのハンドラに委ねられます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:147
@@ -698,7 +765,11 @@ msgid ""
 "The name set in `@Identifier` of a bean that implements `io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler`. If set, deserialization failure happening when deserializing values are delegated to this handler which may retry or provide a fallback value.\n"
 "\n"
 "Type: _string_"
-msgstr "`io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler` を実装するBeanの `@Identifier` で設定された名前です。設定されている場合、値のデシリアライズがこのハンドラに委ねられているときに起こるデシリアライズの失敗は、フォールバック値を提供することができる。"
+msgstr ""
+"`io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler` "
+"を実装するBeanの `@Identifier` で設定された名前です。設定されている場合、値の"
+"デシリアライズがこのハンドラに委ねられているときに起こるデシリアライズの失敗"
+"は、フォールバック値を提供することができる。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:151
@@ -713,7 +784,11 @@ msgid ""
 "When no deserialization failure handler is set and a deserialization failure happens, report the failure and mark the application as unhealthy. If set to `false` and a deserialization failure happens, a `null` value is forwarded.\n"
 "\n"
 "Type: _boolean_"
-msgstr "デシリアライズ失敗ハンドラが設定されておらず、デシリアライズの失敗が発生した場合、失敗を報告し、アプリケーションを不健全とマークします。 `false` に設定されていて、デシリアライゼーションの失敗が起こると、 `null` の値が転送されます。"
+msgstr ""
+"デシリアライズ失敗ハンドラが設定されておらず、デシリアライズの失敗が発生した"
+"場合、失敗を報告し、アプリケーションを不健全とマークします。 `false` "
+"に設定されていて、デシリアライゼーションの失敗が起こると、 `null` "
+"の値が転送されます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:155
@@ -743,7 +818,10 @@ msgid ""
 "The polling timeout in milliseconds. When polling records, the poll will wait at most that duration before returning records. Default is 1000ms\n"
 "\n"
 "Type: _int_"
-msgstr "ポーリングのタイムアウトをミリ秒単位で指定します。レコードをポーリングする際に、レコードを返すまでに最大でこのタイムアウト時間を待ちます。デフォルトは1000ms"
+msgstr ""
+"ポーリングのタイムアウトをミリ秒単位で指定します。レコードをポーリングする際"
+"に、レコードを返すまでに最大でこのタイムアウト時間を待ちます。デフォルトは100"
+"0ms"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:163
@@ -764,7 +842,11 @@ msgid ""
 "Whether the polling must be paused when the application does not request items and resume when it does. This allows implementing back-pressure based on the application capacity. Note that polling is not stopped, but will not retrieve any records when paused.\n"
 "\n"
 "Type: _boolean_"
-msgstr "アプリケーションがアイテムを要求していないときにポーリングを一時停止し、要求したときに再開する必要があるかどうか。これにより、アプリケーションの容量に応じたバックプレッシャーをかけることができます。ポーリングは停止しませんが、一時停止した場合はレコードを取得しないことに注意してください。"
+msgstr ""
+"アプリケーションがアイテムを要求していないときにポーリングを一時停止し、要求"
+"したときに再開する必要があるかどうか。これにより、アプリケーションの容量に応"
+"じたバックプレッシャーをかけることができます。ポーリングは停止しませんが、一"
+"時停止した場合はレコードを取得しないことに注意してください。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:167
@@ -779,7 +861,11 @@ msgid ""
 "Whether the Kafka records are consumed in batch. The channel injection point must consume a compatible type, such as `List<Payload>` or `KafkaRecordBatch<Payload>`.\n"
 "\n"
 "Type: _boolean_"
-msgstr "Kafka レコードをバッチで消費するかどうか。チャネルインジェクションポイントは、 `List<Payload>` や `KafkaRecordBatch<Payload>` のような互換性のあるタイプを消費する必要があります。"
+msgstr ""
+"Kafka "
+"レコードをバッチで消費するかどうか。チャネルインジェクションポイントは、 "
+"`List<Payload>` や `KafkaRecordBatch<Payload>` "
+"のような互換性のあるタイプを消費する必要があります。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:171
@@ -794,7 +880,10 @@ msgid ""
 "Multiplier factor to determine maximum number of records queued for processing, using `max.poll.records` * `max-queue-size-factor`. Defaults to 2. In `batch` mode `max.poll.records` is considered `1`.\n"
 "\n"
 "Type: _int_"
-msgstr "`max.poll.records` * `max-queue-size-factor` を使用して、処理のために待機するレコードの最大数を決定するための乗算係数。デフォルトは2です。 `batch` モードでは `max.poll.records` は `1` とみなされます。"
+msgstr ""
+"`max.poll.records` * `max-queue-size-factor` を使用して、処理のために待機する"
+"レコードの最大数を決定するための乗算係数。デフォルトは2です。 `batch` "
+"モードでは `max.poll.records` は `1` とみなされます。"
 
 #. type: Table
 #: upstream/_guides/smallrye-kafka-incoming.adoc:175

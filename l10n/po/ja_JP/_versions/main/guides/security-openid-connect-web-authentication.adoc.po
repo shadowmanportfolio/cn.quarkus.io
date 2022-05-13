@@ -389,7 +389,9 @@ msgstr ""
 #: upstream/_versions/main/guides/security-openid-connect-web-authentication.adoc:187
 #, fuzzy
 msgid "You should be able to access your Keycloak Server at http://localhost:8180[localhost:8180]."
-msgstr "Keycloakサーバーには、 link:http://localhost:8180/auth[localhost:8180/auth] でアクセスできるはずです。"
+msgstr ""
+"Keycloakサーバーには、 link:http://localhost:8180/auth[localhost:8180/auth] "
+"でアクセスできるはずです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-web-authentication.adoc:189
@@ -454,7 +456,9 @@ msgstr "これは、生成されたバイナリーにランタイム技術が含
 #: upstream/_versions/main/guides/security-openid-connect-web-authentication.adoc:221
 #, fuzzy
 msgid "Compilation will take a bit longer, so this step is disabled by default; let's build again by enabling the native build:"
-msgstr "コンパイルには少し時間がかかるので、このステップはデフォルトで無効になっています。 `native` プロファイルを有効にして再度ビルドしてみましょう。"
+msgstr ""
+"コンパイルには少し時間がかかるので、このステップはデフォルトで無効になってい"
+"ます。 `native` プロファイルを有効にして再度ビルドしてみましょう。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-web-authentication.adoc:225
@@ -1517,7 +1521,8 @@ msgstr ""
 #: upstream/_versions/main/guides/security-openid-connect-web-authentication.adoc:745
 #, fuzzy
 msgid "See xref:security-openid-connect-providers.adoc[Well Known OpenID Connect providers] for more details about configuring other well-known providers."
-msgstr "xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak]"
+msgstr ""
+"xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak]"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-web-authentication.adoc:747
@@ -2651,7 +2656,8 @@ msgstr "https://tools.ietf.org/html/rfc7519[JSON Web Token]"
 #: upstream/_versions/main/guides/security-openid-connect-web-authentication.adoc:1392
 #, fuzzy
 msgid "xref:security-openid-connect-providers.adoc[Well Known OpenID Connect providers]."
-msgstr "xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak]"
+msgstr ""
+"xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak]"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-openid-connect-web-authentication.adoc:1393

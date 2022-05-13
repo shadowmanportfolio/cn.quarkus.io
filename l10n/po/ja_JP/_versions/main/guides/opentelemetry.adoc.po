@@ -83,7 +83,12 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_versions/main/guides/opentelemetry.adoc:42
 #, fuzzy
 msgid "This command generates the Maven project and imports the `quarkus-opentelemetry-exporter-otlp` extension, which includes the OpenTelemetry support, and a gRPC span exporter for https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/protocol/otlp.md[OTLP]."
-msgstr "このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、OpenTelemetryのサポートを含む `quarkus-opentelemetry-exporter-otlp` エクステンションと、 link:https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/protocol/otlp.md[OTLP]用のgRPCスパンエクスポーターをインポートします。"
+msgstr ""
+"このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、"
+"OpenTelemetryのサポートを含む `quarkus-opentelemetry-exporter-otlp` "
+"エクステンションと、 link:https://github.com/open-telemetry/"
+"opentelemetry-specification/blob/main/specification/protocol/otlp."
+"md[OTLP]用のgRPCスパンエクスポーターをインポートします。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/opentelemetry.adoc:45
@@ -140,7 +145,9 @@ msgstr ""
 #: upstream/_versions/main/guides/opentelemetry.adoc:69
 #, fuzzy
 msgid "Create a `src/main/java/org/acme/opentelemetry/TracedResource.java` file with the following content:"
-msgstr "`src/main/java/org/acme/opentelemetry/TracedResource.java` のファイルを開くと、以下の内容が表示されます。"
+msgstr ""
+"`src/main/java/org/acme/opentelemetry/TracedResource.java` "
+"のファイルを開くと、以下の内容が表示されます。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/opentelemetry.adoc:73

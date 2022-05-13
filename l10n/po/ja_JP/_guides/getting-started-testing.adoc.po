@@ -56,7 +56,9 @@ msgstr "前提条件"
 #: upstream/_guides/getting-started-testing.adoc:32
 #, fuzzy
 msgid "The completed greeter application from the xref:getting-started.adoc[Getting Started Guide]"
-msgstr "link:getting-started.html[Getting Started Guide』]に掲載されている、記入済みのGreeterアプリケーション"
+msgstr ""
+"link:getting-started.html[Getting Started "
+"Guide』]に掲載されている、記入済みのGreeterアプリケーション"
 
 #. type: Title ==
 #: upstream/_guides/getting-started-testing.adoc:33
@@ -73,7 +75,9 @@ msgstr "このガイドでは、入門ガイドの一部として作成された
 #: upstream/_guides/getting-started-testing.adoc:39
 #, fuzzy
 msgid "Quarkus supports Continuous testing, but this is covered by the xref:continuous-testing.adoc[Continuous Testing Guide]."
-msgstr "Quarkusは継続的テストをサポートしていますが、これについては link:continuous-testing.html[継続的テストガイド]で説明しています。"
+msgstr ""
+"Quarkusは継続的テストをサポートしていますが、これについては link:continuous-"
+"testing.html[継続的テストガイド]で説明しています。"
 
 #. type: Title ==
 #: upstream/_guides/getting-started-testing.adoc:40
@@ -111,7 +115,8 @@ msgstr "JVMモードでのHTTPベースのテストの再確認"
 #: upstream/_guides/getting-started-testing.adoc:55
 #, fuzzy
 msgid "If you have started from the Getting Started example you should already have a completed test, including the correct tooling setup."
-msgstr "はじめにのサンプルから始めた場合は、正しい `pom.xml`  の設定を含めて、すでにテストが完了しているはずです。"
+msgstr "はじめにのサンプルから始めた場合は、正しい `pom.xml`  "
+"の設定を含めて、すでにテストが完了しているはずです。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:57
@@ -840,7 +845,19 @@ msgstr "この問題を回避するために、Quarkusはテストプロファ�
 #: upstream/_guides/getting-started-testing.adoc:479
 #, fuzzy
 msgid "To reduce the amount of times Quarkus needs to restart, `io.quarkus.test.junit.util.QuarkusTestProfileAwareClassOrderer` is registered as a global `ClassOrderer` as described in the link:https://junit.org/junit5/docs/current/user-guide/#writing-tests-test-execution-order-classes[JUnit 5 User Guide].  The behavior of this orderer is configurable via `junit-platform.properties` (see the source code or javadoc for more details).  It can also be disabled entirely by setting another orderer that is provided by JUnit 5 or even your own custom one. + Please note that as of JUnit 5.8.2 link:https://github.com/junit-team/junit5/issues/2794[only a single `junit-platform.properties` is picked up and a warning is logged if more than one is found].  If you encounter such warnings, you can can get rid of them by removing the Quarkus-supplied `junit-platform.properties` from the classpath via an exclusion:"
-msgstr "Quarkusの再起動の回数を減らすために、 link:https://junit.org/junit5/docs/current/user-guide/#writing-tests-test-execution-order-classes[JUnit 5 User Guide]に記載されているように、 `io.quarkus.test.junit.util.QuarkusTestProfileAwareClassOrderer` はグローバルな `ClassOrderer` として登録されています。このオーダラーの動作は `junit-platform.properties` で設定できます (詳細はソースコードや javadoc をご覧ください)。また、JUnit 5 が提供する別の注文主を設定したり、独自の注文主を設定することで、この注文主を完全に無効にすることもできます。+ JUnit 5.8.2 では、 link:https://github.com/junit-team/junit5/issues/2794[`junit-platform.properties`] はひとつしか拾われず、複数見つかった場合は警告が出ます。このような警告が出た場合は、Quarkus が提供する `junit-platform.properties` をクラスパスから除外することで、警告を消すことができます。"
+msgstr ""
+"Quarkusの再起動の回数を減らすために、 link:https://junit.org/junit5/docs/"
+"current/user-guide/#writing-tests-test-execution-order-classes[JUnit 5 User "
+"Guide]に記載されているように、 `io.quarkus.test.junit.util."
+"QuarkusTestProfileAwareClassOrderer` はグローバルな `ClassOrderer` "
+"として登録されています。このオーダラーの動作は `junit-platform.properties` "
+"で設定できます (詳細はソースコードや javadoc をご覧ください)。また、JUnit 5 "
+"が提供する別の注文主を設定したり、独自の注文主を設定することで、この注文主を"
+"完全に無効にすることもできます。+ JUnit 5.8.2 では、 link:https://github.com/"
+"junit-team/junit5/issues/2794[`junit-platform.properties`] はひとつしか拾われ"
+"ず、複数見つかった場合は警告が出ます。このような警告が出た場合は、Quarkus "
+"が提供する `junit-platform.properties` "
+"をクラスパスから除外することで、警告を消すことができます。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:492
@@ -1036,19 +1053,23 @@ msgstr ""
 #: upstream/_guides/getting-started-testing.adoc:607
 #, fuzzy
 msgid "All these methods have default implementations so just override the ones you need to override."
-msgstr "これらのメソッドはすべてデフォルトで実装されているので、必要なものだけをオーバーライドしてください。"
+msgstr "これらのメソッドはすべてデフォルトで実装されているので、必要なものだけをオー"
+"バーライドしてください。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:610
 #, fuzzy
 msgid "Now we have defined our profile we need to include it on our test class.  We do this by annotating the test class with `@TestProfile(MockGreetingProfile.class)`."
-msgstr "プロファイルを定義したので、それをテストクラスに含める必要があります。 `@TestProfile(MockGreetingProfile.class)` で、これを行うことが出来ます。"
+msgstr ""
+"プロファイルを定義したので、それをテストクラスに含める必要があります。 "
+"`@TestProfile(MockGreetingProfile.class)` で、これを行うことが出来ます。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:613
 #, fuzzy
 msgid "All the test profile configuration is stored in a single class, which makes it easy to tell if the previous test ran with the same configuration."
-msgstr "テストプロファイルの設定はすべて単一のクラスに保存されているので、前回のテストが同じ設定で実行されたかどうかが簡単にわかります。"
+msgstr "テストプロファイルの設定はすべて単一のクラスに保存されているので、前回のテス"
+"トが同じ設定で実行されたかどうかが簡単にわかります。"
 
 #. type: Title ===
 #: upstream/_guides/getting-started-testing.adoc:614
@@ -1060,13 +1081,22 @@ msgstr "特定のエンドポイントのテスト"
 #: upstream/_guides/getting-started-testing.adoc:618
 #, fuzzy
 msgid "Quarkus provides the ability to limit test execution to tests with specific `@TestProfile` annotations.  This works by leveraging the `tags` method of `QuarkusTestProfile` in conjunction with the `quarkus.test.profile.tags` system property."
-msgstr "Quarkusには、特定の `@TestProfile` アノテーションを持つテストにテストの実行を制限する機能があります。これは、 `QuarkusTestProfile` の `tags` メソッドと `quarkus.test.profile.tags` のシステムプロパティを併用することで機能します。"
+msgstr ""
+"Quarkusには、特定の `@TestProfile` "
+"アノテーションを持つテストにテストの実行を制限する機能があります。これは、 "
+"`QuarkusTestProfile` の `tags` メソッドと `quarkus.test.profile.tags` "
+"のシステムプロパティを併用することで機能します。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:622
 #, fuzzy
 msgid "Essentially, any `QuarkusTestProfile` with at least one matching tag matching the value of `quarkus.test.profile.tags` will be considered active and all the tests annotated with `@TestProfile` of active profiles, will be run while the rest will be skipped.  This is best shown in the following example."
-msgstr "基本的には、 `quarkus.test.profile.tags` の値と一致する一致するタグを少なくとも 1 つ持つ `QuarkusTestProfile` はすべてアクティブと見なされ、アクティブなプロファイルの `@TestProfile` でアノテーションされたテストはすべて実行され、それ以外はスキップされます。これは、次の例でよくわかります。"
+msgstr ""
+"基本的には、 `quarkus.test.profile.tags` "
+"の値と一致する一致するタグを少なくとも 1 つ持つ `QuarkusTestProfile` "
+"はすべてアクティブと見なされ、アクティブなプロファイルの `@TestProfile` でア"
+"ノテーションされたテストはすべて実行され、それ以外はスキップされます。これは"
+"、次の例でよくわかります。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:624
@@ -1182,31 +1212,44 @@ msgstr "次のようなシナリオを考えてみましょう。"
 #: upstream/_guides/getting-started-testing.adoc:704
 #, fuzzy
 msgid "`quarkus.test.profile.tags` is not set: All tests will be executed."
-msgstr "`quarkus.test.profile.tags` は設定されていません。すべてのテストが実行されます。"
+msgstr "`quarkus.test.profile.tags` "
+"は設定されていません。すべてのテストが実行されます。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:706
 #, fuzzy
 msgid "`quarkus.test.profile.tags=foo`: In this case none of tests will be executed because none of the tags defined on the `QuarkusTestProfile` implementations match the value of `quarkus.test.profile.tags`.  Note that `NoQuarkusProfileTest` is not executed either because it is not annotated with `@TestProfile`."
-msgstr "`quarkus.test.profile.tags=foo`: このケースでは、 `QuarkusTestProfile` の実装で定義されたタグが `quarkus.test.profile.tags` の値と一致しないため、どのテストも実行されません。なお、 `NoQuarkusProfileTest` も `@TestProfile` でアノテーションされていないため、実行されません。"
+msgstr ""
+"`quarkus.test.profile.tags=foo`: このケースでは、 `QuarkusTestProfile` "
+"の実装で定義されたタグが `quarkus.test.profile.tags` "
+"の値と一致しないため、どのテストも実行されません。なお、 "
+"`NoQuarkusProfileTest` も `@TestProfile` "
+"でアノテーションされていないため、実行されません。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:708
 #, fuzzy
 msgid "`quarkus.test.profile.tags=test1`: In this case `SingleTagTest` and `MultipleTagsTest` will be run because the tags on their respective `QuarkusTestProfile` implementations match the value of `quarkus.test.profile.tags`."
-msgstr "`quarkus.test.profile.tags=test1`: この場合、 `SingleTagTest` と `MultipleTagsTest` は、それぞれの `QuarkusTestProfile` の実装のタグが `quarkus.test.profile.tags` の値と一致するため、実行されます。"
+msgstr ""
+"`quarkus.test.profile.tags=test1`: この場合、 `SingleTagTest` と "
+"`MultipleTagsTest` は、それぞれの `QuarkusTestProfile` の実装のタグが "
+"`quarkus.test.profile.tags` の値と一致するため、実行されます。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:709
 #, fuzzy
 msgid "`quarkus.test.profile.tags=test1,test3`: This case results in the same tests being executed as the previous case."
-msgstr "`quarkus.test.profile.tags=test1,test3`: このケースでは、前のケースと同じテストが実行されます。"
+msgstr "`quarkus.test.profile.tags=test1,test3`: "
+"このケースでは、前のケースと同じテストが実行されます。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:711
 #, fuzzy
 msgid "`quarkus.test.profile.tags=test2,test3`: In this case only `MultipleTagsTest` will be run because `MultipleTagsTest` is the only `QuarkusTestProfile` implementation whose `tags` method matches the value of `quarkus.test.profile.tags`."
-msgstr "`quarkus.test.profile.tags=test2,test3`: このケースでは、 `MultipleTagsTest` が `tags` メソッドが `quarkus.test.profile.tags` の値と一致する唯一の `QuarkusTestProfile` 実装であるため、 `MultipleTagsTest` のみが実行されます。"
+msgstr ""
+"`quarkus.test.profile.tags=test2,test3`: このケースでは、 `MultipleTagsTest` "
+"が `tags` メソッドが `quarkus.test.profile.tags` の値と一致する唯一の "
+"`QuarkusTestProfile` 実装であるため、 `MultipleTagsTest` のみが実行されます。"
 
 #. type: Title ==
 #: upstream/_guides/getting-started-testing.adoc:712
@@ -1430,7 +1473,12 @@ msgstr "Mockitoには依存しないことに注意してください。好き�
 #: upstream/_guides/getting-started-testing.adoc:834
 #, fuzzy
 msgid "Using `@Inject` will get you a CDI proxy to the mock instance you install, which is not suitable for passing to methods such as `Mockito.verify` which want the mock instance itself. So if you need to call methods such as `verify` you need to hang on to the mock instance in your test, or use `@InjectMock` as shown below."
-msgstr "`@Inject` を使用すると、インストールしたモック・インスタンスへの CDI プロキシが得られますが、モック・インスタンス自体を必要とする `Mockito.verify` のようなメソッドに渡すのには適していません。そのため、 `verify` のようなメソッドを呼び出す必要がある場合は、テスト内でモックインスタンスを保持するか、以下のように `@InjectMock` を使用する必要があります。"
+msgstr ""
+"`@Inject` を使用すると、インストールしたモック・インスタンスへの CDI "
+"プロキシが得られますが、モック・インスタンス自体を必要とする `Mockito.verify`"
+" のようなメソッドに渡すのには適していません。そのため、 `verify` のようなメソ"
+"ッドを呼び出す必要がある場合は、テスト内でモックインスタンスを保持するか、"
+"以下のように `@InjectMock` を使用する必要があります。"
 
 #. type: Title ====
 #: upstream/_guides/getting-started-testing.adoc:835
@@ -1626,13 +1674,20 @@ msgstr "`greetingService`  をモックとして設定したので、 `GreetingS
 #: upstream/_guides/getting-started-testing.adoc:944
 #, fuzzy
 msgid "By default the `@InjectMock` annotation can be used for any normal CDI scoped bean (e.g. `@ApplicationScoped`, `@RequestScoped`).  Mocking `@Singleton` beans can be performed by setting the `convertScopes` property to true (such as `@InjectMock(convertScopes = true`).  This will convert the `@Singleton` bean to an `@ApplicationScoped` bean for the test."
-msgstr "デフォルトでは、 `@InjectMock` アノテーションは、通常の CDI スコープ付き Bean に使用できます (例: `@ApplicationScoped`, `@RequestScoped`)。 `@Singleton` ビーンのモックは、 `convertScopes` プロパティを true に設定することで実行できます (例: `@InjectMock(convertScopes = true`)。これにより、テスト用に `@Singleton` ビーンが `@ApplicationScoped` ビーンに変換されます。"
+msgstr ""
+"デフォルトでは、 `@InjectMock` アノテーションは、通常の CDI スコープ付き "
+"Bean に使用できます (例: `@ApplicationScoped`, `@RequestScoped`)。 "
+"`@Singleton` ビーンのモックは、 `convertScopes` プロパティを true "
+"に設定することで実行できます (例: `@InjectMock(convertScopes = "
+"true`)。これにより、テスト用に `@Singleton` ビーンが `@ApplicationScoped` "
+"ビーンに変換されます。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:946
 #, fuzzy
 msgid "This is considered an advanced option and should only be performed if you fully understand the consequences of changing the scope of the bean."
-msgstr "これは高度なオプションと考えられ、ビーンの範囲を変更した場合の結果を十分に理解している場合にのみ実行する必要があります。"
+msgstr "これは高度なオプションと考えられ、ビーンの範囲を変更した場合の結果を十分に理"
+"解している場合にのみ実行する必要があります。"
 
 #. type: Title ====
 #: upstream/_guides/getting-started-testing.adoc:947
@@ -1799,7 +1854,12 @@ msgstr "堂々としたモッキング"
 #: upstream/_guides/getting-started-testing.adoc:1060
 #, fuzzy
 msgid "If you are using the `quarkus-hibernate-orm-panache` or `quarkus-mongodb-panache` extensions, check out the xref:hibernate-orm-panache.adoc#mocking[Hibernate ORM with Panache Mocking] and xref:mongodb-panache.adoc#mocking[MongoDB with Panache Mocking] documentation for the easiest way to mock your data access."
-msgstr "`quarkus-hibernate-orm-panache` または `quarkus-mongodb-panache` エクステンションを使用している場合は、データアクセスをモックする最も簡単な方法として、 link:hibernate-orm-panache.html#mocking[Hibernate ORM with Panache Mocking]および link:mongodb-panache.html#mocking[MongoDB with Panache Mocking]のドキュメントを確認してください。"
+msgstr ""
+"`quarkus-hibernate-orm-panache` または `quarkus-mongodb-panache` エクステンシ"
+"ョンを使用している場合は、データアクセスをモックする最も簡単な方法として、 "
+"link:hibernate-orm-panache.html#mocking[Hibernate ORM with Panache Mocking]"
+"および link:mongodb-panache.html#mocking[MongoDB with Panache "
+"Mocking]のドキュメントを確認してください。"
 
 #. type: Title ==
 #: upstream/_guides/getting-started-testing.adoc:1061
@@ -1811,7 +1871,10 @@ msgstr "セキュリティーのテスト"
 #: upstream/_guides/getting-started-testing.adoc:1064
 #, fuzzy
 msgid "If you are using Quarkus Security, check out the xref:security-testing.adoc[Testing Security] section for information on how to easily test security features of the application."
-msgstr "Quarkus Securityを使用している場合、アプリケーションのセキュリティ機能を簡単にテストする方法については、 link:security-testing.html[セキュリティのテストの]セクションを参照してください。"
+msgstr ""
+"Quarkus Securityを使用している場合、アプリケーションのセキュリティ機能を簡単"
+"にテストする方法については、 link:security-testing."
+"html[セキュリティのテストの]セクションを参照してください。"
 
 #. type: Title ==
 #: upstream/_guides/getting-started-testing.adoc:1066
@@ -1828,19 +1891,47 @@ msgstr "非常に一般的なニーズは、Quarkusアプリケーションが�
 #: upstream/_guides/getting-started-testing.adoc:1072
 #, fuzzy
 msgid "By simply annotating any test in the test suite with `@QuarkusTestResource`, Quarkus will run the corresponding `QuarkusTestResourceLifecycleManager` before any tests are run.  A test suite is also free to utilize multiple `@QuarkusTestResource` annotations, in which case all the corresponding `QuarkusTestResourceLifecycleManager` objects will be run before the tests. When using multiple test resources they can be started concurrently. For that you need to set `@QuarkusTestResource(parallel = true)`."
-msgstr "テストスイート内の任意のテストに `@QuarkusTestResource` をアノテーションするだけで、Quarkusはテストの実行前に対応する `QuarkusTestResourceLifecycleManager` を実行します。また、テストスイートでは、複数の `@QuarkusTestResource` アノテーションを自由に利用することができます。その場合、対応するすべての `QuarkusTestResourceLifecycleManager` オブジェクトがテストの前に実行されます。複数のテストリソースを使用する場合、それらを同時に開始することができます。そのためには、 `@QuarkusTestResource(parallel = true)` を設定する必要があります。"
+msgstr ""
+"テストスイート内の任意のテストに `@QuarkusTestResource` "
+"をアノテーションするだけで、Quarkusはテストの実行前に対応する "
+"`QuarkusTestResourceLifecycleManager` "
+"を実行します。また、テストスイートでは、複数の `@QuarkusTestResource` "
+"アノテーションを自由に利用することができます。その場合、対応するすべての "
+"`QuarkusTestResourceLifecycleManager` オブジェクトがテストの前に実行されます"
+"。複数のテストリソースを使用する場合、それらを同時に開始することができます。"
+"そのためには、 `@QuarkusTestResource(parallel = true)` "
+"を設定する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1075
 #, fuzzy
 msgid "Test resources are global, even if they are defined on a test class or custom profile, which means they will all be activated for all tests, even though we do remove duplicates. If you want to only enable a test resource on a single test class or test profile, you can use `@QuarkusTestResource(restrictToAnnotatedClass = true)`."
-msgstr "テストリソースは、たとえテストクラスやカスタムプロファイルで定義されていたとしても グローバルなものです。つまり、重複したものを削除したとしても すべてのテストで有効になるということです。単一のテストクラスやテストプロファイルでのみテストリソースを有効にしたい場合は、 `@QuarkusTestResource(restrictToAnnotatedClass = true)` を使用します。"
+msgstr ""
+"テストリソースは、"
+"たとえテストクラスやカスタムプロファイルで定義されていたとしても "
+"グローバルなものです。つまり、重複したものを削除したとしても すべてのテストで"
+"有効になるということです。単一のテストクラスやテストプロファイルでのみテスト"
+"リソースを有効にしたい場合は、 `@QuarkusTestResource("
+"restrictToAnnotatedClass = true)` を使用します。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1080
 #, fuzzy
 msgid "Quarkus provides a few implementations of `QuarkusTestResourceLifecycleManager` out of the box (see `io.quarkus.test.h2.H2DatabaseTestResource` which starts an H2 database, or `io.quarkus.test.kubernetes.client.KubernetesServerTestResource` which starts a mock Kubernetes API server), but it is common to create custom implementations to address specific application needs.  Common cases include starting docker containers using https://www.testcontainers.org/[Testcontainers] (an example of which can be found https://github.com/quarkusio/quarkus/blob/main/test-framework/keycloak-server/src/main/java/io/quarkus/test/keycloak/server/KeycloakTestResourceLifecycleManager.java[here]), or starting a mock HTTP server using http://wiremock.org/[Wiremock] (an example of which can be found https://github.com/geoand/quarkus-test-demo/blob/main/src/test/java/org/acme/getting/started/country/WiremockCountries.java[here])."
-msgstr "Quarkusには、 `QuarkusTestResourceLifecycleManager` の実装がいくつか用意されていますが（H2データベースを起動する `io.quarkus.test.h2.H2DatabaseTestResource` や、Kubernetes APIのモックサーバを起動する `io.quarkus.test.kubernetes.client.KubernetesServerTestResource` など）、特定のアプリケーションのニーズに対応するために、カスタムの実装を作成するのが一般的です。一般的な例としては、 link:https://www.testcontainers.org/[Testcontainers]を使ってdockerコンテナを起動したり（その例は link:https://github.com/quarkusio/quarkus/blob/main/test-framework/keycloak-server/src/main/java/io/quarkus/test/keycloak/server/KeycloakTestResourceLifecycleManager.java[こちら]）、 link:http://wiremock.org/[Wiremock]を使ってモックのHTTPサーバを起動したり（その例は link:https://github.com/geoand/quarkus-test-demo/blob/main/src/test/java/org/acme/getting/started/country/WiremockCountries.java[こちら]）。"
+msgstr ""
+"Quarkusには、 `QuarkusTestResourceLifecycleManager` "
+"の実装がいくつか用意されていますが（H2データベースを起動する `io.quarkus.test"
+".h2.H2DatabaseTestResource` や、Kubernetes APIのモックサーバを起動する `io."
+"quarkus.test.kubernetes.client.KubernetesServerTestResource` など）、特定のア"
+"プリケーションのニーズに対応するために、カスタムの実装を作成するのが一般的で"
+"す。一般的な例としては、 link:https://www.testcontainers.org/"
+"[Testcontainers]を使ってdockerコンテナを起動したり（その例は "
+"link:https://github.com/quarkusio/quarkus/blob/main/test-framework/"
+"keycloak-server/src/main/java/io/quarkus/test/keycloak/server/"
+"KeycloakTestResourceLifecycleManager.java[こちら]）、 link:http://wiremock."
+"org/[Wiremock]を使ってモックのHTTPサーバを起動したり（その例は "
+"link:https://github.com/geoand/quarkus-test-demo/blob/main/src/test/java/org/"
+"acme/getting/started/country/WiremockCountries.java[こちら]）。"
 
 #. type: Title ===
 #: upstream/_guides/getting-started-testing.adoc:1082
@@ -1852,7 +1943,10 @@ msgstr "テストポートの制御"
 #: upstream/_guides/getting-started-testing.adoc:1085
 #, fuzzy
 msgid "When creating a custom `QuarkusTestResourceLifecycleManager` that needs to inject the something into the test class, the `inject` methods can be used.  If for example you have a test like the following:"
-msgstr "テストクラスにsomethingを注入する必要のあるカスタム `QuarkusTestResourceLifecycleManager` を作成する場合、 `inject` のメソッドを使用することができます。たとえば、次のようなテストがあるとします。"
+msgstr ""
+"テストクラスにsomethingを注入する必要のあるカスタム "
+"`QuarkusTestResourceLifecycleManager` を作成する場合、 `inject` のメソッドを"
+"使用することができます。たとえば、次のようなテストがあるとします。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1091
@@ -1886,7 +1980,9 @@ msgstr ""
 #: upstream/_guides/getting-started-testing.adoc:1103
 #, fuzzy
 msgid "Making `MyWireMockResource` inject the `wireMockServer` field can be done as shown in the `inject` method of the following code snippet:"
-msgstr "`MyWireMockResource` に `wireMockServer` フィールドを注入させることは、次のコードスニペットの `inject` メソッドに示すように行うことができます。"
+msgstr ""
+"`MyWireMockResource` に `wireMockServer` フィールドを注入させることは、"
+"次のコードスニペットの `inject` メソッドに示すように行うことができます。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1107
@@ -1952,7 +2048,8 @@ msgstr ""
 #: upstream/_guides/getting-started-testing.adoc:1137
 #, fuzzy
 msgid "It is worth mentioning that this injection into the test class is not under the control of CDI and happens after CDI has performed any necessary injections into the test class."
-msgstr "このテストクラスへの注入は、CDI の制御下にはなく、CDI がテストクラスに必要な注入を行った後に行われることに注意してください。"
+msgstr "このテストクラスへの注入は、CDI の制御下にはなく、CDI "
+"がテストクラスに必要な注入を行った後に行われることに注意してください。"
 
 #. type: Title ===
 #: upstream/_guides/getting-started-testing.adoc:1138
@@ -1964,13 +2061,21 @@ msgstr "アノテーションベースのテストリソース"
 #: upstream/_guides/getting-started-testing.adoc:1142
 #, fuzzy
 msgid "It is possible to write test resources that are enabled and configured using annotations. This is enabled by placing the `@QuarkusTestResource` on an annotation which will be used to enable and configure the test resource."
-msgstr "アノテーションを使用して、有効化と設定を行うテストリソースを記述することができます。これは、テストリソースの有効化と設定に使用されるアノテーションに `@QuarkusTestResource` を配置することで可能になります。"
+msgstr ""
+"アノテーションを使用して、有効化と設定を行うテストリソースを記述することがで"
+"きます。これは、テストリソースの有効化と設定に使用されるアノテーションに "
+"`@QuarkusTestResource` を配置することで可能になります。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1145
 #, fuzzy
 msgid "For example, this defines the `@WithKubernetesTestServer` annotation, which you can use on your tests to activate the `KubernetesServerTestResource`, but only for the annotated test class. You can also place them on your `QuarkusTestProfile` test profiles."
-msgstr "たとえば、これは `@WithKubernetesTestServer` アノテーションを定義しています。このアノテーションをテストで使用すると、 `KubernetesServerTestResource` を有効にすることができますが、アノテーションされたテストクラスに対してのみ有効になります。また、 `QuarkusTestProfile` テストプロファイルにも配置することができます。"
+msgstr ""
+"たとえば、これは `@WithKubernetesTestServer` "
+"アノテーションを定義しています。このアノテーションをテストで使用すると、 "
+"`KubernetesServerTestResource` を有効にすることができますが、アノテーションさ"
+"れたテストクラスに対してのみ有効になります。また、 `QuarkusTestProfile` "
+"テストプロファイルにも配置することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1156
@@ -2011,7 +2116,11 @@ msgstr ""
 #: upstream/_guides/getting-started-testing.adoc:1171
 #, fuzzy
 msgid "The `KubernetesServerTestResource` class has to implement the `QuarkusTestResourceConfigurableLifecycleManager` interface in order to be configured using the previous annotation:"
-msgstr "`KubernetesServerTestResource` クラスは、前のアノテーションを使って設定するために、 `QuarkusTestResourceConfigurableLifecycleManager` インターフェースを実装する必要があります。"
+msgstr ""
+"`KubernetesServerTestResource` "
+"クラスは、前のアノテーションを使って設定するために、 "
+"`QuarkusTestResourceConfigurableLifecycleManager` "
+"インターフェースを実装する必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1176
@@ -2060,13 +2169,23 @@ msgstr "吊るし検知"
 #: upstream/_guides/getting-started-testing.adoc:1197
 #, fuzzy
 msgid "`@QuarkusTest` has support for hang detection to help diagnose any unexpected hangs. If no progress is made for a specified time (i.e. no JUnit callbacks are invoked) then Quarkus will print a stack trace to the console to help diagnose the hang.  The default value for this timeout is 10 minutes."
-msgstr "`@QuarkusTest` には、予期せぬハングを診断するためのハング検出機能があります。指定された時間、何も進展がなかった場合（JUnitコールバックが呼び出されなかった場合）、Quarkusはスタックトレースをコンソールに表示し、ハングアップの診断に役立てます。このタイムアウトのデフォルト値は10分です。"
+msgstr ""
+"`@QuarkusTest` には、予期せぬハングを診断するためのハング検出機能があります。"
+"指定された時間、何も進展がなかった場合（JUnitコールバックが呼び出されなかった"
+"場合）、Quarkusはスタックトレースをコンソールに表示し、ハングアップの診断に役"
+"立てます。このタイムアウトのデフォルト値は10分です。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1202
 #, fuzzy
 msgid "No further action will be taken, and the tests will continue as normal (generally until CI times out), however the printed stack traces should help diagnose why the build has failed. You can control this timeout with the `quarkus.test.hang-detection-timeout` system property (you can also set this in application.properties, but this won't be read until Quarkus has started, so the timeout for Quarkus start will be the default of 10 minutes)."
-msgstr "それ以上のアクションは行われず、テストは通常通り（通常はCIがタイムアウトするまで）行われますが、印刷されたスタックトレースは、ビルドが失敗した原因を診断するのに役立ちます。このタイムアウトは、 `quarkus.test.hang-detection-timeout` システムプロパティで制御できます（application.propertiesでも設定できますが、これはQuarkusが起動するまで読み込まれないため、Quarkus起動時のタイムアウトはデフォルトの10分になります）。"
+msgstr ""
+"それ以上のアクションは行われず、テストは通常通り（通常はCIがタイムアウトする"
+"まで）行われますが、印刷されたスタックトレースは、ビルドが失敗した原因を診断"
+"するのに役立ちます。このタイムアウトは、 `quarkus.test.hang-detection-"
+"timeout` システムプロパティで制御できます（application.propertiesでも設定でき"
+"ますが、これはQuarkusが起動するまで読み込まれないため、Quarkus起動時のタイム"
+"アウトはデフォルトの10分になります）。"
 
 #. type: Title ==
 #: upstream/_guides/getting-started-testing.adoc:1203
@@ -2078,13 +2197,19 @@ msgstr "ネイティブ実行可能ファイルテスト"
 #: upstream/_guides/getting-started-testing.adoc:1207
 #, fuzzy
 msgid "It is also possible to test native executables using `@QuarkusIntegrationTest`. This supports all the features mentioned in this guide except injecting into tests (and the native executable runs in a separate non-JVM process this is not really possible)."
-msgstr "`@NativeImageTest` を使用してネイティブ実行可能ファイルをテストすることも可能です。これは、テストに注入すること(そして、ネイティブ実行可能ファイルは別の非JVMプロセスで実行されることーこれは実際には可能ではありません)を除いて、このガイドで述べたすべての機能をサポートしています。"
+msgstr ""
+"`@NativeImageTest` を使用してネイティブ実行可能ファイルをテストすることも可能"
+"です。これは、テストに注入すること(そして、ネイティブ実行可能ファイルは別の非"
+"JVMプロセスで実行されることーこれは実際には可能ではありません)を除いて、この"
+"ガイドで述べたすべての機能をサポートしています。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1210
 #, fuzzy
 msgid "This is covered in the xref:building-native-image.adoc[Native Executable Guide]."
-msgstr "これについては、 link:building-native-image.html[「Native Executable Guide」]で説明しています。"
+msgstr ""
+"これについては、 link:building-native-image.html[「Native Executable "
+"Guide」]で説明しています。"
 
 #. type: Title ==
 #: upstream/_guides/getting-started-testing.adoc:1212
@@ -2096,19 +2221,39 @@ msgstr "QuarkusIntegrationTestの使用"
 #: upstream/_guides/getting-started-testing.adoc:1219
 #, fuzzy
 msgid "`@QuarkusIntegrationTest` should be used to launch and test the artifact produced by the Quarkus build, and supports testing a jar (of whichever type), a native image or container image.  Put simply, this means that if the result of a Quarkus build (`mvn package` or `gradle build`) is a jar, that jar will be launched as `java -jar ...` and tests run against it.  If instead a native image was built, then the application is launched as `./application ...` and again the tests run against the running application.  Finally, if a container image was created during the build (by including the `quarkus-container-image-jib` or `quarkus-container-image-docker` extensions and having the `quarkus.container-image.build=true` property configured), then a container is created and run (this requires the `docker` executable being present)."
-msgstr "`@QuarkusIntegrationTest` は、Quarkusのビルドによって生成されたアーティファクトを起動してテストするために使用されるべきであり、（あらゆるタイプの）jar、ネイティブイメージ、コンテナイメージのテストをサポートします。簡単に言うと、Quarkusのビルド（ `mvn package` または `gradle build` ）の結果がjarである場合、そのjarは `java -jar …​` として起動され、それに対してテストが実行されるということです。代わりにネイティブイメージがビルドされた場合は、アプリケーションが `./application …​` として起動され、実行中のアプリケーションに対してテストが実行されます。最後に、ビルド時にコンテナイメージが作成されていた場合（ `quarkus-container-image-jib` または `quarkus-container-image-docker` のエクステンションが含まれ、 `quarkus.container-image.build=true` プロパティが設定されていた場合）、コンテナが作成され、実行されます（この場合、 `docker` の実行ファイルが必要です）。"
+msgstr ""
+"`@QuarkusIntegrationTest` は、Quarkusのビルドによって生成されたアーティファク"
+"トを起動してテストするために使用されるべきであり、（あらゆるタイプの）jar、ネ"
+"イティブイメージ、コンテナイメージのテストをサポートします。簡単に言うと、Qua"
+"rkusのビルド（ `mvn package` または `gradle build` ）の結果がjarである場合、"
+"そのjarは `java -jar …​` として起動され、それに対してテストが実行されるという"
+"ことです。代わりにネイティブイメージがビルドされた場合は、アプリケーションが "
+"`./application …​` として起動され、実行中のアプリケーションに対してテストが実"
+"行されます。最後に、ビルド時にコンテナイメージが作成されていた場合（ "
+"`quarkus-container-image-jib` または `quarkus-container-image-docker` "
+"のエクステンションが含まれ、 `quarkus.container-image.build=true` プロパティ"
+"が設定されていた場合）、コンテナが作成され、実行されます（この場合、 `docker`"
+" の実行ファイルが必要です）。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1221
 #, fuzzy
 msgid "As is the case with `@NativeImageTest`, this is a black box test that supports the same set features and has the same limitations."
-msgstr "`@NativeImageTest` の場合と同様に、これは同じセット機能をサポートするブラックボックステストであり、同じ制限があります。"
+msgstr "`@NativeImageTest` の場合と同様に、これは同じセット機能をサポートするブラック"
+"ボックステストであり、同じ制限があります。"
 
 #. type: delimited block =
 #: upstream/_guides/getting-started-testing.adoc:1226
 #, fuzzy
 msgid "As a test annotated with `@QuarkusIntegrationTest` tests the result of the build, it should be run as part of the integration test suite - i.e. via the `maven-failsafe-plugin` if using Maven or the `quarkusIntTest` task if using Gradle.  These tests will **not** work if run in the same phase as `@QuarkusTest` as Quarkus has not yet created the final artifact."
-msgstr "`@QuarkusIntegrationTest` でアノテーションされたテストは、ビルドの結果をテストするため、統合テストスイートの一部として実行する必要があります。すなわち、Maven を使用している場合は `maven-failsafe-plugin` を介して、Gradle を使用している場合は追加タスクを介して実行します。これらのテストは、 `@QuarkusTest` と同じフェーズで実行すると、Quarkusがまだ最終成果物を作成していないため、機能し *ませ*ん。"
+msgstr ""
+"`@QuarkusIntegrationTest` でアノテーションされたテストは、ビルドの結果をテス"
+"トするため、統合テストスイートの一部として実行する必要があります。すなわち、"
+"Maven を使用している場合は `maven-failsafe-plugin` を介して、Gradle "
+"を使用している場合は追加タスクを介して実行します。これらのテストは、 "
+"`@QuarkusTest` "
+"と同じフェーズで実行すると、Quarkusがまだ最終成果物を作成していないため、"
+"機能し *ませ*ん。"
 
 #. type: Title ===
 #: upstream/_guides/getting-started-testing.adoc:1228
@@ -2120,7 +2265,18 @@ msgstr "コンテナの起動"
 #: upstream/_guides/getting-started-testing.adoc:1233
 #, fuzzy
 msgid "When `@QuarkusIntegrationTest` results in launching a container (because the application was built with `quarkus.container-image.build` set to `true`), the container is launched on a predictable container network. This facilitates writing integration tests that need to launch services to support the application.  This means that `@QuarkusIntegrationTest` works out of the box with containers launched via xref:dev-services.adoc[Dev Services], but it also means that it enables using <<quarkus-test-resource,QuarkusTestLifecycleManager>> resources that launch additional containers.  This can be achieved by having your `QuarkusTestLifecycleManager` implement `io.quarkus.test.common.DevServicesContext.ContextAware`. A simple example could be the following:"
-msgstr "`@QuarkusIntegrationTest` の結果、コンテナが起動した場合（アプリケーションが `quarkus.container-image.build` を `true` に設定してビルドされたため）、コンテナは予測可能なコンテナネットワーク上で起動します。これにより、アプリケーションをサポートするためにサービスを起動する必要がある統合テストの作成が容易になります。つまり、 `@QuarkusIntegrationTest` は、 link:dev-services.html[Dev Services]を介して起動されたコンテナですぐに動作しますが、追加のコンテナを起動する link:#quarkus-test-resource[QuarkusTestLifecycleManager]リソースの使用も可能です。これは、 `QuarkusTestLifecycleManager` が `io.quarkus.test.common.DevServicesContext.ContextAware` を実装することで実現できます。簡単な例を挙げると、以下のようになります。"
+msgstr ""
+"`@QuarkusIntegrationTest` の結果、コンテナが起動した場合（アプリケーションが "
+"`quarkus.container-image.build` を `true` に設定してビルドされたため）、コン"
+"テナは予測可能なコンテナネットワーク上で起動します。これにより、アプリケーシ"
+"ョンをサポートするためにサービスを起動する必要がある統合テストの作成が容易に"
+"なります。つまり、 `@QuarkusIntegrationTest` は、 link:dev-services.html[Dev "
+"Services]を介して起動されたコンテナですぐに動作しますが、"
+"追加のコンテナを起動する link:#quarkus-test-"
+"resource[QuarkusTestLifecycleManager]リソースの使用も可能です。これは、 "
+"`QuarkusTestLifecycleManager` が `io.quarkus.test.common.DevServicesContext."
+"ContextAware` "
+"を実装することで実現できます。簡単な例を挙げると、以下のようになります。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1238
@@ -2194,7 +2350,10 @@ msgstr ""
 #: upstream/_guides/getting-started-testing.adoc:1268
 #, fuzzy
 msgid "`CustomResource` would be activated on a `@QuarkusIntegrationTest` using `@QuarkusTestResource` as is described in the corresponding section of this doc."
-msgstr "`CustomResource` は、このドキュメントの対応するセクションで説明されているように、 `@QuarkusTestResource` を使用して `@QuarkusIntegrationTest` で起動されます。"
+msgstr ""
+"`CustomResource` "
+"は、このドキュメントの対応するセクションで説明されているように、 "
+"`@QuarkusTestResource` を使用して `@QuarkusIntegrationTest` で起動されます。"
 
 #. type: Title ===
 #: upstream/_guides/getting-started-testing.adoc:1269
@@ -2206,19 +2365,27 @@ msgstr "実行中のアプリケーションに対して実行する"
 #: upstream/_guides/getting-started-testing.adoc:1274
 #, fuzzy
 msgid "This feature is considered experimental and is likely to change in future versions of Quarkus."
-msgstr "この機能は実験的なものであり、Quarkusの将来のバージョンで変更される可能性があります。"
+msgstr "この機能は実験的なものであり、Quarkusの将来のバージョンで変更される可能性があ"
+"ります。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1278
 #, fuzzy
 msgid "`@QuarkusIntegrationTest` supports executing tests against an already running instance of the application. This can be achieved by setting the `quarkus.http.test-host` system property when running the tests."
-msgstr "`@QuarkusIntegrationTest` は、すでに実行されているアプリケーションのインスタンスに対してテストを実行することをサポートしています。これは、テストの実行時に `quarkus.http.test-host` システムプロパティを設定することで実現できます。"
+msgstr ""
+"`@QuarkusIntegrationTest` は、すでに実行されているアプリケーションのインスタ"
+"ンスに対してテストを実行することをサポートしています。これは、"
+"テストの実行時に `quarkus.http.test-host` "
+"システムプロパティを設定することで実現できます。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1280
 #, fuzzy
 msgid "An example use of this could be the following Maven command, that forces `@QuarkusIntegrationTest` to execute against that is accessible at `http://1.2.3.4:4321`:"
-msgstr "例えば、次のようなMavenコマンドを使用すると、 `@QuarkusIntegrationTest` 、以下の場所でアクセス可能なものに対して実行させることができます。 `<a href=\"http://1.2.3.4:4321\" class=\"bare\">http://1.2.3.4:4321</a>`:"
+msgstr ""
+"例えば、次のようなMavenコマンドを使用すると、 `@QuarkusIntegrationTest` "
+"、以下の場所でアクセス可能なものに対して実行させることができます。 `<a href="
+"\"http://1.2.3.4:4321\" class=\"bare\">http://1.2.3.4:4321</a>`:"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1284
@@ -2236,19 +2403,31 @@ msgstr "`@QuarkusTest` と他のタイプのテストの混合"
 #: upstream/_guides/getting-started-testing.adoc:1292
 #, fuzzy
 msgid "Mixing tests annotated with `@QuarkusTest` with tests annotated with either `@QuarkusDevModeTest`, `@QuarkusProdModeTest` or `@QuarkusUnitTest` is not allowed in a single execution run (in a single Maven Surefire Plugin execution, for instance), while the latter three can coexist."
-msgstr "`@QuarkusTest` でアノテーションされたテストと、 `@QuarkusDevModeTest` 、 `@QuarkusProdModeTest` 、 `@QuarkusUnitTest` のいずれかでアノテーションされたテストを混在させることは、1回の実行（例えば、1回の Maven Surefire Plugin の実行）では許可されていませんが、後者の3つは共存可能となっています。"
+msgstr ""
+"`@QuarkusTest` でアノテーションされたテストと、 `@QuarkusDevModeTest` 、 "
+"`@QuarkusProdModeTest` 、 `@QuarkusUnitTest` "
+"のいずれかでアノテーションされたテストを混在させることは、1回の実行（例えば、"
+"1回の Maven Surefire Plugin "
+"の実行）では許可されていませんが、後者の3つは共存可能となっています。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1295
 #, fuzzy
 msgid "The reason of this restriction is that `@QuarkusTest` starts a Quarkus server for the whole lifetime of the tests execution run, thus preventing the other tests to start their own Quarkus server."
-msgstr "この制限の理由は、 `@QuarkusTest` がテスト実行中の全期間に渡ってQuarkusサーバーを起動するため、他のテストが自分のQuarkusサーバーを起動するのを妨げることにあります。"
+msgstr ""
+"この制限の理由は、 `@QuarkusTest` がテスト実行中の全期間に渡ってQuarkusサーバ"
+"ーを起動するため、他のテストが自分のQuarkusサーバーを起動するのを妨げることに"
+"あります。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1298
 #, fuzzy
 msgid "To alleviate this restriction, the `@QuarkusTest` annotation defines a JUnit 5 `@Tag`: `io.quarkus.test.junit.QuarkusTest`.  You can use this tag to isolate the `@QuarkusTest` test in a specific execution run, for example with the Maven Surefire Plugin:"
-msgstr "この制限を緩和するために、 `@QuarkusTest` アノテーションは JUnit 5 の `@Tag`: `io.quarkus.test.junit.QuarkusTest` を定義しています。このタグを使うと、例えば Maven Surefire Plugin のように、 `@QuarkusTest` のテストを特定の実行時に隔離することができます。"
+msgstr ""
+"この制限を緩和するために、 `@QuarkusTest` アノテーションは JUnit 5 の `@Tag`:"
+" `io.quarkus.test.junit.QuarkusTest` を定義しています。このタグを使うと、"
+"例えば Maven Surefire Plugin のように、 `@QuarkusTest` "
+"のテストを特定の実行時に隔離することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1330
@@ -2295,7 +2474,10 @@ msgstr "IDE から `@QuarkusTest`  を実行する"
 #: upstream/_guides/getting-started-testing.adoc:1336
 #, fuzzy
 msgid "Most IDEs offer the possibility to run a selected class as a JUnit test directly. For this you should set a few properties in the settings of your chosen IDE:"
-msgstr "ほとんどの IDE では、選択したクラスを JUnit テストとして直接実行することができます。そのためには、お使いのIDEの設定でいくつかのプロパティを設定する必要があります。"
+msgstr ""
+"ほとんどの IDE では、選択したクラスを JUnit テストとして直接実行することがで"
+"きます。そのためには、お使いのIDEの設定でいくつかのプロパティを設定する必要が"
+"あります。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1338
@@ -2307,7 +2489,10 @@ msgstr "`-Djava.util.logging.manager=org.jboss.logmanager.LogManager`"
 #: upstream/_guides/getting-started-testing.adoc:1340
 #, fuzzy
 msgid "`maven.home` (only if there are any custom settings in `${maven.home}/conf/settings.xml`, see xref:maven-tooling.adoc[Maven Guide])"
-msgstr "`maven.home` （ `${maven.home}/conf/settings.xml` にカスタム設定がある場合のみ、 link:maven-tooling.html[Maven Guide] を参照）。"
+msgstr ""
+"`maven.home` （ `${maven.home}/conf/settings.xml` "
+"にカスタム設定がある場合のみ、 link:maven-tooling.html[Maven Guide] "
+"を参照）。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1342
@@ -2350,7 +2535,9 @@ msgstr "VSCode \"run with\" 設定"
 #: upstream/_guides/getting-started-testing.adoc:1356
 #, fuzzy
 msgid "The `settings.json` placed in the root of your project directory or in the workspace will need the following workaround in your test configuration:"
-msgstr "プロジェクトディレクトリのルートやワークスペースに配置された `settings.json` は、テスト構成において以下のような回避策が必要となります。"
+msgstr ""
+"プロジェクトディレクトリのルートやワークスペースに配置された `settings.json` "
+"は、テスト構成において以下のような回避策が必要となります。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1366
@@ -2387,31 +2574,57 @@ msgstr "セキュリティーのテスト"
 #: upstream/_guides/getting-started-testing.adoc:1376
 #, fuzzy
 msgid "By default tests should just work with xref:dev-services.adoc[Dev Services], however from some use cases you may need access to the automatically configured properties in your tests."
-msgstr "デフォルトでは、テストは link:dev-services.html[開発サービス]だけで動作するようになっていますが、ユースケースによっては、テストで自動的に構成されたプロパティにアクセスする必要があります。"
+msgstr ""
+"デフォルトでは、テストは link:dev-services.html[開発サービス]だけで動作するよ"
+"うになっていますが、ユースケースによっては、テストで自動的に構成されたプロパ"
+"ティにアクセスする必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1381
 #, fuzzy
 msgid "You can do this with `io.quarkus.test.common.DevServicesContext`, which can be injected directly into any `@QuarkusTest` or `@QuarkusIntegrationTest`. All you need to do is define a field of type `DevServicesContext` and it will be automatically injected. Using this you can retrieve any properties that have been set. Generally this is used to directly connect to a resource from the test itself, e.g. to connect to kafka to send messages to the application under test."
-msgstr "これを実現するには、 `io.quarkus.test.common.DevServicesContext` を使って、 `@QuarkusTest` や `@QuarkusIntegrationTest` に直接注入することができます。必要なのは、 `DevServicesContext` タイプのフィールドを定義することだけで、それは自動的に注入されます。これを使って、設定されているプロパティを取得することができます。一般的には、テスト自体からリソースに直接接続するために使用します。例えば、kafka に接続してテスト対象のアプリケーションにメッセージを送信する場合などです。"
+msgstr ""
+"これを実現するには、 `io.quarkus.test.common.DevServicesContext` を使って、 "
+"`@QuarkusTest` や `@QuarkusIntegrationTest` "
+"に直接注入することができます。必要なのは、 `DevServicesContext` タイプのフィ"
+"ールドを定義することだけで、それは自動的に注入されます。これを使って、設定さ"
+"れているプロパティを取得することができます。一般的には、テスト自体からリソー"
+"スに直接接続するために使用します。例えば、kafka "
+"に接続してテスト対象のアプリケーションにメッセージを送信する場合などです。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1386
 #, fuzzy
 msgid "Injection is also supported into objects that implement `io.quarkus.test.common.DevServicesContext.ContextAware`. If you have a field that implements `io.quarkus.test.common.DevServicesContext.ContextAware` Quarkus will call the `setIntegrationTestContext` method to pass the context into this object. This allows client logic to be encapsulated in a utility class."
-msgstr "また、 `io.quarkus.test.common.DevServicesContext.ContextAware` を実装したオブジェクトへの注入もサポートされています。 `io.quarkus.test.common.DevServicesContext.ContextAware` を実装したフィールドがある場合、Quarkusは `setIntegrationTestContext` メソッドを呼び出し、このオブジェクトにコンテキストを渡します。これにより、クライアントロジックをユーティリティクラスにカプセル化することができます。"
+msgstr ""
+"また、 `io.quarkus.test.common.DevServicesContext.ContextAware` "
+"を実装したオブジェクトへの注入もサポートされています。 `io.quarkus.test."
+"common.DevServicesContext.ContextAware` を実装したフィールドがある場合、"
+"Quarkusは `setIntegrationTestContext` メソッドを呼び出し、このオブジェクトに"
+"コンテキストを渡します。これにより、クライアントロジックをユーティリティクラ"
+"スにカプセル化することができます。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1389
 #, fuzzy
 msgid "`QuarkusTestResourceLifecycleManager` implementations can also implement `ContextAware` to get access to these properties, which allows you to setup the resource before Quarkus starts (e.g. configure a KeyCloak instance, add data to a database etc)."
-msgstr "`QuarkusTestResourceLifecycleManager` の実装では、これらのプロパティにアクセスするために `ContextAware` を実装することもできます。これにより、Quarkusの起動前にリソースを設定することができます（KeyCloakインスタンスの設定、データベースへのデータの追加など）。"
+msgstr ""
+"`QuarkusTestResourceLifecycleManager` の実装では、"
+"これらのプロパティにアクセスするために `ContextAware` を実装することもできま"
+"す。これにより、Quarkusの起動前にリソースを設定することができます（KeyCloakイ"
+"ンスタンスの設定、データベースへのデータの追加など）。"
 
 #. type: delimited block =
 #: upstream/_guides/getting-started-testing.adoc:1395
 #, fuzzy
 msgid "For `@QuarkusIntegrationTest` tests that result in launcher the application as a container, `io.quarkus.test.common.DevServicesContext` also provides access to the id of the container network on which the application container was launched (via the `containerNetworkId` method).  This can be used by `QuarkusTestResourceLifecycleManager` that need to launch additional containers that the application will communicate with."
-msgstr "アプリケーションをコンテナとして起動する `@QuarkusIntegrationTest` のテストでは、 `io.quarkus.test.common.DevServicesContext` は、アプリケーション・コンテナが起動されたコンテナ・ネットワークの ID へのアクセスも提供します（ `containerNetworkId` メソッド経由）。これは、アプリケーションが通信する追加のコンテナを起動する必要がある `QuarkusTestResourceLifecycleManager` が使用できます。"
+msgstr ""
+"アプリケーションをコンテナとして起動する `@QuarkusIntegrationTest` "
+"のテストでは、 `io.quarkus.test.common.DevServicesContext` "
+"は、アプリケーション・コンテナが起動されたコンテナ・ネットワークの ID "
+"へのアクセスも提供します（ `containerNetworkId` メソッド経由）。これは、"
+"アプリケーションが通信する追加のコンテナを起動する必要がある "
+"`QuarkusTestResourceLifecycleManager` が使用できます。"
 
 #, fuzzy
 #~ msgid "Although `@NativeImageTest` is not yet deprecated, it will be in the future as its functionality is covered by `@QuarkusIntegrationTest` which is described in the following section."

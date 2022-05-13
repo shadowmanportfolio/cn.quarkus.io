@@ -56,13 +56,17 @@ msgstr "IDEにおけるQuarkusのサポート"
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:12
 #, fuzzy
 msgid "Quarkus is still young and thus it might come as a surprise to some there are actually already a good amount of Quarkus support in most of the various IDE's."
-msgstr "Quarkusはまだ歴史が浅いので、驚く人もいるかもしれませんが、実際にはほとんどのIDEでQuarkusのサポートが十分に行われています。"
+msgstr "Quarkusはまだ歴史が浅いので、驚く人もいるかもしれませんが、実際にはほとんどの"
+"IDEでQuarkusのサポートが十分に行われています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:15
 #, fuzzy
 msgid "Its important to realize that Quarkus is using mainly standard technology and API thus no special IDE tooling is required to use Quarkus, but if you do like dedicated Quarkus integration in your IDE then see the list below."
-msgstr "Quarkusは主に標準技術とAPIを使用しているため、Quarkusを使用するための特別なIDEツールは必要ありませんが、もしあなたのIDEにQuarkus専用の統合を希望する場合は、以下のリストを参照してください。"
+msgstr ""
+"Quarkusは主に標準技術とAPIを使用しているため、Quarkusを使用するための特別なID"
+"Eツールは必要ありませんが、もしあなたのIDEにQuarkus専用の統合を希望する場合は"
+"、以下のリストを参照してください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:17
@@ -104,13 +108,15 @@ msgstr "エクリプスチェが登場"
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:25
 #, fuzzy
 msgid "The table below gives an overview of the current IDE's with links and a high-level overview of their features."
-msgstr "下の表では、現在のリンク付きIDEの概要と、その機能のハイレベルな概要をご紹介しています。"
+msgstr "下の表では、現在のリンク付きIDEの概要と、その機能のハイレベルな概要をご紹介し"
+"ています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:27
 #, fuzzy
 msgid "If you want support for Quarkus in your favorite IDE/Editor then scroll down..."
-msgstr "お気に入りのIDE/エディタでQuarkusをサポートしたい場合は、下にスクロールしてください。"
+msgstr "お気に入りのIDE/"
+"エディタでQuarkusをサポートしたい場合は、下にスクロールしてください。"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:35
@@ -173,7 +179,8 @@ msgstr "説明"
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:54
 #, fuzzy, no-wrap
 msgid "Visual Studio Code extension to install using the marketplace"
-msgstr "マーケットプレイスを使用してインストールするVisual Studioのコードエクステンション"
+msgstr "マーケットプレイスを使用してインストールするVisual "
+"Studioのコードエクステンション"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:55
@@ -185,7 +192,8 @@ msgstr "アップデートサイトを使ってEclipseにインストールす�
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:56
 #, fuzzy, no-wrap
 msgid "Intellij plugin that works in Intellij Community and Ultimate. Available from Marketplace."
-msgstr "Intellij CommunityとUltimateで動作するIntellijプラグイン。マーケットプレイスから入手可能。"
+msgstr "Intellij CommunityとUltimateで動作するIntellijプラグイン。マーケットプレイス"
+"から入手可能。"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:57
@@ -197,7 +205,8 @@ msgstr "IntelliJ Ultimateでのみ利用可能なQuarkusの内蔵機能"
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:59
 #, fuzzy, no-wrap
 msgid "Built-in Quarkus features available in Eclipse Che incl. che.openshift.io."
-msgstr "Eclipse Cheで利用可能なQuarkusの組み込み機能にはche.openshift.ioなどがあります。"
+msgstr "Eclipse Cheで利用可能なQuarkusの組み込み機能にはche.openshift."
+"ioなどがあります。"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:60
@@ -248,13 +257,18 @@ msgid ""
 "https://marketplace.visualstudio.com/items?itemName=redhat.vscode-quarkus[Marketplace]\n"
 "{empty} +\n"
 " https://download.jboss.org/jbosstools/vscode/snapshots/vscode-quarkus/?C=M;O=D[Development Builds]"
-msgstr "link:https://marketplace.visualstudio.com/items?itemName=redhat.vscode-quarkus[マーケットプレイス] link:https://download.jboss.org/jbosstools/vscode/snapshots/vscode-quarkus/?C=M;O=D[開発の構築]"
+msgstr ""
+"link:https://marketplace.visualstudio.com/items?itemName=redhat.vscode-"
+"quarkus[マーケットプレイス] link:https://download.jboss.org/jbosstools/"
+"vscode/snapshots/vscode-quarkus/?C=M;O=D[開発の構築]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:71
 #, fuzzy, no-wrap
 msgid "https://download.jboss.org/jbosstools/photon/snapshots/builds/jbosstools-quarkus_master/[Development Update Site]"
-msgstr "link:https://download.jboss.org/jbosstools/photon/snapshots/builds/jbosstools-quarkus_master/[開発更新サイト]"
+msgstr ""
+"link:https://download.jboss.org/jbosstools/photon/snapshots/builds/"
+"jbosstools-quarkus_master/[開発更新サイト]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:74
@@ -263,7 +277,10 @@ msgid ""
 "https://plugins.jetbrains.com/plugin/13234-quarkus/versions[Marketplace]\n"
 "{empty} +\n"
 "https://download.jboss.org/jbosstools/intellij/snapshots/intellij-quarkus/[Development Builds]"
-msgstr "link:https://plugins.jetbrains.com/plugin/13234-quarkus/versions[マーケットプレイス] link:https://download.jboss.org/jbosstools/intellij/snapshots/intellij-quarkus/[開発の構築]"
+msgstr ""
+"link:https://plugins.jetbrains.com/plugin/13234-quarkus/"
+"versions[マーケットプレイス] link:https://download.jboss.org/jbosstools/"
+"intellij/snapshots/intellij-quarkus/[開発の構築]"
 
 #. type: Table
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:75
@@ -447,7 +464,13 @@ msgstr "<お気に入りのIDE/エディタ>のQuarkus Toolsはどうですか?"
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:167
 #, fuzzy
 msgid "What is amazing is that the first three are almost all at feature parity because they are using the awesome https://github.com/redhat-developer/quarkus-ls[Quarkus Language Server] made by the Red Hat Developer team. If you are interested in enabling Quarkus tooling support for your favorite IDE/editor you should give that language server a go - and let me know once you have it working and get added to this list!"
-msgstr "驚くべきことに、最初の3つは、Red Hat Developerチームによって作られた素晴らしい link:https://github.com/redhat-developer/quarkus-ls[Quarkus Language Server] を使用しているため、ほぼ同等の機能を持っています。お気に入りのIDE/エディタでQuarkusツールのサポートを有効にすることに興味があるなら、その言語サーバーを試してみてください。"
+msgstr ""
+"驚くべきことに、最初の3つは、Red Hat "
+"Developerチームによって作られた素晴らしい link:https://github.com/"
+"redhat-developer/quarkus-ls[Quarkus Language Server] "
+"を使用しているため、ほぼ同等の機能を持っています。お気に入りのIDE/エディタでQ"
+"uarkusツールのサポートを有効にすることに興味があるなら、その言語サーバーを試"
+"してみてください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-01-21-march-of-ides.adoc:169

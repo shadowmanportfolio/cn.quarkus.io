@@ -81,7 +81,12 @@ msgstr ""
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:27
 #, fuzzy
 msgid "In _tech preview_ mode, early feedback is requested to mature the idea.  There is no guarantee of stability in the platform until the solution matures.  Feedback is welcome on our https://groups.google.com/d/forum/quarkus-dev[mailing list] or as issues in our https://github.com/quarkusio/quarkus/issues[GitHub issue tracker]."
-msgstr "_experimental_ モードでは、アイデアを成熟させるために早期のフィードバックが求められます。ソリューションが成熟するまでの間、プラットフォームの安定性や長期的な存在を保証するものではありません。フィードバックは link:https://groups.google.com/d/forum/quarkus-dev[メーリングリスト] や link:https://github.com/quarkusio/quarkus/issues[GitHubの課題管理] で受け付けています。"
+msgstr ""
+"_experimental_ モードでは、アイデアを成熟させるために早期のフィードバックが求"
+"められます。ソリューションが成熟するまでの間、プラットフォームの安定性や長期"
+"的な存在を保証するものではありません。フィードバックは link:https://groups."
+"google.com/d/forum/quarkus-dev[メーリングリスト] や link:https://github.com/"
+"quarkusio/quarkus/issues[GitHubの課題管理] で受け付けています。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:30
@@ -178,7 +183,10 @@ msgstr ""
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:75
 #, fuzzy
 msgid "First, make sure your project has the `quarkus-reactive-pg-client` extension enabled.  If you are creating a new project, use the following command:"
-msgstr "まず、プロジェクトで `quarkus-reactive-pg-client` のエクステンションが有効になっていることを確認します。新しいプロジェクトを作成する場合は、 `extensions` パラメーターを以下のように設定します。"
+msgstr ""
+"まず、プロジェクトで `quarkus-reactive-pg-client` のエクステンションが有効に"
+"なっていることを確認します。新しいプロジェクトを作成する場合は、 `extensions`"
+" パラメーターを以下のように設定します。"
 
 #. type: delimited block =
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:81
@@ -189,7 +197,8 @@ msgstr "すでに作成済みのプロジェクトがある場合は、`add-exte
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:86
 #, fuzzy
 msgid "Otherwise, you can manually add the dependency to your build file:"
-msgstr "そうでなければ、 `pom.xml` ファイルの依存関係セクションに手動で追加することができます。"
+msgstr "そうでなければ、 `pom.xml` "
+"ファイルの依存関係セクションに手動で追加することができます。"
 
 #. type: Block title
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:88
@@ -247,13 +256,16 @@ msgstr ""
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:116
 #, fuzzy
 msgid "We will expose `Fruit` instances over HTTP in the JSON format.  Consequently, you also need to add the `quarkus-resteasy-reactive-jackson` extension:"
-msgstr "JSON 形式で HTTP 経由で `Fruit` インスタンスを公開します。そのため、 `quarkus-resteasy-jackson` のエクステンションも追加する必要があります。"
+msgstr ""
+"JSON 形式で HTTP 経由で `Fruit` インスタンスを公開します。そのため、 "
+"`quarkus-resteasy-jackson` のエクステンションも追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:121
 #, fuzzy
 msgid "If you prefer not to use the command line, manually add the dependency to your build file:"
-msgstr "コマンドラインを使いたくない場合は、 `pom.xml` ファイルの依存関係セクションに以下を手動で追加してください。"
+msgstr "コマンドラインを使いたくない場合は、 `pom.xml` "
+"ファイルの依存関係セクションに以下を手動で追加してください。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:129
@@ -346,7 +358,10 @@ msgstr "データベーススキーマとシードデータ"
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:169
 #, fuzzy
 msgid "Before we implement the REST endpoint and data management code, we need to setup the database schema.  It would also be convenient to have some data inserted up-front."
-msgstr "RESTエンドポイントとデータ管理コードを実装する前に、データベーススキーマを設定する必要があります。また、いくつかのデータを前もって挿入しておくと便利です。"
+msgstr ""
+"RESTエンドポイントとデータ管理コードを実装する前に、データベーススキーマを設"
+"定する必要があります。また、いくつかのデータを前もって挿入しておくと便利です"
+"。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/reactive-sql-clients.adoc:172

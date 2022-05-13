@@ -56,7 +56,8 @@ msgstr "Quarkus 1.5.2.Final リリース - バグフィックス"
 #: upstream/_posts/2020-06-18-quarkus-1-5-2-final-released.adoc:11
 #, fuzzy
 msgid "Today, we released Quarkus 1.5.2.Final with some bugfixes and documentation improvements."
-msgstr "本日、Quarkus 1.5.2.Finalをリリースしました。いくつかのバグフィックスとドキュメントの改善を行いました。"
+msgstr "本日、Quarkus 1.5.2.Finalをリリースしました。いくつかのバグフィックスとドキュ"
+"メントの改善を行いました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-18-quarkus-1-5-2-final-released.adoc:13
@@ -86,13 +87,20 @@ msgstr "IDEランチャーが復活しました。"
 #: upstream/_posts/2020-06-18-quarkus-1-5-2-final-released.adoc:21
 #, fuzzy
 msgid "In 1.5, we tweaked how the Hibernate ORM Panache enhancement works and that might cause some issues when used in conjunction with the JPA modelgen annotation processor.  We documented how to properly configure the annotation processors in link:/guides/hibernate-orm-panache#defining-entities-in-external-projects-or-jars[Hibernate ORM with Panache guide]."
-msgstr "1.5では、Hibernate ORMのPanache拡張機能の動作を調整し、JPA modelgenアノテーションプロセッサと組み合わせて使用した場合に問題が発生する可能性があります。 link:/guides/hibernate-orm-panache#defining-entities-in-external-projects-or-jars[Hibernate ORM with Panache ガイド]では、アノテーションプロセッサを適切に設定する方法を説明しています。"
+msgstr ""
+"1.5では、Hibernate ORMのPanache拡張機能の動作を調整し、JPA modelgenアノテーシ"
+"ョンプロセッサと組み合わせて使用した場合に問題が発生する可能性があります。 "
+"link:/guides/hibernate-orm-panache#defining-entities-in-external-projects-or-"
+"jars[Hibernate ORM with Panache "
+"ガイド]では、アノテーションプロセッサを適切に設定する方法を説明しています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-18-quarkus-1-5-2-final-released.adoc:23
 #, fuzzy
 msgid "You can get https://github.com/quarkusio/quarkus/releases/tag/1.5.2.Final[the full changelog of 1.5.2.Final on GitHub]."
-msgstr "link:https://github.com/quarkusio/quarkus/releases/tag/1.5.2.Final[1.5.2.Finalの完全な変更履歴はGitHubに]掲載されています。"
+msgstr ""
+"link:https://github.com/quarkusio/quarkus/releases/tag/1.5.2.Final[1.5.2."
+"Finalの完全な変更履歴はGitHubに]掲載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-18-quarkus-1-5-2-final-released.adoc:24

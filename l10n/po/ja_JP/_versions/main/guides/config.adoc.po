@@ -139,7 +139,8 @@ msgstr ""
 #: upstream/_versions/main/guides/config.adoc:66
 #, fuzzy
 msgid "Create the `org.acme.config.GreetingResource` REST resource with the following content:"
-msgstr "`org.acme.config.GreetingResource` を編集し、以下の設定プロパティーを導入します:"
+msgstr "`org.acme.config.GreetingResource` "
+"を編集し、以下の設定プロパティーを導入します:"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/config.adoc:70
@@ -470,7 +471,10 @@ msgstr "link:config-extending-support.html[設定サポートの拡張]"
 #: upstream/_versions/main/guides/config.adoc:231
 #, fuzzy
 msgid "Quarkus relies on link:https://github.com/smallrye/smallrye-config/[SmallRye Config] and inherits its features:"
-msgstr "Quarkusアプリケーションは link:https://github.com/smallrye/smallrye-config[SmallRye Config] APIを使用して、設定に関連するすべてのメカニズムを提供します。"
+msgstr ""
+"Quarkusアプリケーションは link:https://github.com/smallrye/smallrye-config["
+"SmallRye Config] "
+"APIを使用して、設定に関連するすべてのメカニズムを提供します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/config.adoc:233

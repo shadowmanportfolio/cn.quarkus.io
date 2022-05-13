@@ -62,13 +62,19 @@ msgstr "Quarkus Tools for Visual Studio Codeの新機能"
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:18
 #, fuzzy
 msgid "The 1.1.0 release of https://marketplace.visualstudio.com/items?itemName=redhat.vscode-quarkus[Quarkus Tools for Visual Studio Code] offers more language features for the `application.properties` file and new additions to existing features like validation and snippets support."
-msgstr "link:https://marketplace.visualstudio.com/items?itemName=redhat.vscode-quarkus[Quarkus Tools for Visual Studio]Codeの1.1.0リリースでは、 `application.properties` ファイルの言語機能が追加され、検証やスニペットのサポートなどの既存の機能にも新たな機能が追加されました。"
+msgstr ""
+"link:https://marketplace.visualstudio.com/items?itemName=redhat.vscode-"
+"quarkus[Quarkus Tools for Visual Studio]Codeの1.1.0リリースでは、 "
+"`application.properties` ファイルの言語機能が追加され、検証やスニペットのサポ"
+"ートなどの既存の機能にも新たな機能が追加されました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:20
 #, fuzzy
 msgid "For a list of all changes, please refer to the https://github.com/redhat-developer/vscode-quarkus/blob/master/CHANGELOG.md[changelog]."
-msgstr "すべての変更点のリストは、 link:https://github.com/redhat-developer/vscode-quarkus/blob/master/CHANGELOG.md[changelog]を参照してください。"
+msgstr ""
+"すべての変更点のリストは、 link:https://github.com/redhat-developer/"
+"vscode-quarkus/blob/master/CHANGELOG.md[changelog]を参照してください。"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:22
@@ -80,25 +86,32 @@ msgstr "新機能"
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:25
 #, fuzzy
 msgid "link:#value-type-validation-for-application-properties[Value type validation for `application.properties`]"
-msgstr "link:#value-type-validation-for-application-properties[の値の型の検証を行います。 `application.properties`]"
+msgstr ""
+"link:#value-type-validation-for-application-"
+"properties[の値の型の検証を行います。 `application.properties`]"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:26
 #, fuzzy
 msgid "link:#go-to-definition-support-for-config-properties-in-application-properties[Go to definition support for `application.properties`]"
-msgstr "link:#go-to-definition-support-for-config-properties-in-application-properties[の定義サポートへ `application.properties`]"
+msgstr ""
+"link:#go-to-definition-support-for-config-properties-in-application-"
+"properties[の定義サポートへ `application.properties`]"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:27
 #, fuzzy
 msgid "link:#new-snippets[New snippets (Quarkus datasource & Jaeger tracer)]"
-msgstr "link:#new-snippets[新しいスニペット（QuarkusのデータソースとJaegerのトレーサー）]"
+msgstr "link:#new-"
+"snippets[新しいスニペット（QuarkusのデータソースとJaegerのトレーサー）]"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:28
 #, fuzzy
 msgid "link:#formatting-support-for-application-properties[Formatting support for `application.properties`]"
-msgstr "link:#formatting-support-for-application-properties[のフォーマットサポート `application.properties`]"
+msgstr ""
+"link:#formatting-support-for-application-properties[のフォーマットサポート "
+"`application.properties`]"
 
 #. type: Title ==
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:30
@@ -110,7 +123,8 @@ msgstr "の値の型の検証を行います。 `application.properties`"
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:34
 #, fuzzy
 msgid "For property values, there will now be an error diagnostic if the expected type does not match the value type."
-msgstr "プロパティ値について、期待される型と値の型が一致しない場合に、エラー診断を行うようになりました。"
+msgstr "プロパティ値について、期待される型と値の型が一致しない場合に、エラー診断を行"
+"うようになりました。"
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:35
@@ -128,13 +142,16 @@ msgstr ""
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:39
 #, fuzzy
 msgid "For the example above, `quarkus.http.cors` expects a `boolean` and `quarkus.http.port` expects an `int`."
-msgstr "上記の例では、 `quarkus.http.cors` は `boolean` を、 `quarkus.http.port` は `int` を想定しています。"
+msgstr ""
+"上記の例では、 `quarkus.http.cors` は `boolean` を、 `quarkus.http.port` は "
+"`int` を想定しています。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:42
 #, fuzzy
 msgid "The `item.price` config property was defined in a resource class to expect a `float` like so:"
-msgstr "`item.price` コンフィグプロパティは、リソースクラスで定義されており、 `float` のように期待されていました。"
+msgstr "`item.price` コンフィグプロパティは、リソースクラスで定義されており、 `float`"
+" のように期待されていました。"
 
 #. type: Block title
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:43
@@ -160,7 +177,10 @@ msgstr "のコンフィグプロパティの定義サポートに移動します
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:56
 #, fuzzy
 msgid "In VS Code, the 'Go to definition' feature is used by holding Ctrl (or ⌘) and left clicking on the desired config property, or by right-clicking the desired config property and clicking ‘Go to definition’ in the context menu."
-msgstr "VS Codeでは、Ctrl（または⌘）を押しながら目的の設定プロパティを左クリックするか、目的の設定プロパティを右クリックして、コンテキストメニューの「Go to definition」をクリックすることで、「Go to definition」機能を使用します。"
+msgstr ""
+"VS Codeでは、Ctrl（または⌘）を押しながら目的の設定プロパティを左クリックする"
+"か、目的の設定プロパティを右クリックして、コンテキストメニューの「Go to "
+"definition」をクリックすることで、「Go to definition」機能を使用します。"
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:57
@@ -184,7 +204,8 @@ msgstr "新しいスニペット"
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:63
 #, fuzzy
 msgid "This release also brings new `application.properties` snippets:"
-msgstr "今回のリリースでは、新しい `application.properties` スニペットも登場しました。"
+msgstr "今回のリリースでは、新しい `application.properties` "
+"スニペットも登場しました。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:65
@@ -220,7 +241,9 @@ msgstr "のフォーマットサポート `application.properties`"
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:76
 #, fuzzy
 msgid "Thanks to formatting support, it is now possible to quickly remove extra whitespace or lines that may cluttering your `application.properties` file."
-msgstr "フォーマットのサポートにより、 `application.properties` ファイルを乱す余分なホワイトスペースや行をすばやく削除できるようになりました。"
+msgstr ""
+"フォーマットのサポートにより、 `application.properties` ファイルを乱す余分な"
+"ホワイトスペースや行をすばやく削除できるようになりました。"
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:77
@@ -238,7 +261,11 @@ msgstr ""
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:85
 #, fuzzy
 msgid "Another use case for formatting, is adding/removing spacing around the equals sign.  To add/remove spacing around the equals sign, change the `quarkus.tools.formatting.surroundEqualsWithSpaces` setting to `true`/`false` in the VS Code settings.  Then, format the document."
-msgstr "書式設定のもう一つの使用例は、等号の周りにスペースを追加/削除することです。等号の周りのスペースを追加/削除するには、VSコードの設定で、 `quarkus.tools.formatting.surroundEqualsWithSpaces` の設定を `true`/ `false` に変更します。その後、ドキュメントをフォーマットします。"
+msgstr ""
+"書式設定のもう一つの使用例は、等号の周りにスペースを追加/削除することです。等"
+"号の周りのスペースを追加/削除するには、VSコードの設定で、 `quarkus.tools."
+"formatting.surroundEqualsWithSpaces` の設定を `true`/ `false` "
+"に変更します。その後、ドキュメントをフォーマットします。"
 
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:86
@@ -256,7 +283,9 @@ msgstr ""
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:89
 #, fuzzy
 msgid "This wraps up the new major features in this release. If you have any suggestions or feedback, please do not hesitate to open a GitHub issue."
-msgstr "以上で、今回のリリースにおける新しい主要機能をまとめました。何かご提案やご意見がございましたら、ご遠慮なくGitHubのissueを開いてください。"
+msgstr ""
+"以上で、今回のリリースにおける新しい主要機能をまとめました。何かご提案やご意"
+"見がございましたら、ご遠慮なくGitHubのissueを開いてください。"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:91
@@ -274,7 +303,9 @@ msgstr "リンク"
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:95
 #, fuzzy
 msgid "VS Code Marketplace link: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-quarkus"
-msgstr "VSコードマーケットプレイスのリンク https://marketplace.visualstudio.com/items?itemName=redhat.vscode-quarkus"
+msgstr ""
+"VSコードマーケットプレイスのリンク https://marketplace.visualstudio.com/"
+"items?itemName=redhat.vscode-quarkus"
 
 #. type: Plain text
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:96
@@ -292,7 +323,9 @@ msgstr "GitHubの問題を開く: https://github.com/redhat-developer/vscode-qua
 #: upstream/_posts/2019-10-31-vscode-quarkus-1.1.0.adoc:97
 #, fuzzy
 msgid "View changelog: https://github.com/redhat-developer/vscode-quarkus/blob/master/CHANGELOG.md"
-msgstr "変更履歴を見る: https://github.com/redhat-developer/vscode-quarkus/blob/master/CHANGELOG.md"
+msgstr ""
+"変更履歴を見る: https://github.com/redhat-developer/vscode-quarkus/blob/"
+"master/CHANGELOG.md"
 
 #, fuzzy
 #~ msgid "---\n"

@@ -34,7 +34,13 @@ msgid ""
 "passing them as parameters everywhere. Many Quarkus extensions require those contextual objects to operate\n"
 "properly: xref:rest-json.adoc[RESTEasy Reactive], xref:cdi-reference.adoc[ArC] and xref:transaction.adoc[Transaction]\n"
 "for example.\n"
-msgstr "従来のブロッキングコードでは  link:https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html[`ThreadLocal`]変数を使用してコンテキストオブジェクトを格納し、パラメータとして渡すことを避けていました。多くのQuarkusのエクステンションは、適切に動作するためにこれらのコンテキストオブジェクトを必要とします。例えば、 link:rest-json.html[RESTEasy]、 link:cdi-reference.html[ArC]、 link:transaction.html[Transaction]などです。\n"
+msgstr ""
+"従来のブロッキングコードでは  link:https://docs.oracle.com/en/java/javase/11/"
+"docs/api/java.base/java/lang/ThreadLocal.html[`ThreadLocal`]変数を使用してコ"
+"ンテキストオブジェクトを格納し、パラメータとして渡すことを避けていました。多"
+"くのQuarkusのエクステンションは、適切に動作するためにこれらのコンテキストオブ"
+"ジェクトを必要とします。例えば、 link:rest-json.html[RESTEasy]、 link:cdi-"
+"reference.html[ArC]、 link:transaction.html[Transaction]などです。\n"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/context-propagation.adoc:20
@@ -126,7 +132,8 @@ msgstr ""
 #: upstream/_versions/main/guides/context-propagation.adoc:67
 #, fuzzy
 msgid "With this, you will get context propagation for ArC, RESTEasy Reactive and transactions, if you are using them."
-msgstr "これにより、ArC、RESTEasy、トランザクションを使用している場合は、コンテキストの伝播を得ることができます。"
+msgstr "これにより、ArC、RESTEasy、トランザクションを使用している場合は、コンテキスト"
+"の伝播を得ることができます。"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/context-propagation.adoc:68

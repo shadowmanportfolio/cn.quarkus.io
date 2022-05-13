@@ -88,7 +88,9 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_versions/main/guides/websockets.adoc:41
 #, fuzzy
 msgid "This command generates the project (without any classes) and imports the `websockets` extension."
-msgstr "このコマンドは、Mavenプロジェクト(クラスなし)を生成し、 `undertow-websockets` エクステンションをインポートします。"
+msgstr ""
+"このコマンドは、Mavenプロジェクト(クラスなし)を生成し、 `undertow-websockets`"
+" エクステンションをインポートします。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/websockets.adoc:44
@@ -475,7 +477,9 @@ msgstr "その他のWebSocket情報"
 #: upstream/_versions/main/guides/websockets.adoc:241
 #, fuzzy
 msgid "The Quarkus WebSocket implementation is an implementation of link:https://jakarta.ee/specifications/websocket/[Jakarta Websockets]."
-msgstr "Quarkus WebSocketの実装は、 link:https://eclipse-ee4j.github.io/websocket-api/[Jakarta Websocket] の実装です。"
+msgstr ""
+"Quarkus WebSocketの実装は、 link:https://eclipse-ee4j.github.io/"
+"websocket-api/[Jakarta Websocket] の実装です。"
 
 #~ msgid "To complete this guide, you need:"
 #~ msgstr "このガイドを完成させるには、以下が必要です:"

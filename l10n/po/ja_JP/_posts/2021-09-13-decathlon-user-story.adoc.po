@@ -38,7 +38,9 @@ msgstr "post"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:1
 #, fuzzy, no-wrap
 msgid "VCStream: a new messaging platform for DECATHLON’s Value Chain, built on Quarkus."
-msgstr "VCStream: DECATHLONのバリューチェーンのための新しいメッセージングプラットフォームで、Quarkusをベースに構築されています。"
+msgstr ""
+"VCStream: DECATHLONのバリューチェーンのための新しいメッセージングプラットフォ"
+"ームで、Quarkusをベースに構築されています。"
 
 #. type: YAML Front Matter: tags
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:1
@@ -56,13 +58,19 @@ msgstr ""
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:15
 #, fuzzy
 msgid "DECATHLON is a French retailer, dedicated to sport products, with more than 1800 stores worldwide. At DECATHLON, we are convinced that sport is a source of well-being."
-msgstr "DECATHLONは、フランスのスポーツ用品専門店で、全世界に1800以上の店舗を展開しています。DECATHLONでは、スポーツは幸福の源であると確信しています。"
+msgstr ""
+"DECATHLONは、フランスのスポーツ用品専門店で、全世界に1800以上の店舗を展開して"
+"います。DECATHLONでは、スポーツは幸福の源であると確信しています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:17
 #, fuzzy
 msgid "VCStream is a new platform for streaming data across the Value Chain of DECATHLON. It allows streaming data in and out of the Value Chain, what we called the inbound (from external systems to the Value Chain) and the outbound (from the Value Chain to external systems) processes."
-msgstr "VCStreamは、DECATHLONのValue Chainを横断してデータをストリーミングするための新しいプラットフォームです。VCStreamは、DECATHLONのValue Chainを横断してデータをストリーミングするための新しいプラットフォームです。このプラットフォームにより、Value Chainの内外でデータをストリーミングすることができます。"
+msgstr ""
+"VCStreamは、DECATHLONのValue Chainを横断してデータをストリーミングするための"
+"新しいプラットフォームです。VCStreamは、DECATHLONのValue Chainを横断してデー"
+"タをストリーミングするための新しいプラットフォームです。このプラットフォーム"
+"により、Value Chainの内外でデータをストリーミングすることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:19
@@ -74,19 +82,29 @@ msgstr "VCStreamのスローガンは *_「One platform to connect them all」_*
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:21
 #, fuzzy
 msgid "VCStream offers connectors to easily stream data from incoming Kafka topics to existing Value Chain ERP modules, and from these ERP modules to outgoing Kafka topics and object store."
-msgstr "VCStreamは、受信するKafkaトピックから既存のValue Chain ERPモジュールへ、また、これらのERPモジュールから送信するKafkaトピックやオブジェクトストアへ、簡単にデータをストリームするためのコネクタを提供します。"
+msgstr ""
+"VCStreamは、受信するKafkaトピックから既存のValue Chain ERPモジュールへ、また"
+"、これらのERPモジュールから送信するKafkaトピックやオブジェクトストアへ、簡単"
+"にデータをストリームするためのコネクタを提供します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:23
 #, fuzzy
 msgid "VCStream leverages the Quarkus framework, and Kubernetes, to offer a resilient and performant platform that meets security and reliability requirements of DECATHLON Value Chain."
-msgstr "VCStreamは、QuarkusフレームワークとKubernetesを活用して、DECATHLON Value Chainのセキュリティと信頼性の要件を満たす、回復力とパフォーマンスに優れたプラットフォームを提供しています。"
+msgstr ""
+"VCStreamは、QuarkusフレームワークとKubernetesを活用して、DECATHLON Value Chai"
+"nのセキュリティと信頼性の要件を満たす、回復力とパフォーマンスに優れたプラット"
+"フォームを提供しています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:25
 #, fuzzy
 msgid "Age Of Access Accelerator (AoAA) is the team behind the VCStream platform. We’re a small team of three Developers, a DevOps, a Product Owner and an Enterprise Architect; let’s not forget our team Leader of course (that also develops when he finds some time to do so)."
-msgstr "Age Of Access Accelerator (AoAA)は、VCStreamプラットフォームを開発しているチームです。私たちは、3人の開発者、1人のDevOps、1人のプロダクトオーナー、1人のエンタープライズアーキテクトからなる小さなチームで、もちろんチームリーダーも忘れてはいけません（彼も時間を見つけては開発をしています）。"
+msgstr ""
+"Age Of Access Accelerator (AoAA)は、VCStreamプラットフォームを開発しているチ"
+"ームです。私たちは、3人の開発者、1人のDevOps、1人のプロダクトオーナー、1人の"
+"エンタープライズアーキテクトからなる小さなチームで、もちろんチームリーダーも"
+"忘れてはいけません（彼も時間を見つけては開発をしています）。"
 
 #. type: Title ==
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:26
@@ -98,37 +116,57 @@ msgstr "挑戦"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:30
 #, fuzzy
 msgid "The Value Chain IT department faces a major problem around data exposure and consumption to and from the other departments of DECATHLON.  The business was scaling steadily, driving significantly higher levels of resource consumption, capacity demands, and event data in real time. We realized that our system could not keep up."
-msgstr "Value Chain IT部門は、DECATHLON社の他の部門との間でのデータの公開と消費に関わる大きな問題に直面していました。ビジネスは順調に拡大しており、リソースの消費量、キャパシティ要求、イベントデータのリアルタイム性が著しく高まっていました。私たちのシステムでは追いつけないことがわかりました。"
+msgstr ""
+"Value Chain IT部門は、DECATHLON社の他の部門との間でのデータの公開と消費に関わ"
+"る大きな問題に直面していました。ビジネスは順調に拡大しており、リソースの消費"
+"量、キャパシティ要求、イベントデータのリアルタイム性が著しく高まっていました"
+"。私たちのシステムでは追いつけないことがわかりました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:33
 #, fuzzy
 msgid "The current usage of dedicated servers was leading to an increase of resource waste. The department’s reliance on legacy workflows and ERP ecosystems resulted in significant productivity bottlenecks.  Thinking about data as streams is a popular approach nowadays. In many cases, it allows to build a data engineering architecture in a more efficient way than the classic “data as a state” one. But to support the streaming data paradigm, we need to use additional technologies. One of the most popular tools for working with streaming data is Apache Kafka, and DECATHLON decided to invest heavily in it."
-msgstr "現在、専用サーバーを使用しているため、リソースの無駄遣いが増えていました。また、レガシーなワークフローやERPシステムに依存していたため、生産性が著しく低下していました。データをストリームとして考えることは、最近では一般的なアプローチです。多くの場合、従来の「データは状態である」という考え方よりも効率的な方法で、データエンジニアリング・アーキテクチャを構築することができます。しかし、ストリーミングデータのパラダイムをサポートするためには、追加のテクノロジーを使用する必要があります。ストリーミングデータを扱うための最も一般的なツールの1つがApache Kafkaであり、DECATHLONはこれに多額の投資をすることを決めました。"
+msgstr ""
+"現在、専用サーバーを使用しているため、リソースの無駄遣いが増えていました。ま"
+"た、レガシーなワークフローやERPシステムに依存していたため、生産性が著しく低下"
+"していました。データをストリームとして考えることは、最近では一般的なアプロー"
+"チです。多くの場合、従来の「データは状態である」という考え方よりも効率的な方"
+"法で、データエンジニアリング・アーキテクチャを構築することができます。しかし"
+"、ストリーミングデータのパラダイムをサポートするためには、追加のテクノロジー"
+"を使用する必要があります。"
+"ストリーミングデータを扱うための最も一般的なツールの1つがApache "
+"Kafkaであり、DECATHLONはこれに多額の投資をすることを決めました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:35
 #, fuzzy
 msgid "The quality of data produced to VCStream is extremely important to us, especially because we are running VCStream at scale. Data produced by one team can and will be consumed by many different applications within DECATHLON. The lack of data quality can have a huge impact on downstream consumers."
-msgstr "VCStreamに生成されるデータの品質は、特にVCStreamを大規模に運用している私たちにとって非常に 重要です。一つのチームが作成したデータは、DECATHLON内の様々なアプリケーションで消費されます。データ品質の欠如は、下流の消費者に大きな影響を与えます。"
+msgstr ""
+"VCStreamに生成されるデータの品質は、"
+"特にVCStreamを大規模に運用している私たちにとって非常に 重要です。一つのチーム"
+"が作成したデータは、DECATHLON内の様々なアプリケーションで消費されます。データ"
+"品質の欠如は、下流の消費者に大きな影響を与えます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:37
 #, fuzzy
 msgid "Prior to the **VCStream platform**, the Value Chain was challenged with:"
-msgstr "*VCStreamプラットフォーム*を導入する前は、バリューチェーンの課題がありました。"
+msgstr "*VCStreamプラットフォーム*を導入する前は、バリューチェーンの課題がありました"
+"。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:39
 #, fuzzy, no-wrap
 msgid "**Data standardization**: data was exposed in a non-uniform manner and without standards.\n"
-msgstr "*データの標準化*：データは統一されておらず、標準化されていない状態で公開されていました。"
+msgstr "*データの標準化*：データは統一されておらず、標準化されていない状態で公開され"
+"ていました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:40
 #, fuzzy, no-wrap
 msgid "**Time to market**: exposing new data would take time as we relied on manual scheduling via legacy tools.\n"
-msgstr "*市場投入までの時間*：新しいデータを公開するには、従来のツールを使った手作業によるスケジュール管理に頼っていたため、時間がかかっていました。"
+msgstr "*市場投入までの時間*：新しいデータを公開するには、従来のツールを使った手作業"
+"によるスケジュール管理に頼っていたため、時間がかかっていました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:41
@@ -140,19 +178,26 @@ msgstr "現在のバッチモードではなく、リアルタイム *でデー�
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:42
 #, fuzzy, no-wrap
 msgid "**Scalability and Resilience**: huge volumes of data are processed, and the legacy system is fragile.\n"
-msgstr "*スケーラビリティと*レジリエンス：膨大な量のデータが処理されており、レガシーシステムは壊れやすい。"
+msgstr "*スケーラビリティと*レジリエンス：膨大な量のデータが処理されており、レガシー"
+"システムは壊れやすい。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:44
 #, fuzzy
 msgid "We knew our Value Chain needed a platform to modernize our data exchange: a product that could enable data access, efficient data integration, container adoption, and developer velocity at scale."
-msgstr "当社のバリューチェーンでは、データ交換を近代化するためのプラットフォームが必要だと考えていました。つまり、データアクセス、効率的なデータ統合、コンテナの導入、大規模な開発者の速度を可能にする製品です。"
+msgstr ""
+"当社のバリューチェーンでは、データ交換を近代化するためのプラットフォームが必"
+"要だと考えていました。つまり、データアクセス、効率的なデータ統合、コンテナの"
+"導入、大規模な開発者の速度を可能にする製品です。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:46
 #, fuzzy
 msgid "__\"Almost every weekend is the biggest weekend we've ever had in the Value Chain! our system has just become unstable. We can not deal with application deployment in the old way.”__ - is the observation from many of us."
-msgstr "_\"ほぼ毎週末が、バリューチェーンでは過去最大の週末となっています！我々のシステムが不安定になってしまったのです。従来の方法ではアプリケーションの展開に対応できない」。_- というのが多くの人の意見です。"
+msgstr ""
+"_\"ほぼ毎週末が、バリューチェーンでは過去最大の週末となっています！我々のシス"
+"テムが不安定になってしまったのです。従来の方法ではアプリケーションの展開に対"
+"応できない」。_- というのが多くの人の意見です。"
 
 #. type: Title ==
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:47
@@ -164,7 +209,10 @@ msgstr "なぜQuarkusなのか？"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:50
 #, fuzzy
 msgid "To implement VCStream, our team evaluated Spring Boot, Micronaut and Quarkus. As none has real experience with Micronaut, we quickly leave it out."
-msgstr "VCStreamを実装するために、我々のチームはSpring Boot、Micronaut、Quarkusを評価しました。Micronautについては実際に経験した人がいないので、すぐに除外しました。"
+msgstr ""
+"VCStreamを実装するために、我々のチームはSpring Boot、Micronaut、Quarkusを評価"
+"しました。Micronautについては実際に経験した人がいないので、すぐに除外しました"
+"。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:52
@@ -182,43 +230,58 @@ msgstr "チームは新しいフレームワークを学ぶことに興味を持
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:55
 #, fuzzy
 msgid "Microprofile reactive messaging seems very interesting and a neat API to implement messaging only microservices which is what we needed primarily."
-msgstr "マイクロプロファイル・リアクティブ・メッセージングは非常に興味深く、私たちが主に必要としていたメッセージングのみのマイクロサービスを実装するためのきちんとしたAPIです。"
+msgstr ""
+"マイクロプロファイル・リアクティブ・メッセージングは非常に興味深く、私たちが"
+"主に必要としていたメッセージングのみのマイクロサービスを実装するためのきちん"
+"としたAPIです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:56
 #, fuzzy
 msgid "Performance is at the heart of Quarkus, and more importantly, low resource consumption (both CPU and memory) which is important as we plan to deploy to the cloud, and have some ecological sensitivity on the team."
-msgstr "パフォーマンスはQuarkusの核心であり、さらに重要なのは、リソース消費量（CPUとメモリの両方）が少ないことです。これは、クラウドへの展開を計画しており、チームにはエコロジーに敏感な人もいるので重要です。"
+msgstr ""
+"パフォーマンスはQuarkusの核心であり、さらに重要なのは、リソース消費量（CPUと"
+"メモリの両方）が少ないことです。これは、クラウドへの展開を計画しており、チー"
+"ムにはエコロジーに敏感な人もいるので重要です。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:57
 #, fuzzy
 msgid "All the containers, Kubernetes and cloud ready functionalities that we need to properly implement a resilient application on GKE are there."
-msgstr "GKE上でレジリエントなアプリケーションを適切に実装するために必要な、コンテナ、Kubernetes、クラウドに対応した機能性はすべて揃っています。"
+msgstr ""
+"GKE上でレジリエントなアプリケーションを適切に実装するために必要な、コンテナ、"
+"Kubernetes、クラウドに対応した機能性はすべて揃っています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:59
 #, fuzzy
 msgid "Lastly, we have a Quarkus contributor on the team which allows us to have a deep understanding of the framework, and a unique contact within the community."
-msgstr "最後に、チームにはQuarkusのコントリビューターがいるので、Quarkusのフレームワークを深く理解し、コミュニティ内で独自のコンタクトを持つことができます。"
+msgstr ""
+"最後に、チームにはQuarkusのコントリビューターがいるので、Quarkusのフレームワ"
+"ークを深く理解し、コミュニティ内で独自のコンタクトを持つことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:61
 #, fuzzy
 msgid "Speaking of the community, the Quarkus one is very active and welcoming. This was one of the most important criteria for us."
-msgstr "コミュニティについて言えば、Quarkusのコミュニティは非常に活発で歓迎されています。これは、私たちにとって最も重要な基準の一つでした。"
+msgstr "コミュニティについて言えば、Quarkusのコミュニティは非常に活発で歓迎されていま"
+"す。これは、私たちにとって最も重要な基準の一つでした。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:63
 #, fuzzy
 msgid "Of course, we performed some proof of concepts with all the team members, compared implementations, and decided together what the best choice would be in our context."
-msgstr "もちろん、チームメンバー全員で概念実証を行い、実装を比較して、私たちの状況に合った最良の選択は何かを一緒に考えました。"
+msgstr "もちろん、チームメンバー全員で概念実証を行い、実装を比較して、私たちの状況に"
+"合った最良の選択は何かを一緒に考えました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:65
 #, fuzzy
 msgid "During these proof of concepts, we particularly enjoyed the fact that the Quarkus learning curve was very rapid and easier than what we first thought. Newcomers have become comfortable with Quarkus in less than a week, and all the developer oriented functionalities (live reload FTW!) have really empowered them to be more productive on their day to day tasks."
-msgstr "これらの概念実証では、Quarkusの学習曲線が非常に速く、当初考えていたよりも簡単だったという事実を特に評価しました。また、開発者向けのすべての機能（ライブリロードFTW！）によって、日々の作業の生産性が向上しました。"
+msgstr ""
+"これらの概念実証では、Quarkusの学習曲線が非常に速く、当初考えていたよりも簡単"
+"だったという事実を特に評価しました。また、開発者向けのすべての機能（ライブリ"
+"ロードFTW！）によって、日々の作業の生産性が向上しました。"
 
 #. type: Title ==
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:66
@@ -230,25 +293,38 @@ msgstr "私たちのコミットメント"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:69
 #, fuzzy
 msgid "Within DECATHLON, there weren't many projects that used Quarkus, unlike Spring Boot, which has already been proven, and there were several developers who are familiar with it."
-msgstr "DECATHLON内では、すでに実績のあるSpring Bootとは異なり、Quarkusを使用しているプロジェクトはあまり多くなく、Quarkusに精通している開発者も複数いました。"
+msgstr ""
+"DECATHLON内では、すでに実績のあるSpring Bootとは異なり、Quarkusを使用している"
+"プロジェクトはあまり多くなく、Quarkusに精通している開発者も複数いました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:71
 #, fuzzy
 msgid "Quarkus' position in our current TechRadar (trial) has not necessarily helped us to weigh our usage of it. The few developers with whom we had discussions on the use of Quarkus had expressed some reservations about the notion of performance that was put forward by the framework."
-msgstr "現在のTechRadar（試用版）におけるQuarkusの位置づけは、Quarkusの使用を検討する上で必ずしも役立っていません。Quarkusの使用について議論した数人の開発者は、フレームワークが提唱するパフォーマンスの概念に難色を示していました。"
+msgstr ""
+"現在のTechRadar（試用版）におけるQuarkusの位置づけは、Quarkusの使用を検討する"
+"上で必ずしも役立っていません。Quarkusの使用について議論した数人の開発者は、フ"
+"レームワークが提唱するパフォーマンスの概念に難色を示していました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:73
 #, fuzzy
 msgid "Making objective choices (for the company and for developers who have a passion for the framework), on a new framework for our company was very difficult! We cannot rely solely on the advice of the Quarkus expert on our team to make the choice. This is the reason why we started with a POC, with the objective that if we would face some impossible situation, we would go back to Spring Boot without hesitation! Knowing this POC would still cost us in a difficult economic context that everyone knows."
-msgstr "会社のための新しいフレームワークについて、客観的な選択（会社のため、そしてそのフレームワークに情熱を持っている開発者のため）をすることは非常に困難でした選択の際に、チーム内のQuarkusエキスパートのアドバイスだけに頼ることはできません。これが、POCから始めた理由ですが、もし何か不可能な状況に直面したら、迷わずSpring Bootに戻るという目的を持っていました。このPOCを知っていても、誰もが知っている厳しい経済状況の中ではコストがかかります。"
+msgstr ""
+"会社のための新しいフレームワークについて、客観的な選択（会社のため、そしてそ"
+"のフレームワークに情熱を持っている開発者のため）をすることは非常に困難でした"
+"選択の際に、チーム内のQuarkusエキスパートのアドバイスだけに頼ることはできませ"
+"ん。これが、POCから始めた理由ですが、もし何か不可能な状況に直面したら、"
+"迷わずSpring Bootに戻るという目的を持っていました。このPOCを知っていても、誰"
+"もが知っている厳しい経済状況の中ではコストがかかります。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:75
 #, fuzzy
 msgid "Fortunately, the project went well, and we now have successfully deployed it in production and connected many ERP modules with external IT systems thanks to VCStream."
-msgstr "幸いなことにプロジェクトは順調に進み、現在ではVCStreamのおかげで本番導入に成功し、多くのERPモジュールと外部のITシステムを接続することができました。"
+msgstr ""
+"幸いなことにプロジェクトは順調に進み、現在ではVCStreamのおかげで本番導入に成"
+"功し、多くのERPモジュールと外部のITシステムを接続することができました。"
 
 #. type: Title ==
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:76
@@ -266,13 +342,20 @@ msgstr ""
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:81
 #, fuzzy
 msgid "This is a simplified view of the VCStream inbound process architecture: the extractor connects to multiple Kafka brokers and consumes messages from multiple topics in real time. These messages are then converted to JSON, routed and sent to multiple ERP modules (one message can go to one or more ERP modules). There is one sender instance per ERP module."
-msgstr "これは、VCStreamのインバウンドプロセスのアーキテクチャを簡略化したものです。エクストラクタは複数のKafkaブローカーに接続し、複数のトピックからのメッセージをリアルタイムで消費します。これらのメッセージはその後、JSONに変換され、ルーティングされて複数のERPモジュールに送信されます（1つのメッセージは1つ以上のERPモジュールに送信できます）。1つのERPモジュールにつき1つの送信者インスタンスがあります。"
+msgstr ""
+"これは、VCStreamのインバウンドプロセスのアーキテクチャを簡略化したものです。"
+"エクストラクタは複数のKafkaブローカーに接続し、複数のトピックからのメッセージ"
+"をリアルタイムで消費します。これらのメッセージはその後、JSONに変換され、ルー"
+"ティングされて複数のERPモジュールに送信されます（1つのメッセージは1つ以上のER"
+"Pモジュールに送信できます）。1つのERPモジュールにつき1つの送信者インスタンス"
+"があります。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:83
 #, fuzzy
 msgid "Currently, we extract from 6 topics and send to 3 ERP modules but we foresee to consume from up to 25 different topics at the end of 2022."
-msgstr "現在は6つのトピックから抽出し、3つのERPモジュールに送信していますが、2022年末には最大25のトピックから消費することを想定しています。"
+msgstr "現在は6つのトピックから抽出し、3つのERPモジュールに送信していますが、2022年末"
+"には最大25のトピックから消費することを想定しています。"
 
 #. type: Target for macro image
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:84
@@ -284,13 +367,19 @@ msgstr ""
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:87
 #, fuzzy
 msgid "This is a simplified view of the VCStream outbound process architecture: the listener watches for JSON messages from an ERP module. These messages are routed, then sent to the validator that validates them, converted to AVRO format, and exposed in dedicated topics. There is one listener instance per ERP module."
-msgstr "これは、VCStreamのアウトバウンドプロセスのアーキテクチャを簡略化したものです。リスナーは、ERPモジュールからのJSONメッセージを監視します。これらのメッセージはルーティングされ、検証を行うバリデーターに送られ、AVROフォーマットに変換され、専用のトピックで公開される。リスナーのインスタンスは、ERPモジュールごとに1つあります。"
+msgstr ""
+"これは、VCStreamのアウトバウンドプロセスのアーキテクチャを簡略化したものです"
+"。リスナーは、ERPモジュールからのJSONメッセージを監視します。これらのメッセー"
+"ジはルーティングされ、検証を行うバリデーターに送られ、AVROフォーマットに変換"
+"され、専用のトピックで公開される。リスナーのインスタンスは、ERPモジュールごと"
+"に1つあります。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:89
 #, fuzzy
 msgid "Currently we receive messages from 4 ERP modules and expose 6 topics but we foresee to expose up to 25 topics at the end of 2022."
-msgstr "現在、4つのERPモジュールからメッセージを受け取り、6つのトピックを公開していますが、2022年末には最大25のトピックを公開する予定です。"
+msgstr "現在、4つのERPモジュールからメッセージを受け取り、6つのトピックを公開していま"
+"すが、2022年末には最大25のトピックを公開する予定です。"
 
 #. type: Title ==
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:90
@@ -302,7 +391,8 @@ msgstr "Quarkusの導入"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:93
 #, fuzzy
 msgid "Here are testimonials of the usage of Quarkus from the members of the VCStream platform development team."
-msgstr "ここでは、VCStreamプラットフォーム開発チームのメンバーによるQuarkusの使用体験談をご紹介します。"
+msgstr "ここでは、VCStreamプラットフォーム開発チームのメンバーによるQuarkusの使用体験"
+"談をご紹介します。"
 
 #. type: Title ===
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:94
@@ -314,19 +404,39 @@ msgstr "_Fawaz Paraïso - チームリーダー_"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:97
 #, fuzzy
 msgid "As a developer and the team leader, I had to make my own beliefs about choosing to use Quarkus for our platform implementation. Our technological choice must be consistent with DECATHLON's development strategies."
-msgstr "開発者として、またチームリーダーとして、プラットフォームの実装にQuarkusを使用することを選択するにあたり、私は自分自身の信念を持たなければなりませんでした。私たちの技術的な選択は、DECATHLONの開発戦略と一致していなければなりません。"
+msgstr ""
+"開発者として、またチームリーダーとして、プラットフォームの実装にQuarkusを使用"
+"することを選択するにあたり、私は自分自身の信念を持たなければなりませんでした"
+"。私たちの技術的な選択は、DECATHLONの開発戦略と一致していなければなりません。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:99
 #, fuzzy
 msgid "In comparison with Spring Boot which has already established itself, Quarkus is a new framework in the Java ecosystem. Beyond these considerations (new), our team should give a concrete opinion of what Quarkus could offer. Getting started with Quarkus was easy for me, it may be related to my experience as a senior developer. After a week of development with Quarkus, I was able to regain the same level of productivity as when I was developing with Spring Boot. For the implementation of our platform, SmallRye Reactive Messaging was newer to me and met the architectural constraints of our platform. Our POC was successful with results (simplicity, performance, resilience) above our expectations. Despite the positive results obtained, I did not want to stop there. I wanted to get another perspective from a junior developer who, like me, had never used Quarkus."
-msgstr "すでに地位を確立しているSpring Bootと比較すると、QuarkusはJavaエコシステムの中では新しいフレームワークです。これらの検討事項（新規）を超えて、私たちのチームはQuarkusが提供できるものについて具体的な意見を述べなければなりません。シニアデベロッパーとしての経験が関係しているのかもしれませんが、私にとってQuarkusを使い始めるのは簡単でした。Quarkusで1週間の開発を行った後、Spring Bootで開発していた時と同じレベルの生産性を取り戻すことができました。我々のプラットフォームの実装には、SmallRye Reactive Messagingが私にとっては新しく、我々のプラットフォームのアーキテクチャ上の制約を満たしていました。私たちのPOCは、期待以上の結果（シンプルさ、パフォーマンス、回復力）を得て成功しました。良い結果が得られたにもかかわらず、私はそれだけでは終わりたくありませんでした。私と同じようにQuarkusを使ったことのないジュニアデベロッパーから別の視点を得たいと思ったのです。"
+msgstr ""
+"すでに地位を確立しているSpring Bootと比較すると、QuarkusはJavaエコシステムの"
+"中では新しいフレームワークです。これらの検討事項（新規）を超えて、私たちのチ"
+"ームはQuarkusが提供できるものについて具体的な意見を述べなければなりません。シ"
+"ニアデベロッパーとしての経験が関係しているのかもしれませんが、私にとってQuark"
+"usを使い始めるのは簡単でした。Quarkusで1週間の開発を行った後、Spring Bootで開"
+"発していた時と同じレベルの生産性を取り戻すことができました。我々のプラットフ"
+"ォームの実装には、SmallRye Reactive Messagingが私にとっては新しく、我々のプラ"
+"ットフォームのアーキテクチャ上の制約を満たしていました。私たちのPOCは、期待以"
+"上の結果（シンプルさ、パフォーマンス、回復力）を得て成功しました。良い結果が"
+"得られたにもかかわらず、私はそれだけでは終わりたくありませんでした。私と同じ"
+"ようにQuarkusを使ったことのないジュニアデベロッパーから別の視点を得たいと思っ"
+"たのです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:101
 #, fuzzy
 msgid "The arrival of a new collaborator with a junior profile in our team who does not know our project, neither Quarkus, provided me with other elements of answers on how to get started with Quarkus. He made his first contributions to our repositories in the first week. This collaborator's experience with using Quarkus has definitely assured me of how easily a junior developer can get started with Quarkus."
-msgstr "私たちのチームに、私たちのプロジェクトやQuarkusのことを知らない若い協力者が入ってきたことで、Quarkusをどうやって使い始めたらいいのか、別の要素が見えてきました。彼は、最初の週に私たちのリポジトリに初めて貢献しました。この協力者のQuarkus使用経験は、若手開発者がいかに簡単にQuarkusを使い始めることができるかを私に確信させてくれました。"
+msgstr ""
+"私たちのチームに、私たちのプロジェクトやQuarkusのことを知らない若い協力者が入"
+"ってきたことで、Quarkusをどうやって使い始めたらいいのか、別の要素が見えてきま"
+"した。彼は、最初の週に私たちのリポジトリに初めて貢献しました。この協力者のQua"
+"rkus使用経験は、若手開発者がいかに簡単にQuarkusを使い始めることができるかを私"
+"に確信させてくれました。"
 
 #. type: Title ===
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:102
@@ -338,13 +448,22 @@ msgstr "_Thomas Dangleterre - ジュニアデベロッパー_"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:107
 #, fuzzy
 msgid "I joined the team 4 months after the project started. I have been recruited to step in as a junior Java Software Developer. It was the first time I had to deal with microservices architecture and I just had a small experience of the cloud.  I really enjoy the hot reload feature on Quarkus it is something that I was not used to from my previous missions on legacy applications.  I like how it is easy to interact with Kafka thanks to the abstraction offered by SmallRye Reactive Messaging."
-msgstr "私はプロジェクト開始から4ヶ月後にチームに参加しました。私はジュニアJavaソフトウェア開発者としてステップアップするために採用されました。マイクロサービスアーキテクチャを扱うのは初めてでしたし、クラウドについても少し経験しただけでした。Quarkusのホットリロード機能は、以前のレガシーアプリケーションでの任務では慣れなかったものなので、とても気に入っています。SmallRye Reactive Messagingが提供する抽象化機能のおかげで、Kafkaとのやりとりが簡単にできるのもいいですね。"
+msgstr ""
+"私はプロジェクト開始から4ヶ月後にチームに参加しました。私はジュニアJavaソフト"
+"ウェア開発者としてステップアップするために採用されました。マイクロサービスア"
+"ーキテクチャを扱うのは初めてでしたし、クラウドについても少し経験しただけでし"
+"た。Quarkusのホットリロード機能は、以前のレガシーアプリケーションでの任務では"
+"慣れなかったものなので、とても気に入っています。SmallRye Reactive Messagingが"
+"提供する抽象化機能のおかげで、Kafkaとのやりとりが簡単にできるのもいいですね。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:109
 #, fuzzy
 msgid "It was pretty easy to adapt myself to Quarkus as I knowed Spring Boot a bit, and there are a lot of similarities. I also found Quarkus' documentation very clear and I’m really looking forward to keep learning more about Quarkus."
-msgstr "Spring Bootを少し知っていたので、Quarkusに適応するのはとても簡単でしたし、多くの類似点がありました。また、Quarkusのドキュメントは非常にわかりやすく、これからもQuarkusについてもっと学んでいきたいと思っています。"
+msgstr ""
+"Spring Bootを少し知っていたので、Quarkusに適応するのはとても簡単でしたし、多"
+"くの類似点がありました。また、Quarkusのドキュメントは非常にわかりやすく、これ"
+"からもQuarkusについてもっと学んでいきたいと思っています。"
 
 #. type: Title ===
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:111
@@ -356,13 +475,27 @@ msgstr "_Victor Gallet - シニアデベロッパー、Kafkaエキスパート_"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:116
 #, fuzzy
 msgid "When I joined the team, around ten microservices had already been deployed with Quarkus.  I had not yet had the opportunity to play with Quarkus, I had just seen presentations at a meetup and the framework interested me. Having worked since the beginning of my career with the Spring framework, I wanted to discover the big differences compared to Quarkus.  Despite utility classes and different CDI annotations, I was able to get up and running with Quarkus very quickly. The Quarkus Guides have been a huge help as they focus on one topic and get straight to the point. For example, since our microservices communicate exclusively with Apache Kafka, the Quarkus integration guide with Apache Kafka allowed me to immediately understand the concepts and our different components."
-msgstr "私がチームに参加したときには、すでに10個ほどのマイクロサービスがQuarkusで展開されていました。私はまだQuarkusを使う機会がありませんでしたが、Meetupでプレゼンテーションを見て、このフレームワークに興味を持ちました。キャリアの初めからSpringフレームワークで仕事をしてきた私は、Quarkusとの大きな違いを発見したいと思いました。ユーティリティクラスや異なるCDIアノテーションにもかかわらず、私はQuarkusをすぐに使いこなすことができました。Quarkusのガイドは、1つのトピックに焦点を当てて要点をまとめているので、非常に助かっています。例えば、私たちのマイクロサービスはApache Kafkaのみで通信しているので、Apache KafkaとのQuarkusインテグレーションガイドで、コンセプトや異なるコンポーネントをすぐに理解することができました。"
+msgstr ""
+"私がチームに参加したときには、すでに10個ほどのマイクロサービスがQuarkusで展開"
+"されていました。私はまだQuarkusを使う機会がありませんでしたが、Meetupでプレゼ"
+"ンテーションを見て、このフレームワークに興味を持ちました。キャリアの初めからS"
+"pringフレームワークで仕事をしてきた私は、Quarkusとの大きな違いを発見したいと"
+"思いました。ユーティリティクラスや異なるCDIアノテーションにもかかわらず、私は"
+"Quarkusをすぐに使いこなすことができました。Quarkusのガイドは、1つのトピックに"
+"焦点を当てて要点をまとめているので、非常に助かっています。例えば、"
+"私たちのマイクロサービスはApache Kafkaのみで通信しているので、Apache Kafkaと"
+"のQuarkusインテグレーションガイドで、コンセプトや異なるコンポーネントをすぐに"
+"理解することができました。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:118
 #, fuzzy
 msgid "Compared to the dependency injection and the implementation provided by Quarkus (ArC), I had no problem navigating it. The concepts are standard and I only had to discover some new annotations like `@ApplicationScoped` and `@Singleton` to name just the most used ones."
-msgstr "依存性注入やQuarkus（ArC）で提供されている実装と比較して、私はそれをナビゲートすることに問題はありませんでした。概念は標準的なもので、最も使用されているものを挙げると、 `@ApplicationScoped` や `@Singleton` など、いくつかの新しいアノテーションを発見する必要があっただけです。"
+msgstr ""
+"依存性注入やQuarkus（ArC）で提供されている実装と比較して、私はそれをナビゲー"
+"トすることに問題はありませんでした。概念は標準的なもので、最も使用されている"
+"ものを挙げると、 `@ApplicationScoped` や `@Singleton` "
+"など、いくつかの新しいアノテーションを発見する必要があっただけです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:120
@@ -380,7 +513,10 @@ msgstr "ライブリロードの様子"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:124
 #, fuzzy
 msgid "One feature that I really liked is the live reload. Starting my day in the morning, I would launch the application I needed to work on, and no longer have to worry about restarting it during the day. A very practical feature coupled with a very short start-up time!"
-msgstr "私がとても気に入った機能のひとつが、ライブリロードです。朝、必要なアプリケーションを起動しておけば、途中でアプリケーションを再起動する必要がありません。非常に実用的な機能であり、起動時間も非常に短い。"
+msgstr ""
+"私がとても気に入った機能のひとつが、ライブリロードです。朝、必要なアプリケー"
+"ションを起動しておけば、途中でアプリケーションを再起動する必要がありません。"
+"非常に実用的な機能であり、起動時間も非常に短い。"
 
 #. type: Title ====
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:125
@@ -407,7 +543,11 @@ msgstr ""
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:137
 #, fuzzy
 msgid "It allows the `greeting.message` property to be overridden when launching the application locally with the value __“hey”__ and for tests with the value __”hi”__. This is very convenient and greatly simplifies configuration management for testing."
-msgstr "これにより、ローカルでアプリケーションを起動する際には _「hey」_という値で、テストでは _「hi_」という値で、 `greeting.message` プロパティをオーバーライドすることができます。これは非常に便利で、テスト用の設定管理を大幅に簡素化できます。"
+msgstr ""
+"これにより、ローカルでアプリケーションを起動する際には _「hey」_という値で、"
+"テストでは _「hi_」という値で、 `greeting.message` プロパティをオーバーライド"
+"することができます。これは非常に便利で、テスト用の設定管理を大幅に簡素化でき"
+"ます。"
 
 #. type: Title ====
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:138
@@ -419,19 +559,35 @@ msgstr "サポートは"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:142
 #, fuzzy
 msgid "I already mentioned it above, but the documentation is very clear, and the guides allow you to discover a functionality, a use of Quarkus in a simple and fast way.  I was also pleasantly surprised at the responsiveness and support of the Quarkus community within their Zulip chat. A big thank you to Clément Escoffier who helped us improve our applications, and personally helped me to do my first open source contribution to the SmallRye Reactive Messaging project."
-msgstr "すでに述べたように、ドキュメントは非常にわかりやすく、ガイドを使えば簡単かつ迅速にQuarkusの機能や使い方を発見することができます。また、QuarkusコミュニティのZulipチャットでの対応やサポートにも驚かされました。アプリケーションの改善を支援してくれただけでなく、SmallRye Reactive Messagingプロジェクトへの初めてのオープンソースの貢献を個人的に支援してくれたClément Escoffier氏に感謝します。"
+msgstr ""
+"すでに述べたように、ドキュメントは非常にわかりやすく、ガイドを使えば簡単かつ"
+"迅速にQuarkusの機能や使い方を発見することができます。また、Quarkusコミュニテ"
+"ィのZulipチャットでの対応やサポートにも驚かされました。アプリケーションの改善"
+"を支援してくれただけでなく、SmallRye Reactive Messagingプロジェクトへの初めて"
+"のオープンソースの貢献を個人的に支援してくれたClément "
+"Escoffier氏に感謝します。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:144
 #, fuzzy
 msgid "One point of attention that I have come up against with my liability as a Spring developer is that Quarkus takes a number of actions during build to reduce startup time and its memory footprint. Having wanted to have a dynamic behavior in my application, I used the annotation `@IfBuildProperty` to select the appropriate bean but, as its name suggests, the bean will be selected during the build and the alternatives will not be available at runtime."
-msgstr "私がSpring開発者としての責任で直面した注意点の1つは、Quarkusが起動時間とそのメモリフットプリントを削減するためにビルド中に多くのアクションを取ることです。私のアプリケーションに動的な動作を持たせたかったので、適切なBeanを選択するためにアノテーション `@IfBuildProperty` を使用しましたが、その名前が示すように、Beanはビルド中に選択され、代替案は実行時には利用できません。"
+msgstr ""
+"私がSpring開発者としての責任で直面した注意点の1つは、Quarkusが起動時間とその"
+"メモリフットプリントを削減するためにビルド中に多くのアクションを取ることです"
+"。私のアプリケーションに動的な動作を持たせたかったので、"
+"適切なBeanを選択するためにアノテーション `@IfBuildProperty` を使用しましたが"
+"、その名前が示すように、Beanはビルド中に選択され、代替案は実行時には利用でき"
+"ません。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:146
 #, fuzzy
 msgid "Finally, to end my feedback, I regret not having faced the construction of a native image. But our project has opted for the deployment of containers within a Kubernetes cluster, which is what Quarkus is designed for."
-msgstr "最後に、フィードバックの締めくくりとして、ネイティブイメージの構築に向き合わなかったことを後悔しています。しかし、私たちのプロジェクトでは、Kubernetesクラスター内でのコンテナの展開を選択しており、それはQuarkusが設計されているものです。"
+msgstr ""
+"最後に、フィードバックの締めくくりとして、ネイティブイメージの構築に向き合わ"
+"なかったことを後悔しています。しかし、私たちのプロジェクトでは、Kubernetesク"
+"ラスター内でのコンテナの展開を選択しており、それはQuarkusが設計されているもの"
+"です。"
 
 #. type: Title ===
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:147
@@ -443,37 +599,57 @@ msgstr "_Loïc Mathieu - シニアデベロッパー_"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:150
 #, fuzzy
 msgid "I’m a regular Quarkus committer and knows very well Quarkus before I joined the team. So I will give a very narrow testimonial, on a very specific feature we used and that I very love."
-msgstr "私はQuarkusのレギュラーコミッターで、チームに参加する前からQuarkusをよく知っています。そのため、私たちが使用していて、私がとても気に入っている特定の機能について、非常に狭い範囲での証言を行います。"
+msgstr ""
+"私はQuarkusのレギュラーコミッターで、チームに参加する前からQuarkusをよく知っ"
+"ています。そのため、私たちが使用していて、私がとても気に入っている特定の機能"
+"について、非常に狭い範囲での証言を行います。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:152
 #, fuzzy
 msgid "Reactive programming is at the heart of Quarkus, and reactive messaging, as its name implies, is a reactive framework."
-msgstr "リアクティブプログラミングはQuarkusの中心であり、リアクティブメッセージングはその名の通り、リアクティブなフレームワークです。"
+msgstr "リアクティブプログラミングはQuarkusの中心であり、リアクティブメッセージングは"
+"その名の通り、リアクティブなフレームワークです。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:155
 #, fuzzy
 msgid "When you need to consume or produce a message, you can simply use the payload as method parameter or return type. But when you need to implement asynchronous processing or complex logic on a stream of messages, you’ll need to use Mutiny instead of directly using your payload type.  Mutiny is a set of reactive types and operators. It allows to express a set of transformations on a stream of items and follows the reactive stream standard."
-msgstr "メッセージを消費したり生成したりする必要があるときは、ペイロードをメソッドのパラメータや戻り値の型として使用すればよいのです。しかし、メッセージのストリームに非同期処理や複雑なロジックを実装する必要がある場合は、ペイロード型を直接使うのではなく、Mutinyを使う必要があります。Mutinyは、反応型と演算子のセットです。これにより、アイテムのストリームに対する一連の変換を表現することができ、リアクティブストリームの標準に従います。"
+msgstr ""
+"メッセージを消費したり生成したりする必要があるときは、ペイロードをメソッドの"
+"パラメータや戻り値の型として使用すればよいのです。しかし、メッセージのストリ"
+"ームに非同期処理や複雑なロジックを実装する必要がある場合は、ペイロード型を直"
+"接使うのではなく、Mutinyを使う必要があります。Mutinyは、反応型と演算子のセッ"
+"トです。これにより、アイテムのストリームに対する一連の変換を表現することがで"
+"き、リアクティブストリームの標準に従います。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:157
 #, fuzzy
 msgid "One of our needs was to group incoming messages into batches, as sending a message to an ERP module has a cost, and they fear receiving millions of messages per day. So we need to group them by type, then by batch of 50, and emit at least one batch per minute to avoid adding too much delay to the message delivery."
-msgstr "ERPモジュールへのメッセージ送信にはコストがかかり、1日に何百万通ものメッセージを受信することを恐れているからです。そこで、メッセージの種類ごとにグループ化し、次に50個のバッチごとにグループ化して、メッセージの配信に大きな遅れが出ないように、少なくとも1分間に1つのバッチを発行する必要があります。"
+msgstr ""
+"ERPモジュールへのメッセージ送信にはコストがかかり、1日に何百万通ものメッセー"
+"ジを受信することを恐れているからです。そこで、メッセージの種類ごとにグループ"
+"化し、次に50個のバッチごとにグループ化して、メッセージの配信に大きな遅れが出"
+"ないように、少なくとも1分間に1つのバッチを発行する必要があります。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:159
 #, fuzzy
 msgid "To implement this, we prototype the usage of Kafka Stream, but it adds some complexity to our current technical stack as we didn’t use it already, and it has some grouping limitations (grouping by size is not provided out of the box by the framework)."
-msgstr "これを実現するために、Kafka Streamを試作しましたが、すでに使用していなかったため、現在の技術スタックに複雑さが加わりました。また、グループ化にも制限があります（サイズによるグループ化はフレームワークでは提供されていません）。"
+msgstr ""
+"これを実現するために、Kafka Streamを試作しましたが、すでに使用していなかった"
+"ため、現在の技術スタックに複雑さが加わりました。また、グループ化にも制限があ"
+"ります（サイズによるグループ化はフレームワークでは提供されていません）。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:161
 #, fuzzy
 msgid "So we decided to simply use what we already have in our toolbox, Mutiny, and the code we implement is really readable for such a complex task, and we have been very happy with it since."
-msgstr "そこで、私たちのツールボックスにすでにあるMutinyをシンプルに使うことにしました。実装したコードは、このような複雑な作業にしては実に読みやすいもので、それ以来、とても満足しています。"
+msgstr ""
+"そこで、私たちのツールボックスにすでにあるMutinyをシンプルに使うことにしまし"
+"た。実装したコードは、このような複雑な作業にしては実に読みやすいもので、それ"
+"以来、とても満足しています。"
 
 #. type: delimited block -
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:178
@@ -547,13 +723,20 @@ msgstr "今後の展開"
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:192
 #, fuzzy
 msgid "Performance was at the heart of the design and implementation of VCStream, we perform regular load tests and run regular crisis scenarios (we simulate keeping up with a high number of messages waiting in the broker by manipulating topics offset)."
-msgstr "性能はVCStreamの設計と実装の中心であり、定期的に負荷テストを行い、定期的に危機管理シナリオを実行しています（トピックのオフセットを操作することで、ブローカーで待つメッセージの数が多い状態をシミュレートしています）。"
+msgstr ""
+"性能はVCStreamの設計と実装の中心であり、定期的に負荷テストを行い、定期的に危"
+"機管理シナリオを実行しています（トピックのオフセットを操作することで、ブロー"
+"カーで待つメッセージの数が多い状態をシミュレートしています）。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:194
 #, fuzzy
 msgid "Each time we encounter performance bottlenecks or regressions, we discuss them with the Quarkus community and have very prompt feedback. All issues were resolved quickly and the performance and resilience of our platform kept improving over time."
-msgstr "パフォーマンスのボトルネックやリグレッションに遭遇するたびに、Quarkusのコミュニティに相談し、非常に迅速なフィードバックを得ています。すべての問題は迅速に解決され、私たちのプラットフォームのパフォーマンスと回復力は時間とともに向上し続けています。"
+msgstr ""
+"パフォーマンスのボトルネックやリグレッションに遭遇するたびに、Quarkusのコミュ"
+"ニティに相談し、非常に迅速なフィードバックを得ています。すべての問題は迅速に"
+"解決され、私たちのプラットフォームのパフォーマンスと回復力は時間とともに向上"
+"し続けています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:197
@@ -561,37 +744,59 @@ msgstr "パフォーマンスのボトルネックやリグレッションに遭
 msgid ""
 "We deployed on the cloud, which implies direct cost we can measure easily. Even if today our platform is not yet used a lot in production (only half of the currently deployed topics are really used), we foreseen a need to scale to up to 1.5 million messages per minute at the end of 2022, and to connect to more than twice the current number of ERP\n"
 " modules. So the level of performance and the resources needed to achieve it is very important.\n"
-msgstr "私たちはクラウド上に展開しましたが、これは簡単に測定できる直接的なコストを意味します。現在、当社のプラットフォームは本番環境ではまだあまり使われていませんが（現在配備されているトピックの半分しか実際には使われていない）、2022年末には毎分150万通のメッセージにまでスケールアップし、現在の2倍以上の数のERPモジュールに接続する必要があると予測しています。そのため、パフォーマンスのレベルとそれを達成するために必要なリソースが非常に重要になります。"
+msgstr ""
+"私たちはクラウド上に展開しましたが、これは簡単に測定できる直接的なコストを意"
+"味します。現在、当社のプラットフォームは本番環境ではまだあまり使われていませ"
+"んが（現在配備されているトピックの半分しか実際には使われていない）、2022年末"
+"には毎分150万通のメッセージにまでスケールアップし、現在の2倍以上の数のERPモジ"
+"ュールに接続する必要があると予測しています。そのため、パフォーマンスのレベル"
+"とそれを達成するために必要なリソースが非常に重要になります。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:199
 #, fuzzy
 msgid "The good news is: we are not afraid of this as the platform in its current state can already sustain a high number of messages per minute. We benchmark our platform on our crisis scenario to **up to 500 thousand messages per minute per instance** even with Kafka clients favoring consistency"
-msgstr "現在のプラットフォームでは、すでに毎分大量のメッセージを処理することができるため、このような事態を恐れることはありません。危機管理シナリオでは、Kafkaクライアントが一貫性を重視している場合でも、 *1インスタンスあたり毎分50万通のメッセージ*を処理することができます。"
+msgstr ""
+"現在のプラットフォームでは、すでに毎分大量のメッセージを処理することができる"
+"ため、このような事態を恐れることはありません。危機管理シナリオでは、Kafkaクラ"
+"イアントが一貫性を重視している場合でも、 "
+"*1インスタンスあたり毎分50万通のメッセージ*を処理することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:201
 #, fuzzy
 msgid "And thanks to Quarkus, a single instance of a component uses **as less as 0.5 CPU and 512MB or memory** (heap size is around 120MB), we could go less as all the CPU and memory is not used, but it’s already very little so we prefer to be conservative on this. Oh, yes, and this is on Java 16 and using the JVM."
-msgstr "また、Quarkusのおかげで、コンポーネントの1つのインスタンスが使用する *CPUとメモリは0.5個、512MB*（ヒープサイズは約120MB）と *少なくなって*います。そうそう、これはJava 16でJVMを使用しています。"
+msgstr ""
+"また、Quarkusのおかげで、コンポーネントの1つのインスタンスが使用する "
+"*CPUとメモリは0.5個、512MB*（ヒープサイズは約120MB）と "
+"*少なくなって*います。そうそう、これはJava 16でJVMを使用しています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:203
 #, fuzzy
 msgid "To put it in another words, we achieve a **1 millions messages per minutes throughput per CPU per GB of memory** on a real world streaming application thanks to Quarkus and MicroProfile reactive messaging. This is quite an impressive throughput density, and we are very happy with it."
-msgstr "別の言葉で言うと、QuarkusとMicroProfileのリアクティブメッセージングのおかげで、実世界のストリーミングアプリケーションにおいて、 *メモリ1GBあたりCPUあたり1百万メッセージ/分のスループット*を達成しました。これは非常に素晴らしいスループット密度であり、非常に満足しています。"
+msgstr ""
+"別の言葉で言うと、QuarkusとMicroProfileのリアクティブメッセージングのおかげで"
+"、実世界のストリーミングアプリケーションにおいて、 *メモリ1GBあたりCPUあたり1"
+"百万メッセージ/分のスループット*を達成しました。これは非常に素晴らしいスルー"
+"プット密度であり、非常に満足しています。"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:205
 #, fuzzy
 msgid "A few last words, we would like to especially thank the Quarkus community for helping us, answering our questions again and again, improving Quarkus on each release and for the really good job they made with Quarkus and the fabulous MicroProfile Reactive Messaging framework! Thank you all, you’re amazing!"
-msgstr "最後に、私たちを助けてくれ、何度も質問に答えてくれ、リリースごとにQuarkusを改善してくれたQuarkusコミュニティに特に感謝したいと思います。また、Quarkusと素晴らしいMicroProfile Reactive Messagingフレームワークで本当に良い仕事をしてくれました。ありがとうございました、あなた方は素晴らしいです"
+msgstr ""
+"最後に、私たちを助けてくれ、何度も質問に答えてくれ、リリースごとにQuarkusを改"
+"善してくれたQuarkusコミュニティに特に感謝したいと思います。また、"
+"Quarkusと素晴らしいMicroProfile Reactive Messagingフレームワークで本当に良い"
+"仕事をしてくれました。ありがとうございました、あなた方は素晴らしいです"
 
 #. type: Plain text
 #: upstream/_posts/2021-09-13-decathlon-user-story.adoc:206
 #, fuzzy
 msgid "__This article has been written and proofread by all the members of the Age of Access Accelerator team.__"
-msgstr "_この記事は、Age of Access Acceleratorチームのメンバー全員が執筆し、校正しています。_"
+msgstr "_この記事は、Age of Access "
+"Acceleratorチームのメンバー全員が執筆し、校正しています。_"
 
 #, fuzzy
 #~ msgid "---\n"

@@ -4434,16 +4434,22 @@ msgstr ""
 #: upstream/_versions/main/guides/resteasy-reactive.adoc:2460
 #, fuzzy
 msgid "In addition to the Server side, RESTEasy Reactive comes with a new MicroProfile REST Client implementation that is non-blocking at its core."
-msgstr "RESTEasy Reactiveには、サーバー側に加えて、ノンブロッキングを核とした新しいMicroProfile Rest Clientの実装が搭載されています。"
+msgstr ""
+"RESTEasy Reactiveには、サーバー側に加えて、"
+"ノンブロッキングを核とした新しいMicroProfile Rest "
+"Clientの実装が搭載されています。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/resteasy-reactive.adoc:2462
 #, fuzzy
 msgid "Please note that the `quarkus-rest-client` extension may not be used with RESTEasy Reactive, use `quarkus-rest-client-reactive` instead."
-msgstr "なお、RESTEasy Reactiveでは、 `quarkus-rest-client` エクステンションが正常に動作しない場合があります。"
+msgstr "なお、RESTEasy Reactiveでは、 `quarkus-rest-client` "
+"エクステンションが正常に動作しない場合があります。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/resteasy-reactive.adoc:2463
 #, fuzzy
 msgid "See the xref:rest-client-reactive.adoc[REST Client Reactive Guide] for more information about the reactive REST client."
-msgstr "リアクティブ・クライアントの詳細については、link:rest-client-reactive.html[REST Client Reactiveガイド] を参照してください。"
+msgstr ""
+"リアクティブ・クライアントの詳細については、link:rest-client-reactive.html["
+"REST Client Reactiveガイド] を参照してください。"

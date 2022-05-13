@@ -245,7 +245,8 @@ msgstr "Reactive Panache Entity"
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:118
 #, fuzzy
 msgid "Let's start with the `Fruit` entity.Create the `src/main/java/org/acme/hibernate/orm/panache/Fruit.java` file with the following content:"
-msgstr "では、 _エンティティを_ 作成しましょう。以下の内容で `org.acme.reactive.crud.Fruit` クラスを作成します。"
+msgstr "では、 _エンティティを_ 作成しましょう。以下の内容で `org.acme.reactive.crud."
+"Fruit` クラスを作成します。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/getting-started-reactive.adoc:122

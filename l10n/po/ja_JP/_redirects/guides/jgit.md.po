@@ -26,7 +26,8 @@ msgstr "真"
 #: upstream/_redirects/guides/jgit.md:1
 #, fuzzy, no-wrap
 msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-jgit/dev/index.html"
-msgstr "https://quarkiverse.github.io/quarkiverse-docs/quarkus-jgit/dev/index.html"
+msgstr ""
+"https://quarkiverse.github.io/quarkiverse-docs/quarkus-jgit/dev/index.html"
 
 #. type: YAML Front Matter: permalink
 #: upstream/_redirects/guides/jgit.md:1

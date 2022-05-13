@@ -56,7 +56,10 @@ msgstr "超音速サブアトミックGraphQL"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:12
 #, fuzzy
 msgid "https://github.com/eclipse/microprofile-graphql[MicroProfile GraphQL] is now included in the just released https://quarkus.io/blog/quarkus-1-5-final-released/[version 1.5.0] of Quarkus."
-msgstr "link:https://github.com/eclipse/microprofile-graphql[MicroProfile GraphQL]は、リリースされたばかりのQuarkusの link:https://quarkus.io/blog/quarkus-1-5-final-released/[バージョン1.5.0]に含まれています。"
+msgstr ""
+"link:https://github.com/eclipse/microprofile-graphql[MicroProfile "
+"GraphQL]は、リリースされたばかりのQuarkusの link:https://quarkus.io/blog/"
+"quarkus-1-5-final-released/[バージョン1.5.0]に含まれています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:13
@@ -68,13 +71,15 @@ msgstr "GraphQLとは？"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:16
 #, fuzzy
 msgid "\"GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data."
-msgstr "「GraphQLは、APIのためのオープンソースのデータクエリおよび操作言語であり、既存のデータでクエリを実行するためのランタイムである。"
+msgstr "「GraphQLは、APIのためのオープンソースのデータクエリおよび操作言語であり、既"
+"存のデータでクエリを実行するためのランタイムである。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:17
 #, fuzzy
 msgid "GraphQL interprets strings from the client, and returns data in an understandable, predictable, pre-defined manner."
-msgstr "GraphQLは、クライアントからの文字列を解釈し、理解しやすく、予測可能で、あらかじめ定義された方法でデータを返します。"
+msgstr "GraphQLは、クライアントからの文字列を解釈し、理解しやすく、予測可能で、あらか"
+"じめ定義された方法でデータを返します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:18
@@ -104,13 +109,20 @@ msgstr "GraphQLを使用する主な理由は以下の通りです。"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:26
 #, fuzzy
 msgid "Avoiding over-fetching or under-fetching data. Clients can retrieve several types of data in a single request or can limit the response data based on specific criteria."
-msgstr "データの過剰取得や不足取得を回避する。クライアントは、1回のリクエストで複数の種類のデータを取得したり、特定の条件に基づいて応答データを制限することができます。"
+msgstr ""
+"データの過剰取得や不足取得を回避する。クライアントは、1回のリクエストで複数の"
+"種類のデータを取得したり、特定の条件に基づいて応答データを制限することができ"
+"ます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:27
 #, fuzzy
 msgid "Enabling data models to evolve. Changes to the schema can be made so as to not require changes on existing clients, and vice versa - this can be done without a need for a new version of the application."
-msgstr "データモデルを進化させることができる。既存のクライアントに変更を加えないようにスキーマを変更したり、逆に既存のクライアントに変更を加えないようにスキーマを変更したりすることができ、アプリケーションの新バージョンを必要とせずに行うことができます。"
+msgstr ""
+"データモデルを進化させることができる。既存のクライアントに変更を加えないよう"
+"にスキーマを変更したり、逆に既存のクライアントに変更を加えないようにスキーマ"
+"を変更したりすることができ、アプリケーションの新バージョンを必要とせずに行う"
+"ことができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:28
@@ -122,19 +134,28 @@ msgstr "高度な開発者の経験"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:29
 #, fuzzy
 msgid "The schema defines how the data can be accessed and serves as the contract between the client and the server. Development teams on both sides can work without further communication."
-msgstr "スキーマは、データにどのようにアクセスできるかを定義し、クライアントとサーバーの間の契約として機能します。双方の開発チームは、さらなるコミュニケーションなしに作業を進めることができます。"
+msgstr ""
+"スキーマは、データにどのようにアクセスできるかを定義し、クライアントとサーバ"
+"ーの間の契約として機能します。双方の開発チームは、さらなるコミュニケーション"
+"なしに作業を進めることができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:30
 #, fuzzy
 msgid "Native schema introspection enables users to discover APIs and to refine the queries on the client-side. This advantage is increased with graphical tools such as GraphiQL and GraphQL Voyager enabling smooth and easy API discovery."
-msgstr "ネイティブなスキーマイントロスペクションにより、ユーザーはAPIを発見し、クライアントサイドでクエリを改良することができます。この利点は、GraphiQLやGraphQL Voyagerなどのグラフィカルなツールにより、スムーズで簡単なAPIの発見を可能にします。"
+msgstr ""
+"ネイティブなスキーマイントロスペクションにより、ユーザーはAPIを発見し、クライ"
+"アントサイドでクエリを改良することができます。この利点は、GraphiQLやGraphQL V"
+"oyagerなどのグラフィカルなツールにより、スムーズで簡単なAPIの発見を可能にしま"
+"す。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:31
 #, fuzzy
 msgid "On the client-side, the query language provides flexibility and efficiency enabling developers to adapt to the constraints of their technical environments while reducing server round-trips."
-msgstr "クライアント側では、クエリ言語は柔軟性と効率性を備えており、開発者は技術的環境の制約に適応しつつ、サーバーのラウンドトリップを減らすことができます。"
+msgstr ""
+"クライアント側では、クエリ言語は柔軟性と効率性を備えており、開発者は技術的環"
+"境の制約に適応しつつ、サーバーのラウンドトリップを減らすことができます。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:32
@@ -146,7 +167,10 @@ msgstr "MicroProfile GraphQLとは？"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:35
 #, fuzzy
 msgid "\"The intent of the MicroProfile GraphQL specification is to provide a \"code-first\" set of APIs that will enable users to quickly develop portable GraphQL-based applications in Java."
-msgstr "「MicroProfile GraphQL仕様の意図は、ユーザーがJavaでポータブルなGraphQLベースのアプリケーションを迅速に開発できるよう、「コードファースト」なAPI群を提供することにあります。"
+msgstr ""
+"「MicroProfile GraphQL仕様の意図は、ユーザーがJavaでポータブルなGraphQLベース"
+"のアプリケーションを迅速に開発できるよう、「コードファースト」なAPI群を提供す"
+"ることにあります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:36
@@ -158,7 +182,11 @@ msgstr "この仕様のすべての実装には、次の2つの主要な要件�
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:38
 #, fuzzy
 msgid "Generate and make the GraphQL Schema available. This is done by looking at the annotations in the users code, and must include all GraphQL Queries and Mutations as well as all entities as defined implicitly via the response type or argument(s) of Queries and Mutations."
-msgstr "GraphQL スキーマを生成して利用可能にする。これは、ユーザーコードのアノテーションを見て行うもので、すべてのGraphQLクエリとミューテーション、およびクエリとミューテーションのレスポンスタイプや引数で暗黙的に定義されるすべてのエンティティを含まなければならない。"
+msgstr ""
+"GraphQL スキーマを生成して利用可能にする。これは、ユーザーコードのアノテーシ"
+"ョンを見て行うもので、すべてのGraphQLクエリとミューテーション、およびクエリと"
+"ミューテーションのレスポンスタイプや引数で暗黙的に定義されるすべてのエンティ"
+"ティを含まなければならない。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:39
@@ -170,19 +198,27 @@ msgstr "}\n"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:40
 #, fuzzy
 msgid "Execute GraphQL requests. This will be in the form of either a Query or a Mutation. As a minimum the specification must support executing these requests via HTTP.\""
-msgstr "GraphQLリクエストを実行する。これは、QueryまたはMutationの形式で行われます。最低限の仕様として、これらのリクエストをHTTP経由で実行することをサポートしなければならない。\""
+msgstr ""
+"GraphQLリクエストを実行する。これは、QueryまたはMutationの形式で行われます。"
+"最低限の仕様として、これらのリクエストをHTTP経由で実行することをサポートしな"
+"ければならない。\""
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:42
 #, fuzzy
 msgid "Read the full https://download.eclipse.org/microprofile/microprofile-graphql-1.0/microprofile-graphql.html[MicroProfile GraphQL Specification]"
-msgstr "link:https://download.eclipse.org/microprofile/microprofile-graphql-1.0/microprofile-graphql.html[MicroProfile GraphQL仕様書]の全文を読む"
+msgstr ""
+"link:https://download.eclipse.org/microprofile/microprofile-graphql-1.0/"
+"microprofile-graphql.html[MicroProfile GraphQL仕様書]の全文を読む"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:44
 #, fuzzy
 msgid "You can now use https://code.quarkus.io/[code.quarkus.io] to get going with Quarkus and include the https://github.com/smallrye/smallrye-graphql[SmallRye GraphQL Extension]."
-msgstr "link:https://code.quarkus.io/[Code.quarkus.io]を使ってQuarkusを起動し、 link:https://github.com/smallrye/smallrye-graphql[SmallRye GraphQL Extension]を組み込むことができるようになりました。"
+msgstr ""
+"link:https://code.quarkus.io/[Code.quarkus.io]を使ってQuarkusを起動し、 "
+"link:https://github.com/smallrye/smallrye-graphql[SmallRye GraphQL "
+"Extension]を組み込むことができるようになりました。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:45
@@ -200,7 +236,8 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:48
 #, fuzzy
 msgid "This will create a Quarkus starter application with the following dependencies:"
-msgstr "これにより、以下の依存関係にあるQuarkusスターターアプリケーションが作成されます。"
+msgstr "これにより、以下の依存関係にあるQuarkusスターターアプリケーションが作成されま"
+"す。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:69
@@ -230,7 +267,13 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:75
 #, fuzzy
 msgid "At the moment, the example application created is a JAX-RS application. There is https://github.com/quarkusio/quarkus/issues/8134[some work in progress] to allow extensions to define custom examples application, but until then we always get a JAX-RS application. You can remove the `quarkus-resteasy` dependency as we do not need JAX-RS."
-msgstr "現時点では、作成されるサンプルアプリケーションはJAX-RSアプリケーションとなっています。拡張機能でカスタムのサンプルアプリケーションを定義できるようにするための作業が link:https://github.com/quarkusio/quarkus/issues/8134[進行中]ですが、それまでは常にJAX-RSアプリケーションが作成されます。JAX-RSを必要としないため、 `quarkus-resteasy` の依存関係を削除することができます。"
+msgstr ""
+"現時点では、作成されるサンプルアプリケーションはJAX-"
+"RSアプリケーションとなっています。拡張機能でカスタムのサンプルアプリケーショ"
+"ンを定義できるようにするための作業が link:https://github.com/quarkusio/"
+"quarkus/issues/8134[進行中]ですが、それまでは常にJAX-"
+"RSアプリケーションが作成されます。JAX-RSを必要としないため、 `quarkus-"
+"resteasy` の依存関係を削除することができます。"
 
 #. type: Title ==
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:77
@@ -260,7 +303,8 @@ msgstr "`@GET` メソッドのアノテーションを `@Query` に置き換え�
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:84
 #, fuzzy
 msgid "Remove the `@Produces(MediaType.TEXT_PLAIN)` method annotation and all JAX-RS imports."
-msgstr "`@Produces(MediaType.TEXT_PLAIN)` メソッドアノテーションとすべてのJAX-RSインポートを削除します。"
+msgstr "`@Produces(MediaType.TEXT_PLAIN)` メソッドアノテーションとすべてのJAX-"
+"RSインポートを削除します。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:86
@@ -305,7 +349,8 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:105
 #, fuzzy
 msgid "You can now run the application using Quarkus dev mode:"
-msgstr "これで、Quarkusの開発モードを使ってアプリケーションを実行できるようになりました。"
+msgstr "これで、Quarkusの開発モードを使ってアプリケーションを実行できるようになりまし"
+"た。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:109
@@ -319,7 +364,9 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:177
 #, fuzzy
 msgid "Now browse to http://localhost:8080/graphql-ui/[localhost:8080/graphql-ui/] and run the following query:"
-msgstr "次に、 link:http://localhost:8080/graphql-ui/[localhost:8080/graphql-ui/]をブラウズして、以下のクエリを実行します。"
+msgstr ""
+"次に、 link:http://localhost:8080/graphql-ui/[localhost:8080/graphql-ui/"
+"]をブラウズして、以下のクエリを実行します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:118
@@ -351,7 +398,8 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:131
 #, fuzzy
 msgid "Also see the link:/guides/microprofile-graphql[MicroProfile GraphQL guide]."
-msgstr "また、 link:/guides/microprofile-graphql[MicroProfile GraphQLガイド]もご覧ください。"
+msgstr "また、 link:/guides/microprofile-graphql[MicroProfile "
+"GraphQLガイド]もご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:133
@@ -363,13 +411,16 @@ msgstr "より詳細な例"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:135
 #, fuzzy
 msgid "Let's look at a more detailed example, get the source from https://github.com/phillip-kruger/graphql-example[this GitHub project]."
-msgstr "link:https://github.com/phillip-kruger/graphql-example[このGitHubプロジェクト]からソースを入手して、より詳細な例を見てみましょう。"
+msgstr ""
+"link:https://github.com/phillip-kruger/graphql-example[このGitHubプロジェクト"
+"]からソースを入手して、より詳細な例を見てみましょう。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:137
 #, fuzzy
 msgid "This is a multi-module application. First compile all modules. In the root:"
-msgstr "これはマルチモジュールのアプリケーションです。まず、すべてのモジュールをコンパイルします。ルートに"
+msgstr "これはマルチモジュールのアプリケーションです。まず、すべてのモジュールをコン"
+"パイルします。ルートに"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:141
@@ -393,7 +444,8 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:151
 #, fuzzy
 msgid "Look at `ProfileGraphQLApi.java` that is marked as a `@GraphQLApi`:"
-msgstr "`@GraphQLApi` としてマークされている `ProfileGraphQLApi.java` を見てください。"
+msgstr "`@GraphQLApi` としてマークされている `ProfileGraphQLApi.java` "
+"を見てください。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:158
@@ -410,13 +462,22 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:162
 #, fuzzy
 msgid "Above method will get a person by `personId`. As you can see the method is made queryable with the `@Query` annotation. You can optionally provide the name (\"person\" in this case), however the default would be \"person\" anyway (method name without \"get\"). You can also optionally name the parameter, but the default would be the parameter name (\"personId\")."
-msgstr "上記のメソッドは、 `personId` で人を取得します。ご覧の通り、このメソッドは `@Query` のアノテーションで問い合わせ可能になっています。オプションで名前を指定することができますが（この例では \"person\"）、デフォルトでは \"person \"となります（メソッド名から \"get \"を除いたもの）。また、パラメータの名前を任意に指定することもできますが、デフォルトではパラメータ名（\"personId\"）になります。"
+msgstr ""
+"上記のメソッドは、 `personId` で人を取得します。ご覧の通り、このメソッドは "
+"`@Query` のアノテーションで問い合わせ可能になっています。オプションで名前を指"
+"定することができますが（この例では \"person\"）、デフォルトでは \"person "
+"\"となります（メソッド名から \"get \"を除いたもの）。また、パラメータの名前を"
+"任意に指定することもできますが、デフォルトではパラメータ名（\"personId\""
+"）になります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:164
 #, fuzzy
 msgid "The Person Object is a POJO that represents a Person (User or Member) in the system. It has many fields, some that are other complex POJOs:"
-msgstr "Personオブジェクトは、システム内のPerson（ユーザーまたはメンバー）を表すPOJOです。このオブジェクトには多くのフィールドがあり、中には他の複雑なPOJOもあります。"
+msgstr ""
+"Personオブジェクトは、システム内のPerson（ユーザーまたはメンバー）を表すPOJO"
+"です。このオブジェクトには多くのフィールドがあり、中には他の複雑なPOJOもあり"
+"ます。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:165
@@ -434,7 +495,8 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:168
 #, fuzzy
 msgid "However, the `Query` annotation makes it possible to query the exact fields we are interested in."
-msgstr "しかし、 `Query` のアノテーションにより、興味のあるフィールドを正確に照会することができます。"
+msgstr "しかし、 `Query` "
+"のアノテーションにより、興味のあるフィールドを正確に照会することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:170
@@ -462,13 +524,16 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:193
 #, fuzzy
 msgid "Notice that you have 'code insight' in the editor. That is because GraphQL has a schema and also supports introspection."
-msgstr "エディタに「コードインスペクション」があることに注目してください。それは、GraphQLがスキーマを持ち、イントロスペクションもサポートしているからです。"
+msgstr ""
+"エディタに「コードインスペクション」があることに注目してください。それは、Gra"
+"phQLがスキーマを持ち、イントロスペクションもサポートしているからです。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:195
 #, fuzzy
 msgid "We can request only the fields we are interested in, making the payload much smaller."
-msgstr "興味のある分野だけをリクエストすることができるので、ペイロードが非常に小さくなります。"
+msgstr "興味のある分野だけをリクエストすることができるので、ペイロードが非常に小さく"
+"なります。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:196
@@ -486,7 +551,9 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:199
 #, fuzzy
 msgid "We can also combine queries, i.e., lets say we want to get the fields for person 1 as shown above, and also the name and surname for person 2, we can do the following:"
-msgstr "また、クエリを組み合わせることもできます。例えば、上の図のように人物1のフィールドを取得し、さらに人物2の名前と姓を取得したい場合は、次のようにします。"
+msgstr ""
+"また、クエリを組み合わせることもできます。例えば、上の図のように人物1のフィー"
+"ルドを取得し、さらに人物2の名前と姓を取得したい場合は、次のようにします。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:216
@@ -566,7 +633,10 @@ msgstr "ソースフィールド"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:264
 #, fuzzy
 msgid "If you look closely at our query, you will see we asked for the `scores` field of the person, however, the `Person` POJO does not contain a `scores` field.  We added the `scores` field by adding a `@Source` field to the person:"
-msgstr "このクエリをよく見ると、人物の `scores` フィールドを要求していますが、 `Person` POJO には `scores` フィールドが含まれていません。そこで、人物に `@Source` フィールドを追加することで、 `scores` フィールドを追加しました。"
+msgstr ""
+"このクエリをよく見ると、人物の `scores` フィールドを要求していますが、 "
+"`Person` POJO には `scores` フィールドが含まれていません。そこで、人物に "
+"`@Source` フィールドを追加することで、 `scores` フィールドを追加しました。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:275
@@ -581,7 +651,8 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:278
 #, fuzzy
 msgid "So we can add fields that merge onto the output by adding the `@Source` parameter that matches the response type."
-msgstr "そこで、レスポンスタイプにマッチする `@Source` パラメータを追加することで、出力にマージするフィールドを追加することができます。"
+msgstr "そこで、レスポンスタイプにマッチする `@Source` パラメータを追加することで、出"
+"力にマージするフィールドを追加することができます。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:280
@@ -593,7 +664,10 @@ msgstr "部分的な結果"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:283
 #, fuzzy
 msgid "The above example merges two different data sources, but let's say the score system is down. We will then still return the data we have, and an error for the score:"
-msgstr "上記の例では、2つの異なるデータソースをマージしていますが、仮にスコアシステムがダウンしていたとします。その場合でも、持っているデータを返し、スコアについてはエラーを返します。"
+msgstr ""
+"上記の例では、2つの異なるデータソースをマージしていますが、仮にスコアシステム"
+"がダウンしていたとします。その場合でも、持っているデータを返し、スコアについ"
+"てはエラーを返します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:317
@@ -642,7 +716,8 @@ msgstr "ネイティブモード"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:322
 #, fuzzy
 msgid "Let's run this example in native mode (using graalvm-ce-java11-19.3.2):"
-msgstr "この例をネイティブモードで実行してみましょう（graalvm-ce-java11-19.3.2を使用）。"
+msgstr "この例をネイティブモードで実行してみましょう（graalvm-ce-java11-19.3."
+"2を使用）。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:326
@@ -654,7 +729,8 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:329
 #, fuzzy
 msgid "This will create a native executable and will now start the application very quickly:"
-msgstr "これにより、ネイティブ実行可能ファイルが作成され、アプリケーションが素早く起動するようになります。"
+msgstr "これにより、ネイティブ実行可能ファイルが作成され、アプリケーションが素早く起"
+"動するようになります。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:340
@@ -680,13 +756,17 @@ msgstr "パイプライン"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:346
 #, fuzzy
 msgid "This is the first version of the MicroProfile GraphQL Spec and there are many things in the pipeline. One of those is a client.  We are proposing two types of clients:"
-msgstr "これはMicroProfile GraphQL Specの最初のバージョンで、いろいろなものが準備されています。そのひとつがクライアントです。私たちは2種類のクライアントを提案しています。"
+msgstr ""
+"これはMicroProfile GraphQL Specの最初のバージョンで、いろいろなものが準備され"
+"ています。そのひとつがクライアントです。私たちは2種類のクライアントを提案して"
+"います。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:349
 #, fuzzy
 msgid "### Dynamic The dynamic client will allow you to build a query using a builder:"
-msgstr "ダイナミック ダイナミッククライアントでは、ビルダーを使ってクエリを構築することができます。"
+msgstr "ダイナミック ダイナミッククライアントでは、ビルダーを使ってクエリを構築するこ"
+"とができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:359
@@ -713,7 +793,9 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:365
 #, fuzzy
 msgid "For more details see: https://github.com/worldline/dynaql[github.com/worldline/dynaql]"
-msgstr "詳しくは、 link:https://github.com/worldline/dynaql[github.com/worldline/dynaql]をご覧ください。"
+msgstr ""
+"詳しくは、 link:https://github.com/worldline/dynaql[github.com/worldline/"
+"dynaql]をご覧ください。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:367
@@ -725,13 +807,19 @@ msgstr "タイプセーフ"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:370
 #, fuzzy
 msgid "The type safe client will be closer to MicroProfile RESTClient. Looking at the same example as above, lets see how we can to use it.  From the root of the project, browse to the `quarkus-client` folder. This example uses https://quarkus.io/blog/introducing-command-mode/[Quarkus Command Mode] to make a Query."
-msgstr "安全なクライアントのタイプは、MicroProfile RESTClientに近いものになります。上記と同じ例を見て、どのように使用するかを見てみましょう。プロジェクトのルートから、 `quarkus-client` フォルダを参照します。この例では、 link:https://quarkus.io/blog/introducing-command-mode/[Quarkusのコマンドモード]を使ってクエリを作成しています。"
+msgstr ""
+"安全なクライアントのタイプは、MicroProfile RESTClientに近いものになります。上"
+"記と同じ例を見て、どのように使用するかを見てみましょう。プロジェクトのルート"
+"から、 `quarkus-client` フォルダを参照します。この例では、 "
+"link:https://quarkus.io/blog/introducing-command-mode/"
+"[Quarkusのコマンドモード]を使ってクエリを作成しています。"
 
 #. type: Plain text
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:372
 #, fuzzy
 msgid "The client is not yet a Quarkus Extension, so we add it in our project like this:"
-msgstr "クライアントはまだQuarkus Extensionではないので、以下のようにプロジェクトに追加します。"
+msgstr "クライアントはまだQuarkus "
+"Extensionではないので、以下のようにプロジェクトに追加します。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:380
@@ -748,7 +836,10 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:383
 #, fuzzy
 msgid "Now we can create a POJO that contains only fields that we are interested in. Looking at `Person` and `Score` in the client module, it is much smaller than the definition on the server side:"
-msgstr "これで、興味のあるフィールドだけを含むPOJOを作成することができます。クライアント・モジュールの `Person` と `Score` を見ると、サーバー側の定義よりもはるかに小さくなっています。"
+msgstr ""
+"これで、興味のあるフィールドだけを含むPOJOを作成することができます。クライア"
+"ント・モジュールの `Person` と `Score` "
+"を見ると、サーバー側の定義よりもはるかに小さくなっています。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:384
@@ -815,7 +906,10 @@ msgstr ""
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:411
 #, fuzzy
 msgid "Running the Quarkus client appication we can now make a call to the server (make sure this is still running) and print the response:"
-msgstr "Quarkusのクライアントアプケーションを実行することで、サーバーへのコール（これがまだ実行されていることを確認してください）を行い、レスポンスを印刷することができます。"
+msgstr ""
+"Quarkusのクライアントアプケーションを実行することで、サーバーへのコール（これ"
+"がまだ実行されていることを確認してください）を行い、レスポンスを印刷すること"
+"ができます。"
 
 #. type: delimited block -
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:432
@@ -857,7 +951,12 @@ msgstr "まとめ"
 #: upstream/_posts/2020-06-23-supersonic-subatomic-graphql.adoc:440
 #, fuzzy
 msgid "This is a short and quick introduction to MicroProfile GraphQL that is now available in Quarkus.  There are many more https://download.eclipse.org/microprofile/microprofile-graphql-1.0.2/microprofile-graphql.html[features] and even more https://github.com/eclipse/microprofile-graphql/issues[planned], so stay tuned."
-msgstr "これは、Quarkusで利用できるようになったMicroProfile GraphQLについて、短くて簡単な紹介です。この他にも多くの link:https://download.eclipse.org/microprofile/microprofile-graphql-1.0.2/microprofile-graphql.html[機能]があり、さらに多くの機能が link:https://github.com/eclipse/microprofile-graphql/issues[予定されてい]ますので、ご期待ください。"
+msgstr ""
+"これは、Quarkusで利用できるようになったMicroProfile "
+"GraphQLについて、短くて簡単な紹介です。この他にも多くの link:https://download"
+".eclipse.org/microprofile/microprofile-graphql-1.0.2/microprofile-graphql."
+"html[機能]があり、さらに多くの機能が link:https://github.com/eclipse/"
+"microprofile-graphql/issues[予定されてい]ますので、ご期待ください。"
 
 #, fuzzy
 #~ msgid "---\n"

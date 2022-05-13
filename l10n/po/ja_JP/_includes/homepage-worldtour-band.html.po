@@ -32,13 +32,18 @@ msgstr "Quarkus World Tour 2021"
 #: upstream/_includes/homepage-worldtour-band.html:8
 #, fuzzy
 msgid "A virtual (and in person where possible) tour of Java User Groups creating a unique hands-on experience with access to Quarkus experts designed to help you get started with Java in a Kubernetes world."
-msgstr "Java User Groupsのバーチャルツアーでは、Kubernetesの世界でJavaを使い始めるのに役立つように設計され、Quarkusのエキスパートにアクセスできるユニークなハンズオン体験を用意しています。"
+msgstr ""
+"Java User Groupsのバーチャルツアーでは、Kubernetesの世界でJavaを使い始めるの"
+"に役立つように設計され、Quarkusのエキスパートにアクセスできるユニークなハンズ"
+"オン体験を用意しています。"
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/homepage-worldtour-band.html:9
 #, fuzzy
 msgid "<a href=\"{{site.baseurl}}/worldtour/\">Learn more about the Quarkus World Tour</a>"
-msgstr "<a href=\"{{site.baseurl}}/worldtour/\">Quarkus World Tourについて詳しく知る</a>。"
+msgstr ""
+"<a href=\"{{site.baseurl}}/worldtour/\">Quarkus World "
+"Tourについて詳しく知る</a>。"
 
 #~ msgid "<a href=\"/worldtour/\">World Tour stop schedule and information</a>"
 #~ msgstr "<a href=\"/worldtour/\">ワールドツアー開催スケジュールと情報</a>"

@@ -81,7 +81,10 @@ msgstr "セキュリティーエクステンションのテスト"
 #: upstream/_versions/main/guides/security-testing.adoc:42
 #, fuzzy
 msgid "Quarkus provides explicit support for testing with different users, and with the security subsystem disabled. To use this you must include the `quarkus-test-security` dependency:"
-msgstr "Quarkusは、異なるユーザーでのテストや、セキュリティーサブシステムを無効にした状態でのテストを明示的にサポートしています。これを使用するには、 `quarkus-test-security` のアーティファクトを含める必要があります。"
+msgstr ""
+"Quarkusは、異なるユーザーでのテストや、セキュリティーサブシステムを無効にした"
+"状態でのテストを明示的にサポートしています。これを使用するには、 `quarkus-"
+"test-security` のアーティファクトを含める必要があります。"
 
 #. type: Block title
 #: upstream/_versions/main/guides/security-testing.adoc:44
@@ -168,7 +171,8 @@ msgstr ""
 #: upstream/_versions/main/guides/security-testing.adoc:97
 #, fuzzy
 msgid "The feature is only available for `@QuarkusTest` and will **not** work on a `@NativeImageTest` or `@QuarkusIntegrationTest`."
-msgstr "この機能は `@QuarkusTest` でのみ利用可能で、 `@NativeImageTest` では動作 *しません*。"
+msgstr "この機能は `@QuarkusTest` でのみ利用可能で、 `@NativeImageTest` では動作 "
+"*しません*。"
 
 #. type: Title ===
 #: upstream/_versions/main/guides/security-testing.adoc:99

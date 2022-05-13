@@ -2122,7 +2122,8 @@ msgstr ""
 #: upstream/_versions/main/guides/qute-reference.adoc:976
 #, fuzzy
 msgid "This section can be used to include another template and possibly override some parts of the template (see the _template inheritance_ below)."
-msgstr "このセクションでは、別のテンプレートをインクルードしたり、テンプレートの一部をオーバーライドすることができます(テンプレートの継承)。"
+msgstr "このセクションでは、別のテンプレートをインクルードしたり、テンプレートの一部"
+"をオーバーライドすることができます(テンプレートの継承)。"
 
 #. type: Block title
 #: upstream/_versions/main/guides/qute-reference.adoc:977
@@ -2242,7 +2243,8 @@ msgstr "ユーザー定義タグ"
 #: upstream/_versions/main/guides/qute-reference.adoc:1032
 #, fuzzy
 msgid "User-defined tags can be used to include a _tag template_, optionally pass some arguments and possibly override some parts of the template.  Let's suppose we have a tag template called `itemDetail.html`:"
-msgstr "このセクションでは、別のテンプレートをインクルードしたり、テンプレートの一部をオーバーライドすることができます(テンプレートの継承)。"
+msgstr "このセクションでは、別のテンプレートをインクルードしたり、テンプレートの一部"
+"をオーバーライドすることができます(テンプレートの継承)。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/qute-reference.adoc:1039
@@ -2379,7 +2381,8 @@ msgstr ""
 #: upstream/_versions/main/guides/qute-reference.adoc:1104
 #, fuzzy
 msgid "It's not possible to override parts of the evaluated template."
-msgstr "また、インクルードされたテンプレートで使用できるオプションのパラメーターを定義することも可能です。"
+msgstr "また、インクルードされたテンプレートで使用できるオプションのパラメーターを定"
+"義することも可能です。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/qute-reference.adoc:1108
@@ -2396,7 +2399,8 @@ msgstr ""
 #: upstream/_versions/main/guides/qute-reference.adoc:1111
 #, fuzzy
 msgid "It's also possible to define optional parameters that can be used in the evaluated template."
-msgstr "また、インクルードされたテンプレートで使用できるオプションのパラメーターを定義することも可能です。"
+msgstr "また、インクルードされたテンプレートで使用できるオプションのパラメーターを定"
+"義することも可能です。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1112
@@ -2580,7 +2584,9 @@ msgstr ""
 #: upstream/_versions/main/guides/qute-reference.adoc:1209
 #, fuzzy
 msgid "`null` is a valid value though. It is considered `falsy` as described in the <<if_section>> and does not produce any output."
-msgstr "三項演算子の条件は、 <<if_section>> で説明したように、値が `falsy` とみなされない場合は `true` と評価されます。"
+msgstr ""
+"三項演算子の条件は、 <<if_section>> で説明したように、値が `falsy` "
+"とみなされない場合は `true` と評価されます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1212
@@ -2780,7 +2786,8 @@ msgstr ""
 #: upstream/_versions/main/guides/qute-reference.adoc:1312
 #, fuzzy
 msgid "First, a bean with name `personService` is found and then used as the base object."
-msgstr "まず、 `foo` という名前のBeanを見つけ、それをベースオブジェクトとして使用します。"
+msgstr "まず、 `foo` "
+"という名前のBeanを見つけ、それをベースオブジェクトとして使用します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1313
@@ -3540,7 +3547,9 @@ msgstr "`{#for r in recordsList.takeLast(3)}`"
 #: upstream/_versions/main/guides/qute-reference.adoc:1666
 #, fuzzy
 msgid "`first`: Returns the first element of the given list; throws an `NoSuchElementException` if the list is empty"
-msgstr "`take`: 与えられたリストから最初の `n` 要素を返します。 `n` が範囲外の場合は `IndexOutOfBoundsException` を投げます。"
+msgstr ""
+"`take`: 与えられたリストから最初の `n` 要素を返します。 `n` が範囲外の場合は "
+"`IndexOutOfBoundsException` を投げます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1667
@@ -3552,7 +3561,9 @@ msgstr "`{#for r in recordsList.reversed}`"
 #: upstream/_versions/main/guides/qute-reference.adoc:1669
 #, fuzzy
 msgid "`last`: Returns the last element of the given list; throws an `NoSuchElementException` if the list is empty"
-msgstr "`takeLast`: 与えられたリストから最後の `n` 要素を返します。 `n` が範囲外の場合は `IndexOutOfBoundsException` を投げます。"
+msgstr ""
+"`takeLast`: 与えられたリストから最後の `n` 要素を返します。 `n` "
+"が範囲外の場合は `IndexOutOfBoundsException` を投げます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1670
@@ -3653,7 +3664,8 @@ msgstr "`{config:property(foo.getPropertyName())}`"
 #: upstream/_versions/main/guides/qute-reference.adoc:1697
 #, fuzzy
 msgid "`config:boolean(name)`: Returns the config value for the given property name as a boolean; the name can be obtained dynamically by an expression"
-msgstr "`config:property(name)` : 指定したプロパティー名の設定値を返します。名前は式で動的に取得することが可能です。"
+msgstr "`config:property(name)` : 指定したプロパティー名の設定値を返します。名前は式"
+"で動的に取得することが可能です。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1698
@@ -3669,7 +3681,8 @@ msgstr "`{config:boolean(foo.getPropertyName()) ?: 'property is false'}`"
 #: upstream/_versions/main/guides/qute-reference.adoc:1701
 #, fuzzy
 msgid "`config:integer(name)`: Returns the config value for the given property name as an integer; the name can be obtained dynamically by an expression"
-msgstr "`config:property(name)` : 指定したプロパティー名の設定値を返します。名前は式で動的に取得することが可能です。"
+msgstr "`config:property(name)` : 指定したプロパティー名の設定値を返します。名前は式"
+"で動的に取得することが可能です。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1702
@@ -4057,7 +4070,9 @@ msgstr ""
 #: upstream/_versions/main/guides/qute-reference.adoc:1889
 #, fuzzy
 msgid "Note that global variables implicitly add <<typesafe_expressions, parameter declarations>> to all templates and so any expression that references a global variable is validated during build."
-msgstr "`item` パラメーターは自動的に <<typesafe_expressions,parameter declaration>> に変換されるので、この名前を参照するすべての式が検証されます。"
+msgstr ""
+"`item` パラメーターは自動的に <<typesafe_expressions,parameter declaration>> "
+"に変換されるので、この名前を参照するすべての式が検証されます。"
 
 #. type: Block title
 #: upstream/_versions/main/guides/qute-reference.adoc:1890
@@ -4176,7 +4191,9 @@ msgstr ""
 #: upstream/_versions/main/guides/qute-reference.adoc:1946
 #, fuzzy
 msgid "Make use of <<typesafe_templates,type-safe templates>> or <<typesafe_expressions,type-safe expressions>>"
-msgstr "<<typesafe_templates,type-safe templates>> のメソッドパラメーターは、自動的にパラメーター宣言に変換されます。"
+msgstr ""
+"<<typesafe_templates,type-safe templates>> "
+"のメソッドパラメーターは、自動的にパラメーター宣言に変換されます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:1947
@@ -4569,7 +4586,9 @@ msgstr "`@Localized` でアノテーションされたデフォルトのイン�
 #: upstream/_versions/main/guides/qute-reference.adoc:2126
 #, fuzzy
 msgid "Create an UTF-8 encoded file located in the `src/main/resources/messages` directory of an application archive; e.g. `msg_de.properties`."
-msgstr "`src/main/resources/messages` に UTF-8 エンコードされたファイルを作成します。例: `msg_de.properties`"
+msgstr ""
+"`src/main/resources/messages` に UTF-8 "
+"エンコードされたファイルを作成します。例: `msg_de.properties`"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/qute-reference.adoc:2128

@@ -108,7 +108,8 @@ msgstr ""
 #: upstream/_versions/main/guides/getting-started-testing.adoc:55
 #, fuzzy
 msgid "If you have started from the Getting Started example you should already have a completed test, including the correct tooling setup."
-msgstr "はじめにのサンプルから始めた場合は、正しい `pom.xml`  の設定を含めて、すでにテストが完了しているはずです。"
+msgstr "はじめにのサンプルから始めた場合は、正しい `pom.xml`  "
+"の設定を含めて、すでにテストが完了しているはずです。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started-testing.adoc:57
@@ -1038,13 +1039,16 @@ msgstr ""
 #: upstream/_versions/main/guides/getting-started-testing.adoc:610
 #, fuzzy
 msgid "Now we have defined our profile we need to include it on our test class.  We do this by annotating the test class with `@TestProfile(MockGreetingProfile.class)`."
-msgstr "プロファイルを定義したので、それをテストクラスに含める必要があります。 `@TestProfile(MockGreetingProfile.class)` で、これを行うことが出来ます。"
+msgstr ""
+"プロファイルを定義したので、それをテストクラスに含める必要があります。 "
+"`@TestProfile(MockGreetingProfile.class)` で、これを行うことが出来ます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started-testing.adoc:613
 #, fuzzy
 msgid "All the test profile configuration is stored in a single class, which makes it easy to tell if the previous test ran with the same configuration."
-msgstr "テストプロファイルの設定はすべて単一のクラスに保存されているので、前回のテストが同じ設定で実行されたかどうかが簡単にわかります。"
+msgstr "テストプロファイルの設定はすべて単一のクラスに保存されているので、前回のテス"
+"トが同じ設定で実行されたかどうかが簡単にわかります。"
 
 #. type: Title ===
 #: upstream/_versions/main/guides/getting-started-testing.adoc:614
@@ -2048,7 +2052,11 @@ msgstr "ネイティブ実行可能ファイルテスト"
 #: upstream/_versions/main/guides/getting-started-testing.adoc:1207
 #, fuzzy
 msgid "It is also possible to test native executables using `@QuarkusIntegrationTest`. This supports all the features mentioned in this guide except injecting into tests (and the native executable runs in a separate non-JVM process this is not really possible)."
-msgstr "`@NativeImageTest` を使用してネイティブ実行可能ファイルをテストすることも可能です。これは、テストに注入すること(そして、ネイティブ実行可能ファイルは別の非JVMプロセスで実行されることーこれは実際には可能ではありません)を除いて、このガイドで述べたすべての機能をサポートしています。"
+msgstr ""
+"`@NativeImageTest` を使用してネイティブ実行可能ファイルをテストすることも可能"
+"です。これは、テストに注入すること(そして、ネイティブ実行可能ファイルは別の非"
+"JVMプロセスで実行されることーこれは実際には可能ではありません)を除いて、この"
+"ガイドで述べたすべての機能をサポートしています。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started-testing.adoc:1210

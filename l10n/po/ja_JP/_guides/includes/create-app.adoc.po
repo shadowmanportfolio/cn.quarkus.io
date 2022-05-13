@@ -43,13 +43,17 @@ msgstr ""
 #: upstream/_guides/includes/create-app.adoc:20
 #, fuzzy
 msgid "If you want to create a Gradle project, add the `--gradle` or `--gradle-kotlin-dsl` option."
-msgstr "Gradleプロジェクトを作成したい場合は、 `--gradle` または `--gradle-kotlin-dsl` オプションを追加します。"
+msgstr ""
+"Gradleプロジェクトを作成したい場合は、 `--gradle` または `--gradle-kotlin-"
+"dsl` オプションを追加します。"
 
 #. type: Plain text
 #: upstream/_guides/includes/create-app.adoc:22
 #, fuzzy
 msgid "_For more information about how to install the Quarkus CLI, please refer to xref:cli-tooling.adoc[the Quarkus CLI guide]._"
-msgstr "_Quarkus CLIのインストール方法については、<a href=\"cli-tooling.html\">Quarkus CLIガイド</a>_をご参照ください。"
+msgstr ""
+"_Quarkus CLIのインストール方法については、<a href=\"cli-tooling.html\""
+">Quarkus CLIガイド</a>_をご参照ください。"
 
 #. type: Block title
 #: upstream/_guides/includes/create-app.adoc:25
@@ -80,4 +84,6 @@ msgstr ""
 #: upstream/_guides/includes/create-app.adoc:45
 #, fuzzy
 msgid "If you want to create a Gradle project, add the `-DbuildTool=gradle` or `-DbuildTool=gradle-kotlin-dsl` option."
-msgstr "Gradleプロジェクトを作成したい場合は、 `-DbuildTool=gradle` または `-DbuildTool=gradle-kotlin-dsl` オプションを追加します。"
+msgstr ""
+"Gradleプロジェクトを作成したい場合は、 `-DbuildTool=gradle` または "
+"`-DbuildTool=gradle-kotlin-dsl` オプションを追加します。"

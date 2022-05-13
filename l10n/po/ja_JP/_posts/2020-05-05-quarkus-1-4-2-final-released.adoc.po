@@ -56,7 +56,8 @@ msgstr "Quarkus 1.4.2.Final リリース - バグフィックス"
 #: upstream/_posts/2020-05-05-quarkus-1-4-2-final-released.adoc:11
 #, fuzzy
 msgid "Today, we released Quarkus 1.4.2.Final with some bugfixes and documentation improvements."
-msgstr "本日、Quarkus 1.4.2.Finalをリリースしました。いくつかのバグフィックスとドキュメントの改善を行いました。"
+msgstr "本日、Quarkus 1.4.2.Finalをリリースしました。いくつかのバグフィックスとドキュ"
+"メントの改善を行いました。"
 
 #. type: Plain text
 #: upstream/_posts/2020-05-05-quarkus-1-4-2-final-released.adoc:13
@@ -74,7 +75,9 @@ msgstr "変更点"
 #: upstream/_posts/2020-05-05-quarkus-1-4-2-final-released.adoc:17
 #, fuzzy
 msgid "You can get https://github.com/quarkusio/quarkus/releases/tag/1.4.2.Final[the full changelog of 1.4.2.Final on GitHub]."
-msgstr "link:https://github.com/quarkusio/quarkus/releases/tag/1.4.2.Final[1.4.2.Finalの全変更履歴はGitHubに]掲載されています。"
+msgstr ""
+"link:https://github.com/quarkusio/quarkus/releases/tag/1.4.2.Final[1.4.2."
+"Finalの全変更履歴はGitHubに]掲載されています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-05-05-quarkus-1-4-2-final-released.adoc:18

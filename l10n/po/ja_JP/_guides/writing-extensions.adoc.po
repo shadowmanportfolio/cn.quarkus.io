@@ -1583,19 +1583,32 @@ msgstr "シンプルまたはマルチビルドのアイテムクラスの `Buil
 #: upstream/_guides/writing-extensions.adoc:839
 #, fuzzy
 msgid "By annotating the method with `@io.quarkus.deployment.annotations.Produce`, giving the class name of a <<empty-build-items,empty build item>>"
-msgstr "`@io.quarkus.deployment.annotations.Produce` でメソッドをアノテーションし、 link:#empty-build-items[空のビルドアイテム]のクラス名を与えることで"
+msgstr ""
+"`@io.quarkus.deployment.annotations.Produce` でメソッドをアノテーションし、 "
+"link:#empty-build-items[空のビルドアイテム]のクラス名を与えることで"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:842
 #, fuzzy
 msgid "If a simple build item is declared on a build step, it _must_ be produced during that build step, otherwise an error will result.  Build producers which are injected into steps _must not_ be used outside of that step."
-msgstr "単純なビルドアイテムがビルドステップで宣言されている場合、そのビルドステップ中に生成され _なければなら_ず、そうでない場合はエラーになります。ステップに注入されたビルド・プロデューサーは、そのステップ以外で使用して _はいけません_。"
+msgstr ""
+"単純なビルドアイテムがビルドステップで宣言されている場合、"
+"そのビルドステップ中に生成され _なければなら_ず、そうでない場合はエラーになり"
+"ます。ステップに注入されたビルド・プロデューサーは、"
+"そのステップ以外で使用して _はいけません_。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:848
 #, fuzzy
 msgid "Note that a `@BuildStep` method will only be called if it produces something that another consumer or the final output requires. If there is no consumer for a particular item then it will not be produced. What is required will depend on the final target that is being produced.  For example, when running in developer mode the final output will not ask for GraalVM-specific build items such as `ReflectiveClassBuildItem`, so methods that only produce these items will not be invoked."
-msgstr "`@BuildStep` メソッドが呼び出されるのは、他の消費者や最終出力が必要とするものを生成する場合のみであることに注意してください。特定のアイテムを必要とする消費者がいない場合、そのアイテムは生成されません。必要とされるものは、生成される最終ターゲットによって異なります。例えば、開発者モードで実行している場合、最終出力は、 `ReflectiveClassBuildItem` のようなGraalVM固有のビルドアイテムを要求しませんので、これらのアイテムを生成するだけのメソッドは呼び出されません。"
+msgstr ""
+"`@BuildStep` メソッドが呼び出されるのは、他の消費者や最終出力が必要とするもの"
+"を生成する場合のみであることに注意してください。特定のアイテムを必要とする消"
+"費者がいない場合、そのアイテムは生成されません。必要とされるものは、生成され"
+"る最終ターゲットによって異なります。例えば、開発者モードで実行している場合、"
+"最終出力は、 `ReflectiveClassBuildItem` のようなGraalVM固有のビルドアイテムを"
+"要求しませんので、これらのアイテムを生成するだけのメソッドは呼び出されません"
+"。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:850
@@ -1627,25 +1640,34 @@ msgstr "link:#multi-build-items[マルチビルドアイテムクラス]の `Lis
 #: upstream/_guides/writing-extensions.adoc:859
 #, fuzzy
 msgid "By annotating the method with `@io.quarkus.deployment.annotations.Consume`, giving the class name of a <<empty-build-items,empty build item>>"
-msgstr "`@io.quarkus.deployment.annotations.Consume` でメソッドをアノテーションし、 link:#empty-build-items[空のビルドアイテム]のクラス名を与えることで"
+msgstr ""
+"`@io.quarkus.deployment.annotations.Consume` でメソッドをアノテーションし、 "
+"link:#empty-build-items[空のビルドアイテム]のクラス名を与えることで"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:862
 #, fuzzy
 msgid "Normally it is an error for a step which is included to consume a simple build item that is not produced by any other step.  In this way, it is guaranteed that all of the declared values will be present and non-`null` when a step is run."
-msgstr "通常、インクルードされたステップが、他のステップで生成されていない単純なビルドアイテムを消費することはエラーとなります。このようにして、ステップの実行時に、宣言されたすべての値が存在し、非 `null` であることが保証されます。"
+msgstr ""
+"通常、インクルードされたステップが、他のステップで生成されていない単純なビル"
+"ドアイテムを消費することはエラーとなります。このようにして、ステップの実行時"
+"に、宣言されたすべての値が存在し、非 `null` であることが保証されます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:865
 #, fuzzy
 msgid "Sometimes a value isn't necessary for the build to complete, but might inform some behavior of the build step if it is present.  In this case, the value can be optionally injected."
-msgstr "ビルドを完了させるために値が必要ではないが、値があるとビルドステップの動作に影響を与える場合があります。このような場合には、オプションで値を注入することができます。"
+msgstr ""
+"ビルドを完了させるために値が必要ではないが、値があるとビルドステップの動作に"
+"影響を与える場合があります。このような場合には、オプションで値を注入すること"
+"ができます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:867
 #, fuzzy
 msgid "Multi build values are always considered _optional_.  If not present, an empty list will be injected."
-msgstr "マルチビルドの値は常に _オプション_とみなされます。存在しない場合は、空のリストが注入されます。"
+msgstr "マルチビルドの値は常に "
+"_オプション_とみなされます。存在しない場合は、空のリストが注入されます。"
 
 #. type: Title =====
 #: upstream/_guides/writing-extensions.adoc:869
@@ -1657,13 +1679,22 @@ msgstr "弱い値の生成"
 #: upstream/_guides/writing-extensions.adoc:874
 #, fuzzy
 msgid "Normally a build step is included whenever it produces any build item which is in turn consumed by any other build step.  In this way, only the steps necessary to produce the final artifact(s) are included, and steps which pertain to extensions which are not installed or which only produce build items which are not relevant for the given artifact type are excluded."
-msgstr "通常、ビルドステップは、他のビルドステップによって消費されるビルドアイテムを生成するときには必ず含まれます。このようにして、最終的な成果物を生成するために必要なステップのみが含まれ、インストールされていないエクステンションに関連するステップや、与えられた成果物の種類には関係のないビルドアイテムを生成するだけのステップは除外されます。"
+msgstr ""
+"通常、ビルドステップは、他のビルドステップによって消費されるビルドアイテムを"
+"生成するときには必ず含まれます。このようにして、最終的な成果物を生成するため"
+"に必要なステップのみが含まれ、インストールされていないエクステンションに関連"
+"するステップや、与えられた成果物の種類には関係のないビルドアイテムを生成する"
+"だけのステップは除外されます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:877
 #, fuzzy
 msgid "For cases where this is not desired behavior, the `@io.quarkus.deployment.annotations.Weak` annotation may be used.  This annotation indicates that the build step should not automatically be included solely on the basis of producing the annotated value."
-msgstr "このような動作が望ましくない場合は、 `@io.quarkus.deployment.annotations.Weak` のアノテーションを使用することができます。このアノテーションは、アノテーションされた値を生成するという理由だけで、ビルドステップを自動的に含めるべきではないことを示しています。"
+msgstr ""
+"このような動作が望ましくない場合は、 `@io.quarkus.deployment.annotations."
+"Weak` のアノテーションを使用することができます。このアノテーションは、アノテ"
+"ーションされた値を生成するという理由だけで、ビルドステップを自動的に含めるべ"
+"きではないことを示しています。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:878
@@ -1694,25 +1725,40 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:896
 #, fuzzy
 msgid "This method (not provided in this example) would generate the class using the ASM API."
-msgstr "このメソッド（この例では提供されていません）は、ASM APIを使用してクラスを生成します。"
+msgstr "このメソッド（この例では提供されていません）は、ASM "
+"APIを使用してクラスを生成します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:903
 #, fuzzy
 msgid "Certain types of build items are generally always consumed, such as generated classes or resources.  An extension might produce a build item along with a generated class to facilitate the usage of that build item.  Such a build step would use the `@Weak` annotation on the generated class build item, while normally producing the other build item.  If the other build item is ultimately consumed by something, then the step would run and the class would be generated.  If nothing consumes the other build item, the step would not be included in the build process."
-msgstr "生成されたクラスやリソースなど、特定のタイプのビルドアイテムは一般的に常に消費されます。エクステンションでは、ビルドアイテムの使用を容易にするために、生成されたクラスと一緒にビルドアイテムを生成することがあります。このようなビルドステップでは、生成されたクラスのビルドアイテムに `@Weak` アノテーションを使用し、通常はもう一方のビルドアイテムを生成します。他のビルドアイテムが最終的に何かに消費される場合は、ステップが実行され、クラスが生成されます。他のビルドアイテムが何も消費されない場合は、そのステップはビルドプロセスに含まれません。"
+msgstr ""
+"生成されたクラスやリソースなど、特定のタイプのビルドアイテムは一般的に常に消"
+"費されます。エクステンションでは、ビルドアイテムの使用を容易にするために、生"
+"成されたクラスと一緒にビルドアイテムを生成することがあります。このようなビル"
+"ドステップでは、生成されたクラスのビルドアイテムに `@Weak` アノテーションを使"
+"用し、通常はもう一方のビルドアイテムを生成します。他のビルドアイテムが最終的"
+"に何かに消費される場合は、ステップが実行され、クラスが生成されます。他のビル"
+"ドアイテムが何も消費されない場合は、そのステップはビルドプロセスに含まれませ"
+"ん。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:906
 #, fuzzy
 msgid "In the example above, `GeneratedClassBuildItem` would only be produced if `ExecutorClassBuildItem` is consumed by some other build step."
-msgstr "上記の例では、 `ExecutorClassBuildItem` が他のビルドステップで消費された場合にのみ、 `GeneratedClassBuildItem` が生成されます。"
+msgstr ""
+"上記の例では、 `ExecutorClassBuildItem` "
+"が他のビルドステップで消費された場合にのみ、 `GeneratedClassBuildItem` "
+"が生成されます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:909
 #, fuzzy
 msgid "Note that when using <<bytecode-recording,bytecode recording>>, the implicitly generated class can be declared to be weak by using the `optional` attribute of the `@io.quarkus.deployment.annotations.Record` annotation."
-msgstr "なお、 link:#bytecode-recording[バイトコード記録]を使用する場合は、 `@io.quarkus.deployment.annotations.Record` アノテーションの `optional` 属性を使用することで、暗黙的に生成されたクラスを弱いものとして宣言することができます。"
+msgstr ""
+"なお、 link:#bytecode-recording[バイトコード記録]を使用する場合は、 `@io."
+"quarkus.deployment.annotations.Record` アノテーションの `optional` 属性を使用"
+"することで、暗黙的に生成されたクラスを弱いものとして宣言することができます。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:910
@@ -1759,7 +1805,9 @@ msgstr "`optional` 属性に注意してください。"
 #: upstream/_guides/writing-extensions.adoc:934
 #, fuzzy
 msgid "This example is using recorder proxies; see the section on <<bytecode-recording,bytecode recording>> for more information."
-msgstr "この例では、レコーダープロキシを使用しています。詳細は、 link:#bytecode-recording[バイトコードの記録]に関するセクションを参照してください。"
+msgstr ""
+"この例では、レコーダープロキシを使用しています。詳細は、 link:#bytecode-"
+"recording[バイトコードの記録]に関するセクションを参照してください。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:935
@@ -1771,7 +1819,13 @@ msgstr "アプリケーションアーカイブ"
 #: upstream/_guides/writing-extensions.adoc:941
 #, fuzzy
 msgid "The `@BuildStep` annotation can also register marker files that determine which archives on the class path are considered to be 'Application Archives', and will therefore get indexed. This is done via the `applicationArchiveMarkers`. For example the ArC extension registers `META-INF/beans.xml`, which means that all archives on the class path with a `beans.xml` file will be indexed."
-msgstr "`@BuildStep` アノテーションは、クラスパス上のどのアーカイブが「アプリケーション・アーカイブ」とみなされ、したがってインデックスが作成されるかを決定するマーカーファイルを登録することもできます。これは `applicationArchiveMarkers` を介して行われます。たとえば、ArC拡張では `META-INF/beans.xml` を登録していますが、これは `beans.xml` ファイルがあるクラスパス上のすべてのアーカイブがインデックスされることを意味します。"
+msgstr ""
+"`@BuildStep` アノテーションは、クラスパス上のどのアーカイブが「アプリケーショ"
+"ン・アーカイブ」とみなされ、したがってインデックスが作成されるかを決定するマ"
+"ーカーファイルを登録することもできます。これは `applicationArchiveMarkers` "
+"を介して行われます。たとえば、ArC拡張では `META-INF/beans.xml` "
+"を登録していますが、これは `beans.xml` ファイルがあるクラスパス上のすべてのア"
+"ーカイブがインデックスされることを意味します。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:942
@@ -1783,7 +1837,13 @@ msgstr "スレッドのコンテキスト・クラス・ローダの使用"
 #: upstream/_guides/writing-extensions.adoc:948
 #, fuzzy
 msgid "The build step will be run with a TCCL that can load user classes from the deployment in a transformer-safe way.  This class loader only lasts for the life of the augmentation, and is discarded afterwards.  The classes will be loaded again in a different class loader at runtime.  This means that loading a class during augmentation does not stop it from being transformed when running in the development/test mode."
-msgstr "ビルドステップでは、デプロイメントからユーザークラスをトランスフォーマセーフな方法でロードできるTCCLが実行されます。このクラス・ローダは、エクステンションが有効な間だけ存続し、その後は破棄されます。クラスは実行時に別のクラスローダーで再度ロードされます。つまり、オーグメンテーション中にクラスをロードしても、開発/テストモードで実行したときにクラスがトランスフォームされなくなることはありません。"
+msgstr ""
+"ビルドステップでは、デプロイメントからユーザークラスをトランスフォーマセーフ"
+"な方法でロードできるTCCLが実行されます。このクラス・ローダは、エクステンショ"
+"ンが有効な間だけ存続し、その後は破棄されます。クラスは実行時に別のクラスロー"
+"ダーで再度ロードされます。つまり、オーグメンテーション中にクラスをロードして"
+"も、開発/テストモードで実行したときにクラスがトランスフォームされなくなること"
+"はありません。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:949
@@ -1795,19 +1855,27 @@ msgstr "IndexDependencyBuildItemによる外部JARのインデクサーへの追
 #: upstream/_guides/writing-extensions.adoc:953
 #, fuzzy
 msgid "The index of scanned classes will not automatically include your external class dependencies.  To add dependencies, create a `@BuildStep` that produces `IndexDependencyBuildItem` objects, for a `groupId` and `artifactId`."
-msgstr "スキャンされたクラスのインデックスには、外部クラスの依存関係は自動的には含まれません。依存関係を追加するには、 `IndexDependencyBuildItem` オブジェクトを生成する `@BuildStep` を作成し、 `groupId` と `artifactId` を作成します。"
+msgstr ""
+"スキャンされたクラスのインデックスには、外部クラスの依存関係は自動的には含ま"
+"れません。依存関係を追加するには、 `IndexDependencyBuildItem` "
+"オブジェクトを生成する `@BuildStep` を作成し、 `groupId` と `artifactId` "
+"を作成します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:955
 #, fuzzy
 msgid "It is important to specify all the required artifacts to be added to the indexer. No artifacts are implicitly added transitively."
-msgstr "インデクサーに追加される必要なアーティファクトをすべて指定することが重要です。遷移的に暗黙的に追加されるアーティファクトはありません。"
+msgstr "インデクサーに追加される必要なアーティファクトをすべて指定することが重要です"
+"。遷移的に暗黙的に追加されるアーティファクトはありません。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:957
 #, fuzzy
 msgid "The `Amazon Alexa` extension adds dependent libraries from the Alexa SDK that are used in Jackson JSON transformations, in order for the reflective classes to identified and included at `BUILD_TIME`."
-msgstr "`Amazon Alexa` エクステンションは、Jackson JSON変換で使用されるAlexa SDKの依存ライブラリを追加し、反射型クラスが特定され、 `BUILD_TIME` に含まれるようにします。"
+msgstr ""
+"`Amazon Alexa` エクステンションは、Jackson JSON変換で使用されるAlexa "
+"SDKの依存ライブラリを追加し、反射型クラスが特定され、 `BUILD_TIME` "
+"に含まれるようにします。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:971
@@ -1830,13 +1898,19 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:974
 #, fuzzy
 msgid "With the artifacts added to the `Jandex` indexer, you can now search the index to identify classes implementing an interface, sub-classes of a specific class, or classes with a target annotation."
-msgstr "`Jandex` インデクサーにアーティファクトが追加されたことで、インデックスを検索して、インターフェイスを実装しているクラス、特定のクラスのサブクラス、ターゲットアノテーションを持つクラスを特定できるようになりました。"
+msgstr ""
+"`Jandex` インデクサーにアーティファクトが追加されたことで、インデックスを検索"
+"して、インターフェイスを実装しているクラス、特定のクラスのサブクラス、ターゲ"
+"ットアノテーションを持つクラスを特定できるようになりました。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:977
 #, fuzzy
 msgid "For example, the `Jackson` extension uses code like below to search for annotations used in JSON deserialization, and add them to the reflective hierarchy for `BUILD_TIME` analysis."
-msgstr "例えば、 `Jackson` エクステンションでは、以下のようなコードを使用して、JSON デシリアライゼーションで使用されるアノテーションを検索し、 `BUILD_TIME` 分析のために反射的な階層に追加しています。"
+msgstr ""
+"例えば、 `Jackson` エクステンションでは、以下のようなコードを使用して、JSON "
+"デシリアライゼーションで使用されるアノテーションを検索し、 `BUILD_TIME` "
+"分析のために反射的な階層に追加しています。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:982
@@ -1880,7 +1954,13 @@ msgstr "ビルドステップの依存関係の可視化"
 #: upstream/_guides/writing-extensions.adoc:1002
 #, fuzzy
 msgid "It can occasionally be useful to see a visual representation of the interactions between the various build steps. For such cases, adding `-Djboss.builder.graph-output=build.dot` when building an application will result in the creation of the `build.dot` file in the project's root directory. See link:https://graphviz.org/resources/[this] for a list of software that can open the file and show the actual visual representation."
-msgstr "様々なビルドステップ間の相互作用を視覚的に表現することは、時として有用です。そのような場合、アプリケーションのビルド時に `-Djboss.builder.graph-output=build.dot` を追加すると、プロジェクトのルートディレクトリに `build.dot` ファイルが作成されます。このファイルを開いて実際の視覚表現を表示することができるソフトウェアの一覧は link:https://graphviz.org/resources/[こちら]をご覧ください。"
+msgstr ""
+"様々なビルドステップ間の相互作用を視覚的に表現することは、時として有用です。"
+"そのような場合、アプリケーションのビルド時に `-Djboss.builder.graph-"
+"output=build.dot` を追加すると、プロジェクトのルートディレクトリに `build."
+"dot` ファイルが作成されます。"
+"このファイルを開いて実際の視覚表現を表示することができるソフトウェアの一覧は "
+"link:https://graphviz.org/resources/[こちら]をご覧ください。"
 
 #. type: Title ===
 #: upstream/_guides/writing-extensions.adoc:1004
@@ -1892,19 +1972,26 @@ msgstr "設定"
 #: upstream/_guides/writing-extensions.adoc:1009
 #, fuzzy
 msgid "Configuration in Quarkus is based on SmallRye Config, an implementation of the MicroProfile Config specification.  All of the standard features of MP-Config are supported; in addition, there are several extensions which are made available by the SmallRye Config project as well as by Quarkus itself."
-msgstr "Quarkusの設定は、MicroProfile Config仕様の実装であるSmallRye Configに基づいています。MP-Configのすべての標準機能がサポートされています。さらに、SmallRye ConfigプロジェクトやQuarkus自身によって利用可能ないくつかのエクステンションもあります。"
+msgstr ""
+"Quarkusの設定は、MicroProfile Config仕様の実装であるSmallRye "
+"Configに基づいています。MP-"
+"Configのすべての標準機能がサポートされています。さらに、SmallRye Configプロジ"
+"ェクトやQuarkus自身によって利用可能ないくつかのエクステンションもあります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1011
 #, fuzzy
 msgid "The value of these properties is configured in a `application.properties` file that follows the MicroProfile config format."
-msgstr "これらのプロパティの値は、MicroProfileのconfig形式に従った `application.properties` ファイルで設定されます。"
+msgstr ""
+"これらのプロパティの値は、MicroProfileのconfig形式に従った `application."
+"properties` ファイルで設定されます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1013
 #, fuzzy
 msgid "Configuration of Quarkus extensions is injection-based, using annotations."
-msgstr "Quarkusのエクステンションの設定は、アノテーションを使用したインジェクションベースです。"
+msgstr "Quarkusのエクステンションの設定は、アノテーションを使用したインジェクションベ"
+"ースです。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1014
@@ -1916,19 +2003,28 @@ msgstr "設定キー"
 #: upstream/_guides/writing-extensions.adoc:1017
 #, fuzzy
 msgid "Leaf configuration keys are mapped to non-`private` fields via the `@io.quarkus.runtime.annotations.ConfigItem` annotation."
-msgstr "リーフのコンフィギュレーションキーは、 `@io.quarkus.runtime.annotations.ConfigItem` アノテーションにより、 `private` 以外のフィールドにマッピングされます。"
+msgstr ""
+"リーフのコンフィギュレーションキーは、 `@io.quarkus.runtime.annotations."
+"ConfigItem` アノテーションにより、 `private` "
+"以外のフィールドにマッピングされます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1020
 #, fuzzy
 msgid "Though the SmallRye Config project is used for implementation, the standard `@ConfigProperty` annotation does not have the same semantics that are needed to support configuration within extensions."
-msgstr "実装にはSmallRye Configプロジェクトが使用されていますが、標準の `@ConfigProperty` アノテーションには、エクステンション内のコンフィギュレーションをサポートするために必要な同じセマンティクスがありません。"
+msgstr ""
+"実装にはSmallRye Configプロジェクトが使用されていますが、標準の "
+"`@ConfigProperty` アノテーションには、エクステンション内のコンフィギュレーシ"
+"ョンをサポートするために必要な同じセマンティクスがありません。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1023
 #, fuzzy
 msgid "Configuration keys are normally derived from the field names that they are tied to.  This is done by de-camel-casing the name and then joining the segments with hyphens (`-`).  Some examples:"
-msgstr "構成キーは通常、関連付けられているフィールド名から導き出されます。これは、名前のキャメルケースを解除して、セグメントをハイフン( `-`)で結合することで行われます。いくつかの例を示します。"
+msgstr ""
+"構成キーは通常、関連付けられているフィールド名から導き出されます。これは、名"
+"前のキャメルケースを解除して、セグメントをハイフン( "
+"`-`)で結合することで行われます。いくつかの例を示します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1025
@@ -1952,13 +2048,17 @@ msgstr "`requestDNSTimeout` となります。 `request-dns-timeout`"
 #: upstream/_guides/writing-extensions.adoc:1029
 #, fuzzy
 msgid "The name can also be explicitly specified by giving a `name` attribute to the `@ConfigItem` annotation."
-msgstr "また、 `@ConfigItem` アノテーションに `name` 属性を与えることで、名前を明示的に指定することもできます。"
+msgstr "また、 `@ConfigItem` アノテーションに `name` "
+"属性を与えることで、名前を明示的に指定することもできます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1032
 #, fuzzy
 msgid "Though it is possible to override the configuration key name using the `name` attribute of `@ConfigItem`, normally this should only be done in cases where (for example) the configuration key name is the same as a Java keyword."
-msgstr "`@ConfigItem` の `name` 属性を使用して構成キー名を上書きすることは可能ですが、通常は（例えば）構成キー名がJavaキーワードと同じである場合にのみ行うべきです。"
+msgstr ""
+"`@ConfigItem` の `name` 属性を使用して構成キー名を上書きすることは可能ですが"
+"、通常は（例えば）構成キー名がJavaキーワードと同じである場合にのみ行うべきで"
+"す。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1033
@@ -1970,7 +2070,10 @@ msgstr "設定"
 #: upstream/_guides/writing-extensions.adoc:1037
 #, fuzzy
 msgid "The type of the field with the `@ConfigItem` annotation determines the conversion that is applied to it.  Quarkus extensions may use the full range of configuration types made available by SmallRye Config, which includes:"
-msgstr "`@ConfigItem` のアノテーションを持つフィールドのタイプによって、それに適用される変換が決まります。Quarkusのエクステンションでは、SmallRye Configで利用可能なすべての設定タイプを使用することができ、これには以下が含まれます。"
+msgstr ""
+"`@ConfigItem` のアノテーションを持つフィールドのタイプによって、それに適用さ"
+"れる変換が決まります。Quarkusのエクステンションでは、SmallRye Configで利用可"
+"能なすべての設定タイプを使用することができ、これには以下が含まれます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1039
@@ -1987,19 +2090,24 @@ msgstr "`String`"
 #: upstream/_guides/writing-extensions.adoc:1041
 #, fuzzy
 msgid "Any type which has a constructor accepting a single argument of type `String` or `CharSequence`"
-msgstr "`String` または以下のタイプの単一の引数を受け入れるコンストラクタを持つすべてのタイプ。 `CharSequence`"
+msgstr "`String` または以下のタイプの単一の引数を受け入れるコンストラクタを持つすべて"
+"のタイプ。 `CharSequence`"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1042
 #, fuzzy
 msgid "Any type which has a static method named `of` which accepts a single argument of type `String`"
-msgstr "型の単一の引数を受け入れる `of` という名前のスタティック・メソッドを持つ任意の型。 `String`"
+msgstr "型の単一の引数を受け入れる `of` "
+"という名前のスタティック・メソッドを持つ任意の型。 `String`"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1043
 #, fuzzy
 msgid "Any type which has a static method named `valueOf` or `parse` which accepts a single argument of type `CharSequence` or `String`"
-msgstr "`valueOf` または `parse` という名前のスタティック・メソッドを持ち、 `CharSequence` または というタイプの単一の引数を受け入れるすべてのタイプ。 `String`"
+msgstr ""
+"`valueOf` または `parse` という名前のスタティック・メソッドを持ち、 "
+"`CharSequence` または というタイプの単一の引数を受け入れるすべてのタイプ。 "
+"`String`"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1044
@@ -2026,7 +2134,9 @@ msgstr "`io.quarkus.runtime.configuration.MemorySize` データサイズを表�
 #: upstream/_guides/writing-extensions.adoc:1048
 #, fuzzy
 msgid "`java.net.InetSocketAddress`, `java.net.InetAddress` and `org.wildfly.common.net.CidrAddress`"
-msgstr "`java.net.InetSocketAddress`, `java.net.InetAddress` と `org.wildfly.common.net.CidrAddress`"
+msgstr ""
+"`java.net.InetSocketAddress`, `java.net.InetAddress` と `org.wildfly.common."
+"net.CidrAddress`"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1049
@@ -2044,7 +2154,9 @@ msgstr "`java.nio.charset.Charset` 文字列値が正規の名前またはエイ
 #: upstream/_guides/writing-extensions.adoc:1051
 #, fuzzy
 msgid "`java.time.ZoneId` where the string value is parsed via `java.time.ZoneId.of(String)`"
-msgstr "`java.time.ZoneId` ここでは、文字列の値は、以下の方法で解析されます。 `java.time.ZoneId.of(String)`"
+msgstr ""
+"`java.time.ZoneId` ここでは、文字列の値は、以下の方法で解析されます。 `java."
+"time.ZoneId.of(String)`"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1052
@@ -2062,13 +2174,17 @@ msgstr "`OptionalInt`, `OptionalLong`, `OptionalDouble`"
 #: upstream/_guides/writing-extensions.adoc:1056
 #, fuzzy
 msgid "In addition, custom converters may be registered by adding their fully qualified class name in file `META-INF/services/org.eclipse.microprofile.config.spi.Converter`."
-msgstr "さらに、カスタムコンバーターを登録するには、その完全修飾クラス名をファイル `META-INF/services/org.eclipse.microprofile.config.spi.Converter` に追加する必要があります。"
+msgstr ""
+"さらに、カスタムコンバーターを登録するには、その完全修飾クラス名をファイル "
+"`META-INF/services/org.eclipse.microprofile.config.spi.Converter` "
+"に追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1058
 #, fuzzy
 msgid "Though these implicit converters use reflection, Quarkus will automatically ensure that they are loaded at the appropriate time."
-msgstr "これらの暗黙的なコンバータはリフレクションを使用していますが、Quarkusは自動的に適切なタイミングで読み込まれるようにします。"
+msgstr "これらの暗黙的なコンバータはリフレクションを使用していますが、Quarkusは自動的"
+"に適切なタイミングで読み込まれるようにします。"
 
 #. type: Title =====
 #: upstream/_guides/writing-extensions.adoc:1059
@@ -2080,7 +2196,12 @@ msgstr "オプション値"
 #: upstream/_guides/writing-extensions.adoc:1065
 #, fuzzy
 msgid "If the configuration type is one of the optional types, then empty values are allowed for the configuration key; otherwise, specification of an empty value will result in a configuration error which prevents the application from starting.  This is especially relevant to configuration properties of inherently emptiable values such as `List`, `Set`, and `String`.  Such value types will never be empty; in the event of an empty value, an empty `Optional` is always used."
-msgstr "設定タイプがオプションタイプの場合は、設定キーに空の値が許されます。そうでない場合は、空の値を指定すると設定エラーとなり、アプリケーションが起動できなくなります。これは、 `List` 、 `Set` 、 `String` のような、本質的に空にできる値の構成プロパティに特に関連しています。このような値のタイプが空になることはありません。空の値の場合は、常に空の `Optional` が使用されます。"
+msgstr ""
+"設定タイプがオプションタイプの場合は、設定キーに空の値が許されます。そうでな"
+"い場合は、空の値を指定すると設定エラーとなり、アプリケーションが起動できなく"
+"なります。これは、 `List` 、 `Set` 、 `String` のような、本質的に空にできる値"
+"の構成プロパティに特に関連しています。このような値のタイプが空になることはあ"
+"りません。空の値の場合は、常に空の `Optional` が使用されます。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1066
@@ -2092,19 +2213,31 @@ msgstr "設定リファレンス"
 #: upstream/_guides/writing-extensions.adoc:1070
 #, fuzzy
 msgid "A configuration item can be marked to have a default value.  The default value is used when no matching configuration key is specified in the configuration."
-msgstr "設定項目には、デフォルト値を設定することができます。デフォルト値は、コンフィギュレーションで一致するコンフィギュレーションキーが指定されていない場合に使用されます。"
+msgstr ""
+"設定項目には、デフォルト値を設定することができます。デフォルト値は、コンフィ"
+"ギュレーションで一致するコンフィギュレーションキーが指定されていない場合に使"
+"用されます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1073
 #, fuzzy
 msgid "Configuration items with a primitive type (such as `int` or `boolean`) implicitly use a default value of `0` or `false`.  The sole exception to this rule is the `char` type which does not have an implicit default value."
-msgstr "プリミティブタイプ（ `int` や `boolean` など）のコンフィグレーションアイテムでは、暗黙のうちに `0` や `false` などのデフォルト値が使用されます。このルールの唯一の例外は、暗黙のデフォルト値を持たない `char` タイプです。"
+msgstr ""
+"プリミティブタイプ（ `int` や `boolean` "
+"など）のコンフィグレーションアイテムでは、暗黙のうちに `0` や `false` "
+"などのデフォルト値が使用されます。このルールの唯一の例外は、"
+"暗黙のデフォルト値を持たない `char` タイプです。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1077
 #, fuzzy
 msgid "A property with a default value is not implicitly optional.  If a non-optional configuration item with a default value is explicitly specified to have an empty value, the application will report a configuration error and will not start.  If it is desired for a property to have a default value and also be optional, it must have an `Optional` type as described above."
-msgstr "既定値を持つプロパティは、暗黙的にはオプションではありません。既定値を持つ非オプションの構成項目が空の値を持つように明示的に指定された場合、アプリケーションは構成エラーを報告し、起動しません。プロパティにデフォルト値を持たせ、かつオプション性を持たせたい場合は、上述のように `Optional` タイプを持つ必要があります。"
+msgstr ""
+"既定値を持つプロパティは、暗黙的にはオプションではありません。既定値を持つ非"
+"オプションの構成項目が空の値を持つように明示的に指定された場合、アプリケーシ"
+"ョンは構成エラーを報告し、起動しません。プロパティにデフォルト値を持たせ、か"
+"つオプション性を持たせたい場合は、上述のように `Optional` "
+"タイプを持つ必要があります。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1078
@@ -2116,7 +2249,11 @@ msgstr "設定グループ"
 #: upstream/_guides/writing-extensions.adoc:1082
 #, fuzzy
 msgid "Configuration values are always collected into grouping classes which are marked with the `@io.quarkus.runtime.annotations.ConfigGroup` annotation.  These classes contain a field for each key within its group.  In addition, configuration groups can be nested."
-msgstr "設定値は常にグループ化されたクラスに集められ、そのクラスには `@io.quarkus.runtime.annotations.ConfigGroup` というアノテーションが付いています。これらのクラスには、そのグループ内の各キーのフィールドが含まれます。さらに、構成グループはネストすることができます。"
+msgstr ""
+"設定値は常にグループ化されたクラスに集められ、そのクラスには `@io.quarkus."
+"runtime.annotations.ConfigGroup` というアノテーションが付いています。これらの"
+"クラスには、そのグループ内の各キーのフィールドが含まれます。さらに、構成グル"
+"ープはネストすることができます。"
 
 #. type: Title =====
 #: upstream/_guides/writing-extensions.adoc:1083
@@ -2128,7 +2265,12 @@ msgstr "設定"
 #: upstream/_guides/writing-extensions.adoc:1089
 #, fuzzy
 msgid "A nested configuration group may be wrapped with an `Optional` type.  In this case, the group is not populated unless one or more properties within that group are specified in the configuration.  If the group is populated, then any required properties in the group must also be specified otherwise a configuration error will be reported and the application will not start."
-msgstr "入れ子になった構成グループは、 `Optional` タイプでラップすることができます。この場合、グループ内の1つ以上のプロパティが構成で指定されていない限り、グループは入力されません。グループが入力されている場合、グループ内の必須プロパティも指定されている必要があります。そうでない場合は、構成エラーが報告され、アプリケーションは起動しません。"
+msgstr ""
+"入れ子になった構成グループは、 `Optional` タイプでラップすることができます。"
+"この場合、グループ内の1つ以上のプロパティが構成で指定されていない限り、グルー"
+"プは入力されません。グループが入力されている場合、グループ内の必須プロパティ"
+"も指定されている必要があります。そうでない場合は、構成エラーが報告され、アプ"
+"リケーションは起動しません。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1090
@@ -2140,7 +2282,11 @@ msgstr "設定マップ"
 #: upstream/_guides/writing-extensions.adoc:1095
 #, fuzzy
 msgid "A `Map` can be used for configuration at any position where a configuration group would be allowed.  The key type of such a map *must* be `String`, and its value may be either a configuration group class or a valid leaf type.  The configuration key segment following the map's key segment will be used as the key for map values."
-msgstr "`Map` は、構成グループが許可されるあらゆる位置での構成に使用できます。このようなマップのキータイプは `String` で *なければならず*、その値は構成グループのクラスか有効なリーフタイプのいずれかです。マップのキーセグメントに続く構成キーセグメントは、マップの値のキーとして使用されます。"
+msgstr ""
+"`Map` は、構成グループが許可されるあらゆる位置での構成に使用できます。"
+"このようなマップのキータイプは `String` で *なければならず*、その値は構成グル"
+"ープのクラスか有効なリーフタイプのいずれかです。マップのキーセグメントに続く"
+"構成キーセグメントは、マップの値のキーとして使用されます。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1097
@@ -2152,25 +2298,49 @@ msgstr "設定ルート"
 #: upstream/_guides/writing-extensions.adoc:1103
 #, fuzzy
 msgid "Configuration roots are configuration groups that appear in the root of the configuration tree.  A configuration property's full name is determined by joining the string `quarkus.` with the hyphenated name of the fields that form the path from the root to the leaf field.  For example, if I define a configuration root group called `ThreadPool`, with a nested group in a field named `sizing` that in turn contains a field called `minSize`, the final configuration property will be called `quarkus.thread-pool.sizing.min-size`."
-msgstr "構成ルートは、構成ツリーのルートに表示される構成グループです。構成プロパティのフルネームは、文字列 `quarkus.` と、ルートからリーフフィールドまでのパスを形成するフィールドのハイフン付きの名前を結合して決定されます。例えば、 `ThreadPool` という構成ルートグループを定義し、その中に `sizing` というフィールドのネストされたグループがあり、さらにその中に `minSize` というフィールドがある場合、最終的な構成プロパティは `quarkus.thread-pool.sizing.min-size` という名前になります。"
+msgstr ""
+"構成ルートは、構成ツリーのルートに表示される構成グループです。構成プロパティ"
+"のフルネームは、文字列 `quarkus.` と、ルートからリーフフィールドまでのパスを"
+"形成するフィールドのハイフン付きの名前を結合して決定されます。例えば、 "
+"`ThreadPool` という構成ルートグループを定義し、その中に `sizing` "
+"というフィールドのネストされたグループがあり、さらにその中に `minSize` "
+"というフィールドがある場合、最終的な構成プロパティは `quarkus.thread-pool."
+"sizing.min-size` という名前になります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1107
 #, fuzzy
 msgid "A configuration root's name can be given with the `name` property, or it can be inferred from the class name.  If the latter, then the configuration key will be the class name, minus any `Config` or `Configuration` suffix, broken up by camel-case, lowercased, and re-joined using hyphens (`-`)."
-msgstr "設定ルートの名前は、 `name` プロパティで与えることができますが、クラス名から推測することもできます。後者の場合、設定キーはクラス名から `Config` または `Configuration` の接尾辞を除いたものになり、キャメルケースで分割し、小文字にして、ハイフンで再度結合します ( `-`)。"
+msgstr ""
+"設定ルートの名前は、 `name` プロパティで与えることができますが、クラス名から"
+"推測することもできます。後者の場合、設定キーはクラス名から `Config` または "
+"`Configuration` "
+"の接尾辞を除いたものになり、キャメルケースで分割し、小文字にして、"
+"ハイフンで再度結合します ( `-`)。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1113
 #, fuzzy
 msgid "A configuration root's class name can contain an extra suffix segment for the case where there are configuration roots for multiple <<Configuration Root Phases>>.  Classes which correspond to the `BUILD_TIME` and `BUILD_AND_RUN_TIME_FIXED` may end with `BuildTimeConfig` or `BuildTimeConfiguration`, classes which correspond to the `RUN_TIME` phase may end with `RuntimeConfig`, `RunTimeConfig`, `RuntimeConfiguration` or `RunTimeConfiguration` while classes which correspond to the `BOOTSTRAP` configuration may end with `BootstrapConfig` or `BootstrapConfiguration`."
-msgstr "構成ルートのクラス名には、複数の link:#Configuration Root Phases[[構成ルートフェーズ]]に対応する構成ルートが存在する場合、追加のサフィックスセグメントを含めることができます。 `BUILD_TIME` および `BUILD_AND_RUN_TIME_FIXED` に対応するクラスは `BuildTimeConfig` または `BuildTimeConfiguration` で終わり、 `RUN_TIME` フェーズに対応するクラスは `RuntimeConfig` 、 `RunTimeConfig` 、 `RuntimeConfiguration` または `RunTimeConfiguration` で終わり、 `BOOTSTRAP` 構成に対応するクラスは `BootstrapConfig` または `BootstrapConfiguration` で終わります。"
+msgstr ""
+"構成ルートのクラス名には、複数の link:#Configuration Root Phases[[構成ルート"
+"フェーズ]]に対応する構成ルートが存在する場合、追加のサフィックスセグメントを"
+"含めることができます。 `BUILD_TIME` および `BUILD_AND_RUN_TIME_FIXED` "
+"に対応するクラスは `BuildTimeConfig` または `BuildTimeConfiguration` "
+"で終わり、 `RUN_TIME` フェーズに対応するクラスは `RuntimeConfig` 、 "
+"`RunTimeConfig` 、 `RuntimeConfiguration` または `RunTimeConfiguration` "
+"で終わり、 `BOOTSTRAP` 構成に対応するクラスは `BootstrapConfig` または "
+"`BootstrapConfiguration` で終わります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1117
 #, fuzzy
 msgid "Note: The current implementation is still using injection site to determine the root set, so to avoid migration problems, it is recommended that the injection site (field or parameter) have the same name as the configuration root class until this change is complete."
-msgstr "注：現在の実装では、ルートセットの決定にまだインジェクションサイトを使用しているため、移行の問題を避けるために、この変更が完了するまでは、インジェクションサイト（フィールドまたはパラメータ）にコンフィギュレーションのルートクラスと同じ名前を付けることをお勧めします。"
+msgstr ""
+"注：現在の実装では、ルートセットの決定にまだインジェクションサイトを使用して"
+"いるため、移行の問題を避けるために、この変更が完了するまでは、インジェクショ"
+"ンサイト（フィールドまたはパラメータ）にコンフィギュレーションのルートクラス"
+"と同じ名前を付けることをお勧めします。"
 
 #. type: Title =====
 #: upstream/_guides/writing-extensions.adoc:1118
@@ -2182,7 +2352,12 @@ msgstr "設定ルートフェーズ"
 #: upstream/_guides/writing-extensions.adoc:1122
 #, fuzzy
 msgid "Configuration roots are strictly bound by configuration phase, and attempting to access a configuration root from outside of its corresponding phase will result in an error.  A configuration root dictates when its contained keys are read from configuration, and when they are available to applications.  The phases defined by `io.quarkus.runtime.annotations.ConfigPhase` are as follows:"
-msgstr "設定ルートは設定フェーズによって厳密に拘束され、対応するフェーズの外から設定ルートにアクセスしようとするとエラーになります。構成ルートは、含まれるキーが構成から読み込まれるタイミングと、アプリケーションが利用できるタイミングを決定します。 `io.quarkus.runtime.annotations.ConfigPhase` で定義されているフェーズは以下のとおりです。"
+msgstr ""
+"設定ルートは設定フェーズによって厳密に拘束され、対応するフェーズの外から設定"
+"ルートにアクセスしようとするとエラーになります。構成ルートは、含まれるキーが"
+"構成から読み込まれるタイミングと、アプリケーションが利用できるタイミングを決"
+"定します。 `io.quarkus.runtime.annotations.ConfigPhase` "
+"で定義されているフェーズは以下のとおりです。"
 
 #. type: Table
 #: upstream/_guides/writing-extensions.adoc:1126
@@ -2268,7 +2443,8 @@ msgstr "BUILD_AND_RUN_TIME_FIXED"
 #: upstream/_guides/writing-extensions.adoc:1146
 #, fuzzy, no-wrap
 msgid "Appropriate for things which affect build and must be visible for run time code.  Not read from config at run time."
-msgstr "ビルドに影響するものや、実行時コードで表示されなければならないものに適しています。実行時にコンフィグから読み込まれることはありません。"
+msgstr "ビルドに影響するものや、実行時コードで表示されなければならないものに適してい"
+"ます。実行時にコンフィグから読み込まれることはありません。"
 
 #. type: Table
 #: upstream/_guides/writing-extensions.adoc:1147
@@ -2280,7 +2456,13 @@ msgstr "BOOTSTRAP"
 #: upstream/_guides/writing-extensions.adoc:1153
 #, fuzzy, no-wrap
 msgid "Used when runtime configuration needs to be obtained from an external system (like `Consul`), but details of that system need to be configurable (for example Consul's URL). The high level way this works is by using the standard Quarkus config sources (such as properties files, system properties, etc.) and producing `ConfigSourceProvider` objects which are subsequently taken into account by Quarkus when creating the final runtime `Config` object."
-msgstr "実行時設定を外部システム（ `Consul` など）から取得する必要があるが、そのシステムの詳細を設定可能にする必要がある場合に使用します（例：ConsulのURL）。ハイレベルな動作としては、標準的なQuarkusの設定ソース（プロパティファイル、システムプロパティなど）を使用し、最終的な実行時 `Config` オブジェクトを作成する際にQuarkusによって考慮される `ConfigSourceProvider` オブジェクトを生成することができます。"
+msgstr ""
+"実行時設定を外部システム（ `Consul` など）から取得する必要があるが、そのシス"
+"テムの詳細を設定可能にする必要がある場合に使用します（例：ConsulのURL）。ハイ"
+"レベルな動作としては、標準的なQuarkusの設定ソース（プロパティファイル、システ"
+"ムプロパティなど）を使用し、最終的な実行時 `Config` "
+"オブジェクトを作成する際にQuarkusによって考慮される `ConfigSourceProvider` "
+"オブジェクトを生成することができます。"
 
 #. type: Table
 #: upstream/_guides/writing-extensions.adoc:1154
@@ -2298,13 +2480,23 @@ msgstr "構築時には利用できませんが、すべてのモードで開始
 #: upstream/_guides/writing-extensions.adoc:1163
 #, fuzzy
 msgid "For all cases other than the `BUILD_TIME` case, the configuration root class and all of the configuration groups and types contained therein must be located in, or reachable from, the extension's run time artifact.  Configuration roots of phase `BUILD_TIME` may be located in or reachable from either of the extension's run time or deployment artifacts."
-msgstr "`BUILD_TIME` 以外のケースでは、構成ルートクラスとそこに含まれるすべての構成グループおよびタイプは、エクステンションの実行時アーティファクト内にあるか、または実行時アーティファクトから到達可能でなければなりません。フェーズ `BUILD_TIME` の構成ルートは、エクステンションの実行時アーティファクトまたはデプロイメントアーティファクトのいずれかに配置されているか、またはそこから到達可能である。"
+msgstr ""
+"`BUILD_TIME` 以外のケースでは、構成ルートクラスとそこに含まれるすべての構成グ"
+"ループおよびタイプは、エクステンションの実行時アーティファクト内にあるか、ま"
+"たは実行時アーティファクトから到達可能でなければなりません。フェーズ "
+"`BUILD_TIME` の構成ルートは、エクステンションの実行時アーティファクトまたはデ"
+"プロイメントアーティファクトのいずれかに配置されているか、またはそこから到達"
+"可能である。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1165
 #, fuzzy
 msgid "_Bootstrap_ configuration steps are executed during runtime-init *before* any of other runtime steps. This means that code executed as part of this step cannot access anything that gets initialized in runtime init steps (runtime synthetic CDI beans being one such example)."
-msgstr "_ブートストラップ_構成ステップは、他の実行時ステップの *前に*、実行時・イニット中に実行されます。これは、このステップの一部として実行されたコードは、実行時のinitステップで初期化されたものにアクセスできないことを意味します（実行時合成CDIビーンズはそのような例の一つです）。"
+msgstr ""
+"_ブートストラップ_構成ステップは、他の実行時ステップの *前に*、実行時・イニッ"
+"ト中に実行されます。これは、このステップの一部として実行されたコードは、実行"
+"時のinitステップで初期化されたものにアクセスできないことを意味します（実行時"
+"合成CDIビーンズはそのような例の一つです）。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1166
@@ -2441,19 +2633,24 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1233
 #, fuzzy
 msgid "A configuration property name can be split into segments. For example, a property name like `quarkus.log.file.enable` can be split into the following segments:"
-msgstr "構成プロパティ名は、セグメントに分割することができます。たとえば、 `quarkus.log.file.enable` のようなプロパティ名は、次のようなセグメントに分割できます。"
+msgstr ""
+"構成プロパティ名は、セグメントに分割することができます。たとえば、 `quarkus."
+"log.file.enable` のようなプロパティ名は、次のようなセグメントに分割できます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1235
 #, fuzzy
 msgid "`quarkus` - a namespace claimed by Quarkus which is a prefix for all `@ConfigRoot` classes,"
-msgstr "`quarkus` - Quarkusが主張する名前空間で、すべての `@ConfigRoot` クラスのプレフィックスとなります。"
+msgstr "`quarkus` - Quarkusが主張する名前空間で、すべての `@ConfigRoot` "
+"クラスのプレフィックスとなります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1236
 #, fuzzy
 msgid "`log` - a name segment which corresponds to the `LogConfiguration` class annotated with `@ConfigRoot`,"
-msgstr "`log` - `@ConfigRoot` でアノテーションされた `LogConfiguration` クラスに対応する名前のセグメントです。"
+msgstr ""
+"`log` - `@ConfigRoot` でアノテーションされた `LogConfiguration` "
+"クラスに対応する名前のセグメントです。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1237
@@ -2465,25 +2662,41 @@ msgstr "`file` - このクラスの `file` フィールドに対応する名前�
 #: upstream/_guides/writing-extensions.adoc:1238
 #, fuzzy
 msgid "`enabled` - a name segment which corresponds to `enable` field in `FileConfig` class annotated with `@ConfigGroup`."
-msgstr "`enabled` - `FileConfig` クラスの `@ConfigGroup` でアノテーションされた `enable` フィールドに対応する名前のセグメントです。"
+msgstr ""
+"`enabled` - `FileConfig` クラスの `@ConfigGroup` でアノテーションされた "
+"`enable` フィールドに対応する名前のセグメントです。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1242
 #, fuzzy
 msgid "The `FileConfig` class is annotated with `@ConfigGroup` to indicate that this is an aggregate configuration object containing a collection of configurable properties, rather than being a simple configuration key type."
-msgstr "`FileConfig` クラスは、単純な構成キータイプではなく、構成可能なプロパティのコレクションを含む集合的な構成オブジェクトであることを示すために、 `@ConfigGroup` とアノテーションされています。"
+msgstr ""
+"`FileConfig` クラスは、単純な構成キータイプではなく、構成可能なプロパティのコ"
+"レクションを含む集合的な構成オブジェクトであることを示すために、 "
+"`@ConfigGroup` とアノテーションされています。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1247
 #, fuzzy
 msgid "The `@ConfigRoot` annotation indicates that this object is a configuration root group, in this case one which corresponds to a `log` segment. A class name is used to link configuration root group with the segment from a property name. The `Configuration` part is stripped off from a `LogConfiguration` class name and the remaining `Log` is lowercased to become a `log`. Since all `@ConfigRoot` annotated classes uses `quarkus` as a prefix, this finally becomes `quarkus.log` and represents the properties which names begin with `quarkus.log.*`."
-msgstr "`@ConfigRoot` アノテーションは、このオブジェクトがコンフィギュレーション・ルート・グループであることを示し、この場合は `log` セグメントに対応するものです。クラス名は、プロパティ名から構成ルートグループとセグメントをリンクするために使用されます。 `LogConfiguration` のクラス名から `Configuration` の部分が取り除かれ、残りの `Log` が小文字にされて `log` となります。 `@ConfigRoot` にアノテーションを付けたクラスはすべて `quarkus` をプレフィックスとして使用しているため、最終的に `quarkus.log` となり、名前が `quarkus.log.*` で始まるプロパティを表しています。"
+msgstr ""
+"`@ConfigRoot` アノテーションは、このオブジェクトがコンフィギュレーション・ル"
+"ート・グループであることを示し、この場合は `log` セグメントに対応するものです"
+"。クラス名は、プロパティ名から構成ルートグループとセグメントをリンクするため"
+"に使用されます。 `LogConfiguration` のクラス名から `Configuration` "
+"の部分が取り除かれ、残りの `Log` が小文字にされて `log` となります。 "
+"`@ConfigRoot` にアノテーションを付けたクラスはすべて `quarkus` "
+"をプレフィックスとして使用しているため、最終的に `quarkus.log` となり、"
+"名前が `quarkus.log.*` で始まるプロパティを表しています。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1249
 #, fuzzy
 msgid "Here the `LoggingProcessor` injects a `LogConfiguration` instance automatically by detecting the `@ConfigRoot` annotation."
-msgstr "ここでは、 `LoggingProcessor` は、 `@ConfigRoot` のアノテーションを検出することで、 `LogConfiguration` のインスタンスを自動的に注入します。"
+msgstr ""
+"ここでは、 `LoggingProcessor` は、 `@ConfigRoot` "
+"のアノテーションを検出することで、 `LogConfiguration` "
+"のインスタンスを自動的に注入します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1251
@@ -2504,7 +2717,8 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1260
 #, fuzzy
 msgid "Since `format` is not defined in these properties, the default value from `@ConfigItem` will be used instead."
-msgstr "本プロパティでは `format` が定義されていないため、代わりに `@ConfigItem` のデフォルト値が使用されます。"
+msgstr "本プロパティでは `format` が定義されていないため、代わりに `@ConfigItem` "
+"のデフォルト値が使用されます。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1262
@@ -2516,7 +2730,12 @@ msgstr "コンバージョンの強化"
 #: upstream/_guides/writing-extensions.adoc:1266
 #, fuzzy
 msgid "You can use enhanced conversion of a config item by using the `@ConvertWith` annotation which accepts a `Converter` class object.  If the annotation is present on a config item, the implicit or custom built in converter in use will be overridden by the value provided.  To do, see the example below which converts `YES` or `NO` values to `boolean`."
-msgstr "`Converter` クラス・オブジェクトを受け取る `@ConvertWith` アノテーションを使用して、コンフィグ・アイテムの拡張変換を使用することができます。このアノテーションが設定項目に存在する場合、使用されている暗黙的な、またはカスタムで組み込まれた変換器は、提供された値によって上書きされます。以下の例では、 `YES` または `NO` の値を `boolean` に変換しています。"
+msgstr ""
+"`Converter` クラス・オブジェクトを受け取る `@ConvertWith` アノテーションを使"
+"用して、コンフィグ・アイテムの拡張変換を使用することができます。このアノテー"
+"ションが設定項目に存在する場合、使用されている暗黙的な、またはカスタムで組み"
+"込まれた変換器は、提供された値によって上書きされます。以下の例では、 `YES` "
+"または `NO` の値を `boolean` に変換しています。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1276
@@ -2581,7 +2800,9 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1301
 #, fuzzy
 msgid "Override the default `Boolean` converter and use the provided converter which accepts a `YES` or `NO` config values."
-msgstr "デフォルトの `Boolean` のコンバータを上書きし、 `YES` または `NO` の設定値を受け付ける提供されたコンバータを使用します。"
+msgstr ""
+"デフォルトの `Boolean` のコンバータを上書きし、 `YES` または `NO` "
+"の設定値を受け付ける提供されたコンバータを使用します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1304
@@ -2731,19 +2952,31 @@ msgstr "条件付ステップインクルージョン"
 #: upstream/_guides/writing-extensions.adoc:1362
 #, fuzzy
 msgid "It is possible to only include a given `@BuildStep` under certain conditions.  The `@BuildStep` annotation has two optional parameters: `onlyIf` and `onlyIfNot`.  These parameters can be set to one or more classes which implement `BooleanSupplier`.  The build step will only be included when the method returns `true` (for `onlyIf`) or `false` (for `onlyIfNot`)."
-msgstr "特定の条件の下で、指定された `@BuildStep` のみを含めることが可能です。 `@BuildStep` アノテーションには、 `onlyIf` と `onlyIfNot` という2つのオプションのパラメータがあります。これらのパラメータには、 `BooleanSupplier` を実装する 1 つ以上のクラスを設定できます。ビルド・ステップは、メソッドが `true` (for `onlyIf`) または `false` (for `onlyIfNot`) を返したときにのみ含まれます。"
+msgstr ""
+"特定の条件の下で、指定された `@BuildStep` のみを含めることが可能です。 "
+"`@BuildStep` アノテーションには、 `onlyIf` と `onlyIfNot` "
+"という2つのオプションのパラメータがあります。これらのパラメータには、 "
+"`BooleanSupplier` を実装する 1 "
+"つ以上のクラスを設定できます。ビルド・ステップは、メソッドが `true` (for "
+"`onlyIf`) または `false` (for `onlyIfNot`) を返したときにのみ含まれます。"
 
 #. type: delimited block =
 #: upstream/_guides/writing-extensions.adoc:1365
 #, fuzzy
 msgid "The condition class can inject <<configuration-roots,configuration roots>> as long as they belong to a build-time phase.  Run time configuration is not available for condition classes."
-msgstr "コンディション・クラスは、ビルド時のフェーズに属する限り、 link:#configuration-roots[コンフィギュレーション・ルート]を注入することができます。実行時の構成は、コンディション・クラスでは利用できません。"
+msgstr ""
+"コンディション・クラスは、ビルド時のフェーズに属する限り、 link"
+":#configuration-roots[コンフィギュレーション・ルート]を注入することができます"
+"。実行時の構成は、コンディション・クラスでは利用できません。"
 
 #. type: delimited block =
 #: upstream/_guides/writing-extensions.adoc:1368
 #, fuzzy
 msgid "The condition class may also inject a value of type `io.quarkus.runtime.LaunchMode`.  Constructor parameter and field injection is supported."
-msgstr "条件クラスは、 `io.quarkus.runtime.LaunchMode` の値を注入することもできます。コンストラクタのパラメータやフィールドのインジェクションもサポートしています。"
+msgstr ""
+"条件クラスは、 `io.quarkus.runtime.LaunchMode` の値を注入することもできます。"
+"コンストラクタのパラメータやフィールドのインジェクションもサポートしています"
+"。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:1369
@@ -2783,7 +3016,9 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1388
 #, fuzzy
 msgid "If you need to make your build step conditional on the presence or absence of another extension, you can use <<capabilities>> for that."
-msgstr "他のエクステンションの有無を条件にしてビルドステップを行う必要がある場合は、 link:#capabilities[[capabilities]]を使用することができます。"
+msgstr ""
+"他のエクステンションの有無を条件にしてビルドステップを行う必要がある場合は、 "
+"link:#capabilities[[capabilities]]を使用することができます。"
 
 #. type: Title ===
 #: upstream/_guides/writing-extensions.adoc:1390
@@ -2888,13 +3123,16 @@ msgstr "前回のレコーダー起動時に返されたオブジェクト"
 #: upstream/_guides/writing-extensions.adoc:1450
 #, fuzzy
 msgid "Objects with a no-arg constructor and getter/setters for all properties (or public fields)"
-msgstr "引数なしのコンストラクタと、すべてのプロパティ（またはパブリックフィールド）に対するゲッター／セッターを持つオブジェクト"
+msgstr "引数なしのコンストラクタと、すべてのプロパティ（またはパブリックフィールド）"
+"に対するゲッター／セッターを持つオブジェクト"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1451
 #, fuzzy
 msgid "Objects with a constructor annotated with `@RecordableConstructor` with parameter names that match field names"
-msgstr "フィールド名と一致するパラメータ名を持つ `@RecordableConstructor` でアノテーションされたコンストラクタを持つオブジェクト"
+msgstr ""
+"フィールド名と一致するパラメータ名を持つ `@RecordableConstructor` "
+"でアノテーションされたコンストラクタを持つオブジェクト"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1452
@@ -2916,7 +3154,15 @@ msgstr "レコーダーへの設定の注入"
 #: upstream/_guides/writing-extensions.adoc:1461
 #, fuzzy
 msgid "Configuration objects with phase `RUNTIME` or `BUILD_AND_RUNTIME_FIXED` can be injected into recorders via constructor injection. Just create a constructor that takes the configuration objects the recorder needs. If the recorder has multiple constructors you can annotate the one you want Quarkus to use with `@Inject`. If the recorder wants to inject runtime config but is also used at static init time then it needs to inject a `RuntimeValue<ConfigObject>`, this value will only be set when the runtime methods are being invoked."
-msgstr "フェーズが `RUNTIME` または `BUILD_AND_RUNTIME_FIXED` の構成オブジェクトは、コンストラクタ インジェクションによってレコーダに注入することができます。レコーダが必要とする設定オブジェクトを受け取るコンストラクタを作成するだけです。レコーダーに複数のコンストラクタがある場合は、Quarkusに使用させたいコンストラクタに `@Inject` でアノテーションを付けることができます。レコーダーが実行時の設定を注入したいが、静的な初期化時にも使用される場合は、 `RuntimeValue<ConfigObject>` を注入する必要があります。この値は、実行時のメソッドが呼び出されたときにのみ設定されます。"
+msgstr ""
+"フェーズが `RUNTIME` または `BUILD_AND_RUNTIME_FIXED` の構成オブジェクトは、"
+"コンストラクタ インジェクションによってレコーダに注入することができます。レコ"
+"ーダが必要とする設定オブジェクトを受け取るコンストラクタを作成するだけです。"
+"レコーダーに複数のコンストラクタがある場合は、"
+"Quarkusに使用させたいコンストラクタに `@Inject` でアノテーションを付けること"
+"ができます。レコーダーが実行時の設定を注入したいが、静的な初期化時にも使用さ"
+"れる場合は、 `RuntimeValue<ConfigObject>` を注入する必要があります。この値は"
+"、実行時のメソッドが呼び出されたときにのみ設定されます。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1462
@@ -3029,7 +3275,10 @@ msgstr "上記のパスが「/」で始まっていないのは、相対パス�
 #: upstream/_guides/writing-extensions.adoc:1533
 #, fuzzy
 msgid "Absolute paths are handled differently. If the above called `route(\"/custom-endpoint\")`, the resulting endpoint will be found at `/custom-endpoint`."
-msgstr "絶対パスの扱いは異なります。上記で `route(\"/custom-endpoint\")` を呼び出した場合、結果としてのエンドポイントは `/custom-endpoint` になります。"
+msgstr ""
+"絶対パスの扱いは異なります。上記で `route(\"/custom-endpoint\")` "
+"を呼び出した場合、結果としてのエンドポイントは `/custom-endpoint` "
+"になります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1535
@@ -3054,19 +3303,27 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1549
 #, fuzzy
 msgid "Given a default non-application endpoint root of `/q`, this will create an endpoint at `/q/custom-endpoint/deep`."
-msgstr "デフォルトの非アプリケーション・エンドポイント・ルートが `/q` であれば、 `/q/custom-endpoint/deep` にエンドポイントを作成します。"
+msgstr ""
+"デフォルトの非アプリケーション・エンドポイント・ルートが `/q` であれば、 `/q/"
+"custom-endpoint/deep` にエンドポイントを作成します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1552
 #, fuzzy
 msgid "Absolute paths also have an impact on nested endpoints. If the above called `nestedRoute(\"custom-endpoint\", \"/deep\")`, the resulting endpoint will be found at `/deep`."
-msgstr "絶対パスは、ネストしたエンドポイントにも影響を与えます。上記で `nestedRoute(\"custom-endpoint\", \"/deep\")` を呼び出した場合、結果としてのエンドポイントは `/deep` になります。"
+msgstr ""
+"絶対パスは、ネストしたエンドポイントにも影響を与えます。上記で `nestedRoute"
+"(\"custom-endpoint\", \"/deep\")` を呼び出した場合、"
+"結果としてのエンドポイントは `/deep` になります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1555
 #, fuzzy
 msgid "Refer to the xref:all-config.adoc#quarkus-vertx-http_quarkus.http.non-application-root-path[Quarkus Vertx HTTP configuration reference] for details on how the non-application root path is configured."
-msgstr "非アプリケーションのルートパスの設定方法の詳細については、 link:all-config.html#quarkus-vertx-http_quarkus.http.non-application-root-path[Quarkus Vertx HTTP設定リファレンス]を参照してください。"
+msgstr ""
+"非アプリケーションのルートパスの設定方法の詳細については、 link:all-config."
+"html#quarkus-vertx-http_quarkus.http.non-application-root-path[Quarkus Vertx "
+"HTTP設定リファレンス]を参照してください。"
 
 #. type: Title ===
 #: upstream/_guides/writing-extensions.adoc:1556
@@ -3098,7 +3355,11 @@ msgstr "`quarkus-smallrye-health` ヘルスチェックを *オプションの* 
 #: upstream/_guides/writing-extensions.adoc:1568
 #, fuzzy
 msgid "Create your health check following the xref:smallrye-health.adoc[SmallRye Health] guide. We advise providing only readiness check for an extension (liveness check is designed to express the fact that an application is up and needs to be lightweight)."
-msgstr "link:smallrye-health.html[SmallRye Health]ガイドに従ってヘルスチェックを作成します。エクステンションの準備状況チェックのみを提供することをお勧めします（有効性チェックは、アプリケーションが起動しており、軽量化が必要であることを表現するために設計されています）。"
+msgstr ""
+"link:smallrye-health.html[SmallRye Health]ガイドに従ってヘルスチェックを作成"
+"します。エクステンションの準備状況チェックのみを提供することをお勧めします（"
+"有効性チェックは、アプリケーションが起動しており、軽量化が必要であることを表"
+"現するために設計されています）。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1569
@@ -3114,13 +3375,18 @@ msgstr "デプロイメントモジュールに、 `HealthBuildItem` を生成�
 #: upstream/_guides/writing-extensions.adoc:1571
 #, fuzzy
 msgid "Add a way to disable the extension health check via a config item `quarkus.<extension>.health.enabled` that should be enabled by default."
-msgstr "デフォルトでは有効になっているはずのエクステンションのヘルスチェックを、config item `quarkus.<extension>.health.enabled` を通して無効にする方法を追加しました。"
+msgstr ""
+"デフォルトでは有効になっているはずのエクステンションのヘルスチェックを、"
+"config item `quarkus.<extension>.health.enabled` "
+"を通して無効にする方法を追加しました。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1573
 #, fuzzy
 msgid "Following is an example from the Agroal extension that provides a `DataSourceHealthCheck` to validate the readiness of a datasource."
-msgstr "以下は、データソースの準備状況を検証するための `DataSourceHealthCheck` を提供する Agroal エクステンションの例です。"
+msgstr ""
+"以下は、データソースの準備状況を検証するための `DataSourceHealthCheck` "
+"を提供する Agroal エクステンションの例です。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1581
@@ -3153,25 +3419,49 @@ msgstr "MP Metrics API の互換性レイヤは、将来的には別のエクス
 #: upstream/_guides/writing-extensions.adoc:1592
 #, fuzzy
 msgid "There are two broad patterns that extensions can use to interact with an optional metrics extension to add their own metrics:"
-msgstr "エクステンションがオプションのメトリクスエクステンションと相互作用して独自のメトリクスを追加するために使用できるパターンは、大きく分けて2つあります。"
+msgstr ""
+"エクステンションがオプションのメトリクスエクステンションと相互作用して独自の"
+"メトリクスを追加するために使用できるパターンは、大きく分けて2つあります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1594
 #, fuzzy
 msgid "Consumer pattern: An extension declares a `MetricsFactoryConsumerBuildItem` and uses that to provide a bytecode recorder to the metrics extension. When the metrics extension has initialized, it will iterate over registered consumers to initialize them with a `MetricsFactory`. This factory can be used to declare API-agnostic metrics, which can be a good fit for extensions that provide an instrumentable object for gathering statistics (e.g. Hibernate's `Statistics` class)."
-msgstr "Consumerパターン。エクステンションは `MetricsFactoryConsumerBuildItem` を宣言し、それを使用してバイトコードレコーダをメトリクス拡張に提供します。メトリクス拡張が初期化されると、登録されているコンシューマを順に処理して `MetricsFactory` で初期化します。このファクトリを使用して、API に依存しないメトリクスを宣言することができます。これは、統計情報を収集するための計測可能なオブジェクトを提供するエクステンション (Hibernate の `Statistics` クラスなど) に適していると言えます。"
+msgstr ""
+"Consumerパターン。エクステンションは `MetricsFactoryConsumerBuildItem` を宣言"
+"し、それを使用してバイトコードレコーダをメトリクス拡張に提供します。メトリク"
+"ス拡張が初期化されると、登録されているコンシューマを順に処理して "
+"`MetricsFactory` で初期化します。このファクトリを使用して、API "
+"に依存しないメトリクスを宣言することができます。これは、"
+"統計情報を収集するための計測可能なオブジェクトを提供するエクステンション ("
+"Hibernate の `Statistics` クラスなど) に適していると言えます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1596
 #, fuzzy
 msgid "Binder pattern: An extension can opt to use completely different gathering implementations depending on the metrics system. An `Optional<MetricsCapabilityBuildItem> metricsCapability` build step parameter can be used to declare or otherwise initialize API-specific metrics based on the active metrics extension (e.g. \"smallrye-metrics\" or \"micrometer\"). This pattern can be combined with the consumer pattern by using `MetricsFactory::metricsSystemSupported()` to test the active metrics extension within the recorder."
-msgstr "バインダーパターン。エクステンションは、メトリクスシステムに応じて全く異なるギャザリングの実装を使用することを選択できます。 `Optional<MetricsCapabilityBuildItem> metricsCapability` ビルドステップパラメータを使用して、アクティブなメトリクス拡張に基づいてAPI固有のメトリクスを宣言またはその他の方法で初期化することができます（例：\"smallry-metrics \"または \"micrometer\"）。このパターンは、 `MetricsFactory::metricsSystemSupported()` を使ってレコーダー内でアクティブなメトリクス拡張をテストすることで、コンシューマーパターンと組み合わせることができます。"
+msgstr ""
+"バインダーパターン。エクステンションは、メトリクスシステムに応じて全く異なる"
+"ギャザリングの実装を使用することを選択できます。 `"
+"Optional<MetricsCapabilityBuildItem> metricsCapability` ビルドステップパラメ"
+"ータを使用して、アクティブなメトリクス拡張に基づいてAPI固有のメトリクスを宣言"
+"またはその他の方法で初期化することができます（例：\"smallry-metrics \"または "
+"\"micrometer\"）。このパターンは、 `MetricsFactory::metricsSystemSupported()`"
+" を使ってレコーダー内でアクティブなメトリクス拡張をテストすることで、コンシュ"
+"ーマーパターンと組み合わせることができます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1598
 #, fuzzy
 msgid "Remember that support for metrics is optional. Extensions can use an `Optional<MetricsCapabilityBuildItem> metricsCapability` parameter in their build step to test for the presence of an enabled metrics extension. Consider using additional configuration to control behavior of metrics. Datasource metrics can be expensive, for example, so additional configuration flags are used enable metrics collection on individual datasources."
-msgstr "メトリクスのサポートはオプションであることを覚えておいてください。エクステンションは、そのビルドステップで `Optional<MetricsCapabilityBuildItem> metricsCapability` パラメータを使用して、有効化されたメトリクスエクステンションの存在をテストすることができます。メトリクスの動作を制御するために追加の構成を使用することを検討してください。例えば、データソースのメトリクスはコストがかかりますので、追加の構成フラグを使用して、個々のデータソースでのメトリクス収集を可能にします。"
+msgstr ""
+"メトリクスのサポートはオプションであることを覚えておいてください。エクステン"
+"ションは、そのビルドステップで `Optional<MetricsCapabilityBuildItem> "
+"metricsCapability` パラメータを使用して、有効化されたメトリクスエクステンショ"
+"ンの存在をテストすることができます。メトリクスの動作を制御するために追加の構"
+"成を使用することを検討してください。例えば、データソースのメトリクスはコスト"
+"がかかりますので、追加の構成フラグを使用して、個々のデータソースでのメトリク"
+"ス収集を可能にします。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1600
@@ -3182,19 +3472,25 @@ msgstr "エクステンションのメトリクスを追加するとき、以下
 #: upstream/_guides/writing-extensions.adoc:1602
 #, fuzzy
 msgid "An underlying library used by the extension is using a specific Metrics API directly (either MP Metrics, Micrometer, or some other)."
-msgstr "エクステンションで使用されているライブラリは、特定のMetrics APIを直接使用しています（MP Metrics、Micrometer、またはその他）。"
+msgstr ""
+"エクステンションで使用されているライブラリは、特定のMetrics "
+"APIを直接使用しています（MP Metrics、Micrometer、またはその他）。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1603
 #, fuzzy
 msgid "An underlying library uses its own mechanism for collecting metrics and makes them available at runtime using its own API, e.g. Hibernate's `Statistics` class, or Vert.x `MetricsOptions`."
-msgstr "基礎となるライブラリは、メトリクスを収集するための独自のメカニズムを使用し、独自のAPIを使用して実行時に利用できるようにします。例えば、Hibernateの `Statistics` クラス、またはVert.xの `MetricsOptions` 。"
+msgstr ""
+"基礎となるライブラリは、メトリクスを収集するための独自のメカニズムを使用し、"
+"独自のAPIを使用して実行時に利用できるようにします。例えば、Hibernateの "
+"`Statistics` クラス、またはVert.xの `MetricsOptions` 。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1604
 #, fuzzy
 msgid "An underlying library does not provide metrics (or there is no library at all) and you want to add instrumentation."
-msgstr "基盤となるライブラリがメトリクスを提供していない（またはライブラリが全くない）ため、インスツルメンテーションを追加したい。"
+msgstr "基盤となるライブラリがメトリクスを提供していない（またはライブラリが全くない"
+"）ため、インスツルメンテーションを追加したい。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1605
@@ -3212,19 +3508,32 @@ msgstr "ライブラリがメトリクスのAPIを直接使用する場合、2�
 #: upstream/_guides/writing-extensions.adoc:1610
 #, fuzzy
 msgid "Use an `Optional<MetricsCapabilityBuildItem> metricsCapability` parameter to test which metrics API is supported (e.g. \"smallrye-metrics\" or \"micrometer\") in your build step, and use that to selectively declare or initialize API-specific beans or build items."
-msgstr "`Optional<MetricsCapabilityBuildItem> metricsCapability` パラメータを使用して、ビルドステップでどのメトリクス API がサポートされているか (例: \"smallry-metrics\" や \"micrometer\") をテストし、それを使用して API 固有の Bean やビルドアイテムを選択的に宣言または初期化します。"
+msgstr ""
+"`Optional<MetricsCapabilityBuildItem> metricsCapability` "
+"パラメータを使用して、ビルドステップでどのメトリクス API "
+"がサポートされているか (例: \"smallry-metrics\" や \"micrometer\") "
+"をテストし、それを使用して API 固有の Bean "
+"やビルドアイテムを選択的に宣言または初期化します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1612
 #, fuzzy
 msgid "Create a separate build step that consumes a `MetricsFactory`, and use the `MetricsFactory::metricsSystemSupported()` method within the bytecode recorder to initialize required resources if the desired metrics API is supported (e.g. \"smallrye-metrics\" or \"micrometer\")."
-msgstr "`MetricsFactory` を消費する別のビルドステップを作成し、バイトコードレコーダ内の `MetricsFactory::metricsSystemSupported()` メソッドを使用して、目的のメトリクス API がサポートされている場合は、必要なリソースを初期化します（例：\"smallrye-metrics \"または \"micrometer\"）。"
+msgstr ""
+"`MetricsFactory` を消費する別のビルドステップを作成し、"
+"バイトコードレコーダ内の `MetricsFactory::metricsSystemSupported()` "
+"メソッドを使用して、目的のメトリクス API "
+"がサポートされている場合は、必要なリソースを初期化します（例：\"smallrye-"
+"metrics \"または \"micrometer\"）。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1614
 #, fuzzy
 msgid "Extensions may need to provide a fallback if there is no active metrics extension or the extension doesn't support the API required by the library."
-msgstr "エクステンションは、アクティブなメトリクス・エクステンションがない場合や、エクステンションがライブラリの要求するAPIをサポートしていない場合に、フォールバックを提供する必要があるかもしれません。"
+msgstr ""
+"エクステンションは、アクティブなメトリクス・エクステンションがない場合や、エ"
+"クステンションがライブラリの要求するAPIをサポートしていない場合に、フォールバ"
+"ックを提供する必要があるかもしれません。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1615
@@ -3242,13 +3551,17 @@ msgstr "ライブラリが独自のメトリクスAPIを提供する例は2つ�
 #: upstream/_guides/writing-extensions.adoc:1620
 #, fuzzy
 msgid "The extension defines an instrumentable object as Agroal does with `io.agroal.api.AgroalDataSourceMetrics`, or"
-msgstr "エクステンションは、Agroal が `io.agroal.api.AgroalDataSourceMetrics` で行っているように、インストゥルメント可能なオブジェクトを定義しています。"
+msgstr ""
+"エクステンションは、Agroal が `io.agroal.api.AgroalDataSourceMetrics` "
+"で行っているように、インストゥルメント可能なオブジェクトを定義しています。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1621
 #, fuzzy
 msgid "The extension provides its own abstraction of metrics, as Jaeger does with `io.jaegertracing.spi.MetricsFactory`."
-msgstr "Jaeger が `io.jaegertracing.spi.MetricsFactory` で行っているように、エクステンションは独自のメトリクスの抽象化を提供します。"
+msgstr ""
+"Jaeger が `io.jaegertracing.spi.MetricsFactory` "
+"で行っているように、エクステンションは独自のメトリクスの抽象化を提供します。"
 
 #. type: Title =====
 #: upstream/_guides/writing-extensions.adoc:1622
@@ -3260,13 +3573,20 @@ msgstr "観測可能な天体の観測"
 #: upstream/_guides/writing-extensions.adoc:1625
 #, fuzzy
 msgid "Let's take the instrumentable object (`io.agroal.api.AgroalDataSourceMetrics`) case first. In this case, you can do the following:"
-msgstr "まずInstrumentable Object( `io.agroal.api.AgroalDataSourceMetrics`)の場合を考えてみましょう。この場合は、以下のようになります。"
+msgstr ""
+"まずInstrumentable Object( `io.agroal.api.AgroalDataSourceMetrics`)の場合を考"
+"えてみましょう。この場合は、以下のようになります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1627
 #, fuzzy
 msgid "Define a `BuildStep` that produces a `MetricsFactoryConsumerBuildItem` that uses a `RUNTIME_INIT` or `STATIC_INIT` Recorder to define a `MetricsFactory` consumer. For example, the following creates a `MetricsFactoryConsumerBuildItem` if and only if metrics are enabled both for Agroal generally, and for a datasource specifically:"
-msgstr "`MetricsFactory` 消費者を定義するために `RUNTIME_INIT` または `STATIC_INIT` Recorder を使用する `MetricsFactoryConsumerBuildItem` を生成する `BuildStep` を定義します。例えば、次の例では、Agroal全般とデータソースの両方でメトリクスが有効になっている場合に限り、 `MetricsFactoryConsumerBuildItem` を作成します。"
+msgstr ""
+"`MetricsFactory` 消費者を定義するために `RUNTIME_INIT` または `STATIC_INIT` "
+"Recorder を使用する `MetricsFactoryConsumerBuildItem` を生成する `BuildStep` "
+"を定義します。例えば、次の例では、Agroal全般とデータソースの両方でメトリクス"
+"が有効になっている場合に限り、 `MetricsFactoryConsumerBuildItem` "
+"を作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1636
@@ -3301,7 +3621,11 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1651
 #, fuzzy
 msgid "The associated recorder should use the provided `MetricsFactory` to register metrics. For Agroal, this means using the `MetricFactory` API to observe `io.agroal.api.AgroalDataSourceMetrics` methods. For example:"
-msgstr "関連するレコーダーは、提供された `MetricsFactory` を使用してメトリクスを登録する必要があります。Agroal の場合、これは `MetricFactory` API を使用して `io.agroal.api.AgroalDataSourceMetrics` メソッドを観測することを意味します。例えば、以下のようになります。"
+msgstr ""
+"関連するレコーダーは、提供された `MetricsFactory` "
+"を使用してメトリクスを登録する必要があります。Agroal の場合、これは "
+"`MetricFactory` API を使用して `io.agroal.api.AgroalDataSourceMetrics` "
+"メソッドを観測することを意味します。例えば、以下のようになります。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1661
@@ -3333,7 +3657,13 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1672
 #, fuzzy
 msgid "The `MetricsFactory` provides a fluid builder for registration of metrics, with the final step constructing gauges or counters based on a `Supplier` or `ToDoubleFunction`. Timers can either wrap `Callable`, `Runnable`, or `Supplier` implementations, or can use a `TimeRecorder` to accumulate chunks of time. The underlying metrics extension will create appropriate artifacts to observe or measure the defined functions."
-msgstr "`MetricsFactory` は、メトリクスを登録するための流体ビルダーを提供し、最終的には `Supplier` や `ToDoubleFunction` に基づいてゲージやカウンターを構築します。タイマーは、 `Callable` 、 `Runnable` 、 `Supplier` の実装をラップしたり、 `TimeRecorder` を使って時間の塊を蓄積したりすることができます。基礎となるメトリクス拡張は、定義された機能を観察または測定するための適切なアーティファクトを作成します。"
+msgstr ""
+"`MetricsFactory` は、メトリクスを登録するための流体ビルダーを提供し、"
+"最終的には `Supplier` や `ToDoubleFunction` "
+"に基づいてゲージやカウンターを構築します。タイマーは、 `Callable` 、 "
+"`Runnable` 、 `Supplier` の実装をラップしたり、 `TimeRecorder` を使って時間の"
+"塊を蓄積したりすることができます。基礎となるメトリクス拡張は、定義された機能"
+"を観察または測定するための適切なアーティファクトを作成します。"
 
 #. type: Title =====
 #: upstream/_guides/writing-extensions.adoc:1673
@@ -3345,13 +3675,24 @@ msgstr "Metrics API固有の実装の使用"
 #: upstream/_guides/writing-extensions.adoc:1676
 #, fuzzy
 msgid "Using metrics-API specific implementations may be preferred in some cases. Jaeger, for example, defines its own metrics interface, `io.jaegertracing.spi.MetricsFactory`, that it uses to define counters and gauges. A direct mapping from that interface to the metrics system will be the most efficient. In this case, it is important to isolate these specialized implementations and to avoid eager classloading to ensure the metrics API remains an optional, compile-time dependency."
-msgstr "メトリクスAPIに特化した実装を使用することが望ましい場合があります。例えば、Jaegerでは、カウンターやゲージを定義するための独自のメトリクス・インターフェース `io.jaegertracing.spi.MetricsFactory` を定義しています。そのインターフェースからメトリクスシステムに直接マッピングするのが最も効率的です。この場合、これらの特殊な実装を分離し、イーガー・クラスローディングを避けて、メトリクスAPIがオプションのコンパイル時依存関係のままであることを保証することが重要です。"
+msgstr ""
+"メトリクスAPIに特化した実装を使用することが望ましい場合があります。例えば、Ja"
+"egerでは、カウンターやゲージを定義するための独自のメトリクス・"
+"インターフェース `io.jaegertracing.spi.MetricsFactory` を定義しています。その"
+"インターフェースからメトリクスシステムに直接マッピングするのが最も効率的です"
+"。この場合、これらの特殊な実装を分離し、イーガー・クラスローディングを避けて"
+"、メトリクスAPIがオプションのコンパイル時依存関係のままであることを保証するこ"
+"とが重要です。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1678
 #, fuzzy
 msgid "`Optional<MetricsCapabilityBuildItem> metricsCapability` can be used in the build step to selectively control initialization of beans or the production of other build items. The Jaeger extension, for example, can use the following to control initialization of specialized Metrics API adapters:"
-msgstr "`Optional<MetricsCapabilityBuildItem> metricsCapability` は、ビーンの初期化や他のビルドアイテムの生成を選択的に制御するために、ビルドステップで使用することができます。例えば，Jaeger拡張では，以下のようにして，特殊なMetrics APIアダプタの初期化を制御することができます。"
+msgstr ""
+"`Optional<MetricsCapabilityBuildItem> metricsCapability` は、ビーンの初期化や"
+"他のビルドアイテムの生成を選択的に制御するために、ビルドステップで使用するこ"
+"とができます。例えば，Jaeger拡張では，以下のようにして，特殊なMetrics "
+"APIアダプタの初期化を制御することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1686
@@ -3395,7 +3736,10 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1706
 #, fuzzy
 msgid "A recorder consuming a `MetricsFactory` can use `MetricsFactory::metricsSystemSupported()` can be used to control initialization of metrics objects during bytecode recording in a similar way."
-msgstr "`MetricsFactory` を消費するレコーダーは、 `MetricsFactory::metricsSystemSupported()` を使用して、同様の方法でバイトコード記録中のメトリクス・オブジェクトの初期化を制御することができます。"
+msgstr ""
+"`MetricsFactory` を消費するレコーダーは、 "
+"`MetricsFactory::metricsSystemSupported()` を使用して、同様の方法でバイトコー"
+"ド記録中のメトリクス・オブジェクトの初期化を制御することができます。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1707
@@ -3407,13 +3751,21 @@ msgstr "ケース3：エクステンションコード内でメトリクスを�
 #: upstream/_guides/writing-extensions.adoc:1710
 #, fuzzy
 msgid "To define your own metrics from scratch, you have two basic options: Use the generic `MetricFactory` builders, or follow the binder pattern, and create instrumentation specific to the enabled metrics extension."
-msgstr "独自のメトリクスをゼロから定義するには、2つの基本的なオプションがあります。汎用の `MetricFactory` ビルダーを使用するか、バインダー・パターンに従って、有効化されたメトリクス・エクステンションに固有のインスツルメンテーションを作成するかです。"
+msgstr ""
+"独自のメトリクスをゼロから定義するには、2つの基本的なオプションがあります。"
+"汎用の `MetricFactory` ビルダーを使用するか、バインダー・パターンに従って、有"
+"効化されたメトリクス・エクステンションに固有のインスツルメンテーションを作成"
+"するかです。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1712
 #, fuzzy
 msgid "To use the extension-agnostic `MetricFactory` API, your processor can define a `BuildStep` that produces a `MetricsFactoryConsumerBuildItem` that uses a `RUNTIME_INIT` or `STATIC_INIT` Recorder to define a `MetricsFactory` consumer."
-msgstr "エクステンションにとらわれない `MetricFactory` API を使用するには、プロセッサが `BuildStep` を定義して `MetricsFactoryConsumerBuildItem` を生成し、 `RUNTIME_INIT` または `STATIC_INIT` Recorder を使用して `MetricsFactory` コンシューマを定義します。"
+msgstr ""
+"エクステンションにとらわれない `MetricFactory` API を使用するには、"
+"プロセッサが `BuildStep` を定義して `MetricsFactoryConsumerBuildItem` "
+"を生成し、 `RUNTIME_INIT` または `STATIC_INIT` Recorder を使用して "
+"`MetricsFactory` コンシューマを定義します。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1720
@@ -3430,7 +3782,8 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1723
 #, fuzzy
 msgid "The associated recorder should use the provided `MetricsFactory` to register metrics, for example"
-msgstr "関連するレコーダーは、提供された `MetricsFactory` を使用してメトリクスを登録する必要があります。"
+msgstr "関連するレコーダーは、提供された `MetricsFactory` "
+"を使用してメトリクスを登録する必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1727
@@ -3456,7 +3809,13 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1739
 #, fuzzy
 msgid "Remember that metrics extensions are optional. Keep metrics-related initialization isolated from other setup for your extension, and structure your code to avoid eager imports of metrics APIs. Gathering metrics can also be expensive. Consider using additional extension-specific configuration to control behavior of metrics if the presence/absence of metrics support isn't sufficient."
-msgstr "メトリクス・エクステンションはオプションであることを覚えておいてください。メトリクス関連の初期化は、他のエクステンションのセットアップから分離しておき、メトリクスAPIのイーガー・インポートを避けるようにコードを構成してください。メトリクスの収集にはコストもかかります。メトリクスサポートの有無だけでは不十分な場合は、追加のエクステンション固有の設定でメトリクスの動作を制御することを検討してください。"
+msgstr ""
+"メトリクス・エクステンションはオプションであることを覚えておいてください。メ"
+"トリクス関連の初期化は、他のエクステンションのセットアップから分離しておき、"
+"メトリクスAPIのイーガー・インポートを避けるようにコードを構成してください。メ"
+"トリクスの収集にはコストもかかります。メトリクスサポートの有無だけでは不十分"
+"な場合は、追加のエクステンション固有の設定でメトリクスの動作を制御することを"
+"検討してください。"
 
 #. type: Title ===
 #: upstream/_guides/writing-extensions.adoc:1740
@@ -3533,7 +3892,8 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1784
 #, fuzzy
 msgid "Add a dependency to `quarkus-jackson-spi` on your extension's deployment module."
-msgstr "まず、エクステンションのランタイムモジュールに `quarkus-jackson` への *オプションの* 依存関係を追加します。"
+msgstr "まず、エクステンションのランタイムモジュールに `quarkus-jackson` への "
+"*オプションの* 依存関係を追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1791
@@ -3549,7 +3909,10 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1795
 #, fuzzy
 msgid "Add a build step to your processor to register a Jackson module via the `JacksonModuleBuildItem`.  You need to name your module in a unique way across all Jackson modules."
-msgstr "`JacksonModuleBuildItem` を介して Jackson モジュールを登録するために、プロセッサにビルドステップを追加します。モジュールの名前は、すべてのJacksonモジュールで一意になるように付ける必要があります。"
+msgstr ""
+"`JacksonModuleBuildItem` を介して Jackson モジュールを登録するために、プロセ"
+"ッサにビルドステップを追加します。モジュールの名前は、すべてのJacksonモジュー"
+"ルで一意になるように付ける必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1806
@@ -3574,7 +3937,12 @@ msgstr "そして、Jackson エクステンションは、生成されたビル�
 #: upstream/_guides/writing-extensions.adoc:1813
 #, fuzzy
 msgid "If you need more customization capabilities than registering a module, you can produce a CDI bean that implements `io.quarkus.jackson.ObjectMapperCustomizer` via an `AdditionalBeanBuildItem`.  More info about customizing Jackson can be found on the JSON guide xref:rest-json.adoc#configuring-json-support[Configuring JSON support]"
-msgstr "モジュールを登録する以上のカスタマイズ機能が必要な場合は、 `io.quarkus.jackson.ObjectMapperCustomizer` を実装した CDI Bean を `AdditionalBeanBuildItem` を介して作成することができます。Jackson のカスタマイズに関する詳細は、JSON ガイド link:rest-json.html#configuring-json-support[Configuring JSON support]に記載されています。"
+msgstr ""
+"モジュールを登録する以上のカスタマイズ機能が必要な場合は、 `io.quarkus."
+"jackson.ObjectMapperCustomizer` を実装した CDI Bean を "
+"`AdditionalBeanBuildItem` を介して作成することができます。Jackson "
+"のカスタマイズに関する詳細は、JSON ガイド link:rest-json.html#configuring-"
+"json-support[Configuring JSON support]に記載されています。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1814
@@ -3586,7 +3954,8 @@ msgstr "Jacksonのカスタマイズ"
 #: upstream/_guides/writing-extensions.adoc:1816
 #, fuzzy
 msgid "First, add an *optional* dependency to `quarkus-jsonb` on your extension's runtime module."
-msgstr "まず、エクステンションのランタイムモジュールに `quarkus-jackson` への *オプションの* 依存関係を追加します。"
+msgstr "まず、エクステンションのランタイムモジュールに `quarkus-jackson` への "
+"*オプションの* 依存関係を追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1824
@@ -3603,7 +3972,9 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1827
 #, fuzzy
 msgid "Then create a serializer and/or a deserializer for JSON-B, an example of which can be seen in the `mongodb-panache` extension."
-msgstr "次に、Jackson 用のシリアライザまたはデシリアライザ (またはその両方) を作成します。 `mongodb-panache` のエクステンションで例を見ることができます。"
+msgstr ""
+"次に、Jackson 用のシリアライザまたはデシリアライザ (またはその両方) "
+"を作成します。 `mongodb-panache` のエクステンションで例を見ることができます。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1838
@@ -3623,7 +3994,8 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1841
 #, fuzzy
 msgid "Add a dependency to `quarkus-jsonb-spi` on your extension's deployment module."
-msgstr "まず、エクステンションのランタイムモジュールに `quarkus-jackson` への *オプションの* 依存関係を追加します。"
+msgstr "まず、エクステンションのランタイムモジュールに `quarkus-jackson` への "
+"*オプションの* 依存関係を追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1848
@@ -3639,7 +4011,8 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1851
 #, fuzzy
 msgid "Add a build step to your processor to register the serializer via the `JsonbSerializerBuildItem`."
-msgstr "プロセッサにビルドステップを追加して、 `JsonbSerializerBuildItem` を介してシリアライザを登録します。"
+msgstr "プロセッサにビルドステップを追加して、 `JsonbSerializerBuildItem` "
+"を介してシリアライザを登録します。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1858
@@ -3655,13 +4028,19 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1861
 #, fuzzy
 msgid "The JSON-B extension will then use the produced build item to register your serializer/deserializer automatically."
-msgstr "そして、Jackson エクステンションは、生成されたビルドアイテムを使用して、Jackson 内で自動的にモジュールを登録します。"
+msgstr "そして、Jackson エクステンションは、生成されたビルドアイテムを使用して、"
+"Jackson 内で自動的にモジュールを登録します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1865
 #, fuzzy
 msgid "If you need more customization capabilities than registering a serializer or a deserializer, you can produce a CDI bean that implements `io.quarkus.jsonb.JsonbConfigCustomizer` via an `AdditionalBeanBuildItem`.  More info about customizing JSON-B can be found on the JSON guide xref:rest-json.adoc#configuring-json-support[Configuring JSON support]"
-msgstr "シリアライザやデシリアライザを登録する以上のカスタマイズ機能が必要な場合は、 `AdditionalBeanBuildItem` を介して `io.quarkus.jsonb.JsonbConfigCustomizer` を実装した CDI Bean を作成することができます。JSON-B のカスタマイズについての詳細は、JSON ガイドの link:rest-json.html#configuring-json-support[Configuring JSON support]を参照してください。"
+msgstr ""
+"シリアライザやデシリアライザを登録する以上のカスタマイズ機能が必要な場合は、 "
+"`AdditionalBeanBuildItem` を介して `io.quarkus.jsonb.JsonbConfigCustomizer` "
+"を実装した CDI Bean を作成することができます。JSON-B "
+"のカスタマイズについての詳細は、JSON ガイドの link:rest-json.html"
+"#configuring-json-support[Configuring JSON support]を参照してください。"
 
 #. type: Title ===
 #: upstream/_guides/writing-extensions.adoc:1866
@@ -3673,7 +4052,8 @@ msgstr "開発モードとの連携"
 #: upstream/_guides/writing-extensions.adoc:1869
 #, fuzzy
 msgid "There are various APIS that you can use to integrate with development mode, and to get information about the current state."
-msgstr "開発モードとの統合や、現在の状態に関する情報を得るために使用できる様々なAPISがあります。"
+msgstr "開発モードとの統合や、現在の状態に関する情報を得るために使用できる様々なAPIS"
+"があります。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1870
@@ -3685,7 +4065,9 @@ msgstr "再起動への対応"
 #: upstream/_guides/writing-extensions.adoc:1874
 #, fuzzy
 msgid "When Quarkus is starting the `io.quarkus.deployment.builditem.LiveReloadBuildItem` is guaranteed to be present that gives information about this start, in particular:"
-msgstr "Quarkusの起動時には、特にこの起動に関する情報を与える `io.quarkus.deployment.builditem.LiveReloadBuildItem` が存在することが保証されています。"
+msgstr ""
+"Quarkusの起動時には、特にこの起動に関する情報を与える `io.quarkus.deployment."
+"builditem.LiveReloadBuildItem` が存在することが保証されています。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1876
@@ -3697,13 +4079,15 @@ msgstr "クリーンスタートなのか、ライブリロードなのか"
 #: upstream/_guides/writing-extensions.adoc:1877
 #, fuzzy
 msgid "If this is a live reload which changed files / classes triggered the reload"
-msgstr "ライブリロードで、変更されたファイルやクラスがリロードのきっかけになっている場合"
+msgstr "ライブリロードで、変更されたファイルやクラスがリロードのきっかけになっている"
+"場合"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1880
 #, fuzzy
 msgid "It also provides a global context map you can use to store information between restarts, without needing to resort to static fields."
-msgstr "また、静的なフィールドに頼ることなく、再起動の間に情報を保存するために使用できるグローバルなコンテキストマップを提供しています。"
+msgstr "また、静的なフィールドに頼ることなく、再起動の間に情報を保存するために使用で"
+"きるグローバルなコンテキストマップを提供しています。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:1881
@@ -3715,13 +4099,21 @@ msgstr "ホットリロードのテスト"
 #: upstream/_guides/writing-extensions.adoc:1886
 #, fuzzy
 msgid "Live reload is generally triggered by a HTTP request, however not all applications are HTTP applications and some extensions may want to trigger live reload based on other events. To do this you need to implement `io.quarkus.dev.spi.HotReplacementSetup` in your runtime module, and add a `META-INF/services/io.quarkus.dev.spi.HotReplacementSetup` that lists your implementation."
-msgstr "しかし、すべてのアプリケーションがHTTPアプリケーションであるとは限らず、エクステンションによっては他のイベントに基づいてライブリロードをトリガしたい場合もあります。これを実現するには、ランタイムモジュールで `io.quarkus.dev.spi.HotReplacementSetup` を実装し、その実装を示す `META-INF/services/io.quarkus.dev.spi.HotReplacementSetup` を追加する必要があります。"
+msgstr ""
+"しかし、すべてのアプリケーションがHTTPアプリケーションであるとは限らず、エク"
+"ステンションによっては他のイベントに基づいてライブリロードをトリガしたい場合"
+"もあります。これを実現するには、ランタイムモジュールで `io.quarkus.dev.spi."
+"HotReplacementSetup` を実装し、その実装を示す `META-INF/services/io.quarkus."
+"dev.spi.HotReplacementSetup` を追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1889
 #, fuzzy
 msgid "On startup the `setupHotDeployment` method will be called, and you can use the provided `io.quarkus.dev.spi.HotReplacementContext` to initiate a scan for changed files."
-msgstr "起動時には `setupHotDeployment` メソッドが呼び出され、提供された `io.quarkus.dev.spi.HotReplacementContext` を使って変更されたファイルのスキャンを開始することができます。"
+msgstr ""
+"起動時には `setupHotDeployment` メソッドが呼び出され、提供された `io.quarkus."
+"dev.spi.HotReplacementContext` "
+"を使って変更されたファイルのスキャンを開始することができます。"
 
 #. type: Title ===
 #: upstream/_guides/writing-extensions.adoc:1890
@@ -3738,13 +4130,16 @@ msgstr "Quarkus エクステンションのテストは `io.quarkus.test.Quarkus
 #: upstream/_guides/writing-extensions.adoc:1900
 #, fuzzy
 msgid "These tests should be placed in the deployment module, if additional Quarkus modules are required for testing their deployment modules should also be added as test scoped dependencies."
-msgstr "テストのために追加のQuarkusモジュールが必要な場合は、それらの展開モジュールもテストスコープ付きの依存関係として追加しなければなりません。"
+msgstr ""
+"テストのために追加のQuarkusモジュールが必要な場合は、それらの展開モジュールも"
+"テストスコープ付きの依存関係として追加しなければなりません。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1902
 #, fuzzy
 msgid "Note that `QuarkusUnitTest` is in the `quarkus-junit5-internal` module."
-msgstr "なお、 `QuarkusUnitTest` は、 `quarkus-junit5-internal` モジュールに入っています。"
+msgstr "なお、 `QuarkusUnitTest` は、 `quarkus-junit5-internal` "
+"モジュールに入っています。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1904
@@ -3864,7 +4259,9 @@ msgstr "`QuarkusUnitTest` エクステンションは、静的フィールドと
 #: upstream/_guides/writing-extensions.adoc:1962
 #, fuzzy
 msgid "This producer is used to build the application to be tested. It uses Shrinkwrap to create a JavaArchive to test"
-msgstr "このプロデューサは、テスト対象のアプリケーションを構築するために使用されます。これは、Shrinkwrapを使用して、テストするJavaArchiveを作成します。"
+msgstr ""
+"このプロデューサは、テスト対象のアプリケーションを構築するために使用されます"
+"。これは、Shrinkwrapを使用して、テストするJavaArchiveを作成します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1963
@@ -3876,19 +4273,22 @@ msgstr "テスト用デプロイメントからテストケースに直接Bean�
 #: upstream/_guides/writing-extensions.adoc:1964
 #, fuzzy
 msgid "This method directly invokes the health check Servlet and verifies the response"
-msgstr "このメソッドは、ヘルスチェック用サーブレットを直接呼び出し、レスポンスを検証します。"
+msgstr "このメソッドは、ヘルスチェック用サーブレットを直接呼び出し、レスポンスを検証"
+"します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1965
 #, fuzzy
 msgid "This method uses the injected health check bean to verify it is returning the expected result"
-msgstr "このメソッドは、注入されたヘルスチェックビーンを使用して、期待される結果を返していることを確認します。"
+msgstr "このメソッドは、注入されたヘルスチェックビーンを使用して、期待される結果を返"
+"していることを確認します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:1967
 #, fuzzy
 msgid "If you want to test that an extension properly fails at build time, use the `setExpectedException` method:"
-msgstr "エクステンションがビルド時に正しく失敗するかどうかをテストしたい場合は、 `setExpectedException` メソッドを使用します。"
+msgstr "エクステンションがビルド時に正しく失敗するかどうかをテストしたい場合は、 "
+"`setExpectedException` メソッドを使用します。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:1972
@@ -4128,19 +4528,24 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2096
 #, fuzzy
 msgid "This starts the deployment, your test can modify it as part of the test suite. Quarkus will be restarted between each test method so every method starts with a clean deployment."
-msgstr "これによりデプロイメントが開始され、テストはテストスイートの一部としてそれを変更することができます。各テストメソッドの間にQuarkusが再起動されるため、すべてのメソッドがクリーンなデプロイメントで始まります。"
+msgstr ""
+"これによりデプロイメントが開始され、テストはテストスイートの一部としてそれを"
+"変更することができます。各テストメソッドの間にQuarkusが再起動されるため、すべ"
+"てのメソッドがクリーンなデプロイメントで始まります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2099
 #, fuzzy
 msgid "This method allows you to modify the source of a class file. The old source is passed into the function, and the updated source is returned."
-msgstr "このメソッドでは、クラスファイルのソースを変更することができます。古いソースがこの関数に渡され、更新されたソースが返されます。"
+msgstr "このメソッドでは、クラスファイルのソースを変更することができます。古いソース"
+"がこの関数に渡され、更新されたソースが返されます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2102
 #, fuzzy
 msgid "This method adds a new class file to the deployment. The source that is used will be the original source that is part of the current project."
-msgstr "このメソッドは、新しいクラスファイルをディプロイメントに追加します。使用されるソースは、現在のプロジェクトの一部であるオリジナルのソースです。"
+msgstr "このメソッドは、新しいクラスファイルをディプロイメントに追加します。使用され"
+"るソースは、現在のプロジェクトの一部であるオリジナルのソースです。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2104
@@ -4162,7 +4567,12 @@ msgstr "ネイティブ実行可能ファイルのサポート"
 #: upstream/_guides/writing-extensions.adoc:2112
 #, fuzzy
 msgid "There Quarkus provides a lot of build items that control aspects of the native executable build. This allows for extensions to programmatically perform tasks such as registering classes for reflection or adding static resources to the native executable. Some of these build items are listed below:"
-msgstr "Quarkusでは、ネイティブ実行可能ファイルのビルドの側面を制御する多くのビルドアイテムを提供しています。これにより、リフレクションのためにクラスを登録したり、ネイティブ実行可能ファイルに静的リソースを追加したりといったタスクを、エクステンションでプログラム的に実行することができます。これらのビルド項目の一部を以下に示します。"
+msgstr ""
+"Quarkusでは、ネイティブ実行可能ファイルのビルドの側面を制御する多くのビルドア"
+"イテムを提供しています。これにより、リフレクションのためにクラスを登録したり"
+"、ネイティブ実行可能ファイルに静的リソースを追加したりといったタスクを、エク"
+"ステンションでプログラム的に実行することができます。これらのビルド項目の一部"
+"を以下に示します。"
 
 #. type: Labeled list
 #: upstream/_guides/writing-extensions.adoc:2113
@@ -4196,7 +4606,8 @@ msgstr "`io.quarkus.deployment.builditem.nativeimage.RuntimeReinitializedClassBu
 #: upstream/_guides/writing-extensions.adoc:2121
 #, fuzzy
 msgid "A class that will be reinitialized at runtime by Substrate. This will result in the static initializer running twice."
-msgstr "サブストレートによって実行時に再初期化されるクラスです。これにより、静的イニシャライザが2回実行されることになります。"
+msgstr "サブストレートによって実行時に再初期化されるクラスです。これにより、静的イニ"
+"シャライザが2回実行されることになります。"
 
 #. type: Labeled list
 #: upstream/_guides/writing-extensions.adoc:2122
@@ -4231,7 +4642,8 @@ msgstr "`io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem`"
 #: upstream/_guides/writing-extensions.adoc:2130
 #, fuzzy
 msgid "Registers a class for reflection in Substrate. Constructors are always registered, while methods and fields are optional."
-msgstr "クラスをサブストレートに反映させるために登録します。コンストラクタは必ず登録されますが、メソッドやフィールドは任意です。"
+msgstr "クラスをサブストレートに反映させるために登録します。コンストラクタは必ず登録"
+"されますが、メソッドやフィールドは任意です。"
 
 #. type: Labeled list
 #: upstream/_guides/writing-extensions.adoc:2131
@@ -4243,7 +4655,10 @@ msgstr "`io.quarkus.deployment.builditem.nativeimage.RuntimeInitializedClassBuil
 #: upstream/_guides/writing-extensions.adoc:2133
 #, fuzzy
 msgid "A class that will be initialized at runtime rather than build time. This will cause the build to fail if the class is initialized as part of the native executable build process, so care must be taken."
-msgstr "ビルド時ではなくランタイムに初期化されるクラスです。これは、ネイティブの実行可能なビルドプロセスの一部としてクラスが初期化されると、ビルドが失敗する原因となるため、注意が必要です。"
+msgstr ""
+"ビルド時ではなくランタイムに初期化されるクラスです。これは、ネイティブの実行"
+"可能なビルドプロセスの一部としてクラスが初期化されると、ビルドが失敗する原因"
+"となるため、注意が必要です。"
 
 #. type: Labeled list
 #: upstream/_guides/writing-extensions.adoc:2134
@@ -4255,7 +4670,8 @@ msgstr "`io.quarkus.deployment.builditem.nativeimage.NativeImageConfigBuildItem`
 #: upstream/_guides/writing-extensions.adoc:2136
 #, fuzzy
 msgid "A convenience feature that allows you to control most of the above features from a single build item."
-msgstr "上記の機能のほとんどを1つのビルドアイテムからコントロールできる便利な機能です。"
+msgstr "上記の機能のほとんどを1つのビルドアイテムからコントロールできる便利な機能です"
+"。"
 
 #. type: Labeled list
 #: upstream/_guides/writing-extensions.adoc:2137
@@ -4278,7 +4694,13 @@ msgstr "`io.quarkus.deployment.builditem.ExtensionSslNativeSupportBuildItem`"
 #: upstream/_guides/writing-extensions.adoc:2143
 #, fuzzy
 msgid "A convenient way to tell Quarkus that the extension requires SSL and it should be enabled during native image build.  When using this feature, remember to add your extension to the list of extensions that offer SSL support automatically on the https://github.com/quarkusio/quarkus/blob/main/docs/src/main/asciidoc/native-and-ssl.adoc[native and ssl guide]."
-msgstr "エクステンションがSSLを必要としており、ネイティブイメージのビルド時に有効にする必要があることをQuarkusに伝える便利な方法です。この機能を使用する際には、 link:https://github.com/quarkusio/quarkus/blob/main/docs/src/main/asciidoc/native-and-ssl.adoc[ネイティブおよびsslガイド]で自動的にSSLサポートを提供するエクステンションのリストにエクステンションを追加することを忘れないでください。"
+msgstr ""
+"エクステンションがSSLを必要としており、ネイティブイメージのビルド時に有効にす"
+"る必要があることをQuarkusに伝える便利な方法です。この機能を使用する際には、 "
+"link:https://github.com/quarkusio/quarkus/blob/main/docs/src/main/asciidoc/"
+"native-and-ssl.adoc[ネイティブおよびsslガイド]で自動的にSSLサポートを提供する"
+"エクステンションのリストにエクステンションを追加することを忘れないでください"
+"。"
 
 #. type: Title ===
 #: upstream/_guides/writing-extensions.adoc:2144
@@ -4385,7 +4807,11 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2184
 #, fuzzy
 msgid "The property value could be either an absolute path, such as `/home/foo/dump` on a Linux machine, or a path relative to the user working directory, i.e. `dump` corresponds to the `{user.dir}/target/dump` in the dev mode and `{user.dir}/dump` when running the tests."
-msgstr "プロパティの値は、Linuxマシンでの `/home/foo/dump` のような絶対パスか、ユーザーの作業ディレクトリからの相対パスのいずれかになります。例えば、 `dump` は、開発モードでは `{user.dir}/target/dump` に対応し、テスト実行時には `{user.dir}/dump` に対応します。"
+msgstr ""
+"プロパティの値は、Linuxマシンでの `/home/foo/dump` のような絶対パスか、ユーザ"
+"ーの作業ディレクトリからの相対パスのいずれかになります。例えば、 `dump` は、"
+"開発モードでは `{user.dir}/target/dump` に対応し、テスト実行時には `{user."
+"dir}/dump` に対応します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2186
@@ -4415,7 +4841,10 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2200
 #, fuzzy
 msgid "Analogously, you can use the `quarkus.debug.transformed-classes-dir` and `quarkus.debug.transformed-classes-dir` properties to dump the relevant output."
-msgstr "同様に、 `quarkus.debug.transformed-classes-dir` と `quarkus.debug.transformed-classes-dir` プロパティを使用して、関連する出力をダンプすることができます。"
+msgstr ""
+"同様に、 `quarkus.debug.transformed-classes-dir` と `quarkus.debug."
+"transformed-classes-dir` "
+"プロパティを使用して、関連する出力をダンプすることができます。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:2201
@@ -4444,7 +4873,8 @@ msgstr "Indexerに外部依存関係が含まれていない"
 #: upstream/_guides/writing-extensions.adoc:2215
 #, fuzzy
 msgid "Remember to add `IndexDependencyBuildItem` artifacts to your `@BuildStep`."
-msgstr "`IndexDependencyBuildItem` のアーティファクトを `@BuildStep` に追加することを忘れないでください。"
+msgstr "`IndexDependencyBuildItem` のアーティファクトを `@BuildStep` "
+"に追加することを忘れないでください。"
 
 #. type: Title ===
 #: upstream/_guides/writing-extensions.adoc:2216
@@ -4456,7 +4886,11 @@ msgstr "サンプルテストエクステンション"
 #: upstream/_guides/writing-extensions.adoc:2219
 #, fuzzy
 msgid "We have an extension that is used to test for regressions in the extension processing. It is located in {quarkus-tree-url}/integration-tests/test-extension/extension directory. In this section we touch on some of the tasks an extension author will typically need to perform using the test-extension code to illustrate how the task could be done."
-msgstr "エクステンションの処理のリグレッションをテストするために使われるエクステンションがあります。これは {quarkus-tre-url}/core/test-extension ディレクトリにあります。このセクションでは、test-extension のコードを使って、エクステンションの作者が通常行う必要のあるタスクについて触れます。"
+msgstr ""
+"エクステンションの処理のリグレッションをテストするために使われるエクステンシ"
+"ョンがあります。これは {quarkus-tre-url}/core/test-extension "
+"ディレクトリにあります。このセクションでは、test-extension のコードを使って、"
+"エクステンションの作者が通常行う必要のあるタスクについて触れます。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:2220
@@ -4598,7 +5032,11 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2299
 #, fuzzy
 msgid "Capabilities should follow the naming conventions of Java packages; e.g. `io.quarkus.security.jpa`.  Capabilities provided by core extensions should be listed in the `io.quarkus.deployment.Capability` enum and their name should always start with the `io.quarkus` prefix."
-msgstr "機能は、Javaパッケージの命名規則に従うべきです。例えば、 `io.quarkus.security.jpa` 。コア・エクステンションによって提供される機能は、 `io.quarkus.deployment.Capability` enum にリストされ、その名前は常に `io.quarkus` のプレフィックスで始まるべきです。"
+msgstr ""
+"機能は、Javaパッケージの命名規則に従うべきです。例えば、 `io.quarkus.security"
+".jpa` 。コア・エクステンションによって提供される機能は、 `io.quarkus."
+"deployment.Capability` enum にリストされ、その名前は常に `io.quarkus` "
+"のプレフィックスで始まるべきです。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:2300
@@ -4610,7 +5048,16 @@ msgstr "Beanの初期化"
 #: upstream/_guides/writing-extensions.adoc:2302
 #, fuzzy
 msgid "The CDI layer processes CDI beans that are either explicitly registered or that it discovers based on bean defining annotations as defined in https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#bean_defining_annotations[2.5.1. Bean defining annotations]. You can expand this set of annotations to include annotations your extension processes using a `BeanDefiningAnnotationBuildItem` as shown in this `TestProcessor#registerBeanDefinningAnnotations` example:"
-msgstr "CDI層は，明示的に登録されたか，又は link:https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#bean_defining_annotations[2.5.1]で定義されたBean定義アノテーションに基づいて発見されたCDI Beanを処理する。 link:https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#bean_defining_annotations[Bean Defining Annotations].このアノテーションのセットを拡張して、次の `TestProcessor#registerBeanDefinningAnnotations` の例に示すように、拡張機能が `BeanDefiningAnnotationBuildItem` を使用して処理するアノテーションを含めることができます。"
+msgstr ""
+"CDI層は，明示的に登録されたか，又は link:https://jakarta.ee/specifications/"
+"cdi/2.0/cdi-spec-2.0.html#bean_defining_annotations[2.5.1]"
+"で定義されたBean定義アノテーションに基づいて発見されたCDI Beanを処理する。 "
+"link:https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0."
+"html#bean_defining_annotations[Bean Defining Annotations]."
+"このアノテーションのセットを拡張して、次の "
+"`TestProcessor#registerBeanDefinningAnnotations` の例に示すように、"
+"拡張機能が `BeanDefiningAnnotationBuildItem` "
+"を使用して処理するアノテーションを含めることができます。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2303
@@ -4686,13 +5133,16 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2343
 #, fuzzy
 msgid "Register the annotation class and CDI default scope using the Jandex `DotName` class."
-msgstr "Jandex `DotName` クラスを使って、アノテーションクラスとCDIのデフォルトスコープを登録します。"
+msgstr "Jandex `DotName` "
+"クラスを使って、アノテーションクラスとCDIのデフォルトスコープを登録します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2344
 #, fuzzy
 msgid "`ConfiguredBean` will be processed by the CDI layer the same as a bean annotated with the CDI standard @ApplicationScoped."
-msgstr "`ConfiguredBean` は、CDI 標準の @ApplicationScoped でアノテーションされた Bean と同様に、CDI レイヤーで処理されます。"
+msgstr ""
+"`ConfiguredBean` は、CDI 標準の @ApplicationScoped でアノテーションされた "
+"Bean と同様に、CDI レイヤーで処理されます。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:2345
@@ -4709,7 +5159,9 @@ msgstr "エクステンションの主な目的の1つは、動作の設定段�
 #: upstream/_guides/writing-extensions.adoc:2349
 #, fuzzy
 msgid "An example of parsing a XML config file using JAXB is shown in the `TestProcessor#parseServiceXmlConfig` method:"
-msgstr "JAXBを使ってXMLコンフィグファイルを解析する例を、 `TestProcessor#parseServiceXmlConfig` メソッドで示します。"
+msgstr ""
+"JAXBを使ってXMLコンフィグファイルを解析する例を、 "
+"`TestProcessor#parseServiceXmlConfig` メソッドで示します。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2349
@@ -4753,25 +5205,40 @@ msgstr "見つかった場合は、JAXBコンテキストを使用して解析�
 #: upstream/_guides/writing-extensions.adoc:2374
 #, fuzzy
 msgid "If there was no /config.xml resource available in the build environment, then a null `RuntimeServiceBuildItem` would be returned and no subsequent logic based on a `RuntimeServiceBuildItem` being produced would execute."
-msgstr "ビルド環境に利用可能な /config.xml リソースがない場合、NULL の `RuntimeServiceBuildItem` が返され、生成された `RuntimeServiceBuildItem` に基づく後続のロジックは実行されません。"
+msgstr ""
+"ビルド環境に利用可能な /config.xml リソースがない場合、NULL の "
+"`RuntimeServiceBuildItem` が返され、生成された `RuntimeServiceBuildItem` "
+"に基づく後続のロジックは実行されません。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2377
 #, fuzzy
 msgid "Typically one is loading a configuration to create some runtime component/service as `parseServiceXmlConfig` is doing. We will come back to the rest of the behavior in `parseServiceXmlConfig` in the following <<Manage Non-CDI Service>> section."
-msgstr "一般的には、 `parseServiceXmlConfig` のように、何らかのランタイムコンポーネント/サービスを作成するために構成をロードします。 `parseServiceXmlConfig` の残りの動作については、次の link:#Manage Non-CDI Service[[Manage Non-CDI Service]]のセクションで説明します。"
+msgstr ""
+"一般的には、 `parseServiceXmlConfig` のように、何らかのランタイムコンポーネン"
+"ト/サービスを作成するために構成をロードします。 `parseServiceXmlConfig` "
+"の残りの動作については、次の link:#Manage Non-CDI Service[[Manage Non-CDI "
+"Service]]のセクションで説明します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2379
 #, fuzzy
 msgid "If for some reason you need to parse the config and use it in other build steps in an extension processor, you would need to create an `XmlConfigBuildItem` to pass the parsed XmlConfig instance around."
-msgstr "何らかの理由でコンフィグを解析して、拡張プロセッサの他のビルドステップで使用する必要がある場合、解析されたXmlConfigインスタンスを渡すために `XmlConfigBuildItem` を作成する必要があります。"
+msgstr ""
+"何らかの理由でコンフィグを解析して、拡張プロセッサの他のビルドステップで使用"
+"する必要がある場合、解析されたXmlConfigインスタンスを渡すために "
+"`XmlConfigBuildItem` を作成する必要があります。"
 
 #. type: delimited block =
 #: upstream/_guides/writing-extensions.adoc:2383
 #, fuzzy
 msgid "If you look at the XmlConfig code you will see that it does carry around the JAXB annotations. If you don't want these in the runtime image, you could clone the XmlConfig instance into some POJO object graph and then replace XmlConfig with the POJO class. We will do this in <<Replacing Classes in the Native Image>>."
-msgstr "XmlConfigのコードを見てみると、JAXBアノテーションを持ち歩いていることがわかります。ランタイム・イメージにこれらを入れたくない場合は、XmlConfigのインスタンスをPOJOオブジェクト・グラフにクローンして、XmlConfigをPOJOクラスで置き換えることができます。これについては、 link:#Replacing Classes in the Native Image[[ネイティブイメージでのクラスの置き換え]]で説明します。"
+msgstr ""
+"XmlConfigのコードを見てみると、JAXBアノテーションを持ち歩いていることがわかり"
+"ます。ランタイム・イメージにこれらを入れたくない場合は、XmlConfigのインスタン"
+"スをPOJOオブジェクト・グラフにクローンして、XmlConfigをPOJOクラスで置き換える"
+"ことができます。これについては、 link:#Replacing Classes in the Native "
+"Image[[ネイティブイメージでのクラスの置き換え]]で説明します。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:2385
@@ -4830,7 +5297,9 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2418
 #, fuzzy
 msgid "Depend on a `BeanArchiveIndexBuildItem` to have the build step be run after the deployment has been indexed."
-msgstr "`BeanArchiveIndexBuildItem` に依存して、デプロイメントがインデックスされた後にビルドステップが実行されるようにします。"
+msgstr ""
+"`BeanArchiveIndexBuildItem` に依存して、デプロイメントがインデックスされた後"
+"にビルドステップが実行されるようにします。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2419
@@ -4848,13 +5317,16 @@ msgstr "`@TestAnnotation` でアノテーションされたすべての豆を見
 #: upstream/_guides/writing-extensions.adoc:2421
 #, fuzzy
 msgid "Determine which of these beans also has the `IConfigConsumer` interface."
-msgstr "これらのビーンのうち、どのビーンが `IConfigConsumer` のインターフェースも持っているかを判断します。"
+msgstr "これらのビーンのうち、どのビーンが `IConfigConsumer` "
+"のインターフェースも持っているかを判断します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2422
 #, fuzzy
 msgid "Save the bean class in a `TestBeanBuildItem` for use in a latter RUNTIME_INIT build step that will interact with the bean instances."
-msgstr "Beanクラスを `TestBeanBuildItem` に保存し、Beanインスタンスと対話する後のRUNTIME_INITビルドステップで使用できるようにします。"
+msgstr ""
+"Beanクラスを `TestBeanBuildItem` に保存し、Beanインスタンスと対話する後のRUNT"
+"IME_INITビルドステップで使用できるようにします。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:2423
@@ -4866,7 +5338,11 @@ msgstr "エクステンションのテスト"
 #: upstream/_guides/writing-extensions.adoc:2425
 #, fuzzy
 msgid "You can use the `io.quarkus.arc.runtime.BeanContainer` interface to interact with your extension beans. The following `configureBeans` methods illustrate interacting with the beans scanned for in the previous section:"
-msgstr "`io.quarkus.arc.runtime.BeanContainer` インターフェースを使用して、拡張ビーンと対話することができます。以下の `configureBeans` メソッドは、前のセクションでスキャンされた豆との対話を示しています。"
+msgstr ""
+"`io.quarkus.arc.runtime.BeanContainer` "
+"インターフェースを使用して、拡張ビーンと対話することができます。以下の "
+"`configureBeans` "
+"メソッドは、前のセクションでスキャンされた豆との対話を示しています。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2426
@@ -4922,7 +5398,9 @@ msgstr "スキャニングビルドステップで生成された`TestBeanBuildI
 #: upstream/_guides/writing-extensions.adoc:2454
 #, fuzzy
 msgid "Consume the `BeanContainerBuildItem` to order this build step to run after the CDI bean container has been created."
-msgstr "`BeanContainerBuildItem` を消費して、CDI Bean コンテナが作成された後にこのビルドステップが実行されるように命令します。"
+msgstr ""
+"`BeanContainerBuildItem` を消費して、CDI Bean "
+"コンテナが作成された後にこのビルドステップが実行されるように命令します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2455
@@ -4940,7 +5418,9 @@ msgstr "ランタイムレコーダーは、そのタイプを使用してBean�
 #: upstream/_guides/writing-extensions.adoc:2457
 #, fuzzy
 msgid "Runtime recorder invokes the `IConfigConsumer#loadConfig(...)` method passing in the configuration objects with runtime information."
-msgstr "ランタイムレコーダーは、ランタイム情報を持つコンフィギュレーションオブジェクトを渡して、 `IConfigConsumer#loadConfig(…​)` メソッドを呼び出します。"
+msgstr ""
+"ランタイムレコーダーは、ランタイム情報を持つコンフィギュレーションオブジェク"
+"トを渡して、 `IConfigConsumer#loadConfig(…​)` メソッドを呼び出します。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:2458
@@ -4952,7 +5432,13 @@ msgstr "非CDIサービスの管理"
 #: upstream/_guides/writing-extensions.adoc:2460
 #, fuzzy
 msgid "A common purpose for an extension is to integrate a non-CDI aware service into the CDI based Quarkus runtime. Step 1 of this task is to load any configuration needed in a STATIC_INIT build step as we did in <<Parsing Config to Objects>>. Now we need to create an instance of the service using the configuration. Let's return to the `TestProcessor#parseServiceXmlConfig` method to see how this can be done."
-msgstr "拡張機能の一般的な目的は、CDIに対応していないサービスをCDIベースのQuarkusランタイムに統合することです。このタスクのステップ1では、 link:#Parsing Config to Objects[[Parsing Config to Objects]]で行ったように、STATIC_INITのビルドステップで必要な設定をロードします。次に、設定を使用してサービスのインスタンスを作成する必要があります。 `TestProcessor#parseServiceXmlConfig` の方法に戻って、その方法を見てみましょう。"
+msgstr ""
+"拡張機能の一般的な目的は、CDIに対応していないサービスをCDIベースのQuarkusラン"
+"タイムに統合することです。このタスクのステップ1では、 link:#Parsing Config "
+"to Objects[[Parsing Config to Objects]]で行ったように、STATIC_INITのビルドス"
+"テップで必要な設定をロードします。次に、設定を使用してサービスのインスタンス"
+"を作成する必要があります。 `TestProcessor#parseServiceXmlConfig` "
+"の方法に戻って、その方法を見てみましょう。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2461
@@ -5032,13 +5518,19 @@ msgstr "ランタイムレコーダーを呼び出し、サービスの作成を
 #: upstream/_guides/writing-extensions.adoc:2503
 #, fuzzy
 msgid "Using the parsed `XmlConfig` instance, create an instance of `RuntimeXmlConfigService` and wrap it in a `RuntimeValue`. Use a `RuntimeValue` wrapper for non-interface objects that are non-proxiable."
-msgstr "解析された `XmlConfig` のインスタンスを使用して、 `RuntimeXmlConfigService` のインスタンスを作成し、 `RuntimeValue` でラップします。Proxiable ではないインターフェイス・オブジェクトには `RuntimeValue` のラッパーを使用します。"
+msgstr ""
+"解析された `XmlConfig` のインスタンスを使用して、 `RuntimeXmlConfigService` "
+"のインスタンスを作成し、 `RuntimeValue` でラップします。Proxiable "
+"ではないインターフェイス・オブジェクトには `RuntimeValue` "
+"のラッパーを使用します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2504
 #, fuzzy
 msgid "Wrap the return service value in a `RuntimeServiceBuildItem` for use in a RUNTIME_INIT build step that will start the service."
-msgstr "サービスを開始する RUNTIME_INIT ビルドステップで使用するために、サービスの戻り値を `RuntimeServiceBuildItem` でラップします。"
+msgstr ""
+"サービスを開始する RUNTIME_INIT ビルドステップで使用するために、"
+"サービスの戻り値を `RuntimeServiceBuildItem` でラップします。"
 
 #. type: Title =====
 #: upstream/_guides/writing-extensions.adoc:2505
@@ -5050,7 +5542,11 @@ msgstr "サービスの開始"
 #: upstream/_guides/writing-extensions.adoc:2507
 #, fuzzy
 msgid "Now that you have recorded the creation of a service during the build phase, you need to record how to start the service at runtime during booting. You do this with a RUNTIME_INIT build step as shown in the `TestProcessor#startRuntimeService` method."
-msgstr "ビルドフェーズでサービスの作成を記録したので、ブート時にランタイムでサービスを開始する方法を記録する必要があります。これは、 `TestProcessor#startRuntimeService` メソッドに示されているように、RUNTIME_INIT ビルドステップで行います。"
+msgstr ""
+"ビルドフェーズでサービスの作成を記録したので、ブート時にランタイムでサービス"
+"を開始する方法を記録する必要があります。これは、 "
+"`TestProcessor#startRuntimeService` メソッドに示されているように、"
+"RUNTIME_INIT ビルドステップで行います。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2508
@@ -5111,31 +5607,43 @@ msgstr "ランタイムレコーダーを呼び出して、サービス開始の
 #: upstream/_guides/writing-extensions.adoc:2537
 #, fuzzy
 msgid "Produce a `ServiceStartBuildItem` to indicate the startup of a service. See <<Startup and Shutdown Events>> for details."
-msgstr "サービスの起動を示す `ServiceStartBuildItem` を生成します。詳細は link:#Startup and Shutdown Events[【Startup and Shutdown Events】]を参照してください。"
+msgstr ""
+"サービスの起動を示す `ServiceStartBuildItem` を生成します。詳細は link:#"
+"Startup and Shutdown Events[【Startup and Shutdown "
+"Events】]を参照してください。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2538
 #, fuzzy
 msgid "Runtime recorder retrieves the service instance reference and calls its `startService` method."
-msgstr "ランタイムレコーダーは、サービスインスタンス参照を取得し、その `startService` メソッドを呼び出します。"
+msgstr "ランタイムレコーダーは、サービスインスタンス参照を取得し、その `startService`"
+" メソッドを呼び出します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2539
 #, fuzzy
 msgid "Runtime recorder registers an invocation of the service instance `stopService` method with the Quarkus `ShutdownContext`."
-msgstr "ランタイムレコーダーは、サービスインスタンス `stopService` メソッドの呼び出しを、Quarkus `ShutdownContext` に登録します。"
+msgstr ""
+"ランタイムレコーダーは、サービスインスタンス `stopService` "
+"メソッドの呼び出しを、Quarkus `ShutdownContext` に登録します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2542
 #, fuzzy
 msgid "The code for the `RuntimeXmlConfigService` can be viewed here: {quarkus-blob-url}/integration-tests/test-extension/extension/runtime/src/main/java/io/quarkus/extest/runtime/RuntimeXmlConfigService.java[RuntimeXmlConfigService.java]"
-msgstr "`RuntimeXmlConfigService` のコードはここで見ることができます。{quarkus-blob-url}/core/test-extension/runtime/src/main/java/io/quarkus/extest/runtime/RuntimeXmlConfigService.java[RuntimeXmlConfigService.java]をご覧ください。"
+msgstr ""
+"`RuntimeXmlConfigService` のコードはここで見ることができます。{quarkus-blob-"
+"url}/core/test-extension/runtime/src/main/java/io/quarkus/extest/runtime/"
+"RuntimeXmlConfigService.java[RuntimeXmlConfigService.java]をご覧ください。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2544
 #, fuzzy
 msgid "The testcase for validating that the `RuntimeXmlConfigService` has started can be found in the `testRuntimeXmlConfigService` test of `ConfiguredBeanTest` and `NativeImageIT`."
-msgstr "`RuntimeXmlConfigService` が開始されたかどうかを検証するテストケースは、 `testRuntimeXmlConfigService` `ConfiguredBeanTest` と `NativeImageIT` のテストにあります。"
+msgstr ""
+"`RuntimeXmlConfigService` が開始されたかどうかを検証するテストケースは、 "
+"`testRuntimeXmlConfigService` `ConfiguredBeanTest` と `NativeImageIT` "
+"のテストにあります。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:2545
@@ -5147,7 +5655,10 @@ msgstr "スタートアップとシャットダウンのイベント"
 #: upstream/_guides/writing-extensions.adoc:2548
 #, fuzzy
 msgid "The Quarkus container supports startup and shutdown lifecycle events to notify components of the container startup and shutdown. There are CDI events fired that components can observe are illustrated in this example:"
-msgstr "Quarkusコンテナは、コンテナの起動と停止をコンポーネントに通知するために、起動と停止のライフサイクルイベントをサポートしています。この例では、コンポーネントが観察できるCDIイベントが発生しています。"
+msgstr ""
+"Quarkusコンテナは、コンテナの起動と停止をコンポーネントに通知するために、起動"
+"と停止のライフサイクルイベントをサポートしています。この例では、コンポーネン"
+"トが観察できるCDIイベントが発生しています。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2549
@@ -5201,19 +5712,35 @@ msgstr "`StartupEvent` を監視すると、ランタイムが開始されたこ
 #: upstream/_guides/writing-extensions.adoc:2575
 #, fuzzy
 msgid "Observe a `ShutdownEvent` to be notified when the runtime is going to shutdown."
-msgstr "`ShutdownEvent` を監視して、ランタイムがシャットダウンするときに通知を受けることができます。"
+msgstr "`ShutdownEvent` "
+"を監視して、ランタイムがシャットダウンするときに通知を受けることができます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2579
 #, fuzzy
 msgid "What is the relevance of startup and shutdown events for extension authors? We have already seen the use of a `ShutdownContext` to register a callback to perform shutdown tasks in the <<Starting a Service>> section. These shutdown tasks would be called after a `ShutdownEvent` had been sent."
-msgstr "拡張機能の作者にとって、スタートアップイベントとシャットダウンイベントの関連性は何ですか？ link:#Starting a Service[サービスの開始]]の項で、シャットダウンタスクを実行するコールバックを登録するために、 `ShutdownContext` を使用することをすでに見ました。これらのシャットダウンタスクは、 `ShutdownEvent` が送信された後に呼び出されます。"
+msgstr ""
+"拡張機能の作者にとって、スタートアップイベントとシャットダウンイベントの関連"
+"性は何ですか？ link:#Starting a Service[サービスの開始]]の項で、シャットダウ"
+"ンタスクを実行するコールバックを登録するために、 `ShutdownContext` "
+"を使用することをすでに見ました。これらのシャットダウンタスクは、 "
+"`ShutdownEvent` が送信された後に呼び出されます。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2585
 #, fuzzy
 msgid "A `StartupEvent` is fired after all `io.quarkus.deployment.builditem.ServiceStartBuildItem` producers have been consumed.  The implication of this is that if an extension has services that application components would expect to have been started when they observe a `StartupEvent`, the build steps that invoke the runtime code to start those services needs to produce a `ServiceStartBuildItem` to ensure that the runtime code is run before the `StartupEvent` is sent. Recall that we saw the production of a `ServiceStartBuildItem` in the previous section, and it is repeated here for clarity:"
-msgstr "`StartupEvent` は、すべての `io.quarkus.deployment.builditem.ServiceStartBuildItem` プロデューサーが消費された後に発生します。これが意味するところは、アプリケーションコンポーネントが `StartupEvent` を観測したときに開始されていることを期待するようなサービスを拡張機能が持っている場合、それらのサービスを開始するランタイムコードを呼び出すビルドステップは `ServiceStartBuildItem` を生成して、 `StartupEvent` が送信される前にランタイムコードが実行されるようにする必要があるということです。前のセクションで `ServiceStartBuildItem` の生成について説明しましたが、ここではわかりやすくするために繰り返します。"
+msgstr ""
+"`StartupEvent` は、すべての `io.quarkus.deployment.builditem."
+"ServiceStartBuildItem` "
+"プロデューサーが消費された後に発生します。これが意味するところは、"
+"アプリケーションコンポーネントが `StartupEvent` を観測したときに開始されてい"
+"ることを期待するようなサービスを拡張機能が持っている場合、"
+"それらのサービスを開始するランタイムコードを呼び出すビルドステップは "
+"`ServiceStartBuildItem` を生成して、 `StartupEvent` が送信される前にランタイ"
+"ムコードが実行されるようにする必要があるということです。前のセクションで "
+"`ServiceStartBuildItem` "
+"の生成について説明しましたが、ここではわかりやすくするために繰り返します。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2586
@@ -5239,7 +5766,10 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2599
 #, fuzzy
 msgid "Produce a `ServiceStartBuildItem` to indicate that this is a service starting step that needs to run before the `StartupEvent` is sent."
-msgstr "`StartupEvent` を送信する前に実行する必要のあるサービス開始ステップであることを示すために、 `ServiceStartBuildItem` を生成します。"
+msgstr ""
+"`StartupEvent` "
+"を送信する前に実行する必要のあるサービス開始ステップであることを示すために、 "
+"`ServiceStartBuildItem` を生成します。"
 
 #. type: Title ====
 #: upstream/_guides/writing-extensions.adoc:2600
@@ -5251,7 +5781,14 @@ msgstr "ネイティブ画像に使用するリソースの登録"
 #: upstream/_guides/writing-extensions.adoc:2602
 #, fuzzy
 msgid "Not all configuration or resources can be consumed at build time. If you have classpath resources that the runtime needs to access, you need to inform the build phase that these resources need to be copied into the native image. This is done by producing one or more `NativeImageResourceBuildItem` or `NativeImageResourceBundleBuildItem` in the case of resource bundles. Examples of this are shown in this sample `registerNativeImageResources` build step:"
-msgstr "すべての設定やリソースがビルド時に消費されるわけではありません。ランタイムがアクセスする必要のあるクラスパス・リソースがある場合は、これらのリソースをネイティブ・イメージにコピーする必要があることをビルド・フェーズに知らせる必要があります。これは、1つ以上の `NativeImageResourceBuildItem` や、リソースバンドルの場合は `NativeImageResourceBundleBuildItem` を作成することで行います。この例は、 `registerNativeImageResources` ビルドステップのサンプルに示されています。"
+msgstr ""
+"すべての設定やリソースがビルド時に消費されるわけではありません。ランタイムが"
+"アクセスする必要のあるクラスパス・リソースがある場合は、これらのリソースをネ"
+"イティブ・イメージにコピーする必要があることをビルド・フェーズに知らせる必要"
+"があります。これは、1つ以上の `NativeImageResourceBuildItem` や、"
+"リソースバンドルの場合は `NativeImageResourceBundleBuildItem` "
+"を作成することで行います。この例は、 `registerNativeImageResources` "
+"ビルドステップのサンプルに示されています。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2603
@@ -5324,7 +5861,11 @@ msgstr "サービスファイル"
 #: upstream/_guides/writing-extensions.adoc:2631
 #, fuzzy
 msgid "If you are using `META-INF/services` files you need to register the files as resources so that your native image can find them, but you also need to register each listed class for reflection so they can be instantiated or inspected at run-time:"
-msgstr "`META-INF/services` ファイルを使用している場合は、ネイティブイメージがファイルを見つけられるように、ファイルをリソースとして登録する必要があります。また、リストアップされた各クラスをリフレクションに登録して、ランタイムにインスタンス化したり検査したりできるようにする必要があります。"
+msgstr ""
+"`META-INF/services` ファイルを使用している場合は、ネイティブイメージがファイ"
+"ルを見つけられるように、ファイルをリソースとして登録する必要があります。また"
+"、リストアップされた各クラスをリフレクションに登録して、ランタイムにインスタ"
+"ンス化したり検査したりできるようにする必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:2635
@@ -5370,13 +5911,21 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2658
 #, fuzzy
 msgid "`ServiceProviderBuildItem` takes a list of service implementation classes as parameters: if you are not reading them from the service file, make sure that they correspond to the service file contents because the service file will still be read and used at run-time. This is not a substitute for writing a service file."
-msgstr "`ServiceProviderBuildItem` は，サービス実装クラスのリストをパラメータとして受け取ります．サービスファイルから読み込まない場合は，サービスファイルの内容に対応していることを確認してください．なぜなら，サービスファイルは実行時にも読み込まれて使用されるからです．これは、サービスファイルを書くことの代わりにはなりません。"
+msgstr ""
+"`ServiceProviderBuildItem` は，サービス実装クラスのリストをパラメータとして受"
+"け取ります．サービスファイルから読み込まない場合は，サービスファイルの内容に"
+"対応していることを確認してください．なぜなら，サービスファイルは実行時にも読"
+"み込まれて使用されるからです．これは、サービスファイルを書くことの代わりには"
+"なりません。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2661
 #, fuzzy
 msgid "This only registers the implementation classes for instantiation via reflection (you will not be able to inspect its fields and methods). If you need to do that, you can do it this way:"
-msgstr "これは、リフレクションによるインスタンス化のために、実装クラスを登録するだけです（そのフィールドやメソッドを検査することはできません）。もしそれが必要であれば、この方法で行うことができます。"
+msgstr ""
+"これは、リフレクションによるインスタンス化のために、実装クラスを登録するだけ"
+"です（そのフィールドやメソッドを検査することはできません）。もしそれが必要で"
+"あれば、この方法で行うことができます。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:2670
@@ -5415,13 +5964,18 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2687
 #, fuzzy
 msgid "While this is the easiest way to get your services running natively, it's less efficient than scanning the implementation classes at build time and generating code that registers them at static-init time instead of relying on reflection."
-msgstr "これは、サービスをネイティブに動作させるための最も簡単な方法ですが、ビルド時に実装クラスをスキャンし、リフレクションに頼らずにスタティック・イニット時に登録するコードを生成するよりも効率が悪くなります。"
+msgstr ""
+"これは、サービスをネイティブに動作させるための最も簡単な方法ですが、ビルド時"
+"に実装クラスをスキャンし、リフレクションに頼らずにスタティック・イニット時に"
+"登録するコードを生成するよりも効率が悪くなります。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2690
 #, fuzzy
 msgid "You can achieve that by adapting the previous build step to use a static-init recorder instead of registering classes for reflection:"
-msgstr "これを実現するには、先ほどのビルドステップで、リフレクションのためにクラスを登録する代わりに、スタティック・イニット・レコーダーを使用するようにします。"
+msgstr ""
+"これを実現するには、先ほどのビルドステップで、リフレクションのためにクラスを"
+"登録する代わりに、スタティック・イニット・レコーダーを使用するようにします。"
 
 #. type: delimited block -
 #: upstream/_guides/writing-extensions.adoc:2700
@@ -5520,7 +6074,11 @@ msgstr "オブジェクトの置換"
 #: upstream/_guides/writing-extensions.adoc:2746
 #, fuzzy
 msgid "Objects created during the build phase that are passed into the runtime need to have a default constructor in order for them to be created and configured at startup of the runtime from the build time state. If an object does not have a default constructor you will see an error similar to the following during generation of the augmented artifacts:"
-msgstr "ビルドフェーズで作成され、ランタイムに渡されるオブジェクトは、ビルド時の状態からランタイムの起動時に作成および設定されるために、デフォルトコンストラクタを持つ必要があります。オブジェクトがデフォルトコンストラクタを持っていない場合、拡張アーティファクトの生成時に以下のようなエラーが表示されます。"
+msgstr ""
+"ビルドフェーズで作成され、ランタイムに渡されるオブジェクトは、ビルド時の状態"
+"からランタイムの起動時に作成および設定されるために、デフォルトコンストラクタ"
+"を持つ必要があります。オブジェクトがデフォルトコンストラクタを持っていない場"
+"合、拡張アーティファクトの生成時に以下のようなエラーが表示されます。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2747
@@ -5544,7 +6102,10 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2759
 #, fuzzy
 msgid "There is a `io.quarkus.runtime.ObjectSubstitution` interface that can be implemented to tell Quarkus how to handle such classes. An example implementation for the `DSAPublicKey` is shown here:"
-msgstr "このようなクラスをどのように処理するかをQuarkusに伝えるために、実装可能な `io.quarkus.runtime.ObjectSubstitution` インターフェースがあります。 `DSAPublicKey` の実装例をここに示します。"
+msgstr ""
+"このようなクラスをどのように処理するかをQuarkusに伝えるために、実装可能な `io"
+".quarkus.runtime.ObjectSubstitution` インターフェースがあります。 "
+"`DSAPublicKey` の実装例をここに示します。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2760
@@ -5623,19 +6184,25 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2803
 #, fuzzy
 msgid "The serialize method takes the object without a default constructor and creates a `KeyProxy` that contains the information necessary to recreate the `DSAPublicKey`."
-msgstr "serializeメソッドは、デフォルトコンストラクタを持たないオブジェクトを受け取り、 `DSAPublicKey` を再作成するのに必要な情報を含む `KeyProxy` を作成します。"
+msgstr ""
+"serializeメソッドは、デフォルトコンストラクタを持たないオブジェクトを受け取り"
+"、 `DSAPublicKey` を再作成するのに必要な情報を含む `KeyProxy` を作成します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2804
 #, fuzzy
 msgid "The deserialize method uses the `KeyProxy` to recreate the `DSAPublicKey` from its encoded form using the key factory."
-msgstr "deserializeメソッドは、 `KeyProxy` 、キーファクトリーを使用して、エンコードされたフォームから `DSAPublicKey` を再作成します。"
+msgstr ""
+"deserializeメソッドは、 `KeyProxy` 、キーファクトリーを使用して、"
+"エンコードされたフォームから `DSAPublicKey` を再作成します。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2806
 #, fuzzy
 msgid "An extension registers this substitution by producing an `ObjectSubstitutionBuildItem` as shown in this `TestProcessor#loadDSAPublicKey` fragment:"
-msgstr "拡張機能は、この `TestProcessor#loadDSAPublicKey` のように `ObjectSubstitutionBuildItem` を生成することで、この置換を登録します。"
+msgstr ""
+"拡張機能は、この `TestProcessor#loadDSAPublicKey` のように "
+"`ObjectSubstitutionBuildItem` を生成することで、この置換を登録します。"
 
 #. type: Block title
 #: upstream/_guides/writing-extensions.adoc:2807
@@ -6026,7 +6593,12 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:3054
 #, fuzzy
 msgid "This will add a section documentation for the `configGroup` config item in the generated documentation.  Section's title and introduction will be derived from the javadoc of the configuration item. The first sentence from the javadoc is considered as the section title and the remaining sentences used as section introduction.  You can also use the `@asciidoclet` tag as shown above."
-msgstr "これにより、生成されたドキュメントに `configGroup` 設定アイテムのセクション・ドキュメントが追加されます。セクションのタイトルと導入部は、設定アイテムのjavadocから派生します。javadocの最初の文はセクションのタイトルとみなされ、残りの文はセクションの導入部として使用されます。上記のように `@asciidoclet` タグを使用することもできます。"
+msgstr ""
+"これにより、生成されたドキュメントに `configGroup` 設定アイテムのセクション・"
+"ドキュメントが追加されます。セクションのタイトルと導入部は、設定アイテムのjav"
+"adocから派生します。javadocの最初の文はセクションのタイトルとみなされ、残りの"
+"文はセクションの導入部として使用されます。上記のように `@asciidoclet` "
+"タグを使用することもできます。"
 
 #. type: Title ===
 #: upstream/_guides/writing-extensions.adoc:3055
@@ -6111,7 +6683,10 @@ msgstr "ドキュメントはタイトルレベルが2(例: `==` )で生成さ�
 #: upstream/_guides/writing-extensions.adoc:3093
 #, fuzzy
 msgid "It is not recommended to include the whole configuration documentation in the middle of your guide as it's heavy.  If you have an `application.properties` extract with your configuration, just do as follows."
-msgstr "設定資料全体をガイドの途中に入れるのは、重いのでお勧めできません。設定で `application.properties` 抽出したものがある場合は、以下のようにすればよいでしょう。"
+msgstr ""
+"設定資料全体をガイドの途中に入れるのは、重いのでお勧めできません。設定で "
+"`application.properties` "
+"抽出したものがある場合は、以下のようにすればよいでしょう。"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:3095
@@ -6190,7 +6765,9 @@ msgstr "`name`"
 #: upstream/_guides/writing-extensions.adoc:3129
 #, fuzzy
 msgid "`description` (unless you have it already set in the `runtime/pom.xml`'s `<description>` element, which is the recommended approach)"
-msgstr "`description` (推奨されるアプローチである、 `runtime/pom.xml` の `<description>` 要素にセット、がされていない限り)"
+msgstr ""
+"`description` (推奨されるアプローチである、 `runtime/pom.xml` の "
+"`<description>` 要素にセット、がされていない限り)"
 
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:3131

@@ -45,7 +45,10 @@ msgstr "PanacheでRESTデータをセットアップする"
 #: upstream/_guides/rest-data-panache.adoc:22
 #, fuzzy
 msgid "Quarkus provides the following extensions to set up REST Data with Panache. Please, check out the next compatibility table to use the right one according to the technology you're using:"
-msgstr "Quarkusは、PanacheでREST Dataを設定するために、以下の拡張機能を提供しています。次の互換性テーブルを参照して、使用している技術に応じて適切なものを使用してください。"
+msgstr ""
+"Quarkusは、PanacheでREST Dataを設定するために、以下の拡張機能を提供しています"
+"。次の互換性テーブルを参照して、使用している技術に応じて適切なものを使用して"
+"ください。"
 
 #. type: Block title
 #: upstream/_guides/rest-data-panache.adoc:23
@@ -75,7 +78,9 @@ msgstr "RESTEasy"
 #: upstream/_guides/rest-data-panache.adoc:28
 #, fuzzy, no-wrap
 msgid "<<hr-hibernate-orm, quarkus-hibernate-orm-rest-data-panache>>"
-msgstr "Hibernate ORM REST Data with Panache エクステンション ( `quarkus-hibernate-orm-rest-data-panache` )"
+msgstr ""
+"Hibernate ORM REST Data with Panache エクステンション ( `quarkus-hibernate-"
+"orm-rest-data-panache` )"
 
 #. type: Table
 #: upstream/_guides/rest-data-panache.adoc:29
@@ -95,7 +100,9 @@ msgstr "`Classic and Reactive`"
 #: upstream/_guides/rest-data-panache.adoc:32
 #, fuzzy, no-wrap
 msgid "<<hr-hibernate-reactive, quarkus-hibernate-reactive-rest-data-panache>>"
-msgstr "Hibernate ORM REST Data with Panache エクステンション ( `quarkus-hibernate-orm-rest-data-panache` )"
+msgstr ""
+"Hibernate ORM REST Data with Panache エクステンション ( `quarkus-hibernate-"
+"orm-rest-data-panache` )"
 
 #. type: Table
 #: upstream/_guides/rest-data-panache.adoc:33
@@ -243,19 +250,25 @@ msgstr "必要な依存関係を `pom.xml` に追加します。"
 #: upstream/_guides/rest-data-panache.adoc:96
 #, fuzzy
 msgid "Hibernate Reactive REST Data with Panache extension (`quarkus-hibernate-reactive-rest-data-panache`)"
-msgstr "Hibernate ORM REST Data with Panache エクステンション ( `quarkus-hibernate-orm-rest-data-panache` )"
+msgstr ""
+"Hibernate ORM REST Data with Panache エクステンション ( `quarkus-hibernate-"
+"orm-rest-data-panache` )"
 
 #. type: Plain text
 #: upstream/_guides/rest-data-panache.adoc:97
 #, fuzzy
 msgid "A Vert.x reactive database driver extension (`quarkus-reactive-pg-client`, `quarkus-reactive-mysql-client`, ...)"
-msgstr "Vert.x リアクティブデータベースドライバ拡張機能 ( `quarkus-reactive-pg-client`, `quarkus-reactive-mysql-client`, ...)"
+msgstr ""
+"Vert.x リアクティブデータベースドライバ拡張機能 ( `quarkus-reactive-pg-"
+"client`, `quarkus-reactive-mysql-client`, ...)"
 
 #. type: Plain text
 #: upstream/_guides/rest-data-panache.adoc:98
 #, fuzzy
 msgid "One of the RESTEasy Reactive serialization extensions (`quarkus-resteasy-reactive-jsonb`, `quarkus-resteasy-reactive-jackson`, ...)"
-msgstr "RESTEasy JSON シリアライゼーションエクステンションのどれか ( `quarkus-resteasy-jackson` または `quarkus-resteasy-jsonb` )"
+msgstr ""
+"RESTEasy JSON シリアライゼーションエクステンションのどれか ( `quarkus-"
+"resteasy-jackson` または `quarkus-resteasy-jsonb` )"
 
 #. type: delimited block -
 #: upstream/_guides/rest-data-panache.adoc:120
@@ -286,7 +299,9 @@ msgstr ""
 #: upstream/_guides/rest-data-panache.adoc:123
 #, fuzzy
 msgid "Implement the Panache entities and/or repositories as explained in the xref:hibernate-reactive-panache.adoc[Hibernate Reactive with Panache guide]."
-msgstr "xref:hibernate-orm-panache.adoc[Hibernate ORM with Panacheガイド]で説明されているように、Panacheエンティティやリポジトリを実装します。"
+msgstr ""
+"xref:hibernate-orm-panache.adoc[Hibernate ORM with Panacheガイド]で説明されて"
+"いるように、Panacheエンティティやリポジトリを実装します。"
 
 #. type: Title ===
 #: upstream/_guides/rest-data-panache.adoc:126
@@ -359,7 +374,9 @@ msgid ""
 "// Use these if you are using RESTEasy Reactive\n"
 "implementation(\"io.quarkus:quarkus-resteasy-reactive-jackson\")\n"
 "implementation(\"io.quarkus:quarkus-resteasy-reactive-links\")\n"
-msgstr "RESTEasy JSON シリアライゼーションエクステンションのどれか ( `quarkus-resteasy-jackson` または `quarkus-resteasy-jsonb` )"
+msgstr ""
+"RESTEasy JSON シリアライゼーションエクステンションのどれか ( `quarkus-"
+"resteasy-jackson` または `quarkus-resteasy-jsonb` )"
 
 #. type: delimited block -
 #: upstream/_guides/rest-data-panache.adoc:175

@@ -128,7 +128,8 @@ msgstr "2019年9月24日"
 #: upstream/_data/getstarted-videos.yaml:0
 #, fuzzy, no-wrap
 msgid "Learn Quarkus basics by standing up a straightforward application serving a hello endpoint."
-msgstr "Helloエンドポイントを提供する簡単なアプリケーションを立ち上げて、Quarkusの基本を学びます。"
+msgstr "Helloエンドポイントを提供する簡単なアプリケーションを立ち上げて、Quarkusの基"
+"本を学びます。"
 
 #. type: Hash Value: links link
 #: upstream/_data/getstarted-videos.yaml:0

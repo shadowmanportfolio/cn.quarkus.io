@@ -29,13 +29,20 @@ msgstr "Spring Scheduling APIのためのQuarkus Extension"
 #: upstream/_guides/spring-scheduled.adoc:11
 #, fuzzy
 msgid "While users are encouraged to use xref:scheduler.adoc#standard-scheduling[regular Quarkus scheduler], Quarkus provides a compatibility layer for Spring Scheduled in the form of the `spring-scheduled` extension."
-msgstr "ユーザーは link:scheduler.html#standard-scheduling[通常のQuarkusスケジューラ]を使用することが推奨されますが、Quarkusは `spring-scheduled` エクステンションの形でSpring Scheduledの互換性レイヤーを提供しています。"
+msgstr ""
+"ユーザーは link:scheduler.html#standard-"
+"scheduling[通常のQuarkusスケジューラ]を使用することが推奨されますが、"
+"Quarkusは `spring-scheduled` エクステンションの形でSpring "
+"Scheduledの互換性レイヤーを提供しています。"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:13
 #, fuzzy
 msgid "This guide explains how a Quarkus application can leverage the well known Spring Scheduled annotation to configure and schedule tasks."
-msgstr "このガイドでは、よく知られているSpring Scheduledアノテーションを利用して、Quarkusアプリケーションがどのようにタスクを設定、スケジュールするかを説明します。"
+msgstr ""
+"このガイドでは、よく知られているSpring Scheduledアノテーションを利用して、Qua"
+"rkusアプリケーションがどのようにタスクを設定、スケジュールするかを説明します"
+"。"
 
 #. type: Title ==
 #: upstream/_guides/spring-scheduled.adoc:14
@@ -69,7 +76,9 @@ msgstr "Gitレポジトリをクローンするか `git clone {quickstarts-clone
 #: upstream/_guides/spring-scheduled.adoc:27
 #, fuzzy
 msgid "The solution is located in the `spring-scheduled-quickstart` {quickstarts-tree-url}/spring-scheduled-quickstart[directory]."
-msgstr "このソリューションは、 `spring-scheduled-quickstart` {quickstarts-tree-url}/spring-scheduled-quickstart[directory]にあります。"
+msgstr ""
+"このソリューションは、 `spring-scheduled-quickstart` {quickstarts-tree-url"
+"}/spring-scheduled-quickstart[directory]にあります。"
 
 #. type: Title ==
 #: upstream/_guides/spring-scheduled.adoc:28
@@ -86,13 +95,18 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_guides/spring-scheduled.adoc:37
 #, fuzzy
 msgid "This command generates a Maven project with the `spring-scheduled` extension."
-msgstr "このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-scheduled` エクステンションを追加します。"
+msgstr ""
+"このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-"
+"scheduled` エクステンションを追加します。"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:40
 #, fuzzy
 msgid "If you already have your Quarkus project configured, you can add the `spring-scheduled` extension to your project by running the following command in your project base directory:"
-msgstr "すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレクトリで以下のコマンドを実行することで、 `spring-scheduled` エクステンションをプロジェクトに追加することができます。"
+msgstr ""
+"すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレク"
+"トリで以下のコマンドを実行することで、 `spring-scheduled` "
+"エクステンションをプロジェクトに追加することができます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:45
@@ -138,7 +152,8 @@ msgstr "スケジュールされたジョブの作成"
 #: upstream/_guides/spring-scheduled.adoc:64
 #, fuzzy
 msgid "In the `org.acme.spring.scheduler` package, create the `CounterBean` class, with the following content:"
-msgstr "`org.acme.spring.scheduler` パッケージで、以下の内容の `CounterBean` クラスを作成します。"
+msgstr "`org.acme.spring.scheduler` パッケージで、以下の内容の `CounterBean` "
+"クラスを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-scheduled.adoc:68
@@ -234,7 +249,8 @@ msgstr ""
 #: upstream/_guides/spring-scheduled.adoc:109
 #, fuzzy
 msgid "Declare the bean in the _application_ scope. Spring only detects @Scheduled annotations in beans."
-msgstr "_アプリケーション_スコープでBeanを宣言します。SpringはBeanの@Scheduledアノテーションのみを検出します。"
+msgstr "_アプリケーション_スコープでBeanを宣言します。SpringはBeanの@Scheduledアノテ"
+"ーションのみを検出します。"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:110
@@ -245,7 +261,10 @@ msgstr "`get()` メソッドでは、現在の値を取得することができ�
 #: upstream/_guides/spring-scheduled.adoc:111
 #, fuzzy
 msgid "Use the Spring `@Scheduled` annotation with a cron-like expression to instruct Quarkus to schedule this method run.  In this example we're scheduling a task to be executed at 10:15am every day."
-msgstr "Spring `@Scheduled` アノテーションをcronのような表現で使用し、Quarkusにこのメソッドの実行をスケジュールするよう指示します。この例では、毎日午前10時15分にタスクが実行されるようにスケジュールしています。"
+msgstr ""
+"Spring `@Scheduled` アノテーションをcronのような表現で使用し、Quarkusにこのメ"
+"ソッドの実行をスケジュールするよう指示します。この例では、毎日午前10時15分に"
+"タスクが実行されるようにスケジュールしています。"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:112
@@ -262,13 +281,15 @@ msgstr "`application.properties` で設定可能な`cron.expr` で cron のよ�
 #: upstream/_guides/spring-scheduled.adoc:114
 #, fuzzy
 msgid "Define a method to be executed at a fixed interval of time. The period is expressed in milliseconds."
-msgstr "一定の時間間隔で実行されるメソッドを定義します。期間はミリ秒単位で指定します。"
+msgstr "一定の時間間隔で実行されるメソッドを定義します。期間はミリ秒単位で指定します"
+"。"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:115
 #, fuzzy
 msgid "Define a job to be executed at a fixed interval of time `fixedRate.expr` which is configurable in `application.properties`."
-msgstr "`application.properties`一定の時間間隔で実行されるジョブを定義する `fixedRate.expr` で設定可能です。"
+msgstr "`application.properties`一定の時間間隔で実行されるジョブを定義する `fixedRate"
+".expr` で設定可能です。"
 
 #. type: Title ==
 #: upstream/_guides/spring-scheduled.adoc:116
@@ -280,7 +301,9 @@ msgstr "アプリケーション設定ファイルの更新"
 #: upstream/_guides/spring-scheduled.adoc:119
 #, fuzzy
 msgid "Edit the `application.properties` file and add the `cron.expr` and the `fixedRate.expr` configuration:"
-msgstr "`application.properties` ファイルを編集し、 `cron.expr` と `fixedRate.expr` の設定を追加します。"
+msgstr ""
+"`application.properties` ファイルを編集し、 `cron.expr` と `fixedRate.expr` "
+"の設定を追加します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-scheduled.adoc:124
@@ -426,7 +449,11 @@ msgstr "アプリケーションをパッケージ化して実行する"
 #: upstream/_guides/spring-scheduled.adoc:194
 #, fuzzy
 msgid "In another terminal, run `curl localhost:8080/count` to check the counter value.  After a few seconds, re-run `curl localhost:8080/count` to verify the counter has been incremented."
-msgstr "`./mvnw compile quarkus:dev` でアプリケーションを実行してください。別のターミナルで `curl localhost:8080/count` を実行して、カウンターの値を確認します。数秒後に `curl localhost:8080/count` を再実行して、カウンターがインクリメントされていることを確認します。"
+msgstr ""
+"`./mvnw compile quarkus:dev` でアプリケーションを実行してください。"
+"別のターミナルで `curl localhost:8080/count` "
+"を実行して、カウンターの値を確認します。数秒後に `curl localhost:8080/count` "
+"を再実行して、カウンターがインクリメントされていることを確認します。"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:196
@@ -456,7 +483,10 @@ msgstr "`Fixed Rate expression`"
 #: upstream/_guides/spring-scheduled.adoc:201
 #, fuzzy
 msgid "`Fixed Rate expression configured in application.properties` These messages indicate that the executions of methods annotated with `@Scheduled` have been triggered."
-msgstr "`Fixed Rate expression configured in application.properties` これらのメッセージは、 `@Scheduled` でアノテーションされたメソッドの実行がトリガーされたことを示しています。"
+msgstr ""
+"`Fixed Rate expression configured in application.properties` "
+"これらのメッセージは、 `@Scheduled` "
+"でアノテーションされたメソッドの実行がトリガーされたことを示しています。"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:203
@@ -484,13 +514,18 @@ msgstr "プロパティー式の使用"
 #: upstream/_guides/spring-scheduled.adoc:216
 #, fuzzy
 msgid "Quarkus supports the use of property expressions in the `application.properties` file so to externalize the configuration of the tasks you should store the properties in the `application.properties` file and use the `fixedRateString`, `initialDelayString` params respectively."
-msgstr "Quarkusは、 `application.properties` ファイルでのプロパティ式の使用をサポートしているため、タスクの設定を外部化するには、プロパティを `application.properties` ファイルに保存し、それぞれ `fixedRateString` 、 `initialDelayString` パラメータを使用する必要があります。"
+msgstr ""
+"Quarkusは、 `application.properties` ファイルでのプロパティ式の使用をサポート"
+"しているため、タスクの設定を外部化するには、プロパティを `application."
+"properties` ファイルに保存し、それぞれ `fixedRateString` 、 "
+"`initialDelayString` パラメータを使用する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:218
 #, fuzzy
 msgid "Note that this configuration is a build time configuration, the property expression will be resolved at build time."
-msgstr "この構成はビルド時の構成であり、プロパティ式はビルド時に解決されることに注意してください。"
+msgstr "この構成はビルド時の構成であり、プロパティ式はビルド時に解決されることに注意"
+"してください。"
 
 #. type: Title ==
 #: upstream/_guides/spring-scheduled.adoc:219
@@ -502,7 +537,11 @@ msgstr "サポートされていないSpring Scheduledの機能"
 #: upstream/_guides/spring-scheduled.adoc:223
 #, fuzzy
 msgid "Quarkus currently only supports a subset of the functionalities that Spring @Scheduled provides with more features being planned.  Currently, the `fixedDelay` and `fixedDelayString` parameters are not supported, in other words, `@Scheduled` methods are always executed independently."
-msgstr "Quarkusは現在、Spring @Scheduledが提供する機能のサブセットのみをサポートしており、さらに多くの機能が計画されています。現在のところ、 `fixedDelay` と `fixedDelayString` のパラメータはサポートされていません。言い換えれば、 `@Scheduled` のメソッドは常に独立して実行されるということです。"
+msgstr ""
+"Quarkusは現在、Spring @Scheduledが提供する機能のサブセットのみをサポートして"
+"おり、さらに多くの機能が計画されています。現在のところ、 `fixedDelay` と "
+"`fixedDelayString` のパラメータはサポートされていません。言い換えれば、 "
+"`@Scheduled` のメソッドは常に独立して実行されるということです。"
 
 #. type: Title ==
 #: upstream/_guides/spring-scheduled.adoc:224
@@ -514,7 +553,14 @@ msgstr "重要なテクニカルノート"
 #: upstream/_guides/spring-scheduled.adoc:230
 #, fuzzy
 msgid "Please note that the Spring support in Quarkus does not start a Spring Application Context nor are any Spring infrastructure classes run.  Spring classes and annotations are only used for reading metadata and / or are used as user code method return types or parameter types.  What that means for end users, is that adding arbitrary Spring libraries will not have any effect. Moreover Spring infrastructure classes (like `org.springframework.beans.factory.config.BeanPostProcessor` for example) will not be executed."
-msgstr "QuarkusのSpringサポートでは、Spring Application Contextは起動せず、Springインフラストラクチャクラスも実行されないことに注意してください。Springのクラスやアノテーションは、メタデータを読み込んだり、ユーザーコードのメソッドの戻り値の型やパラメータの型として使用されるだけです。エンドユーザーにとっての意味は、任意のSpringライブラリを追加しても何の効果もないということです。さらに、Springのインフラクラス（例えば `org.springframework.beans.factory.config.BeanPostProcessor` ）は実行されません。"
+msgstr ""
+"QuarkusのSpringサポートでは、Spring Application Contextは起動せず、Springイン"
+"フラストラクチャクラスも実行されないことに注意してください。Springのクラスや"
+"アノテーションは、メタデータを読み込んだり、ユーザーコードのメソッドの戻り値"
+"の型やパラメータの型として使用されるだけです。エンドユーザーにとっての意味は"
+"、任意のSpringライブラリを追加しても何の効果もないということです。さらに、Spr"
+"ingのインフラクラス（例えば `org.springframework.beans.factory.config."
+"BeanPostProcessor` ）は実行されません。"
 
 #. type: Title ==
 #: upstream/_guides/spring-scheduled.adoc:232
@@ -555,13 +601,16 @@ msgstr "link:spring-data-rest.html[Quarkus - Spring Data RESTのエクステン�
 #: upstream/_guides/spring-scheduled.adoc:241
 #, fuzzy
 msgid "xref:spring-cloud-config-client.adoc[Quarkus - Reading properties from Spring Cloud Config Server]"
-msgstr "link:spring-cloud-config-client.html[Quarkus - Spring Cloud Config Serverからプロパティを読み込む]"
+msgstr ""
+"link:spring-cloud-config-client.html[Quarkus - Spring Cloud Config "
+"Serverからプロパティを読み込む]"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:242
 #, fuzzy
 msgid "xref:spring-boot-properties.adoc[Quarkus - Extension for Spring Boot properties]"
-msgstr "link:spring-boot-properties.html[Quarkus - Spring Bootプロパティ用のエクステンション]"
+msgstr "link:spring-boot-properties.html[Quarkus - Spring "
+"Bootプロパティ用のエクステンション]"
 
 #. type: Plain text
 #: upstream/_guides/spring-scheduled.adoc:243

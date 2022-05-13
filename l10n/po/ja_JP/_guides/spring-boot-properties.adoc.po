@@ -34,7 +34,10 @@ msgstr "Quarkusネイティブの `@ConfigProperties` や MicroProfile `@ConfigP
 #: upstream/_guides/spring-boot-properties.adoc:15
 #, fuzzy
 msgid "Spring Boot `@ConfigurationProperties` has a few limitations. For instance, `Map` injection is not supported. Consider using xref:config-mappings.adoc[Mapping configuration to objects]."
-msgstr "Spring Boot `@ConfigurationProperties` にはいくつかの制限があります。例えば、 `Map` インジェクションはサポートされていません。 link:config-mappings.html[Mapping configuration to] objectsの使用を検討してください。"
+msgstr ""
+"Spring Boot `@ConfigurationProperties` にはいくつかの制限があります。例えば、"
+" `Map` インジェクションはサポートされていません。 link:config-mappings.html["
+"Mapping configuration to] objectsの使用を検討してください。"
 
 #. type: Title ==
 #: upstream/_guides/spring-boot-properties.adoc:16
@@ -62,7 +65,9 @@ msgstr "Gitレポジトリをクローンするか `git clone {quickstarts-clone
 #: upstream/_guides/spring-boot-properties.adoc:28
 #, fuzzy
 msgid "The solution is located in the `spring-boot-properties-quickstart` {quickstarts-tree-url}/spring-boot-properties-quickstart[directory]."
-msgstr "このソリューションは `spring-boot-properties-quickstart` {quickstarts-tree-url}/spring-boot-properties-quickstart[directory]にあります。"
+msgstr ""
+"このソリューションは `spring-boot-properties-quickstart` {quickstarts-tree-"
+"url}/spring-boot-properties-quickstart[directory]にあります。"
 
 #. type: Title ==
 #: upstream/_guides/spring-boot-properties.adoc:29
@@ -79,13 +84,18 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_guides/spring-boot-properties.adoc:38
 #, fuzzy
 msgid "This command generates a project and imports the `spring-boot-properties` extension."
-msgstr "このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-boot-properties` エクステンションをインポートします。"
+msgstr ""
+"このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-"
+"boot-properties` エクステンションをインポートします。"
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:41
 #, fuzzy
 msgid "If you already have your Quarkus project configured, you can add the `spring-boot-properties` extension to your project by running the following command in your project base directory:"
-msgstr "すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレクトリで以下のコマンドを実行することで、 `spring-boot-properties` エクステンションをプロジェクトに追加することができます。"
+msgstr ""
+"すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレク"
+"トリで以下のコマンドを実行することで、 `spring-boot-properties` "
+"エクステンションをプロジェクトに追加することができます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:46
@@ -131,7 +141,10 @@ msgstr "GreetingController"
 #: upstream/_guides/spring-boot-properties.adoc:66
 #, fuzzy
 msgid "First, create a `GreetingResource` JAX-RS resource in the `src/main/java/org/acme/spring/boot/properties/GreetingResource.java` file that looks like:"
-msgstr "Quarkus Mavenプラグインは、 `src/main/java/org/acme/spring/boot/properties/GreetingResource.java` ファイルに以下のような `GreetingResource` JAX-RSリソースを自動的に生成します。"
+msgstr ""
+"Quarkus Mavenプラグインは、 `src/main/java/org/acme/spring/boot/properties/"
+"GreetingResource.java` ファイルに以下のような `GreetingResource` JAX-"
+"RSリソースを自動的に生成します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-boot-properties.adoc:70
@@ -199,7 +212,9 @@ msgstr "プロパティーの注入"
 #: upstream/_guides/spring-boot-properties.adoc:90
 #, fuzzy
 msgid "Create a new class `src/main/java/org/acme/spring/boot/properties/GreetingProperties.java` with a message field:"
-msgstr "メッセージフィールドを持つ新しいクラス `src/main/java/org/acme/spring/boot/properties/GreetingProperties.java` を作成します。"
+msgstr ""
+"メッセージフィールドを持つ新しいクラス `src/main/java/org/acme/spring/boot/"
+"properties/GreetingProperties.java` を作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-boot-properties.adoc:96
@@ -233,7 +248,14 @@ msgstr ""
 #: upstream/_guides/spring-boot-properties.adoc:107
 #, fuzzy
 msgid "Here `text` field is public, but it could also be a private field with getter and setter or just a public getter in an interface.  Because `text` does not have a default value it is considered required and unless it is defined in a configuration file (`application.properties` by default)  your application will fail to start.  Define this property in your `src/main/resources/application.properties` file:"
-msgstr "ここでは `text` フィールドはパブリックですが、ゲッターとセッターを持つプライベートフィールドや、インターフェイス内の単なるパブリックゲッターにすることもできます。 `text` にはデフォルト値がないため、必須とみなされ、設定ファイル（デフォルトでは `application.properties` ）に定義されていないと、アプリケーションの起動に失敗します。 `src/main/resources/application.properties` ファイルでこのプロパティを定義してください。"
+msgstr ""
+"ここでは `text` フィールドはパブリックですが、ゲッターとセッターを持つプライ"
+"ベートフィールドや、インターフェイス内の単なるパブリックゲッターにすることも"
+"できます。 `text` にはデフォルト値がないため、必須とみなされ、設定ファイル（"
+"デフォルトでは `application.properties` "
+"）に定義されていないと、アプリケーションの起動に失敗します。 `src/main/"
+"resources/application.properties` "
+"ファイルでこのプロパティを定義してください。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-boot-properties.adoc:112
@@ -247,7 +269,8 @@ msgstr ""
 #: upstream/_guides/spring-boot-properties.adoc:115
 #, fuzzy
 msgid "Now modify `GreetingResource` to start using the `GreetingProperties`:"
-msgstr "そして、 `GreetingResource` とそのテスト `GreetingResourceTest` を更新します。"
+msgstr "そして、 `GreetingResource` とそのテスト `GreetingResourceTest` "
+"を更新します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-boot-properties.adoc:125
@@ -318,7 +341,9 @@ msgstr "で開発モードでアプリケーションを実行します。"
 #: upstream/_guides/spring-boot-properties.adoc:149
 #, fuzzy
 msgid "Open your browser to http://localhost:8080/greeting."
-msgstr "アプリケーションを実行するには、次の手順を実行します: `./mvnw compile quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
+msgstr ""
+"アプリケーションを実行するには、次の手順を実行します: `./mvnw compile "
+"quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:151
@@ -357,7 +382,10 @@ msgstr "では、デフォルト値を設定する挨拶のサフィックスを
 #: upstream/_guides/spring-boot-properties.adoc:169
 #, fuzzy
 msgid "Properties with default values can be configured in a configuration file just like any other property.  However, the default value will be used if the property was not defined in a configuration file."
-msgstr "デフォルト値を持つプロパティは、他のプロパティと同様に構成ファイルで設定できます。ただし、そのプロパティが構成ファイルで定義されていない場合は、デフォルト値が使用されます。"
+msgstr ""
+"デフォルト値を持つプロパティは、他のプロパティと同様に構成ファイルで設定でき"
+"ます。ただし、そのプロパティが構成ファイルで定義されていない場合は、デフォル"
+"ト値が使用されます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:171
@@ -455,7 +483,12 @@ msgstr "デフォルト値"
 #: upstream/_guides/spring-boot-properties.adoc:244
 #, fuzzy
 msgid "Properties with optional values are the middle-ground between standard and properties with default values.  While a missing property in a configuration file will not cause your application to fail, it will nevertheless not have a value set.  We use `java.util.Optional` type to define such properties."
-msgstr "オプション値を持つプロパティは、標準的なプロパティとデフォルト値を持つプロパティの中間的な存在です。設定ファイルにプロパティがないからといって、アプリケーションが失敗することはありませんが、それにもかかわらず、値が設定されていないことがあります。このようなプロパティの定義には `java.util.Optional` タイプを使用します。"
+msgstr ""
+"オプション値を持つプロパティは、標準的なプロパティとデフォルト値を持つプロパ"
+"ティの中間的な存在です。設定ファイルにプロパティがないからといって、アプリケ"
+"ーションが失敗することはありませんが、それにもかかわらず、値が設定されていな"
+"いことがあります。このようなプロパティの定義には `java.util.Optional` "
+"タイプを使用します。"
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:246
@@ -521,7 +554,12 @@ msgstr "プロパティーのグループ化"
 #: upstream/_guides/spring-boot-properties.adoc:323
 #, fuzzy
 msgid "Now we have three properties in our `GreetingProperties` class.  While `name` could be considered more of a runtime property (and maybe could be passed as an HTTP query parameter in the future), `text` and `suffix` are used to define a message template.  Let's group these two properties in a separate inner class:"
-msgstr "これで、 `GreetingProperties` クラスに3つのプロパティができました。 `name` はどちらかというと実行時のプロパティと考えられますが（将来的には HTTP クエリパラメータとして渡すことができるかもしれません）、 `text` と `suffix` はメッセージテンプレートの定義に使用されます。この2つのプロパティを別のインナークラスにまとめてみましょう。"
+msgstr ""
+"これで、 `GreetingProperties` クラスに3つのプロパティができました。 `name` "
+"はどちらかというと実行時のプロパティと考えられますが（将来的には HTTP "
+"クエリパラメータとして渡すことができるかもしれません）、 `text` と `suffix` "
+"はメッセージテンプレートの定義に使用されます。この2つのプロパティを別のインナ"
+"ークラスにまとめてみましょう。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-boot-properties.adoc:336
@@ -560,19 +598,23 @@ msgstr ""
 #: upstream/_guides/spring-boot-properties.adoc:349
 #, fuzzy
 msgid "Here `Message` properties class is defined as an inner class, but it could also be a top level class."
-msgstr "ここでは `Message` プロパティクラスはインナークラスとして定義されていますが、トップレベルのクラスである可能性もあります。"
+msgstr "ここでは `Message` プロパティクラスはインナークラスとして定義されていますが、"
+"トップレベルのクラスである可能性もあります。"
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:352
 #, fuzzy
 msgid "Having such property groups brings more structure to your configuration.  This is especially useful when then number of properties grows."
-msgstr "このようなプロパティグループを持つことで、構成にさらなる構造をもたらします。これは、プロパティの数が増えてきたときに特に有効です。"
+msgstr "このようなプロパティグループを持つことで、構成にさらなる構造をもたらします。"
+"これは、プロパティの数が増えてきたときに特に有効です。"
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:355
 #, fuzzy
 msgid "Because of the additional class, our property names have changed.  Let's update the properties file and the `GreetingResource` class."
-msgstr "クラスが追加されたため、プロパティ名が変更されています。プロパティファイルと `GreetingResource` クラスを更新してみましょう。"
+msgstr ""
+"クラスが追加されたため、プロパティ名が変更されています。プロパティファイルと "
+"`GreetingResource` クラスを更新してみましょう。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-boot-properties.adoc:360
@@ -639,7 +681,9 @@ msgstr "link:spring-security.html[Quarkus - Spring Securityのエクステンシ
 #: upstream/_guides/spring-boot-properties.adoc:396
 #, fuzzy
 msgid "xref:spring-cloud-config-client.adoc[Quarkus - Reading properties from Spring Cloud Config Server]"
-msgstr "link:spring-cloud-config-client.html[Quarkus - Spring Cloud Config Serverからプロパティを読み込む]"
+msgstr ""
+"link:spring-cloud-config-client.html[Quarkus - Spring Cloud Config "
+"Serverからプロパティを読み込む]"
 
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:397

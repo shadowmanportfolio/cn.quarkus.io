@@ -38,7 +38,8 @@ msgstr "ポスト"
 #: upstream/_posts/2020-10-06-quarkus-1-8-2-final-released.adoc:1
 #, fuzzy, no-wrap
 msgid "1.8.2.Final fixes some bugs and includes some documentation improvements."
-msgstr "本日、Quarkus 1.8.2.Finalをリリースし、いくつかのバグフィックスとドキュメントの改善を行いました。"
+msgstr "本日、Quarkus 1.8.2."
+"Finalをリリースし、いくつかのバグフィックスとドキュメントの改善を行いました。"
 
 #. type: YAML Front Matter: tags
 #: upstream/_posts/2020-10-06-quarkus-1-8-2-final-released.adoc:1

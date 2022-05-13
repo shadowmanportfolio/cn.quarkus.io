@@ -88,7 +88,8 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_versions/main/guides/smallrye-health.adoc:48
 #, fuzzy
 msgid "This command generates a project, importing the `smallrye-health` extension."
-msgstr "このコマンドは、 `smallrye-health` エクステンションをインポートした Maven プロジェクトを生成します。"
+msgstr "このコマンドは、 `smallrye-health` エクステンションをインポートした Maven "
+"プロジェクトを生成します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/smallrye-health.adoc:51
@@ -432,7 +433,9 @@ msgstr ""
 #: upstream/_versions/main/guides/smallrye-health.adoc:229
 #, fuzzy
 msgid "The startup health check will be available either at `http://localhost:8080/q/health/started` or together with other health check procedure at `http://localhost:8080/q/health`."
-msgstr "`http://localhost:8080/q/health/live` エンドポイントにブラウザか、 `curl http://localhost:8080/q/health/live` でアクセス"
+msgstr ""
+"`http://localhost:8080/q/health/live` エンドポイントにブラウザか、 `curl "
+"http://localhost:8080/q/health/live` でアクセス"
 
 #. type: Title ==
 #: upstream/_versions/main/guides/smallrye-health.adoc:230
@@ -748,7 +751,8 @@ msgstr "QuarkusでSmallRye Healthの機能を有効にするために必要な�
 #: upstream/_versions/main/guides/smallrye-health.adoc:424
 #, fuzzy
 msgid "adding the `smallrye-health` Quarkus extension to your project using the `quarkus-maven-plugin`:"
-msgstr " `quarkus-maven-plugin`. で`smallrye-health` Quarkusエクステンションをプロジェクトに追加"
+msgstr " `quarkus-maven-plugin`. で`smallrye-health` "
+"Quarkusエクステンションをプロジェクトに追加"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/smallrye-health.adoc:429

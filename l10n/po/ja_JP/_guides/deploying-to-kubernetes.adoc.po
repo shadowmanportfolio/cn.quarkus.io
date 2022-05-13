@@ -29,7 +29,18 @@ msgstr "Kubernetesエクステンション"
 #: upstream/_guides/deploying-to-kubernetes.adoc:14
 #, fuzzy
 msgid "Quarkus offers the ability to automatically generate Kubernetes resources based on sane defaults and user-supplied configuration using https://github.com/dekorateio/dekorate/[dekorate].  It currently supports generating resources for vanilla <<#kubernetes,Kubernetes>>, <<#openshift,OpenShift>> and <<#knative,Knative>>.  Furthermore, Quarkus can deploy the application to a target Kubernetes cluster by applying the generated manifests to the target cluster's API Server.  Finally, when either one of container image extensions is present (see the xref:container-imag.adoc[container image guide] for more details), Quarkus has the ability to create a container image and push it to a registry *before* deploying the application to the target platform."
-msgstr "Quarkusは、 link:https://github.com/dekorateio/dekorate/[dekorate]を使用して、saneのデフォルトとユーザーが提供する設定に基づいて、Kubernetesのリソースを自動的に生成する機能を提供しています。現在、バニラ link:#kubernetes[Kubernetes]、 link:#openshift[OpenShift]、 link:#knative[Knative]用のリソースの生成をサポートしています。さらにQuarkusでは、生成されたマニフェストをターゲットのKubernetesクラスタのAPI Serverに適用することで、アプリケーションをターゲットのKubernetesクラスタにデプロイすることができます。最後に、コンテナイメージエクステンションのいずれかが存在する場合（詳細は link:container-imag.html[コンテナイメージガイド]を参照）、Quarkusはアプリケーションをターゲットプラットフォームにデプロイする *前に*コンテナイメージを作成し、レジストリにプッシュする機能を備えています。"
+msgstr ""
+"Quarkusは、 link:https://github.com/dekorateio/dekorate/[dekorate]を使用して"
+"、saneのデフォルトとユーザーが提供する設定に基づいて、Kubernetesのリソースを"
+"自動的に生成する機能を提供しています。現在、バニラ "
+"link:#kubernetes[Kubernetes]、 link:#openshift[OpenShift]、 link:#knative[Kna"
+"tive]用のリソースの生成をサポートしています。さらにQuarkusでは、"
+"生成されたマニフェストをターゲットのKubernetesクラスタのAPI Serverに適用する"
+"ことで、アプリケーションをターゲットのKubernetesクラスタにデプロイすることが"
+"できます。最後に、コンテナイメージエクステンションのいずれかが存在する場合（"
+"詳細は link:container-imag.html[コンテナイメージガイド]を参照）、"
+"Quarkusはアプリケーションをターゲットプラットフォームにデプロイする "
+"*前に*コンテナイメージを作成し、レジストリにプッシュする機能を備えています。"
 
 #. type: Title ==
 #: upstream/_guides/deploying-to-kubernetes.adoc:15
@@ -108,13 +119,19 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:60
 #, fuzzy
 msgid "By adding these dependencies, we enable the generation of Kubernetes manifests each time we perform a build while also enabling the build of a container image using Jib.  For example, following the execution of:"
-msgstr "これらの依存関係を追加することで、ビルドを実行するたびにKubernetesマニフェストの生成を可能にすると同時に、Jibを使ったコンテナイメージのビルドも可能になります。例えば、実行後に"
+msgstr ""
+"これらの依存関係を追加することで、ビルドを実行するたびにKubernetesマニフェス"
+"トの生成を可能にすると同時に、Jibを使ったコンテナイメージのビルドも可能になり"
+"ます。例えば、実行後に"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:65
 #, fuzzy
 msgid "you will notice amongst the other files that are created, two files named `kubernetes.json` and `kubernetes.yml` in the `target/kubernetes/` directory."
-msgstr "`./mvnw package` の実行後、作成された他のファイルの中に `knative.json` と `knative.yml` という名前のファイルが `target/kubernetes/` ディレクトリーにあることに気づくでしょう。"
+msgstr ""
+"`./mvnw package` の実行後、作成された他のファイルの中に `knative.json` と "
+"`knative.yml` という名前のファイルが `target/kubernetes/` "
+"ディレクトリーにあることに気づくでしょう。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:67
@@ -212,7 +229,9 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:151
 #, fuzzy
 msgid "Beside generating a `Deployment` resource, you can also choose to get a `StatefulSet` instead via `application.properties`:"
-msgstr "`Deployment` リソースを生成する以外にも、 `application.properties` を介して `StatefulSet` を取得することもできます。"
+msgstr ""
+"`Deployment` リソースを生成する以外にも、 `application.properties` を介して "
+"`StatefulSet` を取得することもできます。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:155
@@ -235,7 +254,12 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:166
 #, fuzzy
 msgid "An important thing to note about the `Deployment` (or `StatefulSet`) is that is uses `yourDockerUsername/test-quarkus-app:1.0.0-SNAPSHOT` as the container image of the `Pod`.  The name of the image is controlled by the Jib extension and can be customized using the usual `application.properties`."
-msgstr "`Deployment` (または `StatefulSet`)の重要な点は、 `yourDockerUsername/test-quarkus-app:1.0.0-SNAPSHOT` を `Pod` のコンテナイメージとして使用していることです。画像の名前は Jib エクステンションで制御されており、通常の `application.properties` を使ってカスタマイズすることができます。"
+msgstr ""
+"`Deployment` (または `StatefulSet`)の重要な点は、 `yourDockerUsername/test-"
+"quarkus-app:1.0.0-SNAPSHOT` を `Pod` "
+"のコンテナイメージとして使用していることです。画像の名前は Jib "
+"エクステンションで制御されており、通常の `application.properties` "
+"を使ってカスタマイズすることができます。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:168
@@ -266,7 +290,10 @@ msgstr "名前空間"
 #: upstream/_guides/deploying-to-kubernetes.adoc:181
 #, fuzzy
 msgid "By default Quarkus omits the namespace in the generated manifests, rather than enforce the `default` namespace. That means that you can apply the manifest to your chosen namespace when using `kubectl`, which in the example below is `test`:"
-msgstr "デフォルトでは、Quarkusは生成されたマニフェストの名前空間を省略し、 `default` 名前空間を強制しません。つまり、 `kubctl` (以下の例では `test` )を使用している場合は、選択したネームスペースにマニフェストを適用することができます。"
+msgstr ""
+"デフォルトでは、Quarkusは生成されたマニフェストの名前空間を省略し、 `default`"
+" 名前空間を強制しません。つまり、 `kubctl` (以下の例では `test` )を使用してい"
+"る場合は、選択したネームスペースにマニフェストを適用することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:185
@@ -367,7 +394,8 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:248
 #, fuzzy
 msgid "You can also remove the `app.kubernetes.io/version` label by applying the following configuration:"
-msgstr "また、以下の構成を適用することで、 `app.kubernetes.io/version` ラベルを削除することができます。"
+msgstr "また、以下の構成を適用することで、 `app.kubernetes.io/version` "
+"ラベルを削除することができます。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:252
@@ -970,7 +998,12 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:534
 #, fuzzy
 msgid "The values of the generated probes will be determined by the configured health properties: `quarkus.smallrye-health.root-path`, `quarkus.smallrye-health.liveness-path` and `quarkus.smallrye-health.readiness-path`.  More information about the health extension can be found in the relevant xref:microprofile-health.adoc[guide]."
-msgstr "生成されたプローブの値は、設定されたhealthプロパティ（ `quarkus.smallrye-health.root-path` ）、（ `quarkus.smallrye-health.liveness-path` ）、（ `quarkus.smallrye-health.readiness-path` ）によって決定されます。ヘルスエクステンションの詳細については、関連する link:microprofile-health.html[ガイド]を参照してください。"
+msgstr ""
+"生成されたプローブの値は、設定されたhealthプロパティ（ `quarkus.smallrye-"
+"health.root-path` ）、（ `quarkus.smallrye-health.liveness-path` ）、（ "
+"`quarkus.smallrye-health.readiness-path` "
+"）によって決定されます。ヘルスエクステンションの詳細については、関連する link"
+":microprofile-health.html[ガイド]を参照してください。"
 
 #. type: Title ===
 #: upstream/_guides/deploying-to-kubernetes.adoc:535
@@ -1180,7 +1213,12 @@ msgstr "Minikube へのデプロイ"
 #: upstream/_guides/deploying-to-kubernetes.adoc:667
 #, fuzzy
 msgid "https://kind.sigs.k8s.io/[Kind] is an other popular tool used as a Kubernetes cluster for development purposes. To make the deployment to Kind experience as frictionless as possible, Quarkus provides the `quarkus-kind` extension. This extension can be added to a project like so:"
-msgstr "https://github.com/kubernetes/minikube[Minikube] は、開発目的でKubernetesクラスタが必要な場合に非常に人気があります。Minikubeへのデプロイをできるだけ摩擦のないものにするために、Quarkusは `quarkus-minikube` エクステンションを提供しています。このエクステンションは、以下のようなプロジェクトに追加することができます。"
+msgstr ""
+"https://github.com/kubernetes/minikube[Minikube] は、開発目的でKubernetesクラ"
+"スタが必要な場合に非常に人気があります。Minikubeへのデプロイをできるだけ摩擦"
+"のないものにするために、Quarkusは `quarkus-minikube` エクステンションを提供し"
+"ています。このエクステンションは、以下のようなプロジェクトに追加することがで"
+"きます。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:674
@@ -1200,7 +1238,12 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:678
 #, fuzzy
 msgid "The purpose of this extension is to generate Kubernetes manifests (`kind.yaml` and `kind.json`) that are tailored to Kind and also to automate the process of loading images to the cluster when performing container image builds. The tailor made manifests will be pretty similar (they share the same rules) with Minikube (see above)."
-msgstr "このエクステンションの目的は、Kindに合わせたKubernetesマニフェスト( `kind.yaml` と `kind.json`)を生成することと、コンテナイメージのビルドを行う際にクラスタにイメージをロードする処理を自動化することにあります。テーラーメイドのマニフェストは、Minikube（上記参照）とかなり似ている（同じルールを共有している）でしょう。"
+msgstr ""
+"このエクステンションの目的は、Kindに合わせたKubernetesマニフェスト( `kind."
+"yaml` と `kind.json`)を生成することと、コンテナイメージのビルドを行う際にクラ"
+"スタにイメージをロードする処理を自動化することにあります。テーラーメイドのマ"
+"ニフェストは、Minikube（上記参照）とかなり似ている（同じルールを共有している"
+"）でしょう。"
 
 #. type: Title ==
 #: upstream/_guides/deploying-to-kubernetes.adoc:679
@@ -2029,13 +2072,19 @@ msgstr "アプリケーション設定の受け渡し"
 #: upstream/_guides/deploying-to-kubernetes.adoc:753
 #, fuzzy
 msgid "You may need to configure the connection to your Kubernetes cluster.  By default, it automatically uses the active _context_ used by `kubectl`."
-msgstr "お使いのKubernetesクラスタへの接続を設定する必要があるかもしれません。デフォルトでは、 `kubectl` で使用されているアクティブな _コンテキスト_が自動的に使用されます。"
+msgstr ""
+"お使いのKubernetesクラスタへの接続を設定する必要があるかもしれません。デフォ"
+"ルトでは、 `kubectl` で使用されているアクティブな "
+"_コンテキスト_が自動的に使用されます。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:755
 #, fuzzy
 msgid "For instance, if your cluster API endpoint uses a self-signed SSL Certificate you need to explicitly configure the client to trust it. You can achieve this by defining the following property:"
-msgstr "例えば、クラスタAPIのエンドポイントが自己署名入りのSSL証明書を使用している場合、クライアントがそれを信頼するように明示的に構成する必要があります。これを実現するには、以下のプロパティを定義します。"
+msgstr ""
+"例えば、クラスタAPIのエンドポイントが自己署名入りのSSL証明書を使用している場"
+"合、クライアントがそれを信頼するように明示的に構成する必要があります。これを"
+"実現するには、以下のプロパティを定義します。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:759
@@ -2724,7 +2773,8 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:973
 #, fuzzy
 msgid "See further information in xref:deploying-to-openshift.adoc[Deploying to OpenShift]."
-msgstr "詳しくは、「 link:deploying-to-openshift.html[OpenShiftへのデプロイ]メント」をご覧ください。"
+msgstr "詳しくは、「 link:deploying-to-openshift."
+"html[OpenShiftへのデプロイ]メント」をご覧ください。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:975
@@ -2758,7 +2808,10 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:992
 #, fuzzy
 msgid "Following the execution of `./mvnw package -Dquarkus.container-image.build=true` you will notice amongst the other files that are created, two files named `openshift.json` and `openshift.yml` in the `target/kubernetes/` directory."
-msgstr "`./mvnw package -Dquarkus.container-image.build=true` の実行後に、 `target/kubernetes/` ディレクトリーに `openshift.json` と `openshift.yml` という名前の2つのファイルが作成されたことに気づくでしょう。"
+msgstr ""
+"`./mvnw package -Dquarkus.container-image.build=true` の実行後に、 `target/"
+"kubernetes/` ディレクトリーに `openshift.json` と `openshift.yml` "
+"という名前の2つのファイルが作成されたことに気づくでしょう。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:994
@@ -2775,7 +2828,8 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:1001
 #, fuzzy
 msgid "OpenShift users might want to use `oc` rather than `kubectl`:"
-msgstr "OpenShiftユーザーは、 `kubectl` の代わりに `oc` を使用した方が良いかもしれません。"
+msgstr "OpenShiftユーザーは、 `kubectl` の代わりに `oc` "
+"を使用した方が良いかもしれません。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:1005
@@ -2787,7 +2841,11 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:1010
 #, fuzzy
 msgid "Quarkus also provides the xref:deploying-to-openshift.adoc[OpenShift] extension. This extension is basically a wrapper around the Kubernetes extension and relieves OpenShift users of the necessity of setting the `deployment-target` property to `openshift`"
-msgstr "Quarkusは、 link:deploying-to-openshift.html[OpenShift]エクステンションも提供しています。このエクステンションは、基本的にKubernetesエクステンションのラッパーであり、OpenShiftのユーザーは、 `deployment-target` プロパティを `openshift`"
+msgstr ""
+"Quarkusは、 link:deploying-to-openshift.html[OpenShift]エクステンションも提供"
+"しています。このエクステンションは、基本的にKubernetesエクステンションのラッ"
+"パーであり、OpenShiftのユーザーは、 `deployment-target` プロパティを "
+"`openshift`"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1012
@@ -2894,7 +2952,9 @@ msgstr "アプリケーションの起動時にJVMに渡すJVM引数"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1030
 #, fuzzy, no-wrap
 msgid "-Dquarkus.http.host=0.0.0.0,-Djava.util.logging.manager=org.jboss.logmanager.LogManager"
-msgstr "-Dquarkus.http.host=0.0.0.0,-Djava.util.logging.manager=org.jboss.logmanager.LogManager"
+msgstr ""
+"-Dquarkus.http.host=0.0.0.0,-Djava.util.logging.manager=org.jboss.logmanager."
+"LogManager"
 
 #. type: Table
 #: upstream/_guides/deploying-to-kubernetes.adoc:1030
@@ -3770,7 +3830,13 @@ msgstr "デプロイ"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1275
 #, fuzzy
 msgid "When deployment is enabled, the Kubernetes extension will select the resources specified by `quarkus.kubernetes.deployment-target` and deploy them.  This assumes that a `.kube/config` is available in your user directory that points to the target Kubernetes cluster.  In other words the extension will use whatever cluster `kubectl` uses. The same applies to credentials."
-msgstr "デプロイメントを有効にすると、Kubernetesエクステンションは、 `quarkus.kubernetes.deployment-target` で指定されたリソースを選択し、デプロイします。これは、対象となるKubernetesクラスタを指し示す `.kube/config` がユーザーディレクトリ内にあることを前提としています。言い換えれば、エクステンションは、 `kubectl` が使用するどのようなクラスタも使用します。クレデンシャルについても同様です。"
+msgstr ""
+"デプロイメントを有効にすると、Kubernetesエクステンションは、 `quarkus."
+"kubernetes.deployment-target` "
+"で指定されたリソースを選択し、デプロイします。これは、"
+"対象となるKubernetesクラスタを指し示す `.kube/config` がユーザーディレクトリ"
+"内にあることを前提としています。言い換えれば、エクステンションは、 `kubectl` "
+"が使用するどのようなクラスタも使用します。クレデンシャルについても同様です。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1277
@@ -3787,13 +3853,24 @@ msgstr "リモートデバッグ"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1281
 #, fuzzy
 msgid "To remotely debug applications that are running on a kubernetes environment, we need to deploy the application as described in the previous section and add as new property: `quarkus.kubernetes.remote-debug.enabled=true`. This property will automatically configure the Java application to append the java agent configuration (for example: `-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005`) and also the service resource to listen using the java agent port."
-msgstr "kubernetes環境で動作しているアプリケーションをリモートでデバッグするには、前のセクションで説明したようにアプリケーションをデプロイし、新しいプロパティとして `quarkus.kubernetes.remote-debug.enabled=true` を追加する必要があります。このプロパティは、Javaアプリケーションにjavaエージェントの設定（例： `-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005` ）を追加し、javaエージェントポートを使用してリッスンするサービスリソースも自動的に設定します。"
+msgstr ""
+"kubernetes環境で動作しているアプリケーションをリモートでデバッグするには、前"
+"のセクションで説明したようにアプリケーションをデプロイし、"
+"新しいプロパティとして `quarkus.kubernetes.remote-debug.enabled=true` を追加"
+"する必要があります。このプロパティは、Javaアプリケーションにjavaエージェント"
+"の設定（例： "
+"`-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005` ）を追加"
+"し、javaエージェントポートを使用してリッスンするサービスリソースも自動的に設"
+"定します。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1283
 #, fuzzy
 msgid "After your application has been deployed with the debug enabled, next you need to tunnel the traffic from your local host machine to the specified port of the java agent:"
-msgstr "デバッグを有効にした状態でアプリケーションをデプロイしたら、次に、ローカルホストマシンからjavaエージェントの指定されたポートにトラフィックをトンネルする必要があります。"
+msgstr ""
+"デバッグを有効にした状態でアプリケーションをデプロイしたら、次に、ローカルホ"
+"ストマシンからjavaエージェントの指定されたポートにトラフィックをトンネルする"
+"必要があります。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:1287
@@ -3805,13 +3882,24 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:1290
 #, fuzzy
 msgid "Using this command, you'll forward the traffic from the \"localhost:5005\" to the kubernetes service running the java agent using the port \"5005\" which is the one that the java agent uses by default for remote debugging. You can also configure another java agent port using the property `quarkus.kubernetes.remote-debug.address-port`."
-msgstr "このコマンドを使用すると、javaエージェントがリモートデバッグ用にデフォルトで使用するポート「5005」を使用して、「localhost:5005」からのトラフィックをjavaエージェントを実行しているkubernetesサービスへ転送することになります。また、プロパティ `quarkus.kubernetes.remote-debug.address-port` を使用して、別のjavaエージェントポートを設定することもできます。"
+msgstr ""
+"このコマンドを使用すると、javaエージェントがリモートデバッグ用にデフォルトで"
+"使用するポート「5005」を使用して、「localhost:5005」からのトラフィックをjava"
+"エージェントを実行しているkubernetesサービスへ転送することになります。また、"
+"プロパティ `quarkus.kubernetes.remote-debug.address-port` "
+"を使用して、別のjavaエージェントポートを設定することもできます。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1292
 #, fuzzy
 msgid "Finally, all you need to do is to configure your favorite IDE to attach the java agent process that is forwarded to `localhost:5005` and start to debug your application. For example, in IntelliJ IDEA, you can follow https://www.jetbrains.com/help/idea/tutorial-remote-debug.html:[this tutorial] to debug remote applications."
-msgstr "最後に、 `localhost:5005` に転送された java agent プロセスをアタッチするように、お気に入りの IDE を設定し、アプリケーションのデバッグを開始するだけです。例えば、IntelliJ IDEAでは、 link:https://www.jetbrains.com/help/idea/tutorial-remote-debug.html:[このチュートリアルに従って]、リモートアプリケーションをデバッグすることができます。"
+msgstr ""
+"最後に、 `localhost:5005` に転送された java agent "
+"プロセスをアタッチするように、お気に入りの IDE "
+"を設定し、アプリケーションのデバッグを開始するだけです。例えば、IntelliJ "
+"IDEAでは、 link:https://www.jetbrains.com/help/idea/tutorial-remote-debug.htm"
+"l:[このチュートリアルに従って]、リモートアプリケーションをデバッグすることが"
+"できます。"
 
 #. type: Title ==
 #: upstream/_guides/deploying-to-kubernetes.adoc:1293
@@ -3823,13 +3911,37 @@ msgstr "既存のリソースの利用"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1299
 #, fuzzy
 msgid "Sometimes it's desirable to either provide additional resources (e.g. a ConfigMap, a Secret, a Deployment for a database etc) or provide custom ones that will be used as a `base` for the generation process.  Those resources can be added under `src/main/kubernetes` directory and can be named after the target environment (e.g. kubernetes.json, openshift.json, knative.json, or the yml equivalents). The correlation between provided and generated files is done by file name.  So, a `kubernetes.json`/`kubernetes.yml` file added in `src/main/kubernetes` will only affect the generated `kubernetes.json`/`kubernetes.yml`. An `openshift.json`/`openshift.yml` file added in `src/main/kubernetes` will only affect the generated `openshift.json`/`openshift.yml`.  A `knative.json`/`knative.yml` file added in `src/main/kubernetes` will only affect the generated `knative.json`/`knative.yml` and so on. The provided file may be either in json or yaml format and may contain one or more resources. These resources will end up in both generated formats (json and yaml). For example, a secret added in `src/main/kubernetes/kubernetes.yml` will be added to both the generated `kubernetes.yml` and `kubernetes.json`."
-msgstr "時には、追加のリソース（例：ConfigMap、Secret、データベース用のDeploymentなど）を提供したり、生成プロセスの `base` として使用されるカスタムリソースを提供することが望ましい場合があります。これらのリソースは、 `src/main/kubernetes` ディレクトリの下に追加することができ、ターゲット環境にちなんだ名前を付けることができます（例：kubernetes.json、openshift.json、knative.json、または同等の yml）。提供されたファイルと生成されたファイルの相関関係は、ファイル名によって行われます。つまり、 `src/main/kubernetes` で追加された `kubernetes.json`/ `kubernetes.yml` ファイルは、生成された `kubernetes.json`/ `kubernetes.yml` にのみ影響します。 `src/main/kubernetes` で追加された `openshift.json`/ `openshift.yml` ファイルは、生成された `openshift.json`/ `openshift.yml` にのみ影響します。 `src/main/kubernetes` で追加された `knative.json`/ `knative.yml` ファイルは、生成された `knative.json`/ `knative.yml` などにのみ影響します。提供されるファイルは、json または yaml 形式で、1 つまたは複数のリソースを含むことができます。これらのリソースは、生成された両方のフォーマット（json と yaml）に含まれます。例えば、 `src/main/kubernetes/kubernetes.yml` で追加されたシークレットは、生成された `kubernetes.yml` と `kubernetes.json` の両方に追加されます。"
+msgstr ""
+"時には、追加のリソース（例：ConfigMap、Secret、データベース用のDeploymentなど"
+"）を提供したり、生成プロセスの `base` として使用されるカスタムリソースを提供"
+"することが望ましい場合があります。これらのリソースは、 `src/main/kubernetes` "
+"ディレクトリの下に追加することができ、ターゲット環境にちなんだ名前を付けるこ"
+"とができます（例：kubernetes.json、openshift.json、knative.json、"
+"または同等の yml）。提供されたファイルと生成されたファイルの相関関係は、ファ"
+"イル名によって行われます。つまり、 `src/main/kubernetes` で追加された "
+"`kubernetes.json`/ `kubernetes.yml` ファイルは、生成された `kubernetes.json`/"
+" `kubernetes.yml` にのみ影響します。 `src/main/kubernetes` で追加された "
+"`openshift.json`/ `openshift.yml` ファイルは、生成された `openshift.json`/ "
+"`openshift.yml` にのみ影響します。 `src/main/kubernetes` で追加された "
+"`knative.json`/ `knative.yml` ファイルは、生成された `knative.json`/ `knative"
+".yml` などにのみ影響します。提供されるファイルは、json または yaml 形式で、1 "
+"つまたは複数のリソースを含むことができます。これらのリソースは、生成された両"
+"方のフォーマット（json と yaml）に含まれます。例えば、 `src/main/kubernetes/"
+"kubernetes.yml` で追加されたシークレットは、生成された `kubernetes.yml` と "
+"`kubernetes.json` の両方に追加されます。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1301
 #, fuzzy
 msgid "Note: At the time of writing there is no mechanism in place that allows a one to many relationship between provided and generated files. Minikube is not an exception to the rule above, so if you want to customize the generated minikube manifests, the file placed under `src/main/kubernetes` will have to be named `minikube.json` or `minikube.yml` (naming it `kubernetes.yml` or `kubernetes.json` will result in having only the generated `kubernetes.yml` and `kubernetes.json` affected)."
-msgstr "注：この記事を書いている時点では、提供されたファイルと生成されたファイルの間に1対多の関係を可能にするメカニズムはありません。Minikubeも例外ではありませんので、生成されるminikubeマニフェストをカスタマイズしたい場合は、 `src/main/kubernetes` の下に置かれるファイルを `minikube.json` または `minikube.yml` という名前にする必要があります（ `kubernetes.yml` または `kubernetes.json` という名前にすると、生成される `kubernetes.yml` と `kubernetes.json` だけが影響を受けることになります）。"
+msgstr ""
+"注：この記事を書いている時点では、提供されたファイルと生成されたファイルの間"
+"に1対多の関係を可能にするメカニズムはありません。Minikubeも例外ではありません"
+"ので、生成されるminikubeマニフェストをカスタマイズしたい場合は、 `src/main/"
+"kubernetes` の下に置かれるファイルを `minikube.json` または `minikube.yml` "
+"という名前にする必要があります（ `kubernetes.yml` または `kubernetes.json` "
+"という名前にすると、生成される `kubernetes.yml` と `kubernetes.json` "
+"だけが影響を受けることになります）。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1304
@@ -3929,13 +4041,23 @@ msgstr "提供されたレプリカ <1>, ラベル <2>, 環境変数 <3> はそ�
 #: upstream/_guides/deploying-to-kubernetes.adoc:1381
 #, fuzzy
 msgid "When the resource name does not match the application name (or the overridden name) rather than reusing the resource a new one will be added. Same goes for the container."
-msgstr "リソース名がアプリケーション名(またはオーバーライドされた名前)と一致しない場合は、リソースを再利用する代わりに新しいリソースが追加されます。コンテナーについても同様です。コンテナーの名前がアプリケーション名 (またはオーバーライドされた名前) と一致しない場合、コンテナー固有の設定は無視されます。"
+msgstr ""
+"リソース名がアプリケーション名(またはオーバーライドされた名前)と一致しない場"
+"合は、リソースを再利用する代わりに新しいリソースが追加されます。コンテナーに"
+"ついても同様です。コンテナーの名前がアプリケーション名 "
+"(またはオーバーライドされた名前) "
+"と一致しない場合、コンテナー固有の設定は無視されます。"
 
 #. type: delimited block =
 #: upstream/_guides/deploying-to-kubernetes.adoc:1383
 #, fuzzy
 msgid "When the name of the container does not match the application name (or the overridden name), container specific configuration will be ignored."
-msgstr "リソース名がアプリケーション名(またはオーバーライドされた名前)と一致しない場合は、リソースを再利用する代わりに新しいリソースが追加されます。コンテナーについても同様です。コンテナーの名前がアプリケーション名 (またはオーバーライドされた名前) と一致しない場合、コンテナー固有の設定は無視されます。"
+msgstr ""
+"リソース名がアプリケーション名(またはオーバーライドされた名前)と一致しない場"
+"合は、リソースを再利用する代わりに新しいリソースが追加されます。コンテナーに"
+"ついても同様です。コンテナーの名前がアプリケーション名 "
+"(またはオーバーライドされた名前) "
+"と一致しない場合、コンテナー固有の設定は無視されます。"
 
 #. type: Title ==
 #: upstream/_guides/deploying-to-kubernetes.adoc:1385
@@ -3947,25 +4069,39 @@ msgstr "サービスバインディング link:[, id=service_binding]"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1388
 #, fuzzy
 msgid "Quarkus supports the link:https://github.com/k8s-service-bindings/spec[Service Binding Specification for Kubernetes] to bind services to applications."
-msgstr "Quarkusは、サービスをアプリケーションにバインドするために、 link:https://github.com/k8s-service-bindings/spec[Service Binding Specification for Kubernetes]をサポートしています。"
+msgstr ""
+"Quarkusは、サービスをアプリケーションにバインドするために、 "
+"link:https://github.com/k8s-service-bindings/spec[Service Binding "
+"Specification for Kubernetes]をサポートしています。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1390
 #, fuzzy
 msgid "Specifically, Quarkus implements the link:https://github.com/k8s-service-bindings/spec#workload-projection[Workload Projection] part of the specification, therefore allowing applications to bind to services, such as a Database or a Broker, without the need for user configuration."
-msgstr "Quarkusは、 link:https://github.com/k8s-service-bindings/spec[Service Binding Specification for Kubernetes]を介したサービスのアプリケーションへのバインディングをサポートしています。具体的には、Quarkusは仕様の link:https://github.com/k8s-service-bindings/spec#workload-projection[Workload Projection]部分を実装しており、適切に構成されたKubernetesクラスタで実行されるアプリケーションが、ユーザーの設定を必要とせずにサービス（DatabaseやBrokerなど）を利用できるようになります。"
+msgstr ""
+"Quarkusは、 link:https://github.com/k8s-service-bindings/spec[Service "
+"Binding Specification for Kubernetes]を介したサービスのアプリケーションへのバ"
+"インディングをサポートしています。具体的には、Quarkusは仕様の "
+"link:https://github.com/k8s-service-bindings/spec#workload-projection["
+"Workload Projection]部分を実装しており、適切に構成されたKubernetesクラスタで"
+"実行されるアプリケーションが、ユーザーの設定を必要とせずにサービス（Database"
+"やBrokerなど）を利用できるようになります。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1392
 #, fuzzy
 msgid "To enable Service Binding for supported extensions, add the `quarkus-kubernetes-service-binding` extension to the application dependencies."
-msgstr "サービスバインディングのサポートを有効にするには、現在サポートされているエクステンションの1つに加えて、アプリケーションの依存関係に `quarkus-kubernetes-service-binding` エクステンションを追加する必要があります。"
+msgstr ""
+"サービスバインディングのサポートを有効にするには、現在サポートされているエク"
+"ステンションの1つに加えて、アプリケーションの依存関係に `quarkus-kubernetes-"
+"service-binding` エクステンションを追加する必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1394
 #, fuzzy
 msgid "The following extensions can be used with Service Binding and are supported for Workload Projection:"
-msgstr "以下のエクステンションは、Service Bindingで使用でき、Workload Projectionでサポートされています。"
+msgstr "以下のエクステンションは、Service Bindingで使用でき、Workload "
+"Projectionでサポートされています。"
 
 #. type: delimited block =
 #: upstream/_guides/deploying-to-kubernetes.adoc:1397
@@ -4012,31 +4148,54 @@ msgstr "ワークロード・プロジェクション"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1410
 #, fuzzy
 msgid "Workload Projection is a process of obtaining the configuration for services from the Kubernetes cluster. This configuration takes the form of directory structures that follow certain conventions and is attached to an application or to a service as a mounted volume. The `kubernetes-service-binding` extension uses this directory structure to create configuration sources, which allows you to configure additional modules, such as databases or message brokers."
-msgstr "Workload Projectionは、Kubernetesクラスタからサービスのコンフィグレーションを取得するプロセスです。コンフィグレーションは、一定の規則に従ったディレクトリ構造の形をしており、ボリュームマウントとしてアプリケーションやサービスに添付されます。 `kubernetes-service-binding` エクステンションでは、このディレクトリ構造を利用して構成ソースを作成し、データベースやメッセージブローカーなどの追加モジュールを構成することができます。"
+msgstr ""
+"Workload Projectionは、Kubernetesクラスタからサービスのコンフィグレーションを"
+"取得するプロセスです。コンフィグレーションは、一定の規則に従ったディレクトリ"
+"構造の形をしており、ボリュームマウントとしてアプリケーションやサービスに添付"
+"されます。 `kubernetes-service-binding` エクステンションでは、このディレクト"
+"リ構造を利用して構成ソースを作成し、データベースやメッセージブローカーなどの"
+"追加モジュールを構成することができます。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1412
 #, fuzzy
 msgid "During application development, users can use workload projection to connect their application to a development database, or other locally-run services, without changing the actual application code or configuration."
-msgstr "アプリケーションの開発時に、ワークロードプロジェクションを使用して、実際のアプリケーションコードや構成を変更することなく、アプリケーションをdev-databaseやその他のローカルに稼働するサービスに接続することができます。"
+msgstr ""
+"アプリケーションの開発時に、ワークロードプロジェクションを使用して、実際のア"
+"プリケーションコードや構成を変更することなく、アプリケーションをdev-"
+"databaseやその他のローカルに稼働するサービスに接続することができます。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1414
 #, fuzzy
 msgid "For an example of a workload projection where the directory structure is included in the test resources and passed to integration test, see the link:https://github.com/quarkusio/quarkus/tree/e7efe6b3efba91b9c4ae26f9318f8397e23e7505/integration-tests/kubernetes-service-binding-jdbc/src/test/resources/k8s-sb[Kubernetes Service Binding datasource] GitHub repository."
-msgstr "ディレクトリ構造がテストリソースに含まれ、統合テストに渡されるワークロードプロジェクションの例については、 link:https://github.com/quarkusio/quarkus/tree/e7efe6b3efba91b9c4ae26f9318f8397e23e7505/integration-tests/kubernetes-service-binding-jdbc/src/test/resources/k8s-sb[こちら]をご覧ください。"
+msgstr ""
+"ディレクトリ構造がテストリソースに含まれ、統合テストに渡されるワークロードプ"
+"ロジェクションの例については、 link:https://github.com/quarkusio/quarkus/"
+"tree/e7efe6b3efba91b9c4ae26f9318f8397e23e7505/integration-tests/"
+"kubernetes-service-binding-jdbc/src/test/resources/k8s-"
+"sb[こちら]をご覧ください。"
 
 #. type: delimited block =
 #: upstream/_guides/deploying-to-kubernetes.adoc:1418
 #, fuzzy
 msgid "The `k8s-sb` directory is the root of all service bindings. In this example, only one database called `fruit-db` is intended to be bound. This binding database has the `type` file, that indicates `postgresql` as the database type, while the other files in the directory provide the necessary information to establish the connection."
-msgstr "`k8s-sb` ディレクトリは、すべてのサービスバインディングのルートとなります。この例では、 `fruit-db` というデータベースを1つだけバインドすることを想定しています。このバインディング・データベースには、データベース・タイプとして `postgresql` を示す `type` ファイルがあり、ディレクトリ内の他のファイルは、接続を確立するために必要な情報を提供しています。"
+msgstr ""
+"`k8s-sb` ディレクトリは、すべてのサービスバインディングのルートとなります。こ"
+"の例では、 `fruit-db` というデータベースを1つだけバインドすることを想定してい"
+"ます。このバインディング・データベースには、データベース・タイプとして "
+"`postgresql` を示す `type` ファイルがあり、ディレクトリ内の他のファイルは、接"
+"続を確立するために必要な情報を提供しています。"
 
 #. type: delimited block =
 #: upstream/_guides/deploying-to-kubernetes.adoc:1420
 #, fuzzy
 msgid "After your Quarkus project obtains information from `SERVICE_BINDING_ROOT` environment variables that are set by OpenShift, you can locate generated configuration files that are present in the file system and use them to map the configuration-file values to properties of certain extensions."
-msgstr "QuarkusプロジェクトがOpenShiftによって設定された `SERVICE_BINDING_ROOT` 環境変数から情報を取得した後、ファイルシステム内に存在する生成された設定ファイルを探し出し、それを使用して設定ファイルの値を特定のエクステンションのプロパティにマッピングすることができます。"
+msgstr ""
+"QuarkusプロジェクトがOpenShiftによって設定された `SERVICE_BINDING_ROOT` 環境"
+"変数から情報を取得した後、ファイルシステム内に存在する生成された設定ファイル"
+"を探し出し、それを使用して設定ファイルの値を特定のエクステンションのプロパテ"
+"ィにマッピングすることができます。"
 
 #. type: Title ==
 #: upstream/_guides/deploying-to-kubernetes.adoc:1423
@@ -4048,19 +4207,37 @@ msgstr "既存のリソースの利用"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1426
 #, fuzzy
 msgid "The link:https://github.com/redhat-developer/service-binding-operator[Service Binding Operator] is an Operator that implements link:https://github.com/k8s-service-bindings/spec[Service Binding Specification for Kubernetes] and is meant to simplify the binding of services to an application. Containerized applications that support link:https://github.com/k8s-service-bindings/spec#workload-projection[Workload Projection] obtain service binding information in the form of volume mounts. The Service Binding Operator reads binding service information and mounts it to the application containers that need it."
-msgstr "link:https://github.com/redhat-developer/service-binding-operator[Service Binding Operator]は、 link:https://github.com/k8s-service-bindings/spec[Service Binding Specification for Kubernetes]を実装したOperatorで、アプリケーションへのサービスのバインディングを簡素化することを目的としています。前述の通り、 link:https://github.com/k8s-service-bindings/spec#workload-projection[Workload Projection]をサポートするコンテナ化されたアプリケーションは、ボリュームマウントの形でサービスバインディング情報を取得します。Service Binding Operatorは、バインディングサービス情報を読み込んで、それを必要とするアプリケーションコンテナにマウントします。"
+msgstr ""
+"link:https://github.com/redhat-developer/service-binding-operator[Service "
+"Binding Operator]は、 link:https://github.com/k8s-service-bindings/spec["
+"Service Binding Specification for Kubernetes]を実装したOperatorで、アプリケー"
+"ションへのサービスのバインディングを簡素化することを目的としています。前述の"
+"通り、 link:https://github.com/k8s-service-bindings/spec#workload-projection["
+"Workload Projection]をサポートするコンテナ化されたアプリケーションは、ボリュ"
+"ームマウントの形でサービスバインディング情報を取得します。Service Binding Ope"
+"ratorは、バインディングサービス情報を読み込んで、それを必要とするアプリケーシ"
+"ョンコンテナにマウントします。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1428
 #, fuzzy
 msgid "The correlation between application and bound services is expressed through the `ServiceBinding` resources, which declares the intent of what services are meant to be bound to what application."
-msgstr "アプリケーションとバインドされたサービスの相関関係は、 `ServiceBinding` リソースによって表現され、どのサービスがどのアプリケーションにバインドされることを意図しているかを宣言しています。"
+msgstr ""
+"アプリケーションとバインドされたサービスの相関関係は、 `ServiceBinding` リソ"
+"ースによって表現され、どのサービスがどのアプリケーションにバインドされること"
+"を意図しているかを宣言しています。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1430
 #, fuzzy
 msgid "The Service Binding Operator watches for `ServiceBinding` resources, which inform the Operator what applications are meant to be bound with what services. When a listed application is deployed, the Service Binding Operator collects all the binding information that must be passed to the application, then upgrades the application container by attaching a volume mount with the binding information."
-msgstr "サービス バインディング オペレータは、 `ServiceBinding` リソースを監視します。このリソースは、どのアプリケーションがどのサービスにバインドされるべきかをオペレータに知らせます。リストアップされたアプリケーションがデプロイされると、Service Binding Operatorは、アプリケーションに渡す必要のあるすべてのバインディング情報を収集し、バインディング情報を含むボリュームマウントを添付して、アプリケーションコンテナをアップグレードします。"
+msgstr ""
+"サービス バインディング オペレータは、 `ServiceBinding` リソースを監視します"
+"。このリソースは、どのアプリケーションがどのサービスにバインドされるべきかを"
+"オペレータに知らせます。リストアップされたアプリケーションがデプロイされると"
+"、Service Binding Operatorは、アプリケーションに渡す必要のあるすべてのバイン"
+"ディング情報を収集し、バインディング情報を含むボリュームマウントを添付して、"
+"アプリケーションコンテナをアップグレードします。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1432
@@ -4072,7 +4249,8 @@ msgstr "Service Binding Operatorは以下のアクションを行います。"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1434
 #, fuzzy
 msgid "Observes `ServiceBinding` resources for workloads intended to be bound to a particular service"
-msgstr "観測 `ServiceBinding` 特定のサービスにバインドされることを意図したワークロードのためのリソース"
+msgstr "観測 `ServiceBinding` "
+"特定のサービスにバインドされることを意図したワークロードのためのリソース"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1435
@@ -4084,7 +4262,13 @@ msgstr "ボリュームマウントを利用したワークロードへのバイ
 #: upstream/_guides/deploying-to-kubernetes.adoc:1437
 #, fuzzy
 msgid "The following chapter describes the automatic and semi-automatic service binding approaches and their use cases. With either approach, the `kubernetes-service-binding` extension generates a `ServiceBinding` resource. With the semi-automatic approach, users must provide a configuration for target services manually. With the automatic approach, for a limited set of services generating the `ServiceBinding` resource, no additional configuration is needed."
-msgstr "次の章では、自動および半自動のサービス結合アプローチとその使用例について説明します。いずれのアプローチでも、 `kubernetes-service-binding` のエクステンションにより、 `ServiceBinding` のリソースが生成されます。半自動のアプローチでは、ユーザーは対象となるサービスの設定を手動で行う必要があります。自動アプローチでは、 `ServiceBinding` リソースを生成する限られたサービスに対して、追加の設定は必要ありません。"
+msgstr ""
+"次の章では、自動および半自動のサービス結合アプローチとその使用例について説明"
+"します。いずれのアプローチでも、 `kubernetes-service-binding` "
+"のエクステンションにより、 `ServiceBinding` のリソースが生成されます。半自動"
+"のアプローチでは、ユーザーは対象となるサービスの設定を手動で行う必要がありま"
+"す。自動アプローチでは、 `ServiceBinding` "
+"リソースを生成する限られたサービスに対して、追加の設定は必要ありません。"
 
 #. type: Title ===
 #: upstream/_guides/deploying-to-kubernetes.adoc:1439
@@ -4096,13 +4280,23 @@ msgstr "サービスの自動縛り"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1442
 #, fuzzy
 msgid "A service binding process starts with a user specification of required services that will be bound to a certain application. This expression is summarized in the `ServiceBinding` resource that is generated by the `kubernetes-service-binding` extension. The use of the `kubernetes-service-binding` extensions helps users to generate `ServiceBinding` resources with minimal configuration, therefore simplifying the process overall."
-msgstr "サービス・バインディング・プロセスを開始するために、ユーザは特定のアプリケーションにバ インドする必要のあるサービスを指定する必要があります。この表現は、 `kubernetes-service-binding` エクステンションによって生成される `ServiceBinding` リソースにまとめられます。 `kubernetes-service-binding` エクステンションを使用すると、ユーザーは最小限の設定で `ServiceBinding` リソースを生成できるため、プロセス全体が簡素化されます。"
+msgstr ""
+"サービス・バインディング・プロセスを開始するために、"
+"ユーザは特定のアプリケーションにバ "
+"インドする必要のあるサービスを指定する必要があります。この表現は、 "
+"`kubernetes-service-binding` エクステンションによって生成される "
+"`ServiceBinding` リソースにまとめられます。 `kubernetes-service-binding` "
+"エクステンションを使用すると、ユーザーは最小限の設定で `ServiceBinding` "
+"リソースを生成できるため、プロセス全体が簡素化されます。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1444
 #, fuzzy
 msgid "The Service Binding Operator responsible for the binding process then reads the information from the `ServiceBinding` resource and mounts the required files to a container accordingly."
-msgstr "その後、バインディング処理を担当するサービス・バインディング・オペレーターは、 `ServiceBinding` リソースから情報を読み取り、必要なファイルをコンテナに適宜マウントします。"
+msgstr ""
+"その後、バインディング処理を担当するサービス・バインディング・オペレーターは"
+"、 `ServiceBinding` "
+"リソースから情報を読み取り、必要なファイルをコンテナに適宜マウントします。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1447
@@ -4137,7 +4331,9 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:1472
 #, fuzzy
 msgid "The `quarkus-kubernetes-service-binding` extension provides a more compact way of expressing the same information. For example:"
-msgstr "`quarkus-kubernetes-service-binding` エクステンションは、この情報をよりコンパクトに表現するためのものです。"
+msgstr ""
+"`quarkus-kubernetes-service-binding` "
+"エクステンションは、この情報をよりコンパクトに表現するためのものです。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:1477
@@ -4151,13 +4347,21 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:1481
 #, fuzzy
 msgid "After adding the earlier configuration properties inside your `application.properties`, the `quarkus-kubernetes`, in combination with the `quarkus-kubernetes-service-binding` extension, automatically generates the `ServiceBinding` resource."
-msgstr "上記の設定プロパティを `application.properties` 内に追加することで、 `quarkus-kubernetes` が `quarkus-kubernetes-service-binding` エクステンションと連携して `ServiceBinding` を生成してくれます。また、これは使用しているkubernetsのフレーバーに関わらず動作することを意図しており、OpenshiftやKnativeでもユーザーが追加の操作をすることなく動作することが期待されています。"
+msgstr ""
+"上記の設定プロパティを `application.properties` 内に追加することで、 "
+"`quarkus-kubernetes` が `quarkus-kubernetes-service-binding` "
+"エクステンションと連携して `ServiceBinding` を生成してくれます。また、これは"
+"使用しているkubernetsのフレーバーに関わらず動作することを意図しており、Opensh"
+"iftやKnativeでもユーザーが追加の操作をすることなく動作することが期待されてい"
+"ます。"
 
 #. type: delimited block =
 #: upstream/_guides/deploying-to-kubernetes.adoc:1483
 #, fuzzy
 msgid "The earlier mentioned `db-demo` property-configuration identifier now has a double role and also completes the following actions:"
-msgstr "前述の `db-demo` property-configuration identifier が二重の役割を持つようになり、次のような動作も行うようになりました。"
+msgstr ""
+"前述の `db-demo` property-configuration identifier "
+"が二重の役割を持つようになり、次のような動作も行うようになりました。"
 
 #. type: delimited block =
 #: upstream/_guides/deploying-to-kubernetes.adoc:1485
@@ -4191,13 +4395,20 @@ msgstr "既存のリソースの利用"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1497
 #, fuzzy
 msgid "For a semi-automatic service binding demonstration, see link:https://developers.redhat.com/articles/2021/12/22/how-use-quarkus-service-binding-operator#create_the_quarkus_application[How to use Quarkus with the Service Binding Operator]"
-msgstr "半自動のサービスバインディングのデモについては、 link:https://developers.redhat.com/articles/2021/12/22/how-use-quarkus-service-binding-operator#create_the_quarkus_application[サービスバインディングオペレーターを使用したQuarkusの使い方]を参照してください。"
+msgstr ""
+"半自動のサービスバインディングのデモについては、 link:https://developers."
+"redhat.com/articles/2021/12/22/how-use-quarkus-service-binding-operator#creat"
+"e_the_quarkus_application[サービスバインディングオペレーターを使用したQuarkus"
+"の使い方]を参照してください。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1499
 #, fuzzy
 msgid "List of link:https://github.com/redhat-developer/service-binding-operator#known-bindable-operators[List of bindable Operators]"
-msgstr "ここでは、そのリストをご紹介します。 link:https://github.com/redhat-developer/service-binding-operator#known-bindable-operators[既知の結合可能な演算子]です。"
+msgstr ""
+"ここでは、そのリストをご紹介します。 link:https://github.com/"
+"redhat-developer/service-binding-operator#known-bindable-"
+"operators[既知の結合可能な演算子]です。"
 
 #. type: Title ===
 #: upstream/_guides/deploying-to-kubernetes.adoc:1501
@@ -4209,13 +4420,21 @@ msgstr "サービスの自動縛り"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1504
 #, fuzzy
 msgid "The `quarkus-kubernetes-service-binding` extension can generate the `ServiceBinding` resource automatically after detecting that an application requires access to the external services that are provided by available bindable Operators."
-msgstr "ユーザーエクスペリエンスをできる限り簡素化するために、 `quarkus-kubernetes-service-binding` エクステンションは、アプリケーションが既知のbindalbe Operator（Service Binding Operatorがサポートしていることが知られているオペレータ）によって提供される外部サービスにアクセスする必要があることを検出すると、自動的に `ServiceBinding` リソースを生成します。現時点では、この機能は以下のオペレータに限定されています。"
+msgstr ""
+"ユーザーエクスペリエンスをできる限り簡素化するために、 `quarkus-kubernetes-"
+"service-binding` エクステンションは、アプリケーションが既知のbindalbe "
+"Operator（Service Binding Operatorがサポートしていることが知られているオペレ"
+"ータ）によって提供される外部サービスにアクセスする必要があることを検出すると"
+"、自動的に `ServiceBinding` リソースを生成します。現時点では、この機能は以下"
+"のオペレータに限定されています。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1506
 #, fuzzy
 msgid "Automatic service binding can be generated for a limited number of service types. To be consistent with established terminology for Kubernetes and Quarkus services, this chapter refers to these service types as kinds."
-msgstr "自動サービスバインディングは、限られた数のサービスタイプ（本章ではKubernetesの辞書に敬意を表して「種類」を取り上げます）に対して生成することができます。"
+msgstr ""
+"自動サービスバインディングは、限られた数のサービスタイプ（本章ではKubernetes"
+"の辞書に敬意を表して「種類」を取り上げます）に対して生成することができます。"
 
 #. type: Block title
 #: upstream/_guides/deploying-to-kubernetes.adoc:1507
@@ -4323,7 +4542,8 @@ msgstr "自動データソースバインディング"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1520
 #, fuzzy
 msgid "For traditional databases, automatic binding is initiated whenever a datasource is configured as follows:"
-msgstr "従来のデータベースでは、データソースが設定されるたびに自動バインディングが開始されます。例えば"
+msgstr "従来のデータベースでは、データソースが設定されるたびに自動バインディングが開"
+"始されます。例えば"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:1524
@@ -4335,19 +4555,32 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:1527
 #, fuzzy
 msgid "The previous configuration, combined with the presence of `quarkus-datasource`, `quarkus-jdbc-postgresql`, `quarkus-kubernetes`, and `quarkus-kubernetes-service-binding` properties in the application, results in the generation of the `ServiceBinding` resource for the the `postgresql` database type."
-msgstr "上記の設定を行い、アプリケーションに `quarkus-datasource` 、 `quarkus-jdbc-postgresql` 、 `quarkus-kubernetes` 、 `quarkus-kubernetes-service-binding` のエクステンションを追加すると、 `postgresql` に対する `ServiceBinding` が生成されます。生成された `ServiceBinding` は、 `apiVersion` と `kind` を持つ kubernetes リソースにバインドされ、 `postgresql` 演算子（上の表を参照）と `name` は `postgresql` と同じになります。設定されたデータソースは名前がないため、 `db-kind` が使用されます。"
+msgstr ""
+"上記の設定を行い、アプリケーションに `quarkus-datasource` 、 `quarkus-jdbc-"
+"postgresql` 、 `quarkus-kubernetes` 、 `quarkus-kubernetes-service-binding` "
+"のエクステンションを追加すると、 `postgresql` に対する `ServiceBinding` "
+"が生成されます。生成された `ServiceBinding` は、 `apiVersion` と `kind` "
+"を持つ kubernetes リソースにバインドされ、 `postgresql` "
+"演算子（上の表を参照）と `name` は `postgresql` "
+"と同じになります。設定されたデータソースは名前がないため、 `db-kind` "
+"が使用されます。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1529
 #, fuzzy
 msgid "By using the `apiVersion` and `kind` properties of the Operator resource, which matches the used `postgresql` Operator, the generated `ServiceBinding` resource binds the service or resource to the application."
-msgstr "使用されている `postgresql` Operator と一致する Operator リソースの `apiVersion` および `kind` プロパティを使用することで、生成された `ServiceBinding` リソースは、サービス/リソースをアプリケーションにバインドします。"
+msgstr ""
+"使用されている `postgresql` Operator と一致する Operator リソースの "
+"`apiVersion` および `kind` プロパティを使用することで、生成された "
+"`ServiceBinding` "
+"リソースは、サービス/リソースをアプリケーションにバインドします。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1531
 #, fuzzy
 msgid "When you do not specify a name for your database service, the the value of the `db-kind` property is used as the default name."
-msgstr "データベースサービスの名前を指定しない場合、 `db-kind` プロパティの値がデフォルトの名前として使用されます。"
+msgstr "データベースサービスの名前を指定しない場合、 `db-kind` "
+"プロパティの値がデフォルトの名前として使用されます。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:1538
@@ -4404,7 +4637,8 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:1565
 #, fuzzy
 msgid "The generated `service` contains the following:"
-msgstr "生成されたサービスは、以下のプロパティーを使用してカスタマイズすることができます:"
+msgstr "生成されたサービスは、以下のプロパティーを使用してカスタマイズすることができ"
+"ます:"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:1572
@@ -4426,7 +4660,14 @@ msgstr "オートマチックバインディングのカスタマイズ"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1578
 #, fuzzy
 msgid "Even though automatic binding was developed to eliminate as much manual configuration as possible, there are cases where modifying the generated `ServiceBinding` resource might still be needed. The generation process exclusively relies on information extracted from the application and the knowledge of the supported Operators, which may not reflect what is deployed in the cluster. The generated resource is based purely on the knowledge of the supported bindable Operators for popular service kinds and a set of conventions that were developed to prevent possible mismatches, such as:"
-msgstr "自動バインディングは、手動での設定を可能な限り排除するために開発されましたが、生成された `ServiceBinding` リソースを修正する必要がある場合もあります。生成プロセスは、アプリケーションから抽出された情報とサポートされているOperatorの知識にのみ依存しており、クラスターに展開されているものを反映していない可能性があります。生成されたリソースは、一般的なサービスの種類に対してサポートされているバインド可能なOperatorの知識と、以下のようなミスマッチを防ぐために開発された一連の規約に基づいています。"
+msgstr ""
+"自動バインディングは、手動での設定を可能な限り排除するために開発されましたが"
+"、生成された `ServiceBinding` リソースを修正する必要がある場合もあります。生"
+"成プロセスは、アプリケーションから抽出された情報とサポートされているOperator"
+"の知識にのみ依存しており、クラスターに展開されているものを反映していない可能"
+"性があります。生成されたリソースは、一般的なサービスの種類に対してサポートさ"
+"れているバインド可能なOperatorの知識と、以下のようなミスマッチを防ぐために開"
+"発された一連の規約に基づいています。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1580
@@ -4438,13 +4679,15 @@ msgstr "ターゲットリソース名がデータソース名と一致しない
 #: upstream/_guides/deploying-to-kubernetes.adoc:1581
 #, fuzzy
 msgid "A specific Operator needs to be used rather than the default Operator for that service kind"
-msgstr "そのサービスの種類のデフォルトのオペレータではなく、特定のオペレータを使用する必要があります。"
+msgstr "そのサービスの種類のデフォルトのオペレータではなく、特定のオペレータを使用す"
+"る必要があります。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1582
 #, fuzzy
 msgid "Version conflicts that occur when a user needs to use any other version than default or latest"
-msgstr "ユーザーがデフォルトまたは最新版以外のバージョンを使用する必要がある場合に発生するバージョンの衝突"
+msgstr "ユーザーがデフォルトまたは最新版以外のバージョンを使用する必要がある場合に発"
+"生するバージョンの衝突"
 
 #. type: Block title
 #: upstream/_guides/deploying-to-kubernetes.adoc:1583
@@ -4456,13 +4699,16 @@ msgstr "コンベティション"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1586
 #, fuzzy
 msgid "The target resource coordinates are determined based on the type of Operator and the kind of service."
-msgstr "対象となるリソース座標は、Operatorの種類とサービスの種類に応じて決定されます。"
+msgstr "対象となるリソース座標は、Operatorの種類とサービスの種類に応じて決定されます"
+"。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1587
 #, fuzzy
 msgid "The target resource name is set by default to match the service kind, such as `postgresql`, `mysql`, `mongo`."
-msgstr "対象となるリソース名は、サービスの種類に合わせてデフォルトで設定されています。例えば、 `postgresql`, `mysql`, `mongo` のようになります。"
+msgstr ""
+"対象となるリソース名は、サービスの種類に合わせてデフォルトで設定されています"
+"。例えば、 `postgresql`, `mysql`, `mongo` のようになります。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1588
@@ -4486,25 +4732,36 @@ msgstr "例1 - 名前の不一致"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1594
 #, fuzzy
 msgid "For cases in which you need to modify the generated `ServiceBinding` to fix a name mismatch, use the `quarkus.kubernetes-service-binding.services` properties and specify the service's name as the service key."
-msgstr "名前の不一致を修正するために生成された `ServiceBinding` を修正する必要がある場合は、 `quarkus.kubernetes-service-binding.services` のプロパティを使用し、サービスキーとしてサービスの名前を指定します。"
+msgstr ""
+"名前の不一致を修正するために生成された `ServiceBinding` "
+"を修正する必要がある場合は、 `quarkus.kubernetes-service-binding.services` "
+"のプロパティを使用し、サービスキーとしてサービスの名前を指定します。"
 
 #. type: delimited block =
 #: upstream/_guides/deploying-to-kubernetes.adoc:1596
 #, fuzzy
 msgid "The `service key` is usually the name of the service, for example the name of the datasource, or the name of the `mongo` client. When this value is not available, the datasource type, such as `postgresql`, `mysql`, `mongo`, is used instead."
-msgstr "`service key` は通常、データソースの名前や `mongo` クライアントの名前など、サービスの名前です。この値が利用できない場合は、代わりに `postgresql`, `mysql`, `mongo` などのデータソースの種類が使用されます。"
+msgstr ""
+"`service key` は通常、データソースの名前や `mongo` "
+"クライアントの名前など、サービスの名前です。この値が利用できない場合は、"
+"代わりに `postgresql`, `mysql`, `mongo` "
+"などのデータソースの種類が使用されます。"
 
 #. type: delimited block =
 #: upstream/_guides/deploying-to-kubernetes.adoc:1598
 #, fuzzy
 msgid "To avoid naming conflicts between different types of services, prefix the `service key` with a specific datasource type, such as `postgresql-__<person>__`."
-msgstr "異なるタイプのサービス間での名前の衝突を避けるために、 `service key` の前に特定のタイプを付けることができます。 `postgresql- _&amp;amp;lt;person&amp;amp;gt;_`."
+msgstr ""
+"異なるタイプのサービス間での名前の衝突を避けるために、 `service key` "
+"の前に特定のタイプを付けることができます。 `postgresql- "
+"_&amp;amp;lt;person&amp;amp;gt;_`."
 
 #. type: delimited block =
 #: upstream/_guides/deploying-to-kubernetes.adoc:1600
 #, fuzzy
 msgid "The following example shows how to customize the `apiVersion` property of the `PostgresCluster` resource:"
-msgstr "以下の例では、 `PostgresCluster` リソースの `apiVersion` をカスタマイズしています。"
+msgstr "以下の例では、 `PostgresCluster` リソースの `apiVersion` "
+"をカスタマイズしています。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:1605
@@ -4524,19 +4781,23 @@ msgstr "例2：データソースへのカスタム名の適用"
 #: upstream/_guides/deploying-to-kubernetes.adoc:1612
 #, fuzzy
 msgid "In Example 1, the `db-kind`(`postgresql`) was used as a service key. In this example, because the datasource is named, according to convention, the datasource name (`fruits-db`) is used instead."
-msgstr "前者の例では、サービスキーとして `db-kind`( `postgresql`) が使われていましたが、後者の例では、代わりにデータソース名が使われています。"
+msgstr ""
+"前者の例では、サービスキーとして `db-kind`( `postgresql`) "
+"が使われていましたが、後者の例では、代わりにデータソース名が使われています。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1614
 #, fuzzy
 msgid "The following example shows that for a named datasource, the datasource name is used as the name of the target resource:"
-msgstr "以下の例では、 `PostgresCluster` リソースの `apiVersion` をカスタマイズしています。"
+msgstr "以下の例では、 `PostgresCluster` リソースの `apiVersion` "
+"をカスタマイズしています。"
 
 #. type: Plain text
 #: upstream/_guides/deploying-to-kubernetes.adoc:1621
 #, fuzzy
 msgid "This has the same effect as the following configuration:"
-msgstr "追加のカスタムラベルを追加するには、例えば `foo=bar` を設定する場合、以下の設定を適用するだけです。"
+msgstr "追加のカスタムラベルを追加するには、例えば `foo=bar` "
+"を設定する場合、以下の設定を適用するだけです。"
 
 #. type: delimited block -
 #: upstream/_guides/deploying-to-kubernetes.adoc:1627
@@ -4551,7 +4812,10 @@ msgstr ""
 #: upstream/_guides/deploying-to-kubernetes.adoc:1631
 #, fuzzy
 msgid "For more details about the available properties and how do they work, see the link:https://github.com/k8s-service-bindings/spec#workload-projection[Workload Projection] part of the Service Binding specification."
-msgstr "利用可能なプロパティの発見方法の詳細については、Service Binding 仕様の link:https://github.com/k8s-service-bindings/spec#workload-projection[Workload Projection]の部分を参照してください。"
+msgstr ""
+"利用可能なプロパティの発見方法の詳細については、Service Binding 仕様の "
+"link:https://github.com/k8s-service-bindings/spec#workload-projection["
+"Workload Projection]の部分を参照してください。"
 
 #, fuzzy
 #~ msgid "The `db-kind` is used by default when the configured datasource remains unnamed."

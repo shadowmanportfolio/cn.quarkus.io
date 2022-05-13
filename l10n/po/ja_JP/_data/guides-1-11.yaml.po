@@ -1686,7 +1686,8 @@ msgstr "このガイドでは、Vert.x Web、Servlet、またはRESTEasyマイ�
 #: upstream/_data/guides-1-11.yaml:0
 #, fuzzy, no-wrap
 msgid "Azure Functions (Serverless) with Vert.x Web, Servlet, or RESTEasy"
-msgstr "Vert.x Web、Servlet、またはRESTEasyを使用したAzure Functions（サーバーレス）。"
+msgstr "Vert.x Web、Servlet、またはRESTEasyを使用したAzure "
+"Functions（サーバーレス）。"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-1-11.yaml:0

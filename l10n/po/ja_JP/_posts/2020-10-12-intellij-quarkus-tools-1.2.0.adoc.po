@@ -50,7 +50,10 @@ msgstr "Quarkus Tools for IntelliJ 1.2.0 リリース!"
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:12
 #, fuzzy
 msgid "We are very pleased to announce the 1.2.0 release of Quarkus Tools for IntelliJ.  This release brings enhanced support for Eclipse Microprofile."
-msgstr "Quarkus Tools for IntelliJの1.2.0リリースを発表できることを大変嬉しく思います。このリリースでは、Eclipse Microprofileのサポートが強化されています。"
+msgstr ""
+"Quarkus Tools for IntelliJの1.2."
+"0リリースを発表できることを大変嬉しく思います。このリリースでは、Eclipse "
+"Microprofileのサポートが強化されています。"
 
 #. type: Title ==
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:13
@@ -62,7 +65,9 @@ msgstr "Eclipse Microprofile Reactive Messaging"
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:16
 #, fuzzy
 msgid "If your application is based on Eclipse Microprofile Reactive Messaging, properties are enabled for:"
-msgstr "アプリケーションがEclipse Microprofile Reactive Messagingに基づいている場合、プロパティが有効になります。"
+msgstr ""
+"アプリケーションがEclipse Microprofile Reactive "
+"Messagingに基づいている場合、プロパティが有効になります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:18
@@ -104,7 +109,9 @@ msgstr "Eclipse Microprofile JWT"
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:29
 #, fuzzy
 msgid "If your application is based on Eclipse Microprofile JWT, the following properties will be enabled for your application:"
-msgstr "アプリケーションが Eclipse Microprofile JWT に基づいている場合は、以下のプロパティがアプリケーションで有効になります。"
+msgstr ""
+"アプリケーションが Eclipse Microprofile JWT "
+"に基づいている場合は、以下のプロパティがアプリケーションで有効になります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:31
@@ -170,7 +177,9 @@ msgstr "エクリプスマイクロプロファイルヘルス"
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:46
 #, fuzzy
 msgid "If your application is based on Eclipse Microprofile Health, the following property will be enabled for your application:"
-msgstr "アプリケーションがEclipse Microprofile Healthに基づいている場合、以下のプロパティがアプリケーションで有効になります。"
+msgstr ""
+"アプリケーションがEclipse Microprofile Healthに基づいている場合、以下のプロパ"
+"ティがアプリケーションで有効になります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:48
@@ -194,7 +203,9 @@ msgstr "Eclipse Microprofile GraphQL"
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:55
 #, fuzzy
 msgid "If your application is based on Eclipse Microprofile GraphQL, the following property will be enabled for your application:"
-msgstr "アプリケーションがEclipse Microprofile GraphQLに基づいている場合、以下のプロパティがアプリケーションで有効になります。"
+msgstr ""
+"アプリケーションがEclipse Microprofile GraphQLに基づいている場合、以下のプロ"
+"パティがアプリケーションで有効になります。"
 
 #. type: Plain text
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:57
@@ -252,7 +263,9 @@ msgstr "GitHub リポジトリ: https://github.com/redhat-developer/intellij-qua
 #: upstream/_posts/2020-10-12-intellij-quarkus-tools-1.2.0.adoc:75
 #, fuzzy
 msgid "Open an issue: https://github.com/redhat-developer/intellij-quarkus/issues"
-msgstr "ご質問、ご意見、ご感想などがありましたら、ぜひ link:https://github.com/redhat-developer/intellij-quarkus/issues[イシューを開いて]ください。"
+msgstr ""
+"ご質問、ご意見、ご感想などがありましたら、ぜひ link:https://github.com/"
+"redhat-developer/intellij-quarkus/issues[イシューを開いて]ください。"
 
 #, fuzzy
 #~ msgid "---\n"

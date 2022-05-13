@@ -1351,7 +1351,13 @@ msgstr ""
 #: upstream/_versions/main/guides/cdi-reference.adoc:575
 #, fuzzy
 msgid "Quarkus adds a capability that CDI currently does not support which is to conditionally enable a bean when a Quarkus build time property has/has not a specific value, via the `@io.quarkus.arc.properties.IfBuildProperty` and `@io.quarkus.arc.properties.UnlessBuildProperty` annotations.  When used in conjunction with `@io.quarkus.arc.DefaultBean`, this annotation allow for the creation of different bean configurations for different build properties."
-msgstr "Quarkus は、CDI が現在サポートしていない機能を追加しました。これは、Quarkus のビルド時プロファイルが有効になっているときに条件付きで Bean を有効にするというもので、`@io.quarkus.arc.profile.IfBuildProfile` と `@io.quarkus.arc.profile.UnlessBuildProfile` のアノテーションを使用します。`@io.quarkus.arc.DefaultBean` と合わせて使用すると、これらのアノテーションにより、異なるビルドプロファイルに対して異なる Bean 構成を作成することができます。"
+msgstr ""
+"Quarkus は、CDI が現在サポートしていない機能を追加しました。これは、Quarkus "
+"のビルド時プロファイルが有効になっているときに条件付きで Bean "
+"を有効にするというもので、`@io.quarkus.arc.profile.IfBuildProfile` と `@io."
+"quarkus.arc.profile.UnlessBuildProfile` のアノテーションを使用します。`@io."
+"quarkus.arc.DefaultBean` と合わせて使用すると、これらのアノテーションにより、"
+"異なるビルドプロファイルに対して異なる Bean 構成を作成することができます。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/cdi-reference.adoc:577

@@ -93,7 +93,8 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_versions/main/guides/redis.adoc:45
 #, fuzzy
 msgid "This command generates a new project, importing the Redis extension."
-msgstr "このコマンドは、RedisエクステンションをインポートしてMavenプロジェクトを生成します。"
+msgstr "このコマンドは、RedisエクステンションをインポートしてMavenプロジェクトを生成"
+"します。"
 
 #. type: Plain text
 #: upstream/_versions/main/guides/redis.adoc:49
@@ -489,7 +490,9 @@ msgstr "テストクラスの変更"
 #: upstream/_versions/main/guides/redis.adoc:252
 #, fuzzy
 msgid "Create the `src/test/java/org/acme/redis/IncrementResourceTest.java` file with the following content:"
-msgstr "`src/test/java/org/acme/redis/IncrementResourceTest.java` ファイルを以下の内容に編集してください。"
+msgstr ""
+"`src/test/java/org/acme/redis/IncrementResourceTest.java` "
+"ファイルを以下の内容に編集してください。"
 
 #. type: delimited block -
 #: upstream/_versions/main/guides/redis.adoc:258

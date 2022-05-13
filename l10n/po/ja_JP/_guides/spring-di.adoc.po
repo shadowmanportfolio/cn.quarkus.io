@@ -29,13 +29,18 @@ msgstr "Spring DI APIのためのQuarkus Extension"
 #: upstream/_guides/spring-di.adoc:11
 #, fuzzy
 msgid "While users are encouraged to use CDI annotations for injection, Quarkus provides a compatibility layer for Spring dependency injection in the form of the `spring-di` extension."
-msgstr "インジェクションにはCDIアノテーションを使用することが推奨されていますが、Quarkusでは、 `spring-di` エクステンションという形で、Springの依存性インジェクションのための互換レイヤーを提供しています。"
+msgstr ""
+"インジェクションにはCDIアノテーションを使用することが推奨されていますが、Quar"
+"kusでは、 `spring-di` エクステンションという形で、Springの依存性インジェクシ"
+"ョンのための互換レイヤーを提供しています。"
 
 #. type: Plain text
 #: upstream/_guides/spring-di.adoc:13
 #, fuzzy
 msgid "This guide explains how a Quarkus application can leverage the well known Dependency Injection annotations included in the Spring Framework."
-msgstr "このガイドでは、Spring Frameworkに含まれる有名なDependency InjectionアノテーションをQuarkusアプリケーションでどのように活用するかを説明します。"
+msgstr ""
+"このガイドでは、Spring Frameworkに含まれる有名なDependency Injectionアノテー"
+"ションをQuarkusアプリケーションでどのように活用するかを説明します。"
 
 #. type: Title ==
 #: upstream/_guides/spring-di.adoc:14
@@ -63,7 +68,9 @@ msgstr "Gitレポジトリをクローンするか `git clone {quickstarts-clone
 #: upstream/_guides/spring-di.adoc:26
 #, fuzzy
 msgid "The solution is located in the `spring-di-quickstart` {quickstarts-tree-url}/spring-di-quickstart[directory]."
-msgstr "このソリューションは `spring-di-quickstart` {quickstarts-tree-url}/spring-di-quickstart[directory]にあります。"
+msgstr ""
+"このソリューションは `spring-di-quickstart` {quickstarts-tree-url}/spring-di-"
+"quickstart[directory]にあります。"
 
 #. type: Title ==
 #: upstream/_guides/spring-di.adoc:27
@@ -80,13 +87,17 @@ msgstr "まず、新しいプロジェクトが必要です。以下のコマン
 #: upstream/_guides/spring-di.adoc:36
 #, fuzzy
 msgid "This command generates a project which imports the `spring-di` extension."
-msgstr "このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-di` エクステンションをインポートします。"
+msgstr "このコマンドは、RESTエンドポイントを持つMavenプロジェクトを生成し、 `spring-"
+"di` エクステンションをインポートします。"
 
 #. type: Plain text
 #: upstream/_guides/spring-di.adoc:39
 #, fuzzy
 msgid "If you already have your Quarkus project configured, you can add the `spring-di` extension to your project by running the following command in your project base directory:"
-msgstr "すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレクトリで以下のコマンドを実行することで、 `spring-di` エクステンションをプロジェクトに追加することができます。"
+msgstr ""
+"すでにQuarkusプロジェクトが設定されている場合は、プロジェクトのベースディレク"
+"トリで以下のコマンドを実行することで、 `spring-di` "
+"エクステンションをプロジェクトに追加することができます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-di.adoc:44
@@ -132,13 +143,17 @@ msgstr "Springアノテーションを使用したBeansの追加"
 #: upstream/_guides/spring-di.adoc:63
 #, fuzzy
 msgid "Let's proceed to create some beans using various Spring annotations."
-msgstr "それでは、さまざまなSpringアノテーションを使って、いくつかのBeanを作成してみましょう。"
+msgstr "それでは、さまざまなSpringアノテーションを使って、いくつかのBeanを作成してみ"
+"ましょう。"
 
 #. type: Plain text
 #: upstream/_guides/spring-di.adoc:66
 #, fuzzy
 msgid "First we will create a `StringFunction` interface that some of our beans will implement and which will be injected into another bean later on.  Create a `src/main/java/org/acme/spring/di/StringFunction.java` file and set the following content:"
-msgstr "まず、いくつかのビーンが実装し、後に別のビーンに注入される `StringFunction` インターフェースを作成します。 `src/main/java/org/acme/spring/di/StringFunction.java` ファイルを作成し、以下の内容を設定します。"
+msgstr ""
+"まず、いくつかのビーンが実装し、後に別のビーンに注入される `StringFunction` "
+"インターフェースを作成します。 `src/main/java/org/acme/spring/di/"
+"StringFunction.java` ファイルを作成し、以下の内容を設定します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-di.adoc:70 upstream/_guides/spring-di.adoc:85
@@ -170,7 +185,13 @@ msgstr "}\n"
 #: upstream/_guides/spring-di.adoc:81
 #, fuzzy
 msgid "With the interface in place, we will add an `AppConfiguration` class which will use the Spring's Java Config style for defining a bean.  It will be used to create a `StringFunction` bean that will capitalize the text passed as parameter.  Create a `src/main/java/org/acme/spring/di/AppConfiguration.java` file with the following content:"
-msgstr "インターフェイスが整ったところで、SpringのJava Configスタイルを使ってBeanを定義する `AppConfiguration` クラスを追加します。これを使って、パラメータとして渡されたテキストを大文字にする `StringFunction` ビーンを作成します。以下の内容で `src/main/java/org/acme/spring/di/AppConfiguration.java` ファイルを作成します。"
+msgstr ""
+"インターフェイスが整ったところで、SpringのJava "
+"Configスタイルを使ってBeanを定義する `AppConfiguration` "
+"クラスを追加します。これを使って、"
+"パラメータとして渡されたテキストを大文字にする `StringFunction` "
+"ビーンを作成します。以下の内容で `src/main/java/org/acme/spring/di/"
+"AppConfiguration.java` ファイルを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-di.adoc:88
@@ -203,13 +224,26 @@ msgstr ""
 #: upstream/_guides/spring-di.adoc:100
 #, fuzzy
 msgid "As a Spring developer, you might be tempted to add the `@ComponentScan` annotation in order to define specific packages to scan for additional beans. Do note that `@ComponentScan` is entirely unnecessary since Quarkus performs xref:cdi-reference.adoc#bean_discovery[bean discovery] only in `annotated` mode with no visibility boundaries. Moreover, note that the bean discovery in Quarkus happens at build time.  In the same vein, Quarkus does not support the Spring `@Import` annotation."
-msgstr "Springの開発者であれば、追加のBeanをスキャンする特定のパッケージを定義するために、 `@ComponentScan` アノテーションを追加したいと思うかもしれません。しかし、Quarkusは可視性の境界がない `annotated` モードでのみ link:cdi-reference.html#bean_discovery[Beanの発見]を行うため、 `@ComponentScan` は全く必要ないことに注意してください。さらに、QuarkusでのBean発見はビルド時に行われることに注意してください。同じように、QuarkusはSpringの `@Import` アノテーションをサポートしていません。"
+msgstr ""
+"Springの開発者であれば、追加のBeanをスキャンする特定のパッケージを定義するた"
+"めに、 `@ComponentScan` "
+"アノテーションを追加したいと思うかもしれません。しかし、"
+"Quarkusは可視性の境界がない `annotated` モードでのみ link:cdi-reference."
+"html#bean_discovery[Beanの発見]を行うため、 `@ComponentScan` は全く必要ないこ"
+"とに注意してください。さらに、QuarkusでのBean発見はビルド時に行われることに注"
+"意してください。同じように、QuarkusはSpringの `@Import` "
+"アノテーションをサポートしていません。"
 
 #. type: Plain text
 #: upstream/_guides/spring-di.adoc:104
 #, fuzzy
 msgid "Now we define another bean that will implement `StringFunction` using Spring's stereotype annotation style.  This bean will effectively be a no-op bean that simply returns the input as is.  Create a `src/main/java/org/acme/spring/di/NoOpSingleStringFunction.java` file and set the following content:"
-msgstr "次に、Springのステレオタイプアノテーションスタイルを使用して、 `StringFunction` を実装する別のBeanを定義します。このBeanは、事実上、入力をそのまま返すだけのno-op beanとなります。 `src/main/java/org/acme/spring/di/NoOpSingleStringFunction.java` ファイルを作成し、以下の内容を設定します。"
+msgstr ""
+"次に、Springのステレオタイプアノテーションスタイルを使用して、 "
+"`StringFunction` を実装する別のBeanを定義します。このBeanは、事実上"
+"、入力をそのまま返すだけのno-op beanとなります。 `src/main/java/org/acme/"
+"spring/di/NoOpSingleStringFunction.java` "
+"ファイルを作成し、以下の内容を設定します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-di.adoc:110
@@ -240,7 +274,10 @@ msgstr ""
 #: upstream/_guides/spring-di.adoc:123
 #, fuzzy
 msgid "Quarkus also provides support for injecting configuration values using Spring's `@Value` annotation.  To see that in action, first edit the `src/main/resources/application.properties` with the following content:"
-msgstr "Quarkusは、Springの `@Value` アノテーションを使用して設定値を注入するサポートも提供しています。動作を確認するには、まず、以下の内容で `src/main/resources/application.properties` を編集します。"
+msgstr ""
+"Quarkusは、Springの `@Value` アノテーションを使用して設定値を注入するサポート"
+"も提供しています。動作を確認するには、まず、以下の内容で `src/main/resources/"
+"application.properties` を編集します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-di.adoc:128
@@ -254,7 +291,9 @@ msgstr ""
 #: upstream/_guides/spring-di.adoc:131
 #, fuzzy
 msgid "Next create a new Spring bean in `src/main/java/org/acme/spring/di/MessageProducer.java` with the following content:"
-msgstr "次に、 `src/main/java/org/acme/spring/di/MessageProducer.java` 、以下の内容で新しいSpring Beanを作成します。"
+msgstr ""
+"次に、 `src/main/java/org/acme/spring/di/MessageProducer.java` 、"
+"以下の内容で新しいSpring Beanを作成します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-di.adoc:139
@@ -294,7 +333,10 @@ msgstr ""
 #: upstream/_guides/spring-di.adoc:154
 #, fuzzy
 msgid "The final bean we will create ties together all the previous beans.  Create a `src/main/java/org/acme/spring/di/GreeterBean.java` file and copy the following content:"
-msgstr "最後に作成するビーンは、これまでのビーンをすべて結びつけるものです。 `src/main/java/org/acme/spring/di/GreeterBean.java` ファイルを作成し、以下の内容をコピーします。"
+msgstr ""
+"最後に作成するビーンは、これまでのビーンをすべて結びつけるものです。 `src/"
+"main/java/org/acme/spring/di/GreeterBean.java` "
+"ファイルを作成し、以下の内容をコピーします。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-di.adoc:163
@@ -370,7 +412,14 @@ msgstr ""
 #: upstream/_guides/spring-di.adoc:193
 #, fuzzy
 msgid "In the code above, we see that both field injection and constructor injection are being used (note that constructor injection does not need the `@Autowired` annotation since there is a single constructor).  Furthermore, the `@Value` annotation on `suffix` has also a default value defined, which in this case will be used since we have not defined `greeting.suffix` in `application.properties`."
-msgstr "上のコードでは、フィールド・インジェクションとコンストラクタ・インジェクションの両方が使用されていることがわかります（コンストラクタ・インジェクションでは、コンストラクタが 1 つなので、 `@Autowired` のアノテーションは必要ないことに注意してください）。さらに、 `suffix` の `@Value` アノテーションには、デフォルト値も定義されています。この場合、 `application.properties` で `greeting.suffix` を定義していないので、これが使用されます。"
+msgstr ""
+"上のコードでは、フィールド・インジェクションとコンストラクタ・インジェクショ"
+"ンの両方が使用されていることがわかります（コンストラクタ・インジェクションで"
+"は、コンストラクタが 1 つなので、 `@Autowired` "
+"のアノテーションは必要ないことに注意してください）。さらに、 `suffix` の "
+"`@Value` アノテーションには、デフォルト値も定義されています。この場合、 "
+"`application.properties` で `greeting.suffix` "
+"を定義していないので、これが使用されます。"
 
 #. type: Title ===
 #: upstream/_guides/spring-di.adoc:195
@@ -382,7 +431,9 @@ msgstr "JAX-RSリソースの更新"
 #: upstream/_guides/spring-di.adoc:198
 #, fuzzy
 msgid "Create the `src/main/java/org/acme/spring/di/GreeterResource.java` file with the following content:"
-msgstr "`src/main/java/org/acme/spring/di/GreeterResource.java` のファイルを開き、以下の内容で更新します。"
+msgstr ""
+"`src/main/java/org/acme/spring/di/GreeterResource.java` "
+"のファイルを開き、以下の内容で更新します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-di.adoc:204
@@ -442,7 +493,11 @@ msgstr "テストの更新"
 #: upstream/_guides/spring-di.adoc:228
 #, fuzzy
 msgid "We also need to update the functional test to reflect the changes made to the endpoint.  Edit the `src/test/java/org/acme/spring/di/GreetingResourceTest.java` file and change the content of the `testHelloEndpoint` method to:"
-msgstr "また、エンドポイントに加えられた変更を反映させるために、機能テストを更新する必要があります。 `src/test/java/org/acme/spring/di/GreetingResourceTest.java` ファイルを編集し、 `testHelloEndpoint` メソッドの内容を次のように変更します。"
+msgstr ""
+"また、エンドポイントに加えられた変更を反映させるために、機能テストを更新する"
+"必要があります。 `src/test/java/org/acme/spring/di/GreetingResourceTest.java`"
+" ファイルを編集し、 `testHelloEndpoint` "
+"メソッドの内容を次のように変更します。"
 
 #. type: delimited block -
 #: upstream/_guides/spring-di.adoc:234
@@ -498,7 +553,9 @@ msgstr "アプリケーションをネイティブとして実行する"
 #: upstream/_guides/spring-di.adoc:260
 #, fuzzy
 msgid "Open your browser to http://localhost:8080/greeting."
-msgstr "アプリケーションを実行するには、次の手順を実行します: `./mvnw compile quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
+msgstr ""
+"アプリケーションを実行するには、次の手順を実行します: `./mvnw compile "
+"quarkus:dev` 。ブラウザで http://localhost:8080/greeting を開きます。"
 
 #. type: Plain text
 #: upstream/_guides/spring-di.adoc:262
@@ -516,7 +573,9 @@ msgstr "アプリケーションをネイティブとして実行する"
 #: upstream/_guides/spring-di.adoc:266
 #, fuzzy
 msgid "You can of course create a native image using instructions similar to xref:building-native-image.adoc[this] guide."
-msgstr "もちろん、 link:building-native-image.html[この]ガイドと同様の手順でネイティブイメージを作成することもできます。"
+msgstr ""
+"もちろん、 link:building-native-image."
+"html[この]ガイドと同様の手順でネイティブイメージを作成することもできます。"
 
 #. type: Title ==
 #: upstream/_guides/spring-di.adoc:267
@@ -528,7 +587,20 @@ msgstr "重要なテクニカルノート"
 #: upstream/_guides/spring-di.adoc:275
 #, fuzzy
 msgid "Please note that the Spring support in Quarkus does not start a Spring Application Context nor are any Spring infrastructure classes run.  Spring classes and annotations are only used for reading metadata and / or are used as user code method return types or parameter types.  What that means for end users, is that adding arbitrary Spring libraries will not have any effect. Moreover Spring infrastructure classes (like `org.springframework.beans.factory.config.BeanPostProcessor` , `org.springframework.context.ApplicationContext` for example) will not be executed.  Regarding the dependency injection in particular, Quarkus uses a Dependency Injection mechanism (called ArC) based on the https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html[Contexts and Dependency Injection for Java 2.0] specification. If you want to learn more about it we recommend you to read the xref:cdi.adoc[Quarkus introduction to CDI] and the xref:cdi-reference.adoc#arc-configuration-reference[CDI reference guide] The various Spring Boot test features are not supported by Quarkus. For testing purposes, please, check the xref:getting-started-testing.adoc[Quarkus testing guide]."
-msgstr "QuarkusのSpringサポートでは、Spring Application Contextは起動せず、Springインフラストラクチャクラスも実行されないことに注意してください。Springのクラスやアノテーションは、メタデータを読み込んだり、ユーザーコードのメソッドの戻り値の型やパラメータの型として使用されるだけです。エンドユーザーにとっての意味は、任意のSpringライブラリを追加しても何の効果もないということです。さらに、Springのインフラストラクチャクラス（例えば、 `org.springframework.beans.factory.config.BeanPostProcessor`, `org.springframework.context.ApplicationContext` のような）は実行されません。特に依存性注入については、Quarkusは link:https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html[Contexts and Dependency Injection for Java 2.0]仕様に基づいたDependency Injectionメカニズム（ArCと呼ばれる）を使用しています。Spring Bootの様々なテスト機能は、Quarkusではサポートされていません。テスト目的の場合は、 link:getting-started-testing.html[Quarkusのテストガイド]をご確認ください。"
+msgstr ""
+"QuarkusのSpringサポートでは、Spring Application Contextは起動せず、Springイン"
+"フラストラクチャクラスも実行されないことに注意してください。Springのクラスや"
+"アノテーションは、メタデータを読み込んだり、ユーザーコードのメソッドの戻り値"
+"の型やパラメータの型として使用されるだけです。エンドユーザーにとっての意味は"
+"、任意のSpringライブラリを追加しても何の効果もないということです。さらに、Spr"
+"ingのインフラストラクチャクラス（例えば、 `org.springframework.beans.factory."
+"config.BeanPostProcessor`, `org.springframework.context.ApplicationContext` "
+"のような）は実行されません。特に依存性注入については、Quarkusは "
+"link:https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html[Contexts "
+"and Dependency Injection for Java 2.0]仕様に基づいたDependency "
+"Injectionメカニズム（ArCと呼ばれる）を使用しています。Spring Bootの様々なテス"
+"ト機能は、Quarkusではサポートされていません。テスト目的の場合は、 link"
+":getting-started-testing.html[Quarkusのテストガイド]をご確認ください。"
 
 #. type: Title ==
 #: upstream/_guides/spring-di.adoc:276
@@ -540,7 +612,8 @@ msgstr "変換テーブル"
 #: upstream/_guides/spring-di.adoc:279
 #, fuzzy
 msgid "The following table shows how Spring DI annotations can be converted to CDI and / or MicroProfile annotations."
-msgstr "以下の表は、Spring DIのアノテーションをCDIおよび/またはMicroProfileのアノテーションに変換する方法を示しています。"
+msgstr "以下の表は、Spring DIのアノテーションをCDIおよび/またはMicroProfileのアノテー"
+"ションに変換する方法を示しています。"
 
 #. type: Table
 #: upstream/_guides/spring-di.adoc:281
@@ -600,7 +673,9 @@ msgstr "@ConfigProperty"
 #: upstream/_guides/spring-di.adoc:295
 #, fuzzy, no-wrap
 msgid "@ConfigProperty doesn't support an expression language the way @Value does, but makes the typical use cases much easier to handle"
-msgstr "ConfigurationProperty は、@Value のような表現言語をサポートしていませんが、典型的な使用例をはるかに簡単に扱うことができます。"
+msgstr ""
+"ConfigurationProperty は、@Value のような表現言語をサポートしていませんが、典"
+"型的な使用例をはるかに簡単に扱うことができます。"
 
 #. type: Table
 #: upstream/_guides/spring-di.adoc:296
@@ -620,7 +695,8 @@ msgstr "シングルトン"
 #: upstream/_guides/spring-di.adoc:307
 #, fuzzy, no-wrap
 msgid "By default Spring stereotype annotations are singleton beans"
-msgstr "デフォルトでは、Springのステレオタイプのアノテーションはシングルトン・ビーンです。"
+msgstr "デフォルトでは、Springのステレオタイプのアノテーションはシングルトン・ビーン"
+"です。"
 
 #. type: Table
 #: upstream/_guides/spring-di.adoc:300
@@ -650,7 +726,8 @@ msgstr "@ApplicationScoped"
 #: upstream/_guides/spring-di.adoc:311
 #, fuzzy, no-wrap
 msgid "In CDI a producer bean isn't limited to the application scope, it could just as well be @Singleton or @Dependent"
-msgstr "CDIでは、プロデューサBeanはアプリケーションスコープに限定されず、@Singletonや@Dependentにすることもできます。"
+msgstr "CDIでは、プロデューサBeanはアプリケーションスコープに限定されず、@Singletonや"
+"@Dependentにすることもできます。"
 
 #. type: Table
 #: upstream/_guides/spring-di.adoc:312
@@ -674,7 +751,10 @@ msgstr "＠スコープ"
 #: upstream/_guides/spring-di.adoc:319
 #, fuzzy, no-wrap
 msgid "Doesn't have a one-to-one mapping to a CDI annotation. Depending on the value of @Scope, one of the @Singleton, @ApplicationScoped, @SessionScoped, @RequestScoped, @Dependent could be used"
-msgstr "CDI アノテーションへの 1 対 1 のマッピングはありません。Scope の値に応じて、@Singleton、@ApplicationScoped、@SessionScoped、@RequestScoped、@Dependent のいずれかが使用されます。"
+msgstr ""
+"CDI アノテーションへの 1 対 1 のマッピングはありません。Scope の値に応じて、@"
+"Singleton、@ApplicationScoped、@SessionScoped、@RequestScoped、@Dependent "
+"のいずれかが使用されます。"
 
 #. type: Table
 #: upstream/_guides/spring-di.adoc:320
@@ -686,7 +766,9 @@ msgstr "@ComponentScan"
 #: upstream/_guides/spring-di.adoc:323
 #, fuzzy, no-wrap
 msgid "Doesn't have a one-to-one mapping to a CDI annotation. It is not used in Quarkus because Quarkus does all classpath scanning at build time."
-msgstr "CDIアノテーションへの1対1のマッピングはありません。Quarkusはビルド時にすべてのクラスパスのスキャンを行うため、Quarkusでは使用されません。"
+msgstr ""
+"CDIアノテーションへの1対1のマッピングはありません。Quarkusはビルド時にすべて"
+"のクラスパスのスキャンを行うため、Quarkusでは使用されません。"
 
 #. type: Table
 #: upstream/_guides/spring-di.adoc:324
@@ -739,13 +821,16 @@ msgstr "link:spring-security.html[Quarkus - Spring Securityのエクステンシ
 #: upstream/_guides/spring-di.adoc:337
 #, fuzzy
 msgid "xref:spring-cloud-config-client.adoc[Quarkus - Reading properties from Spring Cloud Config Server]"
-msgstr "link:spring-cloud-config-client.html[Quarkus - Spring Cloud Config Serverからプロパティを読み込む]"
+msgstr ""
+"link:spring-cloud-config-client.html[Quarkus - Spring Cloud Config "
+"Serverからプロパティを読み込む]"
 
 #. type: Plain text
 #: upstream/_guides/spring-di.adoc:338
 #, fuzzy
 msgid "xref:spring-boot-properties.adoc[Quarkus - Extension for Spring Boot properties]"
-msgstr "link:spring-boot-properties.html[Quarkus - Spring Bootプロパティ用のエクステンション]"
+msgstr "link:spring-boot-properties.html[Quarkus - Spring "
+"Bootプロパティ用のエクステンション]"
 
 #. type: Plain text
 #: upstream/_guides/spring-di.adoc:339

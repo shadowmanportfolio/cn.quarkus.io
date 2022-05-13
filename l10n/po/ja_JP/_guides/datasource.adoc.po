@@ -84,7 +84,10 @@ msgstr "利用可能なプールチューニング構成プロパティー"
 #: upstream/_guides/datasource.adoc:37
 #, fuzzy
 msgid "This guide is mainly about datasource configuration.  If you want more details about how to consume and make use of a reactive datasource, please refer to the xref:reactive-sql-clients.adoc[Reactive SQL clients guide]."
-msgstr "このガイドでは、主にデータソースの設定について説明します。リアクティブデータソースの利用方法の詳細を知りたい場合は、「 link:reactive-sql-clients.html[Reactive SQL clients」のガイド]を参照してください。"
+msgstr ""
+"このガイドでは、主にデータソースの設定について説明します。リアクティブデータ"
+"ソースの利用方法の詳細を知りたい場合は、「 link:reactive-sql-clients.html["
+"Reactive SQL clients」のガイド]を参照してください。"
 
 #. type: Title ==
 #: upstream/_guides/datasource.adoc:38
@@ -107,7 +110,12 @@ msgstr "ゼロコンフィグセットアップ（DevServices）"
 #: upstream/_guides/datasource.adoc:49
 #, fuzzy
 msgid "When testing or running in dev mode Quarkus can even provide you with a zero config database out of the box, a feature we refer to as Dev Services. Depending on your database type you may need Docker installed in order to use this feature.  Dev Services is supported for the following databases:"
-msgstr "Quarkusでは、テストや開発モードで実行する際に、ゼロコンフィグでデータベースをすぐに提供することができます。これは、私たちがDevServicesと呼ぶ機能です。データベースの種類によっては、この機能を使用するためにdockerをインストールする必要があります。DevServicesは以下のオープンソースデータベースでサポートされています。"
+msgstr ""
+"Quarkusでは、テストや開発モードで実行する際に、ゼロコンフィグでデータベースを"
+"すぐに提供することができます。これは、私たちがDevServicesと呼ぶ機能です。デー"
+"タベースの種類によっては、この機能を使用するためにdockerをインストールする必"
+"要があります。DevServicesは以下のオープンソースデータベースでサポートされてい"
+"ます。"
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:51
@@ -186,19 +194,28 @@ msgstr ""
 #: upstream/_guides/datasource.adoc:80
 #, fuzzy
 msgid "All services based on containers are run using Testcontainers but Quarkus is not using the Testcontainers JDBC driver."
-msgstr "コンテナに基づくサービスはすべてTestcontainersを使って実行されますが、QuarkusはTestcontainersのJDBCドライバを使用していません。"
+msgstr ""
+"コンテナに基づくサービスはすべてTestcontainersを使って実行されますが、Quarkus"
+"はTestcontainersのJDBCドライバを使用していません。"
 
 #. type: delimited block =
 #: upstream/_guides/datasource.adoc:83
 #, fuzzy
 msgid "Thus, even though extra JDBC URL properties can be set in your `application.properties` file, specific properties supported by the Testcontainers JDBC driver such as `TC_INITSCRIPT`, `TC_INITFUNCTION`, `TC_DAEMON`, `TC_TMPFS` are not supported."
-msgstr "そのため、 `application.properties` ファイルで JDBC URL の追加プロパティを設定しても、Testcontainers の JDBC ドライバがサポートする `TC_INITSCRIPT` 、 `TC_INITFUNCTION` 、 `TC_DAEMON` 、 `TC_TMPFS` などの特定のプロパティには対応していません。"
+msgstr ""
+"そのため、 `application.properties` ファイルで JDBC URL "
+"の追加プロパティを設定しても、Testcontainers の JDBC ドライバがサポートする "
+"`TC_INITSCRIPT` 、 `TC_INITFUNCTION` 、 `TC_DAEMON` 、 `TC_TMPFS` "
+"などの特定のプロパティには対応していません。"
 
 #. type: delimited block =
 #: upstream/_guides/datasource.adoc:86
 #, fuzzy
 msgid "Quarkus can support specific properties sent to the container itself though and, typically, this is the case for `TC_MY_CNF` which allows to override the MariaDB/MySQL configuration file."
-msgstr "Quarkusは、コンテナ自体に送信される特定のプロパティをサポートすることができます。一般的には、MariaDB/MySQLの設定ファイルをオーバーライドできる `TC_MY_CNF` のケースです。"
+msgstr ""
+"Quarkusは、コンテナ自体に送信される特定のプロパティをサポートすることができま"
+"す。一般的には、MariaDB/MySQLの設定ファイルをオーバーライドできる `TC_MY_CNF`"
+" のケースです。"
 
 #. type: delimited block =
 #: upstream/_guides/datasource.adoc:88
@@ -216,7 +233,8 @@ msgstr ""
 #: upstream/_guides/datasource.adoc:95
 #, fuzzy
 msgid "This support is database specific and needs to be implemented in each dev service specifically."
-msgstr "このサポートはデータベース固有のものであり、各開発サービスで個別に実装する必要があります。"
+msgstr "このサポートはデータベース固有のものであり、各開発サービスで個別に実装する必"
+"要があります。"
 
 #. type: Title ===
 #: upstream/_guides/datasource.adoc:97 upstream/_guides/datasource.adoc:188
@@ -271,7 +289,10 @@ msgstr "リアクティブデータソース"
 #: upstream/_guides/datasource.adoc:120
 #, fuzzy
 msgid "Add the correct reactive extension for the database you are using: `reactive-db2-client`, `reactive-mssql-client`, `reactive-mysql-client`, `reactive-oracle-client`, or `reactive-pg-client`."
-msgstr "使用しているデータベースに適切なリアクティブエクステンションを追加します。`reactive-pg-client` , `reactive-mysql-client`、または `reactive-db2-client`。"
+msgstr ""
+"使用しているデータベースに適切なリアクティブエクステンションを追加します"
+"。`reactive-pg-client` , `reactive-mysql-client`、または `reactive-"
+"db2-client`。"
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:122
@@ -404,7 +425,9 @@ msgstr ""
 #: upstream/_guides/datasource.adoc:185
 #, fuzzy
 msgid "You can also retrieve the password from Vault by link:{vault-datasource-guide}[using a credential provider] for your datasource."
-msgstr "また、データソースに link:{vault-datasource-guide}[クレデンシャルプロバイダ]を使用することで、Vaultからパスワードを取得することもできます。"
+msgstr ""
+"また、データソースに link:{vault-datasource-guide}[クレデンシャルプロバイダ]"
+"を使用することで、Vaultからパスワードを取得することもできます。"
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:187
@@ -828,7 +851,9 @@ msgstr "上記の例では、型は `AgroalDataSource` であり、 `javax.sql.D
 #: upstream/_guides/datasource.adoc:359
 #, fuzzy
 msgid "If you prefer using a reactive datasource, Quarkus offers DB2, MariaDB/MySQL, Microsoft SQL Server, Oracle and PostgreSQL reactive clients."
-msgstr "リアクティブデータソースを使用したい場合は、Quarkus では、DB2、MySQL/MariaDB、PostgreSQL リアクティブクライアントを利用できます。"
+msgstr ""
+"リアクティブデータソースを使用したい場合は、Quarkus では、DB2、MySQL/"
+"MariaDB、PostgreSQL リアクティブクライアントを利用できます。"
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:363
@@ -943,7 +968,11 @@ msgstr "現在のところ、複数のデータソースは JDBC と Agroal エ�
 #: upstream/_guides/datasource.adoc:419
 #, fuzzy
 msgid "The Hibernate ORM extension xref:hibernate-orm.adoc#multiple-persistence-units[supports defining several persistence units using configuration properties].  For each persistence unit, you can point to the datasource of your choice."
-msgstr "Hibernate ORMエクステンション link:hibernate-orm.html#multiple-persistence-units[は、構成プロパティを使用して複数の永続化ユニットを定義することをサポートしています]。各永続化ユニットでは、任意のデータソースを指定することができます。"
+msgstr ""
+"Hibernate ORMエクステンション link:hibernate-orm.html#multiple-persistence-un"
+"its[は、構成プロパティを使用して複数の永続化ユニットを定義することをサポート"
+"しています]。各永続化ユニットでは、任意のデータソースを指定することができます"
+"。"
 
 #. type: Plain text
 #: upstream/_guides/datasource.adoc:423
@@ -1449,7 +1478,10 @@ msgstr "`jdbc:oracle:thin:@localhost:1521/ORCL_SVC`"
 #: upstream/_guides/datasource.adoc:663
 #, fuzzy
 msgid "More details can be found in the https://docs.oracle.com/en/database/oracle/oracle-database/21/jjdbc/data-sources-and-URLs.html#GUID-AEA8E228-1B21-4111-AF4C-B1F33744CA08[official documentation]."
-msgstr "詳しくは、 link:https://docs.oracle.com/en/database/oracle/oracle-database/21/jjdbc/data-sources-and-URLs.html#GUID-AEA8E228-1B21-4111-AF4C-B1F33744CA08[公式ドキュメントを]ご覧ください。"
+msgstr ""
+"詳しくは、 link:https://docs.oracle.com/en/database/oracle/oracle-database/"
+"21/jjdbc/data-sources-and-URLs.html#GUID-AEA8E228-1B21-4111-AF4C-"
+"B1F33744CA08[公式ドキュメントを]ご覧ください。"
 
 #. type: Title ===
 #: upstream/_guides/datasource.adoc:664
