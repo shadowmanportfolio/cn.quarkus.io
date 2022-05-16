@@ -52,7 +52,7 @@ jobs:
         run: bin/push-changes "Update tmx"
 
       - name: Update translation stats
-        # Update the translation stats .csv file, which is used as an simplified dashboard ( https://github.com/quarkusio/ja.quarkus.io/blob/master/l10n/stats/translation.csv )
+        # Update the translation stats .csv file, which is used as an simplified dashboard ( https://github.com/shadowmanportfolio/cn.quarkus.io/blob/master/l10n/stats/translation.csv )
         run: bin/update-translation-stats
 
       - name: Push changes
@@ -77,8 +77,8 @@ jobs:
         # Commit and Push the override stats .csv file
         run: bin/push-changes "Update override stats"
 
-  deploy-ja:
-    name: Deploy Japanese translation to GitHub pages
+  deploy-cn:
+    name: Deploy Chinese translation to GitHub pages
     # Deploy a localized site to the GitHub pages
     runs-on: ubuntu-20.04
     steps:
