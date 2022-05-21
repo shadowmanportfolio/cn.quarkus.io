@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-13 07:20+0000\n"
+"POT-Creation-Date: 2022-05-21 22:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgstr "<code>iex \"& { $(iwr https://ps.jbang.dev } trust add https://repo1.mav
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/get-started-code-steps.html:24
 #, fuzzy
-msgid "If it's your first time to install, you'll need ot restart your shell."
+msgid "If it's your first time to install, you'll need to restart your shell."
 msgstr "如果这是你第一次安装，你需要重新启动你的shell。"
 
 #. type: Content of: <div><div><div><h4>
