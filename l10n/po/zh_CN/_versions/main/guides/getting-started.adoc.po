@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-06-14 03:08+0000\n"
+"POT-Creation-Date: 2022-06-17 03:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_versions/main/guides/getting-started.adoc:41
-msgid "If you have multiple JDK's installed it is not certain Maven will pick up the expected java and you could end up with unexpected results.  You can verify which JDK Maven uses by running `mvn --version`."
+msgid "If you have multiple JDK's installed, it is not certain Maven will pick up the expected java and you could end up with unexpected results.  You can verify which JDK Maven uses by running `mvn --version`."
 msgstr ""
 
 #. type: Title ==
@@ -829,7 +829,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/getting-started.adoc:478
-msgid "By default when a Quarkus application starts (in regular or dev mode), it will display an ASCII art banner. The banner can be disabled by setting `quarkus.banner.enabled=false` in `application.properties`, by setting the `-Dquarkus.banner.enabled=false` Java System Property, or by setting the `QUARKUS_BANNER_ENABLED` environment variable to `false`.  Furthermore, users can supply a custom banner by placing the banner file in `src/main/resources` and configuring `quarkus.banner.path=name-of-file` in `application.properties`."
+msgid "By default, when a Quarkus application starts (in regular or dev mode), it will display an ASCII art banner. The banner can be disabled by setting `quarkus.banner.enabled=false` in `application.properties`, by setting the `-Dquarkus.banner.enabled=false` Java System Property, or by setting the `QUARKUS_BANNER_ENABLED` environment variable to `false`.  Furthermore, users can supply a custom banner by placing the banner file in `src/main/resources` and configuring `quarkus.banner.path=name-of-file` in `application.properties`."
 msgstr ""
 
 #. type: Title ==
