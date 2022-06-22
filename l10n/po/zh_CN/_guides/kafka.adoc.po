@@ -1973,8 +1973,9 @@ msgstr "@交易型"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1060
+#, fuzzy
 msgid "Kafka transactions enable atomic writes to multiple Kafka topics and partitions.  The Kafka connector provides `KafkaTransactions` custom emitter for writing Kafka records inside a transaction.  It can be injected as a regular emitter `@Channel`:"
-msgstr ""
+msgstr "Kafka事务实现了对多个Kafka主题和分区的原子式写入。Kafka连接器提供了 `KafkaTransactions` 自定义发射器，用于在事务中写入Kafka记录。它可以作为一个普通的发射器注入 `@Channel` 。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:1070
@@ -2017,54 +2018,63 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1090
+#, fuzzy
 msgid "The function given to the `withTransaction` method receives a `TransactionalEmitter` for producing records, and returns a `Uni` that provides the result of the transaction."
-msgstr ""
+msgstr "给予 `withTransaction` 方法的函数接收一个生产记录的 `TransactionalEmitter` ，并返回一个提供交易结果的 `Uni` 。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1092
+#, fuzzy
 msgid "If the processing completes successfully, the producer is flushed and the transaction is committed."
-msgstr ""
+msgstr "如果处理成功完成，生产者被刷新，事务被提交。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1093
+#, fuzzy
 msgid "If the processing throws an exception, returns a failing `Uni`, or marks the `TransactionalEmitter` for abort, the transaction is aborted."
-msgstr ""
+msgstr "如果处理过程抛出一个异常，返回一个失败的 `Uni` ，或者将 `TransactionalEmitter` ，以便中止，则交易被中止。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1097
+#, fuzzy
 msgid "Kafka transactional producers require configuring `acks=all` client property, and a unique id for `transactional.id`, which implies `enable.idempotence=true`.  When Quarkus detects the use of `KafkaTransactions` for an outgoing channel it configures these properties on the channel, providing a default value of `\"${quarkus.application.name}-${channelName}\"` for `transactional.id` property."
-msgstr ""
+msgstr "Kafka事务性生产者需要配置 `acks=all` 客户端属性，以及 `transactional.id` 的唯一ID，这意味着 `enable.idempotence=true` 。当Quarkus检测到一个出站通道使用 `KafkaTransactions` ，它就会在通道上配置这些属性，为 `transactional.id` 属性提供一个默认值 `\"${quarkus.application.name}-${channelName}\"` 。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1099
+#, fuzzy
 msgid "Note that for production use the `transactional.id` must be unique across all application instances."
-msgstr ""
+msgstr "请注意，在生产中使用的 `transactional.id` ，在所有应用实例中必须是唯一的。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:1107
+#, fuzzy
 msgid "While a normal message emitter would support concurrent calls to `send` methods and consequently queues outgoing messages to be written to Kafka, a `KafkaTransactions` emitter only supports one transaction at a time.  A transaction is considered in progress from the call to the `withTransaction` until the returned `Uni` results in success or failure.  While a transaction is in progress, subsequent calls to the `withTransaction`, including nested ones inside the given function, will throw `IllegalStateException`."
-msgstr ""
+msgstr "虽然一个正常的消息发射器会支持并发调用 `send` 方法，并因此排队将流出的消息写入Kafka，但 `KafkaTransactions` 发射器一次只支持一个事务。从调用 `withTransaction` ，直到返回的 `Uni` 结果是成功或失败，一个事务被认为是在进行中。当一个事务正在进行时，对 `withTransaction` 的后续调用，包括在给定函数内的嵌套调用，将抛出 `IllegalStateException` 。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:1111
+#, fuzzy
 msgid "Note that in Reactive Messaging, the execution of processing methods, is already serialized, unless `@Blocking(ordered = false)` is used.  If `withTransaction` can be called concurrently, for example from a REST endpoint, it is recommended to limit the concurrency of the execution.  This can be done using the `@Bulkhead` annotation from link:https://quarkus.io/guides/smallrye-fault-tolerance[_Microprofile Fault Tolerance_]."
-msgstr ""
+msgstr "注意，在Reactive Messaging中，处理方法的执行，已经被序列化，除非使用 `@Blocking(ordered = false)` 。如果 `withTransaction` 可以被并发调用，例如从一个REST端点，建议限制执行的并发性。这可以使用 link:https://quarkus.io/guides/smallrye-fault-tolerance[_Microprofile Fault Tolerance_] 中的 `@Bulkhead` 注释来完成。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:1113
+#, fuzzy
 msgid "An example usage can be found in <<chaining-kafka-transactions-with-hibernate-reactive-transactions>>."
-msgstr ""
+msgstr "在 link:#chaining-kafka-transactions-with-hibernate-reactive-transactions[[Chaining-kafka-transactions-with-hibernate-reactive-transactions]] 中可以找到一个使用实例。"
 
 #. type: Title ====
 #: upstream/_guides/kafka.adoc:1115
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Transaction-aware consumers"
-msgstr ""
+msgstr "有交易意识的消费者"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1118
+#, fuzzy
 msgid "If you'd like to consume records only written and committed inside a Kafka transaction you need to configure the `isolation.level` property on the incoming channel as such:"
-msgstr ""
+msgstr "如果你想消费只在Kafka事务中写入和提交的记录，你需要在传入通道上配置 `isolation.level` 属性。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:1122
@@ -2074,8 +2084,9 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:1127
+#, fuzzy
 msgid "If you are using Dev Services for Kafka using Redpanda, you need to <<kafka-dev-services.adoc#redpanda-enabling-transactions, enable transactions>>."
-msgstr ""
+msgstr "如果你使用Redpanda的Dev Services for Kafka，你需要 link:kafka-dev-services.html#redpanda-enabling-transactions[启用交易] 。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:1129
@@ -2176,18 +2187,21 @@ msgstr "重试处理"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1197
+#, fuzzy
 msgid "Kafka Transactions allows managing consumer offsets inside a transaction, together with produced messages.  This enables coupling a consumer with a transactional producer in a _consume-transform-produce_ pattern, also known as *exactly-once processing*."
-msgstr ""
+msgstr "Kafka Transactions允许在一个事务中管理消费者的偏移量，以及产生的消息。这使得消费者与事务生产者在 _消费-转换-生产_ 模式下的耦合，也被称为 *完全一次性处理* 。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1199
+#, fuzzy
 msgid "The `KafkaTransactions` custom emitter provides a way to apply exactly-once processing to an incoming Kafka message inside a transaction."
-msgstr ""
+msgstr " `KafkaTransactions` 自定义发射器提供了一种方法，可以在事务中对传入的Kafka消息进行精确的一次处理。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1201
+#, fuzzy
 msgid "The following example includes a batch of Kafka records inside a transaction."
-msgstr ""
+msgstr "下面的例子包括一个事务内的一批Kafka记录。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:1209
@@ -2242,33 +2256,39 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1237
+#, fuzzy
 msgid "It is recommended to use exactly-once processing along with the batch consumption mode.  While it is possible to use it with a single Kafka message, it'll have a significant performance impact."
-msgstr ""
+msgstr "建议在使用批处理模式的同时，也要使用完全一次性处理。虽然可以在单个Kafka消息中使用，但会对性能产生很大影响。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1238
+#, fuzzy
 msgid "The consumed `KafkaRecordBatch` message is passed to the `KafkaTransactions#withTransactionAndAck` in order to handle the offset commits and message acks."
-msgstr ""
+msgstr "消耗的 `KafkaRecordBatch` 消息被传递给 `KafkaTransactions#withTransactionAndAck` ，以便处理偏移提交和消息中断。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1241
+#, fuzzy
 msgid "The `send` method writes records to Kafka inside the transaction, without waiting for send receipt from the broker.  Messages pending to be written to Kafka will be buffered, and flushed before committing the transaction.  It is therefore recommended configuring the `@OnOverflow` `bufferSize` in order to fit enough messages, for example the `max.poll.records`, maximum amount of records returned in a batch."
-msgstr ""
+msgstr " `send` 方法在交易中向Kafka写记录，而不需要等待来自代理的发送接收。等待写入Kafka的消息将被缓冲，并在提交事务之前被刷新。因此，建议配置 `@OnOverflow` `bufferSize` ，以适应足够的消息，例如 `max.poll.records` ，在一个批次中返回的最大记录量。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1243
+#, fuzzy
 msgid "If the processing completes successfully, _before committing the transaction_, the topic partition offsets of the given batch message will be committed to the transaction."
-msgstr ""
+msgstr "如果处理成功完成， _在提交事务之前_ ，给定的批处理信息的主题分区偏移将被提交给事务。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1244
+#, fuzzy
 msgid "If the processing needs to abort, _after aborting the transaction_, the consumer's position is reset to the last committed offset, effectively resuming the consumption from that offset. If no consumer offset has been committed to a topic-partition, the consumer's position is reset to the beginning of the topic-partition, _even if the offset reset policy is `latest`_."
-msgstr ""
+msgstr "如果处理需要中止， _在中止交易后_ ，消费者的位置被重置到最后提交的偏移量，有效地从该偏移量恢复消费。如果没有消费者的偏移量被提交到一个主题分区，消费者的位置将被重置到主题分区的开始， _即使偏移量重置策略是 \"最新\"_ 。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1247
+#, fuzzy
 msgid "When using exactly-once processing, consumed message offset commits are handled by the transaction and therefore the application should not commit offsets through other means.  The consumer should have `enable.auto.commit=false` (the default) and set explicitly `commit-strategy=ignore`:"
-msgstr ""
+msgstr "当使用完全一次性处理时，消耗的消息偏移量的提交由事务处理，因此应用程序不应该通过其他方式提交偏移量。消费者应该有 `enable.auto.commit=false` （默认）并明确设置 `commit-strategy=ignore` 。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:1252
@@ -2280,24 +2300,27 @@ msgstr ""
 
 #. type: Title ====
 #: upstream/_guides/kafka.adoc:1254
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Error handling for the exactly-once processing"
-msgstr ""
+msgstr "准确的一次处理的错误处理"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1258
+#, fuzzy
 msgid "The `Uni` returned from the `KafkaTransactions#withTransaction` will yield a failure if the transaction fails and is aborted.  The application can choose to handle the error case, but if a failing `Uni` is returned from the `@Incoming` method, the incoming channel will effectively fail and stop the reactive stream."
-msgstr ""
+msgstr "如果交易失败并被中止，从 `KafkaTransactions#withTransaction` 返回的 `Uni` 将产生一个失败。应用程序可以选择处理错误的情况，但是如果从 `@Incoming` 方法返回一个失败的 `Uni` ，传入的通道将有效地失败并停止反应流。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:1262
+#, fuzzy
 msgid "The `KafkaTransactions#withTransactionAndAck` method acks and nacks the message but will *not* return a failing `Uni`.  Nacked messages will be handled by the failure strategy of the incoming channel, (see <<error-handling>>).  Configuring `failure-strategy=ignore` simply resets the Kafka consumer to the last committed offsets and resumes the consumption from there."
-msgstr ""
+msgstr " `KafkaTransactions#withTransactionAndAck` 方法对消息进行抽查，但 *不会* 返回一个失败的 `Uni` 。Nacked消息将由传入通道的失败策略来处理，（见 link:#error-handling[[error-handling]] ）。配置 `failure-strategy=ignore` ，只是将Kafka消费者重置到最后提交的偏移量，并从那里恢复消费。"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:1267
+#, fuzzy
 msgid "Redpanda does not yet support link:https://github.com/redpanda-data/redpanda/issues/3279[producer scalability for exactly-once processing].  In order to use Kafka exactly-once processing with Quarkus you can configure Dev Services for Kafka to <<kafka-dev-services#configuring-the-image, use Strimzi images instead of Redpanda>>."
-msgstr ""
+msgstr "Redpanda还不支持 link:https://github.com/redpanda-data/redpanda/issues/3279[生产者的可扩展性，不支持精确的一次性处理] 。为了在Quarkus中使用Kafka的完全一次性处理，你可以将Kafka的Dev Services配置为 link:kafka-dev-services.html#configuring-the-image[使用Strimzi图像而不是Redpanda] 。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:1270
@@ -4737,28 +4760,33 @@ msgstr "用Hibernate Reactive持久化Kafka消息"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2544
+#, fuzzy
 msgid "By chaining a Kafka transaction with a Hibernate Reactive transaction you can send records to a Kafka transaction, perform database updates and commit the Kafka transaction only if the database transaction is successful."
-msgstr ""
+msgstr "通过将Kafka事务与Hibernate Reactive事务相连接，你可以向Kafka事务发送记录，执行数据库更新，并且只有在数据库事务成功时才提交Kafka事务。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2546
+#, fuzzy
 msgid "The following example demonstrates:"
-msgstr ""
+msgstr "下面的例子说明了这一点。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2548
+#, fuzzy
 msgid "Receive a payload by serving HTTP requests using RESTEasy Reactive,"
-msgstr ""
+msgstr "通过使用RESTEasy Reactive提供HTTP请求来接收有效载荷。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2549
+#, fuzzy
 msgid "Limit concurrency of that HTTP endpoint using Smallrye Fault Tolerance,"
-msgstr ""
+msgstr "使用Smallrye Fault Tolerance限制该HTTP端点的并发性。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2550
+#, fuzzy
 msgid "Start a Kafka transaction and send the payload to Kafka record,"
-msgstr ""
+msgstr "启动一个Kafka事务，并将有效载荷发送到Kafka记录。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2551
@@ -4768,8 +4796,9 @@ msgstr "为了将从Kafka收到的对象持久化到数据库中，你可以使�
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2552
+#, fuzzy
 msgid "Commit the Kafka transaction only if the entity is persisted successfully."
-msgstr ""
+msgstr "只有当实体被持久化成功后才会提交Kafka事务。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:2561
@@ -4840,8 +4869,9 @@ msgstr "注入一个 `MutinyEmitter` ，它暴露了Mutiny API。它简化了与
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2592
+#, fuzzy
 msgid "Limit the concurrency of the HTTP endpoint to \"1\", preventing starting multiple transactions at a given time."
-msgstr ""
+msgstr "将HTTP端点的并发性限制为 \"1\"，防止在给定时间内启动多个事务。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2593
@@ -4857,8 +4887,9 @@ msgstr "测试一个Kafka应用程序"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2595
+#, fuzzy
 msgid "Send the payload to Kafka inside the Kafka transaction."
-msgstr ""
+msgstr "在Kafka事务内将有效载荷发送到Kafka。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2596
@@ -4868,18 +4899,21 @@ msgstr "我们需要在一个事务中把实体写进数据库。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2598
+#, fuzzy
 msgid "Once the persist operation completes, and there is no errors, the Kafka transaction is committed.  The result is omitted and returned as the HTTP response."
-msgstr ""
+msgstr "一旦持久化操作完成，并且没有错误，Kafka事务就会提交。结果被省略并作为HTTP响应返回。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2601
+#, fuzzy
 msgid "In the previous example the database transaction (inner) will commit followed by the Kafka transaction (outer).  If you wish to commit the Kafka transaction first and the database transaction second, you need to nest them in the reverse order."
-msgstr ""
+msgstr "在前面的例子中，数据库事务（内部）将提交，然后是Kafka事务（外部）。如果你想先提交Kafka事务，后提交数据库事务，你需要以相反的顺序嵌套它们。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2603
+#, fuzzy
 msgid "The next example demostrates that using the Hibernate Reactive API (without Panache):"
-msgstr ""
+msgstr "下一个例子展示了使用Hibernate Reactive API（没有Panache）。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:2611
@@ -4935,18 +4969,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2644
+#, fuzzy
 msgid "Inject the Hibernate Reactive `SessionFactory`."
-msgstr ""
+msgstr "注入Hibernate Reactive `SessionFactory` 。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2645
+#, fuzzy
 msgid "Capture the caller Vert.x context."
-msgstr ""
+msgstr "捕获调用者Vert.x的上下文。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2646
+#, fuzzy
 msgid "Begin a Hibernate Reactive transaction."
-msgstr ""
+msgstr "开始一个Hibernate Reactive事务。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2648
@@ -4956,8 +4993,9 @@ msgstr "你把实体发送到一个Kafka主题上"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2650
+#, fuzzy
 msgid "The Kafka transaction terminates on the Kafka producer sender thread.  We need to switch to the Vert.x context previously captured in order to terminate the Hibernate Reactive transaction on the same context we started it."
-msgstr ""
+msgstr "Kafka事务在Kafka生产者发送者线程上终止。我们需要切换到之前捕获的Vert.x上下文，以便在我们启动的同一上下文上终止Hibernate Reactive事务。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:2651
@@ -5208,13 +5246,15 @@ msgstr "红帽OpenShift Streams for Apache Kafka"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2769
+#, fuzzy
 msgid "https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-service-registry[Red Hat OpenShift Service Registry] provides fully managed service registry for handling Kafka schemas."
-msgstr ""
+msgstr "link:https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-service-registry[红帽OpenShift服务注册中心] 为处理Kafka模式提供完全管理的服务注册中心。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2773
+#, fuzzy
 msgid "You can follow the instructions from https://access.redhat.com/documentation/en-us/red_hat_openshift_service_registry/1/guide/ab1894d1-cae0-4d11-b185-81d62b4aabc7#_60472331-fa00-48ec-a621-bbd039500c7d[Getting started with Red Hat OpenShift Service Registry], or use the `rhoas` CLI to create a new service registry instance:"
-msgstr ""
+msgstr "你可以按照《 link:https://access.redhat.com/documentation/en-us/red_hat_openshift_service_registry/1/guide/ab1894d1-cae0-4d11-b185-81d62b4aabc7#_60472331-fa00-48ec-a621-bbd039500c7d[红帽OpenShift服务注册中心入门》] 中的说明，或者使用 `rhoas` CLI来创建一个新的服务注册中心实例。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:2777
@@ -5224,13 +5264,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2782
+#, fuzzy
 msgid "Make sure to note the _Registry URL_ of the instance created.  For authentication, you can use the same _ServiceAccount_ you created previously.  You need to make sure that it has the necessary permissions to access the service registry."
-msgstr ""
+msgstr "请确保注意所创建的实例的 _注册表URL_ 。对于认证，你可以使用你之前创建的同一个 _ServiceAccount_ 。你需要确保它有必要的权限来访问服务注册表。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2784
+#, fuzzy
 msgid "For example, using the `rhoas` CLI, you can grant the `MANAGER` role to the service account:"
-msgstr ""
+msgstr "例如，使用 `rhoas` CLI，你可以将 `MANAGER` 角色授予服务账户。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:2788
@@ -5256,13 +5298,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2800
+#, fuzzy
 msgid "The service registry URL, given on the admin console, such as `https://bu98.serviceregistry.rhcloud.com/t/0e95af2c-6e11-475e-82ee-f13bd782df24/apis/registry/v2`"
-msgstr ""
+msgstr "服务注册表的URL，在管理控制台给出，例如 `<a href=\"https://bu98.serviceregistry.rhcloud.com/t/0e95af2c-6e11-475e-82ee-f13bd782df24/apis/registry/v2\" class=\"bare\">https://bu98.serviceregistry.rhcloud.com/t/0e95af2c-6e11-475e-82ee-f13bd782df24/apis/registry/v2</a>` "
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2801
+#, fuzzy
 msgid "The OAuth token endpoint URL, such as `https://identity.api.openshift.com/auth/realms/rhoas/protocol/openid-connect/token`"
-msgstr ""
+msgstr "OAuth令牌端点的URL，如 `<a href=\"https://identity.api.openshift.com/auth/realms/rhoas/protocol/openid-connect/token\" class=\"bare\">https://identity.api.openshift.com/auth/realms/rhoas/protocol/openid-connect/token</a>` "
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2802
@@ -5278,29 +5322,33 @@ msgstr "kafka密码（来自服务账户的客户秘密）。"
 
 #. type: Title ====
 #: upstream/_guides/kafka.adoc:2804
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Binding Red Hat OpenShift managed services to Quarkus application using the Service Binding Operator"
-msgstr ""
+msgstr "使用服务绑定操作符将红帽OpenShift管理的服务绑定到Quarkus应用程序上"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2808
+#, fuzzy
 msgid "If your Quarkus application is deployed on a Kubernetes or OpenShift cluster with link:https://github.com/redhat-developer/service-binding-operator[Service Binding Operator] and link:https://github.com/redhat-developer/app-services-operator/tree/main/docs[OpenShift Application Services] operators installed, configurations necessary to access Red Hat OpenShift Streams for Apache Kafka and Service Registry can be injected to the application using xref:deploying-to-kubernetes.adoc#service_binding[Kubernetes Service Binding]."
-msgstr ""
+msgstr "如果你的Quarkus应用被部署在安装了 link:https://github.com/redhat-developer/service-binding-operator[服务绑定运营商] 和 link:https://github.com/redhat-developer/app-services-operator/tree/main/docs[OpenShift应用服务] 运营商的Kubernetes或OpenShift集群上，访问Red Hat OpenShift Streams for Apache Kafka和服务注册中心所需的配置可以使用 link:deploying-to-kubernetes.html#service_binding[Kubernetes服务绑定] 注入到应用中。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2811
+#, fuzzy
 msgid "In order to setup the Service Binding, you need first to connect OpenShift managed services to your cluster.  For an OpenShift cluster you can follow the instructions from link:https://github.com/redhat-developer/app-services-guides/tree/main/docs/registry/service-binding-registry#connecting-a-kafka-and-service-registry-instance-to-your-openshift-cluster[Connecting a Kafka and Service Registry instance to your OpenShift cluster]."
-msgstr ""
+msgstr "为了设置服务绑定，你首先需要将OpenShift管理的服务连接到你的集群。对于OpenShift集群，你可以按照《 link:https://github.com/redhat-developer/app-services-guides/tree/main/docs/registry/service-binding-registry#connecting-a-kafka-and-service-registry-instance-to-your-openshift-cluster[将Kafka和服务注册中心实例连接到你的OpenShift集群] 》的说明进行操作。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2813
+#, fuzzy
 msgid "Once you've connected your cluster with the RHOAS Kafka and Service Registry instances, make sure you've granted necessary permissions to the newly created service account."
-msgstr ""
+msgstr "一旦你将你的集群与RHOAS Kafka和服务注册中心实例连接起来，确保你已经给新创建的服务账户授予必要的权限。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2816
+#, fuzzy
 msgid "Then, using the xref:deploying-to-kubernetes.adoc#service_binding[Kubernetes Service Binding] extension, you can configure the Quarkus application to generate `ServiceBinding` resources for those services:"
-msgstr ""
+msgstr "然后，使用 link:deploying-to-kubernetes.html#service_binding[Kubernetes服务绑定] 扩展，你可以配置Quarkus应用程序，为这些服务生成 `ServiceBinding` 资源。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:2820
@@ -5328,8 +5376,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2831
+#, fuzzy
 msgid "For this example Quarkus build will generate the following `ServiceBinding` resources:"
-msgstr ""
+msgstr "对于这个例子，Quarkus构建将产生以下 `ServiceBinding` 资源。"
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:2851
@@ -5380,8 +5429,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2873
+#, fuzzy
 msgid "You can follow xref:deploying-to-kubernetes.adoc#openshift[Deploying to OpenShift] to deploy your application, including generated `ServiceBinding` resources.  The configuration properties necessary to access the Kafka and Schema Registry instances will be injected to the application automatically at deployment."
-msgstr ""
+msgstr "你可以按照 link:deploying-to-kubernetes.html#openshift[Deploying to OpenShift] 来部署你的应用程序，包括生成的 `ServiceBinding` 资源。访问Kafka和Schema Registry实例所需的配置属性将在部署时自动注入到应用程序。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:2874

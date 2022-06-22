@@ -2186,8 +2186,9 @@ msgstr "由于用 `@QuarkusIntegrationTest` 注释的测试是对构建结果的
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1229
+#, fuzzy
 msgid "The `pom.xml` file contains:"
-msgstr ""
+msgstr " `pom.xml` 文件包含。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1252
@@ -2217,13 +2218,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1255
+#, fuzzy
 msgid "This instructs the failsafe-maven-plugin to run integration-test."
-msgstr ""
+msgstr "这将指示 failsafe-maven-plugin 运行集成测试。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1257
+#, fuzzy
 msgid "Then, open the `src/test/java/org/acme/quickstart/GreetingResourceIT.java`. It contains:"
-msgstr ""
+msgstr "然后，打开 `src/test/java/org/acme/quickstart/GreetingResourceIT.java` 。它包含了。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1261
@@ -2253,18 +2256,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1274
+#, fuzzy
 msgid "Use another test runner that starts the application from the native file before the tests.  The executable is retrieved by the _Failsafe Maven Plugin_."
-msgstr ""
+msgstr "使用另一个测试运行器，在测试前从本地文件启动应用程序。该可执行文件由 _Failsafe Maven插件_ 检索。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1275
+#, fuzzy
 msgid "We extend our previous tests as a convenience, but you can also implement your tests."
-msgstr ""
+msgstr "为了方便起见，我们扩展了以前的测试，但你也可以实现你的测试。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1277
+#, fuzzy
 msgid "More information can be found in the link:building-native-image#testing-the-native-executable[Testing the native executable Guide]."
-msgstr ""
+msgstr "更多信息可以在《 link:building-native-image#testing-the-native-executable[测试本地可执行文件指南》] 中找到。"
 
 #. type: Title ===
 #: upstream/_guides/getting-started-testing.adoc:1278
