@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-13 07:10+0000\n"
+"POT-Creation-Date: 2022-06-22 10:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -442,7 +442,7 @@ msgstr "一旦启动，你可以请求提供的端点。"
 #, no-wrap
 msgid ""
 "$ curl -w \"\\n\" http://localhost:8080/hello\n"
-"hello\n"
+"Hello from RESTEasy Reactive\n"
 msgstr ""
 
 #. type: Plain text
