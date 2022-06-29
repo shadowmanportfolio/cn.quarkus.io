@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-13 07:10+0000\n"
+"POT-Creation-Date: 2022-06-29 15:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -936,7 +936,7 @@ msgstr "首先，我们需要对其进行包装。"
 #. type: Plain text
 #: upstream/_guides/redis.adoc:493
 #, fuzzy
-msgid "This command will start a Redis instance to execute the tests. Thus your Redis containers need to be stopped."
+msgid "This command will start a Redis instance to execute the tests. Thus, your Redis containers need to be stopped."
 msgstr "这个命令将启动一个Redis实例来执行测试。因此，你的Redis容器需要被停止。"
 
 #. type: Plain text

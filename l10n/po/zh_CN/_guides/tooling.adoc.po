@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-13 07:10+0000\n"
+"POT-Creation-Date: 2022-06-29 15:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr "使用我们的工具"
 #. type: Plain text
 #: upstream/_guides/tooling.adoc:11
 #, fuzzy
-msgid "Quarkus comes with a toolchain enabling developers from live reload all the way down to deploying a Kubernetes application. In addition there are plugins and extensions to all major IDEs."
+msgid "Quarkus comes with a toolchain enabling developers from live reload all the way down to deploying a Kubernetes application. In addition, there are plugins and extensions to all major IDEs."
 msgstr "Quarkus带有一个工具链，使开发者能够从实时重载一直到部署Kubernetes应用程序。此外，还有针对所有主要IDE的插件和扩展。"
 
 #. type: Plain text
@@ -88,7 +88,7 @@ msgstr "如何在本地编译你的应用程序"
 #. type: Plain text
 #: upstream/_guides/tooling.adoc:23
 #, fuzzy
-msgid "how to setup Quarkus tools in xref:ide-tooling.adoc[Visual Studio Code, Eclipse IDE, Eclipse Che and IntelliJ]"
+msgid "how to set up Quarkus tools in xref:ide-tooling.adoc[Visual Studio Code, Eclipse IDE, Eclipse Che and IntelliJ IDEA]"
 msgstr "如何在 link:ide-tooling.html[Visual Studio Code、Eclipse IDE、Eclipse Che和IntelliJ] 中设置Quarkus工具"
 
 #. type: Title ==

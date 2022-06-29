@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-13 07:10+0000\n"
+"POT-Creation-Date: 2022-06-29 15:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -245,7 +245,7 @@ msgstr " *云事件-插入-时间戳* "
 #: upstream/_guides/smallrye-kafka-outgoing.adoc:44
 #, fuzzy, no-wrap
 msgid ""
-"Whether or not the connector should insert automatically the `time` attribute into the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `time` attribute itself\n"
+"Whether the connector should insert automatically the `time` attribute into the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `time` attribute itself\n"
 "\n"
 "Type: _boolean_"
 msgstr "连接器是否应将 `time` 属性自动插入到发出的云事件中。要求 `cloud-events` 被设置为 `true` 。如果消息本身没有配置 `time` 属性，则使用此值"

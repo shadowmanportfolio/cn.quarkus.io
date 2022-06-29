@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-06-22 10:18+0000\n"
+"POT-Creation-Date: 2022-06-29 15:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,7 +338,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/rest-json.adoc:175
 #, fuzzy
-msgid "The implementation is pretty straightforward and you just need to define your endpoints using the JAX-RS annotations."
+msgid "The implementation is pretty straightforward, and you just need to define your endpoints using the JAX-RS annotations."
 msgstr "实现起来相当简单，你只需要使用JAX-RS注解来定义你的端点。"
 
 #. type: Plain text
@@ -374,7 +374,7 @@ msgstr "在Quarkus中，通过CDI获得的默认Jackson `ObjectMapper` （并由
 #. type: Plain text
 #: upstream/_guides/rest-json.adoc:197
 #, fuzzy
-msgid "You can restore the default behavior of Jackson by setting `quarkus.jackson.fail-on-unknown-properties=true` in your `application.properties` or on a per class basis via `@JsonIgnoreProperties(ignoreUnknown = false)`."
+msgid "You can restore the default behavior of Jackson by setting `quarkus.jackson.fail-on-unknown-properties=true` in your `application.properties` or on a per-class basis via `@JsonIgnoreProperties(ignoreUnknown = false)`."
 msgstr "你可以通过在你的 `application.properties` ，或者通过 `@JsonIgnoreProperties(ignoreUnknown = false)` ，在每个班级的基础上设置 `quarkus.jackson.fail-on-unknown-properties=true` ，恢复杰克逊的默认行为。"
 
 #. type: Plain text
@@ -866,7 +866,7 @@ msgstr "现在让我们添加一个简单的网页来显示我们的豆类清单
 #. type: Plain text
 #: upstream/_guides/rest-json.adoc:452
 #, fuzzy
-msgid "Open a browser to http://localhost:8080/legumes.html and you will see our list of legumes."
+msgid "Open a browser to http://localhost:8080/legumes.html, and you will see our list of legumes."
 msgstr "打开浏览器 http://localhost:8080/legumes.html ，你会看到我们的豆类清单。"
 
 #. type: Plain text
@@ -902,7 +902,7 @@ msgstr "那里没有豆类。"
 #. type: Plain text
 #: upstream/_guides/rest-json.adoc:469
 #, fuzzy
-msgid "As mentioned above, the issue is that Quarkus was not able to determine the `Legume` class will require some reflection by analyzing the REST endpoints.  The JSON serialization library tries to get the list of fields of `Legume` and gets an empty list so it does not serialize the fields' data."
+msgid "As mentioned above, the issue is that Quarkus was not able to determine the `Legume` class will require some reflection by analyzing the REST endpoints.  The JSON serialization library tries to get the list of fields of `Legume` and gets an empty list, so it does not serialize the fields' data."
 msgstr "如上所述，问题是Quarkus无法通过分析REST端点来确定 `Legume` 类将需要一些反射。JSON序列化库试图获取 `Legume` 的字段列表，得到的是一个空列表，所以它没有序列化字段的数据。"
 
 #. type: delimited block =

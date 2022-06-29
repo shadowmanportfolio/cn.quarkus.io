@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-13 07:11+0000\n"
+"POT-Creation-Date: 2022-06-29 15:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -404,7 +404,7 @@ msgstr "可能很想给计数器添加一个标签或标记，表明什么值被
 #. type: delimited block =
 #: upstream/_guides/micrometer.adoc:237
 #, fuzzy
-msgid "Label and tag can be used interchangably. You may also see \"attribute\" used in this context in some documentation.  The gist is each that each label or tag or attribute defines an additional bit of information associated with the single numerical measurement that helps you classify, group, or aggregate the measured value later. The Micrometer API uses `Tag` as the mechanism for specifying this additional data."
+msgid "Label and tag can be used interchangeably. You may also see \"attribute\" used in this context in some documentation.  The gist is each that each label or tag or attribute defines an additional bit of information associated with the single numerical measurement that helps you classify, group, or aggregate the measured value later. The Micrometer API uses `Tag` as the mechanism for specifying this additional data."
 msgstr "Label和tag可以互换使用。你也可能在一些文档中看到 \"属性 \"在此背景下使用。要点是每个标签或标记或属性都定义了与单一数字测量相关的额外信息，帮助你以后对测量值进行分类、分组或汇总。千分尺API使用 `Tag` 作为指定这种额外数据的机制。"
 
 #. type: Plain text
