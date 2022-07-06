@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-06-29 15:54+0000\n"
+"POT-Creation-Date: 2022-07-06 16:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1200,7 +1200,7 @@ msgstr "带有Panache的MongoDB还支持扩展的MongoDB查询，提供了一个
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:587
 #, fuzzy
-msgid "MongoDB with Panache offers operations to update multiple documents based on an update document and a query : `Person.update(\"foo = ?1, bar = ?2\", fooName, barName).where(\"name = ?1\", name)`."
+msgid "MongoDB with Panache offers operations to update multiple documents based on an update document and a query : `Person.update(\"foo = ?1 and bar = ?2\", fooName, barName).where(\"name = ?1\", name)`."
 msgstr "带有Panache的MongoDB提供了基于一个更新文档和一个查询的操作来更新多个文档： `Person.update(\"foo = ?1, bar = ?2\", fooName, barName).where(\"name = ?1\", name)` 。"
 
 #. type: Plain text
@@ -1218,31 +1218,31 @@ msgstr " `<singlePropertyName>` (和单一参数），这将扩展到更新文�
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:592
 #, fuzzy
-msgid "`firstname = ?1, status = ?2` will be mapped to the update document `{'$set' : {'firstname': ?1, 'status': ?2}}`"
+msgid "`firstname = ?1 and status = ?2` will be mapped to the update document `{'$set' : {'firstname': ?1, 'status': ?2}}`"
 msgstr " `firstname = ?1, status = ?2` 将被映射到更新文件中 `{'$set' : {'firstname': ?1, 'status': ?2}}` "
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:593
 #, fuzzy
-msgid "`firstname = :firstname, status = :status` will be mapped to the update document `{'$set' : {'firstname': :firstname, 'status': :status}}`"
+msgid "`firstname = :firstname and status = :status` will be mapped to the update document `{'$set' : {'firstname': :firstname, 'status': :status}}`"
 msgstr " `firstname = :firstname, status = :status` 将被映射到更新文件中 `{'$set' : {'firstname': :firstname, 'status': :status}}` "
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:594
 #, fuzzy
-msgid "`{'firstname' : ?1, 'status' : ?2}` will be mapped to the update document `{'$set' : {'firstname': ?1, 'status': ?2}}`"
+msgid "`{'firstname' : ?1 and 'status' : ?2}` will be mapped to the update document `{'$set' : {'firstname': ?1, 'status': ?2}}`"
 msgstr " `{'firstname' : ?1, 'status' : ?2}` 将被映射到更新文件中 `{'$set' : {'firstname': ?1, 'status': ?2}}` "
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:595
 #, fuzzy
-msgid "`{'firstname' : firstname, 'status' : :status}` ` will be mapped to the update document `{'$set' : {'firstname': :firstname, 'status': :status}}`"
+msgid "`{'firstname' : :firstname and 'status' : :status}` ` will be mapped to the update document `{'$set' : {'firstname': :firstname, 'status': :status}}`"
 msgstr " `{'firstname' : firstname, 'status' : :status}` `将被映射到更新文件中。 `{'$set' : {'firstname': :firstname, 'status': :status}}` "
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:596
 #, fuzzy
-msgid "`{'$inc': {'cpt': ?1}}` will be use as-is"
+msgid "`{'$inc': {'cpt': ?1}}` will be used as-is"
 msgstr " `{'$inc': {'cpt': ?1}}` 将按原样使用"
 
 #. type: Title ===
