@@ -25,7 +25,6 @@ l10n/po/zh_CN/_guides/all-builditems.adoc.po, 0, 3, 0, 18 ,100%
 l10n/po/zh_CN/_guides/reactive-messaging-http.adoc.po, 36, 96, 383, 1016 ,63%
 l10n/po/zh_CN/_guides/quarkus-runtime-base-image.adoc.po, 12, 28, 136, 359 ,63%
 l10n/po/zh_CN/_guides/topic/container-first.adoc.po, 7, 12, 103, 257 ,60%
-l10n/po/zh_CN/_guides/grpc-service-consumption.adoc.po, 46, 109, 611, 1375 ,56%
 l10n/po/zh_CN/_guides/building-substrate-howto.adoc.po, 15, 24, 119, 260 ,55%
 l10n/po/zh_CN/_guides/reactive-messaging-websocket.adoc.po, 40, 96, 510, 1095 ,54%
 l10n/po/zh_CN/_guides/security-webauthn.adoc.po, 97, 227, 1968, 4054 ,52%
@@ -38,6 +37,7 @@ l10n/po/zh_CN/_guides/picocli.adoc.po, 30, 74, 466, 887 ,48%
 l10n/po/zh_CN/_guides/redis-reference.adoc.po, 11, 25, 199, 370 ,47%
 l10n/po/zh_CN/_guides/liquibase.adoc.po, 33, 58, 397, 743 ,47%
 l10n/po/zh_CN/_guides/kogito-drl.adoc.po, 37, 92, 577, 1073 ,47%
+l10n/po/zh_CN/_guides/grpc-service-consumption.adoc.po, 56, 109, 735, 1375 ,47%
 l10n/po/zh_CN/_guides/mongodb-panache-kotlin.adoc.po, 19, 48, 504, 928 ,46%
 l10n/po/zh_CN/_guides/kafka-streams.adoc.po, 122, 270, 2378, 4362 ,46%
 l10n/po/zh_CN/_guides/blaze-persistence.adoc.po, 32, 62, 382, 696 ,46%
@@ -201,7 +201,6 @@ l10n/po/zh_CN/_guides/cdi.adoc.po, 122, 167, 2172, 2494 ,13%
 l10n/po/zh_CN/_guides/apicurio-registry-dev-services.adoc.po, 20, 24, 391, 448 ,13%
 l10n/po/zh_CN/_guides/http-reference.adoc.po, 175, 202, 2033, 2288 ,12%
 l10n/po/zh_CN/_guides/container-image.adoc.po, 55, 69, 1117, 1267 ,12%
-l10n/po/zh_CN/_guides/datasource.adoc.po, 211, 276, 2711, 3037 ,11%
 l10n/po/zh_CN/_guides/status-include.adoc.po, 4, 5, 110, 122 ,10%
 l10n/po/zh_CN/_guides/software-transactional-memory.adoc.po, 40, 54, 1832, 2031 ,10%
 l10n/po/zh_CN/_guides/includes/extension-status.adoc.po, 4, 5, 110, 122 ,10%
@@ -220,10 +219,12 @@ l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po, 87, 101, 1454, 1567 ,8%
 l10n/po/zh_CN/_guides/class-loading-reference.adoc.po, 56, 63, 1342, 1457 ,8%
 l10n/po/zh_CN/_guides/extension-codestart.adoc.po, 123, 130, 1788, 1920 ,7%
 l10n/po/zh_CN/_guides/kogito-dmn.adoc.po, 82, 94, 1151, 1217 ,6%
+l10n/po/zh_CN/_guides/datasource.adoc.po, 248, 276, 2858, 3037 ,6%
 l10n/po/zh_CN/_guides/kogito-dev-services.adoc.po, 20, 25, 344, 361 ,5%
 l10n/po/zh_CN/_guides/topic/architecture.adoc.po, 17, 18, 660, 681 ,4%
 l10n/po/zh_CN/_guides/tooling.adoc.po, 15, 18, 155, 161 ,4%
 l10n/po/zh_CN/_guides/dev-mode-differences.adoc.po, 44, 45, 703, 722 ,3%
+l10n/po/zh_CN/_posts/2022-07-06-quarkus-2-10-2-final-released.adoc.po, 0, 18, 0, 156 ,100%
 l10n/po/zh_CN/_posts/2022-01-13-quarkus-insights-qanda3.adoc.po, 0, 10, 0, 94 ,100%
 l10n/po/zh_CN/_posts/2021-08-20-quarkus-newsletter-11.adoc.po, 0, 10, 0, 137 ,100%
 l10n/po/zh_CN/_posts/2021-05-27-quarkus-insights-qanda2.adoc.po, 0, 9, 0, 111 ,100%
