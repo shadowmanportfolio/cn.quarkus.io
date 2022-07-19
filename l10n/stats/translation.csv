@@ -1,7 +1,7 @@
 Filename, Fuzzy Messages, Total Messages, Fuzzy Words, Total Words, Achievement
 l10n/po/zh_CN/_guides/topic/publications.adoc.po, 0, 5, 0, 35 ,100%
 l10n/po/zh_CN/_guides/platform-include.adoc.po, 0, 1, 0, 15 ,100%
-l10n/po/zh_CN/_guides/includes/prerequisites.adoc.po, 0, 11, 0, 85 ,100%
+l10n/po/zh_CN/_guides/includes/prerequisites.adoc.po, 0, 11, 0, 86 ,100%
 l10n/po/zh_CN/_guides/includes/devtools/test.adoc.po, 0, 4, 0, 6 ,100%
 l10n/po/zh_CN/_guides/includes/devtools/prerequisites.adoc.po, 0, 11, 0, 79 ,100%
 l10n/po/zh_CN/_guides/includes/devtools/extension-list.adoc.po, 0, 6, 0, 9 ,100%
@@ -124,6 +124,7 @@ l10n/po/zh_CN/_guides/smallrye-metrics.adoc.po, 48, 64, 692, 962 ,29%
 l10n/po/zh_CN/_guides/rest-client-reactive.adoc.po, 150, 255, 2694, 3770 ,29%
 l10n/po/zh_CN/_guides/security-testing.adoc.po, 18, 28, 351, 484 ,28%
 l10n/po/zh_CN/_guides/mailer.adoc.po, 51, 71, 655, 908 ,28%
+l10n/po/zh_CN/_guides/getting-started-testing.adoc.po, 194, 337, 4404, 6042 ,28%
 l10n/po/zh_CN/_guides/capabilities.adoc.po, 38, 57, 658, 909 ,28%
 l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po, 75, 111, 1311, 1786 ,27%
 l10n/po/zh_CN/_guides/spring-di.adoc.po, 64, 109, 879, 1200 ,27%
@@ -133,7 +134,6 @@ l10n/po/zh_CN/_guides/rest-client.adoc.po, 100, 166, 1759, 2381 ,27%
 l10n/po/zh_CN/_guides/qute.adoc.po, 83, 133, 1212, 1646 ,27%
 l10n/po/zh_CN/_guides/infinispan-client.adoc.po, 108, 152, 1725, 2357 ,27%
 l10n/po/zh_CN/_guides/hibernate-reactive.adoc.po, 54, 78, 719, 972 ,27%
-l10n/po/zh_CN/_guides/getting-started-testing.adoc.po, 194, 336, 4404, 6031 ,27%
 l10n/po/zh_CN/_guides/security-jwt.adoc.po, 272, 348, 4106, 5515 ,26%
 l10n/po/zh_CN/_guides/security-jwt-build.adoc.po, 114, 147, 1874, 2531 ,26%
 l10n/po/zh_CN/_guides/security-authorization.adoc.po, 49, 79, 1164, 1571 ,26%
@@ -153,7 +153,7 @@ l10n/po/zh_CN/_guides/upx.adoc.po, 20, 28, 244, 314 ,23%
 l10n/po/zh_CN/_guides/topic/developer-joy.adoc.po, 19, 21, 467, 601 ,23%
 l10n/po/zh_CN/_guides/rest-client-multipart.adoc.po, 55, 87, 958, 1239 ,23%
 l10n/po/zh_CN/_guides/kafka.adoc.po, 523, 771, 10253, 13285 ,23%
-l10n/po/zh_CN/_guides/getting-started.adoc.po, 92, 130, 1473, 1897 ,23%
+l10n/po/zh_CN/_guides/getting-started.adoc.po, 92, 130, 1473, 1898 ,23%
 l10n/po/zh_CN/_guides/validation.adoc.po, 91, 129, 1324, 1690 ,22%
 l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po, 260, 399, 6397, 8182 ,22%
 l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po, 95, 146, 1776, 2259 ,22%
@@ -187,7 +187,7 @@ l10n/po/zh_CN/_guides/quarkus-blaze-persistence.adoc.po, 15, 17, 562, 655 ,15%
 l10n/po/zh_CN/_guides/maven-tooling.adoc.po, 247, 279, 4826, 5672 ,15%
 l10n/po/zh_CN/_guides/kubernetes-config.adoc.po, 39, 49, 784, 914 ,15%
 l10n/po/zh_CN/_guides/cdi-reference.adoc.po, 226, 313, 4102, 4814 ,15%
-l10n/po/zh_CN/_guides/security.adoc.po, 116, 126, 2031, 2342 ,14%
+l10n/po/zh_CN/_guides/security.adoc.po, 116, 128, 2031, 2349 ,14%
 l10n/po/zh_CN/_guides/resteasy-reactive-migration.adoc.po, 80, 84, 903, 1038 ,14%
 l10n/po/zh_CN/_guides/platform.adoc.po, 49, 62, 1236, 1437 ,14%
 l10n/po/zh_CN/_guides/logging.adoc.po, 214, 248, 2151, 2489 ,14%
