@@ -21,124 +21,141 @@ msgstr ""
 #. https://github.com/quarkusio/quarkus/tree/main/docs/src/main/asciidoc
 #. type: Title =
 #: upstream/_guides/security-getting-started.adoc:6
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Getting Started with Quarkus Security"
-msgstr ""
+msgstr "开始使用Quarkus安全系统"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:11
+#, fuzzy
 msgid "This guide demonstartes how you can quickly create a secure Quarkus application by using xref:security-built-in-authentication.adoc#basic-auth[Basic AuthenticationMechanism] and `JPA IdentityProvider` to create `SecurityIdentity` which is authorized by the `Role Based Access Control` (RBAC) layer before the access to application is permitted."
-msgstr ""
+msgstr "本指南演示了如何通过使用 link:security-built-in-authentication.html#basic-auth[基本认证机制] 和 `JPA IdentityProvider` ，快速创建安全的Quarkus应用程序，在允许访问应用程序之前，通过 `Role Based Access Control` （RBAC）层的授权，创建 `SecurityIdentity` 。"
 
 #. type: delimited block =
 #: upstream/_guides/security-getting-started.adoc:15
+#, fuzzy
 msgid "Using `Basic AuthenticationMechanism` with `JPA IdentityProvider` is better than configuring the users and roles in `application.properties` therefore this guide recommends to combine `Basic AuthenticationMechanism` and `JPA IdentityProvider`. We will update this recommendation to use a reactive equivalent of the `JPA IdentityProvider` as soon as it is introduced."
-msgstr ""
+msgstr "将 `Basic AuthenticationMechanism` 与 `JPA IdentityProvider` 一起使用比在 `application.properties` 中配置用户和角色更好，因此本指南建议将 `Basic AuthenticationMechanism` 和 `JPA IdentityProvider` 结合起来。一旦有了 `JPA IdentityProvider` ，我们将更新这个建议，以使用一个反应式的等价物。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:18
+#, fuzzy
 msgid "This guide will conclude with recommending how to learn more about Quarkus Security, and in particular about its `OpenId Connect Authentication Mechanism`."
-msgstr ""
+msgstr "本指南最后将推荐如何进一步了解Quarkus Security，特别是其 `OpenId Connect Authentication Mechanism` 。"
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:24
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "建筑学"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:27
+#, fuzzy
 msgid "In this example, we build a very simple microservice which offers three endpoints:"
-msgstr ""
+msgstr "在这个例子中，我们建立了一个非常简单的微服务，提供三个端点。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:29
+#, fuzzy
 msgid "`/api/public`"
-msgstr ""
+msgstr " `/api/public` "
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:30
+#, fuzzy
 msgid "`/api/users/me`"
-msgstr ""
+msgstr " `/api/users/me` "
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:31
+#, fuzzy
 msgid "`/api/admin`"
-msgstr ""
+msgstr " `/api/admin` "
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:35
+#, fuzzy
 msgid "The `/api/public` endpoint can be accessed anonymously.  The `/api/admin` endpoint is protected with RBAC (Role-Based Access Control) where only users granted with the `admin` role can access. At this endpoint, we use the `@RolesAllowed` annotation to declaratively enforce the access constraint.  The `/api/users/me` endpoint is also protected with RBAC (Role-Based Access Control) where only users granted with the `user` role can access. As a response, it returns a JSON document with details about the user."
-msgstr ""
+msgstr " `/api/public` 端点可以被匿名访问。 `/api/admin` 端点受到RBAC（基于角色的访问控制）的保护，只有被授予 `admin` 角色的用户可以访问。在这个端点，我们使用 `@RolesAllowed` 注释来声明性地执行访问限制。 `/api/users/me` 端点也受到RBAC（基于角色的访问控制）的保护，只有被授予 `user` 角色的用户可以访问。作为响应，它返回一个包含用户详细信息的JSON文档。"
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:36
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Solution"
-msgstr ""
+msgstr "解决方案"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:40
+#, fuzzy
 msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can go right to the completed example."
-msgstr ""
+msgstr "我们建议你按照下面几节的说明，一步一步地创建应用程序。然而，你可以直接进入已完成的例子。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:42
+#, fuzzy
 msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
-msgstr ""
+msgstr "克隆 Git 仓库。 `git clone {quickstarts-clone-url}` ，或者下载一个{quickstarts-archive-url}[存档]。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:44
+#, fuzzy
 msgid "The solution is located in the `security-jpa-quickstart` {quickstarts-tree-url}/security-jpa-quickstart[directory]."
-msgstr ""
+msgstr "该解决方案位于 `security-jpa-quickstart` {quickstarts-treeurl}/security-jpa-quickstart[目录]中。"
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:45
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Creating the Maven Project"
-msgstr ""
+msgstr "创建Maven项目"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:48
+#, fuzzy
 msgid "First, we need a new project. Create a new project with the following command:"
-msgstr ""
+msgstr "首先，我们需要一个新的项目。用以下命令创建一个新项目。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:55
+#, fuzzy
 msgid "This command generates a Maven project, importing the `security-jpa` extension which allows you to map your security source to JPA entities."
-msgstr ""
+msgstr "该命令生成了一个Maven项目，导入了 `security-jpa` 扩展，可以将安全源映射到JPA实体。"
 
 #. type: delimited block =
 #: upstream/_guides/security-getting-started.adoc:59
+#, fuzzy
 msgid "xref:hibernate-orm-panache.adoc[Hibernate ORM with Panache] is used to store your user identities but you can also use xref:hibernate-orm.adoc[Hibernate ORM]."
-msgstr ""
+msgstr "link:hibernate-orm-panache.html[Hibernate ORM与Panache] 被用来存储你的用户身份，但你也可以使用 link:hibernate-orm.html[Hibernate ORM] 。"
 
 #. type: delimited block =
 #: upstream/_guides/security-getting-started.adoc:61
+#, fuzzy
 msgid "Don't forget to add the database connector library of choice. Here we are using PostgreSQL as identity store."
-msgstr ""
+msgstr "不要忘记添加选择的数据库连接器库。这里我们使用PostgreSQL作为身份存储。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:65
+#, fuzzy
 msgid "If you already have your Quarkus project configured, you can add the `security-jpa` extension to your project by running the following command in your project base directory:"
-msgstr ""
+msgstr "如果你已经配置了你的Quarkus项目，你可以通过在你的项目基础目录下运行以下命令，将 `security-jpa` 扩展到你的项目。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:70
+#, fuzzy
 msgid "This will add the following to your build file:"
-msgstr ""
+msgstr "这将在你的构建文件中添加以下内容。"
 
 #. type: Block title
 #: upstream/_guides/security-getting-started.adoc:72
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "pom.xml"
-msgstr ""
+msgstr "pom.xml"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:78
@@ -152,9 +169,9 @@ msgstr ""
 
 #. type: Block title
 #: upstream/_guides/security-getting-started.adoc:81
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "build.gradle"
-msgstr ""
+msgstr "build.gradle"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:84
@@ -164,14 +181,15 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:86
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Writing the application"
-msgstr ""
+msgstr "编写应用程序"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:89
+#, fuzzy
 msgid "Let's start by implementing the `/api/public` endpoint. As you can see from the source code below, it is just a regular JAX-RS resource:"
-msgstr ""
+msgstr "让我们从实现 `/api/public` 端点开始。正如你从下面的源代码中看到的，它只是一个普通的JAX-RS资源。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:93
@@ -217,8 +235,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:113
+#, fuzzy
 msgid "The source code for the `/api/admin` endpoint is also very simple. The main difference here is that we are using a `@RolesAllowed` annotation to make sure that only users granted with the `admin` role can access the endpoint:"
-msgstr ""
+msgstr " `/api/admin` 端点的源代码也非常简单。这里的主要区别是，我们使用 `@RolesAllowed` 注解来确保只有被授予 `admin` 角色的用户才能访问该端点。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:124
@@ -254,8 +273,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:139
+#, fuzzy
 msgid "Finally, let's consider the `/api/users/me` endpoint. As you can see from the source code below, we are trusting only users with the `user` role.  We are using `SecurityContext` to get access to the current authenticated Principal, and we return the user's name. This information is loaded from the database."
-msgstr ""
+msgstr "最后，让我们考虑一下 `/api/users/me` 这个端点。正如你在下面的源代码中看到的，我们只信任具有 `user` 角色的用户。我们使用 `SecurityContext` ，以获得对当前认证的Principal的访问，并返回用户的名字。这些信息是从数据库中加载的。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:150
@@ -292,14 +312,15 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_guides/security-getting-started.adoc:163
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Defining our user entity"
-msgstr ""
+msgstr "定义我们的用户实体"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:166
+#, fuzzy
 msgid "We can now describe how our security information is stored in our model by adding a few annotations to our `User` entity:"
-msgstr ""
+msgstr "我们现在可以通过给我们的 `User` 实体添加一些注释来描述我们的安全信息是如何存储在我们的模型中的。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:173
@@ -359,49 +380,57 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:210
+#, fuzzy
 msgid "The `security-jpa` extension is only initialized if there is a single entity annotated with `@UserDefinition`."
-msgstr ""
+msgstr "只有当有一个实体被注解为 `@UserDefinition` ， `security-jpa` 扩展才会被初始化。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:212
+#, fuzzy
 msgid "This annotation must be present on a single entity. It can be a regular Hibernate ORM entity or a Hibernate ORM with Panache entity as in this example."
-msgstr ""
+msgstr "这个注解必须出现在一个实体上。它可以是一个普通的Hibernate ORM实体，也可以是本例中带有Panache的Hibernate ORM实体。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:213
+#, fuzzy
 msgid "This indicates the field used for the username."
-msgstr ""
+msgstr "这表示用于用户名的字段。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:214
+#, fuzzy
 msgid "This indicates the field used for the password. This defaults to using bcrypt hashed passwords, but you can also configure it for clear text passwords or custom passwords."
-msgstr ""
+msgstr "这表示用于密码的字段。这默认为使用bcrypt散列密码，但你也可以将其配置为明文密码或自定义密码。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:215
+#, fuzzy
 msgid "This indicates the comma-separated list of roles added to the target Principal representation attributes."
-msgstr ""
+msgstr "这表示以逗号分隔的添加到目标Principal representation属性中的角色列表。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:216
+#, fuzzy
 msgid "This method allows us to add users while hashing the password with the proper bcrypt hash."
-msgstr ""
+msgstr "这种方法允许我们在添加用户的同时，用适当的bcrypt哈希值对密码进行加密。"
 
 #. type: Title ===
 #: upstream/_guides/security-getting-started.adoc:217
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Configuring the Application"
-msgstr ""
+msgstr "配置应用程序"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:220
+#, fuzzy
 msgid "First, xref:security-built-in-authentication.adoc#basic-auth[Basic HTTPAuthenticationMechanism] has to be enabled with `quarkus.http.auth.basic=true`. In fact, you do not even have to set `quarkus.http.auth.basic=true` to enable it in this demo as `Basic HTTPAuthenticationMechanism` is used as a fallback authentication mechanism when a secure access is required and no other authentication mechanisms are enabled."
-msgstr ""
+msgstr "首先， link:security-built-in-authentication.html#basic-auth[Basic HTTPAuthenticationMechanism] 必须通过 `quarkus.http.auth.basic=true` 。事实上，在这个演示中，你甚至不需要设置 `quarkus.http.auth.basic=true` 来启用它，因为 `Basic HTTPAuthenticationMechanism` 是在需要安全访问且没有启用其他认证机制时作为一种后备认证机制使用。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:222
+#, fuzzy
 msgid "Next, configure the datasource. The `security-jpa` extension requires at least one datasource to access to your database."
-msgstr ""
+msgstr "接下来，配置数据源。 `security-jpa` 扩展需要至少一个数据源来访问你的数据库。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:226
@@ -428,8 +457,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:237
+#, fuzzy
 msgid "In our context, we are using PostgreSQL as identity store. The database schema is created by Hibernate ORM automatically on startup (change this in production), and we initialize the database with users and roles in the `Startup` class:"
-msgstr ""
+msgstr "在我们的环境中，我们使用PostgreSQL作为身份存储。数据库模式由Hibernate ORM在启动时自动创建（在生产中改变这一点），我们在 `Startup` 类中用用户和角色初始化数据库。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:245
@@ -464,35 +494,39 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:262
+#, fuzzy
 msgid "The application is now protected and the identities are provided by our database."
-msgstr ""
+msgstr "现在，该应用程序受到保护，身份由我们的数据库提供。"
 
 #. type: delimited block =
 #: upstream/_guides/security-getting-started.adoc:267
+#, fuzzy
 msgid "We kindly remind you that you must not store clear-text passwords in production environments ;-).  As a result, the `security-jpa` defaults to using bcrypt-hashed passwords."
-msgstr ""
+msgstr "我们善意地提醒你，你不能在生产环境中存储明文密码;-)。因此， `security-jpa` 默认为使用bcrypt-hashed密码。"
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:269
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Testing the Application"
-msgstr ""
+msgstr "测试应用程序"
 
 #. type: Title ===
 #: upstream/_guides/security-getting-started.adoc:271
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "With Dev Services for PostgreSQL"
-msgstr ""
+msgstr "使用PostgreSQL的开发服务"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:276
+#, fuzzy
 msgid "Lets add the integration tests before running your application in production mode."
-msgstr ""
+msgstr "在以生产模式运行你的应用程序之前，让我们添加集成测试。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:279
+#, fuzzy
 msgid "We recommend using xref:https://quarkus.io/guides/dev-services#databases[Dev Services for PostgreSQL] for the integration testing of your application in JVM and native modes.  `Dev Services for PostgreSQL` will launch and configure a `PostgreSQL` test container if PostgreSQL configuration properties are enabled only in production (`prod`) mode:"
-msgstr ""
+msgstr "我们推荐使用 link:https://quarkus.io/guides/dev-services.html#databases[Dev Services for PostgreSQL] 对你的应用程序在JVM和本地模式下进行集成测试。如果PostgreSQL配置属性只在生产( `prod` )模式下启用， `Dev Services for PostgreSQL` 将启动和配置一个 `PostgreSQL` 测试容器。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:286
@@ -506,13 +540,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:291
+#, fuzzy
 msgid "Note that adding a `%prod.` profile prefix the datasource properties will not make them visible to `Dev Services for PostgreSQL` but only to the application runnnig in production mode."
-msgstr ""
+msgstr "请注意，添加 `%prod.` profile前缀的数据源属性将不会使它们对 `Dev Services for PostgreSQL` ，而只是对在生产模式下运行的应用程序可见。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:293
+#, fuzzy
 msgid "Next you can write the integration test:"
-msgstr ""
+msgstr "接下来你可以写集成测试。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:297
@@ -629,24 +665,27 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:361
+#, fuzzy
 msgid "As you can see you do not have to launch the test container from the test code."
-msgstr ""
+msgstr "正如你所看到的，你不需要从测试代码中启动测试容器。"
 
 #. type: delimited block =
 #: upstream/_guides/security-getting-started.adoc:367
+#, fuzzy
 msgid "If you start your application in `devmode` then `Dev Services for PostgreSQL` will launch a `PostgreSQL` devmode container for a start for you to focus on the application development.  While developing you can also start adding tests one by one and run them with the xref:continuous-testing.adoc[Continous Testing] feature - `Dev Services for PostgreSQL` will support these tests with a separate `PostgreSQL` test container which will not conflict with the devmode container."
-msgstr ""
+msgstr "如果你在 `devmode` 中启动你的应用程序，那么 `Dev Services for PostgreSQL` 将启动一个 `PostgreSQL` devmode 容器，以便你专注于应用程序的开发。在开发过程中，你也可以开始一个接一个地添加测试，并使用 link:continuous-testing.html[连续测试] 功能运行它们-- `Dev Services for PostgreSQL` 将用一个单独的 `PostgreSQL` 测试容器来支持这些测试，这不会与devmode容器冲突。"
 
 #. type: Title ===
 #: upstream/_guides/security-getting-started.adoc:369
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "With Curl or Browser"
-msgstr ""
+msgstr "用Curl或浏览器"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:372
+#, fuzzy
 msgid "First, start a PostgreSQL server:"
-msgstr ""
+msgstr "首先，启动一个PostgreSQL服务器。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:378
@@ -659,25 +698,28 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:381
+#, fuzzy
 msgid "Next, compile and run the application in either JVM or Native mode:"
-msgstr ""
+msgstr "接下来，在JVM或Native模式下编译和运行该应用程序。"
 
 #. type: Title ====
 #: upstream/_guides/security-getting-started.adoc:382
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "JVM mode"
-msgstr ""
+msgstr "JVM模式"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:385
 #: upstream/_guides/security-getting-started.adoc:398
+#, fuzzy
 msgid "Compile the application:"
-msgstr ""
+msgstr "编译该应用程序。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:389
+#, fuzzy
 msgid "Then run it:"
-msgstr ""
+msgstr "然后运行它。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:393
@@ -687,14 +729,15 @@ msgstr ""
 
 #. type: Title ====
 #: upstream/_guides/security-getting-started.adoc:395
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Native Mode"
-msgstr ""
+msgstr "本地模式"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:402
+#, fuzzy
 msgid "and run it:"
-msgstr ""
+msgstr "并运行它。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:406
@@ -704,13 +747,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:410
+#, fuzzy
 msgid "Now you can test it with `curl` or your favourite browser.  We will use `curl` in this section but you can try to access the same endpoint URLs from the browser."
-msgstr ""
+msgstr "现在你可以用 `curl` 或你最喜欢的浏览器来测试它。我们将在本节中使用 `curl` ，但你可以尝试从浏览器访问相同的端点URLs。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:412
+#, fuzzy
 msgid "The very first thing to check is to ensure the anonymous access works."
-msgstr ""
+msgstr "要检查的第一件事是确保匿名访问工作。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:419
@@ -730,8 +775,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:424
+#, fuzzy
 msgid "Now, let's try to hit a protected resource anonymously."
-msgstr ""
+msgstr "现在，让我们试着匿名地打一个受保护的资源。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:432
@@ -752,13 +798,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:437
+#, fuzzy
 msgid "Note, if you are using the browser then you should see the browser displaying a Basic Authentication challenge form."
-msgstr ""
+msgstr "注意，如果你使用的是浏览器，那么你应该看到浏览器显示一个基本认证挑战表。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:439
+#, fuzzy
 msgid "So far so good, now let's try with an allowed user."
-msgstr ""
+msgstr "到目前为止还不错，现在让我们用一个允许的用户试试。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:446
@@ -778,13 +826,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:451
+#, fuzzy
 msgid "By providing the `admin:admin` credentials, the extension authenticated the user and loaded their roles.  The `admin` user is authorized to access to the protected resources."
-msgstr ""
+msgstr "通过提供 `admin:admin` 凭证，扩展程序验证了用户并加载了他们的角色。 `admin` 的用户被授权访问受保护的资源。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:453
+#, fuzzy
 msgid "The user `admin` should be forbidden to access a resource protected with `@RolesAllowed(\"user\")` because it doesn't have this role."
-msgstr ""
+msgstr "用户 `admin` 应该被禁止访问一个用 `@RolesAllowed(\"user\")` 保护的资源，因为它没有这个角色。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:460
@@ -804,8 +854,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:465
+#, fuzzy
 msgid "Finally, using the user `user` works and the security context contains the principal details (username for instance)."
-msgstr ""
+msgstr "最后，使用用户 `user` ，安全上下文包含本金的细节（比如说用户名）。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:472
@@ -825,51 +876,57 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:476
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Security JPA Reference Guide "
-msgstr ""
+msgstr "安全JPA参考指南"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:479
+#, fuzzy
 msgid "Now that you have run and tested the demo, please have a look at the more specific information about preparing your JPA identity store."
-msgstr ""
+msgstr "现在你已经运行并测试了这个演示，请看一下关于准备JPA身份存储的更具体的信息。"
 
 #. type: Title ===
 #: upstream/_guides/security-getting-started.adoc:480
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Supported model types"
-msgstr ""
+msgstr "支持的模型类型"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:483
+#, fuzzy
 msgid "The `@UserDefinition` class must be a JPA entity (with Panache or not)."
-msgstr ""
+msgstr " `@UserDefinition` 类必须是一个JPA实体（有无Panache）。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:484
+#, fuzzy
 msgid "The `@Username` and `@Password` field types must be of type `String`."
-msgstr ""
+msgstr " `@Username` 和 `@Password` 字段类型必须是 `String` 类型。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:485
+#, fuzzy
 msgid "The `@Roles` field must either be of type `String` or `Collection<String>` or alternately a `Collection<X>` where `X` is an entity class with one `String` field annotated with the `@RolesValue` annotation."
-msgstr ""
+msgstr " `@Roles` 字段必须是 `String` 或 `Collection<String>` 类型，或者是一个 `Collection<X>` ，其中 `X` 是一个实体类，有一个 `String` 字段，并带有 `@RolesValue` 注解。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:486
+#, fuzzy
 msgid "Each `String` role element type will be parsed as a comma-separated list of roles."
-msgstr ""
+msgstr "每个 `String` 角色元素类型将被解析为一个以逗号分隔的角色列表。"
 
 #. type: Title ===
 #: upstream/_guides/security-getting-started.adoc:487
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Storing roles in another entity"
-msgstr ""
+msgstr "在另一个实体中存储角色"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:490
+#, fuzzy
 msgid "You can also store roles in another entity:"
-msgstr ""
+msgstr "你也可以在另一个实体中存储角色。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:499
@@ -928,29 +985,33 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_guides/security-getting-started.adoc:519
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Password storage and hashing"
-msgstr ""
+msgstr "密码存储和散列"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:523
+#, fuzzy
 msgid "By default, we consider passwords to be stored hashed with https://en.wikipedia.org/wiki/Bcrypt[bcrypt] under the https://en.wikipedia.org/wiki/Crypt_(C)[Modular Crypt Format] (MCF)."
-msgstr ""
+msgstr "默认情况下，我们认为密码是用 link:https://en.wikipedia.org/wiki/Crypt_©[模块化加密格式] （MCF）下的 link:https://en.wikipedia.org/wiki/Bcrypt[bcrypt] 进行散列存储。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:527
+#, fuzzy
 msgid "When you need to create such a hashed password we provide the convenient `String BcryptUtil.bcryptHash(String password)` function, which defaults to creating a random salt and hashing in 10 iterations (though you can specify the iterations and salt too)."
-msgstr ""
+msgstr "当你需要创建这样一个散列的密码时，我们提供了方便的 `String BcryptUtil.bcryptHash(String password)` 函数，它默认为创建一个随机的盐和10次迭代的散列（尽管你也可以指定迭代和盐）。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:530
+#, fuzzy
 msgid "with MCF you don't need dedicated columns to store the hashing algorithm, the iterations count or the salt because they're all stored in the hashed value."
-msgstr ""
+msgstr "使用MCF，你不需要专门的列来存储散列算法、迭代次数或盐，因为它们都被存储在散列值中。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:532
+#, fuzzy
 msgid "You also have the possibility to store password using different hashing algorithm `@Password(value = PasswordType.CUSTOM, provider = CustomPasswordProvider.class)`:"
-msgstr ""
+msgstr "你也有可能使用不同的散列算法存储密码 `@Password(value = PasswordType.CUSTOM, provider = CustomPasswordProvider.class)` 。"
 
 #. type: delimited block -
 #: upstream/_guides/security-getting-started.adoc:542
@@ -1007,55 +1068,63 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:566
+#, fuzzy
 msgid "WARN: you can also store passwords in clear text with `@Password(PasswordType.CLEAR)` but we strongly recommend against it in production."
-msgstr ""
+msgstr "警告：你也可以用 `@Password(PasswordType.CLEAR)` ，以明文存储密码，但我们强烈建议在生产中不要这样做。"
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:567
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "What is Next"
-msgstr ""
+msgstr "下一步是什么"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:570
+#, fuzzy
 msgid "You have learned how to create and test a secure Quarkus application by using xref:security-built-in-authentication.adoc#basic-auth[Basic HTTPAuthenticationMechanism], `JPA IdentityProvider`."
-msgstr ""
+msgstr "你已经学会了如何通过使用 link:security-built-in-authentication.html#basic-auth[基本的HTTP认证机制] 来创建和测试一个安全的Quarkus应用程序， `JPA IdentityProvider` 。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:572
+#, fuzzy
 msgid "Next we recommend you to see how `OpenId Connect` can be used to provide a secure, single sign on access to your Quarkus endpoints. Please follow xref:security-openid-connect.adoc[Quarkus - Using OpenID Connect to Protect Service Applications using Bearer Token Authorization] and xref:security-openid-connect-web-authentication.adoc[Quarkus - Using OpenID Connect to Protect Web Applications using Authorization Code Flow] guides."
-msgstr ""
+msgstr "接下来，我们建议你看看如何使用 `OpenId Connect` ，为你的Quarkus端点提供安全的单点登录访问。请关注 link:security-openid-connect.html[Quarkus - 使用OpenID连接来保护服务应用程序，使用承载令牌授权] 和 link:security-openid-connect-web-authentication.html[Quarkus - 使用OpenID连接来保护Web应用程序，使用授权代码流] 指南。"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:574
+#, fuzzy
 msgid "For a complete reference to Quarkus Security please read a xref:security.adoc[Quarkus Security] document."
-msgstr ""
+msgstr "关于Quarkus安全的完整参考，请阅读 link:security.html[Quarkus安全] 文件。"
 
 #. type: Title ==
 #: upstream/_guides/security-getting-started.adoc:575
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "References"
-msgstr ""
+msgstr "参考文献"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:578
+#, fuzzy
 msgid "xref:security.adoc[Quarkus Security]"
-msgstr ""
+msgstr "link:security.html[夸库斯保安公司]"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:579
+#, fuzzy
 msgid "xref:security-openid-connect.adoc[Quarkus - Using OpenID Connect to Protect Service Applications using Bearer Token Authorization]"
-msgstr ""
+msgstr "link:security-openid-connect.html[Quarkus - 使用OpenID连接来保护使用承载令牌授权的服务应用]"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:580
+#, fuzzy
 msgid "xref:security-openid-connect-web-authentication.adoc[Quarkus - Using OpenID Connect to Protect Web Applications using Authorization Code Flow]"
-msgstr ""
+msgstr "link:security-openid-connect-web-authentication.html[Quarkus - 使用OpenID连接，利用授权代码流保护Web应用程序]"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:581
+#, fuzzy
 msgid "xref:hibernate-orm-panache.adoc[Hibernate ORM with Panache]"
-msgstr ""
+msgstr "link:hibernate-orm-panache.html[用Panache的Hibernate ORM]"
 
 #. type: Plain text
 #: upstream/_guides/security-getting-started.adoc:582
