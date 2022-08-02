@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-07-28 03:04+0000\n"
+"POT-Creation-Date: 2022-08-02 08:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,12 +45,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/README.adoc:12
-msgid "https://docs.asciidoctor.org/[Asciidoctor Documentation Site]"
+msgid "http://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/README.adoc:13
-msgid "https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc Syntax Quick Reference]"
+msgid "http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Syntax Quick Reference]"
 msgstr ""
 
 #. type: Title ==
