@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-08-02 09:18+0000\n"
+"POT-Creation-Date: 2022-08-05 17:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr "简化的Hibernate Reactive与Panache"
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:15
 #, fuzzy
-msgid "link:http://hibernate.org/reactive/[Hibernate Reactive] is the only reactive JPA implementation and offers you the full breadth of an Object Relational Mapper allowing you to access your database over reactive drivers.  It makes complex mappings possible, but it does not make simple and common mappings trivial.  Hibernate Reactive with Panache focuses on making your entities trivial and fun to write in Quarkus."
+msgid "link:https://hibernate.org/reactive/[Hibernate Reactive] is the only reactive JPA implementation and offers you the full breadth of an Object Relational Mapper allowing you to access your database over reactive drivers.  It makes complex mappings possible, but it does not make simple and common mappings trivial.  Hibernate Reactive with Panache focuses on making your entities trivial and fun to write in Quarkus."
 msgstr "link:http://hibernate.org/reactive/[Hibernate Reactive] 是唯一的反应式JPA实现，为你提供了对象关系映射的全部范围，允许你通过反应式驱动访问你的数据库。它使复杂的映射成为可能，但它并没有使简单和普通的映射变得微不足道。Hibernate Reactive with Panache专注于使你的实体在Quarkus中的编写变得琐碎而有趣。"
 
 #. type: Title ==

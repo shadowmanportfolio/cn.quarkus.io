@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-08-02 09:18+0000\n"
+"POT-Creation-Date: 2022-08-05 17:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -307,9 +307,9 @@ msgstr " `io.quarkus:quarkus-smallrye-reactive-messaging-mqtt` (延期)"
 
 #. type: Table
 #: upstream/_guides/vertx-reference.adoc:110
-#, fuzzy, no-wrap
-msgid "https://quarkus.io/guides/mqtt"
-msgstr " https://quarkus.io/guides/mqtt "
+#, no-wrap
+msgid "No guide yet"
+msgstr ""
 
 #. type: Table
 #: upstream/_guides/vertx-reference.adoc:111
@@ -2076,3 +2076,7 @@ msgstr ""
 #: upstream/_guides/vertx-reference.adoc:1041
 msgid "Assuming `/tmp/` is writable this can be fixed by setting the `vertx.cacheDirBase` property to point to a directory in `/tmp/` for instance in OpenShift by creating an environment variable `JAVA_OPTS` with the value `-Dvertx.cacheDirBase=/tmp/vertx`."
 msgstr ""
+
+#, fuzzy
+#~ msgid "https://quarkus.io/guides/mqtt"
+#~ msgstr " https://quarkus.io/guides/mqtt "

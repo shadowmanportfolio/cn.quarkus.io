@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-06-29 15:53+0000\n"
+"POT-Creation-Date: 2022-08-05 17:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr "本文档并没有涵盖连接器的所有细节。请参考 link:https:
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:20
 #, fuzzy
-msgid "The AMQP connector allows Quarkus applications to send and receive messages using the AMQP 1.0 protocol.  More details about the protocol can be found in http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html[the AMQP 1.0 specification].  It's important to note that AMQP 1.0 and AMQP 0.9.1 (implemented by RabbitMQ) are incompatible.  Check <<using-rabbitmq,Using RabbitMQ>> to get more details."
+msgid "The AMQP connector allows Quarkus applications to send and receive messages using the AMQP 1.0 protocol.  More details about the protocol can be found in https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html[the AMQP 1.0 specification].  It's important to note that AMQP 1.0 and AMQP 0.9.1 (implemented by RabbitMQ) are incompatible.  Check <<using-rabbitmq,Using RabbitMQ>> to get more details."
 msgstr "AMQP连接器允许Quarkus应用程序使用AMQP 1.0协议来发送和接收消息。关于该协议的更多细节可以在 link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html[AMQP 1.0规范] 中找到。值得注意的是，AMQP 1.0 和 AMQP 0.9.1（由 RabbitMQ 实现）是不兼容的。请查看 link:#using-rabbitmq[Using RabbitMQ] 以获得更多细节。"
 
 #. type: Title ==
@@ -352,7 +352,7 @@ msgstr "该连接器将传入的AMQP消息转换为Reactive Messaging `Message<T
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:167
 #, fuzzy
-msgid "The http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html[AMQP Type System] defines the supported types."
+msgid "The https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html[AMQP Type System] defines the supported types."
 msgstr "link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html[AMQP类型系统] 定义了支持的类型。"
 
 #. type: Table
@@ -370,7 +370,7 @@ msgstr " `<T>` "
 #. type: Table
 #: upstream/_guides/amqp-reference.adoc:171
 #, fuzzy, no-wrap
-msgid "AMQP Value containing a http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#section-primitive-type-definitions[AMQP Primitive Type]"
+msgid "AMQP Value containing a https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#section-primitive-type-definitions[AMQP Primitive Type]"
 msgstr "包含 link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#section-primitive-type-definitions[AMQP原始类型] 的AMQP值"
 
 #. type: Table
@@ -499,7 +499,7 @@ msgstr "鸣谢"
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:211
 #, fuzzy
-msgid "When a Reactive Messaging Message associated with an AMQP Message is acknowledged, it informs the broker that the message has been http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-accepted[accepted]."
+msgid "When a Reactive Messaging Message associated with an AMQP Message is acknowledged, it informs the broker that the message has been https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-accepted[accepted]."
 msgstr "当与AMQP消息相关的反应式消息被确认时，它就会通知经纪人该消息已被 link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-accepted[接受] 。"
 
 #. type: Title ===
@@ -523,31 +523,31 @@ msgstr " `fail` - 应用失败；不再处理AMQP消息（默认）。该AMQP消
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:221
 #, fuzzy
-msgid "`accept` - this strategy marks the AMQP message as _accepted_. The processing continues ignoring the failure.  Refer to the http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-accepted[accepted delivery state documentation]."
+msgid "`accept` - this strategy marks the AMQP message as _accepted_. The processing continues ignoring the failure.  Refer to the https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-accepted[accepted delivery state documentation]."
 msgstr " `accept` - 这个策略将AMQP消息标记为 _接受_ 。处理过程继续进行，忽略失败的情况。请参考 link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-accepted[接受交付状态的文档] 。"
 
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:223
 #, fuzzy
-msgid "`release` - this strategy marks the AMQP message as _released_. The processing continues with the next message. The broker can redeliver the message.  Refer to the http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-released[released delivery state documentation]."
+msgid "`release` - this strategy marks the AMQP message as _released_. The processing continues with the next message. The broker can redeliver the message.  Refer to the https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-released[released delivery state documentation]."
 msgstr " `release` - 这个策略将AMQP消息标记为 _释放_ 。继续处理下一个消息。代理商可以重新交付消息。请参考 link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-released[被释放的交付状态文档] 。"
 
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:225
 #, fuzzy
-msgid "`reject` - this strategy marks the AMQP message as rejected. The processing continues with the next message.  Refer to the http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-rejected[rejected delivery state documentation]."
+msgid "`reject` - this strategy marks the AMQP message as rejected. The processing continues with the next message.  Refer to the https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-rejected[rejected delivery state documentation]."
 msgstr " `reject` - 这个策略将该AMQP消息标记为拒绝。继续处理下一个消息。请参考 link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-rejected[被拒绝的交付状态文档] 。"
 
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:228
 #, fuzzy
-msgid "`modified-failed` - this strategy marks the AMQP message as _modified_ and indicates that it failed (with the `delivery-failed` attribute). The processing continues with the next message, but the broker may attempt to redeliver the message.  Refer to the http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-modified[modified delivery state documentation]"
+msgid "`modified-failed` - this strategy marks the AMQP message as _modified_ and indicates that it failed (with the `delivery-failed` attribute). The processing continues with the next message, but the broker may attempt to redeliver the message.  Refer to the https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-modified[modified delivery state documentation]"
 msgstr " `modified-failed` - 这个策略将AMQP消息标记为 _已修改_ ，并指出它失败了（用 属性）。处理过程继续进行下一个消息，但经纪人可能会尝试重新交付该消息。请参考 `delivery-failed` link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-modified[修改后的交付状态文档]"
 
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:230
 #, fuzzy
-msgid "`modified-failed-undeliverable-here` - this strategy marks the AMQP message as _modified_ and indicates that it failed (with the `delivery-failed` attribute). It also indicates that the application cannot process the message, meaning that the broker will not attempt to redeliver the message to this node. The processing continues with the next message.  Refer to the http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-modified[modified delivery state documentation]"
+msgid "`modified-failed-undeliverable-here` - this strategy marks the AMQP message as _modified_ and indicates that it failed (with the `delivery-failed` attribute). It also indicates that the application cannot process the message, meaning that the broker will not attempt to redeliver the message to this node. The processing continues with the next message.  Refer to the https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-modified[modified delivery state documentation]"
 msgstr " `modified-failed-undeliverable-here` - 这个策略将AMQP消息标记为 _已修改_ ，并指出它失败了（用 属性）。它还表明应用程序不能处理该消息，这意味着代理不会试图将该消息重新传送到这个节点。继续处理下一个消息。请参考 `delivery-failed` link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-modified[修改后的交付状态文档]"
 
 #. type: Title ==
