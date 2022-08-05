@@ -93,7 +93,7 @@ l10n/po/zh_CN/_guides/quarkus-intro.adoc.po, 20, 38, 134, 200 ,33%
 l10n/po/zh_CN/_guides/mongodb.adoc.po, 101, 185, 1848, 2727 ,33%
 l10n/po/zh_CN/_guides/kogito-pmml.adoc.po, 35, 55, 448, 666 ,33%
 l10n/po/zh_CN/_guides/dev-ui.adoc.po, 69, 106, 1004, 1495 ,33%
-l10n/po/zh_CN/_guides/vertx-reference.adoc.po, 182, 289, 2231, 3276 ,32%
+l10n/po/zh_CN/_guides/vertx-reference.adoc.po, 181, 289, 2229, 3277 ,32%
 l10n/po/zh_CN/_guides/tests-with-coverage.adoc.po, 50, 82, 762, 1114 ,32%
 l10n/po/zh_CN/_guides/opentelemetry.adoc.po, 61, 108, 954, 1387 ,32%
 l10n/po/zh_CN/_guides/lra.adoc.po, 21, 30, 867, 1260 ,32%
@@ -119,14 +119,15 @@ l10n/po/zh_CN/_guides/reactive-routes.adoc.po, 157, 227, 2160, 3060 ,30%
 l10n/po/zh_CN/_guides/kotlin.adoc.po, 85, 155, 1378, 1965 ,30%
 l10n/po/zh_CN/_guides/grpc-getting-started.adoc.po, 66, 102, 1071, 1521 ,30%
 l10n/po/zh_CN/_guides/deploying-to-heroku.adoc.po, 45, 63, 669, 950 ,30%
-l10n/po/zh_CN/_guides/README.adoc.po, 51, 76, 216, 307 ,30%
+l10n/po/zh_CN/_guides/README.adoc.po, 51, 76, 218, 309 ,30%
 l10n/po/zh_CN/_guides/spring-web.adoc.po, 114, 141, 981, 1374 ,29%
 l10n/po/zh_CN/_guides/smallrye-metrics.adoc.po, 48, 64, 692, 962 ,29%
 l10n/po/zh_CN/_guides/security-getting-started.adoc.po, 90, 149, 1502, 2114 ,29%
 l10n/po/zh_CN/_guides/rest-client-reactive.adoc.po, 150, 255, 2694, 3770 ,29%
+l10n/po/zh_CN/_guides/validation.adoc.po, 91, 138, 1350, 1852 ,28%
 l10n/po/zh_CN/_guides/security-testing.adoc.po, 18, 28, 351, 484 ,28%
 l10n/po/zh_CN/_guides/mailer.adoc.po, 51, 71, 655, 908 ,28%
-l10n/po/zh_CN/_guides/getting-started-testing.adoc.po, 194, 337, 4404, 6042 ,28%
+l10n/po/zh_CN/_guides/getting-started-testing.adoc.po, 196, 339, 4416, 6054 ,28%
 l10n/po/zh_CN/_guides/capabilities.adoc.po, 38, 57, 658, 909 ,28%
 l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po, 75, 111, 1311, 1786 ,27%
 l10n/po/zh_CN/_guides/spring-di.adoc.po, 64, 109, 879, 1200 ,27%
@@ -136,7 +137,7 @@ l10n/po/zh_CN/_guides/rest-client.adoc.po, 100, 167, 1759, 2394 ,27%
 l10n/po/zh_CN/_guides/qute.adoc.po, 83, 133, 1212, 1646 ,27%
 l10n/po/zh_CN/_guides/infinispan-client.adoc.po, 108, 152, 1725, 2357 ,27%
 l10n/po/zh_CN/_guides/hibernate-reactive.adoc.po, 54, 78, 719, 972 ,27%
-l10n/po/zh_CN/_guides/security-jwt.adoc.po, 272, 348, 4106, 5515 ,26%
+l10n/po/zh_CN/_guides/security-jwt.adoc.po, 272, 348, 4105, 5514 ,26%
 l10n/po/zh_CN/_guides/security-jwt-build.adoc.po, 114, 147, 1874, 2531 ,26%
 l10n/po/zh_CN/_guides/security-authorization.adoc.po, 49, 79, 1164, 1571 ,26%
 l10n/po/zh_CN/_guides/lifecycle.adoc.po, 57, 80, 835, 1121 ,26%
@@ -158,7 +159,6 @@ l10n/po/zh_CN/_guides/kafka.adoc.po, 523, 771, 10253, 13285 ,23%
 l10n/po/zh_CN/_guides/hibernate-search-orm-elasticsearch.adoc.po, 196, 276, 3476, 4475 ,23%
 l10n/po/zh_CN/_guides/getting-started.adoc.po, 92, 130, 1473, 1898 ,23%
 l10n/po/zh_CN/_guides/_templates/template-tutorial.adoc.po, 14, 17, 116, 150 ,23%
-l10n/po/zh_CN/_guides/validation.adoc.po, 91, 129, 1324, 1690 ,22%
 l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po, 264, 404, 6564, 8370 ,22%
 l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po, 95, 146, 1776, 2259 ,22%
 l10n/po/zh_CN/_guides/includes/extension-status.adoc.po, 4, 6, 110, 141 ,22%
@@ -166,7 +166,7 @@ l10n/po/zh_CN/_guides/funqy-knative-events.adoc.po, 67, 91, 1506, 1909 ,22%
 l10n/po/zh_CN/_guides/writing-extensions.adoc.po, 656, 883, 13398, 16859 ,21%
 l10n/po/zh_CN/_guides/smallrye-health.adoc.po, 82, 115, 1467, 1846 ,21%
 l10n/po/zh_CN/_guides/performance-measure.adoc.po, 71, 89, 1071, 1350 ,21%
-l10n/po/zh_CN/_guides/native-and-ssl.adoc.po, 89, 108, 1200, 1503 ,21%
+l10n/po/zh_CN/_guides/native-and-ssl.adoc.po, 90, 109, 1206, 1509 ,21%
 l10n/po/zh_CN/_guides/funqy-http.adoc.po, 38, 63, 715, 905 ,21%
 l10n/po/zh_CN/_guides/building-my-first-extension.adoc.po, 177, 239, 3332, 4173 ,21%
 l10n/po/zh_CN/_guides/security-built-in-authentication.adoc.po, 41, 58, 950, 1187 ,20%
@@ -200,7 +200,7 @@ l10n/po/zh_CN/_guides/resteasy-reactive-migration.adoc.po, 80, 84, 903, 1038 ,14
 l10n/po/zh_CN/_guides/qute-reference.adoc.po, 662, 826, 9680, 11154 ,14%
 l10n/po/zh_CN/_guides/platform.adoc.po, 49, 62, 1236, 1437 ,14%
 l10n/po/zh_CN/_guides/maven-tooling.adoc.po, 252, 281, 4955, 5743 ,14%
-l10n/po/zh_CN/_guides/ide-tooling.adoc.po, 33, 49, 218, 253 ,14%
+l10n/po/zh_CN/_guides/ide-tooling.adoc.po, 33, 49, 217, 252 ,14%
 l10n/po/zh_CN/_guides/getting-started-reactive.adoc.po, 70, 99, 1742, 2020 ,14%
 l10n/po/zh_CN/_guides/extension-codestart.adoc.po, 124, 155, 1793, 2074 ,14%
 l10n/po/zh_CN/_guides/databases-dev-services.adoc.po, 42, 58, 635, 736 ,14%
@@ -219,12 +219,12 @@ l10n/po/zh_CN/_guides/funqy-amazon-lambda.adoc.po, 75, 93, 1358, 1498 ,10%
 l10n/po/zh_CN/_guides/smallrye-kafka-outgoing.adoc.po, 76, 85, 873, 952 ,9%
 l10n/po/zh_CN/_guides/smallrye-kafka-incoming.adoc.po, 95, 101, 1101, 1201 ,9%
 l10n/po/zh_CN/_guides/reaugmentation.adoc.po, 19, 22, 624, 683 ,9%
-l10n/po/zh_CN/_guides/mutiny-primer.adoc.po, 120, 141, 1916, 2091 ,9%
 l10n/po/zh_CN/_guides/gradle-tooling.adoc.po, 126, 150, 2269, 2480 ,9%
 l10n/po/zh_CN/_guides/extension-registry-user.adoc.po, 53, 72, 1327, 1456 ,9%
 l10n/po/zh_CN/_guides/doc-concepts.adoc.po, 36, 38, 428, 468 ,9%
 l10n/po/zh_CN/_guides/0-glossary.adoc.po, 22, 24, 121, 132 ,9%
 l10n/po/zh_CN/_guides/quarkus-reactive-architecture.adoc.po, 62, 75, 1563, 1681 ,8%
+l10n/po/zh_CN/_guides/mutiny-primer.adoc.po, 121, 141, 1931, 2094 ,8%
 l10n/po/zh_CN/_guides/grpc.adoc.po, 10, 12, 119, 129 ,8%
 l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po, 87, 101, 1454, 1567 ,8%
 l10n/po/zh_CN/_guides/class-loading-reference.adoc.po, 56, 63, 1342, 1457 ,8%
