@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-21 22:19+0000\n"
+"POT-Creation-Date: 2022-08-19 07:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,7 +146,7 @@ msgstr ""
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/get-started-code-steps.html:71
-msgid "Quarkus makes it easy to change your code on the fly. Let's modify the <a href=\"localhost:8080/hello\">RESTful endpoint</a>"
+msgid "Quarkus makes it easy to change your code on the fly. Let's modify the <a href=\"http://localhost:8080/hello\">RESTful endpoint</a>"
 msgstr ""
 
 #. type: Content of: <div><div><div><br><p>
