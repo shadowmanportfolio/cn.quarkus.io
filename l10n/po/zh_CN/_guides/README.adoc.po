@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-08-05 17:27+0000\n"
+"POT-Creation-Date: 2022-08-31 11:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,455 +19,235 @@ msgstr ""
 #. type: Title =
 #: upstream/_guides/README.adoc:1
 #, fuzzy, no-wrap
-msgid "How to Create Quarkus Documentation"
+msgid "README: Quarkus documentation"
 msgstr "如何创建Quarkus文档"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:5
-#, fuzzy
-msgid "This guide describes the asciidoc format and conventions that Quarkus has adopted."
-msgstr "本指南描述了Quarkus采用的asciidoc格式和惯例。"
+msgid "Quarkus documentation uses asciidoc syntax."
+msgstr ""
 
-#. type: Title ==
-#: upstream/_guides/README.adoc:6
-#, fuzzy, no-wrap
-msgid "References"
-msgstr "参考文献"
+#. type: Plain text
+#: upstream/_guides/README.adoc:7
+msgid "A gradual refactoring effort is underway to reshape Quarkus documentation to make it easier to both read and write (see xref:doc-concepts.adoc[Quarkus documentation concepts] for more on this transition)."
+msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:9
-#, fuzzy
-msgid "The following links provide background on the general conventions and Asciidoc syntax."
-msgstr "以下链接提供了关于一般惯例和Asciidoc语法的背景。"
+msgid "For more information on contributing to Quarkus docs, see:"
+msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:11
-#, fuzzy
-msgid "https://redhat-documentation.github.io/asciidoc-markup-conventions/[AsciiDoc Mark-up Quick Reference for Documentation]"
-msgstr "link:https://redhat-documentation.github.io/asciidoc-markup-conventions/[文件的AsciiDoc标记快速参考]"
+msgid "xref:doc-contribute-docs-howto.adoc[How to contribute documentation]"
+msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:12
-#, fuzzy
-msgid "https://docs.asciidoctor.org/[Asciidoctor Documentation Site]"
-msgstr "link:http://asciidoctor.org/docs/user-manual/[Asciidoctor用户手册]"
+msgid "xref:doc-concepts.adoc[Quarkus documentation concepts]"
+msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/README.adoc:13
+#: upstream/_guides/README.adoc:12
+msgid "xref:doc-reference.adoc[Quarkus documentation reference]"
+msgstr ""
+
 #, fuzzy
-msgid "https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc Syntax Quick Reference]"
-msgstr "link:http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc语法快速参考]"
+#~ msgid "This guide describes the asciidoc format and conventions that Quarkus has adopted."
+#~ msgstr "本指南描述了Quarkus采用的asciidoc格式和惯例。"
 
-#. type: Title ==
-#: upstream/_guides/README.adoc:14
-#, fuzzy, no-wrap
-msgid "Variables for Use in Documents"
-msgstr "文件中使用的变量"
-
-#. type: Plain text
-#: upstream/_guides/README.adoc:19
 #, fuzzy
-msgid "The following variables externalize key information that can change over time, and so references to such information should be done by using the variable inside of {} curly brackets. The complete list of externalized variables for use is given in the following table:"
-msgstr "以下变量外化了可能随时间变化的关键信息，因此对这些信息的引用应该通过在{}大括号内使用该变量来完成。下表给出了使用的外部化变量的完整列表。"
-
-#. type: Block title
-#: upstream/_guides/README.adoc:20
-#, fuzzy, no-wrap
-msgid "Variables"
-msgstr "变量"
-
-#. type: Table
-#: upstream/_guides/README.adoc:23
-#, fuzzy, no-wrap
-msgid "Property Nam"
-msgstr "财产南"
-
-#. type: Table
-#: upstream/_guides/README.adoc:23
-#, fuzzy, no-wrap
-msgid "Valu"
-msgstr "价值"
-
-#. type: Table
-#: upstream/_guides/README.adoc:24
-#, fuzzy, no-wrap
-msgid "Description"
-msgstr "描述"
-
-#. type: Table
-#: upstream/_guides/README.adoc:24
-#, fuzzy, no-wrap
-msgid "\\{quarkus-version}"
-msgstr "{quarkus-version}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:24
-#, fuzzy, no-wrap
-msgid "{quarkus-version}"
-msgstr "{quarkus-version}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:25
-#, fuzzy, no-wrap
-msgid "The current version of the project."
-msgstr "项目的当前版本。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:25
-#, fuzzy, no-wrap
-msgid "\\{quarkus-home-url}"
-msgstr "{quarkus-hom-url}."
-
-#. type: Table
-#: upstream/_guides/README.adoc:25
-#, fuzzy, no-wrap
-msgid "{quarkus-home-url}"
-msgstr "{quarkus-hom-url}."
-
-#. type: Table
-#: upstream/_guides/README.adoc:26
-#, fuzzy, no-wrap
-msgid "The location of the project home page."
-msgstr "项目主页的位置。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:26
-#, fuzzy, no-wrap
-msgid "\\{quarkus-site-getting-started}"
-msgstr "{pos(190,8)}{quarkus-site-getting-started}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:26
-#, fuzzy, no-wrap
-msgid "{quarkus-site-getting-started}"
-msgstr "{pos(190,8)}{quarkus-site-getting-started}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:28
-#, fuzzy, no-wrap
-msgid "The location of the getting started page."
-msgstr "入门页的位置。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:28
-#, fuzzy, no-wrap
-msgid "\\{quarkus-org-url}"
-msgstr "{quarkus-org-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:28
-#, fuzzy, no-wrap
-msgid "{quarkus-org-url}"
-msgstr "{quarkus-org-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:29
-#, fuzzy, no-wrap
-msgid "The location of the project GitHub organization."
-msgstr "项目github组织的位置。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:29
-#, fuzzy, no-wrap
-msgid "\\{quarkus-base-url}"
-msgstr "{quarkus-base-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:29
-#, fuzzy, no-wrap
-msgid "{quarkus-base-url}"
-msgstr "{quarkus-base-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:30
-#, fuzzy, no-wrap
-msgid "Quarkus GitHub URL common base prefix."
-msgstr "Quarkus GitHub URL的共同基础前缀。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:30
-#, fuzzy, no-wrap
-msgid "\\{quarkus-clone-url}"
-msgstr "{quarkus-clone-url}"
-
-#. type: Table
-#: upstream/_guides/README.adoc:30
-#, fuzzy, no-wrap
-msgid "{quarkus-clone-url}"
-msgstr "{quarkus-clone-url}"
-
-#. type: Table
-#: upstream/_guides/README.adoc:31
-#, fuzzy, no-wrap
-msgid "Quarkus URL for git clone referenced by the documentation."
-msgstr "文档所引用的git克隆的Quarkus URL。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:31
-#, fuzzy, no-wrap
-msgid "\\{quarkus-archive-url}"
-msgstr "{quarkus-archive-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:31
-#, fuzzy, no-wrap
-msgid "{quarkus-archive-url}"
-msgstr "{quarkus-archive-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:32
-#, fuzzy, no-wrap
-msgid "Quarkus URL to main source archive."
-msgstr "Quarkus URL到主源档案。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:32
-#, fuzzy, no-wrap
-msgid "\\{quarkus-blob-url}"
-msgstr "{quarkus-blob-url}"
-
-#. type: Table
-#: upstream/_guides/README.adoc:32
-#, fuzzy, no-wrap
-msgid "{quarkus-blob-url}"
-msgstr "{quarkus-blob-url}"
-
-#. type: Table
-#: upstream/_guides/README.adoc:33
-#, fuzzy, no-wrap
-msgid "Quarkus URL to main blob source tree; used for referencing source files."
-msgstr "Quarkus的主要blob源树的URL；用于引用源文件。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:33
-#, fuzzy, no-wrap
-msgid "\\{quarkus-tree-url}"
-msgstr "{quarkus-treeurl}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:33
-#, fuzzy, no-wrap
-msgid "{quarkus-tree-url}"
-msgstr "{quarkus-treeurl}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:34
-#, fuzzy, no-wrap
-msgid "Quarkus URL to main source tree root; used for referencing directories."
-msgstr "Quarkus到主源树根的URL；用于引用目录。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:34
-#, fuzzy, no-wrap
-msgid "\\{quarkus-issues-url}"
-msgstr "{quarkus-issues-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:34
-#, fuzzy, no-wrap
-msgid "{quarkus-issues-url}"
-msgstr "{quarkus-issues-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:35
-#, fuzzy, no-wrap
-msgid "Quarkus URL to the issues page."
-msgstr "Quarkus URL到问题页。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:35
-#, fuzzy, no-wrap
-msgid "\\{quarkus-images-url}"
-msgstr "{quarkus-images-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:35
-#, fuzzy, no-wrap
-msgid "{quarkus-images-url}"
-msgstr "{quarkus-images-url}。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:37
-#, fuzzy, no-wrap
-msgid "Quarkus URL to set of container images delivered for Quarkus."
-msgstr "Quarkus URL到为Quarkus提供的容器图像集。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:37
-#, fuzzy, no-wrap
-msgid "\\{quarkus-chat-url}"
-msgstr "{quarkus-chat-url}"
-
-#. type: Table
-#: upstream/_guides/README.adoc:37
-#, fuzzy, no-wrap
-msgid "{quarkus-chat-url}"
-msgstr "{quarkus-chat-url}"
-
-#. type: Table
-#: upstream/_guides/README.adoc:38
-#, fuzzy, no-wrap
-msgid "URL of our chat."
-msgstr "我们聊天的URL。"
-
-#. type: Table
-#: upstream/_guides/README.adoc:38
-#, fuzzy, no-wrap
-msgid "\\{quarkus-mailing-list-subscription-email}"
-msgstr "{quarkus-mailing-list-subscription-email}."
-
-#. type: Table
-#: upstream/_guides/README.adoc:38
-#, fuzzy, no-wrap
-msgid "{quarkus-mailing-list-subscription-email}"
-msgstr "{quarkus-mailing-list-subscription-email}."
-
-#. type: Table
-#: upstream/_guides/README.adoc:39
-#, no-wrap
-msgid "Email used to subscribe to our mailing list."
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:39
-#, no-wrap
-msgid "\\{quarkus-mailing-list-index}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:39
-#, no-wrap
-msgid "{quarkus-mailing-list-index}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:41
-#, no-wrap
-msgid "Mailing list index page."
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:41
-#, no-wrap
-msgid "\\{quickstarts-base-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:41
-#, no-wrap
-msgid "{quickstarts-base-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:42
-#, no-wrap
-msgid "Quickstarts URL common base prefix."
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:42
-#, no-wrap
-msgid "\\{quickstarts-clone-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:42
-#, no-wrap
-msgid "{quickstarts-clone-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:43
-#, no-wrap
-msgid "Quickstarts URL for git clone referenced by the documentation."
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:43
-#, no-wrap
-msgid "\\{quickstarts-archive-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:43
-#, no-wrap
-msgid "{quickstarts-archive-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:44
-#, no-wrap
-msgid "Quickstarts URL to main source archive."
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:44
-#, no-wrap
-msgid "\\{quickstarts-blob-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:44
-#, no-wrap
-msgid "{quickstarts-blob-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:45
-#, no-wrap
-msgid "Quickstarts URL to main blob source tree; used for referencing source files."
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:45
-#, no-wrap
-msgid "\\{quickstarts-tree-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:45
-#, no-wrap
-msgid "{quickstarts-tree-url}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:47
-#, no-wrap
-msgid "Quickstarts URL to main source tree root; used for referencing directories."
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:47
-#, no-wrap
-msgid "\\{graalvm-version}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:47
-#, no-wrap
-msgid "{graalvm-version}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:48
-#, no-wrap
-msgid "Recommended GraalVM version to use."
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:48
-#, no-wrap
-msgid "\\{graalvm-flavor}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:48
-#, no-wrap
-msgid "{graalvm-flavor}"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/README.adoc:49
-#, no-wrap
-msgid "The full flavor of GraalVM to use e.g. `19.3.1-java11`. Make sure to use a `java11` version."
-msgstr ""
+#~ msgid "References"
+#~ msgstr "参考文献"
+
+#, fuzzy
+#~ msgid "The following links provide background on the general conventions and Asciidoc syntax."
+#~ msgstr "以下链接提供了关于一般惯例和Asciidoc语法的背景。"
+
+#, fuzzy
+#~ msgid "https://redhat-documentation.github.io/asciidoc-markup-conventions/[AsciiDoc Mark-up Quick Reference for Documentation]"
+#~ msgstr "link:https://redhat-documentation.github.io/asciidoc-markup-conventions/[文件的AsciiDoc标记快速参考]"
+
+#, fuzzy
+#~ msgid "https://docs.asciidoctor.org/[Asciidoctor Documentation Site]"
+#~ msgstr "link:http://asciidoctor.org/docs/user-manual/[Asciidoctor用户手册]"
+
+#, fuzzy
+#~ msgid "https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc Syntax Quick Reference]"
+#~ msgstr "link:http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc语法快速参考]"
+
+#, fuzzy
+#~ msgid "Variables for Use in Documents"
+#~ msgstr "文件中使用的变量"
+
+#, fuzzy
+#~ msgid "The following variables externalize key information that can change over time, and so references to such information should be done by using the variable inside of {} curly brackets. The complete list of externalized variables for use is given in the following table:"
+#~ msgstr "以下变量外化了可能随时间变化的关键信息，因此对这些信息的引用应该通过在{}大括号内使用该变量来完成。下表给出了使用的外部化变量的完整列表。"
+
+#, fuzzy
+#~ msgid "Variables"
+#~ msgstr "变量"
+
+#, fuzzy
+#~ msgid "Property Nam"
+#~ msgstr "财产南"
+
+#, fuzzy
+#~ msgid "Valu"
+#~ msgstr "价值"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#, fuzzy
+#~ msgid "\\{quarkus-version}"
+#~ msgstr "{quarkus-version}。"
+
+#, fuzzy
+#~ msgid "{quarkus-version}"
+#~ msgstr "{quarkus-version}。"
+
+#, fuzzy
+#~ msgid "The current version of the project."
+#~ msgstr "项目的当前版本。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-home-url}"
+#~ msgstr "{quarkus-hom-url}."
+
+#, fuzzy
+#~ msgid "{quarkus-home-url}"
+#~ msgstr "{quarkus-hom-url}."
+
+#, fuzzy
+#~ msgid "The location of the project home page."
+#~ msgstr "项目主页的位置。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-site-getting-started}"
+#~ msgstr "{pos(190,8)}{quarkus-site-getting-started}。"
+
+#, fuzzy
+#~ msgid "{quarkus-site-getting-started}"
+#~ msgstr "{pos(190,8)}{quarkus-site-getting-started}。"
+
+#, fuzzy
+#~ msgid "The location of the getting started page."
+#~ msgstr "入门页的位置。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-org-url}"
+#~ msgstr "{quarkus-org-url}。"
+
+#, fuzzy
+#~ msgid "{quarkus-org-url}"
+#~ msgstr "{quarkus-org-url}。"
+
+#, fuzzy
+#~ msgid "The location of the project GitHub organization."
+#~ msgstr "项目github组织的位置。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-base-url}"
+#~ msgstr "{quarkus-base-url}。"
+
+#, fuzzy
+#~ msgid "{quarkus-base-url}"
+#~ msgstr "{quarkus-base-url}。"
+
+#, fuzzy
+#~ msgid "Quarkus GitHub URL common base prefix."
+#~ msgstr "Quarkus GitHub URL的共同基础前缀。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-clone-url}"
+#~ msgstr "{quarkus-clone-url}"
+
+#, fuzzy
+#~ msgid "{quarkus-clone-url}"
+#~ msgstr "{quarkus-clone-url}"
+
+#, fuzzy
+#~ msgid "Quarkus URL for git clone referenced by the documentation."
+#~ msgstr "文档所引用的git克隆的Quarkus URL。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-archive-url}"
+#~ msgstr "{quarkus-archive-url}。"
+
+#, fuzzy
+#~ msgid "{quarkus-archive-url}"
+#~ msgstr "{quarkus-archive-url}。"
+
+#, fuzzy
+#~ msgid "Quarkus URL to main source archive."
+#~ msgstr "Quarkus URL到主源档案。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-blob-url}"
+#~ msgstr "{quarkus-blob-url}"
+
+#, fuzzy
+#~ msgid "{quarkus-blob-url}"
+#~ msgstr "{quarkus-blob-url}"
+
+#, fuzzy
+#~ msgid "Quarkus URL to main blob source tree; used for referencing source files."
+#~ msgstr "Quarkus的主要blob源树的URL；用于引用源文件。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-tree-url}"
+#~ msgstr "{quarkus-treeurl}。"
+
+#, fuzzy
+#~ msgid "{quarkus-tree-url}"
+#~ msgstr "{quarkus-treeurl}。"
+
+#, fuzzy
+#~ msgid "Quarkus URL to main source tree root; used for referencing directories."
+#~ msgstr "Quarkus到主源树根的URL；用于引用目录。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-issues-url}"
+#~ msgstr "{quarkus-issues-url}。"
+
+#, fuzzy
+#~ msgid "{quarkus-issues-url}"
+#~ msgstr "{quarkus-issues-url}。"
+
+#, fuzzy
+#~ msgid "Quarkus URL to the issues page."
+#~ msgstr "Quarkus URL到问题页。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-images-url}"
+#~ msgstr "{quarkus-images-url}。"
+
+#, fuzzy
+#~ msgid "{quarkus-images-url}"
+#~ msgstr "{quarkus-images-url}。"
+
+#, fuzzy
+#~ msgid "Quarkus URL to set of container images delivered for Quarkus."
+#~ msgstr "Quarkus URL到为Quarkus提供的容器图像集。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-chat-url}"
+#~ msgstr "{quarkus-chat-url}"
+
+#, fuzzy
+#~ msgid "{quarkus-chat-url}"
+#~ msgstr "{quarkus-chat-url}"
+
+#, fuzzy
+#~ msgid "URL of our chat."
+#~ msgstr "我们聊天的URL。"
+
+#, fuzzy
+#~ msgid "\\{quarkus-mailing-list-subscription-email}"
+#~ msgstr "{quarkus-mailing-list-subscription-email}."
+
+#, fuzzy
+#~ msgid "{quarkus-mailing-list-subscription-email}"
+#~ msgstr "{quarkus-mailing-list-subscription-email}."
