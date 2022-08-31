@@ -307,9 +307,9 @@ msgstr " `io.quarkus:quarkus-smallrye-reactive-messaging-mqtt` (延期)"
 
 #. type: Table
 #: upstream/_guides/vertx-reference.adoc:110
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "No guide yet"
-msgstr ""
+msgstr "尚无指南"
 
 #. type: Table
 #: upstream/_guides/vertx-reference.adoc:111
@@ -2031,8 +2031,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1020
+#, fuzzy
 msgid "By itself this will not disable the tcp socket which by default will open on `0.0.0.0:8080`. It can be explicitly disabled:"
-msgstr ""
+msgstr "这本身不会禁用tcp套接字，它默认会在 `0.0.0.0:8080` 。它可以被明确地禁用。"
 
 #. type: delimited block -
 #: upstream/_guides/vertx-reference.adoc:1023
@@ -2042,29 +2043,33 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1027
+#, fuzzy
 msgid "These properties can be set through Java's `-D` command line parameter or on `application.properties`."
-msgstr ""
+msgstr "这些属性可以通过Java的 `-D` 命令行参数或在 `application.properties` 。"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1029
+#, fuzzy
 msgid "Do not forget to add the native transport dependency. See <<native-transport>> for details."
-msgstr ""
+msgstr "不要忘记添加本地运输的依赖性。详见 link:#native-transport[[native-transport]] 。"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1031
+#, fuzzy
 msgid "Make sure your application has the right permissions to write to the socket."
-msgstr ""
+msgstr "确保你的应用程序有正确的权限来写入套接字。"
 
 #. type: Title ==
 #: upstream/_guides/vertx-reference.adoc:1032
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Read only deployment environments"
-msgstr ""
+msgstr "只读的部署环境"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1035
+#, fuzzy
 msgid "In environments with read only file systems you may receive errors of the form:"
-msgstr ""
+msgstr "在具有只读文件系统的环境中，你可能会收到以下形式的错误。"
 
 #. type: delimited block -
 #: upstream/_guides/vertx-reference.adoc:1039
@@ -2074,8 +2079,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1042
+#, fuzzy
 msgid "Assuming `/tmp/` is writable this can be fixed by setting the `vertx.cacheDirBase` property to point to a directory in `/tmp/` for instance in OpenShift by creating an environment variable `JAVA_OPTS` with the value `-Dvertx.cacheDirBase=/tmp/vertx`."
-msgstr ""
+msgstr "假设 `/tmp/` 是可写的，这可以通过设置 `vertx.cacheDirBase` 属性指向 `/tmp/` 中的一个目录来解决，例如在 OpenShift 中通过创建一个环境变量 `JAVA_OPTS` 的值 `-Dvertx.cacheDirBase=/tmp/vertx` 。"
 
 #. type: Title ==
 #: upstream/_guides/vertx-reference.adoc:1043

@@ -141,8 +141,9 @@ msgstr "该解决方案位于 `hibernate-orm-panache-quickstart` {quickstarts-tr
 
 #. type: delimited block =
 #: upstream/_guides/hibernate-orm-panache.adoc:66
+#, fuzzy
 msgid "If your project is already configured to use other annotation processors, you will need to additionally add the Panache annotation processor:"
-msgstr ""
+msgstr "如果你的项目已经被配置为使用其他注释处理器，你将需要额外添加Panache注释处理器。"
 
 #. type: Block title
 #: upstream/_guides/hibernate-orm-panache.adoc:68
@@ -1520,8 +1521,9 @@ msgstr " `ownerName` DTO构造器的参数将从 `owner.name` HQL属性加载。
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:797
+#, fuzzy
 msgid "It is also possible to specify a HQL query with a select clause. In this case, the projection class must have a constructor matching the values returned by the select clause:"
-msgstr ""
+msgstr "也可以用一个选择子句来指定一个HQL查询。在这种情况下，投影类必须有一个与选择子句返回的值相匹配的构造函数。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:806
@@ -1563,18 +1565,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:821
+#, fuzzy
 msgid "Hibernate ORM will use this constructor. When the query has a select clause, it is possible to have multiple constructors."
-msgstr ""
+msgstr "Hibernate ORM将使用这个构造函数。当查询有一个选择子句时，有可能会有多个构造函数。"
 
 #. type: delimited block =
 #: upstream/_guides/hibernate-orm-panache.adoc:825
+#, fuzzy
 msgid "It is not possible to have a HQL `select new` query and `.project(Class)` at the same time - you need to pick one approach."
-msgstr ""
+msgstr "不可能同时拥有HQL `select new` 查询和 `.project(Class)` - 你需要选择一种方法。"
 
 #. type: delimited block =
 #: upstream/_guides/hibernate-orm-panache.adoc:827
+#, fuzzy
 msgid "For example, this will fail:"
-msgstr ""
+msgstr "例如，这将失败。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:831
