@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-08-24 12:18+0000\n"
+"POT-Creation-Date: 2022-09-07 16:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr "将本地可执行文件打包到一个容器中"
 
 #. type: Title ==
 #: upstream/_guides/building-native-image.adoc:15
-#: upstream/_guides/building-native-image.adoc:758
+#: upstream/_guides/building-native-image.adoc:767
 #, fuzzy, no-wrap
 msgid "Debugging native executable"
 msgstr "调试本地可执行文件"
@@ -660,13 +660,13 @@ msgid "These are normal Quarkus config properties, so if you always want to buil
 msgstr "这些是正常的Quarkus配置属性，所以如果你总是想在容器中构建，建议你把这些添加到你的 `application.properties` ，以避免每次都指定它们。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:388
+#: upstream/_guides/building-native-image.adoc:389
 #, fuzzy
 msgid "If you see the following invalid path error for your application JAR when trying to create a native executable using a container build, even though your JAR was built successfully, you're most likely using a remote daemon for your container runtime."
 msgstr "如果你在试图使用容器构建创建本地可执行文件时，看到你的应用程序JAR出现以下无效路径错误，即使你的JAR已经成功构建，你很可能在容器运行时使用了远程守护程序。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:391
+#: upstream/_guides/building-native-image.adoc:392
 #, no-wrap
 msgid ""
 "Error: Invalid Path entry getting-started-1.0.0-SNAPSHOT-runner.jar\n"
@@ -674,109 +674,121 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:393
+#: upstream/_guides/building-native-image.adoc:394
 #, fuzzy
 msgid "In this case, use the parameter `-Dquarkus.native.remote-container-build=true` instead of `-Dquarkus.native.container-build=true`."
 msgstr "在这种情况下，使用参数 `-Dquarkus.native.remote-container-build=true` ，而不是 `-Dquarkus.native.container-build=true` 。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:395
+#: upstream/_guides/building-native-image.adoc:396
 #, fuzzy
 msgid "The reason for this is that the local build driver invoked through `-Dquarkus.native.container-build=true` uses volume mounts to make the JAR available in the build container, but volume mounts do not work with remote daemons. The remote container build driver copies the necessary files instead of mounting them. Note that even though the remote driver also works with local daemons, the local driver should be preferred in the local case because mounting is usually more performant than copying."
 msgstr "原因是通过 `-Dquarkus.native.container-build=true` 调用的本地构建驱动程序使用卷挂载来使 JAR 在构建容器中可用，但卷挂载对远程守护程序不起作用。远程容器构建驱动程序复制必要的文件，而不是挂载它们。请注意，即使远程驱动程序也能与本地守护程序一起工作，但在本地情况下，本地驱动程序应该是首选，因为挂载通常比复制更有性能。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:400
+#: upstream/_guides/building-native-image.adoc:401
 #, fuzzy
 msgid "Building with Mandrel requires a custom builder image parameter to be passed additionally:"
 msgstr "使用Mandrel构建需要额外传递一个自定义的构建器图像参数。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:411
+#: upstream/_guides/building-native-image.adoc:412
 #, fuzzy
 msgid "Please note that the above command points to a floating tag.  It is highly recommended to use the floating tag, so that your builder image remains up-to-date and secure.  If you absolutely must, you may hard-code to a specific tag (see https://quay.io/repository/quarkus/ubi-quarkus-mandrel?tab=tags[here] for available tags), but be aware that you won't get security updates that way and it's unsupported."
 msgstr "请注意，上述命令指向的是一个浮动标签。我们强烈建议你使用浮动标签，这样你的构建器图像就能保持最新和安全。如果你一定要这样做，你可以硬编码到一个特定的标签（见 link:https://quay.io/repository/quarkus/ubi-quarkus-mandrel?tab=tags[这里] 的可用标签），但要注意，你不会得到安全更新，而且这不被支持。"
 
 #. type: Title ==
-#: upstream/_guides/building-native-image.adoc:413
+#: upstream/_guides/building-native-image.adoc:414
 #, fuzzy, no-wrap
 msgid "Creating a container"
 msgstr "创建一个容器"
 
 #. type: Title ===
-#: upstream/_guides/building-native-image.adoc:415
+#: upstream/_guides/building-native-image.adoc:416
 #, fuzzy, no-wrap
 msgid "Using the container-image extensions"
 msgstr "使用容器-图像扩展"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:418
+#: upstream/_guides/building-native-image.adoc:419
 #, fuzzy
 msgid "By far the easiest way to create a container-image from your Quarkus application is to leverage one of the container-image extensions."
 msgstr "到目前为止，从你的Quarkus应用程序中创建一个容器图像的最简单方法是利用容器图像扩展之一。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:420
+#: upstream/_guides/building-native-image.adoc:421
 #, fuzzy
 msgid "If one of those extensions is present, then creating a container image for the native executable is essentially a matter of executing a single command:"
 msgstr "如果这些扩展之一是存在的，那么为本地可执行文件创建一个容器镜像基本上就是执行一个命令的问题。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:424
+#: upstream/_guides/building-native-image.adoc:425
 #, no-wrap
 msgid "./mvnw package -Pnative -Dquarkus.native.container-build=true -Dquarkus.container-image.build=true\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:427
+#: upstream/_guides/building-native-image.adoc:428
 #, fuzzy
 msgid "`quarkus.native.container-build=true` allows for creating a Linux executable without GraalVM being installed (and is only necessary if you don't have GraalVM installed locally or your local operating system is not Linux)"
 msgstr " `quarkus.native.container-build=true` 允许在不安装GralVM的情况下创建一个Linux可执行文件（只有在你没有安装GralVM或者你的本地操作系统不是Linux的情况下才需要）。"
 
+#. type: delimited block =
+#: upstream/_guides/building-native-image.adoc:432
+#, fuzzy
+msgid "If you're running a remote Docker daemon, you need to replace `quarkus.native.container-build=true` with `quarkus.native.remote-container-build=true`."
+msgstr "在这种情况下，使用参数 `-Dquarkus.native.remote-container-build=true` ，而不是 `-Dquarkus.native.container-build=true` 。"
+
+#. type: delimited block =
+#: upstream/_guides/building-native-image.adoc:434
+#, fuzzy
+msgid "See <<tip-quarkus-native-remote-container-build, Creating a Linux executable without GraalVM installed>> for more details."
+msgstr "在没有安装GraalVM的情况下创建一个Linux可执行文件"
+
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:428
+#: upstream/_guides/building-native-image.adoc:437
 #, fuzzy
 msgid "`quarkus.container-image.build=true` instructs Quarkus to create a container-image using the final application artifact (which is the native executable in this case)"
 msgstr " `quarkus.container-image.build=true` 指示Quarkus使用最终的应用程序工件（在本例中是本地可执行文件）创建一个容器图像。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:430
+#: upstream/_guides/building-native-image.adoc:439
 #, fuzzy
 msgid "See the xref:container-image.adoc[Container Image guide] for more details."
 msgstr "更多细节见 link:container-image.html[容器图像指南] 。"
 
 #. type: Title ===
-#: upstream/_guides/building-native-image.adoc:431
+#: upstream/_guides/building-native-image.adoc:440
 #, fuzzy, no-wrap
 msgid "Manually using the micro base image"
 msgstr "手动使用微型基础图像"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:435
+#: upstream/_guides/building-native-image.adoc:444
 #, fuzzy
 msgid "You can run the application in a container using the JAR produced by the Quarkus Maven Plugin.  However, in this section we focus on creating a container image using the produced native executable."
 msgstr "你可以使用Quarkus Maven插件生成的JAR在容器中运行该应用程序。然而，在本节中，我们将重点讨论使用生成的本地可执行文件创建一个容器镜像。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:437
+#: upstream/_guides/building-native-image.adoc:446
 #, fuzzy
 msgid "image:containerization-process.png[Containerization Process]"
 msgstr "image:containerization-process.png[alt=\"Containerization Process\"]"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:441
+#: upstream/_guides/building-native-image.adoc:450
 #, fuzzy
 msgid "When using a local GraalVM installation, the native executable targets your local operating system (Linux, macOS, Windows etc).  However, as a container may not use the same _executable_ format as the one produced by your operating system, we will instruct the Maven build to produce an executable by leveraging a container runtime (as described in <<#container-runtime,this section>>):"
 msgstr "使用本地GraalVM安装时，本地可执行文件的目标是您的本地操作系统（Linux、macOS、Windows等）。然而，由于容器可能不使用与操作系统相同的 _可执行文件_ 格式，我们将指示Maven构建通过利用容器运行时间（ link:#container-runtime[如本节] 所述）来生成可执行文件。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:445
+#: upstream/_guides/building-native-image.adoc:454
 #, fuzzy
 msgid "The produced executable will be a 64-bit Linux executable, so depending on your operating system it may no longer be runnable.  However, it's not an issue as we are going to copy it to a container.  The project generation has provided a `Dockerfile.native-micro` in the `src/main/docker` directory with the following content:"
 msgstr "产生的可执行文件将是一个64位的Linux可执行文件，所以取决于你的操作系统，它可能不再能够运行。然而，这不是一个问题，因为我们要把它复制到一个容器中。项目的生成在 `src/main/docker` 目录中提供了一个 `Dockerfile.native-micro` ，内容如下。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:454
+#: upstream/_guides/building-native-image.adoc:463
 #, no-wrap
 msgid ""
 "FROM quay.io/quarkus/quarkus-micro-image:1.0\n"
@@ -788,86 +800,86 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/building-native-image.adoc:457
+#: upstream/_guides/building-native-image.adoc:466
 #, fuzzy, no-wrap
 msgid "Quarkus Micro Image?"
 msgstr "夸克斯微影？"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:462
+#: upstream/_guides/building-native-image.adoc:471
 #, fuzzy
 msgid "The Quarkus Micro Image is a small container image providing the right set of dependencies to run your native application.  It is based on https://catalog.redhat.com/software/containers/ubi8-micro/601a84aadd19c7786c47c8ea?container-tabs=overview[UBI Micro].  This base image has been tailored to work perfectly in containers."
 msgstr "Quarkus Micro Image是一个小型的容器镜像，为运行你的本地应用程序提供了正确的依赖性集合。它是基于 link:https://catalog.redhat.com/software/containers/ubi8-micro/601a84aadd19c7786c47c8ea?container-tabs=overview[UBI Micro] 的。这个基础镜像已经被定制为在容器中完美运行。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:464
+#: upstream/_guides/building-native-image.adoc:473
 #, fuzzy
 msgid "You can read more about UBI images on:"
 msgstr "你可以在上阅读更多关于UBI图像的内容。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:466
+#: upstream/_guides/building-native-image.adoc:475
 #, fuzzy
 msgid "https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image[Introduction to Universal Base Image]"
 msgstr "link:https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image[通用基础图像介绍]"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:467
+#: upstream/_guides/building-native-image.adoc:476
 #, fuzzy
 msgid "https://catalog.redhat.com/software/container-stacks/detail/5ec53f50ef29fd35586d9a56[Red Hat Universal Base Image 8]"
 msgstr "link:https://catalog.redhat.com/software/container-stacks/detail/5ec53f50ef29fd35586d9a56[红帽通用基础镜像8]"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:469
+#: upstream/_guides/building-native-image.adoc:478
 #, fuzzy
 msgid "UBI images can be used without any limitations."
 msgstr "UBI图像可以不受任何限制地使用。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:471
+#: upstream/_guides/building-native-image.adoc:480
 #, fuzzy
 msgid "xref:quarkus-runtime-base-image.adoc[This page] explains how to extend the `quarkus-micro` image when your application has specific requirements."
 msgstr "link:quarkus-runtime-base-image.html[本页] 解释了当你的应用有特殊要求时，如何扩展 `quarkus-micro` 图像。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:474
+#: upstream/_guides/building-native-image.adoc:483
 #, fuzzy
 msgid "Then, if you didn't delete the generated native executable, you can build the docker image with:"
 msgstr "然后，如果你没有删除生成的本地可执行文件，你可以用以下方法构建docker镜像。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:478
+#: upstream/_guides/building-native-image.adoc:487
 #, no-wrap
 msgid "docker build -f src/main/docker/Dockerfile.native -t quarkus-quickstart/getting-started .\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:481
+#: upstream/_guides/building-native-image.adoc:490
 #, fuzzy
 msgid "And finally, run it with:"
 msgstr "最后，用以下方式运行。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:485
-#: upstream/_guides/building-native-image.adoc:599
+#: upstream/_guides/building-native-image.adoc:494
+#: upstream/_guides/building-native-image.adoc:608
 #, no-wrap
 msgid "docker run -i --rm -p 8080:8080 quarkus-quickstart/getting-started\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/building-native-image.adoc:487
+#: upstream/_guides/building-native-image.adoc:496
 #, fuzzy, no-wrap
 msgid "Manually using the minimal base image"
 msgstr "手动使用最小基础图像"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:490
+#: upstream/_guides/building-native-image.adoc:499
 #, fuzzy
 msgid "The project generation has also provided a `Dockerfile.native` in the `src/main/docker` directory with the following content:"
 msgstr "项目的生成也在 `src/main/docker` 目录中提供了一个 `Dockerfile.native` ，内容如下。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:499
+#: upstream/_guides/building-native-image.adoc:508
 #, no-wrap
 msgid ""
 "FROM registry.access.redhat.com/ubi8/ubi-minimal:8.5\n"
@@ -879,55 +891,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:503
+#: upstream/_guides/building-native-image.adoc:512
 #, fuzzy
 msgid "The UBI minimal image is bigger than the micro one mentioned above.  It contains more utilities such as the `microdnf` package manager."
 msgstr "UBI最小镜像比上面提到的微型镜像要大。它包含更多的实用程序，如 `microdnf` 软件包管理器。"
 
 #. type: Title ===
-#: upstream/_guides/building-native-image.adoc:505
+#: upstream/_guides/building-native-image.adoc:514
 #, fuzzy, no-wrap
 msgid "Using a multi-stage Docker build"
 msgstr "使用多阶段的Docker构建"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:509
+#: upstream/_guides/building-native-image.adoc:518
 #, fuzzy
 msgid "The previous section showed you how to build a native executable using Maven or Gradle, but it requires you to have created the native executable first.  In addition, this native executable must be a Linux 64 bits executable."
 msgstr "上一节向你展示了如何使用Maven或Gradle构建本地可执行文件，但这需要你先创建本地可执行文件。此外，这个本地可执行文件必须是Linux 64位可执行文件。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:512
+#: upstream/_guides/building-native-image.adoc:521
 #, fuzzy
 msgid "You may want to build the native executable directly in a container without having a final container containing the build tools.  That approach is possible with a multi-stage Docker build:"
 msgstr "你可能想直接在一个容器中构建本地可执行文件，而不需要一个包含构建工具的最终容器。这种方法可以通过多阶段的Docker构建来实现。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:514
+#: upstream/_guides/building-native-image.adoc:523
 #, fuzzy
 msgid "The first stage builds the native executable using Maven or Gradle"
 msgstr "第一阶段使用Maven或Gradle构建本地可执行文件"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:515
+#: upstream/_guides/building-native-image.adoc:524
 #, fuzzy
 msgid "The second stage is a minimal image copying the produced native executable"
 msgstr "第二阶段是复制产生的本地可执行文件的最小图像"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:517
+#: upstream/_guides/building-native-image.adoc:526
 #, fuzzy
 msgid "Such a multi-stage build can be achieved as follows:"
 msgstr "这样的多阶段建设可以通过以下方式实现。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:519
+#: upstream/_guides/building-native-image.adoc:528
 #, fuzzy
 msgid "Sample Dockerfile for building with Maven:"
 msgstr "用Maven构建的Docker文件样本。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:531
+#: upstream/_guides/building-native-image.adoc:540
 #, no-wrap
 msgid ""
 "## Stage 1 : build with maven builder image with native capabilities\n"
@@ -943,7 +955,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:536
+#: upstream/_guides/building-native-image.adoc:545
 #, no-wrap
 msgid ""
 "## Stage 2 : create the docker final image\n"
@@ -953,7 +965,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:542
+#: upstream/_guides/building-native-image.adoc:551
 #, no-wrap
 msgid ""
 "# set up permissions for user `1001`\n"
@@ -964,7 +976,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:545
+#: upstream/_guides/building-native-image.adoc:554
 #, no-wrap
 msgid ""
 "EXPOSE 8080\n"
@@ -972,32 +984,32 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:547
-#: upstream/_guides/building-native-image.adoc:630
+#: upstream/_guides/building-native-image.adoc:556
+#: upstream/_guides/building-native-image.adoc:639
 #, no-wrap
 msgid "CMD [\"./application\", \"-Dquarkus.http.host=0.0.0.0\"]\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:553
+#: upstream/_guides/building-native-image.adoc:562
 #, fuzzy
 msgid "This multi-stage Docker build copies the Maven wrapper from the host machine.  The Maven wrapper (or the Gradle wrapper) is a convenient way to provide a specific version of Maven/Gradle.  It avoids having to create a base image with Maven and Gradle.  To provision the Maven Wrapper in your project, use: `mvn -N org.apache.maven.plugins:maven-wrapper-plugin:3.1.0:wrapper`."
 msgstr "这种多阶段Docker构建从主机上复制Maven包装器。Maven包装器（或Gradle包装器）是提供特定版本Maven/Gradle的一种便捷方式。它避免了用Maven和Gradle创建一个基本镜像。要在项目中配置Maven包装器，请使用： `mvn -N org.apache.maven.plugins:maven-wrapper-plugin:3.1.0:wrapper` 。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:555
+#: upstream/_guides/building-native-image.adoc:564
 #, fuzzy
 msgid "Save this file in `src/main/docker/Dockerfile.multistage` as it is not included in the getting started quickstart."
 msgstr "将此文件保存在 `src/main/docker/Dockerfile.multistage` ，因为它不包括在入门快速入门中。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:557
+#: upstream/_guides/building-native-image.adoc:566
 #, fuzzy
 msgid "Sample Dockerfile for building with Gradle:"
 msgstr "用Gradle构建的Docker文件样本。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:572
+#: upstream/_guides/building-native-image.adoc:581
 #, no-wrap
 msgid ""
 "## Stage 1 : build with maven builder image with native capabilities\n"
@@ -1016,7 +1028,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:580
+#: upstream/_guides/building-native-image.adoc:589
 #, no-wrap
 msgid ""
 "## Stage 2 : create the docker final image\n"
@@ -1029,73 +1041,73 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:583
+#: upstream/_guides/building-native-image.adoc:592
 #, fuzzy
 msgid "If you are using Gradle in your project, you can use this sample Dockerfile.  Save it in `src/main/docker/Dockerfile.multistage`."
 msgstr "如果你在你的项目中使用Gradle，你可以使用这个样本Docker文件。将其保存在 `src/main/docker/Dockerfile.multistage` 。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:587
+#: upstream/_guides/building-native-image.adoc:596
 #, fuzzy
 msgid "Before launching our Docker build, we need to update the default `.dockerignore` file as it filters everything except the `target` directory. As we plan to build inside a container, we need to copy the `src` directory. Thus, edit your `.dockerignore` and update the content."
 msgstr "在启动我们的Docker构建之前，我们需要更新默认的 `.dockerignore` 文件，因为它过滤了除 `target` 目录之外的所有内容。由于我们计划在容器内构建，我们需要复制 `src` 目录。因此，编辑你的 `.dockerignore` ，并更新内容。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:592
+#: upstream/_guides/building-native-image.adoc:601
 #, no-wrap
 msgid "docker build -f src/main/docker/Dockerfile.multistage -t quarkus-quickstart/getting-started .\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:595
+#: upstream/_guides/building-native-image.adoc:604
 #, fuzzy
 msgid "And, finally, run it with:"
 msgstr "最后，用以下方式运行。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:604
+#: upstream/_guides/building-native-image.adoc:613
 #, fuzzy
 msgid "If you need SSL support in your native executable, you can easily include the necessary libraries in your Docker image."
 msgstr "如果你的本地可执行文件需要SSL支持，你可以轻松地在Docker镜像中包含必要的库。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:606
+#: upstream/_guides/building-native-image.adoc:615
 #, fuzzy
 msgid "Please see xref:native-and-ssl.adoc#working-with-containers[our Using SSL With Native Executables guide] for more information."
 msgstr "更多信息请参见 link:native-and-ssl.html#working-with-containers[我们的《在本地可执行文件中使用SSL》指南] 。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:610
+#: upstream/_guides/building-native-image.adoc:619
 #, fuzzy
 msgid "To use Mandrel instead of GraalVM CE, update the `FROM` clause to: `FROM quay.io/quarkus/ubi-quarkus-mandrel:$TAG AS build`.  `$TAG` can be found on the https://quay.io/repository/quarkus/ubi-quarkus-mandrel?tab=tags[Quarkus Mandrel Images Tags page]."
 msgstr "要使用Mandrel而不是GraalVM CE，请将 `FROM` 子句更新为: `FROM quay.io/quarkus/ubi-quarkus-mandrel:$TAG AS build` . `$TAG` 可以在 link:https://quay.io/repository/quarkus/ubi-quarkus-mandrel?tab=tags[Quarkus Mandrel图像标签页上] 找到。"
 
 #. type: Title ===
-#: upstream/_guides/building-native-image.adoc:611
+#: upstream/_guides/building-native-image.adoc:620
 #, fuzzy, no-wrap
 msgid "Using a Distroless base image"
 msgstr "使用无区块链基础镜像"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:614
+#: upstream/_guides/building-native-image.adoc:623
 #, fuzzy
 msgid "Distroless image support is experimental."
 msgstr "无分布式图像支持是试验性的。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:617
+#: upstream/_guides/building-native-image.adoc:626
 #, fuzzy
 msgid "If you are looking for small container images, the https://github.com/GoogleContainerTools/distroless[distroless] approach reduces the size of the base layer.  The idea behind _distroless_ is the usage of a single and minimal base image containing all the requirements, and sometimes even the application itself."
 msgstr "如果你正在寻找小型的容器镜像， link:https://github.com/GoogleContainerTools/distroless[无发行] 的方法可以减少基础层的大小。 _无发行版_ 背后的想法是使用一个单一和最小的基础镜像，包含所有的需求，有时甚至是应用程序本身。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:620
+#: upstream/_guides/building-native-image.adoc:629
 #, fuzzy
 msgid "Quarkus provides a distroless base image that you can use in your `Dockerfile`.  You only need to copy your application, and you are done:"
 msgstr "Quarkus提供了一个无发行版的基础镜像，你可以在你的 `Dockerfile` 。你只需要复制你的应用程序，就可以了。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:625
+#: upstream/_guides/building-native-image.adoc:634
 #, no-wrap
 msgid ""
 "FROM quay.io/quarkus/quarkus-distroless-image:1.0\n"
@@ -1103,7 +1115,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:628
+#: upstream/_guides/building-native-image.adoc:637
 #, no-wrap
 msgid ""
 "EXPOSE 8080\n"
@@ -1111,42 +1123,42 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:635
+#: upstream/_guides/building-native-image.adoc:644
 #, fuzzy
 msgid "Quarkus provides the `quay.io/quarkus/quarkus-distroless-image:1.0` image.  It contains the required packages to run a native executable and is only **9Mb**.  Just add your application on top of this image, and you will get a tiny container image."
 msgstr "Quarkus提供了 `quay.io/quarkus/quarkus-distroless-image:1.0` 镜像。它包含了运行本地可执行文件所需的软件包，并且只有 *9Mb* 。只要在这个镜像上添加你的应用程序，你就会得到一个很小的容器镜像。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:637
+#: upstream/_guides/building-native-image.adoc:646
 #, fuzzy
 msgid "Distroless images should not be used in production without rigorous testing."
 msgstr "在没有经过严格测试的情况下，不应该在生产中使用无分布式图像。"
 
 #. type: Title ===
-#: upstream/_guides/building-native-image.adoc:638
+#: upstream/_guides/building-native-image.adoc:647
 #, fuzzy, no-wrap
 msgid "Using a scratch base image"
 msgstr "使用无区块链基础镜像"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:641
+#: upstream/_guides/building-native-image.adoc:650
 #, fuzzy
 msgid "Scratch image support is experimental."
 msgstr "无分布式图像支持是试验性的。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:643
+#: upstream/_guides/building-native-image.adoc:652
 msgid "Building fully statically linked binaries enables the usage of a https://hub.docker.com/_/scratch[scratch image] containing solely the resulting native executable."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:645
+#: upstream/_guides/building-native-image.adoc:654
 #, fuzzy
 msgid "Sample multistage Dockerfile for building an image from `scratch`:"
 msgstr "用Gradle构建的Docker文件样本。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:669
+#: upstream/_guides/building-native-image.adoc:678
 #, no-wrap
 msgid ""
 "## Stage 1 : build with maven builder image with native capabilities\n"
@@ -1173,7 +1185,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:674
+#: upstream/_guides/building-native-image.adoc:683
 #, no-wrap
 msgid ""
 "## Stage 2 : create the docker final image\n"
@@ -1183,49 +1195,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:677
+#: upstream/_guides/building-native-image.adoc:686
 #, fuzzy
 msgid "Scratch images should not be used in production without rigorous testing."
 msgstr "在没有经过严格测试的情况下，不应该在生产中使用无分布式图像。"
 
 #. type: Title ===
-#: upstream/_guides/building-native-image.adoc:678
+#: upstream/_guides/building-native-image.adoc:687
 #, fuzzy, no-wrap
 msgid "Native executable compression"
 msgstr "本地可执行文件压缩"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:682
+#: upstream/_guides/building-native-image.adoc:691
 #, fuzzy
 msgid "Quarkus can compress the produced native executable using UPX.  More details on xref:./upx.adoc[UPX Compression documentation]."
 msgstr "Quarkus可以使用UPX压缩产生的本地可执行文件。更多细节见 link:./upx.html[UPX压缩文档] 。"
 
 #. type: Title ===
-#: upstream/_guides/building-native-image.adoc:683
+#: upstream/_guides/building-native-image.adoc:692
 #, fuzzy, no-wrap
 msgid "Separating Java and native image compilation"
 msgstr "分开Java和本地图像的编译"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:689
+#: upstream/_guides/building-native-image.adoc:698
 #, fuzzy
 msgid "In certain circumstances, you may want to build the native image in a separate step.  For example, in a CI/CD pipeline, you may want to have one step to generate the source that will be used for the native image generation and another step to use these sources to actually build the native executable.  For this use case, you can set the `quarkus.package.type=native-sources`.  This will execute the java compilation as if you had started native compilation (`-Pnative`), but stops before triggering the actual call to GraalVM's `native-image`."
 msgstr "在某些情况下，你可能想在一个单独的步骤中构建本地镜像。例如，在CI/CD管道中，你可能希望有一个步骤来生成用于本地镜像的源，另一个步骤是使用这些源来实际构建本地可执行文件。对于这种用例，你可以设置 `quarkus.package.type=native-sources` 。这将执行java编译，就像你已经开始本地编译一样（ `-Pnative` ），但在触发对GraalVM的 `native-image` 的实际调用之前停止。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:693
+#: upstream/_guides/building-native-image.adoc:702
 #, no-wrap
 msgid "$ ./mvnw clean package -Dquarkus.package.type=native-sources\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:696
+#: upstream/_guides/building-native-image.adoc:705
 #, fuzzy
 msgid "After compilation has finished, you find the build artifact in `target/native-sources`:"
 msgstr "编译完成后，你可以在 `target/native-sources` 。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:702
+#: upstream/_guides/building-native-image.adoc:711
 #, no-wrap
 msgid ""
 "$ cd target/native-sources\n"
@@ -1234,13 +1246,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:707
+#: upstream/_guides/building-native-image.adoc:716
 #, fuzzy
 msgid "From the output above one can see that, in addition to the produced jar file and the associated lib directory, a text file named `native-image.args` was created.  This file holds all parameters (including the name of the JAR to compile) to pass along to GraalVM's `native-image` command.  If you have GraalVM installed, you can start the native compilation by executing:"
 msgstr "从上面的输出可以看出，除了生成的jar文件和相关的lib目录外，还创建了一个名为 `native-image.args` 的文本文件。这个文件包含了所有的参数（包括要编译的JAR的名字），以传递给GraalVM的 `native-image` 命令。如果你已经安装了GraalVM，你可以通过执行以下命令开始本地编译。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:718
+#: upstream/_guides/building-native-image.adoc:727
 #, no-wrap
 msgid ""
 "$ cd target/native-source\n"
@@ -1254,19 +1266,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:721
+#: upstream/_guides/building-native-image.adoc:730
 #, fuzzy
 msgid "The process for Gradle is analogous."
 msgstr "Gradle的过程是类似的。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:723
+#: upstream/_guides/building-native-image.adoc:732
 #, fuzzy
 msgid "Running the build process in a container is also possible:"
 msgstr "在一个容器中运行构建过程也是可能的。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:735
+#: upstream/_guides/building-native-image.adoc:744
 #, no-wrap
 msgid ""
 "cd target/native-image\n"
@@ -1281,91 +1293,91 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:738
+#: upstream/_guides/building-native-image.adoc:747
 #, fuzzy
 msgid "Mount the host's directory `target/native-image` to the container's `/work`. Thus, the generated binary will also be written to this directory."
 msgstr "将主机的目录 `target/native-image` 挂载到容器的 `/work` 。因此，生成的二进制文件也将被写入这个目录。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:739
+#: upstream/_guides/building-native-image.adoc:748
 #, fuzzy
 msgid "Switch the working directory to `/work`, which we have mounted in <1>."
 msgstr "将工作目录切换到 `/work` ，我们已经在<1>中挂载了这个目录。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:740
+#: upstream/_guides/building-native-image.adoc:749
 #, fuzzy
 msgid "Use the `quay.io/quarkus/ubi-quarkus-native-image:{graalvm-flavor}` docker image introduced in <<#multistage-docker,Using a multi-stage Docker build>> to build the native image."
 msgstr "使用《 link:#multistage-docker[使用多阶段Docker构建] 》中介绍的 `quay.io/quarkus/ubi-quarkus-native-image:{graalvm-flavor}` docker镜像来构建本地镜像。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:741
+#: upstream/_guides/building-native-image.adoc:750
 #, fuzzy
 msgid "Call `native-image` with the content of file `native-image.args` as arguments. We also supply an additional argument to limit the process's maximum memory to 4 Gigabytes (this may vary depending on the project being built and the machine building it)."
 msgstr "以文件 `native-image.args` 的内容为参数调用 `native-image` 。我们还提供了一个额外的参数，将进程的最大内存限制在4千兆字节（这可能取决于正在构建的项目和构建它的机器）。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:746
+#: upstream/_guides/building-native-image.adoc:755
 #, fuzzy
 msgid "If you are running on a Windows machine, please keep in mind that the binary was created within a Linux docker container.  Hence, the binary will not be executable on the host Windows machine."
 msgstr "如果你是在Windows机器上运行，请记住，二进制文件是在Linux docker容器中创建的。因此，二进制文件在Windows主机上是无法执行的。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:749
+#: upstream/_guides/building-native-image.adoc:758
 #, fuzzy
 msgid "A high level overview of what the various steps of a CI/CD pipeline would look is the following:"
 msgstr "以下是对CI/CD管道的各个步骤的高度概述。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:751
+#: upstream/_guides/building-native-image.adoc:760
 #, fuzzy
 msgid "Register the output of the step executing `./mvnw ...` command (i.e. directory `target/native-image`) as a build artifact,"
 msgstr "将执行 `./mvnw …​` 命令的步骤的输出（即目录 `target/native-image` ）注册为构建工件。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:752
+#: upstream/_guides/building-native-image.adoc:761
 #, fuzzy
 msgid "Require this artifact in the step executing the `native-image ...` command, and"
 msgstr "在执行 `native-image …​` 命令的步骤中需要这个工件，并且"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:753
+#: upstream/_guides/building-native-image.adoc:762
 #, fuzzy
 msgid "Register the output of the step executing the `native-image ...` command (i.e. files matching `target/*runner`) as build artifact."
 msgstr "将执行 `native-image …​` 命令的步骤的输出（即匹配 `target/*runner` 的文件）注册为构建工件。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:755
+#: upstream/_guides/building-native-image.adoc:764
 #, fuzzy
 msgid "The environment executing step `1` only needs Java and Maven (or Gradle) installed, while the environment executing step `3` only needs a GraalVM installation (including the `native-image` feature)."
 msgstr "执行步骤 `1` 的环境只需要安装Java和Maven（或Gradle），而执行步骤 `3` 的环境只需要安装GralVM（包括 `native-image` 功能）。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:757
+#: upstream/_guides/building-native-image.adoc:766
 #, fuzzy
 msgid "Depending on what the final desired output of the CI/CD pipeline is, the generated binary might then be used to create a container image."
 msgstr "根据CI/CD管道的最终期望输出，生成的二进制文件可能被用来创建一个容器镜像。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:764
+#: upstream/_guides/building-native-image.adoc:773
 #, fuzzy
 msgid "Starting with Oracle GraalVM 20.2 or Mandrel 20.1, debug symbols for native executables can be generated for Linux environments (Windows support is still under development, macOS is not supported).  These symbols can be used to debug native executables with tools such as `gdb`."
 msgstr "从Oracle GraalVM 20.2或Mandrel 20.1开始，可以为Linux环境生成本地可执行文件的调试符号（Windows支持仍在开发中，不支持macOS）。这些符号可用于用工具调试本地可执行文件，如 `gdb` 。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:768
+#: upstream/_guides/building-native-image.adoc:777
 #, fuzzy
 msgid "To generate debug symbols, add `-Dquarkus.native.debug.enabled=true` flag when generating the native executable.  You will find the debug symbols for the native executable in a `.debug` file next to the native executable."
 msgstr "要生成调试符号，在生成本地可执行文件时添加 `-Dquarkus.native.debug.enabled=true` 标志。你将在本地可执行文件旁边的 `.debug` 文件中找到本地可执行文件的调试符号。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:773
+#: upstream/_guides/building-native-image.adoc:782
 #, fuzzy
 msgid "The generation of the `.debug` file depends on `objcopy`.  On common Linux distributions you will need to install the `binutils` package:"
 msgstr " `.debug` 文件的生成取决于 `objcopy` 。在常见的Linux发行版上，你将需要安装 `binutils` 包。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:780
+#: upstream/_guides/building-native-image.adoc:789
 #, no-wrap
 msgid ""
 "# dnf (rpm-based)\n"
@@ -1375,108 +1387,108 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:783
+#: upstream/_guides/building-native-image.adoc:792
 #, fuzzy
 msgid "When `objcopy` is not available debug symbols are embedded in the executable."
 msgstr "当 `objcopy` ，调试符号被嵌入到可执行文件中。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:791
+#: upstream/_guides/building-native-image.adoc:800
 #, fuzzy
 msgid "Aside from debug symbols, setting `-Dquarkus.native.debug.enabled=true` flag generates a cache of source files for any JDK runtime classes, GraalVM classes and application classes resolved during native executable generation.  This source cache is useful for native debugging tools, to establish the link between the symbols and matching source code.  It provides a convenient way of making just the necessary sources available to the debugger/IDE when debugging a native executable."
 msgstr "除了调试符号外，设置 `-Dquarkus.native.debug.enabled=true` 标志会生成一个源文件缓存，用于生成本地可执行文件时解决的任何JDK运行时类、GraalVM类和应用程序类。这个源码缓存对本地调试工具很有用，可以在符号和匹配的源代码之间建立联系。在调试本地可执行文件时，它提供了一种方便的方法，使调试器/IDE仅能获得必要的源文件。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:797
+#: upstream/_guides/building-native-image.adoc:806
 #, fuzzy
 msgid "Sources for third party jar dependencies, including Quarkus source code, are not added to the source cache by default.  To include those, make sure you invoke `mvn dependency:sources` first.  This step is required in order to pull the sources for these dependencies, and get them included in the source cache."
 msgstr "第三方jar依赖的源，包括Quarkus源代码，默认情况下不会被添加到源缓存中。要包括这些，请确保你先调用 `mvn dependency:sources` 。这一步是必须的，以便拉出这些依赖的源代码，并将其包含在源代码缓存中。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:799
+#: upstream/_guides/building-native-image.adoc:808
 #, fuzzy
 msgid "The source cache is located in the `target/sources` folder."
 msgstr "源缓存位于 `target/sources` 文件夹中。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:803
+#: upstream/_guides/building-native-image.adoc:812
 #, fuzzy
 msgid "If running `gdb` from a different directory than `target`, then the sources can be loaded by running:"
 msgstr "如果从与 `target` 不同的目录下运行 `gdb` ，那么可以通过运行源代码加载。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:807
+#: upstream/_guides/building-native-image.adoc:816
 #, no-wrap
 msgid "directory path/to/target\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:810
+#: upstream/_guides/building-native-image.adoc:819
 #, fuzzy
 msgid "in the `gdb` prompt."
 msgstr "在 `gdb` 提示中。"
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:812
+#: upstream/_guides/building-native-image.adoc:821
 #, fuzzy
 msgid "Or start `gdb` with:"
 msgstr "或开始 `gdb` 与。"
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:816
+#: upstream/_guides/building-native-image.adoc:825
 #, no-wrap
 msgid "gdb -ex 'directory path/to/target' path/to/target/{project.name}-{project.version}-runner\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/building-native-image.adoc:819
+#: upstream/_guides/building-native-image.adoc:828
 #, fuzzy
 msgid "e.g.,"
 msgstr "如："
 
 #. type: delimited block -
-#: upstream/_guides/building-native-image.adoc:822
+#: upstream/_guides/building-native-image.adoc:831
 #, no-wrap
 msgid "gdb -ex 'directory ./target' ./target/getting-started-1.0.0-SNAPSHOT-runner\n"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:826
+#: upstream/_guides/building-native-image.adoc:835
 #, fuzzy
 msgid "For a more detailed guide about debugging native images please refer to the xref:native-reference.adoc[Native Reference Guide]."
 msgstr "关于调试本地图像的更详细指南，请参考 link:native-reference.html[本地参考指南] 。"
 
 #. type: Title ==
-#: upstream/_guides/building-native-image.adoc:828
+#: upstream/_guides/building-native-image.adoc:837
 #, fuzzy, no-wrap
 msgid "Configuring the Native Executable"
 msgstr "配置本地可执行文件"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:832
+#: upstream/_guides/building-native-image.adoc:841
 #, fuzzy
 msgid "There are a lot of different configuration options that can affect how the native executable is generated.  These are provided in `application.properties` the same as any other config property."
 msgstr "有很多不同的配置选项可以影响本地可执行文件的生成方式。这些都是在 `application.properties` ，与其他配置属性相同。"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:834
+#: upstream/_guides/building-native-image.adoc:843
 #, fuzzy
 msgid "The properties are shown below:"
 msgstr "这些属性显示如下。"
 
 #. type: Title ==
-#: upstream/_guides/building-native-image.adoc:837
+#: upstream/_guides/building-native-image.adoc:846
 #, fuzzy, no-wrap
 msgid "What's next?"
 msgstr "下一步是什么？"
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:842
+#: upstream/_guides/building-native-image.adoc:851
 msgid "This guide covered the creation of a native (binary) executable for your application.  It provides an application exhibiting a swift startup time and consuming less memory.  However, there is much more."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/building-native-image.adoc:843
+#: upstream/_guides/building-native-image.adoc:852
 msgid "We recommend continuing the journey with the xref:deploying-to-kubernetes.adoc[deployment to Kubernetes and OpenShift]."
 msgstr ""
 
