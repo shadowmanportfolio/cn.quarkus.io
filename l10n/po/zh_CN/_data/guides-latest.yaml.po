@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-08-31 15:21+0000\n"
+"POT-Creation-Date: 2022-09-28 16:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2129,6 +2129,24 @@ msgstr "/guides/security-openid-connect-dev-services"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
+#, no-wrap
+msgid "Inject a preconfigured Keycloak Admin Client."
+msgstr ""
+
+#. type: Hash Value: categories guides title
+#: upstream/_data/guides-latest.yaml:0
+#, fuzzy, no-wrap
+msgid "Keycloak Admin Client"
+msgstr "Redis客户端"
+
+#. type: Hash Value: categories guides url
+#: upstream/_data/guides-latest.yaml:0
+#, fuzzy, no-wrap
+msgid "/guides/security-keycloak-admin-client"
+msgstr "/guides/security-keycloak-authorization"
+
+#. type: Hash Value: categories guides description
+#: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
 msgid "This guide explains how your application can utilize SmallRye JWT to verify JWT tokens and provide secured access to the JAX-RS endpoints."
 msgstr "本指南解释了您的应用程序如何利用SmallRye JWT来验证JWT令牌并为JAX-RS端点提供安全访问。"
@@ -2318,6 +2336,30 @@ msgstr "使用WebAuthn的安全性"
 #, fuzzy, no-wrap
 msgid "/guides/security-webauthn"
 msgstr "/guides/security-webauthn"
+
+#. type: Hash Value: categories guides description
+#: upstream/_data/guides-latest.yaml:0
+#, fuzzy, no-wrap
+msgid "This guide demonstrates how to add a RESTEasy Reactive filter to help prevent CSRF attacks."
+msgstr "本指南演示了如何使用反应式路由。"
+
+#. type: Hash Value: categories guides keywords
+#: upstream/_data/guides-latest.yaml:0
+#, fuzzy, no-wrap
+msgid "security,csrf"
+msgstr "安全"
+
+#. type: Hash Value: categories guides title
+#: upstream/_data/guides-latest.yaml:0
+#, no-wrap
+msgid "Cross Site Request Forgery (CSRF) prevention"
+msgstr ""
+
+#. type: Hash Value: categories guides url
+#: upstream/_data/guides-latest.yaml:0
+#, fuzzy, no-wrap
+msgid "/guides/security-csrf-prevention"
+msgstr "/guides/security-testing"
 
 #. type: Hash Value: categories cat-id
 #: upstream/_data/guides-latest.yaml:0
@@ -4154,6 +4196,24 @@ msgstr ""
 #, no-wrap
 msgid "/guides/quarkus-reactive-architecture"
 msgstr ""
+
+#. type: Hash Value: categories guides description
+#: upstream/_data/guides-latest.yaml:0
+#, no-wrap
+msgid "Learn how to benefit from Java 19 virtual threads when writing REST services in Quarkus."
+msgstr ""
+
+#. type: Hash Value: categories guides title
+#: upstream/_data/guides-latest.yaml:0
+#, no-wrap
+msgid "Virtual Threads support"
+msgstr ""
+
+#. type: Hash Value: categories guides url
+#: upstream/_data/guides-latest.yaml:0
+#, fuzzy, no-wrap
+msgid "/guides/virtual-threads"
+msgstr "/guides/kafka-streams"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
