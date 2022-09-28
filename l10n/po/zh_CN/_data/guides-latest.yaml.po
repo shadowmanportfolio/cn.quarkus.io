@@ -2129,9 +2129,9 @@ msgstr "/guides/security-openid-connect-dev-services"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Inject a preconfigured Keycloak Admin Client."
-msgstr ""
+msgstr "注入一个预先配置好的Keycloak管理客户端。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
@@ -2351,9 +2351,9 @@ msgstr "安全"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Cross Site Request Forgery (CSRF) prevention"
-msgstr ""
+msgstr "防止跨网站请求伪造（CSRF）。"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
@@ -2579,9 +2579,9 @@ msgstr "了解如何使用SmallRye Stork进行服务发现和负载平衡。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Service discovery and load balancing with Stork"
-msgstr ""
+msgstr "使用Stork的服务发现和负载平衡"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
@@ -2645,9 +2645,9 @@ msgstr "/guides/container-image"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Use Podman instead of Docker for running containers."
-msgstr ""
+msgstr "使用Podman而不是Docker来运行容器。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
@@ -4103,9 +4103,9 @@ msgstr "了解更多关于Quarkus在IDE中的整合。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Extension metadata"
-msgstr ""
+msgstr "扩展元数据"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
@@ -4151,63 +4151,63 @@ msgstr "/guides/writing-extensions"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Provide users with initial code for extensions when generating Quarkus applications on code.quarkus.io and all the Quarkus tooling. This guide explains how to create and configure a Codestart for an extension."
-msgstr ""
+msgstr "在code.quarkus.io和所有Quarkus工具上生成Quarkus应用程序时为用户提供扩展的初始代码。本指南解释了如何为一个扩展创建和配置Codestart。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Writing a Codestart for an extension"
-msgstr ""
+msgstr "为一个扩展写一个Codestart"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "/guides/extension-codestart"
-msgstr ""
+msgstr "/guides/extension-codestart"
 
 #. type: Hash Value: categories cat-id
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "architecture"
-msgstr ""
+msgstr "建筑"
 
 #. type: Hash Value: categories category
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Architecture"
-msgstr ""
+msgstr "建筑学"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Learn more about Quarkus reactive architecture."
-msgstr ""
+msgstr "了解更多关于Quarkus反应式架构的信息。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Quarkus Reactive Architecture"
-msgstr ""
+msgstr "Quarkus反应式架构"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "/guides/quarkus-reactive-architecture"
-msgstr ""
+msgstr "/guides/quarkus-reactive-architecture"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Learn how to benefit from Java 19 virtual threads when writing REST services in Quarkus."
-msgstr ""
+msgstr "了解在Quarkus中编写REST服务时如何从Java 19虚拟线程中获益。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Virtual Threads support"
-msgstr ""
+msgstr "支持虚拟线程"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
@@ -4217,39 +4217,39 @@ msgstr "/guides/kafka-streams"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Learn more about Quarkus class loading infrastructure."
-msgstr ""
+msgstr "了解更多关于Quarkus类加载基础设施。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Class Loading Reference"
-msgstr ""
+msgstr "类加载参考"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "/guides/class-loading-reference"
-msgstr ""
+msgstr "/guides/class-loading-reference"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Learn more about what we call a Platform in the Quarkus world."
-msgstr ""
+msgstr "了解更多关于我们在Quarkus世界中称之为平台的内容。"
 
 #. type: Hash Value: categories guides title
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Understanding the Platform concept"
-msgstr ""
+msgstr "了解平台概念"
 
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "/guides/platform"
-msgstr ""
+msgstr "/guides/platform"
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
