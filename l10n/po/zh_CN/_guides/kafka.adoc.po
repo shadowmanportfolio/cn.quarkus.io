@@ -1748,23 +1748,27 @@ msgstr "撤消"
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:939
+#, fuzzy
 msgid "`MutinyEmitter#send(Message msg)` method is deprecated in favor of following methods receiving `Message` for emitting:"
-msgstr ""
+msgstr " `MutinyEmitter#send(Message msg)` 方法已被弃用，转而采用以下方法接收 ，以便发射。 `Message` "
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:941
+#, fuzzy
 msgid "`<M extends Message<? extends T>> Uni<Void> sendMessage(M msg)`"
-msgstr ""
+msgstr " `<M extends Message<? extends T>> Uni<Void> sendMessage(M msg)` "
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:942
+#, fuzzy
 msgid "`<M extends Message<? extends T>> void sendMessageAndAwait(M msg)`"
-msgstr ""
+msgstr " `<M extends Message<? extends T>> void sendMessageAndAwait(M msg)` "
 
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:943
+#, fuzzy
 msgid "`<M extends Message<? extends T>> Cancellable sendMessageAndForget(M msg)`"
-msgstr ""
+msgstr " `<M extends Message<? extends T>> Cancellable sendMessageAndForget(M msg)` "
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:947
@@ -3859,14 +3863,15 @@ msgstr "关于这个话题的更多细节，请看 link:quarkus-reactive-archite
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:2011
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Channel Decorators"
-msgstr ""
+msgstr "渠道装修公司"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2014
+#, fuzzy
 msgid "SmallRye Reactive Messaging supports decorating incoming and outgoing channels for implementing cross-cutting concerns such as monitoring, tracing or message interception. For more information on implementing decorators and message interceptors see the http://smallrye.io/smallrye-reactive-messaging/3.19.1/concepts/decorators/[SmallRye Reactive Messaging documentation]."
-msgstr ""
+msgstr "SmallRye Reactive Messaging支持装饰传入和传出通道，以实现监控、追踪或消息拦截等跨领域关注。关于实现装饰器和消息拦截器的更多信息，请参见 link:http://smallrye.io/smallrye-reactive-messaging/3.19.1/concepts/decorators/[SmallRye Reactive Messaging文档] 。"
 
 #. type: Title ==
 #: upstream/_guides/kafka.adoc:2016
@@ -4484,8 +4489,9 @@ msgstr "换回一个 `Uni<Void>` 。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2369
+#, fuzzy
 msgid "Close the session - this is close the connection with the database. The connection can then be recycled."
-msgstr ""
+msgstr "关闭会话 - 这是关闭与数据库的连接。然后，该连接可以被回收。"
 
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:2373
