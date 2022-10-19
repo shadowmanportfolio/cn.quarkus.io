@@ -24,94 +24,105 @@ msgstr "如何创建Quarkus文档"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:5
+#, fuzzy
 msgid "Quarkus documentation uses asciidoc syntax."
-msgstr ""
+msgstr "Quarkus文档使用asciidoc语法。"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:7
+#, fuzzy
 msgid "A gradual refactoring effort is underway to reshape Quarkus documentation to make it easier to both read and write (see xref:doc-concepts.adoc[Quarkus documentation concepts] for more on this transition)."
-msgstr ""
+msgstr "一个逐步重构的努力正在进行中，以重塑Quarkus文档，使其更容易阅读和编写（关于这一转变的更多信息，请参阅 link:doc-concepts.html[Quarkus文档概念] ）。"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:9
+#, fuzzy
 msgid "For more information on contributing to Quarkus docs, see:"
-msgstr ""
+msgstr "关于为Quarkus文档做贡献的更多信息，请参见。"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:11
+#, fuzzy
 msgid "xref:doc-contribute-docs-howto.adoc[How to contribute documentation]"
-msgstr ""
+msgstr "link:doc-contribute-docs-howto.html[如何贡献文件]"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:12
+#, fuzzy
 msgid "xref:doc-concepts.adoc[Quarkus documentation concepts]"
-msgstr ""
+msgstr "link:doc-concepts.html[Quarkus文档概念]"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:13
+#, fuzzy
 msgid "xref:doc-reference.adoc[Quarkus documentation reference]"
-msgstr ""
+msgstr "link:doc-reference.html[Quarkus文件参考]"
 
 #. type: Title ==
 #: upstream/_guides/README.adoc:14
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Glossary"
-msgstr ""
+msgstr "词汇表"
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:18
+#, fuzzy
 msgid "This is a collection of preferred term in the documentation and website.  Please stay within these terms for consistency."
-msgstr ""
+msgstr "这是在文件和网站中首选术语的集合。为了保持一致性，请保持在这些术语范围内。"
 
 #. type: Labeled list
 #: upstream/_guides/README.adoc:19
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "* Live coding"
-msgstr ""
+msgstr " 现场编码 "
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:20
+#, fuzzy
 msgid "for our `quarkus:dev` capability"
-msgstr ""
+msgstr "为我们的 `quarkus:dev` 能力"
 
 #. type: Labeled list
 #: upstream/_guides/README.adoc:20
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "* GraalVM native image"
-msgstr ""
+msgstr " GraalVM原生图像 "
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:21
+#, fuzzy
 msgid "preferred term for the VM creating native executable. No space."
-msgstr ""
+msgstr "虚拟机创建本地可执行文件的首选术语。没有空间。"
 
 #. type: Labeled list
 #: upstream/_guides/README.adoc:21
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "* Substrate VM"
-msgstr ""
+msgstr " 基质VM "
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:22
+#, fuzzy
 msgid "non-preferred. Exclude."
-msgstr ""
+msgstr "非优先考虑的。不包括。"
 
 #. type: Labeled list
 #: upstream/_guides/README.adoc:22
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "* Native Executable"
-msgstr ""
+msgstr " 本地可执行文件 "
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:23
+#, fuzzy
 msgid "the executable that is compiled to native 1s and 0s"
-msgstr ""
+msgstr "被编译为本地1和0的可执行文件"
 
 #. type: Labeled list
 #: upstream/_guides/README.adoc:23
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "* Docker image"
-msgstr ""
+msgstr " Docker图像 "
 
 #. type: Plain text
 #: upstream/_guides/README.adoc:24
