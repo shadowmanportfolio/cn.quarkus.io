@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-28 16:31+0000\n"
+"POT-Creation-Date: 2022-10-24 14:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1704,8 +1704,8 @@ msgstr "使用HTTP与反应式消息传递"
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
-msgid "/guides/reactive-messaging-http"
-msgstr "/guides/reactive-messaging-http"
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-reactive-messaging-http/dev/reactive-messaging-http.html"
+msgstr " https://quarkiverse.github.io/quarkiverse-docs/quarkus-vault/dev/vault-auth.html "
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
@@ -1722,8 +1722,8 @@ msgstr "使用WebSockets与反应式消息传递"
 #. type: Hash Value: categories guides url
 #: upstream/_data/guides-latest.yaml:0
 #, fuzzy, no-wrap
-msgid "/guides/reactive-messaging-websocket"
-msgstr "/guides/reactive-messaging-websocket"
+msgid "https://quarkiverse.github.io/quarkiverse-docs/quarkus-reactive-messaging-http/dev/reactive-messaging-websocket.html"
+msgstr " https://quarkiverse.github.io/quarkiverse-docs/quarkus-vault/dev/vault-transit.html "
 
 #. type: Hash Value: categories guides description
 #: upstream/_data/guides-latest.yaml:0
@@ -4286,6 +4286,14 @@ msgstr ""
 #, no-wrap
 msgid "/guides/dev-mode-differences"
 msgstr ""
+
+#, fuzzy
+#~ msgid "/guides/reactive-messaging-http"
+#~ msgstr "/guides/reactive-messaging-http"
+
+#, fuzzy
+#~ msgid "/guides/reactive-messaging-websocket"
+#~ msgstr "/guides/reactive-messaging-websocket"
 
 #, fuzzy
 #~ msgid "Stork"
