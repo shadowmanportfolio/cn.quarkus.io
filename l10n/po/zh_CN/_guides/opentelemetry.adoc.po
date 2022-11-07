@@ -272,13 +272,15 @@ msgstr "可选的gRPC头文件，通常用于认证"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:123
+#, fuzzy
 msgid "Add tracing information into log message."
-msgstr ""
+msgstr "在日志信息中添加追踪信息。"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:124
+#, fuzzy
 msgid "You can also only put the trace info into the access log. In this case you must omit the info in the console log format."
-msgstr ""
+msgstr "你也可以只把跟踪信息放到访问日志中。在这种情况下，你必须省略控制台日志格式中的信息。"
 
 #. type: Title ==
 #: upstream/_guides/opentelemetry.adoc:125
@@ -294,8 +296,9 @@ msgstr "第一步是配置和启动 link:https://opentelemetry.io/docs/collector
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:134
+#, fuzzy
 msgid "Jaeger supports the OTel protocols out of the box since version 1.35.  In this case you do not need to install the collector but can directly send the trace data to Jaeger (after enabling OTLP receivers there, see e.g. this https://medium.com/jaegertracing/introducing-native-support-for-opentelemetry-in-jaeger-eb661be8183c[blog entry])."
-msgstr ""
+msgstr "Jaeger从1.35版本开始就支持OTel协议。在这种情况下，你不需要安装收集器，而是可以直接将跟踪数据发送到Jaeger（在那里启用OTLP接收器之后，例如，见这篇 link:https://medium.com/jaegertracing/introducing-native-support-for-opentelemetry-in-jaeger-eb661be8183c[博客文章] ）。"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:137
@@ -420,8 +423,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:214
+#, fuzzy
 msgid "When the first request has been submitted, you will be able to see the tracing information in the logs:"
-msgstr ""
+msgstr "当第一个请求被提交后，你将能在日志中看到追踪信息。"
 
 #. type: delimited block -
 #: upstream/_guides/opentelemetry.adoc:220
@@ -731,13 +735,15 @@ msgstr "在任何CDI感知的Bean中用 `io.opentelemetry.extension.annotations.
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:400
+#, fuzzy
 msgid "Method parameters can be annotated with the `io.opentelemetry.extension.annotations.SpanAttribute` annotation to indicate which method parameters should be part of the Trace."
-msgstr ""
+msgstr "方法参数可以用 `io.opentelemetry.extension.annotations.SpanAttribute` 注释来表明哪些方法参数应该是跟踪的一部分。"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:402
+#, fuzzy
 msgid "Example:"
-msgstr ""
+msgstr "例子。"
 
 #. type: delimited block -
 #: upstream/_guides/opentelemetry.adoc:408
@@ -791,14 +797,15 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_guides/opentelemetry.adoc:428
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "SmallRye Reactive Messaging - Kafka"
-msgstr ""
+msgstr "SmallRye反应式消息传递 - Kafka"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:432
+#, fuzzy
 msgid "When using the SmallRye Reactive Messaging extension for Kafka, we are able to propagate the span into the Kafka Record with:"
-msgstr ""
+msgstr "当使用SmallRye Reactive Messaging Extension for Kafka时，我们能够将跨度传播到Kafka Record中，并使用。"
 
 #. type: delimited block -
 #: upstream/_guides/opentelemetry.adoc:437
