@@ -638,33 +638,39 @@ msgstr "交易 - `withTransaction` "
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:281
+#, fuzzy
 msgid "json - `.json()` (requires the https://redis.com/modules/redis-json/[redis-json] module on the server side)"
-msgstr ""
+msgstr "json - `.json()` （需要服务器端的 link:https://redis.com/modules/redis-json/[redis-json] 模块）。"
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:282
+#, fuzzy
 msgid "bloom - `.bloom()` (requires the https://redis.com/modules/redis-bloom/[redis-bloom] module on the server side)"
-msgstr ""
+msgstr "bloom - `.bloom()` （需要服务器端的 link:https://redis.com/modules/redis-bloom/[redis-bloom] 模块）。"
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:283
+#, fuzzy
 msgid "cuckoo - `.cuckoo()` (requires the https://redis.com/modules/redis-bloom/[redis-bloom] module on the server side, which also provides the cuckoo filter commands)"
-msgstr ""
+msgstr "cuckoo - `.cuckoo()` (需要服务器端的 link:https://redis.com/modules/redis-bloom/[redis-bloom] 模块，它也提供了cuckoo过滤命令)"
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:284
+#, fuzzy
 msgid "count-min - `.countmin()` (requires the https://redis.com/modules/redis-bloom/[redis-bloom] module on the server side, which also provides the count-min filter commands)"
-msgstr ""
+msgstr "count-min - `.countmin()` （需要服务器端的 link:https://redis.com/modules/redis-bloom/[redis-bloom] 模块，该模块也提供count-min过滤命令）。"
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:285
+#, fuzzy
 msgid "top-k - `.topk()` (requires the https://redis.com/modules/redis-bloom/[redis-bloom] module on the server side, which also provides the top-k filter commands)"
-msgstr ""
+msgstr "top-k - `.topk()` （需要服务器端的 link:https://redis.com/modules/redis-bloom/[redis-bloom] 模块，它也提供top-k过滤命令）。"
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:287
+#, fuzzy
 msgid "graph - `.graph()` (requires the https://redis.com/modules/redis-graph/[redis-graph] module on the server side, which also provides the graph commands)  These commands are marked as experimental, as we would need feedback before making them stable."
-msgstr ""
+msgstr "graph - `.graph()` （需要服务器端的 link:https://redis.com/modules/redis-graph/[redis-graph] 模块，该模块也提供graph命令）这些命令被标记为实验性的，因为我们在使其稳定之前需要反馈。"
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:290
@@ -1379,13 +1385,15 @@ msgstr "如果在执行预交易区块或交易区块之前或期间，有一个
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:629
+#, fuzzy
 msgid "The pre-transaction and transactional blocks are invoked on the same Redis connection.  Consequently, the pre-transaction block must use the passed data source to execute commands.  Thus, the commands are emitted from that connection.  These commands must not modify the watched keys."
-msgstr ""
+msgstr "预交易块和交易块是在同一个Redis连接上调用的。因此，预交易块必须使用传递的数据源来执行命令。因此，这些命令是从该连接中发出的。这些命令不得修改被监视的键。"
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:631
+#, fuzzy
 msgid "The transaction is aborted if the pre-transaction block throws an exception (or produces a failure when using the reactive API)."
-msgstr ""
+msgstr "如果预交易块抛出一个异常（或者在使用反应式API时产生一个失败），交易就会被中止。"
 
 #. type: Title ====
 #: upstream/_guides/redis-reference.adoc:632
@@ -1473,8 +1481,9 @@ msgstr " `RedisHostsProvider` ，以编程方式提供redis主机。这允许对
 
 #. type: delimited block =
 #: upstream/_guides/redis-reference.adoc:675
+#, fuzzy
 msgid "This is useful as it removes the need to store sensitive data in application.properties."
-msgstr ""
+msgstr "这很有用，因为它消除了在application.properties中存储敏感数据的需要。"
 
 #. type: delimited block -
 #: upstream/_guides/redis-reference.adoc:689
@@ -1494,8 +1503,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:692
+#, fuzzy
 msgid "The host provider can be used to configure the redis client like shown below"
-msgstr ""
+msgstr "主机提供者可以用来配置redis客户端，如下图所示"
 
 #. type: delimited block -
 #: upstream/_guides/redis-reference.adoc:696

@@ -781,8 +781,9 @@ msgstr " `requestContext.authorizer.principalId` "
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda-http.adoc:392
+#, fuzzy
 msgid "If the `cognito:groups` claim is present, then Quarkus will extract and map those groups to Quarkus roles which can then be used in authorization with annotations like `@RolesAllowed`.  If you do not want to map `cognito:groups` to Quarkus roles, then you must explicitly disable it in configuration:"
-msgstr ""
+msgstr "如果 `cognito:groups` ，那么Quarkus将提取并将这些组映射到Quarkus角色，然后可以在授权中使用注释，如 `@RolesAllowed` 。如果你不希望将 `cognito:groups` 映射到Quarkus角色，那么你必须在配置中明确地禁用它。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda-http.adoc:395
@@ -792,8 +793,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda-http.adoc:398
+#, fuzzy
 msgid "You can also specify a different Cognito claim to extract roles from:"
-msgstr ""
+msgstr "你也可以指定一个不同的Cognito claim来提取角色。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda-http.adoc:401
@@ -803,8 +805,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda-http.adoc:405
+#, fuzzy
 msgid "By default, it expects roles in a space delimited list enclosed in brackets i.e. `[ user admin ]`.  You can specify the regular expression to use to find individual roles in the claim string too:"
-msgstr ""
+msgstr "默认情况下，它希望在一个以空格为界的列表中的角色被括在括号内，即： `[ user admin ]` 。你也可以指定正则表达式来寻找索赔字符串中的单个角色。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda-http.adoc:408
@@ -932,13 +935,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda-http.adoc:498
+#, fuzzy
 msgid "For REST, the important method to override is `LambdaIdentityProvider.authenticate(AwsProxyRequest event)`.  From this you will allocate a SecurityIdentity based on how you want to map security data from `AwsProxyRequest`."
-msgstr ""
+msgstr "对于REST，要覆盖的重要方法是 `LambdaIdentityProvider.authenticate(AwsProxyRequest event)` 。从这里你将根据你想要映射安全数据的方式分配一个SecurityIdentity， `AwsProxyRequest` 。"
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda-http.adoc:500
+#, fuzzy
 msgid "Your implemented provider must be a CDI bean.  Here's an example:"
-msgstr ""
+msgstr "你实现的提供者必须是一个CDI Bean。这里有一个例子。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda-http.adoc:504
@@ -992,8 +997,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/amazon-lambda-http.adoc:531
+#, fuzzy
 msgid "Here's the same example, but with the AWS Gateway REST API:"
-msgstr ""
+msgstr "下面是同样的例子，但使用AWS网关REST API。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda-http.adoc:541
