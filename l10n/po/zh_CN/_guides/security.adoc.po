@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-07 17:20+0000\n"
+"POT-Creation-Date: 2022-11-16 17:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -830,42 +830,53 @@ msgstr "当与RESTEasy Reactive和Jackson一起使用Security时，Quarkus可以
 
 #. type: Title ==
 #: upstream/_guides/security.adoc:321
+#, no-wrap
+msgid "Secure auto-generated resources by REST Data with Panache"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security.adoc:325
+msgid "If you're using the REST Data with Panache extension to auto-generate your resources, you can still use the Security annotations within the package `javax.annotation.security`.  For more information, see xref:rest-data-panache.adoc#securing-endpoints[Securing auto-generated resources]."
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/security.adoc:326
 #, fuzzy, no-wrap
 msgid "National Vulnerability Database"
 msgstr "国家易损性数据库"
 
 #. type: Plain text
-#: upstream/_guides/security.adoc:325
+#: upstream/_guides/security.adoc:330
 #, fuzzy
 msgid "Most of the Quarkus tags are registered in the US link:https://nvd.nist.gov[National Vulnerability Database] (NVD) in Common Platform Enumeration (CPE) name format.  To view the registered Quarkus CPE names, use link:https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=quarkus[this search query]."
 msgstr "大多数Quarkus标签已经在 link:https://nvd.nist.gov[国家漏洞数据库] （NVD）中使用通用平台枚举（CPE）名称格式注册。所有注册的Quarkus CPE名称都可以通过 link:https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=quarkus[这个搜索查询] 找到。如果给定的CPE名称条目所代表的Quarkus标签受到某些CVE的影响，那么你就可以通过提供的链接找到该CVE。"
 
 #. type: Plain text
-#: upstream/_guides/security.adoc:327
+#: upstream/_guides/security.adoc:332
 #, fuzzy
 msgid "If the NVE database flags a CVE against a Quarkus tag, a link that provides more details about the CVE is added to the given CPE name entry."
 msgstr "如果NVE数据库针对Quarkus标签标记了一个CVE，一个提供关于CVE的更多细节的链接就会被添加到给定的CPE名称条目中。"
 
 #. type: Plain text
-#: upstream/_guides/security.adoc:329
+#: upstream/_guides/security.adoc:334
 #, fuzzy
 msgid "The NVD CPE team updates the list regularly, but if you encounter a false positive, report the details by creating an issue in the link:https://github.com/quarkusio/quarkus/issues/2611[quarkusio] repository."
 msgstr "NVD CPE团队会定期更新列表，但如果你遇到假阳性，请在 link:https://github.com/quarkusio/quarkus/issues/2611[quarkusio] 仓库创建一个问题来报告细节。"
 
 #. type: Plain text
-#: upstream/_guides/security.adoc:331
+#: upstream/_guides/security.adoc:336
 #, fuzzy
 msgid "You can detect the vulnerabilities at the application build time with an NVD feed by using the Maven link:https://jeremylong.github.io/DependencyCheck/dependency-check-maven/[OWASP Dependency check plugin]."
 msgstr "你可以通过使用Maven link:https://jeremylong.github.io/DependencyCheck/dependency-check-maven/[OWASP依赖性检查插件] ，在应用构建时用NVD馈送检测漏洞。"
 
 #. type: Plain text
-#: upstream/_guides/security.adoc:334
+#: upstream/_guides/security.adoc:339
 #, fuzzy
 msgid "To add the OWASP Dependency check plugin to your Quarkus Maven project, add the following XML configuration to the `pom.xml` file:"
 msgstr "要在Quarkus Maven项目中添加OWASP依赖性检查插件，请在 `pom.xml` 文件中添加以下XML配置。"
 
 #. type: delimited block -
-#: upstream/_guides/security.adoc:342
+#: upstream/_guides/security.adoc:347
 #, no-wrap
 msgid ""
 "<plugin>\n"
@@ -876,19 +887,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/security.adoc:347
+#: upstream/_guides/security.adoc:352
 #, fuzzy
 msgid "Set the `owasp-dependency-check-plugin.version` value to `7.1.1` or later."
 msgstr "其中 `owasp-dependency-check-plugin.version` 应该设置为 `7.1.1` 或更高。"
 
 #. type: Plain text
-#: upstream/_guides/security.adoc:350
+#: upstream/_guides/security.adoc:355
 #, fuzzy
 msgid "Next, configure the plugin as follows:"
 msgstr "你可以像这样配置该插件。"
 
 #. type: delimited block -
-#: upstream/_guides/security.adoc:366
+#: upstream/_guides/security.adoc:371
 #, no-wrap
 msgid ""
 "<plugin>\n"
@@ -907,7 +918,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security.adoc:369
+#: upstream/_guides/security.adoc:374
 #, no-wrap
 msgid ""
 "To detect less severe issues, adjust the value of `failBuildOnCVSS` to suppress the false positives, as demonstrated in the following code sample:\n"
@@ -915,7 +926,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security.adoc:431
+#: upstream/_guides/security.adoc:436
 #, fuzzy, no-wrap
 msgid ""
 "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
@@ -982,7 +993,7 @@ msgid ""
 msgstr "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <suppressions xmlns=\"https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.2.xsd\"> <! -- 这是maven依赖性检查插件的CPE压制文件。每个被错误发现的CPE（假阳性）都需要使用其GAV对特定的jar进行抑制。 https://jeremylong.github.io/DependencyCheck/general/suppression.html -? <suppress> <notes> <! [CDATA[ 将netty-tcnative-classes的假阳性CPE抑制为netty ]> </notes> <gav regex=\"true\">^io\\.netty:netty-tcnative-classes. *:.* $</gav> <cpe>cpe:/a:netty:netty</cpe> </suppress> <suppress> <notes> <![CDATA[ 抑制Quarkus Mutiny的假阳性CPE到mutiny:mutiny ]]> </notes> <gav regex=\"true\">^io\\.quarkus:quarkus-mutiny. *:.* $</gav> <cpe>cpe:/a:mutiny:mutiny</cpe> </suppress> <suppress> <notes> <![CDATA[ 将Smallrye Mutiny的假阳性CPE抑制为mutiny:mutiny ]]> </notes> <gav regex=\"true\">^io\\.smallrye.reactive:mutiny. *:.* $</gav> <cpe>cpe:/a:mutiny:mutiny</cpe> </suppress> <suppress> <notes> <![CDATA[ 将Smallrye Mutiny的假阳性CPE抑制为mutiny:mutiny ]]> </notes> <gav regex=\"true\">^io\\.smallrye.reactive:smallrye-mutiny. *:.* $</gav> <cpe>cpe:/a:mutiny:mutiny</cpe> </suppress> <suppress> <notes> <![CDATA[ 将Smallrye Mutiny的假阳性CPE抑制为mutiny:mutiny ]]> </notes> <gav regex=\"true\">^io\\.smallrye.reactive:vertx-mutiny. *:.* $</gav> <cpe>cpe:/a:mutiny:mutiny</cpe> </suppress> <suppress> <notes> <![CDATA[ 抑制graal-sdk的假阳性CPE到GraalVM（JVM分布）]]> </notes> <gav regex=\"true\">^org\\.graalvm\\.sdk:g like this </suppress> </suppressions>"
 
 #. type: delimited block -
-#: upstream/_guides/security.adoc:435
+#: upstream/_guides/security.adoc:440
 #, no-wrap
 msgid ""
 "Ensure that you review and update the suppression list regularly to ensure that the results are up to date.\n"
@@ -990,7 +1001,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security.adoc:438
+#: upstream/_guides/security.adoc:443
 #, no-wrap
 msgid ""
 "`<suppress until=\"2022-01-01Z\">...</suppress>`\n"
@@ -998,13 +1009,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security.adoc:439
+#: upstream/_guides/security.adoc:444
 #, no-wrap
 msgid "Quarkus Security testing"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security.adoc:442
+#: upstream/_guides/security.adoc:447
 msgid "When testing Quarkus security, ensure that your `IdentityProvider` is already set with usernames, passwords, and roles in `application.properties`.  For more information about testing Quarkus Security, see xref:security-testing.adoc#configuring-user-information[Configuring user information]."
 msgstr ""
 
