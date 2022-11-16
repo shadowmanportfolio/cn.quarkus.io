@@ -39,8 +39,9 @@ msgstr "在进行任何基于注解的授权检查之前，会先执行配置的
 
 #. type: Plain text
 #: upstream/_guides/security-authorization.adoc:23
+#, fuzzy
 msgid "Authorization is based on user roles that are provided by the security provider.  To customize these roles, a `SecurityIdentityAugmentor` can be created, see xref:security-customization.adoc#security-identity-customization[Security Identity Customization]."
-msgstr ""
+msgstr "授权是基于安全提供商提供的用户角色。要定制这些角色，可以创建一个 `SecurityIdentityAugmentor` ，见 link:security-customization.html#security-identity-customization[安全身份定制] 。"
 
 #. type: Title ==
 #: upstream/_guides/security-authorization.adoc:24
@@ -525,23 +526,27 @@ msgstr "这个 `/subject/secured` 端点需要一个经过认证的用户，该�
 
 #. type: Plain text
 #: upstream/_guides/security-authorization.adoc:269
+#, fuzzy
 msgid "The endpoint obtains the user principal from the JAX-RS `SecurityContext`. This will be non-null for a secured endpoint."
-msgstr ""
+msgstr "该端点从 JAX-RS `SecurityContext` 中获取用户本金。对于一个安全的端点，这将是非空的。"
 
 #. type: Plain text
 #: upstream/_guides/security-authorization.adoc:270
+#, fuzzy
 msgid "The `/subject/unsecured` endpoint allows for unauthenticated access by specifying the `@PermitAll` annotation."
-msgstr ""
+msgstr " `/subject/unsecured` 端点允许通过指定 `@PermitAll` 注释来实现未经认证的访问。"
 
 #. type: Plain text
 #: upstream/_guides/security-authorization.adoc:271
+#, fuzzy
 msgid "This call to obtain the user principal will return null if the caller is unauthenticated, non-null if the caller is authenticated."
-msgstr ""
+msgstr "如果调用者没有经过认证，这个获取用户本金的调用将返回null，如果调用者经过认证，则返回非null。"
 
 #. type: Plain text
 #: upstream/_guides/security-authorization.adoc:272
+#, fuzzy
 msgid "The `/subject/denied` endpoint disallows any access regardless of whether the call is authenticated by specifying the `@DenyAll` annotation."
-msgstr ""
+msgstr " `/subject/denied` 端点不允许任何访问，无论呼叫是否通过指定 `@DenyAll` 注释来验证。"
 
 #. type: Plain text
 #: upstream/_guides/security-authorization.adoc:274
