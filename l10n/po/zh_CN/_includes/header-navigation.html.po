@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-26 17:26+0000\n"
+"POT-Creation-Date: 2022-11-17 00:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgstr "<a href=\"{{site.baseurl}}/get-started\" class=\"{% if page.url contains
 #. type: Content of: <div><div><div><nav><div><ul><li><ul><li>
 #: upstream/_includes/header-navigation.html:29
 #, fuzzy
-msgid "<a href=\"{{site.baseurl}}/guides\" class=\"{% if page.url contains '/guides/' %}active{% endif %}\">GUIDES</a>"
+msgid "<a href=\"{{site.baseurl}}/guides\" class=\"{% if page.url contains '/guides/' %}active{% endif %}\">DOCUMENTATION</a>"
 msgstr "<a href=\"{{site.baseurl}}/guides\" class=\"{% if page.url contains '/guides/' %}active{% endif %}\" >GUIDES</a>。"
 
 #. type: Content of: <div><div><div><nav><div><ul><li><ul><li>
