@@ -50,8 +50,8 @@ l10n/po/zh_CN/_guides/building-substrate-howto.adoc.po, 15, 24, 119, 260 ,55%
 l10n/po/zh_CN/_guides/reactive-messaging-websocket.adoc.po, 40, 96, 510, 1095 ,54%
 l10n/po/zh_CN/_guides/security-webauthn.adoc.po, 97, 227, 1968, 4054 ,52%
 l10n/po/zh_CN/_guides/liquibase-mongodb.adoc.po, 19, 42, 239, 482 ,51%
-l10n/po/zh_CN/_guides/cli-tooling.adoc.po, 85, 141, 1045, 2094 ,51%
 l10n/po/zh_CN/_guides/vertx.adoc.po, 84, 130, 938, 1860 ,50%
+l10n/po/zh_CN/_guides/cli-tooling.adoc.po, 85, 141, 1053, 2102 ,50%
 l10n/po/zh_CN/_guides/optaplanner.adoc.po, 125, 241, 2124, 4101 ,49%
 l10n/po/zh_CN/_guides/liquibase.adoc.po, 33, 58, 397, 744 ,47%
 l10n/po/zh_CN/_guides/kogito-drl.adoc.po, 37, 92, 577, 1073 ,47%
@@ -72,7 +72,7 @@ l10n/po/zh_CN/_guides/config-yaml.adoc.po, 28, 48, 343, 589 ,42%
 l10n/po/zh_CN/_guides/redis.adoc.po, 77, 135, 834, 1392 ,41%
 l10n/po/zh_CN/_guides/rabbitmq.adoc.po, 67, 120, 964, 1623 ,41%
 l10n/po/zh_CN/_guides/flyway.adoc.po, 35, 57, 496, 831 ,41%
-l10n/po/zh_CN/_guides/stork.adoc.po, 66, 111, 921, 1528 ,40%
+l10n/po/zh_CN/_guides/stork.adoc.po, 66, 110, 921, 1528 ,40%
 l10n/po/zh_CN/_guides/scheduler.adoc.po, 34, 59, 375, 619 ,40%
 l10n/po/zh_CN/_guides/kubernetes-client.adoc.po, 37, 98, 798, 1322 ,40%
 l10n/po/zh_CN/_guides/elasticsearch.adoc.po, 73, 122, 1337, 2198 ,40%
@@ -129,7 +129,7 @@ l10n/po/zh_CN/_guides/spring-boot-properties.adoc.po, 47, 86, 604, 875 ,31%
 l10n/po/zh_CN/_guides/smallrye-fault-tolerance.adoc.po, 79, 125, 1567, 2271 ,31%
 l10n/po/zh_CN/_guides/security-properties.adoc.po, 32, 46, 469, 673 ,31%
 l10n/po/zh_CN/_guides/resteasy-reactive.adoc.po, 417, 647, 6178, 8893 ,31%
-l10n/po/zh_CN/_guides/kotlin.adoc.po, 84, 154, 1334, 1921 ,31%
+l10n/po/zh_CN/_guides/kotlin.adoc.po, 84, 153, 1334, 1918 ,31%
 l10n/po/zh_CN/_guides/jreleaser.adoc.po, 53, 89, 1869, 2688 ,31%
 l10n/po/zh_CN/_guides/funqy.adoc.po, 20, 40, 621, 891 ,31%
 l10n/po/zh_CN/_guides/context-propagation.adoc.po, 72, 87, 1019, 1466 ,31%
@@ -148,7 +148,7 @@ l10n/po/zh_CN/_guides/getting-started-testing.adoc.po, 196, 340, 4416, 6073 ,28%
 l10n/po/zh_CN/_guides/capabilities.adoc.po, 38, 57, 658, 909 ,28%
 l10n/po/zh_CN/_guides/spring-di.adoc.po, 64, 109, 879, 1200 ,27%
 l10n/po/zh_CN/_guides/rest-client.adoc.po, 100, 167, 1759, 2397 ,27%
-l10n/po/zh_CN/_guides/rest-client-reactive.adoc.po, 164, 277, 2955, 4042 ,27%
+l10n/po/zh_CN/_guides/rest-client-reactive.adoc.po, 164, 276, 2955, 4023 ,27%
 l10n/po/zh_CN/_guides/hibernate-reactive.adoc.po, 54, 78, 719, 972 ,27%
 l10n/po/zh_CN/_guides/funqy-gcp-functions.adoc.po, 64, 90, 1030, 1399 ,27%
 l10n/po/zh_CN/_guides/security-jwt.adoc.po, 272, 348, 4104, 5513 ,26%
@@ -203,7 +203,7 @@ l10n/po/zh_CN/_guides/scheduler-reference.adoc.po, 77, 109, 1460, 1794 ,19%
 l10n/po/zh_CN/_guides/extension-metadata.adoc.po, 50, 54, 917, 1125 ,19%
 l10n/po/zh_CN/_guides/amqp-dev-services.adoc.po, 14, 18, 249, 306 ,19%
 l10n/po/zh_CN/_guides/topic/community.adoc.po, 21, 28, 237, 289 ,18%
-l10n/po/zh_CN/_guides/rabbitmq-reference.adoc.po, 243, 294, 2375, 2895 ,18%
+l10n/po/zh_CN/_guides/rabbitmq-reference.adoc.po, 240, 291, 2372, 2892 ,18%
 l10n/po/zh_CN/_guides/podman.adoc.po, 32, 42, 594, 721 ,18%
 l10n/po/zh_CN/_guides/logging.adoc.po, 221, 265, 2290, 2765 ,18%
 l10n/po/zh_CN/_guides/conditional-extension-dependencies.adoc.po, 24, 41, 669, 811 ,18%
@@ -233,9 +233,9 @@ l10n/po/zh_CN/_guides/ide-tooling.adoc.po, 33, 49, 217, 252 ,14%
 l10n/po/zh_CN/_guides/getting-started-reactive.adoc.po, 70, 99, 1742, 2020 ,14%
 l10n/po/zh_CN/_guides/databases-dev-services.adoc.po, 42, 58, 635, 736 ,14%
 l10n/po/zh_CN/_guides/security-openid-connect-providers.adoc.po, 81, 149, 1219, 1391 ,13%
+l10n/po/zh_CN/_guides/http-reference.adoc.po, 176, 209, 2037, 2341 ,13%
 l10n/po/zh_CN/_guides/container-image.adoc.po, 61, 78, 1200, 1371 ,13%
 l10n/po/zh_CN/_guides/apicurio-registry-dev-services.adoc.po, 20, 24, 391, 448 ,13%
-l10n/po/zh_CN/_guides/http-reference.adoc.po, 175, 206, 2033, 2302 ,12%
 l10n/po/zh_CN/_guides/doc-concepts.adoc.po, 36, 39, 495, 557 ,12%
 l10n/po/zh_CN/_guides/doc-contribute-quarkus-docs-howto.adoc.po, 24, 27, 370, 415 ,11%
 l10n/po/zh_CN/_guides/config-reference.adoc.po, 152, 196, 2415, 2688 ,11%
