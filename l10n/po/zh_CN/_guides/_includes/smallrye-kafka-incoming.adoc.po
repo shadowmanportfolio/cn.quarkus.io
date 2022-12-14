@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-19 15:15+0000\n"
+"POT-Creation-Date: 2022-12-14 18:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,12 +79,12 @@ msgstr "用逗号分隔的主机：端口列表，用于建立与Kafka集群的�
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:54
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:58
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:62
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:66
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:70
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:81
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:85
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:89
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:93
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:97
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:74
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:78
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:82
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:90
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:101
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:105
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:109
@@ -104,6 +104,11 @@ msgstr "用逗号分隔的主机：端口列表，用于建立与Kafka集群的�
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:165
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:169
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:173
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:177
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:181
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:185
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:189
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:193
 #, fuzzy, no-wrap
 msgid "false"
 msgstr "假的"
@@ -148,11 +153,11 @@ msgstr "健康报告是否被启用（默认）或禁用"
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:20
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:24
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:44
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:48
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:91
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:155
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:159
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:167
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:64
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:111
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:175
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:179
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:187
 #, fuzzy, no-wrap
 msgid "`true`"
 msgstr " `true` "
@@ -219,10 +224,11 @@ msgstr "启动和准备就绪检查是否应该验证经纪商上是否存在主
 
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:36
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:60
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:87
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:103
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:171
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:76
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:84
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:107
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:123
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:191
 #, fuzzy, no-wrap
 msgid "`false`"
 msgstr " `false` "
@@ -266,11 +272,77 @@ msgstr "追踪是否启用（默认）或禁用"
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:44
 #, fuzzy, no-wrap
+msgid "[.no-hyphens]#*client-id-prefix*#"
+msgstr " *主题* "
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:46
+#, no-wrap
+msgid ""
+"Prefix for Kafka client `client.id` attribute. If defined configured or generated `client.id` will be prefixed with the given value, otherwise `kafka-consumer-` is the prefix.\n"
+"\n"
+"Type: _string_"
+msgstr ""
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:48
+#, fuzzy, no-wrap
+msgid "[.no-hyphens]#*checkpoint.state-store*#"
+msgstr " *承诺-战略* "
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:50
+#, fuzzy, no-wrap
+msgid ""
+"While using the `checkpoint` commit-strategy, the name set in `@Identifier` of a bean that implements `io.smallrye.reactive.messaging.kafka.StateStore.Factory` to specify the state store implementation.\n"
+"\n"
+"Type: _string_"
+msgstr "在 `@Identifier` 中设置的实现 `io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` 的bean的名称。如果设置了，这个再平衡监听器就会应用到消费者身上。"
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:52
+#, fuzzy, no-wrap
+msgid "[.no-hyphens]#*checkpoint.state-type*#"
+msgstr " *承诺-战略* "
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:54
+#, no-wrap
+msgid ""
+"While using the `checkpoint` commit-strategy, the fully qualified type name of the state object to persist in the state store. When provided, it can be used by the state store implementation to help persisting the processing state object.\n"
+"\n"
+"Type: _string_"
+msgstr ""
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:56
+#, fuzzy, no-wrap
+msgid "[.no-hyphens]#*checkpoint.unsynced-state-max-age.ms*#"
+msgstr " *throttled.unprocessed-record-max-age.ms* "
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:58
+#, fuzzy, no-wrap
+msgid ""
+"While using the `checkpoint` commit-strategy, specify the max age in milliseconds that the processing state must be persisted before the connector is marked as unhealthy. Setting this attribute to `0` disables this monitoring.\n"
+"\n"
+"Type: _int_"
+msgstr "在使用 `throttled` commit-strategy时，指定未处理的消息在连接器被标记为不健康之前的最大年龄（毫秒）。将此属性设置为0，可以禁止这种监控。"
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:60
+#, fuzzy, no-wrap
+msgid "`10000`"
+msgstr " `1000` "
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:60
+#, fuzzy, no-wrap
 msgid "[.no-hyphens]#*cloud-events*#"
 msgstr " *云-事件* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:46
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:62
 #, fuzzy, no-wrap
 msgid ""
 "Enables (default) or disables the Cloud Event support. If enabled on an _incoming_ channel, the connector analyzes the incoming records and try to create Cloud Event metadata. If enabled on an _outgoing_, the connector sends the outgoing messages as Cloud Event if the message includes Cloud Event Metadata.\n"
@@ -279,13 +351,13 @@ msgid ""
 msgstr "启用（默认）或停用云事件支持。如果在 _传入_ 通道上启用，连接器会分析传入记录并尝试创建云事件元数据。如果在 _传出_ 通道上启用，如果消息包括云事件元数据，连接器会将传出的消息作为云事件发送。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:48
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:64
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*kafka-configuration*#"
 msgstr " *kafka-configuration* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:50
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:66
 #, fuzzy, no-wrap
 msgid ""
 "Identifier of a CDI bean that provides the default Kafka consumer/producer configuration for this channel. The channel configuration can still override any attribute. The bean must have a type of Map<String, Object> and must use the @io.smallrye.common.annotation.Identifier qualifier to set the identifier.\n"
@@ -294,13 +366,13 @@ msgid ""
 msgstr "CDI bean的标识符，它为这个通道提供了默认的Kafka消费者/生产者配置。通道配置仍然可以覆盖任何属性。该bean必须有一个Map<String, Object>的类型，并且必须使用@io.smallrye.common.annotation.Identifier限定符来设置标识符。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:52
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:68
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*topics*#"
 msgstr " *主题* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:54
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:70
 #, fuzzy, no-wrap
 msgid ""
 "A comma-separating list of topics to be consumed. Cannot be used with the `topic` or `pattern` properties\n"
@@ -309,13 +381,13 @@ msgid ""
 msgstr "一个以逗号分隔的要消费的主题列表。不能与 `topic` 或 `pattern` 属性一起使用。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:56
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:72
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*pattern*#"
 msgstr " *模式* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:58
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:74
 #, fuzzy, no-wrap
 msgid ""
 "Indicate that the `topic` property is a regular expression. Must be used with the `topic` property. Cannot be used with the `topics` property\n"
@@ -324,13 +396,13 @@ msgid ""
 msgstr "表示 `topic` 属性是一个正则表达式。必须与 `topic` 属性一起使用。不能与 `topics` 属性一起使用"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:60
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:76
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*key.deserializer*#"
 msgstr " *键.反序列化器* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:62
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:78
 #, fuzzy, no-wrap
 msgid ""
 "The deserializer classname used to deserialize the record's key\n"
@@ -339,19 +411,34 @@ msgid ""
 msgstr "用于反序列化记录的反序列化器类名。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:64
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:80
 #, fuzzy, no-wrap
 msgid "`org.apache.kafka.common.serialization.StringDeserializer`"
 msgstr " `org.apache.kafka.common.serialization.StringDeserializer` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:64
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:80
+#, fuzzy, no-wrap
+msgid "[.no-hyphens]#*lazy-client*#"
+msgstr " *云-事件* "
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:82
+#, fuzzy, no-wrap
+msgid ""
+"Whether Kafka client is created lazily or eagerly.\n"
+"\n"
+"Type: _boolean_"
+msgstr "追踪是否启用（默认）或禁用"
+
+#. type: Table
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:84
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*value.deserializer*#"
 msgstr " *值.反序列化器* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:66
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:86
 #, fuzzy, no-wrap
 msgid ""
 "The deserializer classname used to deserialize the record's value\n"
@@ -360,19 +447,19 @@ msgid ""
 msgstr "用来反序列化记录值的反序列化器类名"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:66
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:86
 #, fuzzy, no-wrap
 msgid "true"
 msgstr "真"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:68
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:88
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*fetch.min.bytes*#"
 msgstr " *fetch.min.bytes* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:70
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:90
 #, fuzzy, no-wrap
 msgid ""
 "The minimum amount of data the server should return for a fetch request. The default setting of 1 byte means that fetch requests are answered as soon as a single byte of data is available or the fetch request times out waiting for data to arrive.\n"
@@ -381,20 +468,20 @@ msgid ""
 msgstr "服务器应该为一个获取请求返回的最小数据量。默认设置为1个字节，意味着一旦有一个字节的数据，就会响应获取请求，或者获取请求超时，等待数据的到来。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:72
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:135
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:92
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:155
 #, fuzzy, no-wrap
 msgid "`1`"
 msgstr " `1` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:72
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:92
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*group.id*#"
 msgstr " *group.id* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:81
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:101
 #, fuzzy, no-wrap
 msgid ""
 "A unique string that identifies the consumer group the application belongs to.\n"
@@ -410,13 +497,13 @@ msgid ""
 msgstr "一个唯一的字符串，用于识别应用程序所属的消费者组。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:83
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:103
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*enable.auto.commit*#"
 msgstr " *启用.自动.提交* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:85
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:105
 #, fuzzy, no-wrap
 msgid ""
 "If enabled, consumer's offset will be periodically committed in the background by the underlying Kafka client, ignoring the actual processing outcome of the records. It is recommended to NOT enable this setting and let Reactive Messaging handles the commit.\n"
@@ -425,13 +512,13 @@ msgid ""
 msgstr "如果启用，消费者的偏移量将由底层Kafka客户端在后台定期提交，忽略记录的实际处理结果。建议不要启用这个设置，让Reactive Messaging来处理提交。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:87
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:107
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*retry*#"
 msgstr " *重试* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:89
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:109
 #, fuzzy, no-wrap
 msgid ""
 "Whether the connection to the broker is re-attempted in case of failure\n"
@@ -440,13 +527,13 @@ msgid ""
 msgstr "在失败的情况下，是否重新尝试与经纪人的连接"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:91
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:111
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*retry-attempts*#"
 msgstr " *重试-尝试* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:93
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:113
 #, fuzzy, no-wrap
 msgid ""
 "The maximum number of reconnection before failing. -1 means infinite retry\n"
@@ -455,19 +542,19 @@ msgid ""
 msgstr "失败前的最大重连次数。-1表示无限次重试"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:95
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:115
 #, fuzzy, no-wrap
 msgid "`-1`"
 msgstr " `-1` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:95
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:115
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*retry-max-wait*#"
 msgstr " *retry-max-wait* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:97
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:117
 #, fuzzy, no-wrap
 msgid ""
 "The max delay (in seconds) between 2 reconnects\n"
@@ -476,19 +563,19 @@ msgid ""
 msgstr "两次重新连接之间的最大延迟（秒）。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:99
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:119
 #, fuzzy, no-wrap
 msgid "`30`"
 msgstr " `30` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:99
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:119
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*broadcast*#"
 msgstr " *广播* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:101
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:121
 #, fuzzy, no-wrap
 msgid ""
 "Whether the Kafka records should be dispatched to multiple consumer\n"
@@ -497,13 +584,13 @@ msgid ""
 msgstr "Kafka记录是否应该被派发给多个消费者"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:103
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:123
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*auto.offset.reset*#"
 msgstr " *自动.偏移.重置* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:105
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:125
 #, fuzzy, no-wrap
 msgid ""
 "What to do when there is no initial offset in Kafka.Accepted values are earliest, latest and none\n"
@@ -512,19 +599,19 @@ msgid ""
 msgstr "当Kafka中没有初始偏移量时，该怎么做？可接受的值是最早的、最新的和没有。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:107
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:127
 #, fuzzy, no-wrap
 msgid "`latest`"
 msgstr " `latest` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:107
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:127
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*failure-strategy*#"
 msgstr " *失败-战略* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:109
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:129
 #, fuzzy, no-wrap
 msgid ""
 "Specify the failure strategy to apply when a message produced from a record is acknowledged negatively (nack). Values can be `fail` (default), `ignore`, or `dead-letter-queue`\n"
@@ -533,19 +620,19 @@ msgid ""
 msgstr "指定当一条记录产生的消息被否定地确认（nack）时要应用的失败策略。值可以是 `fail` （默认）， `ignore` ，或 `dead-letter-queue` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:111
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:131
 #, fuzzy, no-wrap
 msgid "`fail`"
 msgstr " `fail` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:111
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:131
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*commit-strategy*#"
 msgstr " *承诺-战略* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:113
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:133
 #, fuzzy, no-wrap
 msgid ""
 "Specify the commit strategy to apply when a message produced from a record is acknowledged. Values can be `latest`, `ignore` or `throttled`. If `enable.auto.commit` is true then the default is `ignore` otherwise it is `throttled`\n"
@@ -554,13 +641,13 @@ msgid ""
 msgstr "指定记录产生的消息被确认时的提交策略。值可以是 `latest` , `ignore` 或 `throttled` 。如果 `enable.auto.commit` 为真，则默认为 `ignore` ，否则为 `throttled` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:115
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:135
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*throttled.unprocessed-record-max-age.ms*#"
 msgstr " *throttled.unprocessed-record-max-age.ms* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:117
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:137
 #, fuzzy, no-wrap
 msgid ""
 "While using the `throttled` commit-strategy, specify the max age in milliseconds that an unprocessed message can be before the connector is marked as unhealthy. Setting this attribute to 0 disables this monitoring.\n"
@@ -569,19 +656,19 @@ msgid ""
 msgstr "在使用 `throttled` commit-strategy时，指定未处理的消息在连接器被标记为不健康之前的最大年龄（毫秒）。将此属性设置为0，可以禁止这种监控。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:119
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:139
 #, fuzzy, no-wrap
 msgid "`60000`"
 msgstr " `60000` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:119
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:139
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*dead-letter-queue.topic*#"
 msgstr " *死信排队.主题* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:121
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:141
 #, fuzzy, no-wrap
 msgid ""
 "When the `failure-strategy` is set to `dead-letter-queue` indicates on which topic the record is sent. Defaults is `dead-letter-topic-$channel`\n"
@@ -590,13 +677,13 @@ msgid ""
 msgstr "当 `failure-strategy` 被设置为 `dead-letter-queue` ，表明记录是在哪个主题上发送的。默认值是 `dead-letter-topic-$channel` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:123
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:143
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*dead-letter-queue.key.serializer*#"
 msgstr " *dead-letter-queue.key.serializer* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:125
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:145
 #, fuzzy, no-wrap
 msgid ""
 "When the `failure-strategy` is set to `dead-letter-queue` indicates the key serializer to use. If not set the serializer associated to the key deserializer is used\n"
@@ -605,13 +692,13 @@ msgid ""
 msgstr "当 `failure-strategy` 被设置为 `dead-letter-queue` ，表示要使用的密钥序列化器。如果没有设置，则使用与密钥反序列化器相关的序列化器"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:127
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:147
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*dead-letter-queue.value.serializer*#"
 msgstr " *dead-letter-queue.value.serializer* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:129
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:149
 #, fuzzy, no-wrap
 msgid ""
 "When the `failure-strategy` is set to `dead-letter-queue` indicates the value serializer to use. If not set the serializer associated to the value deserializer is used\n"
@@ -620,13 +707,13 @@ msgid ""
 msgstr "当 `failure-strategy` 被设置为 `dead-letter-queue` ，表示要使用的值序列化器。如果没有设置，则使用与值反序列化器相关的序列化器"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:131
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:151
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*partitions*#"
 msgstr " *分区* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:133
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:153
 #, fuzzy, no-wrap
 msgid ""
 "The number of partitions to be consumed concurrently. The connector creates the specified amount of Kafka consumers. It should match the number of partition of the targeted topic\n"
@@ -635,13 +722,13 @@ msgid ""
 msgstr "要并发消费的分区的数量。连接器会创建指定数量的Kafka消费者。它应该与目标主题的分区数量相匹配"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:135
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:155
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*requests*#"
 msgstr " *要求* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:137
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:157
 #, fuzzy, no-wrap
 msgid ""
 "When `partitions` is greater than 1, this attribute allows configuring how many records are requested by each consumer every time.\n"
@@ -650,19 +737,19 @@ msgid ""
 msgstr "当 `partitions` 大于1时，这个属性允许配置每个消费者每次请求多少条记录。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:139
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:159
 #, fuzzy, no-wrap
 msgid "`128`"
 msgstr " `128` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:139
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:159
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*consumer-rebalance-listener.name*#"
 msgstr " *消费者-平衡-监听器.名称* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:141
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:161
 #, fuzzy, no-wrap
 msgid ""
 "The name set in `@Identifier` of a bean that implements `io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener`. If set, this rebalance listener is applied to the consumer.\n"
@@ -671,13 +758,13 @@ msgid ""
 msgstr "在 `@Identifier` 中设置的实现 `io.smallrye.reactive.messaging.kafka.KafkaConsumerRebalanceListener` 的bean的名称。如果设置了，这个再平衡监听器就会应用到消费者身上。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:143
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:163
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*key-deserialization-failure-handler*#"
 msgstr " *密钥反序列化失败处理程序* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:145
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:165
 #, fuzzy, no-wrap
 msgid ""
 "The name set in `@Identifier` of a bean that implements `io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler`. If set, deserialization failure happening when deserializing keys are delegated to this handler which may retry or provide a fallback value.\n"
@@ -686,13 +773,13 @@ msgid ""
 msgstr "在 `@Identifier` 中设置的实现 `io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler` 的bean的名称。如果设置了，在反序列化键时发生的反序列化失败将被委托给这个处理程序，它可以重试或提供一个回退值。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:147
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:167
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*value-deserialization-failure-handler*#"
 msgstr " *值-反序列化-失败-处理程序* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:149
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:169
 #, fuzzy, no-wrap
 msgid ""
 "The name set in `@Identifier` of a bean that implements `io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler`. If set, deserialization failure happening when deserializing values are delegated to this handler which may retry or provide a fallback value.\n"
@@ -701,13 +788,13 @@ msgid ""
 msgstr "在 `@Identifier` 中设置的实现 `io.smallrye.reactive.messaging.kafka.DeserializationFailureHandler` 的bean的名称。如果设置了，在反序列化值时发生的反序列化失败将被委托给这个处理程序，它可以重试或提供一个回退值。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:151
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:171
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*fail-on-deserialization-failure*#"
 msgstr " *去序列化时失败* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:153
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:173
 #, fuzzy, no-wrap
 msgid ""
 "When no deserialization failure handler is set and a deserialization failure happens, report the failure and mark the application as unhealthy. If set to `false` and a deserialization failure happens, a `null` value is forwarded.\n"
@@ -716,13 +803,13 @@ msgid ""
 msgstr "当没有设置反序列化失败处理程序而反序列化失败发生时，报告失败并将应用程序标记为不健康。如果设置为 `false` ，并且发生了反序列化失败，会转发一个 `null` 。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:155
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:175
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*graceful-shutdown*#"
 msgstr " *优雅的关闭* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:157
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:177
 #, fuzzy, no-wrap
 msgid ""
 "Whether a graceful shutdown should be attempted when the application terminates.\n"
@@ -731,13 +818,13 @@ msgid ""
 msgstr "当应用程序终止时，是否应该尝试优雅地关闭。"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:159
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:179
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*poll-timeout*#"
 msgstr " *轮询超时* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:161
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:181
 #, fuzzy, no-wrap
 msgid ""
 "The polling timeout in milliseconds. When polling records, the poll will wait at most that duration before returning records. Default is 1000ms\n"
@@ -746,19 +833,19 @@ msgid ""
 msgstr "以毫秒为单位的轮询超时。当轮询记录时，轮询将在返回记录前最多等待该时间。默认是1000ms"
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:163
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:183
 #, fuzzy, no-wrap
 msgid "`1000`"
 msgstr " `1000` "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:163
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:183
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*pause-if-no-requests*#"
 msgstr " *暂停-如果没有请求* "
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:165
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:185
 #, no-wrap
 msgid ""
 "Whether the polling must be paused when the application does not request items and resume when it does. This allows implementing back-pressure based on the application capacity. Note that polling is not stopped, but will not retrieve any records when paused.\n"
@@ -767,13 +854,13 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:167
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:187
 #, no-wrap
 msgid "[.no-hyphens]#*batch*#"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:169
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:189
 #, no-wrap
 msgid ""
 "Whether the Kafka records are consumed in batch. The channel injection point must consume a compatible type, such as `List<Payload>` or `KafkaRecordBatch<Payload>`.\n"
@@ -782,13 +869,13 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:171
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:191
 #, no-wrap
 msgid "[.no-hyphens]#*max-queue-size-factor*#"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:173
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:193
 #, no-wrap
 msgid ""
 "Multiplier factor to determine maximum number of records queued for processing, using `max.poll.records` * `max-queue-size-factor`. Defaults to 2. In `batch` mode `max.poll.records` is considered `1`.\n"
@@ -797,7 +884,7 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:175
+#: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:195
 #, no-wrap
 msgid "`2`"
 msgstr ""
