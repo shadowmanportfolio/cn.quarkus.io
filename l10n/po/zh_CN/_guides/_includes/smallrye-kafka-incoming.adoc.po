@@ -277,12 +277,12 @@ msgstr " *主题* "
 
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:46
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Prefix for Kafka client `client.id` attribute. If defined configured or generated `client.id` will be prefixed with the given value, otherwise `kafka-consumer-` is the prefix.\n"
 "\n"
 "Type: _string_"
-msgstr ""
+msgstr "Kafka客户端 `client.id` 属性的前缀。如果定义了配置或生成的 `client.id` ，将以给定的值为前缀，否则 `kafka-consumer-` 为前缀。"
 
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:48
@@ -307,12 +307,12 @@ msgstr " *承诺-战略* "
 
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:54
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "While using the `checkpoint` commit-strategy, the fully qualified type name of the state object to persist in the state store. When provided, it can be used by the state store implementation to help persisting the processing state object.\n"
 "\n"
 "Type: _string_"
-msgstr ""
+msgstr "当使用 `checkpoint` commit-strategy时，要在状态存储中持久化的状态对象的完全限定类型名称。当提供时，它可以被状态存储实现使用，以帮助持久化处理状态对象。"
 
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:56
@@ -846,27 +846,27 @@ msgstr " *暂停-如果没有请求* "
 
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:185
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Whether the polling must be paused when the application does not request items and resume when it does. This allows implementing back-pressure based on the application capacity. Note that polling is not stopped, but will not retrieve any records when paused.\n"
 "\n"
 "Type: _boolean_"
-msgstr ""
+msgstr "当应用程序不请求项目时，是否必须暂停轮询，当它请求时再恢复。这允许根据应用程序的容量实施反向压力。注意，轮询不会停止，但暂停时不会检索到任何记录。"
 
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:187
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[.no-hyphens]#*batch*#"
-msgstr ""
+msgstr " *批量* "
 
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:189
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Whether the Kafka records are consumed in batch. The channel injection point must consume a compatible type, such as `List<Payload>` or `KafkaRecordBatch<Payload>`.\n"
 "\n"
 "Type: _boolean_"
-msgstr ""
+msgstr "Kafka记录是否被批量消耗。通道注入点必须消耗一个兼容的类型，如 `List<Payload>` 或 `KafkaRecordBatch<Payload>` 。"
 
 #. type: Table
 #: upstream/_guides/_includes/smallrye-kafka-incoming.adoc:191

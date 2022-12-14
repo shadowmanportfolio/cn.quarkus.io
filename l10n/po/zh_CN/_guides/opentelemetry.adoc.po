@@ -795,39 +795,45 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_guides/opentelemetry.adoc:426
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Available OpenTelemetry CDI injections"
-msgstr ""
+msgstr "可用的OpenTelemetry CDI注射剂"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:430
+#, fuzzy
 msgid "As per MicroProfile Telemetry Tracing specification, Quarkus supports the CDI injections of the following classes:"
-msgstr ""
+msgstr "根据MicroProfile遥测跟踪规范，Quarkus支持以下类别的CDI注入。"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:432
+#, fuzzy
 msgid "`io.opentelemetry.api.OpenTelemetry`"
-msgstr ""
+msgstr " `io.opentelemetry.api.OpenTelemetry` "
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:433
+#, fuzzy
 msgid "`io.opentelemetry.api.trace.Tracer`"
-msgstr ""
+msgstr " `io.opentelemetry.api.trace.Tracer` "
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:434
+#, fuzzy
 msgid "`io.opentelemetry.api.trace.Span`"
-msgstr ""
+msgstr " `io.opentelemetry.api.trace.Span` "
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:435
+#, fuzzy
 msgid "`io.opentelemetry.api.baggage.Baggage`"
-msgstr ""
+msgstr " `io.opentelemetry.api.baggage.Baggage` "
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:437
+#, fuzzy
 msgid "You can inject these classes in any CDI enabled bean. For instance, the `Tracer` is particularly useful to start custom spans:"
-msgstr ""
+msgstr "你可以在任何支持CDI的bean中注入这些类。例如， `Tracer` ，对于启动自定义跨度特别有用。"
 
 #. type: delimited block -
 #: upstream/_guides/opentelemetry.adoc:442
@@ -891,24 +897,27 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:471
+#, fuzzy
 msgid "The above creates a `TracingMetadata` object we can add to the `Message` being produced, which retrieves the OpenTelemetry `Context` to extract the current span for propagation."
-msgstr ""
+msgstr "以上创建了一个 `TracingMetadata` 对象，我们可以将其添加到正在产生的 `Message` ，该对象检索OpenTelemetry `Context` ，提取当前跨度进行传播。"
 
 #. type: Title ==
 #: upstream/_guides/opentelemetry.adoc:472
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Exporters"
-msgstr ""
+msgstr "出口商"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:475
+#, fuzzy
 msgid "Quarkus OpenTelemetry defaults to the standard OTLP exporter defined in OpenTelemetry."
-msgstr ""
+msgstr "Quarkus OpenTelemetry默认为OpenTelemetry中定义的标准OTLP导出器。"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:477
+#, fuzzy
 msgid "Additional exporters will be available in the Quarkiverse https://github.com/quarkiverse/quarkus-opentelemetry-exporter/blob/main/README.md[quarkus-opentelemetry-exporter] project."
-msgstr ""
+msgstr "额外的出口商将在Quarkiverse link:https://github.com/quarkiverse/quarkus-opentelemetry-exporter/blob/main/README.md[quarkus-opentelemetry-exporter] 项目中提供。"
 
 #. type: Title ==
 #: upstream/_guides/opentelemetry.adoc:479

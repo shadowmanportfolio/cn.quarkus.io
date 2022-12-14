@@ -571,19 +571,21 @@ msgstr "节点名称标识符可以通过属性 `quarkus.transaction-manager.nod
 
 #. type: Title ==
 #: upstream/_guides/transaction.adoc:304
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Using `@TransactionScoped` to bind CDI beans to the transaction lifecycle"
-msgstr ""
+msgstr "使用 `@TransactionScoped` ，将CDI Bean与交易生命周期绑定起来"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:308
+#, fuzzy
 msgid "You can define beans that live for as long as a transaction, and through CDI lifecycle events perform actions when a transaction starts and ends."
-msgstr ""
+msgstr "你可以定义与事务一样长的Bean，并通过CDI生命周期事件在事务开始和结束时执行动作。"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:310
+#, fuzzy
 msgid "Just assign the transaction xref:cdi.adoc#bean-scope[scope] to such beans using the `@TransactionScoped` annotation:"
-msgstr ""
+msgstr "只需使用 `@TransactionScoped` 注解将事务 link:cdi.html#bean-scope[范围] 分配给这类Bean。"
 
 #. type: delimited block -
 #: upstream/_guides/transaction.adoc:315
@@ -625,8 +627,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:335
+#, fuzzy
 msgid "Alternatively, if you don't necessarily need to hold state during the transaction, and just want to react to transaction start/end events, you can simply declare event listeners in a differently scoped bean:"
-msgstr ""
+msgstr "另外，如果你不一定需要在事务过程中保持状态，而只是想对事务开始/结束事件做出反应，你可以简单地在一个不同范围的Bean中声明事件监听器。"
 
 #. type: delimited block -
 #: upstream/_guides/transaction.adoc:340
@@ -666,13 +669,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:356
+#, fuzzy
 msgid "The `event` object represents the transaction ID, and defines `toString()`/`equals()`/`hashCode()` accordingly."
-msgstr ""
+msgstr " `event` 对象代表交易 ID，并相应地定义了 `toString()` / `equals()` / `hashCode()` 。"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:359
+#, fuzzy
 msgid "In listener methods, you can access more information about the transaction in progress by accessing the `TransactionManager`, which is a CDI bean and can be ``@Inject``ed."
-msgstr ""
+msgstr "在监听器方法中，你可以通过访问 `TransactionManager` ，获取更多关于正在进行的交易的信息，它是一个CDI bean，可以 `@Inject` ed。"
 
 #. type: Title ==
 #: upstream/_guides/transaction.adoc:360
@@ -718,9 +723,9 @@ msgstr "错了。+ 首先，只要用 `@Transactional(NOT_SUPPORTED)` （或 `NE
 
 #. type: Labeled list
 #: upstream/_guides/transaction.adoc:388
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Why do you prefer JTA vs Hibernate's transaction management API"
-msgstr ""
+msgstr "为什么你更喜欢JTA与Hibernate的事务管理API？"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:392
