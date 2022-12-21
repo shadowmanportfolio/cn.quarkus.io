@@ -590,8 +590,9 @@ msgstr "如果你像我们上面建议的那样，在JVM和本地执行之间共
 
 #. type: delimited block =
 #: upstream/_guides/building-native-image.adoc:340
+#, fuzzy
 msgid "Using `@DisabledOnIntegrationTest` will also disable the test in all integration test instances, including testing the application in JVM mode, in a container image, and native image."
-msgstr ""
+msgstr "使用 `@DisabledOnIntegrationTest` ，也会在所有集成测试实例中禁用该测试，包括在JVM模式、容器镜像和本地镜像中测试应用程序。"
 
 #. type: Title ===
 #: upstream/_guides/building-native-image.adoc:342
@@ -1084,8 +1085,9 @@ msgstr "要使用Mandrel而不是GraalVM CE，请将 `FROM` 子句更新为: `FR
 
 #. type: delimited block =
 #: upstream/_guides/building-native-image.adoc:627
+#, fuzzy
 msgid "Starting with 22.3, Mandrel does not provide a `-java11` variant anymore. Use the `-java17` image instead."
-msgstr ""
+msgstr "从22.3开始，Mandrel不再提供一个 `-java11` 的变体。请使用 `-java17` 镜像代替。"
 
 #. type: Title ===
 #: upstream/_guides/building-native-image.adoc:629
@@ -1141,9 +1143,9 @@ msgstr "在没有经过严格测试的情况下，不应该在生产中使用无
 
 #. type: Title ===
 #: upstream/_guides/building-native-image.adoc:656
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Build a container image from scratch"
-msgstr ""
+msgstr "从头开始建立一个容器镜像"
 
 #. type: Plain text
 #: upstream/_guides/building-native-image.adoc:659
@@ -1153,8 +1155,9 @@ msgstr "无分布式图像支持是试验性的。"
 
 #. type: Plain text
 #: upstream/_guides/building-native-image.adoc:661
+#, fuzzy
 msgid "Building fully statically linked binaries enables the usage of a https://hub.docker.com/_/scratch[scratch image] containing solely the resulting native executable."
-msgstr ""
+msgstr "构建完全静态链接的二进制文件可以使用仅包含所产生的本地可执行文件的 link:https://hub.docker.com/_/scratch[从头图像] 。"
 
 #. type: Plain text
 #: upstream/_guides/building-native-image.adoc:663
@@ -1208,14 +1211,15 @@ msgstr "在没有经过严格测试的情况下，不应该在生产中使用无
 
 #. type: Plain text
 #: upstream/_guides/building-native-image.adoc:698
+#, fuzzy
 msgid "The versions of musl and zlib may need to be updated to meet the native-image executable requirements (and UPX if you use native image compression)."
-msgstr ""
+msgstr "musl和zlib的版本可能需要更新，以满足本地图像可执行文件的要求（如果你使用本地图像压缩，还需要更新UPX）。"
 
 #. type: Title ===
 #: upstream/_guides/building-native-image.adoc:699
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Compress native images"
-msgstr ""
+msgstr "压缩原始图像"
 
 #. type: Plain text
 #: upstream/_guides/building-native-image.adoc:703
@@ -1495,8 +1499,9 @@ msgstr "下一步是什么？"
 
 #. type: delimited block =
 #: upstream/_guides/building-native-image.adoc:863
+#, fuzzy
 msgid "This guide covered the creation of a native (binary) executable for your application.  It provides an application exhibiting a swift startup time and consuming less memory.  However, there is much more."
-msgstr ""
+msgstr "本指南包括为你的应用程序创建一个本地（二进制）可执行文件。它提供了一个快速启动时间和消耗较少内存的应用程序。然而，还有更多的内容。"
 
 #. type: delimited block =
 #: upstream/_guides/building-native-image.adoc:864
