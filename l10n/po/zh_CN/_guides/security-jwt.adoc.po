@@ -1512,18 +1512,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:820
+#, fuzzy
 msgid "Note that the tokens issued by Keycloak have an `iss` (issuer) claim set to the realm endpoint address."
-msgstr ""
+msgstr "请注意，Keycloak发行的令牌有一个 `iss` （发行者）声明，设置为境界端点地址。"
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:822
+#, fuzzy
 msgid "If your Quarkus application is running in a docker container then it may share a network interface with a Keycloak docker container launched by DevServices for Keycloak, with the Quarkus application and Keycloak communicating with each other via an internal shared docker network."
-msgstr ""
+msgstr "如果你的Quarkus应用程序在docker容器中运行，那么它可能与DevServices for Keycloak启动的Keycloak docker容器共享一个网络接口，Quarkus应用程序和Keycloak通过内部共享docker网络相互通信。"
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:824
+#, fuzzy
 msgid "In such cases, use the following configuration instead:"
-msgstr ""
+msgstr "在这种情况下，请使用以下配置代替。"
 
 #. type: delimited block -
 #: upstream/_guides/security-jwt.adoc:830
@@ -2485,9 +2488,9 @@ msgstr "Smallrye.jwt.token.decryption.ki"
 
 #. type: Table
 #: upstream/_guides/security-jwt.adoc:1048
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "This property has to be set to identify a private decryption key if `mp.jwt.decrypt.key.location` points to a `KeyStore` file."
-msgstr ""
+msgstr "如果 `mp.jwt.decrypt.key.location` 指向一个 `KeyStore` 文件，则必须设置该属性以识别私人解密密钥。"
 
 #. type: Table
 #: upstream/_guides/security-jwt.adoc:1048
@@ -2497,9 +2500,9 @@ msgstr "Smallrye.jwt.decrypt.key.location"
 
 #. type: Table
 #: upstream/_guides/security-jwt.adoc:1049
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "This property may be set if a private decryption key's password in `KeyStore` is different to `smallrye.jwt.keystore.password` when `mp.jwt.decrypt.key.location` points to a `KeyStore` file."
-msgstr ""
+msgstr "当 `mp.jwt.decrypt.key.location` 指向 `KeyStore` 文件时，如果私人解密密钥在 `KeyStore` 中的密码与 `smallrye.jwt.keystore.password` 不同，可以设置此属性。"
 
 #. type: Title ==
 #: upstream/_guides/security-jwt.adoc:1051
@@ -2551,8 +2554,9 @@ msgstr "link:https://tools.ietf.org/html/rfc7518[JSON网络算法]"
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:1061
+#, fuzzy
 msgid "xref:security-jwt-build.adoc[Sign and encrypt JWT tokens with SmallRye JWT Build]"
-msgstr ""
+msgstr "link:security-jwt-build.html[用SmallRye JWT Build签署和加密JWT令牌]"
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:1062
