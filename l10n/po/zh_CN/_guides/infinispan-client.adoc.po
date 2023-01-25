@@ -141,8 +141,9 @@ msgstr "连接到Infinispan集群"
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:65
+#, fuzzy
 msgid "If you are running an Infinispan Server add the following properties to connect:"
-msgstr ""
+msgstr "如果你正在运行Infinispan服务器，请添加以下属性进行连接。"
 
 #. type: delimited block -
 #: upstream/_guides/infinispan-client.adoc:69
@@ -190,8 +191,9 @@ msgstr "设置客户端的智能。如果使用Docker for Mac，请使用BASIC�
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:81
+#, fuzzy
 msgid "Alternatively, you can use uri connection by providing a single connection property"
-msgstr ""
+msgstr "或者，你也可以通过提供一个单一的连接属性来使用uri连接"
 
 #. type: delimited block -
 #: upstream/_guides/infinispan-client.adoc:85
@@ -203,8 +205,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:87
+#, fuzzy
 msgid "Sets Infinispan URI connection. The following properties will be ignored: hosts, username and password."
-msgstr ""
+msgstr "设置Infinispan URI连接。以下属性将被忽略：hosts、用户名和密码。"
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:88
@@ -214,8 +217,9 @@ msgstr "设置客户端的智能。如果使用Docker for Mac，请使用BASIC�
 
 #. type: delimited block =
 #: upstream/_guides/infinispan-client.adoc:92
+#, fuzzy
 msgid "Use Infinispan Dev Services to run a server and connect without configuration."
-msgstr ""
+msgstr "使用Infinispan Dev Services来运行一个服务器并在没有配置的情况下进行连接。"
 
 #. type: Block title
 #: upstream/_guides/infinispan-client.adoc:94
@@ -267,18 +271,21 @@ msgstr "Infinispan客户端"
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:112
+#, fuzzy
 msgid "If you are using the quarkus-smallrye-health extension, the Infinispan client extensions will automatically add a readiness health check to validate the connection."
-msgstr ""
+msgstr "如果你使用quarkus-smallrye-health扩展，Infinispan客户端扩展将自动添加一个准备就绪的健康检查来验证连接。"
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:114
+#, fuzzy
 msgid "When you access the `/q/health/ready` endpoint of your application you will have information about the server connection and available caches."
-msgstr ""
+msgstr "当你访问你的应用程序的 `/q/health/ready` 端点时，你会有关于服务器连接和可用缓存的信息。"
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:116
+#, fuzzy
 msgid "This behavior can be disabled via the property `quarkus.infinispan-client.health.enabled`."
-msgstr ""
+msgstr "这种行为可以通过属性 `quarkus.infinispan-client.health.enabled` 来禁用。"
 
 #. type: Title ===
 #: upstream/_guides/infinispan-client.adoc:118
@@ -1502,8 +1509,9 @@ msgstr " `io.quarkus.test.infinispan.client.InfinispanTestResource` 将在11222�
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:751
+#, fuzzy
 msgid "To use them, you need to add the `io.quarkus:quarkus-test-infinispan-client` dependency to your pom.xml."
-msgstr ""
+msgstr "要使用它们，你需要在你的pom.xml中添加 `io.quarkus:quarkus-test-infinispan-client` 依赖关系。"
 
 #. type: Plain text
 #: upstream/_guides/infinispan-client.adoc:753

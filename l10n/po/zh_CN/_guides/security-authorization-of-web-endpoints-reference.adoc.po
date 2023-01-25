@@ -520,28 +520,33 @@ msgstr "这个 `/subject/secured` 端点需要一个经过认证的用户，该�
 
 #. type: Plain text
 #: upstream/_guides/security-authorization-of-web-endpoints-reference.adoc:270
+#, fuzzy
 msgid "The endpoint obtains the user principal from the JAX-RS `SecurityContext`. This will be non-null for a secured endpoint."
-msgstr ""
+msgstr "该端点从 JAX-RS `SecurityContext` 中获取用户本金。对于一个安全的端点，这将是非空的。"
 
 #. type: Plain text
 #: upstream/_guides/security-authorization-of-web-endpoints-reference.adoc:271
+#, fuzzy
 msgid "The `/subject/unsecured` endpoint allows for unauthenticated access by specifying the `@PermitAll` annotation."
-msgstr ""
+msgstr " `/subject/unsecured` 端点允许通过指定 `@PermitAll` 注释来实现未经认证的访问。"
 
 #. type: Plain text
 #: upstream/_guides/security-authorization-of-web-endpoints-reference.adoc:272
+#, fuzzy
 msgid "This call to obtain the user principal will return null if the caller is unauthenticated, non-null if the caller is authenticated."
-msgstr ""
+msgstr "如果调用者没有经过认证，这个获取用户本金的调用将返回null，如果调用者经过认证，则返回非null。"
 
 #. type: Plain text
 #: upstream/_guides/security-authorization-of-web-endpoints-reference.adoc:273
+#, fuzzy
 msgid "The `/subject/denied` endpoint disallows any access regardless of whether the call is authenticated by specifying the `@DenyAll` annotation."
-msgstr ""
+msgstr " `/subject/denied` 端点不允许任何访问，无论呼叫是否通过指定 `@DenyAll` 注释来验证。"
 
 #. type: Plain text
 #: upstream/_guides/security-authorization-of-web-endpoints-reference.adoc:275
+#, fuzzy
 msgid "Please refer to the xref:security-built-in-authentication-support-concept.adoc#proactive-authentication[Proactive Authentication] section of the Built-In Authentication Support guide if you plan to use standard security annotations on IO thread."
-msgstr ""
+msgstr "如果你打算在IO线程上使用标准安全注释，请参考内置认证支持指南中的 link:security-built-in-authentication-support-concept.html#proactive-authentication[主动认证] 部分。"
 
 #. type: Plain text
 #: upstream/_guides/security-authorization-of-web-endpoints-reference.adoc:278

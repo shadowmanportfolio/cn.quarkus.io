@@ -50,8 +50,9 @@ msgstr "加密密钥可以使用 `quarkus.http.auth.session.encryption-key` 属�
 
 #. type: Plain text
 #: upstream/_guides/security-built-in-authentication-support-concept.adoc:34
+#, fuzzy
 msgid "Single Page Application (SPA) typically wants to avoid redirects, this can be done by removing default page paths:"
-msgstr ""
+msgstr "单页面应用程序（SPA）通常希望避免重定向，这可以通过删除默认页面路径来实现。"
 
 #. type: delimited block -
 #: upstream/_guides/security-built-in-authentication-support-concept.adoc:39
@@ -416,8 +417,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-built-in-authentication-support-concept.adoc:223
+#, fuzzy
 msgid "Some HTTP authentication mechanisms need to handle authentication exceptions themselves in order to create a correct authentication challenge.  For example, `io.quarkus.oidc.runtime.CodeAuthenticationMechanism` which manages OpenId Connect authorization code flow authentication, needs to build a correct redirect URL, cookies, etc.  For that reason, using custom exception mappers to customize authentication exceptions thrown by such mechanisms is not recommended.  In such cases, a safer way to customize authentication exceptions is to make sure the proactive authentication is not disabled and use Vert.x HTTP route failure handlers, as events come to the handler with the correct response status and headers.  To that end, the only thing that needs to be done is to customize the response like this:"
-msgstr ""
+msgstr "一些HTTP认证机制需要自己处理认证异常，以创建一个正确的认证挑战。例如，管理OpenId Connect授权代码流认证的 `io.quarkus.oidc.runtime.CodeAuthenticationMechanism` ，需要建立一个正确的重定向URL、cookies等。由于这个原因，不建议使用自定义异常映射器来定制此类机制抛出的认证异常。在这种情况下，定制认证异常的一个更安全的方法是确保主动认证没有被禁用，并使用Vert.x HTTP路由失败处理程序，因为事件会以正确的响应状态和头文件来到处理程序。为此，唯一需要做的就是像这样定制响应。"
 
 #. type: delimited block -
 #: upstream/_guides/security-built-in-authentication-support-concept.adoc:230
@@ -466,9 +468,9 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_guides/security-built-in-authentication-support-concept.adoc:254
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "References"
-msgstr ""
+msgstr "参考文献"
 
 #. type: Plain text
 #: upstream/_guides/security-built-in-authentication-support-concept.adoc:256

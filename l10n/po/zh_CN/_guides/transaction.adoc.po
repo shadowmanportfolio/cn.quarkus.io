@@ -413,8 +413,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:203
+#, fuzzy
 msgid "The above example shows a few different ways the API can be used."
-msgstr ""
+msgstr "上面的例子显示了可以使用API的几种不同方式。"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:209
@@ -436,9 +437,9 @@ msgstr "支持以下语义。"
 
 #. type: Labeled list
 #: upstream/_guides/transaction.adoc:219
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`QuarkusTransaction.disallowingExisting()`/`DISALLOW_EXISTING`"
-msgstr ""
+msgstr " `QuarkusTransaction.disallowingExisting()` / `DISALLOW_EXISTING` "
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:223
@@ -448,9 +449,9 @@ msgstr "如果一个事务已经与当前线程相关联，则会抛出一个 `Q
 
 #. type: Labeled list
 #: upstream/_guides/transaction.adoc:224
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`QuarkusTransaction.joiningExisting()`/`JOIN_EXISTING`"
-msgstr ""
+msgstr " `QuarkusTransaction.joiningExisting()` / `JOIN_EXISTING` "
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:233
@@ -460,9 +461,9 @@ msgstr "如果没有活动的事务，那么一个新的事务将被启动，并
 
 #. type: Labeled list
 #: upstream/_guides/transaction.adoc:234
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`QuarkusTransaction.requiringNew()`/`REQUIRE_NEW`"
-msgstr ""
+msgstr " `QuarkusTransaction.requiringNew()` / `REQUIRE_NEW` "
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:240
@@ -472,9 +473,9 @@ msgstr "这是默认的语义。如果一个现有的事务已经与当前线程
 
 #. type: Labeled list
 #: upstream/_guides/transaction.adoc:241
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`QuarkusTransaction.suspendingExisting()`/`SUSPEND_EXISTING`"
-msgstr ""
+msgstr " `QuarkusTransaction.suspendingExisting()` / `SUSPEND_EXISTING` "
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:248
@@ -737,14 +738,15 @@ msgstr "为什么你更喜欢JTA与Hibernate的事务管理API？"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:397
+#, fuzzy
 msgid "Managing the transactions manually via `entityManager.getTransaction().begin()` and friends lead to a butt ugly code with tons of try catch finally that people get wrong.  Transactions are also about JMS and other database access, so one API makes more sense."
-msgstr ""
+msgstr "通过 `entityManager.getTransaction().begin()` 和朋友们手动管理事务，会导致大量的try catch最后出错的丑陋代码。交易也是关于JMS和其他数据库访问的，所以一个API更有意义。"
 
 #. type: Labeled list
 #: upstream/_guides/transaction.adoc:398
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "It's a mess because I don't know if my JPA persistence unit is using `JTA` or `Resource-level` Transaction"
-msgstr ""
+msgstr "这是一个混乱，因为我不知道我的JPA持久化单元是使用 `JTA` 还是 `Resource-level` Transaction"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:403
