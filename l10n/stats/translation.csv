@@ -24,7 +24,6 @@ l10n/po/zh_CN/_guides/funqy-azure-functions-http.adoc.po, 0, 4, 0, 134 ,100%
 l10n/po/zh_CN/_guides/faq.adoc.po, 0, 10, 0, 77 ,100%
 l10n/po/zh_CN/_guides/duration-format-note.adoc.po, 0, 2, 0, 70 ,100%
 l10n/po/zh_CN/_guides/camel.adoc.po, 0, 3, 0, 59 ,100%
-l10n/po/zh_CN/_guides/appcds.adoc.po, 0, 30, 0, 718 ,100%
 l10n/po/zh_CN/_guides/amazon-credentials.adoc.po, 0, 5, 0, 64 ,100%
 l10n/po/zh_CN/_guides/all-config.adoc.po, 0, 2, 0, 4 ,100%
 l10n/po/zh_CN/_guides/all-builditems.adoc.po, 0, 3, 0, 18 ,100%
@@ -209,6 +208,7 @@ l10n/po/zh_CN/_guides/smallrye-health.adoc.po, 82, 115, 1467, 1846 ,21%
 l10n/po/zh_CN/_guides/kafka-dev-services.adoc.po, 28, 37, 490, 620 ,21%
 l10n/po/zh_CN/_guides/funqy-http.adoc.po, 38, 63, 715, 905 ,21%
 l10n/po/zh_CN/_guides/building-my-first-extension.adoc.po, 177, 239, 3332, 4173 ,21%
+l10n/po/zh_CN/_guides/appcds.adoc.po, 24, 30, 570, 718 ,21%
 l10n/po/zh_CN/_guides/kubernetes-dev-services.adoc.po, 16, 19, 308, 384 ,20%
 l10n/po/zh_CN/_guides/azure-functions-http.adoc.po, 35, 43, 498, 619 ,20%
 l10n/po/zh_CN/_guides/extension-metadata.adoc.po, 50, 54, 917, 1125 ,19%
@@ -233,7 +233,6 @@ l10n/po/zh_CN/_guides/cassandra.adoc.po, 163, 224, 3259, 3845 ,16%
 l10n/po/zh_CN/_guides/amazon-lambda.adoc.po, 142, 206, 2963, 3517 ,16%
 l10n/po/zh_CN/_guides/quarkus-blaze-persistence.adoc.po, 15, 17, 562, 655 ,15%
 l10n/po/zh_CN/_guides/kubernetes-config.adoc.po, 39, 49, 784, 914 ,15%
-l10n/po/zh_CN/_guides/container-image.adoc.po, 61, 80, 1200, 1401 ,15%
 l10n/po/zh_CN/_guides/cdi.adoc.po, 130, 178, 2289, 2668 ,15%
 l10n/po/zh_CN/_guides/building-native-image.adoc.po, 184, 223, 3925, 4614 ,15%
 l10n/po/zh_CN/_guides/_includes/quarkus-blaze-persistence.adoc.po, 15, 17, 562, 655 ,15%
@@ -270,6 +269,7 @@ l10n/po/zh_CN/_guides/mutiny-primer.adoc.po, 121, 141, 1931, 2094 ,8%
 l10n/po/zh_CN/_guides/doc-reference.adoc.po, 245, 280, 1723, 1856 ,8%
 l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po, 87, 101, 1451, 1564 ,8%
 l10n/po/zh_CN/_guides/datasource.adoc.po, 248, 277, 2859, 3079 ,8%
+l10n/po/zh_CN/_guides/container-image.adoc.po, 65, 80, 1302, 1401 ,8%
 l10n/po/zh_CN/_guides/kogito-dmn.adoc.po, 82, 94, 1151, 1217 ,6%
 l10n/po/zh_CN/_guides/class-loading-reference.adoc.po, 61, 66, 1419, 1503 ,6%
 l10n/po/zh_CN/_guides/kogito-dev-services.adoc.po, 20, 25, 344, 361 ,5%
