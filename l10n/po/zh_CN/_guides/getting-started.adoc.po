@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-14 18:10+0000\n"
+"POT-Creation-Date: 2023-02-09 13:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -237,7 +237,7 @@ msgid ""
 "    <dependencies>\n"
 "        <dependency>\n"
 "            <groupId>${quarkus.platform.group-id}</groupId>\n"
-"            <artifactId>quarkus-bom</artifactId>\n"
+"            <artifactId>${quarkus.platform.artifact-id}</artifactId>\n"
 "            <version>${quarkus.platform.version}</version>\n"
 "            <type>pom</type>\n"
 "            <scope>import</scope>\n"
@@ -367,6 +367,7 @@ msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/getting-started.adoc:169
+#: upstream/_guides/getting-started.adoc:283
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -560,18 +561,6 @@ msgid ""
 "    }\n"
 msgstr ""
 
-#. type: delimited block -
-#: upstream/_guides/getting-started.adoc:283
-#, no-wrap
-msgid ""
-"    @GET\n"
-"    @Produces(MediaType.TEXT_PLAIN)\n"
-"    public String hello() {\n"
-"        return \"hello\";\n"
-"    }\n"
-"}\n"
-msgstr ""
-
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:288
 #, fuzzy
@@ -732,7 +721,7 @@ msgid ""
 "          .when().get(\"/hello\")\n"
 "          .then()\n"
 "             .statusCode(200)    // <2>\n"
-"             .body(is(\"hello\"));\n"
+"             .body(is(\"Hello from RESTEasy Reactive\"));\n"
 "    }\n"
 msgstr ""
 
