@@ -24,6 +24,7 @@ l10n/po/zh_CN/_guides/funqy-azure-functions-http.adoc.po, 0, 4, 0, 134 ,100%
 l10n/po/zh_CN/_guides/faq.adoc.po, 0, 10, 0, 77 ,100%
 l10n/po/zh_CN/_guides/duration-format-note.adoc.po, 0, 2, 0, 70 ,100%
 l10n/po/zh_CN/_guides/camel.adoc.po, 0, 3, 0, 59 ,100%
+l10n/po/zh_CN/_guides/appcds.adoc.po, 0, 30, 0, 718 ,100%
 l10n/po/zh_CN/_guides/amazon-credentials.adoc.po, 0, 5, 0, 64 ,100%
 l10n/po/zh_CN/_guides/all-config.adoc.po, 0, 2, 0, 4 ,100%
 l10n/po/zh_CN/_guides/all-builditems.adoc.po, 0, 3, 0, 18 ,100%
@@ -190,12 +191,12 @@ l10n/po/zh_CN/_guides/opentelemetry.adoc.po, 80, 126, 1209, 1566 ,23%
 l10n/po/zh_CN/_guides/mailer.adoc.po, 50, 68, 649, 842 ,23%
 l10n/po/zh_CN/_guides/infinispan-client.adoc.po, 158, 211, 2436, 3143 ,23%
 l10n/po/zh_CN/_guides/hibernate-search-orm-elasticsearch.adoc.po, 196, 275, 3476, 4469 ,23%
-l10n/po/zh_CN/_guides/getting-started.adoc.po, 92, 130, 1473, 1898 ,23%
+l10n/po/zh_CN/_guides/getting-started.adoc.po, 92, 129, 1473, 1895 ,23%
 l10n/po/zh_CN/_guides/extension-codestart.adoc.po, 135, 168, 1806, 2343 ,23%
 l10n/po/zh_CN/_guides/amazon-lambda-http.adoc.po, 98, 146, 2067, 2663 ,23%
 l10n/po/zh_CN/_guides/_templates/template-tutorial.adoc.po, 14, 17, 116, 150 ,23%
 l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po, 99, 152, 2250, 2849 ,22%
-l10n/po/zh_CN/_guides/writing-extensions.adoc.po, 601, 825, 12380, 15826 ,22%
+l10n/po/zh_CN/_guides/writing-extensions.adoc.po, 601, 824, 12380, 15819 ,22%
 l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po, 284, 428, 6947, 8799 ,22%
 l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po, 95, 147, 1776, 2265 ,22%
 l10n/po/zh_CN/_guides/security-built-in-authentication-support-concept.adoc.po, 35, 63, 1013, 1293 ,22%
@@ -232,6 +233,7 @@ l10n/po/zh_CN/_guides/cassandra.adoc.po, 163, 224, 3259, 3845 ,16%
 l10n/po/zh_CN/_guides/amazon-lambda.adoc.po, 142, 206, 2963, 3517 ,16%
 l10n/po/zh_CN/_guides/quarkus-blaze-persistence.adoc.po, 15, 17, 562, 655 ,15%
 l10n/po/zh_CN/_guides/kubernetes-config.adoc.po, 39, 49, 784, 914 ,15%
+l10n/po/zh_CN/_guides/container-image.adoc.po, 61, 80, 1200, 1401 ,15%
 l10n/po/zh_CN/_guides/cdi.adoc.po, 130, 178, 2289, 2668 ,15%
 l10n/po/zh_CN/_guides/building-native-image.adoc.po, 184, 223, 3925, 4614 ,15%
 l10n/po/zh_CN/_guides/_includes/quarkus-blaze-persistence.adoc.po, 15, 17, 562, 655 ,15%
@@ -244,7 +246,6 @@ l10n/po/zh_CN/_guides/maven-tooling.adoc.po, 259, 288, 5087, 5874 ,14%
 l10n/po/zh_CN/_guides/ide-tooling.adoc.po, 33, 49, 217, 252 ,14%
 l10n/po/zh_CN/_guides/getting-started-reactive.adoc.po, 70, 99, 1742, 2020 ,14%
 l10n/po/zh_CN/_guides/cdi-integration.adoc.po, 160, 190, 2678, 3095 ,14%
-l10n/po/zh_CN/_guides/container-image.adoc.po, 61, 78, 1200, 1371 ,13%
 l10n/po/zh_CN/_guides/apicurio-registry-dev-services.adoc.po, 20, 24, 391, 448 ,13%
 l10n/po/zh_CN/_guides/doc-concepts.adoc.po, 36, 39, 495, 559 ,12%
 l10n/po/zh_CN/_guides/doc-contribute-quarkus-docs-howto.adoc.po, 24, 27, 370, 415 ,11%
