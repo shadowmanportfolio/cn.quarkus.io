@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-09 13:26+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3965,8 +3965,8 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:1996
 #, no-wrap
 msgid ""
-"import javax.enterprise.inject.Instance;\n"
-"import javax.inject.Inject;\n"
+"import jakarta.enterprise.inject.Instance;\n"
+"import jakarta.inject.Inject;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -4844,7 +4844,7 @@ msgstr "注册一个豆类的定义注释"
 #: upstream/_guides/writing-extensions.adoc:2389
 #, no-wrap
 msgid ""
-"import javax.enterprise.context.ApplicationScoped;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
 "import org.jboss.jandex.DotName;\n"
 "import io.quarkus.extest.runtime.TestAnnotation;\n"
 msgstr ""
@@ -5514,7 +5514,7 @@ msgstr ""
 #: upstream/_guides/writing-extensions.adoc:2698
 #, no-wrap
 msgid ""
-"        resourceBundle.produce(new NativeImageResourceBuildItem(\"javax.xml.bind.Messages\")); //<3>\n"
+"        resourceBundle.produce(new NativeImageResourceBuildItem(\"jakarta.xml.bind.Messages\")); //<3>\n"
 "    }\n"
 "}\n"
 msgstr ""
@@ -5534,7 +5534,7 @@ msgstr "表明 `META-INF/my-descriptor.xml` 资源应被复制到本地图像中
 #. type: Plain text
 #: upstream/_guides/writing-extensions.adoc:2702
 #, fuzzy
-msgid "Indicate that the \"javax.xml.bind.Messages\" resource bundle should be copied into native image."
+msgid "Indicate that the \"jakarta.xml.bind.Messages\" resource bundle should be copied into native image."
 msgstr "表示 \"javax.xml.bind.Messages \"资源包应被复制到本地镜像中。"
 
 #. type: Title ====

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-01 17:15+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,1001 +28,697 @@ msgstr "Quarkus安全概述"
 msgid "Quarkus Security is a framework that provides the architecture, multiple authentication and authorization mechanisms, and other tools for you to build secure and production-quality Java applications."
 msgstr "Quarkus Security是一个框架，它提供了架构、多种认证和授权机制以及其他工具，让你建立安全和生产质量的Java应用程序。"
 
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:9
+#, fuzzy
+msgid "Before you start building security into your Quarkus applications, learn about the xref:security-architecture-concept.adoc[Quarkus Security architecture] and the different authentication mechanisms and features that you can use."
+msgstr "在你开始在你的Quarkus应用程序中建立安全机制之前，请回顾一下概述信息，了解Quarkus安全架构以及Quarkus支持的不同认证和授权机制。"
+
 #. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:8
+#: upstream/_guides/security-overview-concept.adoc:10
+#, fuzzy, no-wrap
+msgid "Key features of Quarkus Security"
+msgstr "开始使用Quarkus Security"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:14
+msgid "The Quarkus Security framework provides built-in security mechanisms for Basic, form-based, and mutual TLS (mTLS) authentication.  You can also integrate Quarkus with several well-known security xref:security-authentication-mechanisms-concept.adoc#other-supported-authentication-mechanisms[authentication mechanisms] and protocols."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:17
+msgid "{project-name} also includes built-in security to allow for role-based Access control (RBAC) based on the common security annotations @RolesAllowed, @DenyAll, @PermitAll on REST endpoints and CDI beans.  For more information, see xref:security-authorize-web-endpoints-reference.adoc[Authorization of web endpoints]."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:19
+msgid "Quarkus Security also supports the following features:"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:21
+#, fuzzy
+msgid "xref:security-proactive-authentication-concept.adoc[Proactive authentication]"
+msgstr "link:security-basic-authentication-tutorial.html[用基本认证保护Quarkus应用程序]"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:22
+msgid "xref:security-identity-providers-concept.adoc[Identity providers]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:23
+#, fuzzy
+msgid "xref:http-reference.adoc#ssl[Secure connections with SSL/TLS]"
+msgstr "使用SSL/TLS的安全连接"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:24
+#, fuzzy
+msgid "<<Cross-origin resource sharing>>"
+msgstr "跨原产地资源共享"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:25
+#, fuzzy
+msgid "<<Cross-site Request Forgery (CSRF) prevention>>"
+msgstr "防止跨站请求伪造（CSRF）。"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:26
+#, fuzzy
+msgid "<<SameSite cookies>>"
+msgstr "SameSite cookies"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:27
+#, fuzzy
+msgid "<<Secret engines>>"
+msgstr "秘密引擎"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:28
+#, fuzzy
+msgid "<<Secure serialization>>"
+msgstr "安全序列化"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:29
+#, fuzzy
+msgid "<<Secure auto-generated resources by REST Data with Panache>>"
+msgstr "用Panache保护REST数据自动生成的资源"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:30
+msgid "xref:security-vulnerability-detection-concept.adoc[Security vulnerability detection and National Vulnerability Database (NVD) registration]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:32
+#, fuzzy
+msgid "Quarkus Security is also highly customizable. For more information, see xref:security-customization.adoc[Security customization]."
+msgstr "关于定制Quarkus Security（包括反应式安全）的更多信息，以及如何注册一个安全提供者，请参见 link:security-customization.html[安全定制] 。"
+
+#. type: Title ==
+#: upstream/_guides/security-overview-concept.adoc:33
 #, fuzzy, no-wrap
 msgid "Getting started with Quarkus Security"
 msgstr "开始使用Quarkus Security"
 
 #. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:11
-#, fuzzy
-msgid "Before you start building security into your Quarkus applications, review the overview information to learn about the Quarkus Security architecture and the different authentication and authorization mechanisms that Quarkus supports."
-msgstr "在你开始在你的Quarkus应用程序中建立安全机制之前，请回顾一下概述信息，了解Quarkus安全架构以及Quarkus支持的不同认证和授权机制。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:15
-#, fuzzy
-msgid "To get started with security in Quarkus, we recommend that you first combine the Quarkus built-in xref:security-basic-authentication-concept.adoc[Basic HTTP authentication] with the JPA identity provider to enable role-based access control (RBAC).  Complete the steps in the xref:security-basic-authentication-tutorial.adoc[Secure a Quarkus application with Basic authentication] tutorial.  After you have successfully secured your Quarkus application with basic HTTP authentication, you can increase the security further by adding more advanced authentication mechanisms, for example, OpenID Connect (OIDC) authentication."
-msgstr "要开始使用Quarkus的安全性，我们建议你首先将Quarkus内置的 link:security-basic-authentication-concept.html[Basic HTTP认证] 与JPA身份提供者相结合，以实现基于角色的访问控制（RBAC）。完成 \" link:security-basic-authentication-tutorial.html[用Basic认证保护Quarkus应用程序] \"教程中的步骤。在你成功地用基本HTTP认证来保护你的Quarkus应用程序后，你可以通过添加更高级的认证机制来进一步提高安全性，例如，OpenID Connect（OIDC）认证。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:16
-#, fuzzy, no-wrap
-msgid "Security architecture"
-msgstr "安全架构"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:19
-#, fuzzy
-msgid "The `HttpAuthenticationMechanism` interface is the main entry mechanism for securing HTTP applications in Quarkus."
-msgstr " `HttpAuthenticationMechanism` 接口是Quarkus中保证HTTP应用安全的主要入口机制。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:22
-#, fuzzy
-msgid "Quarkus Security uses `HttpAuthenticationMechanism` to extract the authentication credentials from the HTTP request and delegates them to `IdentityProvider` to convert the credentials to `SecurityIdentity`.  For example, the credentials can come from the `Authorization` header, client HTTPS certificates, or cookies."
-msgstr "Quarkus Security使用 `HttpAuthenticationMechanism` ，从HTTP请求中提取认证凭证，并将其委托给 `IdentityProvider` ，将凭证转换为 `SecurityIdentity` 。例如，凭证可以来自 `Authorization` 头，客户端HTTPS证书，或cookies。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:24
-#, fuzzy
-msgid "`IdentityProvider` verifies the authentication credentials and maps them to `SecurityIdentity`, which has the username, roles, original authentication credentials, and other attributes."
-msgstr " `IdentityProvider` 验证认证凭证并将其映射到 ，该网站有用户名、角色、原始认证凭证和其他属性。 `SecurityIdentity` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:26
-#, fuzzy
-msgid "For every authenticated resource, you can inject a `SecurityIdentity` instance to get the authenticated identity information."
-msgstr "对于每个认证的资源，你可以注入一个 `SecurityIdentity` 实例来获得认证的身份信息。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:29
-#, fuzzy
-msgid "In other contexts, it is possible to have other parallel representations of the same information or parts of it, for example, `SecurityContext` for JAX-RS or `JsonWebToken` for JSON Web Tokens (JWT)."
-msgstr "在其他情况下，有可能对相同的信息或部分信息进行其他并行表示，例如，JAX-RS的 `SecurityContext` ，或JSON Web Tokens（JWT）的 `JsonWebToken` 。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:30
-#, fuzzy, no-wrap
-msgid "Authentication mechanisms"
-msgstr "认证机制"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:33
-#, fuzzy
-msgid "Quarkus supports multiple authentication mechanisms"
-msgstr "Quarkus支持多种认证机制"
-
-#. type: Title ===
-#: upstream/_guides/security-overview-concept.adoc:34
-#, fuzzy, no-wrap
-msgid "Basic and Form HTTP authentication"
-msgstr "基本和形式的HTTP认证"
-
-#. type: Plain text
 #: upstream/_guides/security-overview-concept.adoc:37
 #, fuzzy
-msgid "xref:security-basic-authentication-concept.adoc[Basic HTTP Authentication] and xref:security-built-in-authentication-support-concept.adoc#form-auth[Form HTTP authentication] are the core authentication mechanisms supported in Quarkus."
-msgstr "link:security-basic-authentication-concept.html[Basic HTTP认证] 和 link:security-built-in-authentication-support-concept.html#form-auth[Form HTTP认证] 是Quarkus支持的核心认证机制。"
-
-#. type: Title ===
-#: upstream/_guides/security-overview-concept.adoc:38
-#, fuzzy, no-wrap
-msgid "WebAuthn authentication"
-msgstr "WebAuthn认证"
+msgid "To get started with security in Quarkus, we recommend you combine the Quarkus built-in xref:security-basic-authentication-concept.adoc[Basic authentication] with the JPA identity provider to enable role-based access control (RBAC).  Complete the steps in the xref:security-basic-authentication-tutorial.adoc[Secure a Quarkus application with Basic authentication] tutorial."
+msgstr "要开始使用Quarkus的安全性，我们建议你首先将Quarkus内置的 link:security-basic-authentication-concept.html[Basic HTTP认证] 与JPA身份提供者相结合，以实现基于角色的访问控制（RBAC）。完成 \" link:security-basic-authentication-tutorial.html[用Basic认证保护Quarkus应用程序] \"教程中的步骤。在你成功地用基本HTTP认证来保护你的Quarkus应用程序后，你可以通过添加更高级的认证机制来进一步提高安全性，例如，OpenID Connect（OIDC）认证。"
 
 #. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:43
-#, fuzzy
-msgid "https://webauthn.guide/[WebAuthn] is an authentication mechanism that replaces passwords.  When you write a service for registering new users, or logging them in, instead of asking for a password, you can use WebAuthn, which replaces the password.  For more information, see xref:security-webauthn.adoc[Secure a Quarkus application by using the WebAuthn authentication mechanism]."
-msgstr "link:https://webauthn.guide/[WebAuthn] 是一种取代密码的认证机制。当你写一个注册新用户或登录用户的服务时，你可以使用WebAuthn来替代密码，而不是要求用户输入密码。更多信息，请参见 link:security-webauthn.html[通过使用WebAuthn认证机制保护Quarkus应用程序] 。"
-
-#. type: Title ===
-#: upstream/_guides/security-overview-concept.adoc:44
-#, fuzzy, no-wrap
-msgid "Mutual TLS (mTLS) authentication"
-msgstr "相互TLS（mTLS）认证"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:48
-#, fuzzy
-msgid "Quarkus provides mutual TLS (mTLS) authentication so that you can authenticate users based on their X.509 certificates.  For more information, see xref:security-built-in-authentication-support-concept.adoc#mutual-tls[mutual TLS authentication]."
-msgstr "Quarkus提供了相互TLS(mTLS)认证，因此你可以根据用户的X.509证书进行认证。更多信息，请参见 link:security-built-in-authentication-support-concept.html#mutual-tls[相互TLS认证] 。"
-
-#. type: Title ===
-#: upstream/_guides/security-overview-concept.adoc:49
-#, fuzzy, no-wrap
-msgid "OpenID Connect authentication"
-msgstr "OpenID连接认证"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:52
-#, fuzzy
-msgid "OpenID Connect (OIDC) is an identity layer that works on top of the OAuth 2.0 protocol. OIDC enables client applications to verify the identity of a user based on the authentication performed by the OIDC provider and to retrieve basic information about that user."
-msgstr "OpenID Connect（OIDC）是一个身份层，在OAuth 2.0协议之上工作。OIDC使客户端应用程序能够根据OIDC提供者进行的认证来验证用户的身份，并检索该用户的基本信息。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:57
-#, fuzzy
-msgid "The Quarkus `quarkus-oidc` extension provides a reactive, interoperable, multitenant-enabled OIDC adapter that supports Bearer Token and Authorization Code Flow authentication mechanisms.  The Bearer Token mechanism extracts the token from the HTTP Authorization header.  The Authorization Code Flow mechanism redirects the user to an OIDC provider to authenticate the identity of the user.  After the user is redirected back to Quarkus, the mechanism completes the authentication process by exchanging the provided code that was granted for the ID, access, and refresh tokens."
-msgstr "Quarkus `quarkus-oidc` 扩展提供了一个反应式的、可互操作的、支持多租户的OIDC适配器，支持承载令牌和授权代码流认证机制。Bearer Token机制从HTTP授权头中提取令牌。授权代码流机制将用户重定向到一个OIDC提供者，以验证用户的身份。在用户被重定向回Quarkus后，该机制通过交换被授予ID、访问和刷新令牌的所提供的代码来完成认证过程。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:60
-#, fuzzy
-msgid "You can verify ID and access JWT tokens by using the refreshable JSON Web Key (JWK) set or you can introspect them remotely.  However, opaque (binary) tokens can only be introspected remotely."
-msgstr "你可以通过使用可刷新的JSON网络密钥（JWK）集来验证ID和访问JWT令牌，或者你可以远程反省它们。然而，不透明的（二进制）令牌只能被远程反省。"
-
-#. type: delimited block =
-#: upstream/_guides/security-overview-concept.adoc:64
-#, fuzzy
-msgid "Using the Quarkus OIDC extension, both Bearer Token and Authorization Code Flow mechanisms use <<smallrye-jwt, SmallRye JWT>> to represent JWT tokens as MicroProfile JWT `org.eclipse.microprofile.jwt.JsonWebToken`."
-msgstr "使用Quarkus OIDC扩展，承载令牌和授权码流机制都使用 link:#smallrye-jwt[SmallRye JWT] 来表示JWT令牌为MicroProfile JWT `org.eclipse.microprofile.jwt.JsonWebToken` 。"
-
-#. type: Title ====
-#: upstream/_guides/security-overview-concept.adoc:66
-#, fuzzy, no-wrap
-msgid "Additional Quarkus resources for OIDC authentication"
-msgstr "用于OIDC认证的其他Quarkus资源"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:69
-#, fuzzy
-msgid "For more information about OIDC authentication and authorization methods you can use to secure your Quarkus applications, see the following detailed resources:"
-msgstr "更多关于OIDC认证和授权方法的信息，你可以用来保护你的Quarkus应用程序，请参阅以下详细资源。"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:72
-#, fuzzy, no-wrap
-msgid "OIDC topic"
-msgstr "OIDC专题"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:73
-#, fuzzy, no-wrap
-msgid "Quarkus information resource"
-msgstr "Quarkus信息资源"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:73
-#, fuzzy, no-wrap
-msgid "Bearer Token authentication mechanis"
-msgstr "持卡人令牌认证机制"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:74
-#, fuzzy, no-wrap
-msgid "xref:security-openid-connect.adoc[Using OpenID Connect (OIDC) to protect service applications using Bearer Token authorization]"
-msgstr "link:security-openid-connect.html[使用OpenID连接（OIDC）来保护使用承载令牌授权的服务应用]"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:74
-#, fuzzy, no-wrap
-msgid "Authorization Code Flow authentication mechanis"
-msgstr "授权代码流认证机制"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:75
-#, fuzzy, no-wrap
-msgid "xref:security-openid-connect-web-authentication.adoc[OpenID Connect (OIDC) authorization code flow mechanism]"
-msgstr "link:security-openid-connect-web-authentication.html[OpenID Connect（OIDC）授权代码流机制]"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:75
-#, fuzzy, no-wrap
-msgid "Multiple tenants that can support Bearer Token or Authorization Code Flow mechanism"
-msgstr "可支持承载令牌或授权码流机制的多个租户"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:76
-#, fuzzy, no-wrap
-msgid "xref:security-openid-connect-multitenancy.adoc[Using OpenID Connect (OIDC) multi-tenancy]"
-msgstr "link:security-openid-connect-multitenancy.html[使用OpenID连接（OIDC）多租户]"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:76
-#, fuzzy, no-wrap
-msgid "Using Keycloak to centralize authorization"
-msgstr "使用Keycloak来集中授权"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:77
-#, fuzzy, no-wrap
-msgid "xref:security-keycloak-authorization.adoc[Using OpenID Connect (OIDC) and Keycloak to centralize authorization]"
-msgstr "link:security-keycloak-authorization.html[使用OpenID连接（OIDC）和Keycloak来集中授权]"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:77
-#, fuzzy, no-wrap
-msgid "Configuring Keycloak programmatically"
-msgstr "以编程方式配置Keycloak"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:78
-#, fuzzy, no-wrap
-msgid "xref:security-keycloak-admin-client.adoc[Using the Keycloak admin client]"
-msgstr "link:security-keycloak-admin-client.html[使用Keycloak管理客户端]"
-
-#. type: delimited block =
-#: upstream/_guides/security-overview-concept.adoc:84
-#, fuzzy
-msgid "If you need to enable the Quarkus OIDC extension at runtime, set `quarkus.oidc.tenant-enabled=false` at build time and then re-enable it at runtime by using a system property.  For more information about managing the individual tenant configurations in multitenant OIDC deployments, see the _Disabling tenant configurations_ section in the xref:security-openid-connect-multitenancy.adoc#disable-tenant[Using OpenID Connect (OIDC) multi-tenancy] guide."
-msgstr "如果你需要在运行时启用Quarkus OIDC扩展，请在构建时设置 `quarkus.oidc.tenant-enabled=false` ，然后在运行时通过使用系统属性重新启用它。关于在多租户OIDC部署中管理单个租户配置的更多信息，请参阅 link:security-openid-connect-multitenancy.html#disable-tenant[使用OpenID Connect（OIDC）多租户] 指南中的 _禁用租户配置_ 部分。"
-
-#. type: Title ===
-#: upstream/_guides/security-overview-concept.adoc:86
-#, fuzzy, no-wrap
-msgid "OpenID Connect client and filters"
-msgstr "OpenID连接客户端和过滤器"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:89
-#, fuzzy
-msgid "The `quarkus-oidc-client` extension provides `OidcClient` for acquiring and refreshing access tokens from OpenID Connect and OAuth2 providers that support the following token grants:"
-msgstr " `quarkus-oidc-client` 扩展提供了 `OidcClient` ，用于从支持以下令牌授予的OpenID Connect和OAuth2提供商那里获取和刷新访问令牌。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:90
-#, fuzzy
-msgid "`client-credentials`"
-msgstr " `client-credentials` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:91
-#, fuzzy
-msgid "`password`"
-msgstr " `password` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:92
-#, fuzzy
-msgid "`refresh_token`"
-msgstr " `refresh_token` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:96
-#, fuzzy
-msgid "The `quarkus-oidc-client-filter` extension requires the `quarkus-oidc-client` extension and provides JAX-RS `OidcClientRequestFilter`, which sets the access token acquired by `OidcClient` as the `Bearer` scheme value of the HTTP `Authorization` header.  This filter can be registered with MP RestClient implementations injected into the current Quarkus endpoint, but it is not related to the authentication requirements of this service endpoint.  For example, it can be a public endpoint, or it can be protected with mTLS."
-msgstr " `quarkus-oidc-client-filter` 扩展需要 `quarkus-oidc-client` 扩展，并提供 JAX-RS `OidcClientRequestFilter` ，它将由 `OidcClient` 获得的访问令牌设置为 HTTP `Authorization` 头的 `Bearer` 方案值。这个过滤器可以与注入当前 Quarkus 端点的 MP RestClient 实现注册，但它与这个服务端点的认证要求无关。例如，它可以是一个公共端点，或者它可以用mTLS保护。"
-
-#. type: delimited block =
-#: upstream/_guides/security-overview-concept.adoc:100
-#, fuzzy
-msgid "In this scenario, you do not need to protect your Quarkus endpoint by using the Quarkus OpenID Connect adapter."
-msgstr "在这种情况下，你不需要通过使用Quarkus OpenID Connect适配器来保护你的Quarkus端点。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:105
-#, fuzzy
-msgid "The `quarkus-oidc-token-propagation` extension requires the `quarkus-oidc` extension and provides JAX-RS `TokenCredentialRequestFilter`, which sets the OpenID Connect Bearer or Authorization Code Flow access token as the `Bearer` scheme value of the HTTP `Authorization` header.  This filter can be registered with MP RestClient implementations injected into the current Quarkus endpoint, which in turn must be protected by using the Quarkus OpenID Connect adapter.  This filter can be used to propagate the access token to the downstream services."
-msgstr " `quarkus-oidc-token-propagation` 扩展需要 `quarkus-oidc` 扩展，并提供 JAX-RS `TokenCredentialRequestFilter` ，它将 OpenID Connect Bearer 或 Authorization Code Flow 访问令牌设置为 HTTP `Authorization` 头的 `Bearer` 方案值。这个过滤器可以与MP RestClient实现注册，注入到当前的Quarkus端点中，而这又必须通过使用Quarkus OpenID Connect适配器来保护。这个过滤器可以用来将访问令牌传播到下游服务中。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:107
-#, fuzzy
-msgid "For more information, see the xref:security-openid-connect-client.adoc[OpenID Connect client and token propagation quickstart] and xref:security-openid-connect-client-reference.adoc[OpenID Connect (OIDC) and OAuth2 client and filters reference] guides."
-msgstr "欲了解更多信息，请参阅 link:security-openid-connect-client.html[OpenID Connect客户端和令牌传播快速入门] 和 link:security-openid-connect-client-reference.html[OpenID Connect（OIDC）和OAuth2客户端和过滤器参考] 指南。"
-
-#. type: Title ===
-#: upstream/_guides/security-overview-concept.adoc:109
-#, fuzzy, no-wrap
-msgid "SmallRye JWT authentication"
-msgstr "SmallRye JWT认证"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:112
-#, fuzzy
-msgid "The `quarkus-smallrye-jwt` extension provides a MicroProfile JSON Web Token (JWT) 1.2.1 implementation and multiple options to verify signed and encrypted `JWT` tokens and represents them as `org.eclipse.microprofile.jwt.JsonWebToken`."
-msgstr " `quarkus-smallrye-jwt` 扩展提供了MicroProfile JSON Web Token（JWT）1.2.1的实现和多个选项，以验证签名和加密的 `JWT` tokens，并将其表示为 `org.eclipse.microprofile.jwt.JsonWebToken` 。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:115
-#, fuzzy
-msgid "`quarkus-smallrye-jwt` is an alternative to the `quarkus-oidc` Bearer Token authentication mechanism, and verifies only `JWT` tokens by using either PEM keys or the refreshable `JWK` key set.  `quarkus-smallrye-jwt` also provides the JWT generation API, which you can use to easily create `signed`, `inner-signed`, and `encrypted` `JWT` tokens."
-msgstr " `quarkus-smallrye-jwt` 是 \"承载令牌 \"认证机制的替代方案，仅通过使用PEM密钥或可刷新的 密钥集来验证 。 还提供JWT生成API，你可以使用它来轻松创建 、 和  令牌。 `quarkus-oidc` `JWK` `JWT` `quarkus-smallrye-jwt` `signed` `inner-signed` `encrypted` `JWT` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:117
-#, fuzzy
-msgid "For more information, see xref:security-jwt.adoc[Using SmallRye JWT role-based access control]."
-msgstr "欲了解更多信息，请参见 link:security-jwt.html[使用SmallRye JWT基于角色的访问控制] 。"
-
-#. type: Title ===
-#: upstream/_guides/security-overview-concept.adoc:118
-#, fuzzy, no-wrap
-msgid "OAuth2 authentication"
-msgstr "OAuth2认证"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:122
-#, fuzzy
-msgid "`quarkus-elytron-security-oauth2` provides an alternative to the `quarkus-oidc` Bearer Token authentication mechanism. `quarkus-elytron-security-oauth2` is based on `Elytron` and is primarily intended for introspecting opaque tokens remotely.  For more information, see xref:security-oauth2.adoc[Using OAuth2]."
-msgstr " `quarkus-elytron-security-oauth2` 提供了一个替代 Bearer Token的认证机制。 是基于 ，主要用于远程反省不透明的令牌。欲了解更多信息，请参阅 `quarkus-oidc` `quarkus-elytron-security-oauth2` `Elytron` link:security-oauth2.html[使用OAuth2] 。"
-
-#. type: Title ===
-#: upstream/_guides/security-overview-concept.adoc:124
-#, fuzzy, no-wrap
-msgid "Choosing between OpenID Connect, SmallRye JWT, and OAuth2 authentication mechanisms"
-msgstr "在OpenID Connect、SmallRye JWT和OAuth2认证机制之间做出选择"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:127
-#, fuzzy
-msgid "Use the following information to help you to decide which authentication mechanism to use to secure your Quarkus applications:"
-msgstr "使用以下信息来帮助你决定使用哪种认证机制来保护你的Quarkus应用程序。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:130
-#, fuzzy
-msgid "`quarkus-oidc` requires an OpenID Connect provider such as Keycloak, which can be used to verify the Bearer tokens or authenticate the end users with the Authorization Code flow.  In both cases, `quarkus-oidc` requires a connection to the specified OpenID Connect provider."
-msgstr " `quarkus-oidc` 需要一个OpenID连接提供者，如Keycloak，它可以用来验证承载器令牌或用授权码流验证终端用户。在这两种情况下， ，需要连接到指定的OpenID连接提供者。 `quarkus-oidc` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:133
-#, fuzzy
-msgid "If the user authentication requires Authorization Code flow or you need to support multiple tenants, use `quarkus-oidc`.  `quarkus-oidc` can also request user information by using both Authorization Code Flow and Bearer access tokens."
-msgstr "如果用户认证需要授权码流，或者你需要支持多个租户，请使用 `quarkus-oidc` 。 `quarkus-oidc` ，也可以同时使用授权码流和承载访问令牌来请求用户信息。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:135
-#, fuzzy
-msgid "If your Bearer tokens must be verified, use `quarkus-oidc`, `quarkus-smallrye-jwt`, or `quarkus-elytron-security-oauth2`."
-msgstr "如果你的不记名代币必须被验证，请使用 `quarkus-oidc` , `quarkus-smallrye-jwt` , 或 `quarkus-elytron-security-oauth2` 。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:138
-#, fuzzy
-msgid "If your Bearer tokens are in a JWT format, you can use either of the three extensions. Both `quarkus-oidc` and `quarkus-smallrye-jwt` support refreshing the JsonWebKey (JWK) set when the OpenID Connect provider rotates the keys.  Therefore, if remote token introspection must be avoided or is unsupported by the providers, use `quarkus-oidc` or `quarkus-smallrye-jwt` for verifying JWT tokens."
-msgstr "如果你的承载令牌是JWT格式的，你可以使用这三个扩展中的任何一个。 `quarkus-oidc` 和 `quarkus-smallrye-jwt` 都支持在OpenID Connect提供者轮换密钥时刷新JsonWebKey（JWK）集。因此，如果必须避免远程令牌反省或提供者不支持，请使用 `quarkus-oidc` 或 `quarkus-smallrye-jwt` 来验证JWT令牌。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:141
-#, fuzzy
-msgid "If you need to introspect the JWT tokens remotely, you can use either `quarkus-oidc` or `quarkus-elytron-security-oauth2` because they support the verification of the opaque or binary tokens by using remote introspection.  `quarkus-smallrye-jwt` does not support the remote introspection of both opaque or JWT tokens but instead relies on the locally available keys that are usually retrieved from the OpenID Connect provider."
-msgstr "如果你需要远程反省JWT令牌，你可以使用 `quarkus-oidc` 或 `quarkus-elytron-security-oauth2` ，因为它们支持通过使用远程反省来验证不透明或二进制令牌。 `quarkus-smallrye-jwt` 不支持对不透明或JWT令牌进行远程反省，而是依赖于通常从OpenID Connect提供商那里检索的本地可用密钥。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:144
-#, fuzzy
-msgid "`quarkus-oidc` and `quarkus-smallrye-jwt` support the injecting of JWT and opaque tokens into the endpoint code.  Injected JWT tokens provide more information about the user. All extensions can have the tokens injected as `Principal`."
-msgstr " `quarkus-oidc` 和 ，支持将JWT和不透明的令牌注入端点代码中。注入的JWT令牌提供了关于用户的更多信息。所有的扩展都可以将令牌注入到 。 `quarkus-smallrye-jwt` `Principal` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:146
-#, fuzzy
-msgid "`quarkus-smallrye-jwt` supports more key formats than `quarkus-oidc`. `quarkus-oidc` uses only the JWK-formatted keys that are part of a JWK set, whereas `quarkus-smallrye-jwt` supports PEM keys."
-msgstr " `quarkus-smallrye-jwt` 比 支持更多的密钥格式。 只使用作为JWK集一部分的JWK格式的密钥，而 支持PEM密钥。 `quarkus-oidc` `quarkus-oidc` `quarkus-smallrye-jwt` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:149
-#, fuzzy
-msgid "`quarkus-smallrye-jwt` handles locally signed, inner-signed-and-encrypted, and encrypted tokens.  While `quarkus-oidc` and `quarkus-elytron-security-oauth2` can also verify such tokens but treats them as opaque tokens and verifies them through remote introspection."
-msgstr " `quarkus-smallrye-jwt` 处理本地签名的、内部签名并加密的以及加密的令牌。虽然 和 也可以验证这样的令牌，但是把它们当作不透明的令牌，通过远程反省来验证。 `quarkus-oidc` `quarkus-elytron-security-oauth2` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:151
-#, fuzzy
-msgid "If you need a lightweight library for the remote introspection of opaque or JWT tokens, use `quarkus-elytron-security-oauth2`."
-msgstr "如果你需要一个轻量级的库来对不透明或JWT令牌进行远程反省，请使用 `quarkus-elytron-security-oauth2` 。"
-
-#. type: delimited block =
-#: upstream/_guides/security-overview-concept.adoc:158
-#, fuzzy
-msgid "Your decision to choose whether to use opaque or JWT token format will be driven by architectural considerations.  Opaque tokens tend to be much shorter than JWT tokens but need most of the token-associated state to be maintained in the provider database.  Opaque tokens are effectively database pointers.  JWT tokens are significantly longer than the opaque tokens but the providers are effectively delegating storing most of the token-associated state to the client by storing it as the token claims and either signing or encrypting them."
-msgstr "你选择使用不透明或JWT令牌格式的决定将由架构考虑驱动。不透明令牌往往比JWT令牌短得多，但需要在提供者数据库中维护大部分令牌相关的状态。不透明令牌实际上是数据库指针。JWT令牌比不透明令牌长得多，但提供者通过将大部分令牌相关状态存储为令牌声明，并对其进行签名或加密，有效地将其委托给客户端。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:161
-#, fuzzy
-msgid "The following table provides a summary of the options for each authentication mechanism:"
-msgstr "下表提供了每种认证机制的选项摘要。"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:163
-#, fuzzy, no-wrap
-msgid "quarkus-oidc"
-msgstr "夸库斯-艾德克"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:163
-#, fuzzy, no-wrap
-msgid "quarkus-smallrye-jwt"
-msgstr "夸父-小雷-JWT"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:165
-#, fuzzy, no-wrap
-msgid "quarkus-elytron-security-oauth2"
-msgstr "quarkus-elytron-security-oauth2"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:166
-#, fuzzy, no-wrap
-msgid "Requires Bearer JWT verification"
-msgstr "需要承载器JWT验证"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:167
-#, fuzzy, no-wrap
-msgid "Local verification or introspection"
-msgstr "本地核查或反省"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:168
-#: upstream/_guides/security-overview-concept.adoc:208
-#, fuzzy, no-wrap
-msgid "Local verification"
-msgstr "当地核查"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:169
-#: upstream/_guides/security-overview-concept.adoc:171
-#: upstream/_guides/security-overview-concept.adoc:173
-#: upstream/_guides/security-overview-concept.adoc:207
-#: upstream/_guides/security-overview-concept.adoc:209
-#, fuzzy, no-wrap
-msgid "Introspection"
-msgstr "自省"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:170
-#, fuzzy, no-wrap
-msgid "Requires Bearer opaque token verification"
-msgstr "需要承载者不透明令牌验证"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:172
-#: upstream/_guides/security-overview-concept.adoc:177
-#: upstream/_guides/security-overview-concept.adoc:185
-#: upstream/_guides/security-overview-concept.adoc:188
-#: upstream/_guides/security-overview-concept.adoc:189
-#: upstream/_guides/security-overview-concept.adoc:192
-#: upstream/_guides/security-overview-concept.adoc:193
-#: upstream/_guides/security-overview-concept.adoc:196
-#: upstream/_guides/security-overview-concept.adoc:197
-#: upstream/_guides/security-overview-concept.adoc:199
-#: upstream/_guides/security-overview-concept.adoc:201
-#: upstream/_guides/security-overview-concept.adoc:203
-#: upstream/_guides/security-overview-concept.adoc:205
-#: upstream/_guides/security-overview-concept.adoc:211
-#: upstream/_guides/security-overview-concept.adoc:213
-#: upstream/_guides/security-overview-concept.adoc:215
-#: upstream/_guides/security-overview-concept.adoc:217
-#, fuzzy, no-wrap
-msgid "No"
-msgstr "没有"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:174
-#, fuzzy, no-wrap
-msgid "Refreshing `JsonWebKey` set for verifying JWT tokens"
-msgstr "刷新 `JsonWebKey` 集，以验证JWT令牌"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:175
-#: upstream/_guides/security-overview-concept.adoc:176
-#: upstream/_guides/security-overview-concept.adoc:179
-#: upstream/_guides/security-overview-concept.adoc:180
-#: upstream/_guides/security-overview-concept.adoc:181
-#: upstream/_guides/security-overview-concept.adoc:183
-#: upstream/_guides/security-overview-concept.adoc:184
-#: upstream/_guides/security-overview-concept.adoc:187
-#: upstream/_guides/security-overview-concept.adoc:191
-#: upstream/_guides/security-overview-concept.adoc:195
-#: upstream/_guides/security-overview-concept.adoc:200
-#: upstream/_guides/security-overview-concept.adoc:216
-#, fuzzy, no-wrap
-msgid "Yes"
-msgstr "是"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:178
-#, fuzzy, no-wrap
-msgid "Represent token as `Principal`"
-msgstr "将令牌表示为 `Principal`` "
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:182
-#, fuzzy, no-wrap
-msgid "Inject JWT as MP JSON Web Token (JWT)"
-msgstr "注入JWT作为MP JSON网络令牌（JWT）。"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:186
-#, fuzzy, no-wrap
-msgid "Authorization Code Flow"
-msgstr "授权代码流程"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:190
-#, fuzzy, no-wrap
-msgid "Multi-tenancy"
-msgstr "多租户"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:194
-#, fuzzy, no-wrap
-msgid "User info support"
-msgstr "用户信息支持"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:198
-#, fuzzy, no-wrap
-msgid "PEM key format support"
-msgstr "支持PEM密钥格式"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:202
-#, fuzzy, no-wrap
-msgid "SecretKey support"
-msgstr "支持SecretKey"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:204
-#, fuzzy, no-wrap
-msgid "In JSON Web Key (JWK) format"
-msgstr "以JSON网络密钥（JWK）的格式"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:206
-#, fuzzy, no-wrap
-msgid "Inner-signed and encrypted or encrypted tokens"
-msgstr "内部签名和加密的或加密的令牌"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:210
-#, fuzzy, no-wrap
-msgid "Custom token verification"
-msgstr "自定义令牌验证"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:212
-#, fuzzy, no-wrap
-msgid "With injected JWT parser"
-msgstr "有了注入的JWT解析器"
-
-#. type: Table
-#: upstream/_guides/security-overview-concept.adoc:214
-#, fuzzy, no-wrap
-msgid "Accept JWT as a cookie"
-msgstr "接受JWT作为一个cookie"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:220
-#, fuzzy, no-wrap
-msgid "Identity providers"
-msgstr "身份提供者"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:224
-#, fuzzy
-msgid "The JPA `IdentityProvider` creates a `SecurityIdentity` instance, which is used during user authentication to verify and authorize access requests making your Quarkus application secure."
-msgstr "JPA `IdentityProvider` 创建了一个 `SecurityIdentity` 实例，在用户认证过程中，它被用来验证和授权访问请求，使你的Quarkus应用程序安全。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:227
-#, fuzzy
-msgid "`IdentityProvider` converts the authentication credentials provided by `HttpAuthenticationMechanism` to a `SecurityIdentity` instance."
-msgstr " `IdentityProvider` 将 提供的认证凭证转换为 实例。 `HttpAuthenticationMechanism` `SecurityIdentity` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:230
-#, fuzzy
-msgid "Some extensions, for example, `OIDC`, `OAuth2`, and `SmallRye JWT` have inline `IdentityProvider` implementations specific to the supported authentication flow.  For example, `quarkus-oidc` uses its own `IdentityProvider` to convert a token to a `SecurityIdentity` instance."
-msgstr "一些扩展，例如： `OIDC` , `OAuth2` , 和 `SmallRye JWT` 都有针对支持的认证流程的内联 `IdentityProvider` 实现。例如， `quarkus-oidc` 使用它自己的 `IdentityProvider` ，将一个令牌转换成一个 `SecurityIdentity` 实例。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:232
-#, fuzzy
-msgid "If you use `Basic` or `Form` HTTP-based authentication then you must add an `IdentityProvider` instance that can convert a username and password to a `SecurityIdentity` instance."
-msgstr "如果你使用 `Basic` 或 `Form` 基于HTTP的认证，那么你必须添加一个 `IdentityProvider` 实例，可以将用户名和密码转换为 `SecurityIdentity` 实例。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:234
-#, fuzzy
-msgid "For more information about `Basic` or `Form` HTTP-based authentication, see the following resources:"
-msgstr "关于 `Basic` 或 `Form` 基于HTTP的认证的更多信息，请参见以下资源。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:235
-#, fuzzy
-msgid "xref:security-basic-authentication-tutorial.adoc[Secure a Quarkus application with Basic authentication]"
-msgstr "link:security-basic-authentication-tutorial.html[用基本认证保护Quarkus应用程序]"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:236
-#, fuzzy
-msgid "xref:security-jdbc.adoc[Using security with JDBC]"
-msgstr "link:security-jdbc.html[使用JDBC的安全性]"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:237
-#, fuzzy
-msgid "xref:security-ldap.adoc[Using security with an LDAP realm]"
-msgstr "link:security-ldap.html[使用LDAP领域的安全性]"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:238
-#, fuzzy, no-wrap
-msgid "Authorization"
-msgstr "授权书"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:242
-#, fuzzy
-msgid "Quarkus also supports role-based access control (RBAC).  For more information about RBAC and other authorization options in Quarkus, see xref:security-authorization-of-web-endpoints-reference.adoc[Security authorization]."
-msgstr "Quarkus也支持基于角色的访问控制（RBAC）。关于RBAC和Quarkus中其他授权选项的更多信息，请参见 link:security-authorization-of-web-endpoints-reference.html[安全授权] 。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:243
-#, fuzzy, no-wrap
-msgid "Quarkus Security customization"
-msgstr "Quarkus安全定制"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:246
-#, fuzzy
-msgid "Quarkus Security is highly customizable. You can customize the following core security components of Quarkus:"
-msgstr "Quarkus安全系统是高度可定制的。你可以定制Quarkus的以下核心安全组件。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:248
-#, fuzzy
-msgid "`HttpAuthenticationMechanism`"
-msgstr " `HttpAuthenticationMechanism` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:249
-#, fuzzy
-msgid "`IdentityProvider`"
-msgstr " `IdentityProvider` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:250
-#, fuzzy
-msgid "`SecurityidentityAugmentor`"
-msgstr " `SecurityidentityAugmentor` "
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:252
-#, fuzzy
-msgid "For more information about customizing Quarkus Security including reactive security, and how to register a security provider, see xref:security-customization.adoc[Security customization]."
-msgstr "关于定制Quarkus Security（包括反应式安全）的更多信息，以及如何注册一个安全提供者，请参见 link:security-customization.html[安全定制] 。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:253
-#, fuzzy, no-wrap
-msgid "Combining authentication mechanisms"
-msgstr "结合认证机制"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:257
-#, fuzzy
-msgid "If the user credentials are provided by different sources, you can combine authentication mechanisms.  For example, you can combine built-in `Basic` and `quarkus-oidc` `Bearer` authentication mechanisms."
-msgstr "如果用户证书是由不同的来源提供的，你可以结合认证机制。例如，你可以结合内置的 `Basic` 和 `quarkus-oidc` `Bearer` 认证机制。"
-
-#. type: delimited block =
-#: upstream/_guides/security-overview-concept.adoc:261
-#, fuzzy
-msgid "You cannot combine the `quarkus-oidc` `Bearer` and `smallrye-jwt` authentication mechanisms because both mechanisms attempt to verify the token extracted from the HTTP `Authorization Bearer` scheme."
-msgstr "你不能结合 `quarkus-oidc` `Bearer` 和 `smallrye-jwt` 认证机制，因为这两种机制都试图验证从HTTP `Authorization Bearer` 方案中提取的令牌。"
-
-#. type: Title ===
-#: upstream/_guides/security-overview-concept.adoc:263
-#, fuzzy, no-wrap
-msgid "Path-specific authentication mechanisms"
-msgstr "针对路径的认证机制"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:266
-#, fuzzy
-msgid "The following configuration example demonstrates how you can enforce a single selectable authentication mechanism for a given request path:"
-msgstr "下面的配置例子演示了如何为一个给定的请求路径强制执行一个可选择的认证机制。"
-
-#. type: delimited block -
-#: upstream/_guides/security-overview-concept.adoc:271
-#, no-wrap
-msgid ""
-"quarkus.http.auth.permission.basic-or-bearer.paths=/service\n"
-"quarkus.http.auth.permission.basic-or-bearer.policy=authenticated\n"
+#: upstream/_guides/security-overview-concept.adoc:39
+msgid "After you have successfully secured your Quarkus application with Basic authentication, you can increase the security further by adding more advanced authentication mechanisms, for example, OpenID Connect (OIDC) authentication."
 msgstr ""
 
-#. type: delimited block -
-#: upstream/_guides/security-overview-concept.adoc:275
-#, no-wrap
-msgid ""
-"quarkus.http.auth.permission.basic.paths=/basic-only\n"
-"quarkus.http.auth.permission.basic.policy=authenticated\n"
-"quarkus.http.auth.permission.basic.auth-mechanism=basic\n"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/security-overview-concept.adoc:279
-#, no-wrap
-msgid ""
-"quarkus.http.auth.permission.bearer.paths=/bearer-only\n"
-"quarkus.http.auth.permission.bearer.policy=authenticated\n"
-"quarkus.http.auth.permission.bearer.auth-mechanism=bearer\n"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:282
-#, fuzzy
-msgid "Ensure that the value of the `auth-mechanism` property matches the authentication scheme supported by `HttpAuthenticationMechanism`, for example, `basic`, `bearer`, or `form`."
-msgstr "确保 `auth-mechanism` 属性的值与 `HttpAuthenticationMechanism` 所支持的认证方案相匹配，例如： `basic` 、 `bearer` 或 `form` 。"
-
+#. Add a link to the recomposed OIDC intro concept here.
 #. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:283
-#, fuzzy, no-wrap
-msgid "Proactive authentication"
-msgstr "主动认证"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:287
-#, fuzzy
-msgid "By default, Quarkus does proactive authentication, which means that all incoming requests with credentials are authenticated regardless of whether the target page requires authentication.  For more information, see xref:security-built-in-authentication-support-concept.adoc#proactive-authentication[Proactive authentication]."
-msgstr "默认情况下，Quarkus进行主动认证，这意味着所有带证书的传入请求都会被认证，不管目标页面是否需要认证。更多信息，请参阅 link:security-built-in-authentication-support-concept.html#proactive-authentication[主动认证] 。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:288
-#, fuzzy, no-wrap
-msgid "Secure connections with SSL/TLS"
-msgstr "使用SSL/TLS的安全连接"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:291
-#, fuzzy
-msgid "For more information about how Quarkus supports secure connections with SSL/TLS, see the xref:http-reference.adoc#ssl[HTTP reference] information."
-msgstr "关于Quarkus如何支持SSL/TLS的安全连接的更多信息，请参阅xref:http-reference.adoc#ssl[HTTP参考]信息。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:292
-#, fuzzy, no-wrap
-msgid "Cross-origin resource sharing"
-msgstr "跨原产地资源共享"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:296
-#, fuzzy
-msgid "To make your Quarkus application accessible to another application running on a different domain, you need to configure cross-origin resource sharing (CORS).  For more information about the CORS filter that is provided by Quarkus, see the xref:http-reference.adoc#cors-filter[HTTP reference] information."
-msgstr "为了使你的Quarkus应用程序能够被运行在不同领域的另一个应用程序访问，你需要配置跨源资源共享（CORS）。关于Quarkus提供的CORS过滤器的更多信息，请参阅 link:http-reference.html#cors-filter[HTTP参考] 信息。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:297
-#, fuzzy, no-wrap
-msgid "Cross-site Request Forgery (CSRF) prevention"
-msgstr "防止跨站请求伪造（CSRF）。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:301
-#, fuzzy
-msgid "Quarkus Security provides a RESTEasy Reactive filter that can protect your applications against a https://owasp.org/www-community/attacks/csrf[Cross-Site Request Forgery] attack.  For more information, see xref:security-csrf-prevention.adoc[Cross-Site Request Forgery Prevention]."
-msgstr "Quarkus Security提供了一个RESTEasy Reactive过滤器，可以保护您的应用程序免受 link:https://owasp.org/www-community/attacks/csrf[跨站请求伪造] 攻击。欲了解更多信息，请参见 link:security-csrf-prevention.html[跨站请求伪造防护] 。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:302
-#, fuzzy, no-wrap
-msgid "SameSite cookies"
-msgstr "SameSite cookies"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:306
-#, fuzzy
-msgid "You can add a https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite[SameSite] cookie property to any of the cookies set by a Quarkus endpoint.  For more information, see xref:http-reference.adoc#same-site-cookie[SameSite cookies]."
-msgstr "你可以将 link:https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite[SameSite] cookie属性添加到Quarkus端点设置的任何cookie中。欲了解更多信息，请参见 link:http-reference.html#same-site-cookie[SameSite cookie] 。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:307
-#, fuzzy, no-wrap
-msgid "Secret engines"
-msgstr "秘密引擎"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:309
-#, fuzzy
-msgid "Secrets engines are components that store, generate, or encrypt data."
-msgstr "秘密引擎是存储、生成或加密数据的组件。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:312
-#, fuzzy
-msgid "Quarkus provides comprehensive HashiCorp Vault support.  For more information, see the link:{vault-guide}[Quarkus and HashiCorp Vault] documentation."
-msgstr "Quarkus提供全面的HashiCorp Vault支持。欲了解更多信息，请参阅 link:{vault-guide}[Quarkus和HashiCorp Vault] 文件。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:313
-#, fuzzy, no-wrap
-msgid "Secure serialization"
-msgstr "安全序列化"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:317
-#, fuzzy
-msgid "If your Quarkus Security architecture includes RESTEasy Reactive and Jackson, Quarkus can limit the fields that are included in JSON serialization based on the configured security.  For more information, see xref:resteasy-reactive.adoc#secure-serialization[Writing REST services with RESTEasy Reactive]."
-msgstr "如果您的Quarkus安全架构包括RESTEasy Reactive和Jackson，Quarkus可以根据配置的安全性来限制JSON序列化中包含的字段。欲了解更多信息，请参见 link:resteasy-reactive.html#secure-serialization[使用RESTEasy Reactive编写REST服务] 。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:318
-#, fuzzy, no-wrap
-msgid "Secure auto-generated resources by REST Data with Panache"
-msgstr "用Panache保护REST数据自动生成的资源"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:322
-#, fuzzy
-msgid "If you're using the REST Data with Panache extension to auto-generate your resources, you can still use the Security annotations within the package `javax.annotation.security`.  For more information, see xref:rest-data-panache.adoc#securing-endpoints[Securing auto-generated resources]."
-msgstr "如果你使用REST Data with Panache扩展来自动生成你的资源，你仍然可以使用包内的安全注释 `javax.annotation.security` 。欲了解更多信息，请参见 link:rest-data-panache.html#securing-endpoints[保护自动生成的资源] 。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:323
-#, fuzzy, no-wrap
-msgid "National Vulnerability Database"
-msgstr "国家易损性数据库"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:327
-#, fuzzy
-msgid "Most of the Quarkus tags are registered in the US link:https://nvd.nist.gov[National Vulnerability Database] (NVD) in Common Platform Enumeration (CPE) name format.  To view the registered Quarkus CPE names, use link:https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=quarkus[this search query]."
-msgstr "大多数Quarkus标签在美国 link:https://nvd.nist.gov[国家漏洞数据库] （NVD）中以通用平台枚举（CPE）名称格式注册。要查看注册的Quarkus CPE名称，请使用 link:https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=quarkus[此搜索查询] 。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:329
-#, fuzzy
-msgid "If the NVE database flags a CVE against a Quarkus tag, a link that provides more details about the CVE is added to the given CPE name entry."
-msgstr "如果NVE数据库针对Quarkus标签标记了一个CVE，一个提供关于CVE的更多细节的链接就会被添加到给定的CPE名称条目中。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:331
-#, fuzzy
-msgid "The NVD CPE team updates the list regularly, but if you encounter a false positive, report the details by creating an issue in the link:https://github.com/quarkusio/quarkus/issues/2611[quarkusio] repository."
-msgstr "NVD CPE团队定期更新列表，但如果你遇到一个假阳性，请在 link:https://github.com/quarkusio/quarkus/issues/2611[quarkusio] 仓库创建一个问题来报告细节。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:333
-#, fuzzy
-msgid "You can detect the vulnerabilities at the application build time with an NVD feed by using the Maven link:https://jeremylong.github.io/DependencyCheck/dependency-check-maven/[OWASP Dependency check plugin]."
-msgstr "你可以通过使用Maven link:https://jeremylong.github.io/DependencyCheck/dependency-check-maven/[OWASP依赖性检查插件] ，在应用构建时用NVD馈送检测漏洞。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:336
-#, fuzzy
-msgid "To add the OWASP Dependency check plugin to your Quarkus Maven project, add the following XML configuration to the `pom.xml` file:"
-msgstr "要在Quarkus Maven项目中添加OWASP依赖性检查插件，请在 `pom.xml` 文件中添加以下XML配置。"
-
-#. type: delimited block -
-#: upstream/_guides/security-overview-concept.adoc:344
-#, no-wrap
-msgid ""
-"<plugin>\n"
-"    <groupId>org.owasp</groupId>\n"
-"    <artifactId>dependency-check-maven</artifactId>\n"
-"    <version>${owasp-dependency-check-plugin.version}</version>\n"
-"</plugin>\n"
-msgstr ""
-
-#. type: delimited block =
-#: upstream/_guides/security-overview-concept.adoc:349
-#, fuzzy
-msgid "Set the `owasp-dependency-check-plugin.version` value to `7.4.4` or later."
-msgstr "将 `owasp-dependency-check-plugin.version` 值设置为 `7.1.1` 或更高。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:352
-#, fuzzy
-msgid "Next, configure the plugin as follows:"
-msgstr "接下来，按以下方式配置该插件。"
-
-#. type: delimited block -
-#: upstream/_guides/security-overview-concept.adoc:367
-#, no-wrap
-msgid ""
-"<plugin>\n"
-"    <groupId>org.owasp</groupId>\n"
-"    <artifactId>dependency-check-maven</artifactId>\n"
-"    <version>${owasp-dependency-check-plugin.version}</version>\n"
-"    <configuration>\n"
-"        <!-- Fail only when detecting High Vulnerability issues -->\n"
-"        <failBuildOnCVSS>7</failBuildOnCVSS>\n"
-"        <suppressionFiles>\n"
-"            <suppressionFile>${project.basedir}/dependency-cpe-suppression.xml</suppressionFile>\n"
-"        </suppressionFiles>\n"
-"    </configuration>\n"
-"</plugin>\n"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:370
-#, fuzzy
-msgid "To detect less severe issues, adjust the value of `failBuildOnCVSS` to suppress the false positives, as demonstrated in the following code sample:"
-msgstr "要检测不太严重的问题，可以调整 `failBuildOnCVSS` 的值，以抑制误报，如下面的代码示例所示。"
-
-#. type: delimited block -
-#: upstream/_guides/security-overview-concept.adoc:433
-#, no-wrap
-msgid ""
-"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-"<suppressions xmlns=\"https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.2.xsd\">\n"
-"    <!--\n"
-"        This is a CPE suppression file for the maven dependency check plugin.\n"
-"        Each CPE that is found by error (false positive) needs to be suppressed for a specific jar using its' GAV.\n"
-"        See https://jeremylong.github.io/DependencyCheck/general/suppression.html\n"
-"     -->\n"
-"    <suppress>\n"
-"        <notes>\n"
-"            <![CDATA[\n"
-"                Suppress the false positive CPE for netty-tcnative-classes to netty\n"
-"            ]]>\n"
-"        </notes>\n"
-"        <gav regex=\"true\">^io\\.netty:netty-tcnative-classes.*:.*$</gav>\n"
-"        <cpe>cpe:/a:netty:netty</cpe>\n"
-"    </suppress>\n"
-"    <suppress>\n"
-"        <notes>\n"
-"            <![CDATA[\n"
-"                Suppress the false positive CPE for Quarkus Mutiny to mutiny:mutiny\n"
-"            ]]>\n"
-"        </notes>\n"
-"        <gav regex=\"true\">^io\\.quarkus:quarkus-mutiny.*:.*$</gav>\n"
-"        <cpe>cpe:/a:mutiny:mutiny</cpe>\n"
-"    </suppress>\n"
-"    <suppress>\n"
-"        <notes>\n"
-"            <![CDATA[\n"
-"                Suppress the false positive CPE for Smallrye Mutiny to mutiny:mutiny\n"
-"            ]]>\n"
-"        </notes>\n"
-"        <gav regex=\"true\">^io\\.smallrye.reactive:mutiny.*:.*$</gav>\n"
-"        <cpe>cpe:/a:mutiny:mutiny</cpe>\n"
-"    </suppress>\n"
-"    <suppress>\n"
-"        <notes>\n"
-"            <![CDATA[\n"
-"                Suppress the false positive CPE for Smallrye Mutiny to mutiny:mutiny\n"
-"            ]]>\n"
-"        </notes>\n"
-"        <gav regex=\"true\">^io\\.smallrye.reactive:smallrye-mutiny.*:.*$</gav>\n"
-"        <cpe>cpe:/a:mutiny:mutiny</cpe>\n"
-"    </suppress>\n"
-"    <suppress>\n"
-"        <notes>\n"
-"            <![CDATA[\n"
-"                Suppress the false positive CPE for Smallrye Mutiny to mutiny:mutiny\n"
-"            ]]>\n"
-"        </notes>\n"
-"        <gav regex=\"true\">^io\\.smallrye.reactive:vertx-mutiny.*:.*$</gav>\n"
-"        <cpe>cpe:/a:mutiny:mutiny</cpe>\n"
-"    </suppress>\n"
-"    <suppress>\n"
-"        <notes>\n"
-"            <![CDATA[\n"
-"                Suppress the false positive CPE for graal-sdk to GraalVM (the JVM distribution)\n"
-"            ]]>\n"
-"        </notes>\n"
-"        <gav regex=\"true\">^org\\.graalvm\\.sdk:g like this\n"
-"    </suppress>\n"
-"</suppressions>\n"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:437
-#, fuzzy
-msgid "Ensure that you review and update the suppression list regularly to ensure that the results are up to date.  You can optionally apply a time limit to individual suppressions by adding an expiry attribute, as outlined in the following example:"
-msgstr "确保你定期审查和更新抑制列表，以确保结果是最新的。你可以通过添加一个过期属性，选择性地对单个压制应用一个时间限制，如下例所示。"
-
-#. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:440
-#, fuzzy
-msgid "`<suppress until=\"2022-01-01Z\">...</suppress>` You can adjust the expiry date if you need to."
-msgstr " `<suppress until=\"2022-01-01Z\">…​</suppress>` 如果需要，你可以调整到期日。"
-
-#. type: Title ==
-#: upstream/_guides/security-overview-concept.adoc:441
+#: upstream/_guides/security-overview-concept.adoc:42
 #, fuzzy, no-wrap
 msgid "Quarkus Security testing"
 msgstr "Quarkus安全测试"
 
 #. type: Plain text
-#: upstream/_guides/security-overview-concept.adoc:444
-msgid "When testing Quarkus security, ensure that your `IdentityProvider` is already set with usernames, passwords, and roles in `application.properties`.  For more information about testing Quarkus Security, see xref:security-testing.adoc#configuring-user-information[Configuring user information]."
+#: upstream/_guides/security-overview-concept.adoc:45
+msgid "Guidance for testing Quarkus Security features and ensuring that your Quarkus applications are securely protected is provided in xref:security-testing.adoc[Security Testing]."
 msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/security-overview-concept.adoc:46
+#, no-wrap
+msgid "More about security features in Quarkus"
+msgstr ""
+
+#. type: Title ===
+#: upstream/_guides/security-overview-concept.adoc:48
+#, fuzzy, no-wrap
+msgid "Cross-origin resource sharing"
+msgstr "跨原产地资源共享"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:52
+#, fuzzy
+msgid "To make your Quarkus application accessible to another application running on a different domain, you need to configure cross-origin resource sharing (CORS).  For more information about the CORS filter that is provided by Quarkus, see the xref:http-reference.adoc#cors-filter[HTTP reference] information."
+msgstr "为了使你的Quarkus应用程序能够被运行在不同领域的另一个应用程序访问，你需要配置跨源资源共享（CORS）。关于Quarkus提供的CORS过滤器的更多信息，请参阅 link:http-reference.html#cors-filter[HTTP参考] 信息。"
+
+#. type: Title ===
+#: upstream/_guides/security-overview-concept.adoc:53
+#, fuzzy, no-wrap
+msgid "Cross-site Request Forgery (CSRF) prevention"
+msgstr "防止跨站请求伪造（CSRF）。"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:57
+#, fuzzy
+msgid "Quarkus Security provides a RESTEasy Reactive filter that can protect your applications against a https://owasp.org/www-community/attacks/csrf[Cross-Site Request Forgery] attack.  For more information, see xref:security-csrf-prevention.adoc[Cross-Site Request Forgery Prevention]."
+msgstr "Quarkus Security提供了一个RESTEasy Reactive过滤器，可以保护您的应用程序免受 link:https://owasp.org/www-community/attacks/csrf[跨站请求伪造] 攻击。欲了解更多信息，请参见 link:security-csrf-prevention.html[跨站请求伪造防护] 。"
+
+#. type: Title ===
+#: upstream/_guides/security-overview-concept.adoc:58
+#, fuzzy, no-wrap
+msgid "SameSite cookies"
+msgstr "SameSite cookies"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:62
+#, fuzzy
+msgid "You can add a https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite[SameSite] cookie property to any of the cookies set by a Quarkus endpoint.  For more information, see xref:http-reference.adoc#same-site-cookie[SameSite cookies]."
+msgstr "你可以将 link:https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite[SameSite] cookie属性添加到Quarkus端点设置的任何cookie中。欲了解更多信息，请参见 link:http-reference.html#same-site-cookie[SameSite cookie] 。"
+
+#. type: Title ===
+#: upstream/_guides/security-overview-concept.adoc:63
+#, fuzzy, no-wrap
+msgid "Secrets engines"
+msgstr "秘密引擎"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:65
+#, fuzzy
+msgid "Secrets engines are components that store, generate, or encrypt data."
+msgstr "秘密引擎是存储、生成或加密数据的组件。"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:68
+#, fuzzy
+msgid "Quarkus provides comprehensive HashiCorp Vault support.  For more information, see the link:{vault-guide}[Quarkus and HashiCorp Vault] documentation."
+msgstr "Quarkus提供全面的HashiCorp Vault支持。欲了解更多信息，请参阅 link:{vault-guide}[Quarkus和HashiCorp Vault] 文件。"
+
+#. type: Title ===
+#: upstream/_guides/security-overview-concept.adoc:69
+#, fuzzy, no-wrap
+msgid "Secure serialization"
+msgstr "安全序列化"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:73
+#, fuzzy
+msgid "If your Quarkus Security architecture includes RESTEasy Reactive and Jackson, Quarkus can limit the fields that are included in JSON serialization based on the configured security.  For more information, see xref:resteasy-reactive.adoc#secure-serialization[Writing REST services with RESTEasy Reactive]."
+msgstr "如果您的Quarkus安全架构包括RESTEasy Reactive和Jackson，Quarkus可以根据配置的安全性来限制JSON序列化中包含的字段。欲了解更多信息，请参见 link:resteasy-reactive.html#secure-serialization[使用RESTEasy Reactive编写REST服务] 。"
+
+#. type: Title ===
+#: upstream/_guides/security-overview-concept.adoc:74
+#, fuzzy, no-wrap
+msgid "Secure auto-generated resources by REST Data with Panache"
+msgstr "用Panache保护REST数据自动生成的资源"
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:78
+#, fuzzy
+msgid "If you're using the REST Data with Panache extension to auto-generate your resources, you can still use the Security annotations within the package `jakarta.annotation.security`.  For more information, see xref:rest-data-panache.adoc#securing-endpoints[Securing auto-generated resources]."
+msgstr "如果你使用REST Data with Panache扩展来自动生成你的资源，你仍然可以使用包内的安全注释 `javax.annotation.security` 。欲了解更多信息，请参见 link:rest-data-panache.html#securing-endpoints[保护自动生成的资源] 。"
+
+#. type: Title ==
+#: upstream/_guides/security-overview-concept.adoc:79
+#, no-wrap
+msgid "Security vulnerability detection "
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-overview-concept.adoc:82
+msgid "Most of the Quarkus tags are reported in the US link:https://nvd.nist.gov[National Vulnerability Database (NVD)].  For information about security vulnerabilities, see xref:security-vulnerability-detection-concept.adoc[Security vulnerability detection and reporting in Quarkus]."
+msgstr ""
+
+#, fuzzy
+#~ msgid "Security architecture"
+#~ msgstr "安全架构"
+
+#, fuzzy
+#~ msgid "The `HttpAuthenticationMechanism` interface is the main entry mechanism for securing HTTP applications in Quarkus."
+#~ msgstr " `HttpAuthenticationMechanism` 接口是Quarkus中保证HTTP应用安全的主要入口机制。"
+
+#, fuzzy
+#~ msgid "Quarkus Security uses `HttpAuthenticationMechanism` to extract the authentication credentials from the HTTP request and delegates them to `IdentityProvider` to convert the credentials to `SecurityIdentity`.  For example, the credentials can come from the `Authorization` header, client HTTPS certificates, or cookies."
+#~ msgstr "Quarkus Security使用 `HttpAuthenticationMechanism` ，从HTTP请求中提取认证凭证，并将其委托给 `IdentityProvider` ，将凭证转换为 `SecurityIdentity` 。例如，凭证可以来自 `Authorization` 头，客户端HTTPS证书，或cookies。"
+
+#, fuzzy
+#~ msgid "`IdentityProvider` verifies the authentication credentials and maps them to `SecurityIdentity`, which has the username, roles, original authentication credentials, and other attributes."
+#~ msgstr " `IdentityProvider` 验证认证凭证并将其映射到 ，该网站有用户名、角色、原始认证凭证和其他属性。 `SecurityIdentity` "
+
+#, fuzzy
+#~ msgid "For every authenticated resource, you can inject a `SecurityIdentity` instance to get the authenticated identity information."
+#~ msgstr "对于每个认证的资源，你可以注入一个 `SecurityIdentity` 实例来获得认证的身份信息。"
+
+#, fuzzy
+#~ msgid "In other contexts, it is possible to have other parallel representations of the same information or parts of it, for example, `SecurityContext` for JAX-RS or `JsonWebToken` for JSON Web Tokens (JWT)."
+#~ msgstr "在其他情况下，有可能对相同的信息或部分信息进行其他并行表示，例如，JAX-RS的 `SecurityContext` ，或JSON Web Tokens（JWT）的 `JsonWebToken` 。"
+
+#, fuzzy
+#~ msgid "Authentication mechanisms"
+#~ msgstr "认证机制"
+
+#, fuzzy
+#~ msgid "Quarkus supports multiple authentication mechanisms"
+#~ msgstr "Quarkus支持多种认证机制"
+
+#, fuzzy
+#~ msgid "Basic and Form HTTP authentication"
+#~ msgstr "基本和形式的HTTP认证"
+
+#, fuzzy
+#~ msgid "xref:security-basic-authentication-concept.adoc[Basic HTTP Authentication] and xref:security-built-in-authentication-support-concept.adoc#form-auth[Form HTTP authentication] are the core authentication mechanisms supported in Quarkus."
+#~ msgstr "link:security-basic-authentication-concept.html[Basic HTTP认证] 和 link:security-built-in-authentication-support-concept.html#form-auth[Form HTTP认证] 是Quarkus支持的核心认证机制。"
+
+#, fuzzy
+#~ msgid "WebAuthn authentication"
+#~ msgstr "WebAuthn认证"
+
+#, fuzzy
+#~ msgid "https://webauthn.guide/[WebAuthn] is an authentication mechanism that replaces passwords.  When you write a service for registering new users, or logging them in, instead of asking for a password, you can use WebAuthn, which replaces the password.  For more information, see xref:security-webauthn.adoc[Secure a Quarkus application by using the WebAuthn authentication mechanism]."
+#~ msgstr "link:https://webauthn.guide/[WebAuthn] 是一种取代密码的认证机制。当你写一个注册新用户或登录用户的服务时，你可以使用WebAuthn来替代密码，而不是要求用户输入密码。更多信息，请参见 link:security-webauthn.html[通过使用WebAuthn认证机制保护Quarkus应用程序] 。"
+
+#, fuzzy
+#~ msgid "Mutual TLS (mTLS) authentication"
+#~ msgstr "相互TLS（mTLS）认证"
+
+#, fuzzy
+#~ msgid "Quarkus provides mutual TLS (mTLS) authentication so that you can authenticate users based on their X.509 certificates.  For more information, see xref:security-built-in-authentication-support-concept.adoc#mutual-tls[mutual TLS authentication]."
+#~ msgstr "Quarkus提供了相互TLS(mTLS)认证，因此你可以根据用户的X.509证书进行认证。更多信息，请参见 link:security-built-in-authentication-support-concept.html#mutual-tls[相互TLS认证] 。"
+
+#, fuzzy
+#~ msgid "OpenID Connect authentication"
+#~ msgstr "OpenID连接认证"
+
+#, fuzzy
+#~ msgid "OpenID Connect (OIDC) is an identity layer that works on top of the OAuth 2.0 protocol. OIDC enables client applications to verify the identity of a user based on the authentication performed by the OIDC provider and to retrieve basic information about that user."
+#~ msgstr "OpenID Connect（OIDC）是一个身份层，在OAuth 2.0协议之上工作。OIDC使客户端应用程序能够根据OIDC提供者进行的认证来验证用户的身份，并检索该用户的基本信息。"
+
+#, fuzzy
+#~ msgid "The Quarkus `quarkus-oidc` extension provides a reactive, interoperable, multitenant-enabled OIDC adapter that supports Bearer Token and Authorization Code Flow authentication mechanisms.  The Bearer Token mechanism extracts the token from the HTTP Authorization header.  The Authorization Code Flow mechanism redirects the user to an OIDC provider to authenticate the identity of the user.  After the user is redirected back to Quarkus, the mechanism completes the authentication process by exchanging the provided code that was granted for the ID, access, and refresh tokens."
+#~ msgstr "Quarkus `quarkus-oidc` 扩展提供了一个反应式的、可互操作的、支持多租户的OIDC适配器，支持承载令牌和授权代码流认证机制。Bearer Token机制从HTTP授权头中提取令牌。授权代码流机制将用户重定向到一个OIDC提供者，以验证用户的身份。在用户被重定向回Quarkus后，该机制通过交换被授予ID、访问和刷新令牌的所提供的代码来完成认证过程。"
+
+#, fuzzy
+#~ msgid "You can verify ID and access JWT tokens by using the refreshable JSON Web Key (JWK) set or you can introspect them remotely.  However, opaque (binary) tokens can only be introspected remotely."
+#~ msgstr "你可以通过使用可刷新的JSON网络密钥（JWK）集来验证ID和访问JWT令牌，或者你可以远程反省它们。然而，不透明的（二进制）令牌只能被远程反省。"
+
+#, fuzzy
+#~ msgid "Using the Quarkus OIDC extension, both Bearer Token and Authorization Code Flow mechanisms use <<smallrye-jwt, SmallRye JWT>> to represent JWT tokens as MicroProfile JWT `org.eclipse.microprofile.jwt.JsonWebToken`."
+#~ msgstr "使用Quarkus OIDC扩展，承载令牌和授权码流机制都使用 link:#smallrye-jwt[SmallRye JWT] 来表示JWT令牌为MicroProfile JWT `org.eclipse.microprofile.jwt.JsonWebToken` 。"
+
+#, fuzzy
+#~ msgid "Additional Quarkus resources for OIDC authentication"
+#~ msgstr "用于OIDC认证的其他Quarkus资源"
+
+#, fuzzy
+#~ msgid "For more information about OIDC authentication and authorization methods you can use to secure your Quarkus applications, see the following detailed resources:"
+#~ msgstr "更多关于OIDC认证和授权方法的信息，你可以用来保护你的Quarkus应用程序，请参阅以下详细资源。"
+
+#, fuzzy
+#~ msgid "OIDC topic"
+#~ msgstr "OIDC专题"
+
+#, fuzzy
+#~ msgid "Quarkus information resource"
+#~ msgstr "Quarkus信息资源"
+
+#, fuzzy
+#~ msgid "Bearer Token authentication mechanis"
+#~ msgstr "持卡人令牌认证机制"
+
+#, fuzzy
+#~ msgid "xref:security-openid-connect.adoc[Using OpenID Connect (OIDC) to protect service applications using Bearer Token authorization]"
+#~ msgstr "link:security-openid-connect.html[使用OpenID连接（OIDC）来保护使用承载令牌授权的服务应用]"
+
+#, fuzzy
+#~ msgid "Authorization Code Flow authentication mechanis"
+#~ msgstr "授权代码流认证机制"
+
+#, fuzzy
+#~ msgid "xref:security-openid-connect-web-authentication.adoc[OpenID Connect (OIDC) authorization code flow mechanism]"
+#~ msgstr "link:security-openid-connect-web-authentication.html[OpenID Connect（OIDC）授权代码流机制]"
+
+#, fuzzy
+#~ msgid "Multiple tenants that can support Bearer Token or Authorization Code Flow mechanism"
+#~ msgstr "可支持承载令牌或授权码流机制的多个租户"
+
+#, fuzzy
+#~ msgid "xref:security-openid-connect-multitenancy.adoc[Using OpenID Connect (OIDC) multi-tenancy]"
+#~ msgstr "link:security-openid-connect-multitenancy.html[使用OpenID连接（OIDC）多租户]"
+
+#, fuzzy
+#~ msgid "Using Keycloak to centralize authorization"
+#~ msgstr "使用Keycloak来集中授权"
+
+#, fuzzy
+#~ msgid "xref:security-keycloak-authorization.adoc[Using OpenID Connect (OIDC) and Keycloak to centralize authorization]"
+#~ msgstr "link:security-keycloak-authorization.html[使用OpenID连接（OIDC）和Keycloak来集中授权]"
+
+#, fuzzy
+#~ msgid "Configuring Keycloak programmatically"
+#~ msgstr "以编程方式配置Keycloak"
+
+#, fuzzy
+#~ msgid "xref:security-keycloak-admin-client.adoc[Using the Keycloak admin client]"
+#~ msgstr "link:security-keycloak-admin-client.html[使用Keycloak管理客户端]"
+
+#, fuzzy
+#~ msgid "If you need to enable the Quarkus OIDC extension at runtime, set `quarkus.oidc.tenant-enabled=false` at build time and then re-enable it at runtime by using a system property.  For more information about managing the individual tenant configurations in multitenant OIDC deployments, see the _Disabling tenant configurations_ section in the xref:security-openid-connect-multitenancy.adoc#disable-tenant[Using OpenID Connect (OIDC) multi-tenancy] guide."
+#~ msgstr "如果你需要在运行时启用Quarkus OIDC扩展，请在构建时设置 `quarkus.oidc.tenant-enabled=false` ，然后在运行时通过使用系统属性重新启用它。关于在多租户OIDC部署中管理单个租户配置的更多信息，请参阅 link:security-openid-connect-multitenancy.html#disable-tenant[使用OpenID Connect（OIDC）多租户] 指南中的 _禁用租户配置_ 部分。"
+
+#, fuzzy
+#~ msgid "OpenID Connect client and filters"
+#~ msgstr "OpenID连接客户端和过滤器"
+
+#, fuzzy
+#~ msgid "The `quarkus-oidc-client` extension provides `OidcClient` for acquiring and refreshing access tokens from OpenID Connect and OAuth2 providers that support the following token grants:"
+#~ msgstr " `quarkus-oidc-client` 扩展提供了 `OidcClient` ，用于从支持以下令牌授予的OpenID Connect和OAuth2提供商那里获取和刷新访问令牌。"
+
+#, fuzzy
+#~ msgid "`client-credentials`"
+#~ msgstr " `client-credentials` "
+
+#, fuzzy
+#~ msgid "`password`"
+#~ msgstr " `password` "
+
+#, fuzzy
+#~ msgid "`refresh_token`"
+#~ msgstr " `refresh_token` "
+
+#, fuzzy
+#~ msgid "The `quarkus-oidc-client-filter` extension requires the `quarkus-oidc-client` extension and provides JAX-RS `OidcClientRequestFilter`, which sets the access token acquired by `OidcClient` as the `Bearer` scheme value of the HTTP `Authorization` header.  This filter can be registered with MP RestClient implementations injected into the current Quarkus endpoint, but it is not related to the authentication requirements of this service endpoint.  For example, it can be a public endpoint, or it can be protected with mTLS."
+#~ msgstr " `quarkus-oidc-client-filter` 扩展需要 `quarkus-oidc-client` 扩展，并提供 JAX-RS `OidcClientRequestFilter` ，它将由 `OidcClient` 获得的访问令牌设置为 HTTP `Authorization` 头的 `Bearer` 方案值。这个过滤器可以与注入当前 Quarkus 端点的 MP RestClient 实现注册，但它与这个服务端点的认证要求无关。例如，它可以是一个公共端点，或者它可以用mTLS保护。"
+
+#, fuzzy
+#~ msgid "In this scenario, you do not need to protect your Quarkus endpoint by using the Quarkus OpenID Connect adapter."
+#~ msgstr "在这种情况下，你不需要通过使用Quarkus OpenID Connect适配器来保护你的Quarkus端点。"
+
+#, fuzzy
+#~ msgid "The `quarkus-oidc-token-propagation` extension requires the `quarkus-oidc` extension and provides JAX-RS `TokenCredentialRequestFilter`, which sets the OpenID Connect Bearer or Authorization Code Flow access token as the `Bearer` scheme value of the HTTP `Authorization` header.  This filter can be registered with MP RestClient implementations injected into the current Quarkus endpoint, which in turn must be protected by using the Quarkus OpenID Connect adapter.  This filter can be used to propagate the access token to the downstream services."
+#~ msgstr " `quarkus-oidc-token-propagation` 扩展需要 `quarkus-oidc` 扩展，并提供 JAX-RS `TokenCredentialRequestFilter` ，它将 OpenID Connect Bearer 或 Authorization Code Flow 访问令牌设置为 HTTP `Authorization` 头的 `Bearer` 方案值。这个过滤器可以与MP RestClient实现注册，注入到当前的Quarkus端点中，而这又必须通过使用Quarkus OpenID Connect适配器来保护。这个过滤器可以用来将访问令牌传播到下游服务中。"
+
+#, fuzzy
+#~ msgid "For more information, see the xref:security-openid-connect-client.adoc[OpenID Connect client and token propagation quickstart] and xref:security-openid-connect-client-reference.adoc[OpenID Connect (OIDC) and OAuth2 client and filters reference] guides."
+#~ msgstr "欲了解更多信息，请参阅 link:security-openid-connect-client.html[OpenID Connect客户端和令牌传播快速入门] 和 link:security-openid-connect-client-reference.html[OpenID Connect（OIDC）和OAuth2客户端和过滤器参考] 指南。"
+
+#, fuzzy
+#~ msgid "SmallRye JWT authentication"
+#~ msgstr "SmallRye JWT认证"
+
+#, fuzzy
+#~ msgid "The `quarkus-smallrye-jwt` extension provides a MicroProfile JSON Web Token (JWT) 1.2.1 implementation and multiple options to verify signed and encrypted `JWT` tokens and represents them as `org.eclipse.microprofile.jwt.JsonWebToken`."
+#~ msgstr " `quarkus-smallrye-jwt` 扩展提供了MicroProfile JSON Web Token（JWT）1.2.1的实现和多个选项，以验证签名和加密的 `JWT` tokens，并将其表示为 `org.eclipse.microprofile.jwt.JsonWebToken` 。"
+
+#, fuzzy
+#~ msgid "`quarkus-smallrye-jwt` is an alternative to the `quarkus-oidc` Bearer Token authentication mechanism, and verifies only `JWT` tokens by using either PEM keys or the refreshable `JWK` key set.  `quarkus-smallrye-jwt` also provides the JWT generation API, which you can use to easily create `signed`, `inner-signed`, and `encrypted` `JWT` tokens."
+#~ msgstr " `quarkus-smallrye-jwt` 是 \"承载令牌 \"认证机制的替代方案，仅通过使用PEM密钥或可刷新的 密钥集来验证 。 还提供JWT生成API，你可以使用它来轻松创建 、 和  令牌。 `quarkus-oidc` `JWK` `JWT` `quarkus-smallrye-jwt` `signed` `inner-signed` `encrypted` `JWT` "
+
+#, fuzzy
+#~ msgid "For more information, see xref:security-jwt.adoc[Using SmallRye JWT role-based access control]."
+#~ msgstr "欲了解更多信息，请参见 link:security-jwt.html[使用SmallRye JWT基于角色的访问控制] 。"
+
+#, fuzzy
+#~ msgid "OAuth2 authentication"
+#~ msgstr "OAuth2认证"
+
+#, fuzzy
+#~ msgid "`quarkus-elytron-security-oauth2` provides an alternative to the `quarkus-oidc` Bearer Token authentication mechanism. `quarkus-elytron-security-oauth2` is based on `Elytron` and is primarily intended for introspecting opaque tokens remotely.  For more information, see xref:security-oauth2.adoc[Using OAuth2]."
+#~ msgstr " `quarkus-elytron-security-oauth2` 提供了一个替代 Bearer Token的认证机制。 是基于 ，主要用于远程反省不透明的令牌。欲了解更多信息，请参阅 `quarkus-oidc` `quarkus-elytron-security-oauth2` `Elytron` link:security-oauth2.html[使用OAuth2] 。"
+
+#, fuzzy
+#~ msgid "Choosing between OpenID Connect, SmallRye JWT, and OAuth2 authentication mechanisms"
+#~ msgstr "在OpenID Connect、SmallRye JWT和OAuth2认证机制之间做出选择"
+
+#, fuzzy
+#~ msgid "Use the following information to help you to decide which authentication mechanism to use to secure your Quarkus applications:"
+#~ msgstr "使用以下信息来帮助你决定使用哪种认证机制来保护你的Quarkus应用程序。"
+
+#, fuzzy
+#~ msgid "`quarkus-oidc` requires an OpenID Connect provider such as Keycloak, which can be used to verify the Bearer tokens or authenticate the end users with the Authorization Code flow.  In both cases, `quarkus-oidc` requires a connection to the specified OpenID Connect provider."
+#~ msgstr " `quarkus-oidc` 需要一个OpenID连接提供者，如Keycloak，它可以用来验证承载器令牌或用授权码流验证终端用户。在这两种情况下， ，需要连接到指定的OpenID连接提供者。 `quarkus-oidc` "
+
+#, fuzzy
+#~ msgid "If the user authentication requires Authorization Code flow or you need to support multiple tenants, use `quarkus-oidc`.  `quarkus-oidc` can also request user information by using both Authorization Code Flow and Bearer access tokens."
+#~ msgstr "如果用户认证需要授权码流，或者你需要支持多个租户，请使用 `quarkus-oidc` 。 `quarkus-oidc` ，也可以同时使用授权码流和承载访问令牌来请求用户信息。"
+
+#, fuzzy
+#~ msgid "If your Bearer tokens must be verified, use `quarkus-oidc`, `quarkus-smallrye-jwt`, or `quarkus-elytron-security-oauth2`."
+#~ msgstr "如果你的不记名代币必须被验证，请使用 `quarkus-oidc` , `quarkus-smallrye-jwt` , 或 `quarkus-elytron-security-oauth2` 。"
+
+#, fuzzy
+#~ msgid "If your Bearer tokens are in a JWT format, you can use either of the three extensions. Both `quarkus-oidc` and `quarkus-smallrye-jwt` support refreshing the JsonWebKey (JWK) set when the OpenID Connect provider rotates the keys.  Therefore, if remote token introspection must be avoided or is unsupported by the providers, use `quarkus-oidc` or `quarkus-smallrye-jwt` for verifying JWT tokens."
+#~ msgstr "如果你的承载令牌是JWT格式的，你可以使用这三个扩展中的任何一个。 `quarkus-oidc` 和 `quarkus-smallrye-jwt` 都支持在OpenID Connect提供者轮换密钥时刷新JsonWebKey（JWK）集。因此，如果必须避免远程令牌反省或提供者不支持，请使用 `quarkus-oidc` 或 `quarkus-smallrye-jwt` 来验证JWT令牌。"
+
+#, fuzzy
+#~ msgid "If you need to introspect the JWT tokens remotely, you can use either `quarkus-oidc` or `quarkus-elytron-security-oauth2` because they support the verification of the opaque or binary tokens by using remote introspection.  `quarkus-smallrye-jwt` does not support the remote introspection of both opaque or JWT tokens but instead relies on the locally available keys that are usually retrieved from the OpenID Connect provider."
+#~ msgstr "如果你需要远程反省JWT令牌，你可以使用 `quarkus-oidc` 或 `quarkus-elytron-security-oauth2` ，因为它们支持通过使用远程反省来验证不透明或二进制令牌。 `quarkus-smallrye-jwt` 不支持对不透明或JWT令牌进行远程反省，而是依赖于通常从OpenID Connect提供商那里检索的本地可用密钥。"
+
+#, fuzzy
+#~ msgid "`quarkus-oidc` and `quarkus-smallrye-jwt` support the injecting of JWT and opaque tokens into the endpoint code.  Injected JWT tokens provide more information about the user. All extensions can have the tokens injected as `Principal`."
+#~ msgstr " `quarkus-oidc` 和 ，支持将JWT和不透明的令牌注入端点代码中。注入的JWT令牌提供了关于用户的更多信息。所有的扩展都可以将令牌注入到 。 `quarkus-smallrye-jwt` `Principal` "
+
+#, fuzzy
+#~ msgid "`quarkus-smallrye-jwt` supports more key formats than `quarkus-oidc`. `quarkus-oidc` uses only the JWK-formatted keys that are part of a JWK set, whereas `quarkus-smallrye-jwt` supports PEM keys."
+#~ msgstr " `quarkus-smallrye-jwt` 比 支持更多的密钥格式。 只使用作为JWK集一部分的JWK格式的密钥，而 支持PEM密钥。 `quarkus-oidc` `quarkus-oidc` `quarkus-smallrye-jwt` "
+
+#, fuzzy
+#~ msgid "`quarkus-smallrye-jwt` handles locally signed, inner-signed-and-encrypted, and encrypted tokens.  While `quarkus-oidc` and `quarkus-elytron-security-oauth2` can also verify such tokens but treats them as opaque tokens and verifies them through remote introspection."
+#~ msgstr " `quarkus-smallrye-jwt` 处理本地签名的、内部签名并加密的以及加密的令牌。虽然 和 也可以验证这样的令牌，但是把它们当作不透明的令牌，通过远程反省来验证。 `quarkus-oidc` `quarkus-elytron-security-oauth2` "
+
+#, fuzzy
+#~ msgid "If you need a lightweight library for the remote introspection of opaque or JWT tokens, use `quarkus-elytron-security-oauth2`."
+#~ msgstr "如果你需要一个轻量级的库来对不透明或JWT令牌进行远程反省，请使用 `quarkus-elytron-security-oauth2` 。"
+
+#, fuzzy
+#~ msgid "Your decision to choose whether to use opaque or JWT token format will be driven by architectural considerations.  Opaque tokens tend to be much shorter than JWT tokens but need most of the token-associated state to be maintained in the provider database.  Opaque tokens are effectively database pointers.  JWT tokens are significantly longer than the opaque tokens but the providers are effectively delegating storing most of the token-associated state to the client by storing it as the token claims and either signing or encrypting them."
+#~ msgstr "你选择使用不透明或JWT令牌格式的决定将由架构考虑驱动。不透明令牌往往比JWT令牌短得多，但需要在提供者数据库中维护大部分令牌相关的状态。不透明令牌实际上是数据库指针。JWT令牌比不透明令牌长得多，但提供者通过将大部分令牌相关状态存储为令牌声明，并对其进行签名或加密，有效地将其委托给客户端。"
+
+#, fuzzy
+#~ msgid "The following table provides a summary of the options for each authentication mechanism:"
+#~ msgstr "下表提供了每种认证机制的选项摘要。"
+
+#, fuzzy
+#~ msgid "quarkus-oidc"
+#~ msgstr "夸库斯-艾德克"
+
+#, fuzzy
+#~ msgid "quarkus-smallrye-jwt"
+#~ msgstr "夸父-小雷-JWT"
+
+#, fuzzy
+#~ msgid "quarkus-elytron-security-oauth2"
+#~ msgstr "quarkus-elytron-security-oauth2"
+
+#, fuzzy
+#~ msgid "Requires Bearer JWT verification"
+#~ msgstr "需要承载器JWT验证"
+
+#, fuzzy
+#~ msgid "Local verification or introspection"
+#~ msgstr "本地核查或反省"
+
+#, fuzzy
+#~ msgid "Local verification"
+#~ msgstr "当地核查"
+
+#, fuzzy
+#~ msgid "Introspection"
+#~ msgstr "自省"
+
+#, fuzzy
+#~ msgid "Requires Bearer opaque token verification"
+#~ msgstr "需要承载者不透明令牌验证"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "没有"
+
+#, fuzzy
+#~ msgid "Refreshing `JsonWebKey` set for verifying JWT tokens"
+#~ msgstr "刷新 `JsonWebKey` 集，以验证JWT令牌"
+
+#, fuzzy
+#~ msgid "Yes"
+#~ msgstr "是"
+
+#, fuzzy
+#~ msgid "Represent token as `Principal`"
+#~ msgstr "将令牌表示为 `Principal`` "
+
+#, fuzzy
+#~ msgid "Inject JWT as MP JSON Web Token (JWT)"
+#~ msgstr "注入JWT作为MP JSON网络令牌（JWT）。"
+
+#, fuzzy
+#~ msgid "Authorization Code Flow"
+#~ msgstr "授权代码流程"
+
+#, fuzzy
+#~ msgid "Multi-tenancy"
+#~ msgstr "多租户"
+
+#, fuzzy
+#~ msgid "User info support"
+#~ msgstr "用户信息支持"
+
+#, fuzzy
+#~ msgid "PEM key format support"
+#~ msgstr "支持PEM密钥格式"
+
+#, fuzzy
+#~ msgid "SecretKey support"
+#~ msgstr "支持SecretKey"
+
+#, fuzzy
+#~ msgid "In JSON Web Key (JWK) format"
+#~ msgstr "以JSON网络密钥（JWK）的格式"
+
+#, fuzzy
+#~ msgid "Inner-signed and encrypted or encrypted tokens"
+#~ msgstr "内部签名和加密的或加密的令牌"
+
+#, fuzzy
+#~ msgid "Custom token verification"
+#~ msgstr "自定义令牌验证"
+
+#, fuzzy
+#~ msgid "With injected JWT parser"
+#~ msgstr "有了注入的JWT解析器"
+
+#, fuzzy
+#~ msgid "Accept JWT as a cookie"
+#~ msgstr "接受JWT作为一个cookie"
+
+#, fuzzy
+#~ msgid "Identity providers"
+#~ msgstr "身份提供者"
+
+#, fuzzy
+#~ msgid "The JPA `IdentityProvider` creates a `SecurityIdentity` instance, which is used during user authentication to verify and authorize access requests making your Quarkus application secure."
+#~ msgstr "JPA `IdentityProvider` 创建了一个 `SecurityIdentity` 实例，在用户认证过程中，它被用来验证和授权访问请求，使你的Quarkus应用程序安全。"
+
+#, fuzzy
+#~ msgid "`IdentityProvider` converts the authentication credentials provided by `HttpAuthenticationMechanism` to a `SecurityIdentity` instance."
+#~ msgstr " `IdentityProvider` 将 提供的认证凭证转换为 实例。 `HttpAuthenticationMechanism` `SecurityIdentity` "
+
+#, fuzzy
+#~ msgid "Some extensions, for example, `OIDC`, `OAuth2`, and `SmallRye JWT` have inline `IdentityProvider` implementations specific to the supported authentication flow.  For example, `quarkus-oidc` uses its own `IdentityProvider` to convert a token to a `SecurityIdentity` instance."
+#~ msgstr "一些扩展，例如： `OIDC` , `OAuth2` , 和 `SmallRye JWT` 都有针对支持的认证流程的内联 `IdentityProvider` 实现。例如， `quarkus-oidc` 使用它自己的 `IdentityProvider` ，将一个令牌转换成一个 `SecurityIdentity` 实例。"
+
+#, fuzzy
+#~ msgid "If you use `Basic` or `Form` HTTP-based authentication then you must add an `IdentityProvider` instance that can convert a username and password to a `SecurityIdentity` instance."
+#~ msgstr "如果你使用 `Basic` 或 `Form` 基于HTTP的认证，那么你必须添加一个 `IdentityProvider` 实例，可以将用户名和密码转换为 `SecurityIdentity` 实例。"
+
+#, fuzzy
+#~ msgid "For more information about `Basic` or `Form` HTTP-based authentication, see the following resources:"
+#~ msgstr "关于 `Basic` 或 `Form` 基于HTTP的认证的更多信息，请参见以下资源。"
+
+#, fuzzy
+#~ msgid "xref:security-jdbc.adoc[Using security with JDBC]"
+#~ msgstr "link:security-jdbc.html[使用JDBC的安全性]"
+
+#, fuzzy
+#~ msgid "xref:security-ldap.adoc[Using security with an LDAP realm]"
+#~ msgstr "link:security-ldap.html[使用LDAP领域的安全性]"
+
+#, fuzzy
+#~ msgid "Authorization"
+#~ msgstr "授权书"
+
+#, fuzzy
+#~ msgid "Quarkus also supports role-based access control (RBAC).  For more information about RBAC and other authorization options in Quarkus, see xref:security-authorization-of-web-endpoints-reference.adoc[Security authorization]."
+#~ msgstr "Quarkus也支持基于角色的访问控制（RBAC）。关于RBAC和Quarkus中其他授权选项的更多信息，请参见 link:security-authorization-of-web-endpoints-reference.html[安全授权] 。"
+
+#, fuzzy
+#~ msgid "Quarkus Security customization"
+#~ msgstr "Quarkus安全定制"
+
+#, fuzzy
+#~ msgid "Quarkus Security is highly customizable. You can customize the following core security components of Quarkus:"
+#~ msgstr "Quarkus安全系统是高度可定制的。你可以定制Quarkus的以下核心安全组件。"
+
+#, fuzzy
+#~ msgid "`HttpAuthenticationMechanism`"
+#~ msgstr " `HttpAuthenticationMechanism` "
+
+#, fuzzy
+#~ msgid "`IdentityProvider`"
+#~ msgstr " `IdentityProvider` "
+
+#, fuzzy
+#~ msgid "`SecurityidentityAugmentor`"
+#~ msgstr " `SecurityidentityAugmentor` "
+
+#, fuzzy
+#~ msgid "Combining authentication mechanisms"
+#~ msgstr "结合认证机制"
+
+#, fuzzy
+#~ msgid "If the user credentials are provided by different sources, you can combine authentication mechanisms.  For example, you can combine built-in `Basic` and `quarkus-oidc` `Bearer` authentication mechanisms."
+#~ msgstr "如果用户证书是由不同的来源提供的，你可以结合认证机制。例如，你可以结合内置的 `Basic` 和 `quarkus-oidc` `Bearer` 认证机制。"
+
+#, fuzzy
+#~ msgid "You cannot combine the `quarkus-oidc` `Bearer` and `smallrye-jwt` authentication mechanisms because both mechanisms attempt to verify the token extracted from the HTTP `Authorization Bearer` scheme."
+#~ msgstr "你不能结合 `quarkus-oidc` `Bearer` 和 `smallrye-jwt` 认证机制，因为这两种机制都试图验证从HTTP `Authorization Bearer` 方案中提取的令牌。"
+
+#, fuzzy
+#~ msgid "Path-specific authentication mechanisms"
+#~ msgstr "针对路径的认证机制"
+
+#, fuzzy
+#~ msgid "The following configuration example demonstrates how you can enforce a single selectable authentication mechanism for a given request path:"
+#~ msgstr "下面的配置例子演示了如何为一个给定的请求路径强制执行一个可选择的认证机制。"
+
+#, fuzzy
+#~ msgid "Ensure that the value of the `auth-mechanism` property matches the authentication scheme supported by `HttpAuthenticationMechanism`, for example, `basic`, `bearer`, or `form`."
+#~ msgstr "确保 `auth-mechanism` 属性的值与 `HttpAuthenticationMechanism` 所支持的认证方案相匹配，例如： `basic` 、 `bearer` 或 `form` 。"
+
+#, fuzzy
+#~ msgid "Proactive authentication"
+#~ msgstr "主动认证"
+
+#, fuzzy
+#~ msgid "By default, Quarkus does proactive authentication, which means that all incoming requests with credentials are authenticated regardless of whether the target page requires authentication.  For more information, see xref:security-built-in-authentication-support-concept.adoc#proactive-authentication[Proactive authentication]."
+#~ msgstr "默认情况下，Quarkus进行主动认证，这意味着所有带证书的传入请求都会被认证，不管目标页面是否需要认证。更多信息，请参阅 link:security-built-in-authentication-support-concept.html#proactive-authentication[主动认证] 。"
+
+#, fuzzy
+#~ msgid "For more information about how Quarkus supports secure connections with SSL/TLS, see the xref:http-reference.adoc#ssl[HTTP reference] information."
+#~ msgstr "关于Quarkus如何支持SSL/TLS的安全连接的更多信息，请参阅xref:http-reference.adoc#ssl[HTTP参考]信息。"
+
+#, fuzzy
+#~ msgid "National Vulnerability Database"
+#~ msgstr "国家易损性数据库"
+
+#, fuzzy
+#~ msgid "Most of the Quarkus tags are registered in the US link:https://nvd.nist.gov[National Vulnerability Database] (NVD) in Common Platform Enumeration (CPE) name format.  To view the registered Quarkus CPE names, use link:https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=quarkus[this search query]."
+#~ msgstr "大多数Quarkus标签在美国 link:https://nvd.nist.gov[国家漏洞数据库] （NVD）中以通用平台枚举（CPE）名称格式注册。要查看注册的Quarkus CPE名称，请使用 link:https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=quarkus[此搜索查询] 。"
+
+#, fuzzy
+#~ msgid "If the NVE database flags a CVE against a Quarkus tag, a link that provides more details about the CVE is added to the given CPE name entry."
+#~ msgstr "如果NVE数据库针对Quarkus标签标记了一个CVE，一个提供关于CVE的更多细节的链接就会被添加到给定的CPE名称条目中。"
+
+#, fuzzy
+#~ msgid "The NVD CPE team updates the list regularly, but if you encounter a false positive, report the details by creating an issue in the link:https://github.com/quarkusio/quarkus/issues/2611[quarkusio] repository."
+#~ msgstr "NVD CPE团队定期更新列表，但如果你遇到一个假阳性，请在 link:https://github.com/quarkusio/quarkus/issues/2611[quarkusio] 仓库创建一个问题来报告细节。"
+
+#, fuzzy
+#~ msgid "You can detect the vulnerabilities at the application build time with an NVD feed by using the Maven link:https://jeremylong.github.io/DependencyCheck/dependency-check-maven/[OWASP Dependency check plugin]."
+#~ msgstr "你可以通过使用Maven link:https://jeremylong.github.io/DependencyCheck/dependency-check-maven/[OWASP依赖性检查插件] ，在应用构建时用NVD馈送检测漏洞。"
+
+#, fuzzy
+#~ msgid "To add the OWASP Dependency check plugin to your Quarkus Maven project, add the following XML configuration to the `pom.xml` file:"
+#~ msgstr "要在Quarkus Maven项目中添加OWASP依赖性检查插件，请在 `pom.xml` 文件中添加以下XML配置。"
+
+#, fuzzy
+#~ msgid "Set the `owasp-dependency-check-plugin.version` value to `7.4.4` or later."
+#~ msgstr "将 `owasp-dependency-check-plugin.version` 值设置为 `7.1.1` 或更高。"
+
+#, fuzzy
+#~ msgid "Next, configure the plugin as follows:"
+#~ msgstr "接下来，按以下方式配置该插件。"
+
+#, fuzzy
+#~ msgid "To detect less severe issues, adjust the value of `failBuildOnCVSS` to suppress the false positives, as demonstrated in the following code sample:"
+#~ msgstr "要检测不太严重的问题，可以调整 `failBuildOnCVSS` 的值，以抑制误报，如下面的代码示例所示。"
+
+#, fuzzy
+#~ msgid "Ensure that you review and update the suppression list regularly to ensure that the results are up to date.  You can optionally apply a time limit to individual suppressions by adding an expiry attribute, as outlined in the following example:"
+#~ msgstr "确保你定期审查和更新抑制列表，以确保结果是最新的。你可以通过添加一个过期属性，选择性地对单个压制应用一个时间限制，如下例所示。"
+
+#, fuzzy
+#~ msgid "`<suppress until=\"2022-01-01Z\">...</suppress>` You can adjust the expiry date if you need to."
+#~ msgstr " `<suppress until=\"2022-01-01Z\">…​</suppress>` 如果需要，你可以调整到期日。"

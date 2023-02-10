@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-14 18:10+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,7 +224,7 @@ msgstr "ǞǞǞ"
 #. type: Plain text
 #: upstream/_guides/dev-services.adoc:133
 #, fuzzy
-msgid "The Infinispan Dev Service will be enabled when the `quarkus-infinispan-client` extension is present in your application, and the server address has not been explicitly configured. More information can be found in the xref:infinispan-client.adoc#dev-services[Infinispan Guide]."
+msgid "The Infinispan Dev Service will be enabled when the `quarkus-infinispan-client` extension is present in your application, and the server address has not been explicitly configured. More information can be found in the xref:infinispan-dev-services.adoc[Infinispan Dev Services Guide]."
 msgstr "当你的应用程序中存在 `quarkus-infinispan-client` 扩展时，Infinispan Dev Service将被启用，并且服务器地址没有被明确配置。更多信息可以在 link:infinispan-client.html#dev-services[Infinispan指南] 中找到。"
 
 #. type: Title ==

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-01-25 16:17+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #. type: Title =
 #: upstream/_guides/security-openid-connect-client-reference.adoc:6
 #, fuzzy, no-wrap
-msgid "OpenID Connect (OIDC) and OAuth2 Client and Filters Reference Guide "
+msgid "OpenID Connect (OIDC) and OAuth2 Client and Filters Reference Guide"
 msgstr "OpenID连接（OIDC）和OAuth2客户端和过滤器参考指南"
 
 #. type: Plain text
@@ -34,7 +34,7 @@ msgstr "本参考指南解释了如何使用。"
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client-reference.adoc:13
 #, fuzzy
-msgid "`quarkus-oidc-client`, `quarkus-oidc-client-reactive-filter` and `quarkus-oidc-client-filter` extensions to acquire and refresh access tokens from OpenID Connect and OAuth 2.0 compliant Authorization Servers such as https://www.keycloak.org[Keycloak]"
+msgid "`quarkus-oidc-client`, `quarkus-oidc-client-reactive-filter` and `quarkus-oidc-client-filter` extensions to acquire and refresh access tokens from OpenID Connect and OAuth 2.0 compliant Authorization Servers such as link:https://www.keycloak.org[Keycloak]"
 msgstr " `quarkus-oidc-client` , `quarkus-oidc-client-reactive-filter` 和 `quarkus-oidc-client-filter` 扩展，从OpenID Connect和OAuth 2.0兼容的授权服务器（如 link:https://www.keycloak.org[Keycloak] ）获取和刷新访问令牌"
 
 #. type: Plain text
@@ -277,7 +277,7 @@ msgstr "如果你正在构建一个复杂的微服务应用程序，并希望避
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client-reference.adoc:129
 #, fuzzy
-msgid "Using `OidcClient` to support the `authorization code` grant might be required if for some reasons you can not use the xref:security-openid-connect-web-authentication.adoc[Quarkus OpenID Connect extension] to support Authorization Code Flow. If there is a very good reason for you to implement Authorization Code Flow then you can configure `OidcClient` as follows:"
+msgid "Using `OidcClient` to support the `authorization code` grant might be required if for some reason you cannot use the xref:security-oidc-code-flow-authentication-concept.adoc[Quarkus OIDC extension] to support Authorization Code Flow. If there is a very good reason for you to implement Authorization Code Flow then you can configure `OidcClient` as follows:"
 msgstr "如果由于某些原因，你不能使用 link:security-openid-connect-web-authentication.html[Quarkus OpenID Connect扩展] 来支持授权代码流，那么使用 `OidcClient` 来支持 `authorization code` 授予可能是必要的。如果有一个非常好的理由让你实现授权代码流，那么你可以按以下方式配置 `OidcClient` 。"
 
 #. type: delimited block -
@@ -325,9 +325,9 @@ msgstr "人们可以直接使用 `OidcClient` ，如下所示。"
 #: upstream/_guides/security-openid-connect-client-reference.adoc:194
 #, no-wrap
 msgid ""
-"import javax.inject.PostConstruct;\n"
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
+"import jakarta.inject.PostConstruct;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -388,7 +388,7 @@ msgid ""
 "            // Add @Blocking method annotation if this code is used with Reactive RestClient\n"
 "            tokens = client.refreshTokens(tokens.getRefreshToken()).await().indefinitely();\n"
 "            currentTokens = tokens;\n"
-"        } \n"
+"        }\n"
 "        // Use tokens.getAccessToken() to configure MP RestClient Authorization header/etc\n"
 "    }\n"
 "}\n"
@@ -472,9 +472,9 @@ msgstr "注意在这种情况下，默认的客户端是用 `client-enabled=fals
 #: upstream/_guides/security-openid-connect-client-reference.adoc:328
 #, no-wrap
 msgid ""
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -1495,7 +1495,7 @@ msgstr "钥匙环"
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client-reference.adoc:842
 #, fuzzy
-msgid "If you work with Keycloak then you can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing-keycloak[OpenID Connect Bearer Token Integration testing] Keycloak section."
+msgid "If you work with Keycloak then you can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing-keycloak[OpenID Connect Bearer Token Integration testing] Keycloak section."
 msgstr "如果你与Keycloak合作，那么你可以使用与 link:security-openid-connect.html#integration-testing-keycloak.adoc[OpenID Connect Bearer Token集成测试] Keycloak部分所述相同的方法。"
 
 #. type: Title ===
@@ -1542,7 +1542,7 @@ msgstr "令牌传播 反应式的"
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client-reference.adoc:865
 #, fuzzy
-msgid "The `quarkus-oidc-token-propagation-reactive` extension provides RestEasy Reactive Client `io.quarkus.oidc.token.propagation.reactive.AccessTokenRequestReactiveFilter` that simplifies the propagation of authentication information by propagating the xref:security-openid-connect.adoc[Bearer] token present in the current active request or the token acquired from the xref:security-openid-connect-web-authentication.adoc[Authorization Code Flow], as the HTTP `Authorization` header's `Bearer` scheme value."
+msgid "The `quarkus-oidc-token-propagation-reactive` extension provides RestEasy Reactive Client `io.quarkus.oidc.token.propagation.reactive.AccessTokenRequestReactiveFilter` that simplifies the propagation of authentication information by propagating the xref:security-oidc-bearer-authentication-concept.adoc[Bearer token] present in the current active request or the token acquired from the xref:security-oidc-code-flow-authentication-concept.adoc[Authorization code flow mechanism], as the HTTP `Authorization` header's `Bearer` scheme value."
 msgstr " `quarkus-oidc-token-propagation` 扩展提供了两个 JAX-RS `javax.ws.rs.client.ClientRequestFilter` 类的实现，简化了认证信息的传播。 `io.quarkus.oidc.token.propagation.AccessTokenRequestFilter` 传播当前活动请求中存在的 link:security-openid-connect.html[承载器] 令牌或从 link:security-openid-connect-web-authentication.html[授权码流] 中获得的令牌，作为 HTTP `Authorization` 头的 `Bearer` 方案值。 `io.quarkus.oidc.token.propagation.JsonWebTokenRequestFilter` 提供同样的功能，但另外提供对JWT令牌的支持。"
 
 #. type: Plain text
@@ -1675,7 +1675,7 @@ msgstr "令牌传播"
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client-reference.adoc:942
 #, fuzzy
-msgid "The `quarkus-oidc-token-propagation` extension provides two JAX-RS `javax.ws.rs.client.ClientRequestFilter` class implementations that simplify the propagation of authentication information.  `io.quarkus.oidc.token.propagation.AccessTokenRequestFilter` propagates the xref:security-openid-connect.adoc[Bearer] token present in the current active request or the token acquired from the xref:security-openid-connect-web-authentication.adoc[Authorization Code Flow], as the HTTP `Authorization` header's `Bearer` scheme value.  The `io.quarkus.oidc.token.propagation.JsonWebTokenRequestFilter` provides the same functionality, but in addition provides support for JWT tokens."
+msgid "The `quarkus-oidc-token-propagation` extension provides two JAX-RS `jakarta.ws.rs.client.ClientRequestFilter` class implementations that simplify the propagation of authentication information.  `io.quarkus.oidc.token.propagation.AccessTokenRequestFilter` propagates the xref:security-oidc-bearer-authentication-concept.adoc[Bearer token] present in the current active request or the token acquired from the xref:security-oidc-code-flow-authentication-concept.adoc[Authorization code flow mechanism], as the HTTP `Authorization` header's `Bearer` scheme value.  The `io.quarkus.oidc.token.propagation.JsonWebTokenRequestFilter` provides the same functionality, but in addition provides support for JWT tokens."
 msgstr " `quarkus-oidc-token-propagation` 扩展提供了两个 JAX-RS `javax.ws.rs.client.ClientRequestFilter` 类的实现，简化了认证信息的传播。 `io.quarkus.oidc.token.propagation.AccessTokenRequestFilter` 传播当前活动请求中存在的 link:security-openid-connect.html[承载器] 令牌或从 link:security-openid-connect-web-authentication.html[授权码流] 中获得的令牌，作为 HTTP `Authorization` 头的 `Bearer` 方案值。 `io.quarkus.oidc.token.propagation.JsonWebTokenRequestFilter` 提供同样的功能，但另外提供对JWT令牌的支持。"
 
 #. type: Plain text
@@ -1877,7 +1877,7 @@ msgstr "如上所述，如果你使用支持令牌交换协议的Keycloak或Open
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client-reference.adoc:1090
 #, fuzzy
-msgid "You can generate the tokens as described in xref:security-openid-connect.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] section.  Prepare the REST test endpoints, you can have the test frontend endpoint which uses the injected MP REST client with a registered token propagation filter to invoke on the downstream endpoint, for example, see the `integration-tests/oidc-token-propagation` in the `main` Quarkus repository."
+msgid "You can generate the tokens as described in xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] section.  Prepare the REST test endpoints, you can have the test frontend endpoint which uses the injected MP REST client with a registered token propagation filter to invoke on the downstream endpoint, for example, see the `integration-tests/oidc-token-propagation` in the `main` Quarkus repository."
 msgstr "你可以按照 link:security-openid-connect.html#integration-testing[OpenID Connect Bearer Token集成测试] 部分的描述生成令牌。准备好REST测试端点，你可以让测试前端端点使用注入的MP REST客户端与注册的令牌传播过滤器在下游端点上调用，例如，见 `main` Quarkus资源库中的 `integration-tests/oidc-token-propagation` 。"
 
 #. type: delimited block -
@@ -1915,12 +1915,12 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client-reference.adoc:1113
-msgid "xref:security-openid-connect.adoc[Quarkus - Using OpenID Connect to Protect Service Applications using Bearer Token Authorization]"
+msgid "xref:security-oidc-bearer-authentication-concept.adoc[OIDC Bearer authentication]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-client-reference.adoc:1114
-msgid "xref:security-openid-connect-web-authentication.adoc[Quarkus - Using OpenID Connect to Protect Web Applications using Authorization Code Flow]"
+msgid "xref:security-oidc-code-flow-authentication-concept.adoc[OIDC code flow mechanism for protecting web applications]"
 msgstr ""
 
 #. type: Plain text

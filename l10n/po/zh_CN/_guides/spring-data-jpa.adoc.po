@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-19 15:15+0000\n"
+"POT-Creation-Date: 2023-02-10 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,9 +151,9 @@ msgstr ""
 #: upstream/_guides/spring-data-jpa.adoc:73
 #, no-wrap
 msgid ""
-"import javax.persistence.Entity;\n"
-"import javax.persistence.GeneratedValue;\n"
-"import javax.persistence.Id;\n"
+"import jakarta.persistence.Entity;\n"
+"import jakarta.persistence.GeneratedValue;\n"
+"import jakarta.persistence.Id;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -397,11 +397,11 @@ msgstr "有了资源库，下一步就是创建JAX-RS资源，它将使用 `Frui
 #: upstream/_guides/spring-data-jpa.adoc:200
 #, no-wrap
 msgid ""
-"import javax.ws.rs.DELETE;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.POST;\n"
-"import javax.ws.rs.PUT;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.ws.rs.DELETE;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.POST;\n"
+"import jakarta.ws.rs.PUT;\n"
+"import jakarta.ws.rs.Path;\n"
 msgstr ""
 
 #. type: delimited block -

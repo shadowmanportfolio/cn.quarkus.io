@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-01-25 16:17+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,14 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_guides/doc-reference.adoc:7
-#, fuzzy, no-wrap
-msgid "About Quarkus documentation"
-msgstr "关于Quarkus文件"
+#, no-wrap
+msgid "Quarkus style and content guidelines"
+msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:12
-#, fuzzy
-msgid "A detailed reference for the structure and composition of Quarkus documentation."
-msgstr "关于Quarkus文档的结构和组成的详细参考。"
+msgid "Guidelines are provided to help you to contribute clear and consistent content that is also sourced in the required structure and composition of Quarkus documentation."
+msgstr ""
 
 #. type: Title ==
 #: upstream/_guides/doc-reference.adoc:13
@@ -561,9 +560,9 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_guides/doc-reference.adoc:142
-#, fuzzy, no-wrap
-msgid "Quarkus documentation reference // <2>"
-msgstr "Quarkus文件参考"
+#, no-wrap
+msgid "Quarkus style and content guidelines // <2>"
+msgstr ""
 
 #. type: delimited block -
 #: upstream/_guides/doc-reference.adoc:145
@@ -579,19 +578,19 @@ msgstr "文件名应反映文件的类型。"
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:149
 #, fuzzy
-msgid "Define the document title following guidance in <<Titles and headings>>"
+msgid "Define the document title following guidance in <<Titles and headings>>."
 msgstr "按照 link:#Titles and headings[[标题和标目]] 中的指导意见定义文件标题。"
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:150
 #, fuzzy
-msgid "Include common document attributes"
+msgid "Include common document attributes."
 msgstr "包括常见的文件属性"
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:151
 #, fuzzy
-msgid "Specify the relevant <<Categories>> (comma separated)"
+msgid "Specify the relevant <<Categories>> (comma separated)."
 msgstr "指定相关的 link:#Categories[[类别]] （以逗号分隔）。"
 
 #. type: Title ====
@@ -723,7 +722,7 @@ msgstr "能否对内容进行重新组织以使其更简单地被消费？"
 #. type: delimited block =
 #: upstream/_guides/doc-reference.adoc:202
 #, fuzzy
-msgid "See xref:{doc-guides}/doc-concept.adoc[Quarkus documentation concepts] for more information about content types and organization."
+msgid "See xref:{doc-guides}/doc-concept.adoc[Quarkus documentation content types] for more information about content types and organization."
 msgstr "关于内容类型和组织的更多信息，请参阅 link:{doc-guides}/doc-concepts.html[Quarkus文档概念] 。"
 
 #. type: Title ===
@@ -1705,6 +1704,18 @@ msgstr ""
 #, no-wrap
 msgid "The builder image tag of GraalVM to use e.g. `22.3-java17`. Use a `java17` version."
 msgstr ""
+
+#, fuzzy
+#~ msgid "About Quarkus documentation"
+#~ msgstr "关于Quarkus文件"
+
+#, fuzzy
+#~ msgid "A detailed reference for the structure and composition of Quarkus documentation."
+#~ msgstr "关于Quarkus文档的结构和组成的详细参考。"
+
+#, fuzzy
+#~ msgid "Quarkus documentation reference // <2>"
+#~ msgstr "Quarkus文件参考"
 
 #, fuzzy
 #~ msgid "Specify an id for your document.  It should start with the document type: `concept-`, `howto-`, `reference-`, or `tutorial-`."

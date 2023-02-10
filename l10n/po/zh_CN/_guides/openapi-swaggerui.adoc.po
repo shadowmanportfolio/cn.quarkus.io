@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-19 15:15+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,10 +142,10 @@ msgstr ""
 #: upstream/_guides/openapi-swaggerui.adoc:75
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.POST;\n"
-"import javax.ws.rs.DELETE;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.POST;\n"
+"import jakarta.ws.rs.DELETE;\n"
+"import jakarta.ws.rs.Path;\n"
 "import java.util.Collections;\n"
 "import java.util.LinkedHashMap;\n"
 "import java.util.Set;\n"
@@ -225,7 +225,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/openapi-swaggerui.adoc:115
 #, no-wrap
-msgid "import javax.ws.rs.core.MediaType;\n"
+msgid "import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -487,7 +487,7 @@ msgstr "许可证"
 #. type: delimited block =
 #: upstream/_guides/openapi-swaggerui.adoc:278
 #, fuzzy
-msgid "All of this information (and more) can be included in your Java code by using appropriate OpenAPI annotations on a JAX-RS `Application` class.  Because a JAX-RS `Application` class is not required in Quarkus, you will likely have to create one.  It can simply be an empty class that extends `javax.ws.rs.core.Application`.  This empty class can then be annotated with various OpenAPI annotations such as `@OpenAPIDefinition`.  For example:"
+msgid "All of this information (and more) can be included in your Java code by using appropriate OpenAPI annotations on a JAX-RS `Application` class.  Because a JAX-RS `Application` class is not required in Quarkus, you will likely have to create one.  It can simply be an empty class that extends `jakarta.ws.rs.core.Application`.  This empty class can then be annotated with various OpenAPI annotations such as `@OpenAPIDefinition`.  For example:"
 msgstr "所有这些信息（以及更多）都可以通过在JAX-RS `Application` 类上使用适当的OpenAPI注解来包含在你的Java代码中。因为Quarkus中不需要JAX-RS `Application` 类，所以你可能需要创建一个。它可以是一个扩展了 `javax.ws.rs.core.Application` 的空类。这个空类可以用各种OpenAPI注解来注解，如 `@OpenAPIDefinition` 。比如说。"
 
 #. type: delimited block -

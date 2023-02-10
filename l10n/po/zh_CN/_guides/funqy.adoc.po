@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-19 15:15+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,8 +217,8 @@ msgstr "Funqy类的默认对象生命周期是 `@Dependent` 。"
 #: upstream/_guides/funqy.adoc:123
 #, no-wrap
 msgid ""
-"import javax.inject.Inject;\n"
-"import javax.enterprise.context.ApplicationScoped;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -

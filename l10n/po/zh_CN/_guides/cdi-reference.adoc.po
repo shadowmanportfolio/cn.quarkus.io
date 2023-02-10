@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-14 18:11+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -516,7 +516,7 @@ msgstr "类型安全的分辨率"
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:216
 #, fuzzy
-msgid "Programmatic lookup via `javax.enterprise.inject.Instance`"
+msgid "Programmatic lookup via `jakarta.enterprise.inject.Instance`"
 msgstr "程序化查询通过 `javax.enterprise.inject.Instance` "
 
 #. type: Plain text
@@ -1133,7 +1133,7 @@ msgstr "没有声明任何有资格被注入到依赖树中任何注入点的生
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:459
 #, fuzzy
-msgid "is not eligible for injection into any `javax.enterprise.inject.Instance` or `javax.inject.Provider` injection point."
+msgid "is not eligible for injection into any `jakarta.enterprise.inject.Instance` or `jakarta.inject.Provider` injection point."
 msgstr "没有资格注射到任何 `javax.enterprise.inject.Instance` 或 `javax.inject.Provider` 注射点。"
 
 #. type: Plain text
@@ -1450,7 +1450,7 @@ msgstr "在CDI中，可以通过 `@Priority` ，为一个应用程序全局性�
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:661
 #, fuzzy
-msgid "The disadvantage of `@javax.annotation.Priority` is that it has `@Target({ TYPE, PARAMETER })` and so it cannot be used for producer methods and fields.  This problem should be fixed in Common Annotations 2.1.  Users are encouraged to use `@io.quarkus.arc.Priority` instead, until Quarkus upgrades to this version of `jakarta.annotation-api`."
+msgid "The disadvantage of `@jakarta.annotation.Priority` is that it has `@Target({ TYPE, PARAMETER })` and so it cannot be used for producer methods and fields.  This problem should be fixed in Common Annotations 2.1.  Users are encouraged to use `@io.quarkus.arc.Priority` instead, until Quarkus upgrades to this version of `jakarta.annotation-api`."
 msgstr " `@javax.annotation.Priority` 的缺点是它有 `@Target({ TYPE, PARAMETER })` ，所以它不能用于生产者方法和字段。这个问题应该在Common Annotations 2.1中得到解决。我们鼓励用户使用 `@io.quarkus.arc.Priority` 来代替，直到Quarkus升级到这个版本的 `jakarta.annotation-api` 。"
 
 #. type: Plain text
@@ -1773,7 +1773,7 @@ msgstr "缓存程序化查询的结果"
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:849
 #, fuzzy
-msgid "In certain situations, it is practical to obtain a bean instance programmatically via an injected `javax.enterprise.inject.Instance` and `Instance.get()`.  However, according to the specification the `get()` method must identify the matching bean and obtain a contextual reference.  As a consequence, a new instance of a `@Dependent` bean is returned from each invocation of `get()`.  Moreover, this instance is a dependent object of the injected `Instance`.  This behavior is well-defined, but it may lead to unexpected errors and memory leaks.  Therefore, Quarkus comes with the `io.quarkus.arc.WithCaching` annotation.  An injected `Instance` annotated with this annotation will cache the result of the `Instance#get()` operation.  The result is computed on the first call and the same value is returned for all subsequent calls, even for `@Dependent` beans."
+msgid "In certain situations, it is practical to obtain a bean instance programmatically via an injected `jakarta.enterprise.inject.Instance` and `Instance.get()`.  However, according to the specification the `get()` method must identify the matching bean and obtain a contextual reference.  As a consequence, a new instance of a `@Dependent` bean is returned from each invocation of `get()`.  Moreover, this instance is a dependent object of the injected `Instance`.  This behavior is well-defined, but it may lead to unexpected errors and memory leaks.  Therefore, Quarkus comes with the `io.quarkus.arc.WithCaching` annotation.  An injected `Instance` annotated with this annotation will cache the result of the `Instance#get()` operation.  The result is computed on the first call and the same value is returned for all subsequent calls, even for `@Dependent` beans."
 msgstr "在某些情况下，通过注入的 `javax.enterprise.inject.Instance` 和 `Instance.get()` 以编程方式获得 bean 实例是可行的。然而，根据规范， `get()` 方法必须识别匹配的 bean 并获得上下文引用。因此，每次调用 `get()` 都会返回一个新的 `@Dependent` Bean 实例。此外，这个实例是注入的 `Instance` 的一个依赖对象。这种行为被很好地定义了，但它可能会导致意外的错误和内存泄漏。因此，Quarkus附带了 `io.quarkus.arc.WithCaching` 注解。被注入的 `Instance` 注释了这个注解，将缓存 `Instance#get()` 操作的结果。该结果在第一次调用时就被计算出来，并且在所有后续的调用中都返回相同的值，甚至对于 `@Dependent` beans。"
 
 #. type: delimited block -
@@ -1862,7 +1862,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:894
 #, fuzzy
-msgid "It is also possible to clear the cached value via `io.quarkus.arc.InjectableInstance.clearCache()`. In this case, you'll need to inject the Quarkus-specific `io.quarkus.arc.InjectableInstance` instead of `javax.enterprise.inject.Instance`."
+msgid "It is also possible to clear the cached value via `io.quarkus.arc.InjectableInstance.clearCache()`. In this case, you'll need to inject the Quarkus-specific `io.quarkus.arc.InjectableInstance` instead of `jakarta.enterprise.inject.Instance`."
 msgstr "也可以通过 `io.quarkus.arc.InjectableInstance.clearCache()` 来清除缓存的值。在这种情况下，你需要注入Quarkus专用的 `io.quarkus.arc.InjectableInstance` ，而不是 `javax.enterprise.inject.Instance` 。"
 
 #. type: Title ===
@@ -1874,7 +1874,7 @@ msgstr "声明性地选择可通过程序化查询获得的豆类"
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:899
 #, fuzzy
-msgid "It is sometimes useful to narrow down the set of beans that can be obtained by programmatic lookup via `javax.enterprise.inject.Instance`.  Typically, a user needs to choose the appropriate implementation of an interface based on a runtime configuration property."
+msgid "It is sometimes useful to narrow down the set of beans that can be obtained by programmatic lookup via `jakarta.enterprise.inject.Instance`.  Typically, a user needs to choose the appropriate implementation of an interface based on a runtime configuration property."
 msgstr "有时，通过 `javax.enterprise.inject.Instance` ，缩小可以通过编程查询获得的Bean集合是很有用的。通常情况下，用户需要根据运行时的配置属性来选择一个接口的适当实现。"
 
 #. type: Plain text
@@ -1972,7 +1972,7 @@ msgstr "直观地注入多个Bean实例"
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:951
 #, fuzzy
-msgid "In CDI, it's possible to inject multiple bean instances (aka contextual references) via the `javax.enterprise.inject.Instance` which implements `java.lang.Iterable`.  However, it's not exactly intuitive.  Therefore, a new way was introduced in Quarkus - you can inject a `java.util.List` annotated with the `io.quarkus.arc.All` qualifier.  The type of elements in the list is used as the required type when performing the lookup."
+msgid "In CDI, it's possible to inject multiple bean instances (aka contextual references) via the `jakarta.enterprise.inject.Instance` which implements `java.lang.Iterable`.  However, it's not exactly intuitive.  Therefore, a new way was introduced in Quarkus - you can inject a `java.util.List` annotated with the `io.quarkus.arc.All` qualifier.  The type of elements in the list is used as the required type when performing the lookup."
 msgstr " `java.lang.Iterable` 在CDI中，可以通过实现 `javax.enterprise.inject.Instance` ，注入多个bean实例（又称上下文引用）。然而，这并不是很直观。因此，在Quarkus中引入了一种新的方式--你可以注入一个用 `io.quarkus.arc.All` 修饰符注释的 `java.util.List` 。在执行查找时，列表中的元素类型被用作所需类型。"
 
 #. type: delimited block -
@@ -2009,7 +2009,7 @@ msgstr "对于这个注入点，所需的类型是 `Service` ，没有声明额�
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:966
 #, fuzzy
-msgid "The list is sorted by priority as defined by `io.quarkus.arc.InjectableBean#getPriority()`. Higher priority goes first. In general, the `@javax.annotation.Priority` and `@io.quarkus.arc.Priority` annotations can be used to assign the priority to a class bean, producer method or producer field."
+msgid "The list is sorted by priority as defined by `io.quarkus.arc.InjectableBean#getPriority()`. Higher priority goes first. In general, the `@jakarta.annotation.Priority` and `@io.quarkus.arc.Priority` annotations can be used to assign the priority to a class bean, producer method or producer field."
 msgstr "列表按照 `io.quarkus.arc.InjectableBean#getPriority()` 所定义的优先级进行排序。优先级越高越好。一般来说， `@javax.annotation.Priority` 和 `@io.quarkus.arc.Priority` 注解可以用来给类豆、生产者方法或生产者字段分配优先级。"
 
 #. type: Plain text
@@ -2145,7 +2145,7 @@ msgstr "异步观察者方法抛出的异常情况"
 #. type: Plain text
 #: upstream/_guides/cdi-reference.adoc:1046
 #, fuzzy
-msgid "If an exception is thrown by an asynchronous observer then the `CompletionStage` returned by the `fireAsync()` method completes exceptionally so that the event producer may react appropriately.  However, if the event producer does not care then the exception is ignored silently.  Therefore, Quarkus logs an error message by default.  It is also possible to implement a custom `AsyncObserverExceptionHandler`.  A bean that implements this interface should be `@javax.inject.Singleton` or `@javax.enterprise.context.ApplicationScoped`."
+msgid "If an exception is thrown by an asynchronous observer then the `CompletionStage` returned by the `fireAsync()` method completes exceptionally so that the event producer may react appropriately.  However, if the event producer does not care then the exception is ignored silently.  Therefore, Quarkus logs an error message by default.  It is also possible to implement a custom `AsyncObserverExceptionHandler`.  A bean that implements this interface should be `@jakarta.inject.Singleton` or `@jakarta.enterprise.context.ApplicationScoped`."
 msgstr "如果一个异步观察者抛出了一个异常，那么由 `fireAsync()` 方法返回的 `CompletionStage` 会例外地完成，这样事件生产者就可以做出适当的反应。然而，如果事件生产者不关心，那么这个异常就会被无声地忽略。因此，Quarkus默认会记录一条错误信息。也可以实现一个自定义的 `AsyncObserverExceptionHandler` 。实现这个接口的Bean应该是 `@javax.inject.Singleton` 或 `@javax.enterprise.context.ApplicationScoped` 。"
 
 #. type: Block title

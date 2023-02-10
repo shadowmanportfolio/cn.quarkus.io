@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-14 18:10+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -646,7 +646,7 @@ msgstr "Quarkus支持这一点，允许你通过 `@Inject` 注释将CDI Bean注�
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:350
 #, no-wrap
-msgid "import javax.inject.Inject;\n"
+msgid "import jakarta.inject.Inject;\n"
 msgstr ""
 
 #. type: delimited block -

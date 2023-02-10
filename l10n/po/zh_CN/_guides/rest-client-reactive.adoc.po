@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-01-25 16:17+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -241,9 +241,9 @@ msgstr ""
 #: upstream/_guides/rest-client-reactive.adoc:609
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.QueryParam;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.QueryParam;\n"
 "import java.util.Set;\n"
 msgstr ""
 
@@ -334,10 +334,10 @@ msgstr ""
 #: upstream/_guides/rest-client-reactive.adoc:157
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.QueryParam;\n"
-"import javax.ws.rs.core.MultivaluedMap;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.QueryParam;\n"
+"import jakarta.ws.rs.core.MultivaluedMap;\n"
 "import java.util.Map;\n"
 "import java.util.Set;\n"
 msgstr ""
@@ -508,10 +508,10 @@ msgstr "如果GET请求需要路径参数，你可以利用 `@PathParam(\"parame
 #: upstream/_guides/rest-client-reactive.adoc:240
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.PathParam;\n"
-"import javax.ws.rs.QueryParam;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.PathParam;\n"
+"import jakarta.ws.rs.QueryParam;\n"
 "import java.util.Set;\n"
 msgstr ""
 
@@ -579,7 +579,7 @@ msgstr ""
 msgid ""
 "# Your configuration properties\n"
 "quarkus.rest-client.extensions-api.url=https://stage.code.quarkus.io/api\n"
-"quarkus.rest-client.extensions-api.scope=javax.inject.Singleton\n"
+"quarkus.rest-client.extensions-api.scope=jakarta.inject.Singleton\n"
 msgstr ""
 
 #. type: Title ===
@@ -630,8 +630,8 @@ msgstr ""
 #: upstream/_guides/rest-client-reactive.adoc:633
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
 "import java.util.Set;\n"
 msgstr ""
 
@@ -724,8 +724,8 @@ msgstr ""
 #: upstream/_guides/rest-client-reactive.adoc:438
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
 "import java.net.URI;\n"
 "import java.util.Set;\n"
 msgstr ""
@@ -794,8 +794,8 @@ msgstr "让我们看一个关于如何通过CDI提供HTTP客户端选项的例�
 #: upstream/_guides/rest-client-reactive.adoc:408
 #, no-wrap
 msgid ""
-"import javax.enterprise.inject.Produces;\n"
-"import javax.ws.rs.ext.ContextResolver;\n"
+"import jakarta.enterprise.inject.Produces;\n"
+"import jakarta.ws.rs.ext.ContextResolver;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -961,9 +961,9 @@ msgstr "为了充分发挥客户端的反应性，你可以使用REST客户端�
 #: upstream/_guides/rest-client-reactive.adoc:527
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.QueryParam;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.QueryParam;\n"
 "import java.util.Set;\n"
 "import java.util.concurrent.CompletionStage;\n"
 msgstr ""
@@ -998,8 +998,8 @@ msgstr "打开 `src/main/java/org/acme/rest/client/ExtensionsResource.java` 文�
 #: upstream/_guides/rest-client-reactive.adoc:552
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
 "import java.util.Set;\n"
 "import java.util.concurrent.CompletionStage;\n"
 msgstr ""
@@ -1215,10 +1215,10 @@ msgstr ""
 #: upstream/_guides/rest-client-reactive.adoc:699
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.HeaderParam;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.QueryParam;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.HeaderParam;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.QueryParam;\n"
 "import java.util.Set;\n"
 msgstr ""
 
@@ -1298,9 +1298,9 @@ msgstr ""
 #: upstream/_guides/rest-client-reactive.adoc:774
 #, no-wrap
 msgid ""
-"import javax.enterprise.context.ApplicationScoped;\n"
-"import javax.ws.rs.core.MultivaluedHashMap;\n"
-"import javax.ws.rs.core.MultivaluedMap;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
+"import jakarta.ws.rs.core.MultivaluedHashMap;\n"
+"import jakarta.ws.rs.core.MultivaluedMap;\n"
 "import java.util.UUID;\n"
 msgstr ""
 
@@ -1938,8 +1938,8 @@ msgstr ""
 #: upstream/_guides/rest-client-reactive.adoc:1074
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
 msgstr ""
 
 #. type: delimited block -

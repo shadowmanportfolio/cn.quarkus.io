@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-01-25 16:17+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -172,7 +172,7 @@ msgstr "Quarkus支持Cloud Functions gen 1和gen 2。关于Cloud Functions gen 2
 #. type: delimited block -
 #: upstream/_guides/funqy-gcp-functions.adoc:87
 #, no-wrap
-msgid "import javax.inject.Inject;\n"
+msgid "import jakarta.inject.Inject;\n"
 msgstr ""
 
 #. type: delimited block -

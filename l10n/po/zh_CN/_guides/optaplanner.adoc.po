@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-09 13:26+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1180,9 +1180,9 @@ msgstr ""
 msgid ""
 "import java.util.UUID;\n"
 "import java.util.concurrent.ExecutionException;\n"
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.POST;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.POST;\n"
+"import jakarta.ws.rs.Path;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -1394,7 +1394,7 @@ msgstr "创建 `src/test/java/org/acme/optaplanner/solver/TimeTableConstraintPro
 #: upstream/_guides/optaplanner.adoc:755 upstream/_guides/optaplanner.adoc:823
 #: upstream/_guides/optaplanner.adoc:1061
 #, no-wrap
-msgid "import javax.inject.Inject;\n"
+msgid "import jakarta.inject.Inject;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -1756,11 +1756,11 @@ msgstr "调整 `TimeTableResource` ，在一个事务中读写一个 `TimeTable`
 #: upstream/_guides/optaplanner.adoc:964
 #, no-wrap
 msgid ""
-"import javax.inject.Inject;\n"
-"import javax.transaction.Transactional;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.POST;\n"
-"import javax.ws.rs.Path;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.transaction.Transactional;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.POST;\n"
+"import jakarta.ws.rs.Path;\n"
 msgstr ""
 
 #. type: delimited block -

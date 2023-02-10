@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-01-25 16:17+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgstr "如果你使用的是webjars，像下面这个JQuery的。"
 #. type: Block title
 #: upstream/_guides/http-reference.adoc:37
 #: upstream/_guides/http-reference.adoc:57
-#: upstream/_guides/http-reference.adoc:441
+#: upstream/_guides/http-reference.adoc:443
 #, fuzzy, no-wrap
 msgid "pom.xml"
 msgstr "pom.xml"
@@ -83,7 +83,7 @@ msgstr ""
 #. type: Block title
 #: upstream/_guides/http-reference.adoc:47
 #: upstream/_guides/http-reference.adoc:66
-#: upstream/_guides/http-reference.adoc:450
+#: upstream/_guides/http-reference.adoc:452
 #, fuzzy, no-wrap
 msgid "build.gradle"
 msgstr "build.gradle"
@@ -605,7 +605,7 @@ msgstr "link:https://en.wikipedia.org/wiki/Cross-origin_resource_sharing[跨源�
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:306
 #, fuzzy
-msgid "Quarkus comes with a CORS filter which implements the `javax.servlet.Filter` interface and intercepts all incoming HTTP requests. It can be enabled in the Quarkus configuration file, `src/main/resources/application.properties`:"
+msgid "Quarkus comes with a CORS filter which implements the `jakarta.servlet.Filter` interface and intercepts all incoming HTTP requests. It can be enabled in the Quarkus configuration file, `src/main/resources/application.properties`:"
 msgstr "Quarkus 自带一个 CORS 过滤器，它实现了 `javax.servlet.Filter` 接口并拦截所有进入的 HTTP 请求。它可以在Quarkus的配置文件中启用， `src/main/resources/application.properties` 。"
 
 #. type: delimited block -
@@ -1198,77 +1198,83 @@ msgid "To consider only non-standard headers, please include the following lines
 msgstr "为了只考虑非标准的标题，请在 `src/main/resources/application.properties` ，而包括以下几行。"
 
 #. type: delimited block -
-#: upstream/_guides/http-reference.adoc:410
+#: upstream/_guides/http-reference.adoc:411
 #, no-wrap
 msgid ""
 "quarkus.http.proxy.proxy-address-forwarding=true\n"
 "quarkus.http.proxy.allow-x-forwarded=true\n"
 "quarkus.http.proxy.enable-forwarded-host=true\n"
 "quarkus.http.proxy.enable-forwarded-prefix=true\n"
+"quarkus.http.proxy.trusted-proxies=127.0.0.1 <1>\n"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/http-reference.adoc:413
+msgid "Configure trusted proxy with the IP address `127.0.0.1`. Request headers from any other address are going to be ignored."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/http-reference.adoc:415
 #, fuzzy
 msgid "Both configurations related to standard and non-standard headers can be combined, although the standard headers configuration will have precedence. However, combining them has security implications as clients can forge requests with a forwarded header that is not overwritten by the proxy. Therefore, proxies should strip unexpected `X-Forwarded` or `X-Forwarded-*` headers from the client."
 msgstr "与标准头和非标准头相关的两种配置都可以结合起来，尽管标准头的配置将具有优先权。然而，将它们结合在一起会产生安全问题，因为客户可以用一个没有被代理覆盖的转发头来伪造请求。因此代理机构应该从客户端剥离意外的 `X-Forwarded` 或 `X-Forwarded-*` 头信息。"
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:415
+#: upstream/_guides/http-reference.adoc:417
 #, fuzzy
 msgid "Supported forwarding address headers are:"
 msgstr "支持的转发地址头是。"
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:417
+#: upstream/_guides/http-reference.adoc:419
 #, fuzzy
 msgid "`Forwarded`"
 msgstr " `Forwarded` "
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:418
+#: upstream/_guides/http-reference.adoc:420
 #, fuzzy
 msgid "`X-Forwarded-Proto`"
 msgstr " `X-Forwarded-Proto` "
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:419
+#: upstream/_guides/http-reference.adoc:421
 #, fuzzy
 msgid "`X-Forwarded-Host`"
 msgstr " `X-Forwarded-Host` "
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:420
+#: upstream/_guides/http-reference.adoc:422
 #, fuzzy
 msgid "`X-Forwarded-Port`"
 msgstr " `X-Forwarded-Port` "
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:421
+#: upstream/_guides/http-reference.adoc:423
 #, fuzzy
 msgid "`X-Forwarded-Ssl`"
 msgstr " `X-Forwarded-Ssl` "
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:422
+#: upstream/_guides/http-reference.adoc:424
 #, fuzzy
 msgid "`X-Forwarded-Prefix`"
 msgstr " `X-Forwarded-Prefix` "
 
 #. type: Title ==
-#: upstream/_guides/http-reference.adoc:424
+#: upstream/_guides/http-reference.adoc:426
 #, fuzzy, no-wrap
 msgid "SameSite cookies"
 msgstr "SameSite cookies"
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:427
+#: upstream/_guides/http-reference.adoc:429
 #, fuzzy
 msgid "One can easily add a https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite[SameSite] cookie property to any of the cookies set by a Quarkus endpoint by listing a cookie name and a `SameSite` attribute, for example:"
 msgstr "人们可以通过列出一个cookie名称和一个 `SameSite` 属性，轻松地将 link:https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite[SameSite] cookie属性添加到Quarkus端点设置的任何cookie中，例如。"
 
 #. type: delimited block -
-#: upstream/_guides/http-reference.adoc:432
+#: upstream/_guides/http-reference.adoc:434
 #, no-wrap
 msgid ""
 "quarkus.http.same-site-cookie.jwt.value=Lax\n"
@@ -1276,25 +1282,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:435
+#: upstream/_guides/http-reference.adoc:437
 #, fuzzy
 msgid "Given this configuration, the `jwt` cookie will have a `SameSite=Lax` attribute and the `session` cookie will have a `SameSite=Strict` attribute."
 msgstr "鉴于这种配置， `jwt` cookie将有一个 `SameSite=Lax` 属性， `session` cookie将有一个 `SameSite=Strict` 属性。"
 
 #. type: Title ==
-#: upstream/_guides/http-reference.adoc:436
+#: upstream/_guides/http-reference.adoc:438
 #, fuzzy, no-wrap
 msgid "Servlet Config"
 msgstr "小程序配置"
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:439
+#: upstream/_guides/http-reference.adoc:441
 #, fuzzy
 msgid "To use Servlet you need to explicitly include `quarkus-undertow`:"
 msgstr "要使用Servlet，你需要明确地包括 `quarkus-undertow` 。"
 
 #. type: delimited block -
-#: upstream/_guides/http-reference.adoc:447
+#: upstream/_guides/http-reference.adoc:449
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1304,31 +1310,31 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/http-reference.adoc:453
+#: upstream/_guides/http-reference.adoc:455
 #, no-wrap
 msgid "implementation(\"io.quarkus:quarkus-undertow\")\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/http-reference.adoc:455
+#: upstream/_guides/http-reference.adoc:457
 #, fuzzy, no-wrap
 msgid "undertow-handlers.conf"
 msgstr "undertow-handlers.conf"
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:460
+#: upstream/_guides/http-reference.adoc:462
 #, fuzzy
 msgid "You can make use of the Undertow predicate language using an `undertow-handlers.conf` file. This file should be placed in the `META-INF` directory of your application jar. This file contains handlers defined using the link:https://undertow.io/undertow-docs/undertow-docs-2.0.0/index.html#predicates-attributes-and-handlers[Undertow predicate language]."
 msgstr "你可以使用一个 `undertow-handlers.conf` 文件来使用Undertow谓语语言。这个文件应该放在你的应用程序jar的 `META-INF` 目录中。这个文件包含使用 link:http://undertow.io/undertow-docs/undertow-docs-2.0.0/index.html#predicates-attributes-and-handlers[Undertow谓词语言] 定义的处理程序。"
 
 #. type: Title ===
-#: upstream/_guides/http-reference.adoc:461
+#: upstream/_guides/http-reference.adoc:463
 #, fuzzy, no-wrap
 msgid "web.xml"
 msgstr "web.xml"
 
 #. type: Plain text
-#: upstream/_guides/http-reference.adoc:463
+#: upstream/_guides/http-reference.adoc:465
 msgid "If you are using a `web.xml` file as your configuration file, you can place it in the `src/main/resources/META-INF` directory."
 msgstr ""
 

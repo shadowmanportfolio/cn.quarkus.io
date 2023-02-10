@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-19 15:15+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -822,7 +822,7 @@ msgstr "控制器方法参数类型"
 #. type: Plain text
 #: upstream/_guides/spring-web.adoc:446
 #, fuzzy
-msgid "In addition to the method parameters that can be annotated with the appropriate Spring Web annotations from the previous table, `javax.servlet.http.HttpServletRequest` and `javax.servlet.http.HttpServletResponse` are also supported.  For this to function however, users need to add the `quarkus-undertow` dependency."
+msgid "In addition to the method parameters that can be annotated with the appropriate Spring Web annotations from the previous table, `jakarta.servlet.http.HttpServletRequest` and `jakarta.servlet.http.HttpServletResponse` are also supported.  For this to function however, users need to add the `quarkus-undertow` dependency."
 msgstr "除了可以用上表中适当的Spring Web注解来注解的方法参数外，还支持 `javax.servlet.http.HttpServletRequest` 和 `javax.servlet.http.HttpServletResponse` 。然而，为了实现这一功能，用户需要添加 `quarkus-undertow` 的依赖关系。"
 
 #. type: Title ===
@@ -978,7 +978,7 @@ msgstr "在JAX-RS中没有相应的内容"
 #. type: Table
 #: upstream/_guides/spring-web.adoc:518
 #, fuzzy, no-wrap
-msgid "No equivalent annotation in JAX-RS. Exceptions are handled by implementing `javax.ws.rs.ext.ExceptionMapper`"
+msgid "No equivalent annotation in JAX-RS. Exceptions are handled by implementing `jakarta.ws.rs.ext.ExceptionMapper`"
 msgstr "JAX-RS中没有相应的注解。异常的处理是通过实现 `javax.ws.rs.ext.ExceptionMapper` "
 
 #. type: Title ==

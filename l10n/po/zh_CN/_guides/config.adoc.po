@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-14 18:10+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,10 +164,10 @@ msgstr ""
 #: upstream/_guides/config.adoc:75
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -247,7 +247,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/config.adoc:116
 #, fuzzy
-msgid "If you do not provide a value for this property, the application startup fails with `javax.enterprise.inject.spi.DeploymentException: No config value of type [class java.lang.String] exists for: greeting.message`."
+msgid "If you do not provide a value for this property, the application startup fails with `jakarta.enterprise.inject.spi.DeploymentException: No config value of type [class java.lang.String] exists for: greeting.message`."
 msgstr "如果你没有为这个属性提供一个值，应用程序启动失败， `javax.enterprise.inject.spi.DeploymentException: No config value of type [class java.lang.String] exists for: greeting.message` 。"
 
 #. type: Plain text
@@ -282,7 +282,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/config.adoc:132
 #, fuzzy
-msgid "Use `@io.smallrye.config.ConfigMapping` annotation to group multiple configurations in a single interface. Please, check the https://smallrye.io/smallrye-config/latest/config/mappings/[Config Mappings] documentation."
+msgid "Use `@io.smallrye.config.ConfigMapping` annotation to group multiple configurations in a single interface. Please, check the https://smallrye.io/smallrye-config/Main/config/mappings/[Config Mappings] documentation."
 msgstr "使用 `@io.smallrye.config.ConfigMapping` 注释，在一个界面中分组多个配置。请查看 link:https://smallrye.io/docs/smallrye-config/main/mapping/mapping.html[配置映射] 文档。"
 
 #. type: Title ==
@@ -551,5 +551,5 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/config.adoc:243
 #, fuzzy
-msgid "For more information, please check the link:https://smallrye.io/smallrye-config/latest/[SmallRye Config documentation]."
+msgid "For more information, please check the link:https://smallrye.io/smallrye-config/Main/[SmallRye Config documentation]."
 msgstr "Quarkus依赖于 link:https://github.com/smallrye/smallrye-config/[SmallRye Config] 并继承了它的功能。"

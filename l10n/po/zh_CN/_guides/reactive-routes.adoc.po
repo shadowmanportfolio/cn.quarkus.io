@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-19 15:15+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/reactive-routes.adoc:72
 #, no-wrap
-msgid "import javax.enterprise.context.ApplicationScoped;\n"
+msgid "import jakarta.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -198,7 +198,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/reactive-routes.adoc:99
 #, fuzzy
-msgid "If there is a reactive route found on a class with no scope annotation then `@javax.inject.Singleton` is added automatically."
+msgid "If there is a reactive route found on a class with no scope annotation then `@jakarta.inject.Singleton` is added automatically."
 msgstr "如果在一个没有范围注解的类上发现了一个反应式路由，那么 `@javax.inject.Singleton` ，就会自动添加。"
 
 #. type: Plain text

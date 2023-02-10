@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-09 13:26+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -350,10 +350,10 @@ msgstr ""
 #: upstream/_guides/getting-started.adoc:159
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -497,7 +497,7 @@ msgstr "让我们修改应用程序并添加一个伴生豆。创建 `src/main/j
 #. type: delimited block -
 #: upstream/_guides/getting-started.adoc:241
 #, no-wrap
-msgid "import javax.enterprise.context.ApplicationScoped;\n"
+msgid "import jakarta.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -534,11 +534,11 @@ msgstr "编辑 `GreetingResource` 类以注入 `GreetingService` ，并使用它
 #: upstream/_guides/getting-started.adoc:263
 #, no-wrap
 msgid ""
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -

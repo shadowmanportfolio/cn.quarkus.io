@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-12-14 18:11+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -542,11 +542,11 @@ msgstr "对于AWS HTTP API，你可以注入AWS变量 `com.amazonaws.services.la
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda-http.adoc:300
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
-"import javax.ws.rs.core.Context;\n"
+"import jakarta.ws.rs.core.Context;\n"
 "import com.amazonaws.services.lambda.runtime.events.APIGatewayV2HTTPEvent;\n"
-msgstr ""
+msgstr "对于AWS HTTP API，你可以注入AWS变量 `com.amazonaws.services.lambda.runtime.Context` 和 `com.amazonaws.services.lambda.runtime.events.APIGatewayV2HTTPEvent` 。下面是一个例子。"
 
 #. type: delimited block -
 #: upstream/_guides/amazon-lambda-http.adoc:306
@@ -592,7 +592,7 @@ msgstr "对于AWS REST API，你可以注入AWS变量 `com.amazonaws.services.la
 #: upstream/_guides/amazon-lambda-http.adoc:325
 #, no-wrap
 msgid ""
-"import javax.ws.rs.core.Context;\n"
+"import jakarta.ws.rs.core.Context;\n"
 "import io.quarkus.amazon.lambda.http.model.AwsProxyRequestContext;\n"
 "import io.quarkus.amazon.lambda.http.model.AwsProxyRequest;\n"
 msgstr ""
@@ -640,7 +640,7 @@ msgstr "当你在API网关上调用一个HTTP请求时，网关会把这个HTTP�
 #. type: Plain text
 #: upstream/_guides/amazon-lambda-http.adoc:359
 #, fuzzy
-msgid "API Gateway supports many ways to securely invoke on your HTTP endpoints that are backed by Lambda and Quarkus.  If you enable it, Quarkus will automatically parse relevant parts of the https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html[event json document] and look for security based metadata and register a `java.security.Principal` internally that can be looked up in JAX-RS by injecting a `javax.ws.rs.core.SecurityContext`, via `HttpServletRequest.getUserPrincipal()` in servlet, and `RouteContext.user()` in Reactive Routes.  If you want more security information, the `Principal` object can be typecast to a class that will give you more information."
+msgid "API Gateway supports many ways to securely invoke on your HTTP endpoints that are backed by Lambda and Quarkus.  If you enable it, Quarkus will automatically parse relevant parts of the https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html[event json document] and look for security based metadata and register a `java.security.Principal` internally that can be looked up in JAX-RS by injecting a `jakarta.ws.rs.core.SecurityContext`, via `HttpServletRequest.getUserPrincipal()` in servlet, and `RouteContext.user()` in Reactive Routes.  If you want more security information, the `Principal` object can be typecast to a class that will give you more information."
 msgstr "API Gateway支持许多不同的方式在你的HTTP端点上安全地调用，这些端点是由Lambda和Quarkus支持的。如果你启用了它，Quarkus会自动解析 link:https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html[事件json文档] 的相关部分，寻找基于安全的元数据，并在内部注册一个 `java.security.Principal` ，通过注入 `javax.ws.rs.core.SecurityContext` ，通过Servlet中的 `HttpServletRequest.getUserPrincipal()` ，以及Reactive Routes中的 `RouteContext.user()` ，可以在JAX-RS中查询到。如果你想要更多的安全信息， `Principal` 对象可以被类型化到一个能给你更多信息的类。"
 
 #. type: Plain text
@@ -963,7 +963,7 @@ msgstr ""
 #: upstream/_guides/amazon-lambda-http.adoc:508
 #: upstream/_guides/amazon-lambda-http.adoc:539
 #, no-wrap
-msgid "import javax.enterprise.context.ApplicationScoped;\n"
+msgid "import jakarta.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -

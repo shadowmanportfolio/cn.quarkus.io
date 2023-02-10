@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-01 17:15+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -621,13 +621,13 @@ msgstr "排序集- `.sortedSet(memberType)` "
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:278
 #, fuzzy
-msgid "stream (not available yet)"
-msgstr "流动(暂不提供)"
+msgid "string - `.value(valueType)`"
+msgstr "字符串 - `.string(valueType)` "
 
 #. type: Plain text
 #: upstream/_guides/redis-reference.adoc:279
 #, fuzzy
-msgid "string - `.value(valueType)`"
+msgid "stream - `.stream(`valueType`)"
 msgstr "字符串 - `.string(valueType)` "
 
 #. type: Plain text
@@ -1846,6 +1846,10 @@ msgstr ""
 #, no-wrap
 msgid "Configuration reference"
 msgstr ""
+
+#, fuzzy
+#~ msgid "stream (not available yet)"
+#~ msgstr "流动(暂不提供)"
 
 #, fuzzy
 #~ msgid "When using `@RedisClientName`, you can omit the `@Inject` annotation."

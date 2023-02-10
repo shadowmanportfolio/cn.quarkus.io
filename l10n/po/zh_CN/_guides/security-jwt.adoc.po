@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-01-25 16:17+0000\n"
+"POT-Creation-Date: 2023-02-10 14:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr "本指南解释了您的Quarkus应用程序如何利用 link:https://git
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:19
 #, fuzzy
-msgid "Quarkus OpenID Connect `quarkus-oidc` extension also supports Bearer Token Authorization and uses `smallrye-jwt` to represent the bearer tokens as `JsonWebToken`, please read the xref:security-openid-connect.adoc[Using OpenID Connect to Protect Service Applications] guide for more information.  OpenID Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow, please read xref:security-openid-connect-web-authentication.adoc[Using OpenID Connect to Protect Web Applications] guide for more information."
+msgid "Quarkus OpenID Connect `quarkus-oidc` extension also supports Bearer Token Authorization and uses `smallrye-jwt` to represent the bearer tokens as `JsonWebToken`, please read the xref:security-oidc-bearer-authentication-concept.adoc[OIDC Bearer authentication] guide for more information.  OpenID Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow. For more information, see xref:security-oidc-code-flow-authentication-concept.adoc[OIDC code flow mechanism for protecting web applications]"
 msgstr "Quarkus OpenID Connect `quarkus-oidc` 扩展也支持承载令牌授权，并使用 `smallrye-jwt` 表示承载令牌为 `JsonWebToken` , 请阅读 link:security-openid-connect.html[Using OpenID Connect to Protect Service Applications] 指南了解更多信息。如果Quarkus应用程序需要使用OIDC授权代码流对用户进行认证，就必须使用OpenID Connect扩展，请阅读《 link:security-openid-connect-web-authentication.html[使用OpenID Connect保护Web应用程序] 》指南了解更多信息。"
 
 #. type: Title ==
@@ -176,16 +176,16 @@ msgstr ""
 #: upstream/_guides/security-jwt.adoc:94
 #, no-wrap
 msgid ""
-"import javax.annotation.security.PermitAll;\n"
-"import javax.enterprise.context.RequestScoped;\n"
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.InternalServerErrorException;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.Context;\n"
-"import javax.ws.rs.core.MediaType;\n"
-"import javax.ws.rs.core.SecurityContext;\n"
+"import jakarta.annotation.security.PermitAll;\n"
+"import jakarta.enterprise.context.RequestScoped;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.InternalServerErrorException;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.Context;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.core.SecurityContext;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -412,17 +412,17 @@ msgstr "REST端点V2"
 #: upstream/_guides/security-jwt.adoc:485
 #, no-wrap
 msgid ""
-"import javax.annotation.security.PermitAll;\n"
-"import javax.annotation.security.RolesAllowed;\n"
-"import javax.enterprise.context.RequestScoped;\n"
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.InternalServerErrorException;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.Context;\n"
-"import javax.ws.rs.core.MediaType;\n"
-"import javax.ws.rs.core.SecurityContext;\n"
+"import jakarta.annotation.security.PermitAll;\n"
+"import jakarta.annotation.security.RolesAllowed;\n"
+"import jakarta.enterprise.context.RequestScoped;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.InternalServerErrorException;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.Context;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.core.SecurityContext;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -930,7 +930,7 @@ msgstr "使用JsonWebToken和索赔注入"
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:463
 #, fuzzy
-msgid "Now that we can generate a JWT to access our secured REST endpoints, let's see what more we can do with the `JsonWebToken` interface and the JWT claims. The `org.eclipse.microprofile.jwt.JsonWebToken` interface extends the `java.security.Principal` interface, and is in fact the type of the object that is returned by the `javax.ws.rs.core.SecurityContext#getUserPrincipal()` call we used previously. This means that code that does not use CDI but does have access to the REST container `SecurityContext` can get hold of the caller `JsonWebToken` interface by casting the `SecurityContext#getUserPrincipal()`."
+msgid "Now that we can generate a JWT to access our secured REST endpoints, let's see what more we can do with the `JsonWebToken` interface and the JWT claims. The `org.eclipse.microprofile.jwt.JsonWebToken` interface extends the `java.security.Principal` interface, and is in fact the type of the object that is returned by the `jakarta.ws.rs.core.SecurityContext#getUserPrincipal()` call we used previously. This means that code that does not use CDI but does have access to the REST container `SecurityContext` can get hold of the caller `JsonWebToken` interface by casting the `SecurityContext#getUserPrincipal()`."
 msgstr "现在我们可以生成一个JWT来访问我们的安全REST端点，让我们看看我们还能用 `JsonWebToken` 接口和JWT请求做什么。 `org.eclipse.microprofile.jwt.JsonWebToken` 接口扩展了 `java.security.Principal` 接口，事实上，它是我们之前使用的 `javax.ws.rs.core.SecurityContext#getUserPrincipal()` 调用返回的对象的类型。这意味着不使用CDI但可以访问REST容器 `SecurityContext` 的代码可以通过铸造 `SecurityContext#getUserPrincipal()` .NET接口来获得调用者 `JsonWebToken` 的接口。"
 
 #. type: Plain text
@@ -1145,7 +1145,7 @@ msgstr "然而，当单个令牌要求被注入为简单的类型，例如 `Stri
 #: upstream/_guides/security-jwt.adoc:630
 #, no-wrap
 msgid ""
-"import javax.inject.Inject;\n"
+"import jakarta.inject.Inject;\n"
 "import org.eclipse.microprofile.jwt.Claim;\n"
 "import org.eclipse.microprofile.jwt.Claims;\n"
 msgstr ""
@@ -1315,9 +1315,9 @@ msgstr "你也可以用它来定制令牌的验证或解密方式。例如，可
 #, no-wrap
 msgid ""
 "import javax.crypto.SecretKey;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.core.NewCookie;\n"
-"import javax.ws.rs.core.Response;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.core.NewCookie;\n"
+"import jakarta.ws.rs.core.Response;\n"
 "import org.eclipse.microprofile.jwt.JsonWebToken;\n"
 "import io.smallrye.jwt.auth.principal.JWTParser;\n"
 "import io.smallrye.jwt.build.Jwt;\n"
@@ -1411,9 +1411,9 @@ msgstr "如果你需要提供你自己的工厂，例如，避免再次验证已
 msgid ""
 "import java.nio.charset.StandardCharsets;\n"
 "import java.util.Base64;\n"
-"import javax.annotation.Priority;\n"
-"import javax.enterprise.context.ApplicationScoped;\n"
-"import javax.enterprise.inject.Alternative;\n"
+"import jakarta.annotation.Priority;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
+"import jakarta.enterprise.inject.Alternative;\n"
 "import org.jose4j.jwt.JwtClaims;\n"
 "import org.jose4j.jwt.consumer.InvalidJwtException;\n"
 "import io.smallrye.jwt.auth.principal.DefaultJWTCallerPrincipal;\n"
@@ -1477,7 +1477,7 @@ msgstr "缆车"
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:799
 #, fuzzy
-msgid "If you configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Wiremock` section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "If you configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Wiremock` section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr "如果你配置 `mp.jwt.verify.publickey.location` ，以指向HTTPS或基于HTTP的JsonWebKey（JWK）集，那么你可以使用与 link:security-openid-connect.html#integration-testing[OpenID Connect Bearer Token集成测试] `Wiremock` 部分所述相同的方法，但只需改变 `application.properties` ，以使用MP JWT配置属性来代替。"
 
 #. type: delimited block -
@@ -1498,7 +1498,7 @@ msgstr "钥匙环"
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:811
 #, fuzzy
-msgid "If you work with Keycloak and configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing-keycloak[OpenID Connect Bearer Token Integration testing] Keycloak section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "If you work with Keycloak and configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] Keycloak section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr "如果你与Keycloak合作，并配置 `mp.jwt.verify.publickey.location` ，以指向HTTPS或基于HTTP的JsonWebKey（JWK）集，那么你可以使用与 link:security-openid-connect.html#integration-testing-keycloak[OpenID Connect Bearer Token集成测试] `Keycloak` 部分中描述的相同方法，但只需改变 `application.properties` ，以使用MP JWT配置属性来代替。"
 
 #. type: delimited block -
@@ -1554,7 +1554,7 @@ msgstr "本地公钥"
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:839
 #, fuzzy
-msgid "You can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Local Public Key` section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "You can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Local Public Key` section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr "你可以使用与 link:security-openid-connect.html#integration-testing.adoc[OpenID Connect承载令牌集成测试] `Local Public Key` 部分所述相同的方法，但只需改变 `application.properties` ，以使用MP JWT配置属性代替。"
 
 #. type: delimited block -
@@ -1778,7 +1778,7 @@ msgstr "主动认证"
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:972
 #, fuzzy
-msgid "If you'd like to skip the token verification when the public endpoint methods are invoked then please disable the xref:security-built-in-authentication-support-concept.adoc#proactive-authentication[proactive authentication]."
+msgid "If you'd like to skip the token verification when the public endpoint methods are invoked then please disable the xref:security-proactive-authentication-concept.adoc[Proactive authentication]."
 msgstr "如果你想在调用公共端点方法时跳过令牌验证，那么请停用 link:security-built-in-authentication.html#proactive-authentication[主动验证] 。"
 
 #. type: Plain text
@@ -2591,7 +2591,7 @@ msgstr "link:security-jwt-build.html[用SmallRye JWT Build签署和加密JWT令�
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:1084
-msgid "xref:security-overview-concept.adoc#oidc-jwt-oauth2-comparison[Summary of Quarkus OIDC, JWT and OAuth2 features]"
+msgid "xref:security-authentication-mechanisms.adoc#combining-authentication-mechanisms[Combining authentication mechanisms]"
 msgstr ""
 
 #. type: Plain text
