@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:16+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -694,15 +694,15 @@ msgstr "确保端点安全"
 #. type: Plain text
 #: upstream/_guides/rest-data-panache.adoc:349
 #, fuzzy
-msgid "REST Data with Panache will use the Security annotations within the package `jakarta.annotation.security` that are defined on your resource interfaces:"
+msgid "REST Data with Panache will use the Security annotations within the package `javax.annotation.security` that are defined on your resource interfaces:"
 msgstr "REST数据与Panache将使用包内的安全注释 `javax.annotation.security` ，这些注释是在你的资源接口上定义的。"
 
 #. type: delimited block -
 #: upstream/_guides/rest-data-panache.adoc:355
 #, no-wrap
 msgid ""
-"import jakarta.annotation.security.DenyAll;\n"
-"import jakarta.annotation.security.RolesAllowed;\n"
+"import javax.annotation.security.DenyAll;\n"
+"import javax.annotation.security.RolesAllowed;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -805,8 +805,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/rest-data-panache.adoc:411
-msgid "Filtering by fields is only supported for String, Boolean, Character, Double, Float, Integer, Long, Short, Byte and the primitive types."
-msgstr ""
+#, fuzzy
+msgid "Filtering by fields is only supported for primitive types."
+msgstr "按字段过滤只支持原始类型。"
 
 #. type: Title ==
 #: upstream/_guides/rest-data-panache.adoc:412
@@ -1072,7 +1073,3 @@ msgstr ""
 #: upstream/_guides/rest-data-panache.adoc:596
 msgid "A `previous` link header (and hal link) would not be included, because the previous page does not exist."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Filtering by fields is only supported for primitive types."
-#~ msgstr "按字段过滤只支持原始类型。"

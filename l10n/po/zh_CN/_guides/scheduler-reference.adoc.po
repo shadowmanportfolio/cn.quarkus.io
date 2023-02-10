@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:16+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr "调度器参考指南"
 #. type: Plain text
 #: upstream/_guides/scheduler-reference.adoc:19
 #, fuzzy
-msgid "Modern applications often need to run specific tasks periodically.  There are two scheduler extensions in Quarkus.  The `quarkus-scheduler` extension brings the API and a lightweight in-memory scheduler implementation.  The `quarkus-quartz` extension implements the API from the `quarkus-scheduler` extension and contains a scheduler implementation based on the Quartz library.  You will only need `quarkus-quartz` for more advanced scheduling use cases, such as persistent tasks and clustering."
+msgid "Modern applications often need to run specific tasks periodically.  There are two scheduler extensions in Quarkus.  The `quarkus-scheduler` extension brings the API and a lightweight in-memory scheduler implementation.  The `quarkus-quartz` extension implements the API from the `quarkus-scheduler` extension and contains a scheduler implementation based on the Quartz library.  You will only need `quarkus-quartz` for more advanced scheduling use cases, such as persistent tasks, clustering and programmatic scheduling of jobs."
 msgstr "现代应用程序经常需要定期运行特定的任务。Quarkus中有两个调度器扩展。 `quarkus-scheduler` 扩展带来了API和一个轻量级的内存调度器实现。 `quarkus-quartz` 扩展实现了来自 `quarkus-scheduler` 扩展的API，并包含一个基于Quartz库的调度器实现。你只需要在更高级的调度用例中使用 `quarkus-quartz` ，比如持久化任务、集群和作业的程序化调度。"
 
 #. type: Plain text
@@ -46,7 +46,7 @@ msgstr "预定的方法"
 #. type: Plain text
 #: upstream/_guides/scheduler-reference.adoc:28
 #, fuzzy
-msgid "A method annotated with `@io.quarkus.scheduler.Scheduled` is automatically scheduled for invocation.  A scheduled method must not be abstract or private.  It may be either static or non-static.  A scheduled method can be annotated with interceptor bindings, such as `@jakarta.transaction.Transactional` and `@org.eclipse.microprofile.metrics.annotation.Counted`."
+msgid "A method annotated with `@io.quarkus.scheduler.Scheduled` is automatically scheduled for invocation.  A scheduled method must not be abstract or private.  It may be either static or non-static.  A scheduled method can be annotated with interceptor bindings, such as `@javax.transaction.Transactional` and `@org.eclipse.microprofile.metrics.annotation.Counted`."
 msgstr "一个被注解为 `@io.quarkus.scheduler.Scheduled` 的方法会被自动安排调用。一个预定的方法不能是抽象的或私有的。它可以是静态的，也可以是非静态的。一个预定的方法可以用拦截器绑定来注释，比如 `@javax.transaction.Transactional` 和 `@org.eclipse.microprofile.metrics.annotation.Counted` 。"
 
 #. type: Plain text
@@ -590,7 +590,6 @@ msgstr "调度器注入实例"
 
 #. type: delimited block -
 #: upstream/_guides/scheduler-reference.adoc:307
-#: upstream/_guides/scheduler-reference.adoc:346
 #, no-wrap
 msgid "import io.quarkus.scheduler.Scheduler;\n"
 msgstr ""
@@ -672,147 +671,117 @@ msgstr "按身份获取特定计划任务的Trigger元数据。"
 msgid "You can configure the grace period for isOverdue() with quarkus.scheduler.overdue-grace-period"
 msgstr "你可以用quarkus.scheduler.overdue-grace-period为isOverdue()配置宽限期。"
 
-#. type: Block title
-#: upstream/_guides/scheduler-reference.adoc:338
-#: upstream/_guides/scheduler-reference.adoc:342
+#. type: Title ==
+#: upstream/_guides/scheduler-reference.adoc:337
 #, fuzzy, no-wrap
 msgid "Programmatic Scheduling"
 msgstr "方案安排"
 
 #. type: Plain text
+#: upstream/_guides/scheduler-reference.adoc:340
+#, fuzzy
+msgid "If you need to schedule a job programmatically you'll need to add the xref:quartz.adoc[Quartz extension] and use the Quartz API directly."
+msgstr "如果你需要以编程方式安排工作，你需要添加 link:quartz.html[Quartz扩展] 并直接使用Quartz API。"
+
+#. type: Block title
 #: upstream/_guides/scheduler-reference.adoc:341
-msgid "An injected `io.quarkus.scheduler.Scheduler` can be also used to schedule a job programmatically."
+#, fuzzy, no-wrap
+msgid "Programmatic Scheduling with Quartz API"
+msgstr "用Quartz API进行程序化调度"
+
+#. type: delimited block -
+#: upstream/_guides/scheduler-reference.adoc:345
+#, no-wrap
+msgid "import org.quartz.Scheduler;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/scheduler-reference.adoc:349
+#: upstream/_guides/scheduler-reference.adoc:347
 #, no-wrap
-msgid ""
-"@ApplicationScoped\n"
-"class MyJobs {\n"
+msgid "class MyJobs {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/scheduler-reference.adoc:352
+#: upstream/_guides/scheduler-reference.adoc:362
 #, no-wrap
 msgid ""
-"    @Inject\n"
-"    Scheduler scheduler;\n"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/scheduler-reference.adoc:361
-#, no-wrap
-msgid ""
-"    void addMyJob() { <1>\n"
-"        scheduler.newJob(\"myJob\")\n"
-"            .setCron(\"0/5 * * * * ?\")\n"
-"            .setTask(executionContext -> { <2>\n"
-"                // do something important every 5 seconds\n"
-"            })\n"
-"            .schedule(); <3>\n"
+"    void onStart(@Observes StartupEvent event, Scheduler quartz) throws SchedulerException {\n"
+"        JobDetail job = JobBuilder.newJob(SomeJob.class)\n"
+"                .withIdentity(\"myJob\", \"myGroup\")\n"
+"                .build();\n"
+"        Trigger trigger = TriggerBuilder.newTrigger()\n"
+"                .withIdentity(\"myTrigger\", \"myGroup\")\n"
+"                .startNow()\n"
+"                .withSchedule(SimpleScheduleBuilder.simpleSchedule()\n"
+"                        .withIntervalInSeconds(1)\n"
+"                        .repeatForever())\n"
+"                .build();\n"
+"        quartz.scheduleJob(job, trigger);\n"
 "    }\n"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/scheduler-reference.adoc:366
-#, no-wrap
-msgid ""
-"    void removeMyJob() {\n"
-"        scheduler.unscheduleJob(\"myJob\"); <4>\n"
-"    } \n"
 "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:368
-msgid "This is a programmatic alternative to a method annotated with `@Scheduled(identity = \"myJob\", cron = \"0/5 * * * * ?\")`."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:369
-msgid "The business logic is defined in a callback."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:370
-msgid "The job is scheduled once the `JobDefinition#schedule()` method is called."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:371
-msgid "A job that was added programmatically can be also removed."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:373
+#: upstream/_guides/scheduler-reference.adoc:365
 #, fuzzy
-msgid "By default, the scheduler is not started unless a `@Scheduled` business method is found. You may need to force the start of the scheduler for \"pure\" programmatic scheduling via `quarkus.scheduler.start-mode=forced`."
+msgid "By default, the scheduler is not started unless a `@Scheduled` business method is found. You may need to force the start of the scheduler for \"pure\" programmatic scheduling. See also <<quartz.adoc#quartz-configuration-reference,Quartz Configuration Reference>>."
 msgstr "默认情况下，除非找到一个 `@Scheduled` 的业务方法，否则调度器不会被启动。你可能需要为 \"纯 \"程序化调度强制启动调度器。请参见 link:quartz.html#quartz-configuration-reference[Quartz配置参考] 。"
 
-#. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:375
-msgid "If the xref:quartz.adoc[Quartz extension] is present then the Quartz API can be also used to schedule a job programmatically."
-msgstr ""
-
 #. type: Title ==
-#: upstream/_guides/scheduler-reference.adoc:376
+#: upstream/_guides/scheduler-reference.adoc:366
 #, fuzzy, no-wrap
 msgid "Scheduled Methods and Testing"
 msgstr "预定的方法和测试"
 
 #. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:382
+#: upstream/_guides/scheduler-reference.adoc:372
 #, fuzzy
 msgid "It is often desirable to disable the scheduler when running the tests.  The scheduler can be disabled through the runtime config property `quarkus.scheduler.enabled`.  If set to `false` the scheduler is not started even though the application contains scheduled methods.  You can even disable the scheduler for particular <<getting-started-testing#testing_different_profiles,Test Profiles>>."
 msgstr "在运行测试时，通常需要禁用调度器。调度器可以通过运行时配置属性 `quarkus.scheduler.enabled` 来禁用。如果设置为 `false` ，即使应用程序包含调度方法，调度器也不会启动。你甚至可以为特定的 link:getting-started-testing.html#testing_different_profiles[测试配置文件] 禁用调度器。"
 
 #. type: Title ==
-#: upstream/_guides/scheduler-reference.adoc:383
+#: upstream/_guides/scheduler-reference.adoc:373
 #, fuzzy, no-wrap
 msgid "Metrics"
 msgstr "度量衡"
 
 #. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:386
+#: upstream/_guides/scheduler-reference.adoc:376
 #, fuzzy
 msgid "Some basic metrics are published out of the box if `quarkus.scheduler.metrics.enabled` is set to `true` and a metrics extension is present."
 msgstr "如果 `quarkus.scheduler.metrics.enabled` 设置为 `true` ，并且有一个度量衡扩展，那么一些基本的度量衡就会开箱发布。"
 
 #. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:388
+#: upstream/_guides/scheduler-reference.adoc:378
 #, fuzzy
 msgid "If the xref:micrometer.adoc[Micrometer extension] is present, then a `@io.micrometer.core.annotation.Timed` interceptor binding is added to all `@Scheduled` methods automatically (unless it's already present) and a `io.micrometer.core.instrument.Timer` with name `scheduled.methods` and a `io.micrometer.core.instrument.LongTaskTimer` with name `scheduled.methods.running` are registered. The fully qualified name of the declaring class and the name of a `@Scheduled` method are used as tags."
 msgstr "如果 link:micrometer.html[Micrometer扩展] 存在，那么所有的 `@Scheduled` 方法都会自动添加一个 `@io.micrometer.core.annotation.Timed` 拦截器绑定（除非它已经存在），并且注册一个名为 `scheduled.methods` 的 `io.micrometer.core.instrument.Timer` 和一个名为 `scheduled.methods.running` 的 `io.micrometer.core.instrument.LongTaskTimer` 。声明类的完全合格名称和 `@Scheduled` 方法的名称被用作标签。"
 
 #. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:390
+#: upstream/_guides/scheduler-reference.adoc:380
 #, fuzzy
 msgid "If the xref:smallrye-metrics.adoc[SmallRye Metrics extension] is present, then a `@org.eclipse.microprofile.metrics.annotation.Timed` interceptor binding is added to all `@Scheduled` methods automatically (unless it's already present) and a `org.eclipse.microprofile.metrics.Timer` is created for each `@Scheduled` method. The name consists of the fully qualified name of the declaring class and the name of a `@Scheduled` method. The timer has a tag `scheduled=true`."
 msgstr "如果 link:smallrye-metrics.html[SmallRye Metrics扩展] 存在，那么就会自动为所有 `@Scheduled` 方法添加一个 `@org.eclipse.microprofile.metrics.annotation.Timed` 拦截器绑定（除非它已经存在），并为每个 `@Scheduled` 方法创建一个 `org.eclipse.microprofile.metrics.Timer` 。该名称由声明类的全称和 `@Scheduled` 方法的名称组成。定时器有一个标签 `scheduled=true` 。"
 
 #. type: Title ==
-#: upstream/_guides/scheduler-reference.adoc:391
+#: upstream/_guides/scheduler-reference.adoc:381
 #, fuzzy, no-wrap
 msgid "OpenTelemetry Tracing"
 msgstr "开放式遥测追踪"
 
 #. type: Plain text
-#: upstream/_guides/scheduler-reference.adoc:394
+#: upstream/_guides/scheduler-reference.adoc:384
 #, fuzzy
 msgid "If `quarkus.scheduler.tracing.enabled` is set to `true` and the xref:opentelemetry.adoc[OpenTelemetry extension] is present then the `@io.opentelemetry.instrumentation.annotations.WithSpan` annotation is added automatically to every `@Scheduled` method. As a result, each execution of this method has a new `io.opentelemetry.api.trace.Span` associated."
 msgstr "如果 `quarkus.scheduler.tracing.enabled` 被设置为 `true` ，并且存在 link:opentelemetry.html[OpenTelemetry扩展] ，那么 `@io.opentelemetry.instrumentation.annotations.WithSpan` 注释将自动添加到每个 `@Scheduled` 方法中。因此，这个方法的每次执行都有一个新的 `io.opentelemetry.api.trace.Span` 。"
 
+#. type: Plain text
+#: upstream/_guides/scheduler-reference.adoc:386
+msgid "<<non-blocking-methods,Non-blocking methods>> are not supported, i.e. a new span is associated with the _actual_ invocation but it's not available within the asynchronous computation."
+msgstr ""
+
 #. type: Title ==
-#: upstream/_guides/scheduler-reference.adoc:395
+#: upstream/_guides/scheduler-reference.adoc:387
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""
-
-#, fuzzy
-#~ msgid "If you need to schedule a job programmatically you'll need to add the xref:quartz.adoc[Quartz extension] and use the Quartz API directly."
-#~ msgstr "如果你需要以编程方式安排工作，你需要添加 link:quartz.html[Quartz扩展] 并直接使用Quartz API。"
-
-#, fuzzy
-#~ msgid "Programmatic Scheduling with Quartz API"
-#~ msgstr "用Quartz API进行程序化调度"

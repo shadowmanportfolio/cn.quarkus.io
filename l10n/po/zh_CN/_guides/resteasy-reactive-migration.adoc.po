@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,7 +298,7 @@ msgstr " `org.jboss.resteasy.reactive.RestForm` "
 #. type: Plain text
 #: upstream/_guides/resteasy-reactive-migration.adoc:98
 #, fuzzy
-msgid "The previous table does not include the `org.jboss.resteasy.annotations.Form` annotation because there is no RESTEasy Reactive specific replacement for it.  Users are instead encouraged to use the JAX-RS standard `jakarta.ws.rs.BeanParam` annotation which is supported on both the server and the client."
+msgid "The previous table does not include the `org.jboss.resteasy.annotations.Form` annotation because there is no RESTEasy Reactive specific replacement for it.  Users are instead encouraged to use the JAX-RS standard `javax.ws.rs.BeanParam` annotation which is supported on both the server and the client."
 msgstr "前面的表格没有包括 `org.jboss.resteasy.annotations.Form` 注释，因为没有RESTEasy Reactive特定的替代品。相反，我们鼓励用户使用JAX-RS标准的 `javax.ws.rs.BeanParam` 注释，该注释在服务器和客户端都支持。"
 
 #. type: Title ===
@@ -316,7 +316,7 @@ msgstr "尽管RESTEasy Reactive提供了与RESTEasy Classic相同的符合规范
 #. type: Plain text
 #: upstream/_guides/resteasy-reactive-migration.adoc:104
 #, fuzzy
-msgid "The most common case where the difference in providers might result in different behavior, is the included `jakarta.ws.rs.ext.ExceptionMapper` implementations. To see what classes are included in the application, launch the application in dev mode and navigate to http://localhost:8080/q/dev/io.quarkus.quarkus-resteasy-reactive/exception-mappers."
+msgid "The most common case where the difference in providers might result in different behavior, is the included `javax.ws.rs.ext.ExceptionMapper` implementations. To see what classes are included in the application, launch the application in dev mode and navigate to http://localhost:8080/q/dev/io.quarkus.quarkus-resteasy-reactive/exception-mappers."
 msgstr "最常见的情况是，提供者的不同可能会导致不同的行为，这就是所包含的 `javax.ws.rs.ext.ExceptionMapper` 实现。要查看应用程序中包含哪些类，请在开发模式下启动应用程序，并导航到 http://localhost:8080/q/dev/io.quarkus.quarkus-resteasy-reactive/exception-mappers "
 
 #. type: Title ====

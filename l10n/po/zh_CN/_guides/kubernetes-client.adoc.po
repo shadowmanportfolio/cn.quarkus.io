@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -561,7 +561,7 @@ msgstr "请注意，如果你想在Kubernetes客户端使用椭圆曲线密钥�
 msgid ""
 "<dependency>\n"
 "    <groupId>org.bouncycastle</groupId>\n"
-"    <artifactId>bcpkix-jdk18on</artifactId>\n"
+"    <artifactId>bcpkix-jdk15on</artifactId>\n"
 "</dependency>\n"
 msgstr ""
 

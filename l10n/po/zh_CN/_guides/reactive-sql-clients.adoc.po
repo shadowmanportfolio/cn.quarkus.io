@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,7 @@ msgstr "Reactive SQL客户端有一个直接的API，专注于可扩展性和低
 #. type: Title ===
 #: upstream/_guides/reactive-sql-clients.adoc:16
 #: upstream/_guides/reactive-sql-clients.adoc:476
-#: upstream/_guides/reactive-sql-clients.adoc:718
-#: upstream/_guides/reactive-sql-clients.adoc:767
+#: upstream/_guides/reactive-sql-clients.adoc:715
 #, fuzzy, no-wrap
 msgid "IBM Db2"
 msgstr "IBM Db2"
@@ -44,8 +43,7 @@ msgstr "IBM Db2"
 #: upstream/_guides/reactive-sql-clients.adoc:17
 #: upstream/_guides/reactive-sql-clients.adoc:496
 #: upstream/_guides/reactive-sql-clients.adoc:660
-#: upstream/_guides/reactive-sql-clients.adoc:730
-#: upstream/_guides/reactive-sql-clients.adoc:783
+#: upstream/_guides/reactive-sql-clients.adoc:731
 #, fuzzy, no-wrap
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
@@ -54,8 +52,7 @@ msgstr "PostgreSQL"
 #: upstream/_guides/reactive-sql-clients.adoc:18
 #: upstream/_guides/reactive-sql-clients.adoc:481
 #: upstream/_guides/reactive-sql-clients.adoc:678
-#: upstream/_guides/reactive-sql-clients.adoc:721
-#: upstream/_guides/reactive-sql-clients.adoc:771
+#: upstream/_guides/reactive-sql-clients.adoc:719
 #, fuzzy, no-wrap
 msgid "MariaDB/MySQL"
 msgstr "玛丽亚数据库/MySQL"
@@ -63,8 +60,7 @@ msgstr "玛丽亚数据库/MySQL"
 #. type: Title ===
 #: upstream/_guides/reactive-sql-clients.adoc:19
 #: upstream/_guides/reactive-sql-clients.adoc:486
-#: upstream/_guides/reactive-sql-clients.adoc:724
-#: upstream/_guides/reactive-sql-clients.adoc:775
+#: upstream/_guides/reactive-sql-clients.adoc:723
 #, fuzzy, no-wrap
 msgid "Microsoft SQL Server"
 msgstr "微软SQL服务器"
@@ -73,7 +69,6 @@ msgstr "微软SQL服务器"
 #: upstream/_guides/reactive-sql-clients.adoc:20
 #: upstream/_guides/reactive-sql-clients.adoc:491
 #: upstream/_guides/reactive-sql-clients.adoc:727
-#: upstream/_guides/reactive-sql-clients.adoc:779
 #, fuzzy, no-wrap
 msgid "Oracle"
 msgstr "甲骨文"
@@ -902,7 +897,6 @@ msgstr "数据库客户的详细信息"
 
 #. type: Table
 #: upstream/_guides/reactive-sql-clients.adoc:473
-#: upstream/_guides/reactive-sql-clients.adoc:715
 #, fuzzy, no-wrap
 msgid "Database"
 msgstr "数据库"
@@ -1438,118 +1432,45 @@ msgstr ""
 #. type: Title ==
 #: upstream/_guides/reactive-sql-clients.adoc:705
 #, no-wrap
-msgid "Customizing pool creation"
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/reactive-sql-clients.adoc:708
-#, fuzzy
-msgid "Sometimes, the database connection pool cannot be configured only by declaration."
-msgstr "数据库连接的网址必须配置成这样。"
-
-#. type: Plain text
-#: upstream/_guides/reactive-sql-clients.adoc:710
-msgid "You may need to read a specific file only present in production, or retrieve configuration data from a proprietary configuration server."
-msgstr ""
-
-#. type: Plain text
-#: upstream/_guides/reactive-sql-clients.adoc:712
-msgid "In this case, you can customize pool creation by creating a class implementing an interface which depends on the target database:"
-msgstr ""
-
-#. type: Table
-#: upstream/_guides/reactive-sql-clients.adoc:717
-#, fuzzy, no-wrap
-msgid "Pool creator class name"
-msgstr "池类名称"
-
-#. type: Table
-#: upstream/_guides/reactive-sql-clients.adoc:720
-#, fuzzy, no-wrap
-msgid "`io.quarkus.reactive.db2.client.DB2PoolCreator`"
-msgstr " `quarkus-reactive-db2-client` "
-
-#. type: Table
-#: upstream/_guides/reactive-sql-clients.adoc:723
-#, fuzzy, no-wrap
-msgid "`io.quarkus.reactive.mysql.client.MySQLPoolCreator`"
-msgstr " `io.vertx.mutiny.mysqlclient.MySQLPool` "
-
-#. type: Table
-#: upstream/_guides/reactive-sql-clients.adoc:726
-#, fuzzy, no-wrap
-msgid "`io.quarkus.reactive.mssql.client.MSSQLPoolCreator`"
-msgstr " `io.vertx.mutiny.mssqlclient.MSSQLPool` "
-
-#. type: Table
-#: upstream/_guides/reactive-sql-clients.adoc:729
-#, fuzzy, no-wrap
-msgid "`io.quarkus.reactive.oracle.client.OraclePoolCreator`"
-msgstr " `io.vertx.mutiny.oracleclient.OraclePool` "
-
-#. type: Table
-#: upstream/_guides/reactive-sql-clients.adoc:731
-#, fuzzy, no-wrap
-msgid "`io.quarkus.reactive.pg.client.PgPoolCreator`"
-msgstr " `quarkus-reactive-pg-client` "
-
-#. type: Plain text
-#: upstream/_guides/reactive-sql-clients.adoc:734
-msgid "Here's an example for PostgreSQL:"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/reactive-sql-clients.adoc:738
-#, no-wrap
-msgid "import jakarta.inject.Singleton;\n"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/reactive-sql-clients.adoc:743
-#, no-wrap
-msgid ""
-"import io.quarkus.reactive.pg.client.PgPoolCreator;\n"
-"import io.vertx.pgclient.PgConnectOptions;\n"
-"import io.vertx.pgclient.PgPool;\n"
-"import io.vertx.sqlclient.PoolOptions;\n"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/reactive-sql-clients.adoc:746
-#, no-wrap
-msgid ""
-"@Singleton\n"
-"public class CustomPgPoolCreator implements PgPoolCreator {\n"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/reactive-sql-clients.adoc:755
-#, no-wrap
-msgid ""
-"    @Override\n"
-"    public PgPool create(Input input) {\n"
-"        PgConnectOptions connectOptions = input.pgConnectOptions();\n"
-"        PoolOptions poolOptions = input.poolOptions();\n"
-"        // Customize connectOptions, poolOptions or both, as required\n"
-"        return PgPool.pool(input.vertx(), connectOptions, poolOptions);\n"
-"    }\n"
-"}\n"
-msgstr ""
-
-#. type: Title ==
-#: upstream/_guides/reactive-sql-clients.adoc:757
-#, no-wrap
 msgid "Configuration Reference"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/reactive-sql-clients.adoc:759
+#: upstream/_guides/reactive-sql-clients.adoc:707
 #, no-wrap
 msgid "Common Datasource"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/reactive-sql-clients.adoc:763
+#: upstream/_guides/reactive-sql-clients.adoc:711
 #, no-wrap
 msgid "Reactive Datasource"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Sometimes, the database connection pool cannot be configured only by declaration."
+#~ msgstr "数据库连接的网址必须配置成这样。"
+
+#, fuzzy
+#~ msgid "Pool creator class name"
+#~ msgstr "池类名称"
+
+#, fuzzy
+#~ msgid "`io.quarkus.reactive.db2.client.DB2PoolCreator`"
+#~ msgstr " `quarkus-reactive-db2-client` "
+
+#, fuzzy
+#~ msgid "`io.quarkus.reactive.mysql.client.MySQLPoolCreator`"
+#~ msgstr " `io.vertx.mutiny.mysqlclient.MySQLPool` "
+
+#, fuzzy
+#~ msgid "`io.quarkus.reactive.mssql.client.MSSQLPoolCreator`"
+#~ msgstr " `io.vertx.mutiny.mssqlclient.MSSQLPool` "
+
+#, fuzzy
+#~ msgid "`io.quarkus.reactive.oracle.client.OraclePoolCreator`"
+#~ msgstr " `io.vertx.mutiny.oracleclient.OraclePool` "
+
+#, fuzzy
+#~ msgid "`io.quarkus.reactive.pg.client.PgPoolCreator`"
+#~ msgstr " `quarkus-reactive-pg-client` "

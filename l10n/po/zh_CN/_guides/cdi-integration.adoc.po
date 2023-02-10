@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -323,7 +323,7 @@ msgstr "用例 - 我需要转换元数据"
 #. type: Plain text
 #: upstream/_guides/cdi-integration.adoc:165
 #, fuzzy
-msgid "In some cases, it's useful to be able to modify the metadata.  Quarkus provides a powerful alternative to https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#process_annotated_type[`jakarta.enterprise.inject.spi.ProcessAnnotatedType`, window=\"_blank\"].  With an `AnnotationsTransformerBuildItem` it's possible to override the annotations that exist on bean classes."
+msgid "In some cases, it's useful to be able to modify the metadata.  Quarkus provides a powerful alternative to https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#process_annotated_type[`javax.enterprise.inject.spi.ProcessAnnotatedType`, window=\"_blank\"].  With an `AnnotationsTransformerBuildItem` it's possible to override the annotations that exist on bean classes."
 msgstr "在某些情况下，能够修改元数据是很有用的。Quarkus提供了一个强大的替代方案，以替代 link:https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#process_annotated_type[`javax.enterprise.inject.spi.ProcessAnnotatedType`, target=\"_blank\"] .通过一个 `AnnotationsTransformerBuildItem` ，可以覆盖存在于Bean类上的注解。"
 
 #. type: Plain text
@@ -584,7 +584,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/cdi-integration.adoc:282
 #, fuzzy
-msgid "Generate the bytecode of the `jakarta.enterprise.context.spi.Contextual#create(CreationalContext<T>)` implementation."
+msgid "Generate the bytecode of the `javax.enterprise.context.spi.Contextual#create(CreationalContext<T>)` implementation."
 msgstr "生成 `javax.enterprise.context.spi.Contextual#create(CreationalContext<T>)` 实现的字节码。"
 
 #. type: Plain text
@@ -944,7 +944,7 @@ msgstr "用例 - 额外的拦截器绑定"
 #. type: Plain text
 #: upstream/_guides/cdi-integration.adoc:457
 #, fuzzy
-msgid "In rare cases it might be handy to programmatically register an existing annotation that is not annotated with `@jakarta.interceptor.InterceptorBinding` as an interceptor binding.  This is similar to what CDI achieves through `BeforeBeanDiscovery#addInterceptorBinding()`.  We are going to use `InterceptorBindingRegistrarBuildItem` to get it done."
+msgid "In rare cases it might be handy to programmatically register an existing annotation that is not annotated with `@javax.interceptor.InterceptorBinding` as an interceptor binding.  This is similar to what CDI achieves through `BeforeBeanDiscovery#addInterceptorBinding()`.  We are going to use `InterceptorBindingRegistrarBuildItem` to get it done."
 msgstr "在极少数情况下，以编程方式注册一个未被注解的现有注解 `@javax.interceptor.InterceptorBinding` ，作为拦截器绑定，可能会很方便。这类似于CDI通过 `BeforeBeanDiscovery#addInterceptorBinding()` 来实现的。我们将使用 `InterceptorBindingRegistrarBuildItem` 来完成它。"
 
 #. type: Block title
@@ -977,7 +977,7 @@ msgstr "用例 - 额外的限定词"
 #. type: Plain text
 #: upstream/_guides/cdi-integration.adoc:477
 #, fuzzy
-msgid "Sometimes it might be useful to register an existing annotation that is not annotated with `@jakarta.inject.Qualifier` as a CDI qualifier.  This is similar to what CDI achieves through `BeforeBeanDiscovery#addQualifier()`.  We are going to use `QualifierRegistrarBuildItem` to get it done."
+msgid "Sometimes it might be useful to register an existing annotation that is not annotated with `@javax.inject.Qualifier` as a CDI qualifier.  This is similar to what CDI achieves through `BeforeBeanDiscovery#addQualifier()`.  We are going to use `QualifierRegistrarBuildItem` to get it done."
 msgstr "有时，将一个没有用 `@javax.inject.Qualifier` 注释的现有注解注册为CDI限定符可能是有用的。这类似于CDI通过 `BeforeBeanDiscovery#addQualifier()` 来实现的。我们将使用 `QualifierRegistrarBuildItem` 来完成它。"
 
 #. type: Block title
@@ -1011,7 +1011,7 @@ msgstr "用例 - 额外的限定词"
 #. type: Plain text
 #: upstream/_guides/cdi-integration.adoc:498
 #, fuzzy
-msgid "It is sometimes useful to register an existing annotation that is not annotated with `@jakarta.enterprise.inject.Stereotype` as a CDI stereotype.  This is similar to what CDI achieves through `BeforeBeanDiscovery#addStereotype()`.  We are going to use `StereotypeRegistrarBuildItem` to get it done."
+msgid "It is sometimes useful to register an existing annotation that is not annotated with `@javax.enterprise.inject.Stereotype` as a CDI stereotype.  This is similar to what CDI achieves through `BeforeBeanDiscovery#addStereotype()`.  We are going to use `StereotypeRegistrarBuildItem` to get it done."
 msgstr "有时，将一个没有用 `@javax.inject.Qualifier` 注释的现有注解注册为CDI限定符可能是有用的。这类似于CDI通过 `BeforeBeanDiscovery#addQualifier()` 来实现的。我们将使用 `QualifierRegistrarBuildItem` 来完成它。"
 
 #. type: Block title

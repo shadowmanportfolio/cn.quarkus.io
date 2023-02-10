@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +152,7 @@ msgstr "开发服务应用"
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-dev-services.adoc:66
 #, fuzzy
-msgid "By default, the Keycloak page can be used to support the development of a xref:security-oidc-bearer-authentication-concept.adoc[Quarkus OIDC service application]."
+msgid "By default, the Keycloak page can be used to support the development of a xref:security-openid-connect.adoc[Quarkus OIDC service application]."
 msgstr "默认情况下，Keycloak页面可用于支持 link:security-openid-connect.html[Quarkus OIDC服务应用程序] 的开发。"
 
 #. type: Title ====
@@ -444,7 +444,7 @@ msgstr "开发OpenID Connect网络应用程序"
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-dev-services.adoc:178
 #, fuzzy
-msgid "If you develop a xref:security-oidc-code-flow-authentication-concept.adoc[Quarkus OIDC web-app application], then you should set `quarkus.oidc.application-type=web-app` in `application.properties` before starting the application."
+msgid "If you develop a xref:security-openid-connect-web-authentication.adoc[Quarkus OIDC web-app application] then you should set `quarkus.oidc.application-type=web-app` in `application.properties` before starting the application."
 msgstr "如果你开发一个 link:security-openid-connect-web-authentication.html[Quarkus OIDC网络应用程序] ，那么你应该在启动应用程序之前，在 `application.properties` 中设置 `quarkus.oidc.application-type=web-app` 。"
 
 #. type: Plain text
@@ -528,7 +528,7 @@ msgstr "你可以在 link:continuous-testing.html[持续测试] 模式下针对�
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-dev-services.adoc:216
 #, fuzzy
-msgid "It is also recommended to run the integration tests against Keycloak using `Dev Services for Keycloak`.  For more information, see xref:security-oidc-bearer-authentication-concept.adoc#integration-testing-keycloak-devservices[Testing OpenID onnect Service Applications with Dev Services] and xref:security-oidc-code-flow-authentication-concept.adoc#integration-testing-keycloak-devservices[Testing OpenID Connect WebApp Applications with Dev Services]."
+msgid "It is also recommended to run the integration tests against Keycloak using `Dev Services for Keycloak`.  Please see xref:security-openid-connect.adoc#integration-testing-keycloak-devservices[Testing OpenID Connect Service Applications with Dev Services] and xref:security-openid-connect-web-authentication.adoc#integration-testing-keycloak-devservices[Testing OpenID Connect WebApp Applications with Dev Services] for more information."
 msgstr "也建议使用 `Dev Services for Keycloak` ，针对Keycloak运行集成测试。更多信息请参见 link:security-openid-connect.html#integration-testing-keycloak-devservices[使用开发服务测试OpenID Connect服务应用] 和 link:security-openid-connect-web-authentication.html#integration-testing-keycloak-devservices[使用开发服务测试OpenID Connect WebApp应用] 。"
 
 #. type: Title ===
@@ -768,7 +768,7 @@ msgstr "当前的访问令牌默认使用 `Swagger UI` 或 `GrapghQL UI` 来测�
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-dev-services.adoc:316
 #, fuzzy
-msgid "Some providers such as `Auth0` do not support a standard RP initiated logout so the provider specific logout properties will have to be configured for a logout option be visible. For more information, see xref:security-oidc-code-flow-authentication-concept.adoc#user-initiated-logout[OpenID Connect User-Initiated Logout]."
+msgid "Some providers such as `Auth0` do not support a standard RP initiated logout so the provider specific logout properties will have to be configured for a logout option be visible, please see xref:security-openid-connect-web-authentication.adoc#user-initiated-logout[OpenID Connect User-Initiated Logout] for more information."
 msgstr "一些供应商，如 `Auth0` ，不支持标准的RP发起的注销，因此必须确认供应商特定的注销属性，才能看到注销选项，请参见 link:security-openid-connect-web-authentication.html#user-initiated-logout[OpenID Connect用户发起的注销] 以了解更多信息。"
 
 #. type: Plain text
@@ -978,26 +978,20 @@ msgstr "link:https://openid.net/connect/[OpenID连接]"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-dev-services.adoc:412
-msgid "xref:security-oidc-bearer-authentication-concept.adoc[OIDC Bearer authentication]"
-msgstr ""
+#, fuzzy
+msgid "xref:security-openid-connect.adoc[Quarkus - Using OpenID Connect to Protect Service Applications using Bearer Token Authorization]"
+msgstr "link:security-openid-connect.html[Quarkus - 使用OpenID连接来保护使用承载令牌授权的服务应用]"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-dev-services.adoc:413
-msgid "xref:security-oidc-code-flow-authentication-concept.adoc[OIDC code flow mechanism for protecting web applications]"
-msgstr ""
+#, fuzzy
+msgid "xref:security-openid-connect-web-authentication.adoc[Quarkus - Using OpenID Connect to Protect Web Applications using Authorization Code Flow]"
+msgstr "link:security-openid-connect-web-authentication.html[Quarkus - 使用OpenID连接，利用授权代码流保护Web应用程序]"
 
 #. type: Plain text
 #: upstream/_guides/security-openid-connect-dev-services.adoc:413
 msgid "xref:security-overview-concept.adoc[Quarkus Security overview]"
 msgstr ""
-
-#, fuzzy
-#~ msgid "xref:security-openid-connect.adoc[Quarkus - Using OpenID Connect to Protect Service Applications using Bearer Token Authorization]"
-#~ msgstr "link:security-openid-connect.html[Quarkus - 使用OpenID连接来保护使用承载令牌授权的服务应用]"
-
-#, fuzzy
-#~ msgid "xref:security-openid-connect-web-authentication.adoc[Quarkus - Using OpenID Connect to Protect Web Applications using Authorization Code Flow]"
-#~ msgstr "link:security-openid-connect-web-authentication.html[Quarkus - 使用OpenID连接，利用授权代码流保护Web应用程序]"
 
 #, fuzzy
 #~ msgid "Next test the service with either the current access or ID token. SPA usually sends the access tokens to the application endpoints but there could be cases where the ID tokens are forwarded to the application frontends for them to be aware about the user who is currently logged into SPA."

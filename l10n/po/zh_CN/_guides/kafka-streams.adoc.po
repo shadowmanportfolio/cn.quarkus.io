@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -267,7 +267,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/kafka-streams.adoc:130
 #, no-wrap
-msgid "import jakarta.enterprise.context.ApplicationScoped;\n"
+msgid "import javax.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -696,8 +696,8 @@ msgstr ""
 #: upstream/_guides/kafka-streams.adoc:364
 #, no-wrap
 msgid ""
-"import jakarta.enterprise.context.ApplicationScoped;\n"
-"import jakarta.enterprise.inject.Produces;\n"
+"import javax.enterprise.context.ApplicationScoped;\n"
+"import javax.enterprise.inject.Produces;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -1110,8 +1110,8 @@ msgstr " `KafkaStreamsPipeline` 类中又多了一个方法，可以获得给定
 #: upstream/_guides/kafka-streams.adoc:599
 #, no-wrap
 msgid ""
-"import jakarta.enterprise.context.ApplicationScoped;\n"
-"import jakarta.inject.Inject;\n"
+"import javax.enterprise.context.ApplicationScoped;\n"
+"import javax.inject.Inject;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -1356,13 +1356,13 @@ msgstr ""
 #: upstream/_guides/kafka-streams.adoc:733
 #, no-wrap
 msgid ""
-"import jakarta.enterprise.context.ApplicationScoped;\n"
-"import jakarta.inject.Inject;\n"
-"import jakarta.ws.rs.GET;\n"
-"import jakarta.ws.rs.Path;\n"
-"import jakarta.ws.rs.core.MediaType;\n"
-"import jakarta.ws.rs.core.Response;\n"
-"import jakarta.ws.rs.core.Response.Status;\n"
+"import javax.enterprise.context.ApplicationScoped;\n"
+"import javax.inject.Inject;\n"
+"import javax.ws.rs.GET;\n"
+"import javax.ws.rs.Path;\n"
+"import javax.ws.rs.core.MediaType;\n"
+"import javax.ws.rs.core.Response;\n"
+"import javax.ws.rs.core.Response.Status;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -1723,15 +1723,15 @@ msgstr "最后，必须更新REST端点类。"
 #: upstream/_guides/kafka-streams.adoc:954
 #, no-wrap
 msgid ""
-"import jakarta.enterprise.context.ApplicationScoped;\n"
-"import jakarta.inject.Inject;\n"
-"import jakarta.ws.rs.Consumes;\n"
-"import jakarta.ws.rs.GET;\n"
-"import jakarta.ws.rs.Path;\n"
-"import jakarta.ws.rs.Produces;\n"
-"import jakarta.ws.rs.core.MediaType;\n"
-"import jakarta.ws.rs.core.Response;\n"
-"import jakarta.ws.rs.core.Response.Status;\n"
+"import javax.enterprise.context.ApplicationScoped;\n"
+"import javax.inject.Inject;\n"
+"import javax.ws.rs.Consumes;\n"
+"import javax.ws.rs.GET;\n"
+"import javax.ws.rs.Path;\n"
+"import javax.ws.rs.Produces;\n"
+"import javax.ws.rs.core.MediaType;\n"
+"import javax.ws.rs.core.Response;\n"
+"import javax.ws.rs.core.Response.Status;\n"
 msgstr ""
 
 #. type: delimited block -

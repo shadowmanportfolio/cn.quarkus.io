@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -627,8 +627,8 @@ msgid "Use the help option to display options for creating projects:\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:370 upstream/_guides/cli-tooling.adoc:518
-#: upstream/_guides/cli-tooling.adoc:564
+#: upstream/_guides/cli-tooling.adoc:370 upstream/_guides/cli-tooling.adoc:516
+#: upstream/_guides/cli-tooling.adoc:561
 #, no-wrap
 msgid "[source,shell]\n"
 msgstr ""
@@ -703,7 +703,7 @@ msgstr "使用扩展功能的工作"
 #: upstream/_guides/cli-tooling.adoc:405 upstream/_guides/cli-tooling.adoc:414
 #: upstream/_guides/cli-tooling.adoc:444 upstream/_guides/cli-tooling.adoc:465
 #: upstream/_guides/cli-tooling.adoc:477 upstream/_guides/cli-tooling.adoc:487
-#: upstream/_guides/cli-tooling.adoc:511 upstream/_guides/cli-tooling.adoc:556
+#: upstream/_guides/cli-tooling.adoc:509 upstream/_guides/cli-tooling.adoc:553
 msgid "[source,shell]"
 msgstr ""
 
@@ -863,7 +863,7 @@ msgid "quarkus build [INFO] Scanning for projects..."
 msgstr "quarkus build [INFO] 扫描项目..."
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:494 upstream/_guides/cli-tooling.adoc:525
+#: upstream/_guides/cli-tooling.adoc:494 upstream/_guides/cli-tooling.adoc:523
 #, fuzzy
 msgid "[INFO] ---------------------< org.acme:code-with-quarkus >--------------------- [INFO] Building code-with-quarkus 1.0.0-SNAPSHOT [INFO] --------------------------------[ jar ]---------------------------------"
 msgstr "[INFO] ---------------------< org.acme:code-with-quarkus >--------------------- [INFO] 建立code-with-quarkus 1.0.0-SNAPSHOT [INFO] --------------------------------[ jar ]---------------------------------"
@@ -875,43 +875,37 @@ msgid "...  [INFO] -------------------------------------------------------------
 msgstr " [INFO] ------------------------------------------------------------------------ [INFO] 构建成功 [INFO] ------------------------------------------------------------------------ [INFO] 总时间：8.331 s [INFO] 完成于。2021-05-27T10:13:28-04:00 [INFO] ------------------------------------------------------------------------ "
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:505 upstream/_guides/cli-tooling.adoc:541
+#: upstream/_guides/cli-tooling.adoc:505 upstream/_guides/cli-tooling.adoc:539
 #, no-wrap
 msgid "NOTE: Output will vary depending on the build tool your project is using (Maven, Gradle, or JBang).\n"
 msgstr ""
 
-#. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:507
-#, no-wrap
-msgid "NOTE: Run `quarkus build --clean` to perform clean as part of the build.\n"
-msgstr ""
-
 #. type: Title ===
-#: upstream/_guides/cli-tooling.adoc:508
+#: upstream/_guides/cli-tooling.adoc:506
 #, fuzzy, no-wrap
 msgid "Development mode"
 msgstr "发展模式"
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:513
+#: upstream/_guides/cli-tooling.adoc:511
 #, fuzzy
 msgid "quarkus dev --help"
 msgstr "quarkus dev --help"
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:516
+#: upstream/_guides/cli-tooling.adoc:514
 #, no-wrap
 msgid "To start dev mode from the Quarkus CLI do:\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:521
+#: upstream/_guides/cli-tooling.adoc:519
 #, fuzzy
 msgid "quarkus dev [INFO] Scanning for projects..."
 msgstr "quarkus dev [INFO] 扫描项目..."
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:535
+#: upstream/_guides/cli-tooling.adoc:533
 #, fuzzy, no-wrap
 msgid ""
 "...\n"
@@ -926,19 +920,13 @@ msgid ""
 msgstr "... 监听地址为dt_socket的传输。5005 __ __ _<em></em> <em></em>_ _<em>_ </em>_ _<em>_</em>_ _--/_ / / _ _<em>|</em>_ / _ / / / / / / / _<em>| </em>_ / _, _ / ,< / /_ / / / / / --__\\__/ |/ _<em>|/|\\/_/</em>_ 2021-05-27 10:15:56,032 INFO [io.quarkus] (Quarkus Main Thread) code-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 999-SNAPSHOT) started in 1.387s.Listening on: http://localhost:8080 2021-05-27 10:15:56,035 INFO [io.quarkus] (Quarkus Main Thread) Profile dev activated.Live Coding已激活。2021-05-27 10:15:56,035 INFO [io.quarkus] (Quarkus Main Thread) Installed features:[cdi, resteasy-reactive, smallrye-context-propagation] 。"
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:538
+#: upstream/_guides/cli-tooling.adoc:536
 #, fuzzy
 msgid "Tests paused, press [r] to resume"
 msgstr "测试暂停，按[r]恢复"
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:543
-#, no-wrap
-msgid "NOTE: Run `quarkus dev --clean` to perform clean as part of the build.\n"
-msgstr ""
-
-#. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:550
+#: upstream/_guides/cli-tooling.adoc:547
 #, no-wrap
 msgid ""
 "[[quarkus-version-compatibility]]\n"
@@ -950,64 +938,64 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/cli-tooling.adoc:551
+#: upstream/_guides/cli-tooling.adoc:548
 #, fuzzy, no-wrap
 msgid "Shell autocomplete and aliases"
 msgstr "外壳自动完成和别名"
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:554
+#: upstream/_guides/cli-tooling.adoc:551
 msgid "Automatic command completion is available for Bash and Zsh:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:559
+#: upstream/_guides/cli-tooling.adoc:556
 #, fuzzy
 msgid "# Setup autocompletion in the current shell source <(quarkus completion)"
 msgstr "# Setup autocompletion in the current shell source <(quarkus completion)"
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:562
+#: upstream/_guides/cli-tooling.adoc:559
 #, no-wrap
 msgid "If you choose to use an alias for the quarkus command, adjust command completion with the following commands:\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:569
+#: upstream/_guides/cli-tooling.adoc:566
 #, fuzzy
 msgid "# Add an alias for the quarkus command alias q=quarkus # Add q to list of commands included in quarkus autocompletion complete -F _complete_quarkus q"
 msgstr "# Add an alias for the quarkus command alias q=quarkus # Add q to list of commands included in quarkus autocompletion complete -F _complete_quarkus q"
 
 #. type: Title ===
-#: upstream/_guides/cli-tooling.adoc:572
+#: upstream/_guides/cli-tooling.adoc:569
 #, fuzzy, no-wrap
 msgid "Container images"
 msgstr "容器图像"
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:576
+#: upstream/_guides/cli-tooling.adoc:573
 msgid "The Quarkus CLI allows building container images without tampering with your project configuration (adding / removing container image extensions).  To build the image for your project:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:578 upstream/_guides/cli-tooling.adoc:604
+#: upstream/_guides/cli-tooling.adoc:575 upstream/_guides/cli-tooling.adoc:601
 msgid "[source, shell]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:580
+#: upstream/_guides/cli-tooling.adoc:577
 #, fuzzy
 msgid "quarkus image build"
 msgstr "Quarkus ext ls"
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:583
+#: upstream/_guides/cli-tooling.adoc:580
 #, no-wrap
 msgid "The `image build` command can be used directly, or a subcommand can be selected. The available subcommands are:\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:588
+#: upstream/_guides/cli-tooling.adoc:585
 #, no-wrap
 msgid ""
 "- docker\n"
@@ -1017,41 +1005,41 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:590
+#: upstream/_guides/cli-tooling.adoc:587
 #, no-wrap
 msgid "Each subcommand corresponds to an image building tool supported by Quarkus and gives access to specific configuration options.\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:592
+#: upstream/_guides/cli-tooling.adoc:589
 #, no-wrap
 msgid "For example, to use a https://buildpacks.io/[Cloud Native Buildpack] with a custom builder image, use the following:\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:594
+#: upstream/_guides/cli-tooling.adoc:591
 #, no-wrap
 msgid "[source, shell]\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:596
+#: upstream/_guides/cli-tooling.adoc:593
 #, fuzzy
 msgid "quarkus image build buildpack --builder-image <your builder image>"
 msgstr "quarkus image build buildpack --builder-image <your builder image>。"
 
 #. type: Title ====
-#: upstream/_guides/cli-tooling.adoc:599
+#: upstream/_guides/cli-tooling.adoc:596
 #, no-wrap
 msgid "Pushing"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/cli-tooling.adoc:602
+#: upstream/_guides/cli-tooling.adoc:599
 msgid "The `image push` command is similar to `image build`, and surfaces some basic options required to push images to a target container registry."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/cli-tooling.adoc:606
+#: upstream/_guides/cli-tooling.adoc:603
 msgid "quarkus image push --registry=<image registry> --registry-username=<registry username> --registry-password-stdin"
 msgstr ""

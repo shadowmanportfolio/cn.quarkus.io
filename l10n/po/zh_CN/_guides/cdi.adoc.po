@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-02-10 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,8 +95,8 @@ msgstr "简单的豆类例子"
 #: upstream/_guides/cdi.adoc:44
 #, no-wrap
 msgid ""
-"import jakarta.inject.Inject;\n"
-"import jakarta.enterprise.context.ApplicationScoped;\n"
+"import javax.inject.Inject;\n"
+"import javax.enterprise.context.ApplicationScoped;\n"
 "import org.eclipse.microprofile.metrics.annotation.Counted;\n"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgstr "有一个简单的规则： *必须有一个bean可以被分配到一个
 #. type: delimited block =
 #: upstream/_guides/cdi.adoc:82
 #, fuzzy
-msgid "Your can use programmatic lookup via `jakarta.enterprise.inject.Instance` to resolve ambiguities at runtime and even iterate over all beans implementing a given type:"
+msgid "Your can use programmatic lookup via `javax.enterprise.inject.Instance` to resolve ambiguities at runtime and even iterate over all beans implementing a given type:"
 msgstr "你可以通过 `javax.enterprise.inject.Instance` ，在运行时使用程序化的查找来解决歧义，甚至可以遍历所有实现特定类型的bean。"
 
 #. type: delimited block -
@@ -210,7 +210,7 @@ msgstr "即使有多个Bean实现了 `Dictionary` 类型，这个注入点也不
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:99
 #, fuzzy
-msgid "`jakarta.enterprise.inject.Instance` extends `Iterable`."
+msgid "`javax.enterprise.inject.Instance` extends `Iterable`."
 msgstr " `javax.enterprise.inject.Instance` 扩展到 。 `Iterable` "
 
 #. type: Title ==
@@ -298,7 +298,7 @@ msgstr "link:https://jakarta.ee/specifications/cdi/2.0/cdi-spec-2.0.html#qualifi
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:139
 #, fuzzy
-msgid "A qualifier type is a Java annotation defined as `@Retention(RUNTIME)` and annotated with the `@jakarta.inject.Qualifier` meta-annotation:"
+msgid "A qualifier type is a Java annotation defined as `@Retention(RUNTIME)` and annotated with the `@javax.inject.Qualifier` meta-annotation:"
 msgstr "一个限定符类型是一个定义为 `@Retention(RUNTIME)` ，并带有 `@javax.inject.Qualifier` 元注释的Java注释。"
 
 #. type: Block title
@@ -387,7 +387,7 @@ msgstr "在我的Quarkus应用程序中，我究竟可以使用哪些作用域�
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:180
 #, fuzzy
-msgid "You can use all the built-in scopes mentioned by the specification except for `jakarta.enterprise.context.ConversationScoped`."
+msgid "You can use all the built-in scopes mentioned by the specification except for `javax.enterprise.context.ConversationScoped`."
 msgstr "你可以使用规范中提到的所有内置作用域，除了 `javax.enterprise.context.ConversationScoped` 。"
 
 #. type: Table
@@ -407,7 +407,7 @@ msgstr "描述"
 #. type: Table
 #: upstream/_guides/cdi.adoc:185
 #, fuzzy, no-wrap
-msgid "`@jakarta.enterprise.context.ApplicationScoped`"
+msgid "`@javax.enterprise.context.ApplicationScoped`"
 msgstr " `@javax.enterprise.context.ApplicationScoped` "
 
 #. type: Table
@@ -419,7 +419,7 @@ msgstr "一个单一的bean实例被用于应用程序，并在所有的注入�
 #. type: Table
 #: upstream/_guides/cdi.adoc:186
 #, fuzzy, no-wrap
-msgid "`@jakarta.inject.Singleton`"
+msgid "`@javax.inject.Singleton`"
 msgstr " `@javax.inject.Singleton` "
 
 #. type: Table
@@ -431,7 +431,7 @@ msgstr "就像 `@ApplicationScoped` ，只是没有使用客户端代理。当�
 #. type: Table
 #: upstream/_guides/cdi.adoc:187
 #, fuzzy, no-wrap
-msgid "`@jakarta.enterprise.context.RequestScoped`"
+msgid "`@javax.enterprise.context.RequestScoped`"
 msgstr " `@javax.enterprise.context.RequestScoped` "
 
 #. type: Table
@@ -443,7 +443,7 @@ msgstr "该bean实例与当前 _请求_ （通常是HTTP请求）相关联。"
 #. type: Table
 #: upstream/_guides/cdi.adoc:188
 #, fuzzy, no-wrap
-msgid "`@jakarta.enterprise.context.Dependent`"
+msgid "`@javax.enterprise.context.Dependent`"
 msgstr " `@javax.enterprise.context.Dependent` "
 
 #. type: Table
@@ -455,19 +455,19 @@ msgstr "这是个伪范围。实例是不共享的，每个注入点都会产生
 #. type: Table
 #: upstream/_guides/cdi.adoc:189
 #, fuzzy, no-wrap
-msgid "`@jakarta.enterprise.context.SessionScoped`"
+msgid "`@javax.enterprise.context.SessionScoped`"
 msgstr " `@javax.enterprise.context.SessionScoped` "
 
 #. type: Table
 #: upstream/_guides/cdi.adoc:190
 #, fuzzy, no-wrap
-msgid "This scope is backed by a `jakarta.servlet.http.HttpSession` object. It's only available if the `quarkus-undertow` extension is used."
+msgid "This scope is backed by a `javax.servlet.http.HttpSession` object. It's only available if the `quarkus-undertow` extension is used."
 msgstr "这个范围是由一个 `javax.servlet.http.HttpSession` 对象支持的。它只有在使用 `quarkus-undertow` 扩展时才可用。"
 
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:193
 #, fuzzy
-msgid "There can be other custom scopes provided by Quarkus extensions. For example, xref:transaction.adoc[`quarkus-narayana-jta`] provides xref:transaction.adoc#transaction-scope[`jakarta.transaction.TransactionScoped`]."
+msgid "There can be other custom scopes provided by Quarkus extensions. For example, xref:transaction.adoc[`quarkus-narayana-jta`] provides xref:transaction.adoc#transaction-scope[`javax.transaction.TransactionScoped`]."
 msgstr "可以有其他由Quarkus扩展提供的自定义作用域。例如， `quarkus-narayana-jta` 提供 `javax.transaction.TransactionScoped` 。"
 
 #. type: Title ==
@@ -782,8 +782,8 @@ msgstr "生命周期回调实例"
 #: upstream/_guides/cdi.adoc:325
 #, no-wrap
 msgid ""
-"import jakarta.annotation.PostConstruct;\n"
-"import jakarta.annotation.PreDestroy;\n"
+"import javax.annotation.PostConstruct;\n"
+"import javax.annotation.PreDestroy;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -852,7 +852,7 @@ msgid ""
 "import java.lang.annotation.Retention;\n"
 "import java.lang.annotation.RetentionPolicy;\n"
 "import java.lang.annotation.Target;\n"
-"import jakarta.interceptor.InterceptorBinding;\n"
+"import javax.interceptor.InterceptorBinding;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -895,10 +895,10 @@ msgstr "简单的拦截器实例"
 #: upstream/_guides/cdi.adoc:379
 #, no-wrap
 msgid ""
-"import jakarta.annotation.Priority;\n"
-"import jakarta.interceptor.AroundInvoke;\n"
-"import jakarta.interceptor.Interceptor;\n"
-"import jakarta.interceptor.InvocationContext;\n"
+"import javax.annotation.Priority;\n"
+"import javax.interceptor.AroundInvoke;\n"
+"import javax.interceptor.Interceptor;\n"
+"import javax.interceptor.InvocationContext;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -990,7 +990,7 @@ msgstr "简单的拦截器实例"
 #. type: delimited block -
 #: upstream/_guides/cdi.adoc:411
 #, fuzzy, no-wrap
-msgid "import jakarta.enterprise.context.ApplicationScoped;\n"
+msgid "import javax.enterprise.context.ApplicationScoped;\n"
 msgstr " `@javax.enterprise.context.ApplicationScoped` "
 
 #. type: delimited block -
@@ -1040,11 +1040,11 @@ msgstr "简单的装饰器实例"
 #: upstream/_guides/cdi.adoc:438
 #, no-wrap
 msgid ""
-"import jakarta.decorator.Decorator;\n"
-"import jakarta.decorator.Delegate;\n"
-"import jakarta.annotation.Priority;\n"
-"import jakarta.inject.Inject;\n"
-"import jakarta.enterprise.inject.Any;\n"
+"import javax.decorator.Decorator;\n"
+"import javax.decorator.Delegate;\n"
+"import javax.annotation.Priority;\n"
+"import javax.inject.Inject;\n"
+"import javax.enterprise.inject.Any;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -1210,7 +1210,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/cdi.adoc:510
 #, fuzzy
-msgid "`jakarta.enterprise.event.Event` is used to fire events."
+msgid "`javax.enterprise.event.Event` is used to fire events."
 msgstr " `javax.enterprise.event.Event` 是用来触发事件的。"
 
 #. type: Plain text
