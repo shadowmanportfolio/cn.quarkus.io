@@ -18,14 +18,15 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_guides/doc-reference.adoc:7
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Quarkus style and content guidelines"
-msgstr ""
+msgstr "Quarkus风格和内容指南"
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:12
+#, fuzzy
 msgid "Guidelines are provided to help you to contribute clear and consistent content that is also sourced in the required structure and composition of Quarkus documentation."
-msgstr ""
+msgstr "指南提供了帮助你贡献清晰和一致的内容，这些内容也是Quarkus文档所需结构和组成的来源。"
 
 #. type: Title ==
 #: upstream/_guides/doc-reference.adoc:13
@@ -560,9 +561,9 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_guides/doc-reference.adoc:142
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Quarkus style and content guidelines // <2>"
-msgstr ""
+msgstr "Quarkus风格和内容指南//<2>。"
 
 #. type: delimited block -
 #: upstream/_guides/doc-reference.adoc:145
@@ -1198,110 +1199,111 @@ msgstr "讯息传递"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:331
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Integrations with messaging systems like Kafka, AMQP, or RabbitMQ."
-msgstr ""
+msgstr "与Kafka、AMQP或RabbitMQ等消息传递系统的集成。"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:331
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "miscellaneous"
-msgstr ""
+msgstr "杂项"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:332
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Miscellaneous"
-msgstr ""
+msgstr "杂项"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:332
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "observability"
-msgstr ""
+msgstr "可观察性"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:333
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Extensions and integrations for runtime and application observability"
-msgstr ""
+msgstr "用于运行时和应用程序可观察性的扩展和集成"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:333
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "reactive"
-msgstr ""
+msgstr "反应性"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:334
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Extensions that support reactive technologies and techniques"
-msgstr ""
+msgstr "支持反应式技术和工艺的扩展"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:334
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "security"
-msgstr ""
+msgstr "安全"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:335
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Security"
-msgstr ""
+msgstr "安全问题"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:335
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "serialization"
-msgstr ""
+msgstr "序列化"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:336
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Serialization"
-msgstr ""
+msgstr "序列化"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:336
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "tooling"
-msgstr ""
+msgstr "工具"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:337
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Tooling"
-msgstr ""
+msgstr "工具"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:337
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "web"
-msgstr ""
+msgstr "网络"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:338
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Web"
-msgstr ""
+msgstr "网络"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:338
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "writing-extensions"
-msgstr ""
+msgstr "写作-扩展"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:339
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Writing Extensions"
-msgstr ""
+msgstr "写作扩展"
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:342
+#, fuzzy
 msgid "Tag your content to improve findability by adding at least one category to the categories attribute line in the <<Document header,document header>>. To add multiple categories, use comma-separated values. For example:"
-msgstr ""
+msgstr "通过在 link:#Document header[文件头] 的类别属性行中添加至少一个类别来标记你的内容，以提高可查找性。要添加多个类别，请使用逗号分隔的值。比如说。"
 
 #. type: delimited block -
 #: upstream/_guides/doc-reference.adoc:346
@@ -1653,33 +1655,33 @@ msgstr "主blob源树的快速启动URL；用于引用源文件。"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:379
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "\\{quickstarts-tree-url}"
-msgstr ""
+msgstr "{pos(190,268)}{快速启动-树型}{quickstarts-treeurl}"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:379
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "{quickstarts-tree-url}"
-msgstr ""
+msgstr "{pos(190,268)}{快速启动-树型}{quickstarts-treeurl}"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:381
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Quickstarts URL to main source tree root; used for referencing directories."
-msgstr ""
+msgstr "快速启动到主源树根的URL；用于引用目录。"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:381
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "\\{graalvm-version}"
-msgstr ""
+msgstr "{格拉尔维姆-版本｝"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:381
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "{graalvm-version}"
-msgstr ""
+msgstr "{格拉尔维姆-版本｝"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:382

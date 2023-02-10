@@ -18,24 +18,27 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_guides/security-identity-providers-concept.adoc:7
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Identity providers"
-msgstr ""
+msgstr "身份提供者"
 
 #. type: Plain text
 #: upstream/_guides/security-identity-providers-concept.adoc:13
+#, fuzzy
 msgid "In the Quarkus Security framework, identity providers play a key role in authentication and authorization, providing services for storing and verifying user identities.  The JPA `IdentityProvider` creates a `SecurityIdentity` instance used during user authentication to verify and authorize access requests, making your Quarkus application secure."
-msgstr ""
+msgstr "在Quarkus安全框架中，身份提供者在认证和授权中起着关键作用，为存储和验证用户身份提供服务。JPA `IdentityProvider` 创建了一个 `SecurityIdentity` 实例，在用户认证过程中用来验证和授权访问请求，使你的Quarkus应用程序安全。"
 
 #. type: Plain text
 #: upstream/_guides/security-identity-providers-concept.adoc:16
+#, fuzzy
 msgid "`IdentityProvider` converts the authentication credentials provided by `HttpAuthenticationMechanism` to a `SecurityIdentity` instance."
-msgstr ""
+msgstr " `IdentityProvider` 将 提供的认证凭证转换为 实例。 `HttpAuthenticationMechanism` `SecurityIdentity` "
 
 #. type: Plain text
 #: upstream/_guides/security-identity-providers-concept.adoc:19
+#, fuzzy
 msgid "Some extensions, for example, `OIDC`, `OAuth2`, and `SmallRye JWT` have inline `IdentityProvider` implementations specific to the supported authentication flow.  For example, `quarkus-oidc` uses its own `IdentityProvider` to convert a token to a `SecurityIdentity` instance."
-msgstr ""
+msgstr "一些扩展，例如： `OIDC` , `OAuth2` , 和 `SmallRye JWT` 都有针对支持的认证流程的内联 `IdentityProvider` 实现。例如， `quarkus-oidc` 使用它自己的 `IdentityProvider` ，将一个令牌转换成一个 `SecurityIdentity` 实例。"
 
 #. type: Plain text
 #: upstream/_guides/security-identity-providers-concept.adoc:21

@@ -1259,13 +1259,15 @@ msgstr "当处理文件上传时，在你处理POJO的代码中，将文件移�
 
 #. type: delimited block =
 #: upstream/_guides/resteasy-reactive.adoc:544
+#, fuzzy
 msgid "When a Resource method needs to handle various types of multipart requests, then the `org.jboss.resteasy.reactive.server.multipart.MultipartFormDataInput` method type can be used as provides access to all the parts of the request."
-msgstr ""
+msgstr "当一个资源方法需要处理各种类型的多部分请求时，那么可以使用 `org.jboss.resteasy.reactive.server.multipart.MultipartFormDataInput` 方法类型作为提供对请求的所有部分的访问。"
 
 #. type: delimited block =
 #: upstream/_guides/resteasy-reactive.adoc:546
+#, fuzzy
 msgid "The following code shows a simple example where we iterate over the parts and return a list of aggregated data:"
-msgstr ""
+msgstr "下面的代码显示了一个简单的例子，我们遍历各部分并返回一个聚合数据的列表。"
 
 #. type: delimited block -
 #: upstream/_guides/resteasy-reactive.adoc:551
@@ -1350,9 +1352,9 @@ msgstr "作为读取多部分正文的一部分，RESTEasy Reactive为每个请�
 
 #. type: Title ====
 #: upstream/_guides/resteasy-reactive.adoc:601
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Multipart output"
-msgstr ""
+msgstr "多部分输出"
 
 #. type: delimited block =
 #: upstream/_guides/resteasy-reactive.adoc:605
@@ -1675,19 +1677,21 @@ msgstr "支持异步/反应式"
 
 #. type: Plain text
 #: upstream/_guides/resteasy-reactive.adoc:788
+#, fuzzy
 msgid "When handling a `@POST`, `@PUT` or `@DELETE` endpoint, it is common practice to redirect to a `@GET` endpoint after the action has been performed to allow the user to reload the page without triggering the action a second time.  There are multiple ways to achieve this."
-msgstr ""
+msgstr "在处理 `@POST` 、 `@PUT` 或 `@DELETE` 端点时，通常的做法是在执行完动作后重定向到 `@GET` 端点，以允许用户重新加载页面而不需要第二次触发动作。有多种方法来实现这一点。"
 
 #. type: Title ====
 #: upstream/_guides/resteasy-reactive.adoc:789
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Using RestResponse"
-msgstr ""
+msgstr "使用RestResponse"
 
 #. type: Plain text
 #: upstream/_guides/resteasy-reactive.adoc:792
+#, fuzzy
 msgid "Using `RestResponse` as the return type while making sure the proper redirection URI is created can be done as in the following example:"
-msgstr ""
+msgstr "使用 `RestResponse` 作为返回类型，同时确保创建了适当的重定向URI，可以像下面的例子那样进行。"
 
 #. type: delimited block -
 #: upstream/_guides/resteasy-reactive.adoc:806
@@ -1790,9 +1794,9 @@ msgstr ""
 
 #. type: Title ====
 #: upstream/_guides/resteasy-reactive.adoc:853
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Using RedirectException"
-msgstr ""
+msgstr "使用RedirectException"
 
 #. type: Plain text
 #: upstream/_guides/resteasy-reactive.adoc:856

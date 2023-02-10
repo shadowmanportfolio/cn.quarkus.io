@@ -2399,8 +2399,9 @@ msgstr "我在构建本地可执行文件时得到一个 `OutOfMemoryError` (OOM
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1522
+#, fuzzy
 msgid "When building a native executable Quarkus requires all classes being referenced by the code, no matter if they are build-time or run-time initialized, to be present in the classpath.  This way it ensures that there will be no crashes at runtime due to potential `NoClassDefFoundError` exceptions.  To achieve this it makes use of GraalVM's `--link-at-build-time` parameter:"
-msgstr ""
+msgstr "当构建本地可执行文件时，Quarkus要求所有被代码引用的类，无论它们是构建时还是运行时初始化的，都必须存在于classpath中。这样，它就能确保在运行时不会因为潜在的 `NoClassDefFoundError` 异常而崩溃。为了实现这一点，它利用了GraalVM的 `--link-at-build-time` 参数。"
 
 #. type: delimited block -
 #: upstream/_guides/native-reference.adoc:1528
@@ -2413,48 +2414,57 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1532
+#, fuzzy
 msgid "This, however, may result in an `AnalysisError\\$ParsingError` due to an `UnresolvedElementException` at build time.  This is often caused because the application references a class from an https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html#optional-dependencies[optional dependency]."
-msgstr ""
+msgstr "然而，这可能会导致 `AnalysisError\\$ParsingError` ，原因是在构建时出现了 `UnresolvedElementException` 。这通常是因为应用程序引用了一个来自 link:https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html#optional-dependencies[可选依赖关系的] 类。"
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1534
+#, fuzzy
 msgid "If you have access to the source code responsible for the reference to the missing dependency and can alter it, you should consider one of the following:"
-msgstr ""
+msgstr "如果你可以访问负责引用缺失依赖关系的源代码，并且可以改变它，你应该考虑以下方法之一。"
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1536
+#, fuzzy
 msgid "Remove the reference if it's not actually necessary."
-msgstr ""
+msgstr "如果实际上没有必要，就把参考文献删除。"
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1537
+#, fuzzy
 msgid "Move the affected code in a sub-module and make the dependency non-optional (as is the best practice)."
-msgstr ""
+msgstr "将受影响的代码移到一个子模块中，并使依赖性成为非选择性的（这是最佳做法）。"
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1538
+#, fuzzy
 msgid "Make the dependency non-optional."
-msgstr ""
+msgstr "使依赖性成为非选择性的。"
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1540
+#, fuzzy
 msgid "In the unfortunate case where the reference causing the issue is made by a 3rd party library, that you cannot modify, you should consider one of the following:"
-msgstr ""
+msgstr "在不幸的情况下，如果导致该问题的引用是由第三方库提供的，而你又不能修改，你应该考虑以下情况之一。"
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1542
+#, fuzzy
 msgid "Use a class/method substitution to remove the said reference."
-msgstr ""
+msgstr "使用类/方法替换来删除上述引用。"
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1543
+#, fuzzy
 msgid "Add the optional dependency as a non-optional dependency of your project."
-msgstr ""
+msgstr "将可选的依赖关系作为你的项目的非可选依赖关系。"
 
 #. type: Plain text
 #: upstream/_guides/native-reference.adoc:1547
+#, fuzzy
 msgid "Note that although option (1) is the best choice performance wise, as it minimizes the applications footprint,it might not be trivial to implement.  To make matters worse, it's also not easy to maintain as it is tightly coupled to the 3rd party library implementation.  Option (2) is a straight forward alternative to work around the issue, but comes at the cost of including possibly never invoked code in the resulting native executable."
-msgstr ""
+msgstr "请注意，尽管选项（1）在性能上是最好的选择，因为它最大限度地减少了应用程序的占用空间，但它可能不容易实现。更糟糕的是，它也不容易维护，因为它与第三方库的实现紧密相连。选项（2）是解决这个问题的一个直接的选择，但代价是在产生的本地可执行文件中包括可能从未调用过的代码。"
 
 #. type: Title ===
 #: upstream/_guides/native-reference.adoc:1548

@@ -18,54 +18,61 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:7
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "OIDC configuration properties"
-msgstr ""
+msgstr "OIDC配置属性"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:12
+#, fuzzy
 msgid "As a Quarkus developer, you configure the Quarkus OpenID Connect (OIDC) extension by setting the following properties in the `src/main/resources/application.properties` file."
-msgstr ""
+msgstr "作为Quarkus的开发者，你通过在 `src/main/resources/application.properties` 文件中设置以下属性来配置Quarkus OpenID Connect（OIDC）扩展。"
 
 #. type: Title ==
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:15
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "References"
-msgstr ""
+msgstr "参考文献"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:18
+#, fuzzy
 msgid "xref:security-oidc-bearer-authentication-concept.adoc[OIDC Bearer authentication]"
-msgstr ""
+msgstr "link:security-oidc-bearer-authentication-concept.html[OIDC承载认证]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:19
+#, fuzzy
 msgid "xref:security-openid-connect-tutorial.adoc[Protect a service application by using OIDC Bearer authentication]"
-msgstr ""
+msgstr "link:security-openid-connect-tutorial.html[通过使用OIDC承载器认证来保护服务应用]"
 
 #.  * https://www.keycloak.org/documentation.html[Keycloak Documentation]
 #. type: Plain text
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:20
+#, fuzzy
 msgid "xref:security-protect-service-applications-by-using-oidc-bearer-authentication-how-to.adoc[Protect service applications by using OIDC Bearer authentication]"
-msgstr ""
+msgstr "link:security-protect-service-applications-by-using-oidc-bearer-authentication-how-to.html[通过使用OIDC承载器认证来保护服务应用]"
 
 #.  * https://tools.ietf.org/html/rfc7519[JSON Web Token]
 #. type: Plain text
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:22
+#, fuzzy
 msgid "https://openid.net/connect/[OpenID Connect]"
-msgstr ""
+msgstr "link:https://openid.net/connect/[OpenID连接]"
 
 #.  * xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak]
 #. type: Plain text
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:24
+#, fuzzy
 msgid "xref:security-openid-connect-client-reference.adoc[OpenID Connect and OAuth2 Client and Filters Reference Guide]"
-msgstr ""
+msgstr "link:security-openid-connect-client-reference.html[OpenID连接和OAuth2客户端和过滤器参考指南]"
 
 #.  * xref:security-jwt-build.adoc[Sign and encrypt JWT tokens with SmallRye JWT Build]
 #. type: Plain text
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:27
+#, fuzzy
 msgid "xref:security-authentication-mechanisms.adoc#oidc-jwt-oauth2-comparison[Choosing between OpenID Connect, SmallRye JWT, and OAuth2 authentication mechanisms]"
-msgstr ""
+msgstr "link:security-authentication-mechanisms.html#oidc-jwt-oauth2-comparison[在OpenID Connect、SmallRye JWT和OAuth2认证机制之间做出选择]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-configuration-properties-reference.adoc:28

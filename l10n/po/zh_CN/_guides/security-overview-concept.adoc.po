@@ -42,18 +42,21 @@ msgstr "开始使用Quarkus Security"
 
 #. type: Plain text
 #: upstream/_guides/security-overview-concept.adoc:14
+#, fuzzy
 msgid "The Quarkus Security framework provides built-in security mechanisms for Basic, form-based, and mutual TLS (mTLS) authentication.  You can also integrate Quarkus with several well-known security xref:security-authentication-mechanisms-concept.adoc#other-supported-authentication-mechanisms[authentication mechanisms] and protocols."
-msgstr ""
+msgstr "Quarkus安全框架为Basic、form-based和相互TLS（mTLS）认证提供了内置的安全机制。你也可以将Quarkus与几个著名的安全 link:security-authentication-mechanisms-concept.html#other-supported-authentication-mechanisms[认证机制] 和协议集成。"
 
 #. type: Plain text
 #: upstream/_guides/security-overview-concept.adoc:17
+#, fuzzy
 msgid "{project-name} also includes built-in security to allow for role-based Access control (RBAC) based on the common security annotations @RolesAllowed, @DenyAll, @PermitAll on REST endpoints and CDI beans.  For more information, see xref:security-authorize-web-endpoints-reference.adoc[Authorization of web endpoints]."
-msgstr ""
+msgstr "{项目名称}还包括内置的安全性，允许在REST端点和CDI Bean上基于常见的安全注释@RolesAllowed、@DenyAll、@PermitAll进行基于角色的访问控制（RBAC）。欲了解更多信息，请参见 link:security-authorize-web-endpoints-reference.html[网络端点的授权] 。"
 
 #. type: Plain text
 #: upstream/_guides/security-overview-concept.adoc:19
+#, fuzzy
 msgid "Quarkus Security also supports the following features:"
-msgstr ""
+msgstr "Quarkus Security还支持以下功能。"
 
 #. type: Plain text
 #: upstream/_guides/security-overview-concept.adoc:21
@@ -63,8 +66,9 @@ msgstr "link:security-basic-authentication-tutorial.html[用基本认证保护Qu
 
 #. type: Plain text
 #: upstream/_guides/security-overview-concept.adoc:22
+#, fuzzy
 msgid "xref:security-identity-providers-concept.adoc[Identity providers]"
-msgstr ""
+msgstr "link:security-identity-providers-concept.html[身份提供者]"
 
 #. type: Plain text
 #: upstream/_guides/security-overview-concept.adoc:23
@@ -110,8 +114,9 @@ msgstr "用Panache保护REST数据自动生成的资源"
 
 #. type: Plain text
 #: upstream/_guides/security-overview-concept.adoc:30
+#, fuzzy
 msgid "xref:security-vulnerability-detection-concept.adoc[Security vulnerability detection and National Vulnerability Database (NVD) registration]"
-msgstr ""
+msgstr "link:security-vulnerability-detection-concept.html[安全漏洞检测和国家漏洞数据库（NVD）注册]"
 
 #. type: Plain text
 #: upstream/_guides/security-overview-concept.adoc:32

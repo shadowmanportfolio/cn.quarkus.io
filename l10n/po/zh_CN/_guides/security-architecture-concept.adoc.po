@@ -18,62 +18,69 @@ msgstr ""
 
 #. type: Title =
 #: upstream/_guides/security-architecture-concept.adoc:7
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Quarkus Security architecture"
-msgstr ""
+msgstr "Quarkus安全架构"
 
 #. type: Plain text
 #: upstream/_guides/security-architecture-concept.adoc:12
+#, fuzzy
 msgid "The Quarkus Security architecture provides several built-in authentication mechanisms. The `HttpAuthenticationMechanism` interface is the main entry mechanism for securing HTTP applications in Quarkus. Quarkus Security is also highly customizable."
-msgstr ""
+msgstr "Quarkus安全架构提供了几种内置的认证机制。 `HttpAuthenticationMechanism` 接口是Quarkus中保证HTTP应用安全的主要入口机制。Quarkus Security也是高度可定制的。"
 
 #. type: Title ==
 #: upstream/_guides/security-architecture-concept.adoc:13
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Core components of Quarkus Security"
-msgstr ""
+msgstr "Quarkus Security的核心组件"
 
 #. type: Plain text
 #: upstream/_guides/security-architecture-concept.adoc:17
+#, fuzzy
 msgid "Quarkus Security uses `HttpAuthenticationMechanism` to extract the authentication credentials from the HTTP request and delegates them to `IdentityProvider` to convert the credentials to `SecurityIdentity`.  For example, the credentials can come from the `Authorization` header, client HTTPS certificates, or cookies."
-msgstr ""
+msgstr "Quarkus Security使用 `HttpAuthenticationMechanism` ，从HTTP请求中提取认证凭证，并将其委托给 `IdentityProvider` ，将凭证转换为 `SecurityIdentity` 。例如，凭证可以来自 `Authorization` 头，客户端HTTPS证书，或cookies。"
 
 #. type: Plain text
 #: upstream/_guides/security-architecture-concept.adoc:19
+#, fuzzy
 msgid "`IdentityProvider` verifies the authentication credentials and maps them to `SecurityIdentity`, which has the username, roles, original authentication credentials, and other attributes."
-msgstr ""
+msgstr " `IdentityProvider` 验证认证凭证并将其映射到 ，该网站有用户名、角色、原始认证凭证和其他属性。 `SecurityIdentity` "
 
 #. type: Plain text
 #: upstream/_guides/security-architecture-concept.adoc:21
+#, fuzzy
 msgid "You can inject a `SecurityIdentity` instance for every authenticated resource to get the authenticated identity information."
-msgstr ""
+msgstr "你可以为每个认证的资源注入一个 `SecurityIdentity` 实例，以获得认证的身份信息。"
 
 #. type: Plain text
 #: upstream/_guides/security-architecture-concept.adoc:23
+#, fuzzy
 msgid "In other contexts, it is possible to have other parallel representations of the same information or parts of it, for example, `SecurityContext` for JAX-RS or `JsonWebToken` for JSON Web Tokens (JWT)."
-msgstr ""
+msgstr "在其他情况下，有可能对相同的信息或部分信息进行其他并行表示，例如，JAX-RS的 `SecurityContext` ，或JSON Web Tokens（JWT）的 `JsonWebToken` 。"
 
 #. type: Plain text
 #: upstream/_guides/security-architecture-concept.adoc:25
+#, fuzzy
 msgid "For more information, see xref:security-identity-providers-concept.adoc[Identity providers]."
-msgstr ""
+msgstr "欲了解更多信息，请参见 link:security-identity-providers-concept.html[身份提供者] 。"
 
 #. type: Title ==
 #: upstream/_guides/security-architecture-concept.adoc:26
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Supported authentication mechanisms"
-msgstr ""
+msgstr "支持的认证机制"
 
 #. type: Plain text
 #: upstream/_guides/security-architecture-concept.adoc:29
+#, fuzzy
 msgid "To learn more about security authentication in Quarkus and the supported mechanisms and protocols, see xref:security-authentication-mechanisms-concept.adoc[Authentication mechanisms in Quarkus]."
-msgstr ""
+msgstr "要了解更多关于Quarkus的安全认证以及支持的机制和协议，请看 link:security-authentication-mechanisms-concept.html[Quarkus的认证机制] 。"
 
 #. type: Title ==
 #: upstream/_guides/security-architecture-concept.adoc:30
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Proactive authentication"
-msgstr ""
+msgstr "主动认证"
 
 #. type: Plain text
 #: upstream/_guides/security-architecture-concept.adoc:34

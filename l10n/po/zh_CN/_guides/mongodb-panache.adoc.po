@@ -199,8 +199,9 @@ msgstr ""
 
 #. type: delimited block =
 #: upstream/_guides/mongodb-panache.adoc:94
+#, fuzzy
 msgid "If your project is already configured to use other annotation processors, you will need to additionally add the Panache annotation processor:"
-msgstr ""
+msgstr "如果你的项目已经被配置为使用其他注释处理器，你将需要额外添加Panache注释处理器。"
 
 #. type: delimited block -
 #: upstream/_guides/mongodb-panache.adoc:113
@@ -1500,8 +1501,9 @@ msgstr "你可以让你的投影类从另一个类中延伸出来。在这种情
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:738
+#, fuzzy
 msgid "If you run Java 17+, records are a good fit for projection classes."
-msgstr ""
+msgstr "如果你运行的是Java 17+，记录是很适合投影类的。"
 
 #. type: Title ==
 #: upstream/_guides/mongodb-panache.adoc:739
@@ -1571,8 +1573,9 @@ msgstr "为了在MongoDB与Panache中使用它们，你需要用 `@Transactional
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:773
+#, fuzzy
 msgid "In MongoDB, a transaction is only possible on a replicaset, luckily our xref:mongodb.adoc#dev-services[Dev Services for MongoDB] setups a single node replicaset so it is compatible with transactions."
-msgstr ""
+msgstr "在MongoDB中，交易只能在复制集上进行，幸运的是我们的 link:mongodb.html#dev-services[MongoDB开发服务] 设置了一个单节点复制集，所以它与交易兼容。"
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:775
@@ -2439,35 +2442,39 @@ msgstr "带有Panache的MongoDB依赖于对你的实体进行编译时的字节�
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:1241
+#, fuzzy
 msgid "It attempts to identity archives with Panache entities (and consumers of Panache entities)  by the presence of the marker file `META-INF/panache-archive.marker`. Panache includes an annotation processor that will automatically create this file in archives that depend on Panache (even indirectly). If you have disabled annotation processors you may need to create this file manually in some cases."
-msgstr ""
+msgstr "它试图通过标记文件（ `META-INF/panache-archive.marker` ）的存在来识别具有Panache实体的档案（以及Panache实体的消费者）。Panache包括一个注释处理器，它将在依赖Panache的档案中自动创建这个文件（即使是间接的）。如果你禁用了注释处理器，在某些情况下你可能需要手动创建这个文件。"
 
 #. type: Title ==
 #: upstream/_guides/mongodb-panache.adoc:1242
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Multitenancy"
-msgstr ""
+msgstr "多租户"
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:1246
+#, fuzzy
 msgid "\"Multitenancy is a software architecture where a single software instance can serve multiple, distinct user groups. Software-as-a-service (SaaS)  offerings are an example of multitenant architecture.\" (link:https://www.redhat.com/en/topics/cloud-computing/what-is-multitenancy#:~:text=Multitenancy%20is%20a%20software%20architecture,an%20example%20of%20multitenant%20architecture.[Red Hat])."
-msgstr ""
+msgstr "\"多租户是一种软件架构，一个软件实例可以为多个不同的用户群服务。软件即服务（SaaS）产品是多租户架构的一个例子。\" link:https://www.redhat.com/en/topics/cloud-computing/what-is-multitenancy#:~:text=Multitenancy%20is%20a%20software%20architecture,an%20example%20of%20multitenant%20architecture.[(红帽] )。"
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:1248
+#, fuzzy
 msgid "MongoDB with Panache currently supports the database per tenant approach, it's similar to schema per tenant approach when compared to SQL databases."
-msgstr ""
+msgstr "带有Panache的MongoDB目前支持按租户的数据库方法，与SQL数据库相比，它类似于按租户的模式方法。"
 
 #. type: Title ===
 #: upstream/_guides/mongodb-panache.adoc:1249
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Writing the application"
-msgstr ""
+msgstr "编写应用程序"
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:1253
+#, fuzzy
 msgid "In order to resolve the tenant from incoming requests and map it to a specific database, you must create an implementation of the `io.quarkus.mongodb.panache.common.MongoDatabaseResolver` interface."
-msgstr ""
+msgstr "为了解决来自传入请求的租户并将其映射到一个特定的数据库，你必须创建一个 `io.quarkus.mongodb.panache.common.MongoDatabaseResolver` 接口的实现。"
 
 #. type: delimited block -
 #: upstream/_guides/mongodb-panache.adoc:1258
@@ -2512,8 +2519,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/mongodb-panache.adoc:1273
+#, fuzzy
 msgid "The bean is made `@RequestScoped` as the tenant resolution depends on the incoming request."
-msgstr ""
+msgstr "由于租户的分辨率取决于传入的请求，所以Bean被做成 `@RequestScoped` 。"
 
 #. type: delimited block =
 #: upstream/_guides/mongodb-panache.adoc:1278

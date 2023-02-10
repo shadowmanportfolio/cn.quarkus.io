@@ -1411,13 +1411,15 @@ msgstr "交易"
 
 #. type: delimited block =
 #: upstream/_guides/hibernate-reactive-panache.adoc:733
+#, fuzzy
 msgid "First of all, most of the methods of a Panache entity must be invoked within the scope of a reactive `Mutiny.Session`.  In some cases, the session is opened automatically on demand.  For example, if a Panache entity method is invoked in a JAX-RS resource method in an application that includes the `quarkus-resteasy-reactive` extension.  For other cases, there are both a declarative and a programmatic way to ensure the session is opened.  You can annotate a CDI business method that returns `Uni` with the `@WithSession` annotation.  The method will be intercepted and the returned `Uni` will be triggered within a scope of a reactive session.  Alternatively, you can use the `Panache.withSession()` method to achieve the same effect."
-msgstr ""
+msgstr "首先，Panache实体的大部分方法必须在反应式 `Mutiny.Session` 的范围内调用。在某些情况下，会话是按需自动打开的。例如，如果一个Panache实体方法在一个包含 `quarkus-resteasy-reactive` 扩展的应用程序中的JAX-RS资源方法中被调用。对于其他情况，有一种声明性的和程序性的方法来确保会话被打开。你可以用 `@WithSession` 注解来注释一个返回 `Uni` 的 CDI 业务方法。该方法将被拦截，返回的 `Uni` 将在一个反应式会话的范围内被触发。另外，你也可以使用 `Panache.withSession()` 方法来达到同样的效果。"
 
 #. type: delimited block =
 #: upstream/_guides/hibernate-reactive-panache.adoc:735
+#, fuzzy
 msgid "Note that a Panache entity may not be used from a blocking thread. See also xref:getting-started-reactive.adoc[Getting Started With Reactive] guide that explains the basics of reactive principles in Quarkus."
-msgstr ""
+msgstr "请注意，Panache实体不能从一个阻塞线程中使用。请参阅《 link:getting-started-reactive.html[反应式入门] 指南》，它解释了Quarkus中反应式原理的基本知识。"
 
 #. type: delimited block =
 #: upstream/_guides/hibernate-reactive-panache.adoc:740
@@ -1613,30 +1615,33 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_guides/hibernate-reactive-panache.adoc:854
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Testing"
-msgstr ""
+msgstr "测试"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:857
+#, fuzzy
 msgid "Testing reactive Panache entities in a `@QuarkusTest` is slightly more complicated than testing regular Panache entities due to the asynchronous nature of the APIs and the fact that all operations need to run on a Vert.x event loop."
-msgstr ""
+msgstr "在 `@QuarkusTest` 中测试反应式Panache实体比测试普通Panache实体要稍微复杂一些，这是因为API的异步性以及所有操作都需要在Vert.x事件循环中运行。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:860
+#, fuzzy
 msgid "The `quarkus-test-vertx` dependency provides the `@io.quarkus.test.vertx.RunOnVertxContext` annotation and the `io.quarkus.test.vertx.UniAsserter` class which are intended precisely for this purpose.  The usage is described in the xref:hibernate-reactive.adoc#testing[Hibernate Reactive] guide."
-msgstr ""
+msgstr " `quarkus-test-vertx` 依赖关系提供了 `@io.quarkus.test.vertx.RunOnVertxContext` 注解和 `io.quarkus.test.vertx.UniAsserter` 类，正是为了这个目的。使用方法在 link:hibernate-reactive.html#testing[Hibernate Reactive] 指南中有所描述。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:863
+#, fuzzy
 msgid "You can also extend the `io.quarkus.test.vertx.UniAsserterInterceptor` to customize the behavior of the injected `UniAsserter`.  For example, the interceptor can be used to execute the assert methods within a separate database transaction."
-msgstr ""
+msgstr "你也可以扩展 `io.quarkus.test.vertx.UniAsserterInterceptor` ，以自定义注入的 `UniAsserter` 的行为。例如，拦截器可以被用来在一个单独的数据库事务中执行断言方法。"
 
 #. type: Block title
 #: upstream/_guides/hibernate-reactive-panache.adoc:864
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`UniAsserterInterceptor` Example"
-msgstr ""
+msgstr " `UniAsserterInterceptor` 例子"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-reactive-panache.adoc:868
@@ -1696,8 +1701,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:896
+#, fuzzy
 msgid "The `TransactionalUniAsserterInterceptor` wraps the injected `UniAsserter`."
-msgstr ""
+msgstr " `TransactionalUniAsserterInterceptor` ，包裹着注入的 `UniAsserter` 。"
 
 #. type: Title ==
 #: upstream/_guides/hibernate-reactive-panache.adoc:898
@@ -1913,14 +1919,16 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:1009
 #: upstream/_guides/hibernate-reactive-panache.adoc:1134
+#, fuzzy
 msgid "Make sure the test method is run on the Vert.x event loop."
-msgstr ""
+msgstr "确保测试方法是在Vert.x事件循环上运行的。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:1010
 #: upstream/_guides/hibernate-reactive-panache.adoc:1135
+#, fuzzy
 msgid "The injected `UniAsserter` agrument is used to make assertions."
-msgstr ""
+msgstr "注入的 `UniAsserter` agrument是用来做断言的。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:1012
@@ -2207,8 +2215,9 @@ msgstr "Hibernate Reactive with Panache依赖于编译时对实体的字节码�
 
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:1182
+#, fuzzy
 msgid "It attempts to identify archives with Panache entities (and consumers of Panache entities)  by the presence of the marker file `META-INF/panache-archive.marker`. Panache includes an annotation processor that will automatically create this file in archives that depend on Panache (even indirectly). If you have disabled annotation processors you may need to create this file manually in some cases."
-msgstr ""
+msgstr "它试图通过标记文件 `META-INF/panache-archive.marker` ，来识别有Panache实体的档案（和Panache实体的消费者）。Panache包括一个注释处理器，它将在依赖Panache的档案中自动创建这个文件（即使是间接的）。如果你禁用了注释处理器，在某些情况下你可能需要手动创建这个文件。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:1186

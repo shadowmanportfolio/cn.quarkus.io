@@ -293,8 +293,9 @@ msgstr "有一些不同的情况可能需要 _修复_ Flyway模式历史表。�
 
 #. type: Plain text
 #: upstream/_guides/flyway.adoc:157
+#, fuzzy
 msgid "In such situations the link:https://flywaydb.org/documentation/command/repair[Flyway repair command] comes in handy. In Quarkus this can either be executed automatically before the migration by setting `quarkus.flyway.repair-at-start=true` or manually by injecting the `Flyway` object and calling `Flyway#repair()`."
-msgstr ""
+msgstr "在这种情况下， link:https://flywaydb.org/documentation/command/repair[Flyway修复命令] 就派上用场了。在Quarkus中，这可以通过设置 `quarkus.flyway.repair-at-start=true` ，在迁移前自动执行，也可以通过注入 `Flyway` 对象和调用 `Flyway#repair()` ，手动执行。"
 
 #. type: Title ==
 #: upstream/_guides/flyway.adoc:158
@@ -388,13 +389,15 @@ msgstr "使用Flyway"
 
 #. type: Plain text
 #: upstream/_guides/flyway.adoc:204
+#, fuzzy
 msgid "In cases where Flyway needs to be configured in addition to the configuration options that Quarkus provides, the `io.quarkus.flyway.FlywayConfigurationCustomizer` class comes in handy."
-msgstr ""
+msgstr "在Flyway需要在Quarkus提供的配置选项之外进行配置的情况下， `io.quarkus.flyway.FlywayConfigurationCustomizer` 类就会派上用场。"
 
 #. type: Plain text
 #: upstream/_guides/flyway.adoc:206
+#, fuzzy
 msgid "To customize Flyway for the default datasource, simply add a bean like so:"
-msgstr ""
+msgstr "要为默认数据源定制Flyway，只需像这样添加一个bean。"
 
 #. type: delimited block -
 #: upstream/_guides/flyway.adoc:211
@@ -417,8 +420,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/flyway.adoc:222
+#, fuzzy
 msgid "When named datasources are used, the `@FlywayDataSource` annotation can be used to specify the datasource to which the customizer applies.  For example, if there are multiple datasources one of which is called `users` and customization of Flyway is needed for only that datasource, then the following code can be used:"
-msgstr ""
+msgstr "当使用命名的数据源时， `@FlywayDataSource` 注释可以用来指定定制器所适用的数据源。例如，如果有多个数据源，其中一个被称为 `users` ，并且只需要为该数据源定制Flyway，那么就可以使用以下代码。"
 
 #. type: delimited block -
 #: upstream/_guides/flyway.adoc:228
