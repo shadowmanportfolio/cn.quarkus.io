@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-03-03 17:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. type: Title =
 #: upstream/_guides/security-authorize-web-endpoints-reference.adoc:7
 #, fuzzy, no-wrap
-msgid "Authorization of web endpoints"
+msgid "Authorize web endpoints"
 msgstr "网络端点的授权"
 
 #. type: Plain text
@@ -584,13 +584,13 @@ msgstr ""
 #: upstream/_guides/security-authorize-web-endpoints-reference.adoc:342
 #, no-wrap
 msgid ""
-"import jakarta.annotation.security.DenyAll;\n"
-"import jakarta.annotation.security.PermitAll;\n"
-"import jakarta.annotation.security.RolesAllowed;\n"
-"import jakarta.ws.rs.GET;\n"
-"import jakarta.ws.rs.Path;\n"
-"import jakarta.ws.rs.core.Context;\n"
-"import jakarta.ws.rs.core.SecurityContext;\n"
+"import javax.annotation.security.DenyAll;\n"
+"import javax.annotation.security.PermitAll;\n"
+"import javax.annotation.security.RolesAllowed;\n"
+"import javax.ws.rs.GET;\n"
+"import javax.ws.rs.Path;\n"
+"import javax.ws.rs.core.Context;\n"
+"import javax.ws.rs.core.SecurityContext;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -677,9 +677,8 @@ msgstr " `/subject/denied` 端点声明了 `@DenyAll` 注解，因此不允许�
 
 #. type: Plain text
 #: upstream/_guides/security-authorize-web-endpoints-reference.adoc:305
-#, fuzzy
-msgid "If you plan to use standard security annotations on the IO thread, review the information in xref:security-proactive-authentication-concept.adoc[Proactive Authentication]."
-msgstr "如果你打算在IO线程上使用标准的安全注释，请查看 link:security-proactive-authentication-concept.html[主动认证] 中的信息。"
+msgid "Please refer to the xref:security-built-in-authentication-support-concept.adoc#proactive-authentication[Proactive Authentication] section of the Built-In Authentication Support guide if you plan to use standard security annotations on the IO thread."
+msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-authorize-web-endpoints-reference.adoc:308
@@ -850,3 +849,7 @@ msgstr ""
 #: upstream/_guides/security-authorize-web-endpoints-reference.adoc:391
 msgid "xref:security-overview-concept.adoc[Quarkus Security overview]"
 msgstr ""
+
+#, fuzzy
+#~ msgid "If you plan to use standard security annotations on the IO thread, review the information in xref:security-proactive-authentication-concept.adoc[Proactive Authentication]."
+#~ msgstr "如果你打算在IO线程上使用标准的安全注释，请查看 link:security-proactive-authentication-concept.html[主动认证] 中的信息。"
