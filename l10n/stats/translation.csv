@@ -55,7 +55,6 @@ l10n/po/zh_CN/_guides/security-webauthn-concept.adoc.po, 97, 227, 1968, 4056 ,52
 l10n/po/zh_CN/_guides/security-basic-authentication-howto.adoc.po, 9, 18, 122, 251 ,52%
 l10n/po/zh_CN/_guides/vertx.adoc.po, 84, 130, 938, 1860 ,50%
 l10n/po/zh_CN/_guides/security-identity-providers-concept.adoc.po, 4, 11, 93, 181 ,49%
-l10n/po/zh_CN/_guides/security-csrf-prevention.adoc.po, 30, 66, 499, 977 ,49%
 l10n/po/zh_CN/_guides/optaplanner.adoc.po, 125, 241, 2124, 4101 ,49%
 l10n/po/zh_CN/_guides/grpc-xds.adoc.po, 13, 22, 134, 262 ,49%
 l10n/po/zh_CN/_guides/grpc-service-consumption.adoc.po, 62, 125, 851, 1659 ,49%
@@ -74,6 +73,7 @@ l10n/po/zh_CN/_guides/websockets.adoc.po, 38, 66, 463, 807 ,43%
 l10n/po/zh_CN/_guides/scripting.adoc.po, 69, 108, 983, 1699 ,43%
 l10n/po/zh_CN/_guides/security-vulnerability-detection-concept.adoc.po, 14, 21, 238, 409 ,42%
 l10n/po/zh_CN/_guides/security-keycloak-admin-client.adoc.po, 24, 53, 360, 614 ,42%
+l10n/po/zh_CN/_guides/security-csrf-prevention.adoc.po, 33, 66, 568, 977 ,42%
 l10n/po/zh_CN/_guides/picocli.adoc.po, 37, 82, 671, 1143 ,42%
 l10n/po/zh_CN/_guides/config-yaml.adoc.po, 28, 48, 343, 589 ,42%
 l10n/po/zh_CN/_guides/security-proactive-authentication-concept.adoc.po, 15, 39, 427, 719 ,41%
@@ -163,7 +163,6 @@ l10n/po/zh_CN/_guides/security-built-in-authentication.adoc.po, 31, 60, 857, 117
 l10n/po/zh_CN/_guides/getting-started-testing.adoc.po, 196, 340, 4416, 6073 ,28%
 l10n/po/zh_CN/_guides/capabilities.adoc.po, 38, 57, 658, 909 ,28%
 l10n/po/zh_CN/_guides/spring-di.adoc.po, 64, 109, 879, 1200 ,27%
-l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po, 94, 150, 1693, 2305 ,27%
 l10n/po/zh_CN/_guides/security-jwt-build.adoc.po, 114, 147, 1872, 2530 ,27%
 l10n/po/zh_CN/_guides/rest-client-reactive.adoc.po, 176, 293, 3203, 4343 ,27%
 l10n/po/zh_CN/_guides/podman.adoc.po, 30, 45, 572, 780 ,27%
@@ -203,6 +202,7 @@ l10n/po/zh_CN/_guides/_templates/template-tutorial.adoc.po, 14, 17, 116, 150 ,23
 l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po, 99, 152, 2250, 2849 ,22%
 l10n/po/zh_CN/_guides/writing-extensions.adoc.po, 601, 824, 12380, 15819 ,22%
 l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po, 284, 428, 6947, 8799 ,22%
+l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po, 97, 150, 1804, 2305 ,22%
 l10n/po/zh_CN/_guides/security-built-in-authentication-support-concept.adoc.po, 35, 63, 1013, 1293 ,22%
 l10n/po/zh_CN/_guides/security-authorization.adoc.po, 54, 80, 1260, 1596 ,22%
 l10n/po/zh_CN/_guides/performance-measure.adoc.po, 68, 86, 1034, 1313 ,22%
@@ -255,7 +255,6 @@ l10n/po/zh_CN/_guides/ide-tooling.adoc.po, 33, 49, 217, 252 ,14%
 l10n/po/zh_CN/_guides/http-reference.adoc.po, 184, 216, 2157, 2490 ,14%
 l10n/po/zh_CN/_guides/getting-started-reactive.adoc.po, 70, 99, 1742, 2020 ,14%
 l10n/po/zh_CN/_guides/cdi-integration.adoc.po, 160, 190, 2678, 3095 ,14%
-l10n/po/zh_CN/_guides/doc-contribute-docs-howto.adoc.po, 92, 104, 1320, 1515 ,13%
 l10n/po/zh_CN/_guides/apicurio-registry-dev-services.adoc.po, 20, 24, 391, 448 ,13%
 l10n/po/zh_CN/_guides/infinispan-dev-services.adoc.po, 34, 38, 654, 738 ,12%
 l10n/po/zh_CN/_guides/doc-concepts.adoc.po, 36, 39, 495, 559 ,12%
@@ -274,7 +273,6 @@ l10n/po/zh_CN/_guides/security-oidc-configuration-properties-reference.adoc.po, 
 l10n/po/zh_CN/_guides/reaugmentation.adoc.po, 19, 22, 624, 683 ,9%
 l10n/po/zh_CN/_guides/gradle-tooling.adoc.po, 126, 150, 2273, 2484 ,9%
 l10n/po/zh_CN/_guides/extension-registry-user.adoc.po, 53, 72, 1327, 1456 ,9%
-l10n/po/zh_CN/_guides/doc-reference.adoc.po, 267, 286, 1789, 1964 ,9%
 l10n/po/zh_CN/_guides/0-glossary.adoc.po, 22, 24, 121, 132 ,9%
 l10n/po/zh_CN/_guides/resteasy-reactive-migration.adoc.po, 85, 87, 1012, 1095 ,8%
 l10n/po/zh_CN/_guides/quarkus-reactive-architecture.adoc.po, 62, 75, 1563, 1681 ,8%
@@ -284,10 +282,12 @@ l10n/po/zh_CN/_guides/datasource.adoc.po, 248, 277, 2859, 3079 ,8%
 l10n/po/zh_CN/_guides/container-image.adoc.po, 65, 80, 1302, 1401 ,8%
 l10n/po/zh_CN/_guides/config-reference.adoc.po, 164, 194, 2490, 2670 ,7%
 l10n/po/zh_CN/_guides/kogito-dmn.adoc.po, 82, 94, 1151, 1217 ,6%
+l10n/po/zh_CN/_guides/doc-contribute-docs-howto.adoc.po, 96, 104, 1427, 1515 ,6%
 l10n/po/zh_CN/_guides/class-loading-reference.adoc.po, 61, 66, 1419, 1503 ,6%
 l10n/po/zh_CN/_guides/kogito-dev-services.adoc.po, 20, 25, 344, 361 ,5%
 l10n/po/zh_CN/_guides/topic/architecture.adoc.po, 17, 18, 660, 681 ,4%
 l10n/po/zh_CN/_guides/tooling.adoc.po, 15, 18, 155, 161 ,4%
+l10n/po/zh_CN/_guides/doc-reference.adoc.po, 277, 286, 1923, 1964 ,3%
 l10n/po/zh_CN/_guides/dev-mode-differences.adoc.po, 44, 45, 703, 722 ,3%
 l10n/po/zh_CN/_guides/_includes/smallrye-kafka-incoming.adoc.po, 109, 112, 1322, 1354 ,3%
 l10n/po/zh_CN/_guides/security-basic-authentication-concept.adoc.po, 14, 14, 346, 346 ,0%
