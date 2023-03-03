@@ -185,18 +185,21 @@ msgstr "至少要设置一个类别，以确保内容在 link:https://quarkus.io
 
 #. type: delimited block =
 #: upstream/_guides/doc-contribute-docs-howto.adoc:61
+#, fuzzy
 msgid "Ensure there are no line breaks in the header section until after `:categories:` line."
-msgstr ""
+msgstr "确保在标题部分没有换行，直到 `:categories:` 行之后。"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:64
+#, fuzzy
 msgid "Add an abstract to describe the purpose of the guide."
-msgstr ""
+msgstr "添加一个摘要来描述指南的目的。"
 
 #. type: delimited block =
 #: upstream/_guides/doc-contribute-docs-howto.adoc:68
+#, fuzzy
 msgid "The first sentence of the abstract must explain the value and some benefit of the content in less than 27 words because this automatically displays on the link:https://quarkus.io/guides/[Quarkus guides homepage].  There must also be a line break before and after the abstract."
-msgstr ""
+msgstr "摘要的第一句话必须在27个字以内解释内容的价值和一些好处，因为这会自动显示在 link:https://quarkus.io/guides/[Quarkus指南主页上] 。在摘要前后还必须有一个换行符。"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:71
@@ -636,8 +639,9 @@ msgstr "在Quarkus网站上预览文档变更"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:233
+#, fuzzy
 msgid "After your PR is merged to `main` and the branch is synchronized with the link:https://github.com/quarkusio/quarkusio.github.io/tree/develop/_generated-doc[Quarkus.io] website repository, you can preview the resulting build output on the link:https://quarkus.io/version/main/guides/[Main branch (SNAPSHOT)] documentation page of the Quarkus site."
-msgstr ""
+msgstr "在你的PR被合并到 `main` ，并且该分支与 link:https://github.com/quarkusio/quarkusio.github.io/tree/develop/_generated-doc[Quarkus.io] 网站的仓库同步后，你可以在Quarkus网站的 link:https://quarkus.io/version/main/guides/[主分支（SNAPSHOT）] 文档页面上预览生成的构建输出。"
 
 #. type: delimited block =
 #: upstream/_guides/doc-contribute-docs-howto.adoc:237

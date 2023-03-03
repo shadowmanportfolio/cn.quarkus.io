@@ -638,8 +638,9 @@ msgstr "摘要（序言）"
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:168
+#, fuzzy
 msgid "The first paragraph in the main body is treated as the abstract, also referred to as the preamble.  Add a short description that helps your audience quickly find and understand the purpose and intent of the page.  The first sentence of the abstract provides a summary and gets automatically added to the tile on the link:https://quarkus.io/guides/[Quarkus guides homepage]."
-msgstr ""
+msgstr "主体中的第一段被当作摘要，也被称为序言。添加一个简短的描述，帮助你的听众快速找到并理解该页面的目的和意图。摘要的第一句话提供了一个摘要，并被自动添加到 link:https://quarkus.io/guides/[Quarkus指南主页] 的瓦片上。"
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:170
@@ -661,21 +662,21 @@ msgstr " *简洁。* 避免自我暗示的表达方式和填充词，例如，\"
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:174
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "\"This document..\"\n"
-msgstr ""
+msgstr "\"这份文件......\""
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:175
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "\"This tutorial...\"\n"
-msgstr ""
+msgstr "\"这个教程......\""
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:176
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "\"The following...\"\n"
-msgstr ""
+msgstr "\"以下是......\""
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:177
@@ -685,13 +686,15 @@ msgstr " *简单。* 不超过三句话的长度。"
 
 #. type: delimited block =
 #: upstream/_guides/doc-reference.adoc:181
+#, fuzzy
 msgid "Ensure that the first sentence explains the value and some benefits of the content in 26 words or less."
-msgstr ""
+msgstr "确保第一句话在26个字以内解释内容的价值和一些好处。"
 
 #. type: Plain text
 #: upstream/_guides/doc-reference.adoc:185
+#, fuzzy
 msgid "If the first sentence is too long or can not be simplified to fit on the website tile, you can define a ``:summary:`` attribute in the document header attributes to serve that purpose.  For more information, see <<doc-header-optional>>."
-msgstr ""
+msgstr "如果第一句话太长或不能简化以适应网站的瓦片，你可以在文档标题属性中定义一个 `:summary:` 属性来达到这个目的。欲了解更多信息，请参阅 link:#doc-header-optional[[doc-header-optional]] 。"
 
 #. type: Title ===
 #: upstream/_guides/doc-reference.adoc:186
@@ -1244,9 +1247,9 @@ msgstr "反应性"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:344
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Everything related to native executables"
-msgstr ""
+msgstr "与本地可执行文件有关的一切"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:344
@@ -1718,21 +1721,21 @@ msgstr "{格拉尔维姆-版本｝"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:394
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Recommended GraalVM version to use."
-msgstr ""
+msgstr "推荐使用的GraalVM版本。"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:394
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "\\{graalvm-flavor}"
-msgstr ""
+msgstr "{pos(192,252)}我想说的是：\"我想说的是：\"我想说的是"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:394
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "{graalvm-flavor}"
-msgstr ""
+msgstr "{pos(192,252)}我想说的是：\"我想说的是：\"我想说的是"
 
 #. type: Table
 #: upstream/_guides/doc-reference.adoc:395

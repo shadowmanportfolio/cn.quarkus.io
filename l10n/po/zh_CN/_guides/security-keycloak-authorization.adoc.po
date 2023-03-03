@@ -39,18 +39,21 @@ msgstr " `quarkus-keycloak-authorization` 扩展是基于 `quarkus-oidc` ，并�
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:16
+#, fuzzy
 msgid "It provides a flexible and dynamic authorization capability based on Resource-Based Access Control."
-msgstr ""
+msgstr "它在基于资源的访问控制的基础上提供了灵活和动态的授权能力。"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:18
+#, fuzzy
 msgid "Instead of explicitly enforcing access based on some specific access control mechanism such as Role-Based Access Control(RBAC), `quarkus-keycloak-authorization` checks whether a request is allowed to access a resource based on its name, identifier or URI by sending a bearer access token verified by `quarkus-oidc` to Keycloak Authorization Services where an authorization decision is made."
-msgstr ""
+msgstr " `quarkus-keycloak-authorization` ，而不是根据一些特定的访问控制机制，如基于角色的访问控制（RBAC），检查一个请求是否被允许根据其名称、标识符或URI访问资源，通过发送一个经 `quarkus-oidc` 验证的承载访问令牌到Keycloak授权服务，在那里做出授权决定。"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:20
+#, fuzzy
 msgid "Use `quarkus-keycloak-authorization` only if you work with Keycloak and have Keycloak Authorization Services enabled to make authorization decisions. Use `quarkus-oidc` if you do not work with Keycloak or work with Keycloak but do not have its Keycloak Authorization Services enabled to make authorization decisions."
-msgstr ""
+msgstr "只有当你与Keycloak合作并启用了Keycloak授权服务以作出授权决定时，才使用 `quarkus-keycloak-authorization` 。如果你不与Keycloak合作，或与Keycloak合作但没有启用其Keycloak授权服务以作出授权决定，则使用 `quarkus-oidc` 。"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:22
