@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-13 07:20+0000\n"
+"POT-Creation-Date: 2023-03-11 00:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,11 +58,10 @@ msgstr "<a href=\"https://groups.google.com/d/forum/quarkus-dev\" target=\"_blan
 msgid "Chat using <a href=\"https://quarkusio.zulipchat.com\" target=\"_blank\">Zulip</a> (<code>#dev</code> stream)"
 msgstr "使用<a href=\"https://quarkusio.zulipchat.com\" target=\"_blank\">Zulip</a>进行聊天（<code>#dev</code>流）。"
 
-#. type: Content of: <div><div><div><p>
-#: upstream/_includes/feedback-community-band.html:15
-#, fuzzy
-msgid "Your help is more than welcome! Don’t hesitate to join the crowd."
-msgstr "我们非常欢迎你的帮助!不要犹豫，加入人群。"
+#. type: Content of: <div><div><div><ul><li><br><br><a>
+#: upstream/_includes/feedback-community-band.html:14
+msgid "<a href=\"https://zulip.com/\" title=\"Support Zulip chat\" alt=\"zulip logo\">"
+msgstr ""
 
 #. type: Content of: <div><div><div><h3>
 #: upstream/_includes/feedback-community-band.html:18
@@ -71,12 +70,18 @@ msgid "Join the Quarkus Community"
 msgstr "加入Quarkus社区"
 
 #. type: Content of: <div><div><div><p>
-#: upstream/_includes/feedback-community-band.html:20
+#: upstream/_includes/feedback-community-band.html:19
 #, fuzzy
 msgid "Check out our <a href=\"https://github.com/quarkusio/quarkus\" target=\"_blank\">GitHub</a> for details on reporting issues and the process for submitting pull requests."
 msgstr "请查看我们的<a href=\"https://github.com/quarkusio/quarkus\" target=\"_blank\">GitHub</a>，了解有关报告问题和提交拉动请求流程的详细信息。"
 
 #. type: Content of: <div><div><div><p>
-#: upstream/_includes/feedback-community-band.html:21
+#: upstream/_includes/feedback-community-band.html:20
 msgid "Every contribution is valuable. It can be a bug report, an example application, a feature request, a fix in the documentation or just feedback."
 msgstr ""
+
+#. type: Content of: <div><div><div><p>
+#: upstream/_includes/feedback-community-band.html:21
+#, fuzzy
+msgid "Your help is more than welcome! Don’t hesitate to join the crowd."
+msgstr "我们非常欢迎你的帮助!不要犹豫，加入人群。"
