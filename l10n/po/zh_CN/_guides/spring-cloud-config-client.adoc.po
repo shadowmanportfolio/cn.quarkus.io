@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 15:19+0000\n"
+"POT-Creation-Date: 2023-04-26 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,7 +128,7 @@ msgstr "问候语控制器"
 #. type: Plain text
 #: upstream/_guides/spring-cloud-config-client.adoc:63
 #, fuzzy
-msgid "First, create a simple `GreetingResource` JAX-RS resource in the `src/main/java/org/acme/spring/cloud/config/client/GreetingResource.java` file that looks like:"
+msgid "First, create a simple `GreetingResource` Jakarta REST resource in the `src/main/java/org/acme/spring/cloud/config/client/GreetingResource.java` file that looks like:"
 msgstr "首先，在 `src/main/java/org/acme/spring/cloud/config/client/GreetingResource.java` 文件中创建一个简单的 `GreetingResource` JAX-RS资源，看起来像。"
 
 #. type: delimited block -
@@ -143,10 +143,10 @@ msgstr ""
 #: upstream/_guides/spring-cloud-config-client.adoc:94
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -

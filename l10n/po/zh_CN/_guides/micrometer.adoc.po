@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 15:19+0000\n"
+"POT-Creation-Date: 2023-04-26 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,8 +140,8 @@ msgid "This will add the following to your build file:"
 msgstr "这将在你的构建文件中添加以下内容。"
 
 #. type: Block title
-#: upstream/_guides/micrometer.adoc:76 upstream/_guides/micrometer.adoc:482
-#: upstream/_guides/micrometer.adoc:500 upstream/_guides/micrometer.adoc:585
+#: upstream/_guides/micrometer.adoc:76 upstream/_guides/micrometer.adoc:491
+#: upstream/_guides/micrometer.adoc:509 upstream/_guides/micrometer.adoc:594
 #, fuzzy, no-wrap
 msgid "pom.xml"
 msgstr "pom.xml"
@@ -157,8 +157,8 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/micrometer.adoc:85 upstream/_guides/micrometer.adoc:491
-#: upstream/_guides/micrometer.adoc:513 upstream/_guides/micrometer.adoc:594
+#: upstream/_guides/micrometer.adoc:85 upstream/_guides/micrometer.adoc:500
+#: upstream/_guides/micrometer.adoc:522 upstream/_guides/micrometer.adoc:603
 #, fuzzy, no-wrap
 msgid "build.gradle"
 msgstr "build.gradle"
@@ -203,9 +203,9 @@ msgstr ""
 #: upstream/_guides/micrometer.adoc:108
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -340,20 +340,31 @@ msgstr "Micrometer提供了一些额外的机制来创建测量仪。请注意�
 msgid "When should you use a Gauge? Only if you can't use something else. Never gauge something you can count. Gauges can be less straight-forward to use than counters. If what you are measuring can be counted (because the value always increments), use a counter instead."
 msgstr "什么时候应该使用量具？只有在你无法使用其他东西的时候。不要用你可以计算的东西来衡量。量具的使用可能没有计数器那么直接。如果你要测量的东西可以计算（因为数值总是递增的），就用计数器代替。"
 
+#. type: Title ==
+#: upstream/_guides/micrometer.adoc:192 upstream/_guides/micrometer.adoc:610
+#, no-wrap
+msgid "Management interface"
+msgstr ""
+
+#. type: delimited block =
+#: upstream/_guides/micrometer.adoc:198
+msgid "By default, the metrics are exposed on the main HTTP server.  You can expose them on a separate network interface and port by enabling the management interface with the `quarkus.management.enabled=true` property.  Refer to the xref:./management-interface-reference.adoc[management interface reference] for more information."
+msgstr ""
+
 #. type: Title ===
-#: upstream/_guides/micrometer.adoc:191
+#: upstream/_guides/micrometer.adoc:200
 #, fuzzy, no-wrap
 msgid "Counters"
 msgstr "计数器"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:195
+#: upstream/_guides/micrometer.adoc:204
 #, fuzzy
 msgid "Counters are used to measure values that only increase. In the example below, you will count the number of times you test a number to see if it is prime:"
 msgstr "计数器是用来测量只增加的数值的。在下面的例子中，你将计算你测试一个数字的次数，看它是否是质数。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:207
+#: upstream/_guides/micrometer.adoc:216
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -368,7 +379,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:214
+#: upstream/_guides/micrometer.adoc:223
 #, no-wrap
 msgid ""
 "        if ( testPrimeNumber(number) ) {\n"
@@ -380,7 +391,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:225
+#: upstream/_guides/micrometer.adoc:234
 #, no-wrap
 msgid ""
 "    protected boolean testPrimeNumber(long number) {\n"
@@ -396,25 +407,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:231
+#: upstream/_guides/micrometer.adoc:240
 #, fuzzy
 msgid "It might be tempting to add a label or tag to the counter indicating what value was checked, but remember that each unique combination of metric name (`example.prime.number`) and label value produces a unique time series. Using an unbounded set of data as label values can lead to a \"cardinality explosion\", an exponential increase in the creation of new time series."
 msgstr "可能很想给计数器添加一个标签或标记，表明什么值被检查了，但是请记住，公制名称( `example.prime.number` )和标签值的每个独特组合都会产生一个独特的时间序列。使用无限制的数据集作为标签值会导致 \"cardinality爆炸\"，即新的时间序列的创建呈指数级增长。"
 
 #. type: delimited block =
-#: upstream/_guides/micrometer.adoc:238
+#: upstream/_guides/micrometer.adoc:247
 #, fuzzy
 msgid "Label and tag can be used interchangeably. You may also see \"attribute\" used in this context in some documentation.  The gist is each that each label or tag or attribute defines an additional bit of information associated with the single numerical measurement that helps you classify, group, or aggregate the measured value later. The Micrometer API uses `Tag` as the mechanism for specifying this additional data."
 msgstr "Label和tag可以互换使用。你也可能在一些文档中看到 \"属性 \"在此背景下使用。要点是每个标签或标记或属性都定义了与单一数字测量相关的额外信息，帮助你以后对测量值进行分类、分组或汇总。千分尺API使用 `Tag` 作为指定这种额外数据的机制。"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:242
+#: upstream/_guides/micrometer.adoc:251
 #, fuzzy
 msgid "It is possible to add a tag that would convey a little more information, however. Let's adjust our code, and move the counter to add some tags to convey additional information."
 msgstr "不过，有可能添加一个标签，传达更多的信息。让我们调整我们的代码，移动计数器，添加一些标签来传达更多信息。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:260
+#: upstream/_guides/micrometer.adoc:269
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -435,7 +446,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:269
+#: upstream/_guides/micrometer.adoc:278
 #, no-wrap
 msgid ""
 "        if ( testPrimeNumber(number) ) {\n"
@@ -449,7 +460,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:278
+#: upstream/_guides/micrometer.adoc:287
 #, no-wrap
 msgid ""
 "    protected boolean testPrimeNumber(long number) {\n"
@@ -463,25 +474,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:284
+#: upstream/_guides/micrometer.adoc:293
 #, fuzzy
 msgid "Looking at the data produced by this counter, you can tell how often a negative number was checked, or the number one, or an even number, and so on. Try the following sequence and look for `example_prime_number_total` in the plain text output. Note that the `_total` suffix is added when Micrometer applies Prometheus naming conventions to `example.prime.number`, the originally specified counter name."
 msgstr "看一下这个计数器产生的数据，你可以知道负数被检查的频率，或者数字1，或者偶数，等等。试试下面的序列，在纯文本输出中寻找 `example_prime_number_total` 。请注意，当Micrometer将Prometheus命名规则应用于 `example.prime.number` ，即最初指定的计数器名称时，会添加后缀 `_total` 。"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:286 upstream/_guides/micrometer.adoc:340
+#: upstream/_guides/micrometer.adoc:295 upstream/_guides/micrometer.adoc:349
 #, fuzzy
 msgid "If you did not leave Quarkus running in dev mode, start it again:"
 msgstr "如果你没有让Quarkus在开发模式下运行，请再次启动它。"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:290 upstream/_guides/micrometer.adoc:344
+#: upstream/_guides/micrometer.adoc:299 upstream/_guides/micrometer.adoc:353
 #, fuzzy
 msgid "Then execute the following sequence:"
 msgstr "然后执行以下顺序。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:300
+#: upstream/_guides/micrometer.adoc:309
 #, no-wrap
 msgid ""
 "curl http://localhost:8080/example/prime/-1\n"
@@ -494,31 +505,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:306
+#: upstream/_guides/micrometer.adoc:315
 #, fuzzy
 msgid "When should you use a counter? Only if you are doing something that can not be either timed (or summarized).  Counters only record a count, which may be all that is needed. However, if you want to understand more about how a value is changing, a timer (when the base unit of measurement is time) or a distribution summary might be more appropriate."
 msgstr "什么时候应该使用计数器？只有当你在做一些不能计时（或总结）的事情时。计数器只记录一个计数，这可能就是所需的全部。但是，如果你想更多地了解一个值是如何变化的，那么计时器（当基本的测量单位是时间时）或分布汇总可能更合适。"
 
 #. type: Title ===
-#: upstream/_guides/micrometer.adoc:307
+#: upstream/_guides/micrometer.adoc:316
 #, fuzzy, no-wrap
 msgid "Summaries and Timers"
 msgstr "总结和定时器"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:312
+#: upstream/_guides/micrometer.adoc:321
 #, fuzzy
 msgid "Timers and distribution summaries in Micrometer are very similar. Both allow you to record an observed value, which will be aggregated with other recorded values and stored as a sum. Micrometer also increments a counter to indicate the number of measurements that have been recorded and tracks the maximum observed value (within a decaying interval)."
 msgstr "Micrometer中的定时器和分布总结非常相似。两者都允许你记录一个观察值，这个观察值将与其他记录值汇总，并作为一个总和存储。Micrometer也会递增一个计数器来表示已经记录的测量值的数量，并跟踪最大的观察值（在一个衰减的区间内）。"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:317
+#: upstream/_guides/micrometer.adoc:326
 #, fuzzy
 msgid "Distribution summaries are populated by calling the `record` method to record observed values, while timers provide additional capabilities specific to working with time and measuring durations. For example, we can use a timer to measure how long it takes to calculate prime numbers using one of the `record` methods that wraps the invocation of a Supplier function:"
 msgstr "分布汇总表是通过调用 `record` 方法来记录观察到的数值，而计时器则提供了专门用于处理时间和测量持续时间的额外功能。例如，我们可以使用一个计时器来测量计算素数所需的时间，使用包裹调用Supplier函数的 `record` 方法之一。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:331
+#: upstream/_guides/micrometer.adoc:340
 #, no-wrap
 msgid ""
 "    protected boolean testPrimeNumber(long number) {\n"
@@ -535,13 +546,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:338
+#: upstream/_guides/micrometer.adoc:347
 #, fuzzy
 msgid "Micrometer will apply Prometheus conventions when emitting metrics for this timer. Prometheus measures time in seconds.  Micrometer converts measured durations into seconds and includes the unit in the metric name, per convention. After visiting the prime endpoint a few more times, look in the plain text output for the following three entries: `example_prime_number_test_seconds_count`, `example_prime_number_test_seconds_sum`, and `example_prime_number_test_seconds_max`."
 msgstr "Micrometer在为这个定时器发射指标时将应用Prometheus惯例。普罗米修斯测量时间的单位是秒。Micrometer将测量的持续时间转换为秒，并按照惯例在度量衡名称中包含单位。再访问几次prime端点后，在纯文本输出中寻找以下三个条目。 `example_prime_number_test_seconds_count` , `example_prime_number_test_seconds_sum` , 和 `example_prime_number_test_seconds_max` 。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:351
+#: upstream/_guides/micrometer.adoc:360
 #, no-wrap
 msgid ""
 "curl http://localhost:8080/example/prime/256\n"
@@ -551,31 +562,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:356
+#: upstream/_guides/micrometer.adoc:365
 #, fuzzy
 msgid "Both timers and distribution summaries can be configured to emit additional statistics, like histogram data, precomputed percentiles, or service level objective (SLO) boundaries. Note that the count, sum, and histogram data can be re-aggregated across dimensions (or across a series of instances), while precomputed percentile values cannot."
 msgstr "计时器和分布摘要都可以被配置为发出额外的统计数据，如直方图数据、预先计算的百分位数或服务水平目标（SLO）的界限。请注意，计数、总和和直方图数据可以跨维度（或跨一系列实例）重新汇总，而预计算的百分位值不能。"
 
 #. type: Title ===
-#: upstream/_guides/micrometer.adoc:357
+#: upstream/_guides/micrometer.adoc:366
 #, fuzzy, no-wrap
 msgid "Review automatically generated metrics"
 msgstr "审查自动生成的指标"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:360
+#: upstream/_guides/micrometer.adoc:369
 #, fuzzy
 msgid "To view metrics, execute `curl localhost:8080/q/metrics/`"
 msgstr "要查看指标，请执行 `curl localhost:8080/q/metrics/` "
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:365
+#: upstream/_guides/micrometer.adoc:374
 #, fuzzy
 msgid "The Micrometer extension automatically times HTTP server requests. Following Prometheus naming conventions for timers, look for `http_server_requests_seconds_count`, `http_server_requests_seconds_sum`, and `http_server_requests_seconds_max`. Dimensional labels have been added for the requested uri, the HTTP method (GET, POST, etc.), the status code (200, 302, 404, etc.), and a more general outcome field."
 msgstr "Micrometer扩展会自动为HTTP服务器请求计时。按照Prometheus对定时器的命名惯例，查找 `http_server_requests_seconds_count` , `http_server_requests_seconds_sum` , 和 `http_server_requests_seconds_max` 。维度标签已经被添加到请求的URI、HTTP方法（GET、POST等）、状态代码（200、302、404等）和一个更通用的结果字段。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:376
+#: upstream/_guides/micrometer.adoc:385
 #, no-wrap
 msgid ""
 "# HELP http_server_requests_seconds\n"
@@ -589,66 +600,66 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:380
+#: upstream/_guides/micrometer.adoc:389
 #, fuzzy
 msgid "Note that metrics appear lazily, you often won't see any data for your endpoint until something tries to access it, etc."
 msgstr "请注意，指标的出现是懒散的，你通常不会看到你的端点的任何数据，直到有东西试图访问它，等等。"
 
 #. type: Block title
-#: upstream/_guides/micrometer.adoc:381
+#: upstream/_guides/micrometer.adoc:390
 #, fuzzy, no-wrap
 msgid "Ignoring endpoints"
 msgstr "忽略端点"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:388
+#: upstream/_guides/micrometer.adoc:397
 #, fuzzy
 msgid "You can disable measurement of HTTP endpoints using the `quarkus.micrometer.binder.http-server.ignore-patterns` property. This property accepts a comma-separated list of simple regex match patterns identifying URI paths that should be ignored. For example, setting `quarkus.micrometer.binder.http-server.ignore-patterns=/example/prime/[0-9]+` will ignore a request to `http://localhost:8080/example/prime/7919`. A request to `http://localhost:8080/example/gauge/7919` would still be measured."
 msgstr "你可以使用 `quarkus.micrometer.binder.http-server.ignore-patterns` 属性禁用对HTTP端点的测量。这个属性接受一个用逗号分隔的简单重码匹配模式的列表，识别应被忽略的URI路径。例如，设置 `quarkus.micrometer.binder.http-server.ignore-patterns=/example/prime/[0-9]+` 将忽略对 `<a href=\"http://localhost:8080/example/prime/7919\" class=\"bare\">http://localhost:8080/example/prime/7919</a>` .一个到 `<a href=\"http://localhost:8080/example/gauge/7919\" class=\"bare\">http://localhost:8080/example/gauge/7919</a>` 的请求仍会被测量。"
 
 #. type: Block title
-#: upstream/_guides/micrometer.adoc:389
+#: upstream/_guides/micrometer.adoc:398
 #, fuzzy, no-wrap
 msgid "URI templates"
 msgstr "URI模板"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:394
+#: upstream/_guides/micrometer.adoc:403
 #, fuzzy
 msgid "The micrometer extension will make a best effort at representing URIs containing path parameters in templated form.  Using examples from above, a request to `http://localhost:8080/example/prime/7919` should appear as an attribute of `http_server_requests_seconds_*` metrics with a value of `uri=/example/prime/{number}`."
 msgstr "micrometer扩展将尽最大努力以模板的形式表示包含路径参数的URI。使用上面的例子，一个对 `<a href=\"http://localhost:8080/example/prime/7919\" class=\"bare\">http://localhost:8080/example/prime/7919</a>` 应该作为 `http_server_requests_seconds_*` 度量的一个属性出现，其值为 `uri=/example/prime/{number}` 。"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:400
+#: upstream/_guides/micrometer.adoc:409
 #, fuzzy
 msgid "Use the `quarkus.micrometer.binder.http-server.match-patterns` property if the correct URL can not be determined. This property accepts a comma-separated list defining an association between a simple regex match pattern and a replacement string. For example, setting `quarkus.micrometer.binder.http-server.match-patterns=/example/prime/[0-9]+=/example/{jellybeans}` would use the value `/example/{jellybeans}` for the uri attribute any time the requested uri matches `/example/prime/[0-9]+`."
 msgstr "如果不能确定正确的URL，请使用 `quarkus.micrometer.binder.http-server.match-patterns` 属性。这个属性接受一个逗号分隔的列表，定义了一个简单的重码匹配模式和一个替换字符串之间的关联。例如，设置 `quarkus.micrometer.binder.http-server.match-patterns=/example/prime/[0-9]+=/example/{jellybeans}` ，在任何时候请求的URI与 `/example/prime/[0-9]+` 匹配时，都会为URI属性使用值 `/example/{jellybeans}` 。"
 
 #. type: Block title
-#: upstream/_guides/micrometer.adoc:401
+#: upstream/_guides/micrometer.adoc:410
 #, no-wrap
 msgid "Exported metrics format"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:405
+#: upstream/_guides/micrometer.adoc:414
 msgid "By default, the metrics are exported using the Prometheus format `application/openmetrics-text`, you can revert to the former format by specifying the `Accept` request header to `text/plain` (`curl -H \"Accept: text/plain\" localhost:8080/q/metrics/`)."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/micrometer.adoc:406
+#: upstream/_guides/micrometer.adoc:415
 #, fuzzy, no-wrap
 msgid "Using MeterFilter to configure metrics"
 msgstr "使用MeterFilter来配置指标"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:411
+#: upstream/_guides/micrometer.adoc:420
 #, fuzzy
 msgid "Micrometer uses `MeterFilter` instances to customize the metrics emitted by `MeterRegistry` instances.  The Micrometer extension will detect `MeterFilter` CDI beans and use them when initializing `MeterRegistry` instances."
 msgstr "Micrometer使用 `MeterFilter` 实例来定制 `MeterRegistry` 实例发出的度量。Micrometer扩展将检测 `MeterFilter` CDI beans，并在初始化 `MeterRegistry` 实例时使用它们。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:416
+#: upstream/_guides/micrometer.adoc:425
 #, no-wrap
 msgid ""
 "@Singleton\n"
@@ -656,7 +667,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:419
+#: upstream/_guides/micrometer.adoc:428
 #, no-wrap
 msgid ""
 "    @ConfigProperty(name = \"deployment.env\")\n"
@@ -664,7 +675,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:428
+#: upstream/_guides/micrometer.adoc:437
 #, no-wrap
 msgid ""
 "    /** Define common tags that apply only to a Prometheus Registry */\n"
@@ -678,7 +689,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:436
+#: upstream/_guides/micrometer.adoc:445
 #, no-wrap
 msgid ""
 "    /** Define common tags that apply globally */\n"
@@ -691,7 +702,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:456
+#: upstream/_guides/micrometer.adoc:465
 #, no-wrap
 msgid ""
 "    /** Enable histogram buckets for a specific timer */\n"
@@ -716,43 +727,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:463
+#: upstream/_guides/micrometer.adoc:472
 #, fuzzy
 msgid "In this example, a singleton CDI bean will produce two different `MeterFilter` beans. One will be applied only to Prometheus `MeterRegistry` instances (using the `@MeterFilterConstraint` qualifier), and another will be applied to all `MeterRegistry` instances. An application configuration property is also injected and used as a tag value.  Additional examples of MeterFilters can be found in the link:https://micrometer.io/docs/concepts[official documentation]."
 msgstr "在这个例子中，一个单子CDI bean将产生两个不同的 `MeterFilter` bean。一个将只应用于Prometheus `MeterRegistry` 实例（使用 `@MeterFilterConstraint` 修饰语），另一个将应用于所有 `MeterRegistry` 实例。一个应用配置属性也被注入并作为标签值使用。MeterFilters的其他例子可以在 link:https://micrometer.io/docs/concepts[官方文档] 中找到。"
 
 #. type: Title ==
-#: upstream/_guides/micrometer.adoc:464
+#: upstream/_guides/micrometer.adoc:473
 #, fuzzy, no-wrap
 msgid "Does Micrometer support annotations?"
 msgstr "Micrometer支持注释吗？"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:469
+#: upstream/_guides/micrometer.adoc:478
 #, fuzzy
 msgid "Micrometer does define two annotations, `@Counted` and `@Timed`, that can be added to methods. The `@Timed` annotation will wrap the execution of a method and will emit the following tags in addition to any tags defined on the annotation itself: class, method, and exception (either \"none\" or the simple class name of a detected exception)."
 msgstr "Micrometer确实定义了两个注解， `@Counted` 和 `@Timed` ，它们可以被添加到方法中。 `@Timed` 注解将包裹一个方法的执行，除了注解本身定义的任何标签外，还将发出以下标签：类、方法和异常（\"无 \"或检测到的异常的简单类名）。"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:472
+#: upstream/_guides/micrometer.adoc:481
 #, fuzzy
 msgid "Using annotations is limited, as you can't dynamically assign meaningful tag values. Also note that many methods, e.g.  REST endpoint methods or Vert.x Routes, are counted and timed by the micrometer extension out of the box."
 msgstr "使用注释是有限的，因为你不能动态地分配有意义的标签值。还要注意的是，许多方法，例如REST端点方法或Vert.x Routes，都是由Micrometer扩展开箱计算和计时的。"
 
 #. type: Title ==
-#: upstream/_guides/micrometer.adoc:473
+#: upstream/_guides/micrometer.adoc:482
 #, fuzzy, no-wrap
 msgid "Using other Registry implementations"
 msgstr "使用其他注册表的实现"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:480
+#: upstream/_guides/micrometer.adoc:489
 #, fuzzy
 msgid "If you aren't using Prometheus, you have a few options. Some Micrometer registry implementations have been wrapped in https://github.com/quarkiverse/quarkiverse-micrometer-registry[Quarkiverse extensions].  To use the Micrometer StackDriver MeterRegistry, for example, you would use the `quarkus-micrometer-registry-stackdriver` extension:"
 msgstr "如果你不使用Prometheus，你有几个选择。一些Micrometer注册表的实现已经被包裹在 link:https://github.com/quarkiverse/quarkiverse-micrometer-registry[Quarkiverse扩展] 中了。例如，要使用Micrometer StackDriver MeterRegistry，你可以使用 `quarkus-micrometer-registry-stackdriver` 扩展。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:488
+#: upstream/_guides/micrometer.adoc:497
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -762,19 +773,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:494
+#: upstream/_guides/micrometer.adoc:503
 #, no-wrap
 msgid "implementation(\"io.quarkus:quarkus-micrometer-registry-stackdriver\")\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:498
+#: upstream/_guides/micrometer.adoc:507
 #, fuzzy
 msgid "If the Micrometer registry you would like to use does not yet have an associated extension, use the `quarkus-micrometer` extension and bring in the packaged MeterRegistry dependency directly:"
 msgstr "如果你想使用的Micrometer注册表还没有相关的扩展，请使用 `quarkus-micrometer` ，并直接带入打包的MeterRegistry依赖。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:510
+#: upstream/_guides/micrometer.adoc:519
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -788,7 +799,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:517
+#: upstream/_guides/micrometer.adoc:526
 #, no-wrap
 msgid ""
 "implementation(\"io.quarkus:quarkus-micrometer\")\n"
@@ -796,31 +807,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:521
+#: upstream/_guides/micrometer.adoc:530
 #, fuzzy
 msgid "You will then need to specify your own provider to configure and initialize the MeterRegistry, as discussed in the next section."
 msgstr "然后，你将需要指定你自己的提供者来配置和初始化MeterRegistry，这将在下一节讨论。"
 
 #. type: Title ==
-#: upstream/_guides/micrometer.adoc:522
+#: upstream/_guides/micrometer.adoc:531
 #, fuzzy, no-wrap
 msgid "Creating a customized MeterRegistry"
 msgstr "创建一个自定义的MeterRegistry"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:525
+#: upstream/_guides/micrometer.adoc:534
 #, fuzzy
 msgid "Use a custom `@Produces` method to create and configure a customized `MeterRegistry` if you need to."
 msgstr "如果需要的话，使用自定义的 `@Produces` 方法来创建和配置一个自定义的 `MeterRegistry` 。"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:527
+#: upstream/_guides/micrometer.adoc:536
 #, fuzzy
 msgid "The following example customizes the line format used for StatsD:"
 msgstr "下面的例子自定义了用于StatsD的行格式。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:535
+#: upstream/_guides/micrometer.adoc:544
 #, no-wrap
 msgid ""
 "@Produces\n"
@@ -831,7 +842,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:542
+#: upstream/_guides/micrometer.adoc:551
 #, no-wrap
 msgid ""
 "    // inject a configuration object, and then customize the line builder\n"
@@ -843,31 +854,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:546
+#: upstream/_guides/micrometer.adoc:555
 #, fuzzy
 msgid "This example corresponds to the following instructions in the Micrometer documentation: https://micrometer.io/docs/registry/statsD#_customizing_the_metrics_sink"
 msgstr "这个例子对应于Micrometer文件中的以下说明 https://micrometer.io/docs/registry/statsD#_customizing_the_metrics_sink "
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:551
+#: upstream/_guides/micrometer.adoc:560
 #, fuzzy
 msgid "Note that the method returns the specific type of `MeterRegistry` as a `@Singleton`. Use MicroProfile Config to inject any configuration attributes you need to configure the registry. Most Micrometer registry extensions, like `quarkus-micrometer-registry-statsd`, define a producer for registry-specific configuration objects that are integrated with the Quarkus configuration model."
 msgstr "请注意，该方法返回特定类型的 `MeterRegistry` ，作为一个 `@Singleton` 。使用MicroProfile Config来注入任何你需要配置注册表的配置属性。大多数Micrometer注册表扩展，如 `quarkus-micrometer-registry-statsd` ，为注册表特定的配置对象定义了一个生产者，与Quarkus配置模型集成。"
 
 #. type: Title ==
-#: upstream/_guides/micrometer.adoc:552
+#: upstream/_guides/micrometer.adoc:561
 #, fuzzy, no-wrap
 msgid "Support for the MicroProfile Metrics API"
 msgstr "支持MicroProfile Metrics API"
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:558
+#: upstream/_guides/micrometer.adoc:567
 #, fuzzy
 msgid "If you use the MicroProfile Metrics API in your application, the Micrometer extension will create an adaptive layer to map those metrics into the Micrometer registry. Note that naming conventions between the two systems is different, so the metrics that are emitted when using MP Metrics with Micrometer will change.  You can use a `MeterFilter` to remap names or tags according to your conventions."
 msgstr "如果你在你的应用程序中使用MicroProfile Metrics API，Micrometer扩展将创建一个自适应层，把这些指标映射到Micrometer注册表中。注意，两个系统之间的命名规则是不同的，所以在Micrometer中使用MP Metrics时发出的度量将发生变化。你可以使用 `MeterFilter` ，根据你的惯例重新映射名称或标签。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:565
+#: upstream/_guides/micrometer.adoc:574
 #, no-wrap
 msgid ""
 "@Produces\n"
@@ -877,7 +888,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:580
+#: upstream/_guides/micrometer.adoc:589
 #, no-wrap
 msgid ""
 "    return MeterFilter() {\n"
@@ -897,13 +908,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:583
+#: upstream/_guides/micrometer.adoc:592
 #, fuzzy
 msgid "Ensure the following dependency is present in your build file if you require the MicroProfile Metrics API:"
 msgstr "如果你需要MicroProfile Metrics API，请确保你的构建文件中存在以下依赖关系。"
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:591
+#: upstream/_guides/micrometer.adoc:600
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -913,18 +924,47 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/micrometer.adoc:597
+#: upstream/_guides/micrometer.adoc:606
 #, no-wrap
 msgid "implementation(\"org.eclipse.microprofile.metrics:microprofile-metrics-api\")\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/micrometer.adoc:600
+#: upstream/_guides/micrometer.adoc:609
 msgid "The MP Metrics API compatibility layer will be moved to a different extension in the future."
 msgstr ""
 
+#. type: Plain text
+#: upstream/_guides/micrometer.adoc:616
+msgid "By default, the metrics are exposed on the main HTTP server.  You can expose them on a separate network interface and port by setting `quarkus.management.enabled=true` in your application configuration.  Note that this property is a build-time property.  The value cannot be overridden at runtime."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/micrometer.adoc:619
+msgid "If you enable the management interface without customizing the management network interface and port, the metrics are exposed under: `http://0.0.0.0:9000/q/metrics`.  You can configure the path of each exposed format using:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/micrometer.adoc:624
+#, no-wrap
+msgid ""
+"quarkus.micrometer.export.json.enabled=true # Enable json metrics\n"
+"quarkus.micrometer.export.json.path=metrics/json\n"
+"quarkus.micrometer.export.prometheus.path=metrics/prometheus\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/micrometer.adoc:628
+msgid "With such a configuration, the json metrics will be available from `http://0.0.0.0:9000/q/metrics/json`.  The prometheus metrics will be available from `http://0.0.0.0:9000/q/metrics/prometheus`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/micrometer.adoc:630
+msgid "Refer to the xref:./management-interface-reference.adoc[management interface reference] for more information."
+msgstr ""
+
 #. type: Title ==
-#: upstream/_guides/micrometer.adoc:601
+#: upstream/_guides/micrometer.adoc:631
 #, no-wrap
 msgid "Configuration Reference"
 msgstr ""

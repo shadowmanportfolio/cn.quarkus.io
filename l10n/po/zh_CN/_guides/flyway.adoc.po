@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 15:19+0000\n"
+"POT-Creation-Date: 2023-04-26 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr "建立对Flyway的支持"
 #. type: Plain text
 #: upstream/_guides/flyway.adoc:20
 #, fuzzy
-msgid "As shown in the <<developing-with-flyway>> section, to start using Flyway with your project, you just need to:"
+msgid "As shown in the xref:developing-with-flyway[Developing with Flyway] section, to start using Flyway with your project, you just need to:"
 msgstr "要开始在你的项目中使用Flyway，你只需要。"
 
 #. type: Plain text
@@ -164,7 +164,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/flyway.adoc:78
 #, fuzzy
-msgid "Flyway support relies on the Quarkus datasource config.  It can be customized for the default datasource as well as for every <<multiple-datasources,named datasource>>.  First, you need to add the datasource config to the `{config-file}` file in order to allow Flyway to manage the schema.  Also, you can customize the Flyway behaviour by using the following properties:"
+msgid "Flyway support relies on the Quarkus datasource config.  It can be customized for the default datasource as well as for every xref:multiple-datasources[named datasource].  First, you need to add the datasource config to the `{config-file}` file in order to allow Flyway to manage the schema.  Also, you can customize the Flyway behaviour by using the following properties:"
 msgstr "Flyway支持依赖于Quarkus的数据源配置。它可以为默认的数据源以及每个 link:#multiple-datasources[命名的数据源] 进行定制。首先，你需要将数据源配置添加到 `{config-file}` 文件中，以便让Flyway管理模式。另外，你可以通过使用以下属性来定制Flyway的行为。"
 
 #. type: Title ==
@@ -246,7 +246,7 @@ msgid "With `quarkus.flyway.migrate-at-start=true`, as in the example above, Qua
 msgstr "使用 `quarkus.flyway.migrate-at-start=true` ，如上面的例子，Quarkus将执行Flyway迁移作为 link:lifecycle.html[应用程序启动] 的一部分。"
 
 #. type: delimited block -
-#: upstream/_guides/flyway.adoc:135 upstream/_guides/flyway.adoc:212
+#: upstream/_guides/flyway.adoc:135 upstream/_guides/flyway.adoc:247
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -268,7 +268,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/flyway.adoc:143 upstream/_guides/flyway.adoc:232
+#: upstream/_guides/flyway.adoc:143 upstream/_guides/flyway.adoc:267
 #, fuzzy
 msgid "Inject the Flyway object if you want to use it directly"
 msgstr "如果你想直接使用Flyway对象，请注入该对象"
@@ -384,17 +384,69 @@ msgstr "在没有配置的情况下，Flyway对每个数据源的设置都是使
 #. type: Title ==
 #: upstream/_guides/flyway.adoc:201
 #, fuzzy, no-wrap
+msgid "Customizing Flyway"
+msgstr "使用Flyway"
+
+#. type: Plain text
+#: upstream/_guides/flyway.adoc:204
+#, fuzzy
+msgid "In cases where Flyway needs to be configured in addition to the configuration options that Quarkus provides, the `io.quarkus.flyway.FlywayConfigurationCustomizer` class comes in handy."
+msgstr "在Flyway需要在Quarkus提供的配置选项之外进行配置的情况下， `io.quarkus.flyway.FlywayConfigurationCustomizer` 类就会派上用场。"
+
+#. type: Plain text
+#: upstream/_guides/flyway.adoc:206
+#, fuzzy
+msgid "To customize Flyway for the default datasource, simply add a bean like so:"
+msgstr "要为默认数据源定制Flyway，只需像这样添加一个bean。"
+
+#. type: delimited block -
+#: upstream/_guides/flyway.adoc:211
+#, no-wrap
+msgid ""
+"@Singleton\n"
+"public static class MyCustomizer implements FlywayConfigurationCustomizer {\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/flyway.adoc:217 upstream/_guides/flyway.adoc:234
+#, no-wrap
+msgid ""
+"    @Override\n"
+"    public void customize(FluentConfiguration configuration) {\n"
+"        // do something with configuration\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/flyway.adoc:222
+#, fuzzy
+msgid "When named datasources are used, the `@FlywayDataSource` annotation can be used to specify the datasource to which the customizer applies.  For example, if there are multiple datasources one of which is called `users` and customization of Flyway is needed for only that datasource, then the following code can be used:"
+msgstr "当使用命名的数据源时， `@FlywayDataSource` 注释可以用来指定定制器所适用的数据源。例如，如果有多个数据源，其中一个被称为 `users` ，并且只需要为该数据源定制Flyway，那么就可以使用以下代码。"
+
+#. type: delimited block -
+#: upstream/_guides/flyway.adoc:228
+#, no-wrap
+msgid ""
+"@Singleton\n"
+"@FlywayDataSource(\"users\")\n"
+"public static class UsersCustomizer implements FlywayConfigurationCustomizer {\n"
+msgstr ""
+
+#. type: Title ==
+#: upstream/_guides/flyway.adoc:236
+#, fuzzy, no-wrap
 msgid "Using the Flyway object"
 msgstr "使用Flyway对象"
 
 #. type: Plain text
-#: upstream/_guides/flyway.adoc:204
+#: upstream/_guides/flyway.adoc:239
 #, fuzzy
 msgid "In case you are interested in using the `Flyway` object directly, you can inject it as follows:"
 msgstr "如果你对直接使用 `Flyway` 对象感兴趣，你可以按以下方式注入。"
 
 #. type: delimited block -
-#: upstream/_guides/flyway.adoc:216
+#: upstream/_guides/flyway.adoc:251
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -403,7 +455,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/flyway.adoc:220
+#: upstream/_guides/flyway.adoc:255
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -412,7 +464,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/flyway.adoc:229
+#: upstream/_guides/flyway.adoc:264
 #, no-wrap
 msgid ""
 "    public void checkMigration() {\n"
@@ -426,59 +478,78 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/flyway.adoc:233
+#: upstream/_guides/flyway.adoc:268
 #, fuzzy
 msgid "Inject Flyway for named datasources using the Quarkus `FlywayDataSource` qualifier"
 msgstr "使用Quarkus `FlywayDataSource` 限定符为命名的数据源注入Flyway。"
 
 #. type: Plain text
-#: upstream/_guides/flyway.adoc:234
+#: upstream/_guides/flyway.adoc:269
 #, fuzzy
 msgid "Inject Flyway for named datasources"
 msgstr "为命名的数据源注入Flyway"
 
 #. type: Plain text
-#: upstream/_guides/flyway.adoc:235
+#: upstream/_guides/flyway.adoc:270
 #, fuzzy
 msgid "Use the Flyway instance directly"
 msgstr "直接使用Flyway实例"
 
 #. type: Title ==
-#: upstream/_guides/flyway.adoc:236
+#: upstream/_guides/flyway.adoc:271
 #, fuzzy, no-wrap
 msgid "Flyway and Hibernate ORM"
 msgstr "Flyway和Hibernate ORM"
 
 #. type: Plain text
-#: upstream/_guides/flyway.adoc:239
+#: upstream/_guides/flyway.adoc:274
 #, fuzzy
 msgid "When using Flyway together with Hibernate ORM, you can use the Dev UI to generate the initial schema creation script."
 msgstr "当Flyway与Hibernate ORM一起使用时，你可以使用Dev UI来生成初始模式创建脚本。"
 
 #. type: Plain text
-#: upstream/_guides/flyway.adoc:240
+#: upstream/_guides/flyway.adoc:276
 msgid "You can find more information about this feature in the xref:hibernate-orm.adoc#flyway[Hibernate ORM guide]."
 msgstr ""
 
-#, fuzzy
-#~ msgid "Customizing Flyway"
-#~ msgstr "使用Flyway"
+#. type: Title ==
+#: upstream/_guides/flyway.adoc:277
+#, fuzzy, no-wrap
+msgid "Flyway on Kubernetes"
+msgstr "Flyway和Hibernate ORM"
 
-#, fuzzy
-#~ msgid "In cases where Flyway needs to be configured in addition to the configuration options that Quarkus provides, the `io.quarkus.flyway.FlywayConfigurationCustomizer` class comes in handy."
-#~ msgstr "在Flyway需要在Quarkus提供的配置选项之外进行配置的情况下， `io.quarkus.flyway.FlywayConfigurationCustomizer` 类就会派上用场。"
+#. type: Plain text
+#: upstream/_guides/flyway.adoc:283
+msgid "Sometimes, it's helpful not to execute Flyway initialization on each application startup. One such example is when deploying on Kubernetes, where it doesn't make sense to execute Flyway on every single replica. Instead it's desirable to execute it once and then start the actual application without Flyway. To support this use case, when generating manifests for Kubernetes the generated manifests contain a Kubernetes initialization `Job` for Flyway.  The `Job` performs initialization and the actual `Pod`, will starts once the `Job` is successfully completed."
+msgstr ""
 
-#, fuzzy
-#~ msgid "To customize Flyway for the default datasource, simply add a bean like so:"
-#~ msgstr "要为默认数据源定制Flyway，只需像这样添加一个bean。"
+#. type: Plain text
+#: upstream/_guides/flyway.adoc:285
+msgid "The feature is enabled by default and can be globally disabled, using:"
+msgstr ""
 
-#, fuzzy
-#~ msgid "When named datasources are used, the `@FlywayDataSource` annotation can be used to specify the datasource to which the customizer applies.  For example, if there are multiple datasources one of which is called `users` and customization of Flyway is needed for only that datasource, then the following code can be used:"
-#~ msgstr "当使用命名的数据源时， `@FlywayDataSource` 注释可以用来指定定制器所适用的数据源。例如，如果有多个数据源，其中一个被称为 `users` ，并且只需要为该数据源定制Flyway，那么就可以使用以下代码。"
+#. type: delimited block -
+#: upstream/_guides/flyway.adoc:289
+#, no-wrap
+msgid "quarkus.kubernetes.externalize-init=false\n"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Flyway on Kubernetes"
-#~ msgstr "Flyway和Hibernate ORM"
+#. type: Plain text
+#: upstream/_guides/flyway.adoc:292
+msgid "or on OpenShift:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/flyway.adoc:296
+#, no-wrap
+msgid "quarkus.openshift.externalize-init=false\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/flyway.adoc:298
+#, no-wrap
+msgid "**Note**: In this context globally means `for all extensions that support init task externalization`.\n"
+msgstr ""
 
 #, fuzzy
 #~ msgid "If you enabled the `quarkus.flyway.migrate-at-start` property, by the time you use the Flyway instance, Quarkus will already have run the migrate operation"

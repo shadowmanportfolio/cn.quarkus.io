@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 15:19+0000\n"
+"POT-Creation-Date: 2023-04-26 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr "本文档并没有涵盖连接器的所有细节。请参考 link:https:
 #. type: Plain text
 #: upstream/_guides/amqp-reference.adoc:19
 #, fuzzy
-msgid "The AMQP connector allows Quarkus applications to send and receive messages using the AMQP 1.0 protocol.  More details about the protocol can be found in https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html[the AMQP 1.0 specification].  It's important to note that AMQP 1.0 and AMQP 0.9.1 (implemented by RabbitMQ) are incompatible.  Check <<using-rabbitmq,Using RabbitMQ>> to get more details."
+msgid "The AMQP connector allows Quarkus applications to send and receive messages using the AMQP 1.0 protocol.  More details about the protocol can be found in https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html[the AMQP 1.0 specification].  It's important to note that AMQP 1.0 and AMQP 0.9.1 (implemented by RabbitMQ) are incompatible.  Check xref:using-rabbitmq[Using RabbitMQ] to get more details."
 msgstr "AMQP连接器允许Quarkus应用程序使用AMQP 1.0协议来发送和接收消息。关于该协议的更多细节可以在 link:http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html[AMQP 1.0规范] 中找到。值得注意的是，AMQP 1.0 和 AMQP 0.9.1（由 RabbitMQ 实现）是不兼容的。请查看 link:#using-rabbitmq[Using RabbitMQ] 以获得更多细节。"
 
 #. type: Title ==
@@ -233,7 +233,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_guides/amqp-reference.adoc:106
 #, no-wrap
-msgid "import javax.enterprise.context.ApplicationScoped;\n"
+msgid "import jakarta.enterprise.context.ApplicationScoped;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -280,7 +280,7 @@ msgstr ""
 #: upstream/_guides/amqp-reference.adoc:129
 #, no-wrap
 msgid ""
-"import javax.enterprise.context.ApplicationScoped;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
 "import java.util.concurrent.CompletionStage;\n"
 msgstr ""
 
@@ -886,8 +886,8 @@ msgstr ""
 #: upstream/_guides/amqp-reference.adoc:386
 #, no-wrap
 msgid ""
-"import javax.enterprise.context.ApplicationScoped;\n"
-"import javax.transaction.Transactional;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
+"import jakarta.transaction.Transactional;\n"
 msgstr ""
 
 #. type: delimited block -

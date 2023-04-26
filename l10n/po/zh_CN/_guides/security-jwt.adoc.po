@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 15:19+0000\n"
+"POT-Creation-Date: 2023-04-26 15:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,102 +16,99 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. This guide is maintained in the main Quarkus repository
-#. and pull requests should be submitted there:
-#. https://github.com/quarkusio/quarkus/tree/main/docs/src/main/asciidoc
 #. type: Title =
-#: upstream/_guides/security-jwt.adoc:6
+#: upstream/_guides/security-jwt.adoc:7
 #, fuzzy, no-wrap
 msgid "Using JWT RBAC"
 msgstr "使用JWT RBAC"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:16
+#: upstream/_guides/security-jwt.adoc:17
 #, fuzzy
 msgid "This guide explains how your Quarkus application can utilize https://github.com/smallrye/smallrye-jwt/[SmallRye JWT] to verify https://tools.ietf.org/html/rfc7519[JSON Web Token]s, represent them as MicroProfile JWT `org.eclipse.microprofile.jwt.JsonWebToken` and provide secured access to the Quarkus HTTP endpoints using Bearer Token Authorization and https://en.wikipedia.org/wiki/Role-based_access_control[Role-Based Access Control]."
 msgstr "本指南解释了您的Quarkus应用程序如何利用 link:https://github.com/smallrye/smallrye-jwt/[SmallRye JWT] 来验证 link:https://tools.ietf.org/html/rfc7519[JSON网络令牌] ，将其表示为MicroProfile JWT `org.eclipse.microprofile.jwt.JsonWebToken` ，并使用承载令牌授权和 link:https://en.wikipedia.org/wiki/Role-based_access_control[基于角色的访问控制] 来为Quarkus HTTP端点提供安全访问。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:19
+#: upstream/_guides/security-jwt.adoc:22
 #, fuzzy
-msgid "Quarkus OpenID Connect `quarkus-oidc` extension also supports Bearer Token Authorization and uses `smallrye-jwt` to represent the bearer tokens as `JsonWebToken`, please read the xref:security-openid-connect.adoc[Using OpenID Connect to Protect Service Applications] guide for more information.  OpenID Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow, please read xref:security-openid-connect-web-authentication.adoc[Using OpenID Connect to Protect Web Applications] guide for more information."
+msgid "Quarkus OpenID Connect `quarkus-oidc` extension also supports Bearer Token Authorization and uses `smallrye-jwt` to represent the bearer tokens as `JsonWebToken`.  For more information, read the xref:security-oidc-bearer-authentication-concept.adoc[OIDC Bearer authentication] guide.  OpenID Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow.  For more information, see xref:security-oidc-code-flow-authentication-concept.adoc[OIDC code flow mechanism for protecting web applications]"
 msgstr "Quarkus OpenID Connect `quarkus-oidc` 扩展也支持承载令牌授权，并使用 `smallrye-jwt` 表示承载令牌为 `JsonWebToken` , 请阅读 link:security-openid-connect.html[Using OpenID Connect to Protect Service Applications] 指南了解更多信息。如果Quarkus应用程序需要使用OIDC授权代码流对用户进行认证，就必须使用OpenID Connect扩展，请阅读《 link:security-openid-connect-web-authentication.html[使用OpenID Connect保护Web应用程序] 》指南了解更多信息。"
 
 #. type: Title ==
-#: upstream/_guides/security-jwt.adoc:20
+#: upstream/_guides/security-jwt.adoc:23
 #, fuzzy, no-wrap
 msgid "Prerequisites"
 msgstr "先决条件"
 
 #. type: Title ==
-#: upstream/_guides/security-jwt.adoc:24
+#: upstream/_guides/security-jwt.adoc:27
 #, fuzzy, no-wrap
 msgid "Quickstart"
 msgstr "快速入门"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:26
+#: upstream/_guides/security-jwt.adoc:29
 #, fuzzy, no-wrap
 msgid "Solution"
 msgstr "解决方案"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:30
+#: upstream/_guides/security-jwt.adoc:33
 #, fuzzy
 msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can skip right to the completed example."
 msgstr "我们建议你按照下面几节的说明，一步一步地创建应用程序。不过，你可以直接跳到完成的例子。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:32
+#: upstream/_guides/security-jwt.adoc:35
 #, fuzzy
 msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
 msgstr "克隆 Git 仓库。 `git clone {quickstarts-clone-url}` ，或者下载一个{quickstarts-archive-url}[存档]。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:34
+#: upstream/_guides/security-jwt.adoc:37
 #, fuzzy
 msgid "The solution is located in the `security-jwt-quickstart` {quickstarts-tree-url}/security-jwt-quickstart[directory]."
 msgstr "该解决方案位于 `security-jwt-quickstart` {quickstarts-treeurl}/security-jwt-quickstart[目录]中。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:35
+#: upstream/_guides/security-jwt.adoc:38
 #, fuzzy, no-wrap
 msgid "Creating the Maven project"
 msgstr "创建Maven项目"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:38
+#: upstream/_guides/security-jwt.adoc:41
 #, fuzzy
-msgid "First, we need a new project. Create a new project with the following command:"
+msgid "First, create a new project with the following command:"
 msgstr "首先，我们需要一个新的项目。用以下命令创建一个新项目。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:44
+#: upstream/_guides/security-jwt.adoc:47
 #, fuzzy
 msgid "This command generates the Maven project and imports the `smallrye-jwt` extension, which includes the {mp-jwt} support."
 msgstr "该命令生成Maven项目并导入 `smallrye-jwt` 扩展，其中包括{mp-jwt}支持。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:47
+#: upstream/_guides/security-jwt.adoc:50
 #, fuzzy
 msgid "If you already have your Quarkus project configured, you can add the `smallrye-jwt` extension to your project by running the following command in your project base directory:"
 msgstr "如果你已经配置了你的Quarkus项目，你可以通过在你的项目基础目录下运行以下命令，将 `smallrye-jwt` 扩展到你的项目。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:52
+#: upstream/_guides/security-jwt.adoc:55
 #, fuzzy
 msgid "This will add the following to your build file:"
 msgstr "这将在你的构建文件中添加以下内容。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:54 upstream/_guides/security-jwt.adoc:856
-#: upstream/_guides/security-jwt.adoc:983
+#: upstream/_guides/security-jwt.adoc:57 upstream/_guides/security-jwt.adoc:865
+#: upstream/_guides/security-jwt.adoc:995
 #, fuzzy, no-wrap
 msgid "pom.xml"
 msgstr "pom.xml"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:64
+#: upstream/_guides/security-jwt.adoc:67
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -125,14 +122,14 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:67 upstream/_guides/security-jwt.adoc:866
-#: upstream/_guides/security-jwt.adoc:992
+#: upstream/_guides/security-jwt.adoc:70 upstream/_guides/security-jwt.adoc:875
+#: upstream/_guides/security-jwt.adoc:1004
 #, fuzzy, no-wrap
 msgid "build.gradle"
 msgstr "build.gradle"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:71
+#: upstream/_guides/security-jwt.adoc:74
 #, no-wrap
 msgid ""
 "implementation(\"io.quarkus:quarkus-smallrye-jwt\")\n"
@@ -140,62 +137,62 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:73
+#: upstream/_guides/security-jwt.adoc:76
 #, fuzzy, no-wrap
-msgid "Examine the JAX-RS resource"
+msgid "Examine the Jakarta REST resource"
 msgstr "检查JAX-RS资源"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:76
+#: upstream/_guides/security-jwt.adoc:79
 #, fuzzy
 msgid "Create a REST endpoint in `src/main/java/org/acme/security/jwt/TokenSecuredResource.java` with the following content:"
 msgstr "在 `src/main/java/org/acme/security/jwt/TokenSecuredResource.java` ，创建一个REST端点，内容如下。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:77
+#: upstream/_guides/security-jwt.adoc:80
 #, fuzzy, no-wrap
 msgid "REST Endpoint V1"
 msgstr "REST端点V1"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:81 upstream/_guides/security-jwt.adoc:188
-#: upstream/_guides/security-jwt.adoc:328
-#: upstream/_guides/security-jwt.adoc:473
-#: upstream/_guides/security-jwt.adoc:626
+#: upstream/_guides/security-jwt.adoc:84 upstream/_guides/security-jwt.adoc:192
+#: upstream/_guides/security-jwt.adoc:339
+#: upstream/_guides/security-jwt.adoc:484
+#: upstream/_guides/security-jwt.adoc:635
 #, no-wrap
 msgid "package org.acme.security.jwt;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:83
+#: upstream/_guides/security-jwt.adoc:86
 #, no-wrap
 msgid "import java.security.Principal;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:94
+#: upstream/_guides/security-jwt.adoc:97
 #, no-wrap
 msgid ""
-"import javax.annotation.security.PermitAll;\n"
-"import javax.enterprise.context.RequestScoped;\n"
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.InternalServerErrorException;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.Context;\n"
-"import javax.ws.rs.core.MediaType;\n"
-"import javax.ws.rs.core.SecurityContext;\n"
+"import jakarta.annotation.security.PermitAll;\n"
+"import jakarta.enterprise.context.RequestScoped;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.InternalServerErrorException;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.Context;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.core.SecurityContext;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:96 upstream/_guides/security-jwt.adoc:202
+#: upstream/_guides/security-jwt.adoc:99 upstream/_guides/security-jwt.adoc:206
 #, no-wrap
 msgid "import org.eclipse.microprofile.jwt.JsonWebToken;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:99
+#: upstream/_guides/security-jwt.adoc:102
 #, no-wrap
 msgid ""
 "@Path(\"/secured\")\n"
@@ -203,8 +200,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:102
-#: upstream/_guides/security-jwt.adoc:209
+#: upstream/_guides/security-jwt.adoc:105
+#: upstream/_guides/security-jwt.adoc:213
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -212,7 +209,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:110
+#: upstream/_guides/security-jwt.adoc:113
 #, no-wrap
 msgid ""
 "    @GET()\n"
@@ -225,7 +222,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:126
+#: upstream/_guides/security-jwt.adoc:129
 #, no-wrap
 msgid ""
 "    private String getResponseString(SecurityContext ctx) {\n"
@@ -246,9 +243,9 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:131
-#: upstream/_guides/security-jwt.adoc:246
-#: upstream/_guides/security-jwt.adoc:544
+#: upstream/_guides/security-jwt.adoc:134
+#: upstream/_guides/security-jwt.adoc:250
+#: upstream/_guides/security-jwt.adoc:555
 #, no-wrap
 msgid ""
 "    private boolean hasJwt() {\n"
@@ -258,73 +255,73 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:133
+#: upstream/_guides/security-jwt.adoc:137
 #, fuzzy
-msgid "Here we inject the JsonWebToken interface, an extension of the java.security.Principal interface that provides access to the claims associated with the current authenticated token."
+msgid "Here we inject the JsonWebToken interface, an extension of the java.security.  Principal interface that provides access to the claims associated with the current authenticated token."
 msgstr "这里我们注入JsonWebToken接口，这是java.security.Principal接口的扩展，提供了对与当前认证令牌相关的索赔的访问。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:134
+#: upstream/_guides/security-jwt.adoc:138
 #, fuzzy
 msgid "@PermitAll is a JSR 250 common security annotation that indicates that the given endpoint is accessible by any caller, authenticated or not."
 msgstr "@PermitAll是JSR 250的一个通用安全注解，它表明给定的端点可以被任何调用者访问，无论是否经过验证。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:135
+#: upstream/_guides/security-jwt.adoc:139
 #, fuzzy
-msgid "Here we inject the JAX-RS SecurityContext to inspect the security state of the call and use a `getResponseString()` function to populate a response string."
+msgid "Here we inject the Jakarta REST SecurityContext to inspect the security state of the call and use a `getResponseString()` function to populate a response string."
 msgstr "这里我们注入JAX-RS SecurityContext来检查调用的安全状态，并使用 `getResponseString()` 函数来填充响应字符串。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:136
+#: upstream/_guides/security-jwt.adoc:140
 #, fuzzy
 msgid "Here we check if the call is insecure by checking the request user/caller `Principal` against null."
 msgstr "在这里，我们通过检查请求用户/呼叫者 `Principal` ，对照null，来检查呼叫是否不安全。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:137
+#: upstream/_guides/security-jwt.adoc:141
 #, fuzzy
 msgid "Here we check that the Principal and JsonWebToken have the same name since JsonWebToken does represent the current Principal."
 msgstr "这里我们检查Principal和JsonWebToken是否有相同的名字，因为JsonWebToken确实代表了当前的Principal。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:138
+#: upstream/_guides/security-jwt.adoc:142
 #, fuzzy
 msgid "Here we get the Principal name."
 msgstr "这里我们得到了校长的名字。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:139
+#: upstream/_guides/security-jwt.adoc:143
 #, fuzzy
 msgid "The reply we build up makes use of the caller name, the `isSecure()` and `getAuthenticationScheme()` states of the request `SecurityContext`, and whether a non-null `JsonWebToken` was injected."
 msgstr "我们建立的回复利用了调用者的名字、请求 `isSecure()` 和 `getAuthenticationScheme()` 的状态 `SecurityContext` ，以及是否注入了非空的 `JsonWebToken` 。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:140
+#: upstream/_guides/security-jwt.adoc:144
 #, fuzzy, no-wrap
 msgid "Run the application"
 msgstr "运行应用程序"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:143
+#: upstream/_guides/security-jwt.adoc:147
 #, fuzzy
 msgid "Now we are ready to run our application. Use:"
 msgstr "现在我们准备运行我们的应用程序。使用。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:147
+#: upstream/_guides/security-jwt.adoc:151
 #, fuzzy
 msgid "and you should see output similar to:"
 msgstr "而你应该看到类似的输出。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:148
+#: upstream/_guides/security-jwt.adoc:152
 #, fuzzy, no-wrap
 msgid "quarkus:dev Output"
 msgstr "quarkus:dev 输出"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:161
+#: upstream/_guides/security-jwt.adoc:165
 #, no-wrap
 msgid ""
 "[INFO] Scanning for projects...\n"
@@ -340,19 +337,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:164
+#: upstream/_guides/security-jwt.adoc:168
 #, fuzzy
 msgid "Now that the REST endpoint is running, we can access it using a command line tool like curl:"
 msgstr "现在，REST端点正在运行，我们可以使用curl这样的命令行工具来访问它。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:165
+#: upstream/_guides/security-jwt.adoc:169
 #, fuzzy, no-wrap
 msgid "curl command for /secured/permit-all"
 msgstr "/secured/permit-all的curl命令"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:170
+#: upstream/_guides/security-jwt.adoc:174
 #, no-wrap
 msgid ""
 "$ curl http://127.0.0.1:8080/secured/permit-all; echo\n"
@@ -360,75 +357,75 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:174
+#: upstream/_guides/security-jwt.adoc:178
 #, fuzzy
 msgid "We have not provided any JWT in our request, so we would not expect that there is any security state seen by the endpoint, and the response is consistent with that:"
 msgstr "我们在请求中没有提供任何JWT，所以我们不会期望有任何安全状态被终端看到，而响应也与此一致。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:176
+#: upstream/_guides/security-jwt.adoc:180
 #, fuzzy
 msgid "username is anonymous"
 msgstr "用户名称是匿名的"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:177
+#: upstream/_guides/security-jwt.adoc:181
 #, fuzzy
 msgid "isHttps is false as https is not used"
 msgstr "isHttps为假，因为没有使用https。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:178
+#: upstream/_guides/security-jwt.adoc:182
 #, fuzzy
 msgid "authScheme is null"
 msgstr "authScheme为空"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:179
+#: upstream/_guides/security-jwt.adoc:183
 #, fuzzy
 msgid "hasJWT is false"
 msgstr "hasJWT为假"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:181
+#: upstream/_guides/security-jwt.adoc:185
 #, fuzzy
 msgid "Use Ctrl-C to stop the Quarkus server."
 msgstr "使用Ctrl-C来停止Quarkus服务器。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:183
+#: upstream/_guides/security-jwt.adoc:187
 #, fuzzy
 msgid "So now let's actually secure something. Take a look at the new endpoint method `helloRolesAllowed` in the following:"
 msgstr "所以，现在让我们真正确保一些东西。看看下面的新端点方法 `helloRolesAllowed` 。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:184
+#: upstream/_guides/security-jwt.adoc:188
 #, fuzzy, no-wrap
 msgid "REST Endpoint V2"
 msgstr "REST端点V2"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:200
-#: upstream/_guides/security-jwt.adoc:485
+#: upstream/_guides/security-jwt.adoc:204
+#: upstream/_guides/security-jwt.adoc:496
 #, no-wrap
 msgid ""
-"import javax.annotation.security.PermitAll;\n"
-"import javax.annotation.security.RolesAllowed;\n"
-"import javax.enterprise.context.RequestScoped;\n"
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.InternalServerErrorException;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.Context;\n"
-"import javax.ws.rs.core.MediaType;\n"
-"import javax.ws.rs.core.SecurityContext;\n"
+"import jakarta.annotation.security.PermitAll;\n"
+"import jakarta.annotation.security.RolesAllowed;\n"
+"import jakarta.enterprise.context.RequestScoped;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.InternalServerErrorException;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.Context;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.core.SecurityContext;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:206
-#: upstream/_guides/security-jwt.adoc:493
-#: upstream/_guides/security-jwt.adoc:634
+#: upstream/_guides/security-jwt.adoc:210
+#: upstream/_guides/security-jwt.adoc:504
+#: upstream/_guides/security-jwt.adoc:643
 #, no-wrap
 msgid ""
 "@Path(\"/secured\")\n"
@@ -437,8 +434,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:217
-#: upstream/_guides/security-jwt.adoc:507
+#: upstream/_guides/security-jwt.adoc:221
+#: upstream/_guides/security-jwt.adoc:518
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -451,7 +448,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:225
+#: upstream/_guides/security-jwt.adoc:229
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -464,8 +461,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:241
-#: upstream/_guides/security-jwt.adoc:539
+#: upstream/_guides/security-jwt.adoc:245
+#: upstream/_guides/security-jwt.adoc:550
 #, no-wrap
 msgid ""
 "    private String getResponseString(SecurityContext ctx) {\n"
@@ -486,43 +483,48 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:248
+#: upstream/_guides/security-jwt.adoc:252
 #, fuzzy
 msgid "Here we inject `JsonWebToken`"
 msgstr "在这里，我们注入 `JsonWebToken` "
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:249
+#: upstream/_guides/security-jwt.adoc:253
 #, fuzzy
 msgid "This new endpoint will be located at /secured/roles-allowed"
 msgstr "这个新的端点将位于/secured/roles-allowed位置。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:251
+#: upstream/_guides/security-jwt.adoc:255
 #, fuzzy
 msgid "@RolesAllowed is a JSR 250 common security annotation that indicates that the given endpoint is accessible by a caller if they have either a \"User\" or \"Admin\" role assigned."
 msgstr "@RolesAllowed是一个JSR 250通用安全注解，表明如果调用者分配了 \"用户 \"或 \"管理员 \"角色，那么他们可以访问给定的端点。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:252
+#: upstream/_guides/security-jwt.adoc:256
 #, fuzzy
 msgid "Here we build the reply the same way as in the `hello` method but also add a value of the JWT `birthdate` claim by directly calling the injected `JsonWebToken`."
 msgstr "在这里，我们以与 `hello` 方法相同的方式建立回复，但也通过直接调用注入的 `JsonWebToken` ，添加JWT `birthdate` 要求的值。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:254
+#: upstream/_guides/security-jwt.adoc:258
 #, fuzzy
-msgid "After you make this addition to your `TokenSecuredResource`, rerun the `./mvnw compile quarkus:dev` command, and then try `curl -v http://127.0.0.1:8080/secured/roles-allowed; echo` to attempt to access the new endpoint. Your output should be:"
+msgid "After you make this addition to your `TokenSecuredResource`, rerun the `./mvnw compile quarkus:dev` command, and then try `curl -v http://127.0.0.1:8080/secured/roles-allowed; echo` to attempt to access the new endpoint."
 msgstr "在你对你的 `TokenSecuredResource` 进行这一补充后，重新运行 `./mvnw compile quarkus:dev` 命令，然后尝试 `curl -v <a href=\"http://127.0.0.1:8080/secured/roles-allowed\" class=\"bare\">http://127.0.0.1:8080/secured/roles-allowed</a>; echo` 试图访问新的端点。你的输出应该是。"
 
+#. type: Plain text
+#: upstream/_guides/security-jwt.adoc:260
+msgid "Your output should be as follows:"
+msgstr ""
+
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:255
+#: upstream/_guides/security-jwt.adoc:261
 #, fuzzy, no-wrap
 msgid "curl command for /secured/roles-allowed"
 msgstr "/secured/roles-allowed 的 curl 命令"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:275
+#: upstream/_guides/security-jwt.adoc:281
 #, no-wrap
 msgid ""
 "$ curl -v http://127.0.0.1:8080/secured/roles-allowed; echo\n"
@@ -545,31 +547,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:278
+#: upstream/_guides/security-jwt.adoc:285
 #, fuzzy
-msgid "Excellent, we have not provided any JWT in the request, so we should not be able to access the endpoint, and we were not. Instead, we received an HTTP 401 Unauthorized error. We need to obtain and pass in a valid JWT to access that endpoint. There are two steps to this, 1) configuring our {extension-name} extension with information on how to validate a JWT, and 2) generating a matching JWT with the appropriate claims."
+msgid "Excellent, we have not provided any JWT in the request, so we should not be able to access the endpoint, and we were not. Instead, we received an HTTP 401 Unauthorized error.  We need to obtain and pass in a valid JWT to access that endpoint. There are two steps to this, 1) configuring our {extension-name} extension with information on how to validate a JWT, and 2) generating a matching JWT with the appropriate claims."
 msgstr "很好，我们在请求中没有提供任何JWT，所以我们不应该能够访问这个端点，而我们没有。相反，我们收到了一个HTTP 401 Unauthorized错误。我们需要获得并传入一个有效的JWT来访问该端点。这有两个步骤，1）用如何验证JWT的信息配置我们的{extension-name}扩展；2）用适当的索赔生成一个匹配的JWT。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:279
+#: upstream/_guides/security-jwt.adoc:286
 #, fuzzy, no-wrap
 msgid "Configuring the {extension-name} Extension Security Information"
 msgstr "配置{extension-name}扩展安全信息"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:282
+#: upstream/_guides/security-jwt.adoc:289
 #, fuzzy
 msgid "Create a `security-jwt-quickstart/src/main/resources/application.properties` with the following content:"
 msgstr "创建一个 `security-jwt-quickstart/src/main/resources/application.properties` ，内容如下。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:283
+#: upstream/_guides/security-jwt.adoc:290
 #, fuzzy, no-wrap
 msgid "application.properties for TokenSecuredResource"
 msgstr "托肯安全资源的应用程序.属性"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:288
+#: upstream/_guides/security-jwt.adoc:295
 #, no-wrap
 msgid ""
 "mp.jwt.verify.publickey.location=publicKey.pem #<1>\n"
@@ -577,49 +579,49 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:290
+#: upstream/_guides/security-jwt.adoc:297
 #, no-wrap
 msgid "quarkus.native.resources.includes=publicKey.pem #<3>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:292
+#: upstream/_guides/security-jwt.adoc:299
 #, fuzzy
-msgid "We are setting public key location to point to a classpath publicKey.pem location. We will add this key in part B, <<Adding a Public Key>>."
+msgid "We are setting public key location to point to a classpath publicKey.pem location. We will add this key in part B, xref:add-public-key[Adding a Public Key]."
 msgstr "我们正在设置公钥位置以指向classpath publicKey.pem位置。我们将在B部分 link:#Adding a Public Key[[添加公钥]] 中添加这个密钥。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:293
+#: upstream/_guides/security-jwt.adoc:300
 #, fuzzy
 msgid "We are setting the issuer to the URL string `https://example.com/issuer`."
 msgstr "我们正在将发行者设置为URL字符串 `<a href=\"https://example.com/issuer\" class=\"bare\">https://example.com/issuer</a>` ."
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:294
+#: upstream/_guides/security-jwt.adoc:301
 #, fuzzy
 msgid "We are including the public key as a resource in the native executable."
 msgstr "我们将公钥作为一种资源纳入本地可执行文件。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:295
+#: upstream/_guides/security-jwt.adoc:303
 #, fuzzy, no-wrap
 msgid "Adding a Public Key"
 msgstr "添加公钥"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:303
+#: upstream/_guides/security-jwt.adoc:313
 #, fuzzy
-msgid "The https://tools.ietf.org/html/rfc7519[JWT specification] defines various levels of security of JWTs that one can use.  The {mp-jwt} specification requires that JWTs that are signed with the RSA-256 signature algorithm. This in turn requires an RSA public key pair. On the REST endpoint server side, you need to configure the location of the RSA public key to use to verify the JWT sent along with requests. The `mp.jwt.verify.publickey.location=publicKey.pem` setting configured previously expects that the public key is available on the classpath as `publicKey.pem`. To accomplish this, copy the following content to a `security-jwt-quickstart/src/main/resources/publicKey.pem` file."
+msgid "The https://tools.ietf.org/html/rfc7519[JWT specification] defines various levels of security of JWTs that one can use.  The {mp-jwt} specification requires that JWTs that are signed with the RSA-256 signature algorithm. This in turn requires an RSA public key pair.  On the REST endpoint server side, you need to configure the location of the RSA public key to use to verify the JWT sent along with requests.  The `mp.jwt.verify.publickey.location=publicKey.pem` setting configured previously expects that the public key is available on the classpath as `publicKey.pem`.  To accomplish this, copy the following content to a `security-jwt-quickstart/src/main/resources/publicKey.pem` file."
 msgstr "link:https://tools.ietf.org/html/rfc7519[JWT规范] 定义了人们可以使用的JWTs的各种安全级别。{mp-jwt}规范要求JWTs用RSA-256签名算法进行签名。这反过来又需要一个RSA公钥对。在REST终端服务器端，你需要配置RSA公钥的位置，用来验证与请求一起发送的JWT。之前配置的 `mp.jwt.verify.publickey.location=publicKey.pem` ，希望公钥能在classpath上以 `publicKey.pem` 。为了达到这个目的，请将以下内容复制到 `security-jwt-quickstart/src/main/resources/publicKey.pem` 文件中。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:304
+#: upstream/_guides/security-jwt.adoc:314
 #, fuzzy, no-wrap
 msgid "RSA Public Key PEM Content"
 msgstr "RSA公钥PEM内容"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:316
+#: upstream/_guides/security-jwt.adoc:326
 #, no-wrap
 msgid ""
 "-----BEGIN PUBLIC KEY-----\n"
@@ -634,31 +636,31 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:318
+#: upstream/_guides/security-jwt.adoc:328
 #, fuzzy, no-wrap
 msgid "Generating a JWT"
 msgstr "生成一个JWT"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:321
+#: upstream/_guides/security-jwt.adoc:332
 #, fuzzy
-msgid "Often one obtains a JWT from an identity manager like https://www.keycloak.org/[Keycloak], but for this quickstart we will generate our own using the JWT generation API provided by `smallrye-jwt` (see xref:security-jwt-build.adoc[Generate JWT tokens with SmallRye JWT] for more information)."
+msgid "Often one obtains a JWT from an identity manager like https://www.keycloak.org/[Keycloak], but for this quickstart we will generate our own using the JWT generation API provided by `smallrye-jwt`.  For more information, see xref:security-jwt-build.adoc[Generate JWT tokens with SmallRye JWT]."
 msgstr "通常情况下，人们会从身份管理器（如 link:https://www.keycloak.org/[Keycloak] ）那里获得JWT，但在这个快速入门中，我们将使用 `smallrye-jwt` 提供的JWT生成API来生成我们自己的JWT（更多信息请参见 link:smallrye-jwt-build.html[用SmallRye JWT生成JWT] 令牌）。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:323
+#: upstream/_guides/security-jwt.adoc:334
 #, fuzzy
 msgid "Take the code from the following listing and place into `security-jwt-quickstart/src/test/java/org/acme/security/jwt/GenerateToken.java`:"
 msgstr "从以下列表中提取代码，并将其放入 `security-jwt-quickstart/src/test/java/org/acme/security/jwt/GenerateToken.java` 。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:324
+#: upstream/_guides/security-jwt.adoc:335
 #, fuzzy, no-wrap
 msgid "GenerateToken main Driver Class"
 msgstr "GenerateToken主驱动类"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:331
+#: upstream/_guides/security-jwt.adoc:342
 #, no-wrap
 msgid ""
 "import java.util.Arrays;\n"
@@ -666,19 +668,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:333
+#: upstream/_guides/security-jwt.adoc:344
 #, no-wrap
 msgid "import org.eclipse.microprofile.jwt.Claims;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:335
+#: upstream/_guides/security-jwt.adoc:346
 #, no-wrap
 msgid "import io.smallrye.jwt.build.Jwt;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:350
+#: upstream/_guides/security-jwt.adoc:361
 #, no-wrap
 msgid ""
 "public class GenerateToken {\n"
@@ -698,43 +700,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:354
+#: upstream/_guides/security-jwt.adoc:365
 #, fuzzy
 msgid "The `iss` claim is the issuer of the JWT. This needs to match the server side `mp.jwt.verify.issuer`.  in order for the token to be accepted as valid."
 msgstr " `iss` 声称是JWT的发行者。这需要与服务器端的 `mp.jwt.verify.issuer` 。为了使令牌被接受为有效的。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:356
+#: upstream/_guides/security-jwt.adoc:367
 #, fuzzy
 msgid "The `upn` claim is defined by the {mp-jwt} spec as preferred claim to use for the `Principal` seen via the container security APIs."
 msgstr " `upn` 要求被{mp-jwt}规范定义为首选要求，用于通过容器安全API看到的 `Principal` 。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:357
+#: upstream/_guides/security-jwt.adoc:368
 #, fuzzy
 msgid "The `group` claim provides the groups and top-level roles associated with the JWT bearer."
 msgstr " `group` 声称提供了与JWT承载相关的组和最高级别的角色。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:358
+#: upstream/_guides/security-jwt.adoc:369
 #, fuzzy
 msgid "The `birthday` claim. It can be considered to be a sensitive claim, so you may want to consider encrypting the claims, see xref:security-jwt-build.adoc[Generate JWT tokens with SmallRye JWT]."
 msgstr " `birthday` 的要求。它可以被认为是一个敏感的声称，所以你可能要考虑对声称进行加密， link:smallrye-jwt-build.html[见用SmallRye JWT生成JWT令牌] 。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:360
+#: upstream/_guides/security-jwt.adoc:371
 #, fuzzy
 msgid "Note for this code to work we need the content of the RSA private key that corresponds to the public key we have in the TokenSecuredResource application. Take the following PEM content and place it into `security-jwt-quickstart/src/test/resources/privateKey.pem`:"
 msgstr "注意为了使这段代码工作，我们需要RSA私钥的内容，它与我们在TokenSecuredResource应用程序中的公钥相对应。将以下PEM内容放入 `security-jwt-quickstart/src/test/resources/privateKey.pem` 。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:361
+#: upstream/_guides/security-jwt.adoc:372
 #, fuzzy, no-wrap
 msgid "RSA Private Key PEM Content"
 msgstr "RSA私钥PEM内容"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:392
+#: upstream/_guides/security-jwt.adoc:403
 #, no-wrap
 msgid ""
 "-----BEGIN PRIVATE KEY-----\n"
@@ -768,31 +770,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:395
+#: upstream/_guides/security-jwt.adoc:406
 #, fuzzy
 msgid "We will use a `smallrye.jwt.sign.key.location` property to point to this private signing key."
 msgstr "我们将使用一个 `smallrye.jwt.sign.key.location` 属性来指向这个私人签名密钥。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:397
+#: upstream/_guides/security-jwt.adoc:408
 #, fuzzy, no-wrap
 msgid "Generating Keys with OpenSSL"
 msgstr "用OpenSSL生成密钥"
 
 #. type: delimited block =
-#: upstream/_guides/security-jwt.adoc:400
+#: upstream/_guides/security-jwt.adoc:411
 #, fuzzy
 msgid "It is also possible to generate a public and private key pair using the OpenSSL command line tool."
 msgstr "也可以使用OpenSSL命令行工具生成一个公钥和私钥对。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:401
+#: upstream/_guides/security-jwt.adoc:412
 #, fuzzy, no-wrap
 msgid "openssl commands for generating keys"
 msgstr "用于生成密钥的openssl命令"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:406
+#: upstream/_guides/security-jwt.adoc:417
 #, no-wrap
 msgid ""
 "openssl genrsa -out rsaPrivateKey.pem 2048\n"
@@ -800,91 +802,91 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:409
+#: upstream/_guides/security-jwt.adoc:420
 #, fuzzy
 msgid "An additional step is needed for generating the private key for converting it into the PKCS#8 format."
 msgstr "生成私钥需要一个额外的步骤，以便将其转换为PKCS#8格式。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:410
+#: upstream/_guides/security-jwt.adoc:421
 #, fuzzy, no-wrap
 msgid "openssl command for converting private key"
 msgstr "openssl转换私钥的命令"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:414
+#: upstream/_guides/security-jwt.adoc:425
 #, no-wrap
 msgid "openssl pkcs8 -topk8 -nocrypt -inform pem -in rsaPrivateKey.pem -outform pem -out privateKey.pem\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:417
+#: upstream/_guides/security-jwt.adoc:428
 #, fuzzy
 msgid "You can use the generated pair of keys instead of the keys used in this quickstart."
 msgstr "你可以使用生成的一对密钥，而不是本快速入门中使用的密钥。"
 
 #. type: delimited block =
-#: upstream/_guides/security-jwt.adoc:420
+#: upstream/_guides/security-jwt.adoc:431
 #, fuzzy
 msgid "Now we can generate a JWT to use with `TokenSecuredResource` endpoint. To do this, run the following command:"
 msgstr "现在我们可以生成一个JWT，与 `TokenSecuredResource` 端点一起使用。要做到这一点，运行以下命令。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:421
+#: upstream/_guides/security-jwt.adoc:432
 #, fuzzy, no-wrap
 msgid "Command to Generate JWT"
 msgstr "生成JWT的命令"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:423
+#: upstream/_guides/security-jwt.adoc:434
 #, fuzzy, no-wrap
 msgid "Sample JWT Generation Output"
 msgstr "JWT生成输出样本"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:427
+#: upstream/_guides/security-jwt.adoc:438
 #, no-wrap
 msgid "$ mvn exec:java -Dexec.mainClass=org.acme.security.jwt.GenerateToken -Dexec.classpathScope=test -Dsmallrye.jwt.sign.key.location=privateKey.pem\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:429
+#: upstream/_guides/security-jwt.adoc:440
 #, no-wrap
 msgid "eyJraWQiOiJcL3ByaXZhdGVLZXkucGVtIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJqZG9lLXVzaW5nLWp3dC1yYmFjIiwiYXVkIjoidXNpbmctand0LXJiYWMiLCJ1cG4iOiJqZG9lQHF1YXJrdXMuaW8iLCJiaXJ0aGRhdGUiOiIyMDAxLTA3LTEzIiwiYXV0aF90aW1lIjoxNTUxNjU5Njc2LCJpc3MiOiJodHRwczpcL1wvcXVhcmt1cy5pb1wvdXNpbmctand0LXJiYWMiLCJyb2xlTWFwcGluZ3MiOnsiZ3JvdXAyIjoiR3JvdXAyTWFwcGVkUm9sZSIsImdyb3VwMSI6Ikdyb3VwMU1hcHBlZFJvbGUifSwiZ3JvdXBzIjpbIkVjaG9lciIsIlRlc3RlciIsIlN1YnNjcmliZXIiLCJncm91cDIiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiamRvZSIsImV4cCI6MTU1MTY1OTk3NiwiaWF0IjoxNTUxNjU5Njc2LCJqdGkiOiJhLTEyMyJ9.O9tx_wNNS4qdpFhxeD1e7v4aBNWz1FCq0UV8qmXd7dW9xM4hA5TO-ZREk3ApMrL7_rnX8z81qGPIo_R8IfHDyNaI1SLD56gVX-NaOLS2OjfcbO3zOWJPKR_BoZkYACtMoqlWgIwIRC-wJKUJU025dHZiNL0FWO4PjwuCz8hpZYXIuRscfFhXKrDX1fh3jDhTsOEFfu67ACd85f3BdX9pe-ayKSVLh_RSbTbBPeyoYPE59FW7H5-i8IE-Gqu838Hz0i38ksEJFI25eR-AJ6_PSUD0_-TV3NjXhF3bFIeT4VSaIZcpibekoJg0cQm-4ApPEcPLdgTejYHA-mupb8hSwg\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:433
+#: upstream/_guides/security-jwt.adoc:444
 #, fuzzy
 msgid "The JWT string is the Base64 URL encoded string that has 3 parts separated by '.' characters.  First part - JWT headers, second part - JWT claims, third part - JWT signature."
 msgstr "JWT字符串是Base64 URL编码的字符串，有3个部分，由'.'字符分隔。第一部分 - JWT头，第二部分 - JWT要求，第三部分 - JWT签名。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:434
+#: upstream/_guides/security-jwt.adoc:445
 #, fuzzy, no-wrap
 msgid "Finally, Secured Access to /secured/roles-allowed"
 msgstr "最后，安全访问/secured/roles-allowed"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:436
+#: upstream/_guides/security-jwt.adoc:447
 #, fuzzy
 msgid "Now let's use this to make a secured request to the /secured/roles-allowed endpoint. Make sure you have the Quarkus server still running in dev mode, and then run the following command, making sure to use your version of the generated JWT from the previous step:"
 msgstr "现在让我们用它来向/secured/roles-allowed端点发出一个安全请求。确保你的Quarkus服务器仍然运行在开发模式下，然后运行以下命令，确保使用你在上一步中生成的JWT版本。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:440
+#: upstream/_guides/security-jwt.adoc:451
 #, no-wrap
 msgid "curl -H \"Authorization: Bearer eyJraWQiOiJcL3ByaXZhdGVLZXkucGVtIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJqZG9lLXVzaW5nLWp3dC1yYmFjIiwiYXVkIjoidXNpbmctand0LXJiYWMiLCJ1cG4iOiJqZG9lQHF1YXJrdXMuaW8iLCJiaXJ0aGRhdGUiOiIyMDAxLTA3LTEzIiwiYXV0aF90aW1lIjoxNTUxNjUyMDkxLCJpc3MiOiJodHRwczpcL1wvcXVhcmt1cy5pb1wvdXNpbmctand0LXJiYWMiLCJyb2xlTWFwcGluZ3MiOnsiZ3JvdXAyIjoiR3JvdXAyTWFwcGVkUm9sZSIsImdyb3VwMSI6Ikdyb3VwMU1hcHBlZFJvbGUifSwiZ3JvdXBzIjpbIkVjaG9lciIsIlRlc3RlciIsIlN1YnNjcmliZXIiLCJncm91cDIiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiamRvZSIsImV4cCI6MTU1MTY1MjM5MSwiaWF0IjoxNTUxNjUyMDkxLCJqdGkiOiJhLTEyMyJ9.aPA4Rlc4kw7n_OZZRRk25xZydJy_J_3BRR8ryYLyHTO1o68_aNWWQCgpnAuOW64svPhPnLYYnQzK-l2vHX34B64JySyBD4y_vRObGmdwH_SEufBAWZV7mkG3Y4mTKT3_4EWNu4VH92IhdnkGI4GJB6yHAEzlQI6EdSOa4Nq8Gp4uPGqHsUZTJrA3uIW0TbNshFBm47-oVM3ZUrBz57JKtr0e9jv0HjPQWyvbzx1HuxZd6eA8ow8xzvooKXFxoSFCMnxotd3wagvYQ9ysBa89bgzL-lhjWtusuMFDUVYwFqADE7oOSOD4Vtclgq8svznBQ-YpfTHfb9QEcofMlpyjNA\" http://127.0.0.1:8080/secured/roles-allowed; echo\n"
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:442
+#: upstream/_guides/security-jwt.adoc:453
 #, fuzzy, no-wrap
 msgid "curl Command for /secured/roles-allowed With JWT"
 msgstr "curl命令为/secured/roles-allowed With JWT"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:447
+#: upstream/_guides/security-jwt.adoc:458
 #, no-wrap
 msgid ""
 "$ curl -H \"Authorization: Bearer eyJraWQ...\" http://127.0.0.1:8080/secured/roles-allowed; echo\n"
@@ -892,61 +894,61 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:450
+#: upstream/_guides/security-jwt.adoc:461
 #, fuzzy
 msgid "Success! We now have:"
 msgstr "成功了!我们现在有。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:452
+#: upstream/_guides/security-jwt.adoc:463
 #, fuzzy
 msgid "a non-anonymous caller name of jdoe@quarkus.io"
 msgstr "一个非匿名的呼叫者的名字是 link:mailto:jdoe@quarkus.io[：jdoe@quarkus.io]"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:453
+#: upstream/_guides/security-jwt.adoc:464
 #, fuzzy
 msgid "an authentication scheme of Bearer"
 msgstr "一个承载器的认证方案"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:454
+#: upstream/_guides/security-jwt.adoc:465
 #, fuzzy
 msgid "a non-null JsonWebToken"
 msgstr "一个非空的JsonWebToken"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:455
+#: upstream/_guides/security-jwt.adoc:466
 #, fuzzy
 msgid "birthdate claim value"
 msgstr "出生日期 索赔价值"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:456
+#: upstream/_guides/security-jwt.adoc:467
 #, fuzzy, no-wrap
 msgid "Using the JsonWebToken and Claim Injection"
 msgstr "使用JsonWebToken和索赔注入"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:463
+#: upstream/_guides/security-jwt.adoc:474
 #, fuzzy
-msgid "Now that we can generate a JWT to access our secured REST endpoints, let's see what more we can do with the `JsonWebToken` interface and the JWT claims. The `org.eclipse.microprofile.jwt.JsonWebToken` interface extends the `java.security.Principal` interface, and is in fact the type of the object that is returned by the `javax.ws.rs.core.SecurityContext#getUserPrincipal()` call we used previously. This means that code that does not use CDI but does have access to the REST container `SecurityContext` can get hold of the caller `JsonWebToken` interface by casting the `SecurityContext#getUserPrincipal()`."
+msgid "Now that we can generate a JWT to access our secured REST endpoints, let's see what more we can do with the `JsonWebToken` interface and the JWT claims. The `org.eclipse.microprofile.jwt.JsonWebToken` interface extends the `java.security.Principal` interface, and is in fact the type of the object that is returned by the `jakarta.ws.rs.core.SecurityContext#getUserPrincipal()` call we used previously. This means that code that does not use CDI but does have access to the REST container `SecurityContext` can get hold of the caller `JsonWebToken` interface by casting the `SecurityContext#getUserPrincipal()`."
 msgstr "现在我们可以生成一个JWT来访问我们的安全REST端点，让我们看看我们还能用 `JsonWebToken` 接口和JWT请求做什么。 `org.eclipse.microprofile.jwt.JsonWebToken` 接口扩展了 `java.security.Principal` 接口，事实上，它是我们之前使用的 `javax.ws.rs.core.SecurityContext#getUserPrincipal()` 调用返回的对象的类型。这意味着不使用CDI但可以访问REST容器 `SecurityContext` 的代码可以通过铸造 `SecurityContext#getUserPrincipal()` .NET接口来获得调用者 `JsonWebToken` 的接口。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:466
+#: upstream/_guides/security-jwt.adoc:477
 #, fuzzy
-msgid "The `JsonWebToken` interface defines methods for accessing claims in the underlying JWT. It provides accessors for common claims that are required by the {mp-jwt} specification as well as arbitrary claims that may exist in the JWT."
+msgid "The `JsonWebToken` interface defines methods for accessing claims in the underlying JWT.  It provides accessors for common claims that are required by the {mp-jwt} specification as well as arbitrary claims that may exist in the JWT."
 msgstr " `JsonWebToken` 接口定义了用于访问底层JWT中的请求的方法。它为{mp-jwt}规范所要求的普通请求以及JWT中可能存在的任意请求提供访问器。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:469
+#: upstream/_guides/security-jwt.adoc:480
 #, fuzzy
-msgid "All the JWT claims can also be injected. Let's expand our `TokenSecuredResource` with another endpoint /secured/roles-allowed-admin which uses the injected `birthdate` claim (as opposed to getting it from `JsonWebToken`):"
+msgid "All the JWT claims can also be injected.  Let's expand our `TokenSecuredResource` with another endpoint /secured/roles-allowed-admin which uses the injected `birthdate` claim (as opposed to getting it from `JsonWebToken`):"
 msgstr "所有的JWT请求也可以被注入。让我们用另一个端点/secured/roles-allowed-admin来扩展我们的 `TokenSecuredResource` ，这个端点使用注入的 `birthdate` （而不是从 `JsonWebToken` ）的要求。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:489
+#: upstream/_guides/security-jwt.adoc:500
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.jwt.Claim;\n"
@@ -955,7 +957,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:499
+#: upstream/_guides/security-jwt.adoc:510
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -966,7 +968,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:515
+#: upstream/_guides/security-jwt.adoc:526
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -979,7 +981,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:523
+#: upstream/_guides/security-jwt.adoc:534
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -992,37 +994,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:546
+#: upstream/_guides/security-jwt.adoc:557
 #, fuzzy
 msgid "Here we inject the JsonWebToken."
 msgstr "这里我们注入JsonWebToken。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:547
+#: upstream/_guides/security-jwt.adoc:558
 #, fuzzy
 msgid "Here we inject the `birthday` claim as `String` - this is why the `@RequestScoped` scope is now required."
 msgstr "在这里，我们把 `birthday` 的索赔注入到 `String` - 这就是为什么现在需要 `@RequestScoped` 范围。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:548
+#: upstream/_guides/security-jwt.adoc:559
 #, fuzzy
 msgid "Here we use the injected `birthday` claim to build the final reply."
 msgstr "在这里，我们使用注入的 `birthday` 要求来建立最终的回复。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:550
+#: upstream/_guides/security-jwt.adoc:561
 #, fuzzy
 msgid "Now generate the token again and run:"
 msgstr "现在再次生成令牌并运行。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:554
+#: upstream/_guides/security-jwt.adoc:565
 #, no-wrap
 msgid "curl -H \"Authorization: Bearer eyJraWQiOiJcL3ByaXZhdGVLZXkucGVtIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJqZG9lLXVzaW5nLWp3dC1yYmFjIiwiYXVkIjoidXNpbmctand0LXJiYWMiLCJ1cG4iOiJqZG9lQHF1YXJrdXMuaW8iLCJiaXJ0aGRhdGUiOiIyMDAxLTA3LTEzIiwiYXV0aF90aW1lIjoxNTUxNjUyMDkxLCJpc3MiOiJodHRwczpcL1wvcXVhcmt1cy5pb1wvdXNpbmctand0LXJiYWMiLCJyb2xlTWFwcGluZ3MiOnsiZ3JvdXAyIjoiR3JvdXAyTWFwcGVkUm9sZSIsImdyb3VwMSI6Ikdyb3VwMU1hcHBlZFJvbGUifSwiZ3JvdXBzIjpbIkVjaG9lciIsIlRlc3RlciIsIlN1YnNjcmliZXIiLCJncm91cDIiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiamRvZSIsImV4cCI6MTU1MTY1MjM5MSwiaWF0IjoxNTUxNjUyMDkxLCJqdGkiOiJhLTEyMyJ9.aPA4Rlc4kw7n_OZZRRk25xZydJy_J_3BRR8ryYLyHTO1o68_aNWWQCgpnAuOW64svPhPnLYYnQzK-l2vHX34B64JySyBD4y_vRObGmdwH_SEufBAWZV7mkG3Y4mTKT3_4EWNu4VH92IhdnkGI4GJB6yHAEzlQI6EdSOa4Nq8Gp4uPGqHsUZTJrA3uIW0TbNshFBm47-oVM3ZUrBz57JKtr0e9jv0HjPQWyvbzx1HuxZd6eA8ow8xzvooKXFxoSFCMnxotd3wagvYQ9ysBa89bgzL-lhjWtusuMFDUVYwFqADE7oOSOD4Vtclgq8svznBQ-YpfTHfb9QEcofMlpyjNA\" http://127.0.0.1:8080/secured/roles-allowed-admin; echo\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:560
+#: upstream/_guides/security-jwt.adoc:571
 #, no-wrap
 msgid ""
 "$ curl -H \"Authorization: Bearer eyJraWQ...\" http://127.0.0.1:8080/secured/roles-allowed-admin; echo\n"
@@ -1030,31 +1032,31 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:562
+#: upstream/_guides/security-jwt.adoc:573
 #, fuzzy, no-wrap
 msgid "Package and run the application"
 msgstr "包装和运行应用程序"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:565
+#: upstream/_guides/security-jwt.adoc:576
 #, fuzzy
 msgid "As usual, the application can be packaged using:"
 msgstr "像往常一样，该应用程序可以用以下方式打包。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:569
+#: upstream/_guides/security-jwt.adoc:580
 #, fuzzy
 msgid "And executed using `java -jar target/quarkus-app/quarkus-run.jar`:"
 msgstr "并使用 `java -jar target/quarkus-app/quarkus-run.jar` 。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:570
+#: upstream/_guides/security-jwt.adoc:581
 #, fuzzy, no-wrap
 msgid "Runner jar Example"
 msgstr "跑步者罐子的例子"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:576
+#: upstream/_guides/security-jwt.adoc:587
 #, no-wrap
 msgid ""
 "$ java -jar target/quarkus-app/quarkus-run.jar\n"
@@ -1063,19 +1065,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:579
+#: upstream/_guides/security-jwt.adoc:590
 #, fuzzy
 msgid "You can also generate the native executable with:"
 msgstr "你也可以用以下方法生成本地可执行文件。"
 
 #. type: Block title
-#: upstream/_guides/security-jwt.adoc:582
+#: upstream/_guides/security-jwt.adoc:593
 #, fuzzy, no-wrap
 msgid "Native Executable Example"
 msgstr "本地可执行文件实例"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:601
+#: upstream/_guides/security-jwt.adoc:612
 #, no-wrap
 msgid ""
 "[INFO] Scanning for projects...\n"
@@ -1097,7 +1099,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:605
+#: upstream/_guides/security-jwt.adoc:616
 #, no-wrap
 msgid ""
 "$ ./target/security-jwt-quickstart-runner\n"
@@ -1106,52 +1108,52 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:607
+#: upstream/_guides/security-jwt.adoc:618
 #, fuzzy, no-wrap
 msgid "Explore the Solution"
 msgstr "探索解决方案"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:613
+#: upstream/_guides/security-jwt.adoc:622
 #, fuzzy
-msgid "The solution repository located in the `security-jwt-quickstart` {quickstarts-tree-url}/security-jwt-quickstart[directory] contains all the versions we have worked through in this quickstart guide as well as some additional endpoints that illustrate subresources with injection of ``JsonWebToken``s and their claims into those using the CDI APIs. We suggest that you check out the quickstart solutions and explore the `security-jwt-quickstart` directory to learn more about the {extension-name} extension features."
+msgid "The solution repository located in the `security-jwt-quickstart` {quickstarts-tree-url}/security-jwt-quickstart[directory] contains all the versions we have worked through in this quickstart guide as well as some additional endpoints that illustrate subresources with injection of ``JsonWebToken``s and their claims into those using the CDI APIs.  We suggest that you check out the quickstart solutions and explore the `security-jwt-quickstart` directory to learn more about the {extension-name} extension features."
 msgstr "位于 `security-jwt-quickstart` {quickstarts-tree-url}/security-jwt-quickstart[目录]中的解决方案库包含了我们在本快速入门指南中研究过的所有版本，以及一些额外的端点，说明了将 `JsonWebToken` s及其主张注入到那些使用CDI APIs的子资源。我们建议你查看快速入门解决方案并探索 `security-jwt-quickstart` 目录，以了解更多关于{extension-name}扩展功能的信息。"
 
 #. type: Title ==
-#: upstream/_guides/security-jwt.adoc:614
+#: upstream/_guides/security-jwt.adoc:623
 #, fuzzy, no-wrap
 msgid "Reference Guide"
 msgstr "参考指南"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:617
+#: upstream/_guides/security-jwt.adoc:626
 #, fuzzy, no-wrap
 msgid "Supported Injection Scopes"
 msgstr "支持的注射范围"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:620
+#: upstream/_guides/security-jwt.adoc:629
 #, fuzzy
 msgid "`@ApplicationScoped`, `@Singleton` and `@RequestScoped` outer bean injection scopes are all supported when an `org.eclipse.microprofile.jwt.JsonWebToken` is injected, with the `@RequestScoped` scoping for `JsonWebToken` enforced to ensure the current token is represented."
 msgstr " `@ApplicationScoped` , `@Singleton` 和 `@RequestScoped` 外层Bean注入作用域在注入 `org.eclipse.microprofile.jwt.JsonWebToken` 时都被支持， `@RequestScoped` 作用域对 `JsonWebToken` 强制执行，以确保当前token被代表。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:622
+#: upstream/_guides/security-jwt.adoc:631
 #, fuzzy
 msgid "However, `@RequestScoped` must be used when the individual token claims are injected as simple types such as `String`, for example:"
 msgstr "然而，当单个令牌要求被注入为简单的类型，例如 `String` ，必须使用 `@RequestScoped` 。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:630
+#: upstream/_guides/security-jwt.adoc:639
 #, no-wrap
 msgid ""
-"import javax.inject.Inject;\n"
+"import jakarta.inject.Inject;\n"
 "import org.eclipse.microprofile.jwt.Claim;\n"
 "import org.eclipse.microprofile.jwt.Claims;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:639
+#: upstream/_guides/security-jwt.adoc:648
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -1161,85 +1163,85 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:642
+#: upstream/_guides/security-jwt.adoc:651
 #, fuzzy
 msgid "Note you can also use the injected `JsonWebToken` to access the individual claims in which case setting `@RequestScoped` is not necessary."
 msgstr "请注意，你也可以使用注入的 `JsonWebToken` 来访问各个索赔，在这种情况下，设置 `@RequestScoped` 是没有必要的。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:644
+#: upstream/_guides/security-jwt.adoc:653
 #, fuzzy
 msgid "Please see link:https://download.eclipse.org/microprofile/microprofile-jwt-auth-1.2/microprofile-jwt-auth-spec-1.2.html#_cdi_injection_requirements[MP JWT CDI Injection Requirements] for more details."
 msgstr "请参阅 link:https://download.eclipse.org/microprofile/microprofile-jwt-auth-1.2/microprofile-jwt-auth-spec-1.2.html#_cdi_injection_requirements[MP JWT CDI注入要求] 以了解更多细节。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:645
+#: upstream/_guides/security-jwt.adoc:655
 #, fuzzy, no-wrap
 msgid "Supported Public Key Formats"
 msgstr "支持的公钥格式"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:649
+#: upstream/_guides/security-jwt.adoc:659
 #, fuzzy
 msgid "Public Keys may be formatted in any of the following formats, specified in order of precedence:"
 msgstr "公钥可以采用以下任何一种格式，按优先顺序排列。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:651
+#: upstream/_guides/security-jwt.adoc:661
 #, fuzzy
 msgid "Public Key Cryptography Standards #8 (PKCS#8) PEM"
 msgstr "公钥密码学标准#8（PKCS#8） PEM"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:652
+#: upstream/_guides/security-jwt.adoc:662
 #, fuzzy
 msgid "JSON Web Key (JWK)"
 msgstr "JSON网络密钥（JWK）"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:653
+#: upstream/_guides/security-jwt.adoc:663
 #, fuzzy
 msgid "JSON Web Key Set (JWKS)"
 msgstr "JSON网络密钥集(JWKS)"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:654
+#: upstream/_guides/security-jwt.adoc:664
 #, fuzzy
 msgid "JSON Web Key (JWK) Base64 URL encoded"
 msgstr "JSON Web Key (JWK) Base64 URL 编码"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:655
+#: upstream/_guides/security-jwt.adoc:665
 #, fuzzy
 msgid "JSON Web Key Set (JWKS) Base64 URL encoded"
 msgstr "JSON网络密钥集（JWKS）Base64 URL编码"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:656
+#: upstream/_guides/security-jwt.adoc:666
 #, fuzzy, no-wrap
 msgid "Dealing with the verification keys"
 msgstr "处理验证码的问题"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:659
+#: upstream/_guides/security-jwt.adoc:669
 #, fuzzy
 msgid "If you need to verify the token signature using the asymmetric RSA or Elliptic Curve (EC) key then use the `mp.jwt.verify.publickey.location` property to refer to the local or remote verification key."
 msgstr "如果你需要使用非对称RSA或椭圆曲线（EC）密钥来验证令牌签名，那么请使用 `mp.jwt.verify.publickey.location` 属性来参考本地或远程验证密钥。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:661
+#: upstream/_guides/security-jwt.adoc:671
 #, fuzzy
 msgid "Use `mp.jwt.verify.publickey.algorithm` to customize the verification algorithm (default is `RS256`), for example, set it to `ES256` when working with the EC keys."
 msgstr "使用 `mp.jwt.verify.publickey.algorithm` 来定制验证算法（默认为 `RS256` ），例如，在使用EC密钥时，将其设置为 `ES256` 。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:663
+#: upstream/_guides/security-jwt.adoc:673
 #, fuzzy
 msgid "If you need to verify the token signature using the symmetric secret key then either a `JSON Web Key` (JWK) or `JSON Web Key Set` (JWK Set) format must be used to represent this secret key, for example:"
 msgstr "如果你需要使用对称密匙验证令牌签名，那么必须使用 `JSON Web Key` （JWK）或 `JSON Web Key Set` （JWK Set）格式来表示这个密匙，例如。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:675
+#: upstream/_guides/security-jwt.adoc:685
 #, fuzzy, no-wrap
 msgid ""
 "{\n"
@@ -1263,25 +1265,25 @@ msgstr ""
 "}` "
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:679
+#: upstream/_guides/security-jwt.adoc:689
 #, fuzzy
 msgid "This secret key JWK will also need to be referred to with `smallrye.jwt.verify.key.location`.  `smallrye.jwt.verify.algorithm` should be set to `HS256`/`HS384`/`HS512`."
 msgstr "这个密匙JWK也需要用 `smallrye.jwt.verify.key.location` 。 `smallrye.jwt.verify.algorithm` 应该设置为 `HS256` / `HS384` / `HS512` 。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:681
+#: upstream/_guides/security-jwt.adoc:691
 #, fuzzy, no-wrap
 msgid "Parse and Verify JsonWebToken with JWTParser"
 msgstr "用JWTParser解析和验证JsonWebToken"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:684
+#: upstream/_guides/security-jwt.adoc:694
 #, fuzzy
 msgid "If the JWT token can not be injected, for example, if it is embedded in the service request payload or the service endpoint acquires it out of band, then one can use `JWTParser`:"
 msgstr "如果JWT令牌不能被注入，例如，如果它被嵌入到服务请求的有效载荷中，或者服务端点在带外获得它，那么人们可以使用 `JWTParser` 。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:691
+#: upstream/_guides/security-jwt.adoc:701
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.jwt.JsonWebToken;\n"
@@ -1291,13 +1293,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:693
+#: upstream/_guides/security-jwt.adoc:703
 #, no-wrap
 msgid "String token = getTokenFromOidcServer();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:696
+#: upstream/_guides/security-jwt.adoc:706
 #, no-wrap
 msgid ""
 "// Parse and verify the token\n"
@@ -1305,26 +1307,26 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:699
+#: upstream/_guides/security-jwt.adoc:709
 #, fuzzy
 msgid "You can also use it to customize the way the token is verified or decrypted. For example, one can supply a local `SecretKey`:"
 msgstr "你也可以用它来定制令牌的验证或解密方式。例如，可以提供一个本地 `SecretKey` 。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:709
+#: upstream/_guides/security-jwt.adoc:719
 #, no-wrap
 msgid ""
 "import javax.crypto.SecretKey;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.core.NewCookie;\n"
-"import javax.ws.rs.core.Response;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.core.NewCookie;\n"
+"import jakarta.ws.rs.core.Response;\n"
 "import org.eclipse.microprofile.jwt.JsonWebToken;\n"
 "import io.smallrye.jwt.auth.principal.JWTParser;\n"
 "import io.smallrye.jwt.build.Jwt;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:714
+#: upstream/_guides/security-jwt.adoc:724
 #, no-wrap
 msgid ""
 "@Path(\"/secured\")\n"
@@ -1334,7 +1336,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:733
+#: upstream/_guides/security-jwt.adoc:743
 #, no-wrap
 msgid ""
 "  @GET\n"
@@ -1358,62 +1360,62 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:736
+#: upstream/_guides/security-jwt.adoc:746
 #, fuzzy
-msgid "Please also see the <<add-smallrye-jwt, How to Add SmallRye JWT directly>> section about using `JWTParser` without the `HTTP` support provided by `quarkus-smallrye-jwt`."
+msgid "Please also see the xref:add-smallrye-jwt[How to Add SmallRye JWT directly] section about using `JWTParser` without the `HTTP` support provided by `quarkus-smallrye-jwt`."
 msgstr "也请参见 link:#add-smallrye-jwt[如何直接添加SmallRye JWT] 部分，关于在没有 `quarkus-smallrye-jwt` 提供的 `HTTP` 支持的情况下使用 `JWTParser` 。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:737
+#: upstream/_guides/security-jwt.adoc:747
 #, fuzzy, no-wrap
 msgid "Token Decryption"
 msgstr "令牌解密"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:741
+#: upstream/_guides/security-jwt.adoc:751
 #, fuzzy
-msgid "If your application needs to accept the tokens with the encrypted claims or with the encrypted inner signed claims then all you have to do is to set `smallrye.jwt.decrypt.key.location` pointing to the decryption key."
+msgid "If your application needs to accept the tokens with the encrypted claims or the encrypted inner-signed claims, all you have to do is set `smallrye.jwt.decrypt.key.location` pointing to the decryption key."
 msgstr "如果你的应用程序需要接受带有加密的索赔或带有加密的内部签名索赔的令牌，那么你所要做的就是设置 `smallrye.jwt.decrypt.key.location` ，指向解密密钥。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:745
+#: upstream/_guides/security-jwt.adoc:754
 #, fuzzy
-msgid "If this is the only key property which is set then the incoming token is expected to contain the encrypted claims only.  If either `mp.jwt.verify.publickey` or `mp.jwt.verify.publickey.location` verification properties are also set then the incoming token is expected to contain the encrypted inner-signed token."
+msgid "If this is the only key property that is set, the incoming token is expected to contain the encrypted claims only.  If either `mp.jwt.verify.publickey` or `mp.jwt.verify.publickey.location` verification properties are also set then the incoming token is expected to contain the encrypted inner-signed token."
 msgstr "如果这是唯一被设置的密钥属性，那么传入的令牌预计将只包含加密的索赔。如果 `mp.jwt.verify.publickey` 或 `mp.jwt.verify.publickey.location` 验证属性也被设置，那么传入的令牌预计将包含加密的内签令牌。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:747
+#: upstream/_guides/security-jwt.adoc:756
 #, fuzzy
 msgid "See xref:security-jwt-build.adoc[Generate JWT tokens with SmallRye JWT] and learn how to generate the encrypted or inner-signed and then encrypted tokens fast."
 msgstr "请参阅 link:smallrye-jwt-build.html[使用SmallRye JWT生成JWT令] 牌，了解如何快速生成加密的或内部签名的然后加密的令牌。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:748
+#: upstream/_guides/security-jwt.adoc:757
 #, fuzzy, no-wrap
 msgid "Custom Factories"
 msgstr "定制工厂"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:752
+#: upstream/_guides/security-jwt.adoc:761
 #, fuzzy
 msgid "`io.smallrye.jwt.auth.principal.DefaultJWTCallerPrincipalFactory` is used by default to parse and verify JWT tokens and convert them to `JsonWebToken` principals.  It uses `MP JWT` and `smallrye-jwt` properties listed in the `Configuration` section to verify and customize JWT tokens."
 msgstr " `io.smallrye.jwt.auth.principal.DefaultJWTCallerPrincipalFactory` 默认用于解析和验证JWT令牌，并将其转换为 principals。它使用 和 部分中列出的属性来验证和定制JWT令牌。 `JsonWebToken` `Configuration` `MP JWT` `smallrye-jwt` "
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:754
+#: upstream/_guides/security-jwt.adoc:763
 #, fuzzy
 msgid "If you need to provide your own factory, for example, to avoid verifying the tokens again which have already been verified by the firewall, then you can either use a `ServiceLoader` mechanism by providing a `META-INF/services/io.smallrye.jwt.auth.principal.JWTCallerPrincipalFactory` resource or simply have an `Alternative` CDI bean implementation like this one:"
 msgstr "如果你需要提供你自己的工厂，例如，避免再次验证已经被防火墙验证过的令牌，那么你可以通过提供 `META-INF/services/io.smallrye.jwt.auth.principal.JWTCallerPrincipalFactory` 资源来使用 `ServiceLoader` 机制，或者干脆像这样有一个 `Alternative` CDI bean 实现。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:769
+#: upstream/_guides/security-jwt.adoc:778
 #, no-wrap
 msgid ""
 "import java.nio.charset.StandardCharsets;\n"
 "import java.util.Base64;\n"
-"import javax.annotation.Priority;\n"
-"import javax.enterprise.context.ApplicationScoped;\n"
-"import javax.enterprise.inject.Alternative;\n"
+"import jakarta.annotation.Priority;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
+"import jakarta.enterprise.inject.Alternative;\n"
 "import org.jose4j.jwt.JwtClaims;\n"
 "import org.jose4j.jwt.consumer.InvalidJwtException;\n"
 "import io.smallrye.jwt.auth.principal.DefaultJWTCallerPrincipal;\n"
@@ -1424,7 +1426,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:774
+#: upstream/_guides/security-jwt.adoc:783
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1434,7 +1436,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:786
+#: upstream/_guides/security-jwt.adoc:795
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -1451,37 +1453,37 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:788
+#: upstream/_guides/security-jwt.adoc:797
 #, fuzzy, no-wrap
 msgid "Token Propagation"
 msgstr "令牌传播"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:791
+#: upstream/_guides/security-jwt.adoc:800
 #, fuzzy
-msgid "Please see xref:security-openid-connect-client.adoc#token-propagation[Token Propagation] section about the Bearer access token propagation to the downstream services."
+msgid "Please see the xref:security-openid-connect-client.adoc#token-propagation[Token Propagation] section about the Bearer access token propagation to the downstream services."
 msgstr "关于承载访问令牌向下游服务的传播，请参见 link:security-openid-connect-client.html#token-propagation[令牌] 传播部分。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:793
+#: upstream/_guides/security-jwt.adoc:802
 #, fuzzy, no-wrap
 msgid "Testing"
 msgstr "测试"
 
 #. type: Title ====
-#: upstream/_guides/security-jwt.adoc:796
+#: upstream/_guides/security-jwt.adoc:805
 #, fuzzy, no-wrap
 msgid "Wiremock"
 msgstr "缆车"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:799
+#: upstream/_guides/security-jwt.adoc:808
 #, fuzzy
-msgid "If you configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Wiremock` section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "If you configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Wiremock` section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr "如果你配置 `mp.jwt.verify.publickey.location` ，以指向HTTPS或基于HTTP的JsonWebKey（JWK）集，那么你可以使用与 link:security-openid-connect.html#integration-testing[OpenID Connect Bearer Token集成测试] `Wiremock` 部分所述相同的方法，但只需改变 `application.properties` ，以使用MP JWT配置属性来代替。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:805
+#: upstream/_guides/security-jwt.adoc:814
 #, no-wrap
 msgid ""
 "# keycloak.url is set by OidcWiremockTestResource\n"
@@ -1490,19 +1492,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/security-jwt.adoc:808
+#: upstream/_guides/security-jwt.adoc:817
 #, fuzzy, no-wrap
 msgid "Keycloak"
 msgstr "钥匙环"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:811
+#: upstream/_guides/security-jwt.adoc:820
 #, fuzzy
-msgid "If you work with Keycloak and configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing-keycloak[OpenID Connect Bearer Token Integration testing] Keycloak section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "If you work with Keycloak and configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] Keycloak section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr "如果你与Keycloak合作，并配置 `mp.jwt.verify.publickey.location` ，以指向HTTPS或基于HTTP的JsonWebKey（JWK）集，那么你可以使用与 link:security-openid-connect.html#integration-testing-keycloak[OpenID Connect Bearer Token集成测试] `Keycloak` 部分中描述的相同方法，但只需改变 `application.properties` ，以使用MP JWT配置属性来代替。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:817
+#: upstream/_guides/security-jwt.adoc:826
 #, no-wrap
 msgid ""
 "# keycloak.url is set by DevServices for Keycloak\n"
@@ -1511,25 +1513,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:820
+#: upstream/_guides/security-jwt.adoc:829
 #, fuzzy
 msgid "Note that the tokens issued by Keycloak have an `iss` (issuer) claim set to the realm endpoint address."
 msgstr "请注意，Keycloak发行的令牌有一个 `iss` （发行者）声明，设置为境界端点地址。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:822
+#: upstream/_guides/security-jwt.adoc:831
 #, fuzzy
-msgid "If your Quarkus application is running in a docker container then it may share a network interface with a Keycloak docker container launched by DevServices for Keycloak, with the Quarkus application and Keycloak communicating with each other via an internal shared docker network."
+msgid "If your Quarkus application is running in a docker container, it may share a network interface with a Keycloak docker container launched by DevServices for Keycloak, with the Quarkus application and Keycloak communicating with each other via an internal shared docker network."
 msgstr "如果你的Quarkus应用程序在docker容器中运行，那么它可能与DevServices for Keycloak启动的Keycloak docker容器共享一个网络接口，Quarkus应用程序和Keycloak通过内部共享docker网络相互通信。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:824
+#: upstream/_guides/security-jwt.adoc:833
 #, fuzzy
 msgid "In such cases, use the following configuration instead:"
 msgstr "在这种情况下，请使用以下配置代替。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:830
+#: upstream/_guides/security-jwt.adoc:839
 #, no-wrap
 msgid ""
 "# keycloak.url is set by DevServices for Keycloak,\n"
@@ -1538,7 +1540,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:833
+#: upstream/_guides/security-jwt.adoc:842
 #, no-wrap
 msgid ""
 "# Issuer is set to the docker bridge localhost endpoint address represented by the `client.quarkus.oidc.auth-server-url` property\n"
@@ -1546,19 +1548,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/security-jwt.adoc:836
+#: upstream/_guides/security-jwt.adoc:845
 #, fuzzy, no-wrap
 msgid "Local Public Key"
 msgstr "本地公钥"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:839
+#: upstream/_guides/security-jwt.adoc:848
 #, fuzzy
-msgid "You can use the same approach as described in the xref:security-openid-connect.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Local Public Key` section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "You can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Local Public Key` section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr "你可以使用与 link:security-openid-connect.html#integration-testing.adoc[OpenID Connect承载令牌集成测试] `Local Public Key` 部分所述相同的方法，但只需改变 `application.properties` ，以使用MP JWT配置属性代替。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:845
+#: upstream/_guides/security-jwt.adoc:854
 #, no-wrap
 msgid ""
 "mp.jwt.verify.publickey=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlivFI8qB4D0y2jy0CfEqFyy46R0o7S8TKpsx5xbHKoU1VWg6QkQm+ntyIv1p4kE1sPEQO73+HY8+Bzs75XwRTYL1BmR1w8J5hmjVWjc6R2BTBGAYRPFRhor3kpM6ni2SPmNNhurEAHw7TaqszP5eUF/F9+KEBWkwVta+PZ37bwqSE4sCb1soZFrVz/UT/LF4tYpuVYt3YbqToZ3pZOZ9AX2o1GCG3xwOjkc4x0W7ezbQZdC9iftPxVHR8irOijJRRjcPDtA6vPKpzLl6CyYnsIYPd99ltwxTHjr3npfv/3Lw50bAkbT4HeLFxTx4flEoZLKO/g0bAoV2uqBhkA9xnQIDAQAB\n"
@@ -1567,7 +1569,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:848
+#: upstream/_guides/security-jwt.adoc:857
 #, no-wrap
 msgid ""
 "# required to sign the tokens\n"
@@ -1575,19 +1577,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/security-jwt.adoc:851
+#: upstream/_guides/security-jwt.adoc:860
 #, fuzzy, no-wrap
 msgid "TestSecurity annotation"
 msgstr "TestSecurity注解"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:854
+#: upstream/_guides/security-jwt.adoc:863
 #, fuzzy
 msgid "Add the following dependency:"
 msgstr "添加以下依赖关系。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:863
+#: upstream/_guides/security-jwt.adoc:872
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1598,19 +1600,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:869
+#: upstream/_guides/security-jwt.adoc:878
 #, no-wrap
 msgid "testImplementation(\"io.quarkus:quarkus-test-security-jwt\")\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:872
+#: upstream/_guides/security-jwt.adoc:881
 #, fuzzy
 msgid "and write a test code like this one:"
 msgstr "并写一个像这样的测试代码。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:883
+#: upstream/_guides/security-jwt.adoc:892
 #, no-wrap
 msgid ""
 "import static org.hamcrest.Matchers.is;\n"
@@ -1624,7 +1626,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:887
+#: upstream/_guides/security-jwt.adoc:896
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -1633,7 +1635,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:894
+#: upstream/_guides/security-jwt.adoc:903
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -1645,7 +1647,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:904
+#: upstream/_guides/security-jwt.adoc:913
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -1660,19 +1662,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:906
+#: upstream/_guides/security-jwt.adoc:915
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:909
+#: upstream/_guides/security-jwt.adoc:918
 #, fuzzy
 msgid "where `ProtectedResource` class may look like this:"
 msgstr "其中 `ProtectedResource` 类可能看起来像这样。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:915
+#: upstream/_guides/security-jwt.adoc:924
 #, no-wrap
 msgid ""
 "@Path(\"/web-app\")\n"
@@ -1681,7 +1683,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:918
+#: upstream/_guides/security-jwt.adoc:927
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -1689,7 +1691,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:924
+#: upstream/_guides/security-jwt.adoc:933
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1700,7 +1702,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:932
+#: upstream/_guides/security-jwt.adoc:941
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1713,18 +1715,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:936
+#: upstream/_guides/security-jwt.adoc:945
 #, fuzzy
 msgid "Note that `@TestSecurity` annotation must always be used and its `user` property is returned as `JsonWebToken.getName()` and `roles` property - as `JsonWebToken.getGroups()`.  `@JwtSecurity` annotation is optional and can be used to set the additional token claims."
 msgstr "请注意，必须始终使用 `@TestSecurity` 注释，其 `user` 属性作为 `JsonWebToken.getName()` ， `roles` 属性-作为 `JsonWebToken.getGroups()` 。 `@JwtSecurity` 注释是可选的，可以用来设置额外的标记要求。"
 
 #. type: delimited block =
-#: upstream/_guides/security-jwt.adoc:940
-msgid "`@TestSecurity` and `@JwtSecurity` can be combined in a meta-annotation, for example like so:"
+#: upstream/_guides/security-jwt.adoc:949
+msgid "`@TestSecurity` and `@JwtSecurity` can be combined in a meta-annotation, as follows:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:952
+#: upstream/_guides/security-jwt.adoc:961
 #, no-wrap
 msgid ""
 "    @Retention(RetentionPolicy.RUNTIME)\n"
@@ -1739,30 +1741,30 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:954
+#: upstream/_guides/security-jwt.adoc:963
 #, no-wrap
 msgid "    }\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:957
+#: upstream/_guides/security-jwt.adoc:966
 msgid "This is particularly useful if the same set of security settings needs to be used in multiple test methods."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:959
+#: upstream/_guides/security-jwt.adoc:968
 #, fuzzy, no-wrap
 msgid "How to check the errors in the logs"
 msgstr "如何检查日志中的错误"
 
 #. type: delimited block =
-#: upstream/_guides/security-jwt.adoc:962
+#: upstream/_guides/security-jwt.adoc:971
 #, fuzzy
 msgid "Please enable `io.quarkus.smallrye.jwt.runtime.auth.MpJwtValidator` `TRACE` level logging to see more details about the token verification or decryption errors:"
 msgstr "请启用 `io.quarkus.smallrye.jwt.runtime.auth.MpJwtValidator` `TRACE` 级日志，以查看有关令牌验证或解密错误的更多细节。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:967
+#: upstream/_guides/security-jwt.adoc:976
 #, no-wrap
 msgid ""
 "quarkus.log.category.\"io.quarkus.smallrye.jwt.runtime.auth.MpJwtValidator\".level=TRACE\n"
@@ -1770,43 +1772,51 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:969
+#: upstream/_guides/security-jwt.adoc:978
 #, fuzzy, no-wrap
 msgid "Proactive Authentication"
 msgstr "主动认证"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:972
+#: upstream/_guides/security-jwt.adoc:981
 #, fuzzy
-msgid "If you'd like to skip the token verification when the public endpoint methods are invoked then please disable the xref:security-built-in-authentication-support-concept.adoc#proactive-authentication[proactive authentication]."
+msgid "If you'd like to skip the token verification when the public endpoint methods are invoked, disable the xref:security-proactive-authentication-concept.adoc[proactive authentication]."
 msgstr "如果你想在调用公共端点方法时跳过令牌验证，那么请停用 link:security-built-in-authentication.html#proactive-authentication[主动验证] 。"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:974
+#: upstream/_guides/security-jwt.adoc:983
 #, fuzzy
 msgid "Note that you can't access the injected `JsonWebToken` in the public methods if the token verification has not been done."
 msgstr "请注意，如果没有进行令牌验证，你就不能在公共方法中访问注入的 `JsonWebToken` 。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:976
+#: upstream/_guides/security-jwt.adoc:985
 #, fuzzy, no-wrap
 msgid "How to Add SmallRye JWT directly"
 msgstr "如何直接添加SmallRye JWT"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:979
-#, fuzzy
-msgid "If you work with Quarkus extensions which do not support `HTTP` (for example, `Quarkus GRPC`) or provide their own extension specific `HTTP` support conflicting with the one offered by `quarkus-smallrye-jwt` and `Vert.x HTTP` (example, `Quarkus Amazon Lambda`) and you would like to <<jwt-parser, Parse and Verify JsonWebToken with JWTParser>> then please use `smallrye-jwt` directly instead of `quarkus-smallrye-jwt`."
-msgstr "如果你使用的Quarkus扩展不支持 `HTTP` （例如： `Quarkus GRPC` ），或者提供他们自己的扩展特定的 `HTTP` ，与 `quarkus-smallrye-jwt` 和 `Vert.x HTTP` 提供的支持相冲突（例如： `Quarkus Amazon Lambda` ），并且你想 link:#jwt-parser[用JWTParser解析和验证JsonWebToken] ，那么请直接使用 `smallrye-jwt` 而不是 `quarkus-smallrye-jwt` 。"
+#: upstream/_guides/security-jwt.adoc:988
+msgid "To xref:jwt-parser[parse and verify JsonWebToken with JWTParser], use `smallrye-jwt` instead of `quarkus-smallrye-jwt` directly for the following situations:"
+msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:981
-#, fuzzy
-msgid "Add this dependency:"
-msgstr "添加这个依赖性。"
+#: upstream/_guides/security-jwt.adoc:990
+msgid "You work with Quarkus extensions that do not support `HTTP`, such as `Quarkus GRPC`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-jwt.adoc:991
+msgid "You provide an extension-specific `HTTP`, the support of which conflicts with the support of those offered by `quarkus-smallrye-jwt` and `Vert.x HTTP`, such as `Quarkus Amazon Lambda`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-jwt.adoc:993
+msgid "Start with adding the `smallrye-jwt` dependency:"
+msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:989
+#: upstream/_guides/security-jwt.adoc:1001
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1816,19 +1826,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:995
+#: upstream/_guides/security-jwt.adoc:1007
 #, no-wrap
 msgid "implementation(\"io.smallrye:smallrye-jwt\")\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:998
+#: upstream/_guides/security-jwt.adoc:1010
 #, fuzzy
 msgid "and update `application.properties` to get all the CDI producers provided by `smallrye-jwt` included as follows:"
 msgstr "并更新 `application.properties` ，以获得所有由 `smallrye-jwt` 提供的CDI生产者，包括如下。"
 
 #. type: delimited block -
-#: upstream/_guides/security-jwt.adoc:1003
+#: upstream/_guides/security-jwt.adoc:1015
 #, no-wrap
 msgid ""
 "quarkus.index-dependency.smallrye-jwt.group-id=io.smallrye\n"
@@ -1836,765 +1846,814 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/security-jwt.adoc:1006
+#: upstream/_guides/security-jwt.adoc:1018
 #, fuzzy, no-wrap
 msgid "Configuration Reference"
 msgstr "配置参考"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:1008
+#: upstream/_guides/security-jwt.adoc:1020
 #, fuzzy, no-wrap
 msgid "Quarkus configuration"
 msgstr "Quarkus配置"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:1012
+#: upstream/_guides/security-jwt.adoc:1024
 #, fuzzy, no-wrap
 msgid "MicroProfile JWT configuration"
 msgstr "MicroProfile JWT配置"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1016
-#: upstream/_guides/security-jwt.adoc:1033
+#: upstream/_guides/security-jwt.adoc:1028
+#: upstream/_guides/security-jwt.adoc:1047
 #, fuzzy, no-wrap
 msgid "Property Nam"
 msgstr "财产南"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1016
-#: upstream/_guides/security-jwt.adoc:1033
+#: upstream/_guides/security-jwt.adoc:1028
+#: upstream/_guides/security-jwt.adoc:1047
 #, fuzzy, no-wrap
 msgid "Default"
 msgstr "默认情况下"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1017
-#: upstream/_guides/security-jwt.adoc:1034
+#: upstream/_guides/security-jwt.adoc:1029
+#: upstream/_guides/security-jwt.adoc:1048
 #, fuzzy, no-wrap
 msgid "Description"
 msgstr "描述"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1017
+#: upstream/_guides/security-jwt.adoc:1029
 #, fuzzy, no-wrap
 msgid "mp.jwt.verify.publickey"
 msgstr "mp.jwt.verify.publickey"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1017
-#: upstream/_guides/security-jwt.adoc:1018
-#: upstream/_guides/security-jwt.adoc:1020
-#: upstream/_guides/security-jwt.adoc:1021
-#: upstream/_guides/security-jwt.adoc:1022
-#: upstream/_guides/security-jwt.adoc:1024
-#: upstream/_guides/security-jwt.adoc:1040
-#: upstream/_guides/security-jwt.adoc:1043
-#: upstream/_guides/security-jwt.adoc:1044
-#: upstream/_guides/security-jwt.adoc:1046
-#: upstream/_guides/security-jwt.adoc:1047
-#: upstream/_guides/security-jwt.adoc:1048
-#: upstream/_guides/security-jwt.adoc:1050
+#: upstream/_guides/security-jwt.adoc:1029
+#: upstream/_guides/security-jwt.adoc:1030
+#: upstream/_guides/security-jwt.adoc:1032
+#: upstream/_guides/security-jwt.adoc:1033
+#: upstream/_guides/security-jwt.adoc:1034
+#: upstream/_guides/security-jwt.adoc:1038
 #: upstream/_guides/security-jwt.adoc:1054
-#: upstream/_guides/security-jwt.adoc:1055
-#: upstream/_guides/security-jwt.adoc:1056
+#: upstream/_guides/security-jwt.adoc:1057
 #: upstream/_guides/security-jwt.adoc:1058
-#: upstream/_guides/security-jwt.adoc:1059
 #: upstream/_guides/security-jwt.adoc:1060
+#: upstream/_guides/security-jwt.adoc:1061
 #: upstream/_guides/security-jwt.adoc:1062
-#: upstream/_guides/security-jwt.adoc:1063
+#: upstream/_guides/security-jwt.adoc:1064
+#: upstream/_guides/security-jwt.adoc:1068
+#: upstream/_guides/security-jwt.adoc:1069
+#: upstream/_guides/security-jwt.adoc:1070
+#: upstream/_guides/security-jwt.adoc:1072
+#: upstream/_guides/security-jwt.adoc:1073
+#: upstream/_guides/security-jwt.adoc:1074
+#: upstream/_guides/security-jwt.adoc:1076
+#: upstream/_guides/security-jwt.adoc:1077
 #, fuzzy, no-wrap
 msgid "non"
 msgstr "非"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1018
+#: upstream/_guides/security-jwt.adoc:1030
 #, fuzzy, no-wrap
-msgid "The `mp.jwt.verify.publickey` config property allows the Public Key text itself to be supplied as a string.  The Public Key will be parsed from the supplied string in the order defined in section <<Supported Public Key Formats>>."
+msgid "The `mp.jwt.verify.publickey` config property allows the Public Key text itself to be supplied as a string.  The Public Key will be parsed from the supplied string in the order defined in the xref:supported-public-key-formats[Supported Public Key Formats] section."
 msgstr " `mp.jwt.verify.publickey` 配置属性允许将公钥文本本身作为一个字符串提供。公钥将按照 link:#Supported Public Key Formats[[支持的公钥格式]] 一节中定义的顺序从提供的字符串中解析出来。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1018
+#: upstream/_guides/security-jwt.adoc:1030
 #, fuzzy, no-wrap
 msgid "mp.jwt.verify.publickey.location"
 msgstr "mp.jwt.verify.publickey.location"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1019
+#: upstream/_guides/security-jwt.adoc:1031
 #, fuzzy, no-wrap
 msgid "Config property allows for an external or internal location of Public Key to be specified.  The value may be a relative path or a URL. If the value points to an HTTPS based JWK set then, for it to work in native mode, the `quarkus.ssl.native` property must also be set to `true`, see xref:native-and-ssl.adoc[Using SSL With Native Executables] for more details."
 msgstr "配置属性允许指定公钥的外部或内部位置。该值可以是一个相对路径或一个URL。如果该值指向一个基于HTTPS的JWK集，那么为了让它在本地模式下工作， `quarkus.ssl.native` 属性也必须被设置为 `true` ，更多细节请参见 link:native-and-ssl.html[使用SSL与本地可执行程序] 。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1019
+#: upstream/_guides/security-jwt.adoc:1031
 #, fuzzy, no-wrap
 msgid "mp.jwt.verify.publickey.algorith"
 msgstr "mp.jwt.verify.publickey.算法"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1019
+#: upstream/_guides/security-jwt.adoc:1031
 #, fuzzy, no-wrap
 msgid "`RS256`"
 msgstr " `RS256` "
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1020
+#: upstream/_guides/security-jwt.adoc:1032
 #, fuzzy, no-wrap
 msgid "Signature algorithm. Set it to `ES256` to support the Elliptic Curve signature algorithm."
 msgstr "签名算法。将其设置为 `ES256` ，以支持椭圆曲线签名算法。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1020
+#: upstream/_guides/security-jwt.adoc:1032
 #, fuzzy, no-wrap
 msgid "mp.jwt.decrypt.key.location"
 msgstr "mp.jwt.decrypt.key.location"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1021
+#: upstream/_guides/security-jwt.adoc:1033
 #, fuzzy, no-wrap
 msgid "Config property allows for an external or internal location of Private Decryption Key to be specified."
 msgstr "配置属性允许指定私人解密密钥的外部或内部位置。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1021
+#: upstream/_guides/security-jwt.adoc:1033
 #, fuzzy, no-wrap
 msgid "mp.jwt.verify.issuer"
 msgstr "mp.jwt.verify.issuer"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1022
+#: upstream/_guides/security-jwt.adoc:1034
 #, fuzzy, no-wrap
 msgid "Config property specifies the value of the `iss` (issuer) claim of the JWT that the server will accept as valid."
 msgstr "配置属性指定了服务器将接受为有效的JWT的 `iss` （签发者）声明的值。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1022
+#: upstream/_guides/security-jwt.adoc:1034
 #, fuzzy, no-wrap
 msgid "mp.jwt.verify.audience"
 msgstr "mp.jwt.verify.audience"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1023
+#: upstream/_guides/security-jwt.adoc:1035
 #, fuzzy, no-wrap
 msgid "Comma separated list of the audiences that a token `aud` claim may contain."
 msgstr "逗号分隔的列表，其中列出了一个代币 `aud` 索赔可能包含的受众。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1023
+#: upstream/_guides/security-jwt.adoc:1035
+#, fuzzy, no-wrap
+msgid "mp.jwt.verify.clock.skew"
+msgstr "mp.jwt.verify.publickey"
+
+#. type: Table
+#: upstream/_guides/security-jwt.adoc:1035
+#, no-wrap
+msgid "`60`"
+msgstr ""
+
+#. type: Table
+#: upstream/_guides/security-jwt.adoc:1036
+#, no-wrap
+msgid "Clock skew in seconds used during the token expiration and age verification. An expired token is accepted if the current time is within the number of seconds specified by this property after the token expiration time. The default value is 60 seconds."
+msgstr ""
+
+#. type: Table
+#: upstream/_guides/security-jwt.adoc:1036
+#, fuzzy, no-wrap
+msgid "mp.jwt.verify.token.ag"
+msgstr "mp.jwt.verify.audience"
+
+#. type: Table
+#: upstream/_guides/security-jwt.adoc:1036
+#, no-wrap
+msgid "`none`"
+msgstr ""
+
+#. type: Table
+#: upstream/_guides/security-jwt.adoc:1037
+#, no-wrap
+msgid "Number of seconds that must not elapse since the token `iat` (issued at) time."
+msgstr ""
+
+#. type: Table
+#: upstream/_guides/security-jwt.adoc:1037
 #, fuzzy, no-wrap
 msgid "mp.jwt.token.header"
 msgstr "mp.jwt.token.header"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1023
-#: upstream/_guides/security-jwt.adoc:1039
+#: upstream/_guides/security-jwt.adoc:1037
+#: upstream/_guides/security-jwt.adoc:1053
 #, fuzzy, no-wrap
 msgid "`Authorization`"
 msgstr " `Authorization` "
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1024
+#: upstream/_guides/security-jwt.adoc:1038
 #, fuzzy, no-wrap
 msgid "Set this property if another header such as `Cookie` is used to pass the token."
 msgstr "如果使用另一个头（如 `Cookie` ）来传递令牌，则设置此属性。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1024
+#: upstream/_guides/security-jwt.adoc:1038
 #, fuzzy, no-wrap
 msgid "mp.jwt.token.cooki"
 msgstr "mp.jwt.token.cooki"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1025
+#: upstream/_guides/security-jwt.adoc:1039
 #, fuzzy, no-wrap
 msgid "Name of the cookie containing a token. This property will be effective only if `mp.jwt.token.header` is set to `Cookie`."
 msgstr "包含令牌的cookie的名称。只有当 `mp.jwt.token.header` 被设置为 `Cookie` ，该属性才会有效。"
 
 #. type: Title ===
-#: upstream/_guides/security-jwt.adoc:1027
+#: upstream/_guides/security-jwt.adoc:1041
 #, fuzzy, no-wrap
 msgid "Additional SmallRye JWT configuration"
 msgstr "额外的SmallRye JWT配置"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1030
+#: upstream/_guides/security-jwt.adoc:1044
 #, fuzzy
 msgid "SmallRye JWT provides more properties which can be used to customize the token processing:"
 msgstr "SmallRye JWT提供了更多的属性，可以用来定制令牌处理。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1034
+#: upstream/_guides/security-jwt.adoc:1048
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.verify.key.location"
 msgstr "Smallrye.jwt.verify.key.location"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1034
+#: upstream/_guides/security-jwt.adoc:1048
 #, fuzzy, no-wrap
 msgid "NONE"
 msgstr "无"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1035
+#: upstream/_guides/security-jwt.adoc:1049
 #, fuzzy, no-wrap
 msgid "Location of the verification key which can point to both public and secret keys. Secret keys can only be in the JWK format. Note that 'mp.jwt.verify.publickey.location' will be ignored if this property is set."
 msgstr "验证密钥的位置，可以指向公钥和秘钥。秘密密钥只能是JWK格式。注意，如果设置了这个属性，'mp.jwt.verify.publickey.location'将被忽略。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1035
+#: upstream/_guides/security-jwt.adoc:1049
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.verify.algorith"
 msgstr "Smallrye.jwt.verify.algorithm"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1036
+#: upstream/_guides/security-jwt.adoc:1050
 #, fuzzy, no-wrap
 msgid "Signature algorithm. This property should only be used for setting a required symmetric algorithm such as `HS256`. It is deprecated for setting asymmetric algorithms such as `ES256` - use 'mp.jwt.verify.publickey.algorithm' instead."
 msgstr "签名算法。此属性只能用于设置所需的对称算法，如 `HS256` 。对于设置非对称算法，如 `ES256` ，它已被弃用 - 使用'mp.jwt.verify.publickey.algorithm'代替。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1036
+#: upstream/_guides/security-jwt.adoc:1050
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.verify.key-format"
 msgstr "Smallrye.jwt.verify.key-format"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1036
+#: upstream/_guides/security-jwt.adoc:1050
 #, fuzzy, no-wrap
 msgid "`ANY`"
 msgstr " `ANY` "
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1037
+#: upstream/_guides/security-jwt.adoc:1051
 #, fuzzy, no-wrap
 msgid "Set this property to a specific key format such as `PEM_KEY`, `PEM_CERTIFICATE`, `JWK` or `JWK_BASE64URL` to optimize the way the verification key is loaded."
 msgstr "将此属性设置为特定的密钥格式，如 `PEM_KEY` , `PEM_CERTIFICATE` , `JWK` 或 `JWK_BASE64URL` ，以优化验证密钥的加载方式。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1037
+#: upstream/_guides/security-jwt.adoc:1051
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.verify.relax-key-validation"
 msgstr "Smallrye.jwt.verify.relax-key-validation"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1037
-#: upstream/_guides/security-jwt.adoc:1038
-#: upstream/_guides/security-jwt.adoc:1041
-#: upstream/_guides/security-jwt.adoc:1061
+#: upstream/_guides/security-jwt.adoc:1051
+#: upstream/_guides/security-jwt.adoc:1052
+#: upstream/_guides/security-jwt.adoc:1055
+#: upstream/_guides/security-jwt.adoc:1075
 #, fuzzy, no-wrap
 msgid "fals"
 msgstr "虚假的"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1038
+#: upstream/_guides/security-jwt.adoc:1052
 #, fuzzy, no-wrap
 msgid "Relax the validation of the verification keys, setting this property to `true` will allow public RSA keys with the length less than 2048 bit."
 msgstr "放松验证密钥的验证，将此属性设置为 `true` ，将允许长度小于2048比特的公共RSA密钥。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1038
+#: upstream/_guides/security-jwt.adoc:1052
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.verify.certificate-thumbprint"
 msgstr "Smallrye.jwt.verify.certificate-thumbprint"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1039
+#: upstream/_guides/security-jwt.adoc:1053
 #, fuzzy, no-wrap
 msgid "If this property is enabled then a signed token must contain either 'x5t' or 'x5t#S256' X509Certificate thumbprint headers. Verification keys can only be in JWK or PEM Certificate key formats in this case. JWK keys must have a 'x5c' (Base64-encoded X509Certificate) property set."
 msgstr "如果此属性被启用，那么签名的令牌必须包含'x5t'或'x5t#S256'X509Certificate拇指印头。在这种情况下，验证密钥只能是JWK或PEM证书密钥格式。JWK密钥必须有一个'x5c'（Base64编码的X509Certificate）属性设置。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1039
+#: upstream/_guides/security-jwt.adoc:1053
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.token.header"
 msgstr "Smallrye.jwt.token.header"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1040
+#: upstream/_guides/security-jwt.adoc:1054
 #, fuzzy, no-wrap
 msgid "Set this property if another header such as `Cookie` is used to pass the token. This property is deprecated - use 'mp.jwt.token.header'."
 msgstr "如果使用另一个头，如 `Cookie` ，来传递令牌，则设置此属性。此属性已被废弃--使用'mp.jwt.token.header'。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1040
+#: upstream/_guides/security-jwt.adoc:1054
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.token.cooki"
 msgstr "Smallrye.jwt.token.cooki"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1041
+#: upstream/_guides/security-jwt.adoc:1055
 #, fuzzy, no-wrap
 msgid "Name of the cookie containing a token. This property will be effective only if `smallrye.jwt.token.header` is set to `Cookie`. This property is deprecated - use 'mp.jwt.token.cookie`."
 msgstr "包含token的cookie的名称。该属性只有在 `smallrye.jwt.token.header` 被设置为 `Cookie` 时才有效。该属性已被废弃--使用'mp.jwt.token.cookie`。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1041
+#: upstream/_guides/security-jwt.adoc:1055
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.always-check-authorization"
 msgstr "Smallrye.jwt.always-check-authorization"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1042
+#: upstream/_guides/security-jwt.adoc:1056
 #, fuzzy, no-wrap
 msgid "Set this property to `true` for `Authorization` header be checked even if the `smallrye.jwt.token.header` is set to `Cookie` but no cookie with a `smallrye.jwt.token.cookie` name exists."
 msgstr "将此属性设置为 `true` ，即使 `smallrye.jwt.token.header` 被设置为 `Cookie` ，但不存在名称为 `smallrye.jwt.token.cookie` 的cookie， `Authorization` 头也会被检查。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1042
+#: upstream/_guides/security-jwt.adoc:1056
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.token.scheme"
 msgstr "Smallrye.jwt.token.scheme"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1042
+#: upstream/_guides/security-jwt.adoc:1056
 #, fuzzy, no-wrap
 msgid "`Bearer`"
 msgstr " `Bearer` "
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1043
+#: upstream/_guides/security-jwt.adoc:1057
 #, fuzzy, no-wrap
 msgid "Comma-separated list containing an alternative single or multiple schemes, for example, `DPoP`."
 msgstr "逗号分隔的列表，其中包含一个替代的单一或多个方案，例如， `DPoP` 。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1043
+#: upstream/_guides/security-jwt.adoc:1057
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.token.ki"
 msgstr "Smallrye.jwt.token.ki"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1044
+#: upstream/_guides/security-jwt.adoc:1058
 #, fuzzy, no-wrap
 msgid "Key identifier. If it is set then the verification JWK key as well every JWT token must have a matching `kid` header."
 msgstr "密钥标识符。如果它被设置，那么验证JWK密钥以及每个JWT标记必须有一个匹配的 `kid` 头。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1044
+#: upstream/_guides/security-jwt.adoc:1058
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.time-to-liv"
 msgstr "Smallrye.jwt.time-to-liv"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1045
+#: upstream/_guides/security-jwt.adoc:1059
 #, fuzzy, no-wrap
 msgid "The maximum number of seconds that a JWT may be issued for use. Effectively, the difference between the expiration date of the JWT and the issued at date must not exceed this value. Setting this property to a non-positive value relaxes the requirement for the token to have a valid 'iat' (issued at) claim."
 msgstr "JWT可能被发布使用的最大秒数。实际上，JWT的到期日和签发日期之间的差异不得超过这个值。将此属性设置为非正值，可以放松对令牌具有有效的 \"iat\"（签发日期）主张的要求。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1045
+#: upstream/_guides/security-jwt.adoc:1059
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.require.named-principa"
 msgstr "Smallrye.jwt.require.named-principa"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1045
+#: upstream/_guides/security-jwt.adoc:1059
 #, fuzzy, no-wrap
 msgid "`true`"
 msgstr " `true` "
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1046
+#: upstream/_guides/security-jwt.adoc:1060
 #, fuzzy, no-wrap
 msgid "If an application relies on `java.security.Principal` returning a name then a token must have a `upn` or `preferred_username` or `sub` claim set. Setting this property will result in SmallRye JWT throwing an exception if none of these claims is available for the application code to reliably deal with a non-null `Principal` name."
 msgstr "如果一个应用程序依赖于 `java.security.Principal` ，返回一个名字，那么一个标记必须有一个 `upn` 、 `preferred_username` 或 `sub` 的要求。如果应用程序代码没有这些要求来可靠地处理非空的 `Principal` 名称，设置此属性将导致SmallRye JWT抛出一个异常。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1046
+#: upstream/_guides/security-jwt.adoc:1060
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.path.sub"
 msgstr "Smallrye.jwt.path.sub"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1047
+#: upstream/_guides/security-jwt.adoc:1061
 #, fuzzy, no-wrap
 msgid "Path to the claim containing the subject name. It starts from the top level JSON object and can contain multiple segments where each segment represents a JSON object name only, example: `realms/subject`. This property can be used if a token has no 'sub' claim but has the subject set in a different claim. Use double quotes with the namespace qualified claims."
 msgstr "包含主题名称的索赔的路径。它从顶级的JSON对象开始，可以包含多个段，每个段只代表一个JSON对象名称，例如： `realms/subject` 。如果一个标记没有 \"子 \"索赔，但在一个不同的索赔中设置了主题，则可以使用这个属性。在命名空间限定的索赔中使用双引号。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1047
+#: upstream/_guides/security-jwt.adoc:1061
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.claims.sub"
 msgstr "Smallrye.jwt.claim.sub"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1048
+#: upstream/_guides/security-jwt.adoc:1062
 #, fuzzy, no-wrap
 msgid "This property can be used to set a default sub claim value when the current token has no standard or custom `sub` claim available. Effectively this property can be used to customize `java.security.Principal` name if no `upn` or `preferred_username` or `sub` claim is set."
 msgstr "当当前令牌没有可用的标准或自定义 `sub` 索赔时，此属性可用于设置默认的子索赔值。如果没有设置 `upn` 或 `preferred_username` 或 `sub` 索赔，该属性可有效地用于自定义 `java.security.Principal` 名称。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1048
+#: upstream/_guides/security-jwt.adoc:1062
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.path.group"
 msgstr "Smallrye.jwt.path.group"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1049
+#: upstream/_guides/security-jwt.adoc:1063
 #, fuzzy, no-wrap
 msgid "Path to the claim containing the groups. It starts from the top level JSON object and can contain multiple segments where each segment represents a JSON object name only, example: `realm/groups`. This property can be used if a token has no 'groups' claim but has the groups set in a different claim. Use double quotes with the namespace qualified claims."
 msgstr "到包含组的索赔的路径。它从顶级的JSON对象开始，可以包含多个段，每个段只代表一个JSON对象的名称，例如： `realm/groups` 。如果一个标记没有 \"组 \"声明，但在一个不同的声明中设置了组，就可以使用这个属性。使用双引号与命名空间限定的索赔。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1049
+#: upstream/_guides/security-jwt.adoc:1063
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.groups-separator"
 msgstr "Smallrye.jwt.group-separator"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1049
+#: upstream/_guides/security-jwt.adoc:1063
 #, fuzzy, no-wrap
 msgid "' '"
 msgstr "' '"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1050
+#: upstream/_guides/security-jwt.adoc:1064
 #, fuzzy, no-wrap
 msgid "Separator for splitting a string which may contain multiple group values. It will only be used if the `smallrye.jwt.path.groups` property points to a custom claim whose value is a string. The default value is a single space because a standard OAuth2 `scope` claim may contain a space separated sequence."
 msgstr "分隔符，用于分割一个可能包含多个组值的字符串。只有当 `smallrye.jwt.path.groups` 属性指向一个值为字符串的自定义请求时，它才会被使用。默认值是一个单一的空格，因为一个标准的OAuth2 `scope` claim可能包含一个空格分隔的序列。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1050
+#: upstream/_guides/security-jwt.adoc:1064
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.claims.group"
 msgstr "Smallrye.jwt.claim.group"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1051
+#: upstream/_guides/security-jwt.adoc:1065
 #, fuzzy, no-wrap
 msgid "This property can be used to set a default groups claim value when the current token has no standard or custom groups claim available."
 msgstr "当当前令牌没有可用的标准或自定义组索赔时，此属性可用于设置默认组索赔值。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1051
+#: upstream/_guides/security-jwt.adoc:1065
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.jwks.refresh-interva"
 msgstr "Smallrye.jwt.jwks.refresh-interva"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1051
-#: upstream/_guides/security-jwt.adoc:1053
+#: upstream/_guides/security-jwt.adoc:1065
 #, fuzzy, no-wrap
 msgid "60"
 msgstr "60"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1052
+#: upstream/_guides/security-jwt.adoc:1066
 #, fuzzy, no-wrap
 msgid "JWK cache refresh interval in minutes. It will be ignored unless the `mp.jwt.verify.publickey.location` points to the HTTP or HTTPS URL based JWK set and no HTTP `Cache-Control` response header with a positive `max-age` parameter value is returned from a JWK HTTPS endpoint."
 msgstr "JWK缓存刷新时间间隔，单位是分钟。它将被忽略，除非 `mp.jwt.verify.publickey.location` 指向基于HTTP或HTTPS URL的JWK设置，并且没有从JWK HTTPS端点返回具有正 `max-age` 参数值的HTTP `Cache-Control` 响应头。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1052
+#: upstream/_guides/security-jwt.adoc:1066
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.jwks.forced-refresh-interva"
 msgstr "Smallrye.jwt.jwks.forced-refresh-interva"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1052
+#: upstream/_guides/security-jwt.adoc:1066
 #, fuzzy, no-wrap
 msgid "30"
 msgstr "30"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1053
+#: upstream/_guides/security-jwt.adoc:1067
 #, fuzzy, no-wrap
 msgid "Forced JWK cache refresh interval in minutes which is used to restrict the frequency of the forced refresh attempts which may happen when the token verification fails due to the cache having no JWK key with a `kid` property matching the current token's `kid` header. It will be ignored unless the `mp.jwt.verify.publickey.location` points to the HTTP or HTTPS URL based JWK set."
 msgstr "强制刷新JWK缓存的时间间隔，以分钟为单位，用于限制强制刷新尝试的频率，这可能发生在令牌验证失败时，因为缓存中没有与当前令牌的 `kid` 属性相匹配的JWK密钥， `kid` 标头。除非 `mp.jwt.verify.publickey.location` 指向基于HTTP或HTTPS URL的JWK集，否则它将被忽略。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1053
+#: upstream/_guides/security-jwt.adoc:1067
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.expiration.grac"
 msgstr "Smallrye.jwt.expiration.grac"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1054
+#: upstream/_guides/security-jwt.adoc:1067
 #, fuzzy, no-wrap
-msgid "Expiration grace in seconds. By default, an expired token will still be accepted if the current time is no more than 1 min after the token expiry time."
+msgid "0"
+msgstr "60"
+
+#. type: Table
+#: upstream/_guides/security-jwt.adoc:1068
+#, fuzzy, no-wrap
+msgid "Expiration grace in seconds. By default an expired token will still be accepted if the current time is no more than 1 min after the token expiry time. This property is deprecated. Use `mp.jwt.verify.clock.skew` instead."
 msgstr "过期时间，以秒为单位。默认情况下，如果当前时间不超过令牌过期时间的1分钟，过期的令牌仍将被接受。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1054
+#: upstream/_guides/security-jwt.adoc:1068
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.verify.au"
 msgstr "smallrye.jwt.verify.au"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1055
+#: upstream/_guides/security-jwt.adoc:1069
 #, fuzzy, no-wrap
 msgid "Comma separated list of the audiences that a token `aud` claim may contain. This property is deprecated - use `mp.jwt.verify.audiences`."
 msgstr "逗号分隔的列表，列出了令牌 `aud` 索赔可能包含的受众。该属性已被废弃--使用 `mp.jwt.verify.audiences` 。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1055
+#: upstream/_guides/security-jwt.adoc:1069
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.required.claim"
 msgstr "Smallrye.jwt.required.claim"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1056
+#: upstream/_guides/security-jwt.adoc:1070
 #, fuzzy, no-wrap
 msgid "Comma separated list of the claims that a token must contain."
 msgstr "逗号分隔的标记必须包含的要求列表。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1056
+#: upstream/_guides/security-jwt.adoc:1070
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.decrypt.key.location"
 msgstr "Smallrye.jwt.decrypt.key.location"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1057
+#: upstream/_guides/security-jwt.adoc:1071
 #, fuzzy, no-wrap
 msgid "Config property allows for an external or internal location of Private Decryption Key to be specified. This property is deprecated - use 'mp.jwt.decrypt.key.location'."
 msgstr "配置属性允许指定私人解密密钥的外部或内部位置。此属性已被废弃 - 使用 \"mp.jwt.decrypt.key.location\"。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1057
+#: upstream/_guides/security-jwt.adoc:1071
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.decrypt.algorith"
 msgstr "Smallrye.jwt.decrypt.algorithm"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1057
+#: upstream/_guides/security-jwt.adoc:1071
 #, fuzzy, no-wrap
 msgid "`RSA_OAEP`"
 msgstr " `RSA_OAEP` "
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1058
+#: upstream/_guides/security-jwt.adoc:1072
 #, fuzzy, no-wrap
 msgid "Decryption algorithm."
 msgstr "解密算法。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1058
+#: upstream/_guides/security-jwt.adoc:1072
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.decrypt.key"
 msgstr "Smallrye.jwt.decrypt.key.location"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1059
+#: upstream/_guides/security-jwt.adoc:1073
 #, fuzzy, no-wrap
 msgid "Decryption key supplied as a string."
 msgstr "以字符串形式提供的解密密钥。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1059
+#: upstream/_guides/security-jwt.adoc:1073
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.token.decryption.ki"
 msgstr "Smallrye.jwt.token.decryption.ki"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1060
+#: upstream/_guides/security-jwt.adoc:1074
 #, fuzzy, no-wrap
 msgid "Decryption Key identifier. If it is set then the decryption JWK key as well every JWT token must have a matching `kid` header."
 msgstr "解密密钥标识符。如果它被设置，那么解密JWK密钥以及每个JWT标记必须有一个匹配的 `kid` 头。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1060
+#: upstream/_guides/security-jwt.adoc:1074
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.client.tls.certificate.pat"
 msgstr "Smallrye.jwt.client.tls.certificate.pat"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1061
+#: upstream/_guides/security-jwt.adoc:1075
 #, fuzzy, no-wrap
 msgid "Path to TLS trusted certificate which may need to be configured if the keys have to be fetched over `HTTPS`."
 msgstr "如果需要通过 `HTTPS` 获取密钥，则需要配置 TLS 信任证书的路径。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1061
+#: upstream/_guides/security-jwt.adoc:1075
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.client.tls.trust-al"
 msgstr "Smallrye.jwt.client.tls.trust-al"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1062
+#: upstream/_guides/security-jwt.adoc:1076
 #, fuzzy, no-wrap
 msgid "Trust all the hostnames. If the keys have to be fetched over `HTTPS` and this property is set to `true` then all the hostnames are trusted by default."
 msgstr "信任所有的主机名。如果钥匙必须通过 `HTTPS` ，并且该属性被设置为 `true` ，那么所有的主机名都被默认信任。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1062
+#: upstream/_guides/security-jwt.adoc:1076
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.client.tls.host"
 msgstr "Smallrye.jwt.client.tls.trusted.host"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1063
+#: upstream/_guides/security-jwt.adoc:1077
 #, fuzzy, no-wrap
 msgid "Set of trusted hostnames. If the keys have to be fetched over `HTTPS` and `smallrye.jwt.client.tls.trust-all` is set to `false` then this property can be used to configure the trusted hostnames."
 msgstr "受信任的主机名的集合。如果钥匙必须通过 `HTTPS` ，并且 `smallrye.jwt.client.tls.trust-all` 被设置为 `false` ，那么这个属性可以用来配置可信的主机名。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1063
+#: upstream/_guides/security-jwt.adoc:1077
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.http.proxy.host"
 msgstr "Smallrye.jwt.http.proxy.host"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1064
+#: upstream/_guides/security-jwt.adoc:1078
 #, fuzzy, no-wrap
 msgid "HTTP proxy host."
 msgstr "HTTP代理主机。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1064
+#: upstream/_guides/security-jwt.adoc:1078
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.http.proxy.port"
 msgstr "Smallrye.jwt.http.proxy.port"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1064
+#: upstream/_guides/security-jwt.adoc:1078
 #, fuzzy, no-wrap
 msgid "80"
 msgstr "80"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1065
+#: upstream/_guides/security-jwt.adoc:1079
 #, fuzzy, no-wrap
 msgid "HTTP proxy port."
 msgstr "HTTP代理端口。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1065
+#: upstream/_guides/security-jwt.adoc:1079
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.keystore.typ"
 msgstr "Smallrye.jwt.token.ki"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1065
+#: upstream/_guides/security-jwt.adoc:1079
 #, fuzzy, no-wrap
 msgid "`JKS`"
 msgstr " `JKS` "
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1066
+#: upstream/_guides/security-jwt.adoc:1080
 #, fuzzy, no-wrap
 msgid "This property can be used to customize a keystore type if either `mp.jwt.verify.publickey.location` or mp.jwt.decrypt.key.location` points to a `KeyStore` file. If it is not set then the file name will be checked to determine the keystore type before defaulting to `JKS`."
 msgstr "如果 `mp.jwt.verify.publickey.location` 或mp.jwt.decrypt.key.location`指向一个 `KeyStore` 文件，这个属性可以用来定制一个密钥库类型。如果没有设置，那么文件名将被检查以确定密钥库类型，然后默认为 `JKS` 。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1066
+#: upstream/_guides/security-jwt.adoc:1080
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.keystore.provider"
 msgstr "Smallrye.jwt.token.header"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1067
+#: upstream/_guides/security-jwt.adoc:1081
 #, fuzzy, no-wrap
 msgid "This property can be used to customize a `KeyStore` provider if `mp.jwt.verify.publickey.location` or `mp.jwt.decrypt.key.location` points to a `KeyStore` file."
 msgstr "如果 `mp.jwt.verify.publickey.location` 或 `mp.jwt.decrypt.key.location` 指向一个 `KeyStore` 文件，该属性可用于定制一个 `KeyStore` 提供者。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1067
+#: upstream/_guides/security-jwt.adoc:1081
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.keystore.passwor"
 msgstr "Smallrye.jwt.token.header"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1068
+#: upstream/_guides/security-jwt.adoc:1082
 #, fuzzy, no-wrap
 msgid "Keystore password. If `mp.jwt.verify.publickey.location` or `mp.jwt.decrypt.key.location` then this property has be set."
 msgstr "Keystore密码。如果 `mp.jwt.verify.publickey.location` 或 `mp.jwt.decrypt.key.location` ，则此属性必须被设置。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1068
+#: upstream/_guides/security-jwt.adoc:1082
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.keystore.verify.key.alia"
 msgstr "Smallrye.jwt.verify.key.location"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1069
+#: upstream/_guides/security-jwt.adoc:1083
 #, fuzzy, no-wrap
 msgid "This property has to be set to identify a public verification key which will be extracted from `KeyStore` from a matching certificate if `mp.jwt.verify.publickey.location` points to a `KeyStore` file."
 msgstr "这个属性必须被设置，以确定一个公共验证密钥，如果 `mp.jwt.verify.publickey.location` 指向 `KeyStore` 文件，该密钥将从匹配的证书 `KeyStore` 中提取。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1069
+#: upstream/_guides/security-jwt.adoc:1083
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.keystore.decrypt.key.alia"
 msgstr "Smallrye.jwt.token.decryption.ki"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1070
+#: upstream/_guides/security-jwt.adoc:1084
 #, fuzzy, no-wrap
 msgid "This property has to be set to identify a private decryption key if `mp.jwt.decrypt.key.location` points to a `KeyStore` file."
 msgstr "如果 `mp.jwt.decrypt.key.location` 指向一个 `KeyStore` 文件，则必须设置该属性以识别私人解密密钥。"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1070
+#: upstream/_guides/security-jwt.adoc:1084
 #, fuzzy, no-wrap
 msgid "smallrye.jwt.keystore.decrypt.key.passwor"
 msgstr "Smallrye.jwt.decrypt.key.location"
 
 #. type: Table
-#: upstream/_guides/security-jwt.adoc:1071
+#: upstream/_guides/security-jwt.adoc:1085
 #, fuzzy, no-wrap
 msgid "This property may be set if a private decryption key's password in `KeyStore` is different to `smallrye.jwt.keystore.password` when `mp.jwt.decrypt.key.location` points to a `KeyStore` file."
 msgstr "当 `mp.jwt.decrypt.key.location` 指向 `KeyStore` 文件时，如果私人解密密钥在 `KeyStore` 中的密码与 `smallrye.jwt.keystore.password` 不同，可以设置此属性。"
 
 #. type: Title ==
-#: upstream/_guides/security-jwt.adoc:1073
+#: upstream/_guides/security-jwt.adoc:1087
 #, fuzzy, no-wrap
 msgid "References"
 msgstr "参考文献"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1076
+#: upstream/_guides/security-jwt.adoc:1090
 #, fuzzy
 msgid "link:https://download.eclipse.org/microprofile/microprofile-jwt-auth-1.2/microprofile-jwt-auth-spec-1.2.html[MP JWT 1.2 HTML]"
 msgstr "link:https://download.eclipse.org/microprofile/microprofile-jwt-auth-1.2/microprofile-jwt-auth-spec-1.2.html[mp jwt 1.2 html]"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1077
+#: upstream/_guides/security-jwt.adoc:1091
 #, fuzzy
 msgid "link:https://download.eclipse.org/microprofile/microprofile-jwt-auth-1.2/microprofile-jwt-auth-spec-1.2.pdf[MP JWT 1.2 PDF]"
 msgstr "link:https://download.eclipse.org/microprofile/microprofile-jwt-auth-1.2/microprofile-jwt-auth-spec-1.2.pdf[MP JWT 1.2 PDF]"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1078
+#: upstream/_guides/security-jwt.adoc:1092
 #, fuzzy
 msgid "link:https://github.com/smallrye/smallrye-jwt[SmallRye JWT]"
 msgstr "link:https://github.com/smallrye/smallrye-jwt[小黑麦JWT]"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1079
+#: upstream/_guides/security-jwt.adoc:1093
 #, fuzzy
 msgid "link:https://tools.ietf.org/html/rfc7519[JSON Web Token]"
 msgstr "link:https://tools.ietf.org/html/rfc7519[JSON网络令牌]"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1080
+#: upstream/_guides/security-jwt.adoc:1094
 #, fuzzy
 msgid "link:https://tools.ietf.org/html/rfc7515[JSON Web Signature]"
 msgstr "link:https://tools.ietf.org/html/rfc7515[JSON网络签名]"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1081
+#: upstream/_guides/security-jwt.adoc:1095
 #, fuzzy
 msgid "link:https://tools.ietf.org/html/rfc7516[JSON Web Encryption]"
 msgstr "link:https://tools.ietf.org/html/rfc7516[JSON网络加密]"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1082
+#: upstream/_guides/security-jwt.adoc:1096
 #, fuzzy
 msgid "link:https://tools.ietf.org/html/rfc7518[JSON Web Algorithms]"
 msgstr "link:https://tools.ietf.org/html/rfc7518[JSON网络算法]"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1083
+#: upstream/_guides/security-jwt.adoc:1097
 #, fuzzy
 msgid "xref:security-jwt-build.adoc[Sign and encrypt JWT tokens with SmallRye JWT Build]"
 msgstr "link:security-jwt-build.html[用SmallRye JWT Build签署和加密JWT令牌]"
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1084
-msgid "xref:security-overview-concept.adoc#oidc-jwt-oauth2-comparison[Summary of Quarkus OIDC, JWT and OAuth2 features]"
+#: upstream/_guides/security-jwt.adoc:1098
+msgid "xref:security-authentication-mechanisms-concept.adoc#combining-authentication-mechanisms[Combining authentication mechanisms]"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/security-jwt.adoc:1084
+#: upstream/_guides/security-jwt.adoc:1098
 msgid "xref:security-overview-concept.adoc[Quarkus Security overview]"
 msgstr ""
+
+#, fuzzy
+#~ msgid "If you work with Quarkus extensions which do not support `HTTP` (for example, `Quarkus GRPC`) or provide their own extension specific `HTTP` support conflicting with the one offered by `quarkus-smallrye-jwt` and `Vert.x HTTP` (example, `Quarkus Amazon Lambda`) and you would like to <<jwt-parser, Parse and Verify JsonWebToken with JWTParser>> then please use `smallrye-jwt` directly instead of `quarkus-smallrye-jwt`."
+#~ msgstr "如果你使用的Quarkus扩展不支持 `HTTP` （例如： `Quarkus GRPC` ），或者提供他们自己的扩展特定的 `HTTP` ，与 `quarkus-smallrye-jwt` 和 `Vert.x HTTP` 提供的支持相冲突（例如： `Quarkus Amazon Lambda` ），并且你想 link:#jwt-parser[用JWTParser解析和验证JsonWebToken] ，那么请直接使用 `smallrye-jwt` 而不是 `quarkus-smallrye-jwt` 。"
+
+#, fuzzy
+#~ msgid "Add this dependency:"
+#~ msgstr "添加这个依赖性。"

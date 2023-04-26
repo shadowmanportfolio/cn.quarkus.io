@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:16+0000\n"
+"POT-Creation-Date: 2023-04-26 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,7 +235,7 @@ msgstr "编写应用程序"
 #. type: Plain text
 #: upstream/_guides/security-webauthn-concept.adoc:128
 #, fuzzy
-msgid "Let's start by implementing the `/api/public` endpoint. As you can see from the source code below, it is just a regular JAX-RS resource:"
+msgid "Let's start by implementing the `/api/public` endpoint. As you can see from the source code below, it is just a regular Jakarta REST resource:"
 msgstr "让我们从实现 `/api/public` 端点开始。正如你从下面的源代码中看到的，它只是一个普通的JAX-RS资源。"
 
 #. type: delimited block -

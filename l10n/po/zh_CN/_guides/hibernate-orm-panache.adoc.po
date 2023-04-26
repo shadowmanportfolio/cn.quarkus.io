@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-09 13:39+0000\n"
+"POT-Creation-Date: 2023-04-26 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr "简化的Hibernate ORM与Panache"
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:15
 #, fuzzy
-msgid "Hibernate ORM is the de facto JPA implementation and offers you the full breadth of an Object Relational Mapper.  It makes complex mappings possible, but it does not make simple and common mappings trivial.  Hibernate ORM with Panache focuses on making your entities trivial and fun to write in Quarkus."
+msgid "Hibernate ORM is the de facto Jakarta Persistence (formerly known as JPA) implementation and offers you the full breadth of an Object Relational Mapper.  It makes complex mappings possible, but it does not make simple and common mappings trivial.  Hibernate ORM with Panache focuses on making your entities trivial and fun to write in Quarkus."
 msgstr "Hibernate ORM是事实上的JPA实现，为你提供了对象关系映射器的全部范围。它使复杂的映射成为可能，但它并没有使简单和普通的映射变得微不足道。Hibernate ORM with Panache专注于使你的实体在Quarkus中写得简单而有趣。"
 
 #. type: Title ==
@@ -44,7 +44,21 @@ msgid "What we're doing in Panache is to allow you to write your Hibernate ORM e
 msgstr "我们在Panache中所做的是允许你像这样写你的Hibernate ORM实体。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:26
+#: upstream/_guides/hibernate-orm-panache.adoc:23
+#: upstream/_guides/hibernate-orm-panache.adoc:33
+#: upstream/_guides/hibernate-orm-panache.adoc:172
+#: upstream/_guides/hibernate-orm-panache.adoc:192
+#: upstream/_guides/hibernate-orm-panache.adoc:311
+#: upstream/_guides/hibernate-orm-panache.adoc:347
+#: upstream/_guides/hibernate-orm-panache.adoc:397
+#: upstream/_guides/hibernate-orm-panache.adoc:530
+#: upstream/_guides/hibernate-orm-panache.adoc:781
+#, no-wrap
+msgid "package org.acme;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:28
 #, no-wrap
 msgid ""
 "public enum Status {\n"
@@ -54,9 +68,22 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:32
+#: upstream/_guides/hibernate-orm-panache.adoc:38
 #: upstream/_guides/hibernate-orm-panache.adoc:177
-#: upstream/_guides/hibernate-orm-panache.adoc:280
+#: upstream/_guides/hibernate-orm-panache.adoc:197
+#: upstream/_guides/hibernate-orm-panache.adoc:316
+#, no-wrap
+msgid ""
+"import java.time.LocalDate;\n"
+"import java.util.List;\n"
+"import jakarta.persistence.Entity;\n"
+"import io.quarkus.hibernate.orm.panache.PanacheEntity;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:44
+#: upstream/_guides/hibernate-orm-panache.adoc:203
+#: upstream/_guides/hibernate-orm-panache.adoc:322
 #, no-wrap
 msgid ""
 "@Entity\n"
@@ -67,8 +94,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:36
-#: upstream/_guides/hibernate-orm-panache.adoc:284
+#: upstream/_guides/hibernate-orm-panache.adoc:48
+#: upstream/_guides/hibernate-orm-panache.adoc:326
 #, no-wrap
 msgid ""
 "    public static Person findByName(String name){\n"
@@ -77,8 +104,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:40
-#: upstream/_guides/hibernate-orm-panache.adoc:288
+#: upstream/_guides/hibernate-orm-panache.adoc:52
+#: upstream/_guides/hibernate-orm-panache.adoc:330
 #, no-wrap
 msgid ""
 "    public static List<Person> findAlive(){\n"
@@ -87,8 +114,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:45
-#: upstream/_guides/hibernate-orm-panache.adoc:293
+#: upstream/_guides/hibernate-orm-panache.adoc:57
+#: upstream/_guides/hibernate-orm-panache.adoc:335
 #, no-wrap
 msgid ""
 "    public static void deleteStefs(){\n"
@@ -98,62 +125,63 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:49
+#: upstream/_guides/hibernate-orm-panache.adoc:61
 #, fuzzy
 msgid "You have noticed how much more compact and readable the code is? Does this look interesting? Read on!"
 msgstr "你已经注意到了代码的紧凑性和可读性大大提高了吗？这看起来很有趣吗？请继续阅读!"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:51
+#: upstream/_guides/hibernate-orm-panache.adoc:63
 #, fuzzy
 msgid "the `list()` method might be surprising at first. It takes fragments of HQL (JP-QL) queries and contextualizes the rest. That makes for very concise but yet readable code."
 msgstr " `list()` 方法一开始可能会让人吃惊。它采用了HQL（JP-QL）查询的片段，并对其余部分进行上下文处理。这使得代码非常简明，但又可读。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:54
+#: upstream/_guides/hibernate-orm-panache.adoc:66
 #, fuzzy
 msgid "what was described above is essentially the link:https://www.martinfowler.com/eaaCatalog/activeRecord.html[active record pattern], sometimes just called the entity pattern.  Hibernate with Panache also allows for the use of the more classical link:https://martinfowler.com/eaaCatalog/repository.html[repository pattern] via `PanacheRepository`."
 msgstr "上面所描述的本质上是 link:https://www.martinfowler.com/eaaCatalog/activeRecord.html[活动记录模式] ，有时也称为实体模式。Hibernate与Panache也允许通过 `PanacheRepository` ，使用更经典的 link:https://martinfowler.com/eaaCatalog/repository.html[资源库模式] 。"
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:55
+#: upstream/_guides/hibernate-orm-panache.adoc:67
 #, fuzzy, no-wrap
 msgid "Solution"
 msgstr "解决方案"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:59
+#: upstream/_guides/hibernate-orm-panache.adoc:71
 #, fuzzy
 msgid "We recommend that you follow the instructions in the next sections and create the application step by step.  However, you can go right to the completed example."
 msgstr "我们建议你按照下面几节的说明，一步一步地创建应用程序。然而，你可以直接进入已完成的例子。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:61
+#: upstream/_guides/hibernate-orm-panache.adoc:73
 #, fuzzy
 msgid "Clone the Git repository: `git clone {quickstarts-clone-url}`, or download an {quickstarts-archive-url}[archive]."
 msgstr "克隆 Git 仓库。 `git clone {quickstarts-clone-url}` ，或者下载一个{quickstarts-archive-url}[存档]。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:63
+#: upstream/_guides/hibernate-orm-panache.adoc:75
 #, fuzzy
 msgid "The solution is located in the `hibernate-orm-panache-quickstart` {quickstarts-tree-url}/hibernate-orm-panache-quickstart[directory]."
 msgstr "该解决方案位于 `hibernate-orm-panache-quickstart` {quickstarts-treeurl}/hibernate-orm-panache-quickstart[目录]中。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:67
+#: upstream/_guides/hibernate-orm-panache.adoc:79
 #, fuzzy
 msgid "If your project is already configured to use other annotation processors, you will need to additionally add the Panache annotation processor:"
 msgstr "如果你的项目已经被配置为使用其他注释处理器，你将需要额外添加Panache注释处理器。"
 
 #. type: Block title
-#: upstream/_guides/hibernate-orm-panache.adoc:69
-#: upstream/_guides/hibernate-orm-panache.adoc:111
+#: upstream/_guides/hibernate-orm-panache.adoc:81
+#: upstream/_guides/hibernate-orm-panache.adoc:123
+#: upstream/_guides/hibernate-orm-panache.adoc:637
 #, fuzzy, no-wrap
 msgid "pom.xml"
 msgstr "pom.xml"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:86
+#: upstream/_guides/hibernate-orm-panache.adoc:98
 #, no-wrap
 msgid ""
 "<plugin>\n"
@@ -174,74 +202,74 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: upstream/_guides/hibernate-orm-panache.adoc:89
-#: upstream/_guides/hibernate-orm-panache.adoc:127
+#: upstream/_guides/hibernate-orm-panache.adoc:101
+#: upstream/_guides/hibernate-orm-panache.adoc:139
 #, fuzzy, no-wrap
 msgid "build.gradle"
 msgstr "build.gradle"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:92
+#: upstream/_guides/hibernate-orm-panache.adoc:104
 #, no-wrap
 msgid "annotationProcessor(\"io.quarkus:quarkus-panache-common\")\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:95
+#: upstream/_guides/hibernate-orm-panache.adoc:107
 #, fuzzy, no-wrap
 msgid "Setting up and configuring Hibernate ORM with Panache"
 msgstr "用Panache设置和配置Hibernate ORM"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:98
+#: upstream/_guides/hibernate-orm-panache.adoc:110
 #, fuzzy
 msgid "To get started:"
 msgstr "要开始了。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:100
+#: upstream/_guides/hibernate-orm-panache.adoc:112
 #, fuzzy
 msgid "add your settings in `{config-file}`"
 msgstr "中添加你的设置。 `{config-file}` "
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:101
+#: upstream/_guides/hibernate-orm-panache.adoc:113
 #, fuzzy
 msgid "annotate your entities with `@Entity`"
 msgstr "对你的实体进行注解，用 `@Entity` "
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:102
+#: upstream/_guides/hibernate-orm-panache.adoc:114
 #, fuzzy
 msgid "make your entities extend `PanacheEntity` (optional if you are using the repository pattern)"
 msgstr "使你的实体扩展到 `PanacheEntity` （如果你使用资源库模式，则是可选的）。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:104
+#: upstream/_guides/hibernate-orm-panache.adoc:116
 #, fuzzy
 msgid "Follow the xref:hibernate-orm.adoc#setting-up-and-configuring-hibernate-orm[Hibernate set-up guide for all configuration]."
 msgstr "按照 link:hibernate-orm.html#setting-up-and-configuring-hibernate-orm[休眠设置指南进行所有配置] 。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:106
+#: upstream/_guides/hibernate-orm-panache.adoc:118
 #, fuzzy
 msgid "In your build file, add the following dependencies:"
 msgstr "在你的构建文件中，添加以下依赖项。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:108
+#: upstream/_guides/hibernate-orm-panache.adoc:120
 #, fuzzy
 msgid "the Hibernate ORM with Panache extension"
 msgstr "带有Panache扩展的Hibernate ORM"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:109
+#: upstream/_guides/hibernate-orm-panache.adoc:121
 #, fuzzy
 msgid "your JDBC driver extension (`quarkus-jdbc-postgresql`, `quarkus-jdbc-h2`, `quarkus-jdbc-mariadb`, ...)"
 msgstr "你的JDBC驱动扩展 ( `quarkus-jdbc-postgresql` , `quarkus-jdbc-h2` , `quarkus-jdbc-mariadb` , ...)"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:118
+#: upstream/_guides/hibernate-orm-panache.adoc:130
 #, no-wrap
 msgid ""
 "<!-- Hibernate ORM specific dependencies -->\n"
@@ -252,7 +280,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:124
+#: upstream/_guides/hibernate-orm-panache.adoc:136
 #, no-wrap
 msgid ""
 "<!-- JDBC driver dependencies -->\n"
@@ -263,7 +291,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:131
+#: upstream/_guides/hibernate-orm-panache.adoc:143
 #, no-wrap
 msgid ""
 "// Hibernate ORM specific dependencies\n"
@@ -271,7 +299,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:134
+#: upstream/_guides/hibernate-orm-panache.adoc:146
 #, no-wrap
 msgid ""
 "// JDBC driver dependencies\n"
@@ -279,13 +307,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:137
+#: upstream/_guides/hibernate-orm-panache.adoc:149
 #, fuzzy
 msgid "Then add the relevant configuration properties in `{config-file}`."
 msgstr "然后在 `{config-file}` ，添加相关的配置属性。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:145
+#: upstream/_guides/hibernate-orm-panache.adoc:157
 #, no-wrap
 msgid ""
 "# configure your datasource\n"
@@ -296,7 +324,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:148
+#: upstream/_guides/hibernate-orm-panache.adoc:160
 #, no-wrap
 msgid ""
 "# drop and create the database at startup (use `update` to only update the schema)\n"
@@ -304,26 +332,26 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:150
+#: upstream/_guides/hibernate-orm-panache.adoc:162
 #, fuzzy, no-wrap
 msgid "Solution 1: using the active record pattern"
 msgstr "解决方案1：使用活动记录模式"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:152
-#: upstream/_guides/hibernate-orm-panache.adoc:298
+#: upstream/_guides/hibernate-orm-panache.adoc:164
+#: upstream/_guides/hibernate-orm-panache.adoc:340
 #, fuzzy, no-wrap
 msgid "Defining your entity"
 msgstr "界定你的实体"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:156
+#: upstream/_guides/hibernate-orm-panache.adoc:168
 #, fuzzy
 msgid "To define a Panache entity, simply extend `PanacheEntity`, annotate it with `@Entity` and add your columns as public fields:"
 msgstr "要定义一个Panache实体，只需扩展 `PanacheEntity` ，用 `@Entity` 注释它，并将你的列作为公共字段添加。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:165
+#: upstream/_guides/hibernate-orm-panache.adoc:184
 #, no-wrap
 msgid ""
 "@Entity\n"
@@ -335,13 +363,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:169
+#: upstream/_guides/hibernate-orm-panache.adoc:188
 #, fuzzy
-msgid "You can put all your JPA column annotations on the public fields. If you need a field to not be persisted, use the `@Transient` annotation on it. If you need to write accessors, you can:"
+msgid "You can put all your Jakarta Persistence column annotations on the public fields. If you need a field to not be persisted, use the `@Transient` annotation on it. If you need to write accessors, you can:"
 msgstr "你可以把你所有的JPA列注解放在公共字段上。如果你需要一个字段不被持久化，在它上面使用 `@Transient` 注释。如果你需要写访问器，你可以。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:182
+#: upstream/_guides/hibernate-orm-panache.adoc:208
 #, no-wrap
 msgid ""
 "    // return name as uppercase in the model\n"
@@ -351,7 +379,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:188
+#: upstream/_guides/hibernate-orm-panache.adoc:214
 #, no-wrap
 msgid ""
 "    // store all names in lowercase in the DB\n"
@@ -362,26 +390,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:193
+#: upstream/_guides/hibernate-orm-panache.adoc:219
 #, fuzzy
 msgid "And thanks to our field access rewrite, when your users read `person.name` they will actually call your `getName()` accessor, and similarly for field writes and the setter.  This allows for proper encapsulation at runtime as all fields calls will be replaced by the corresponding getter/setter calls."
 msgstr "而且由于我们的字段访问重写，当你的用户读取 `person.name` ，他们实际上会调用你的 `getName()` 访问器，类似的还有字段写入和设置器。这允许在运行时进行适当的封装，因为所有字段的调用都将被相应的getter/setter调用所取代。"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:194
-#: upstream/_guides/hibernate-orm-panache.adoc:381
+#: upstream/_guides/hibernate-orm-panache.adoc:220
+#: upstream/_guides/hibernate-orm-panache.adoc:438
 #, fuzzy, no-wrap
 msgid "Most useful operations"
 msgstr "最有用的操作"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:197
+#: upstream/_guides/hibernate-orm-panache.adoc:223
 #, fuzzy
 msgid "Once you have written your entity, here are the most common operations you will be able to perform:"
 msgstr "一旦你写好了你的实体，以下是你将能够执行的最常见的操作。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:205
+#: upstream/_guides/hibernate-orm-panache.adoc:230
+#: upstream/_guides/hibernate-orm-panache.adoc:448
+#, no-wrap
+msgid ""
+"import java.time.LocalDate;\n"
+"import java.time.Month;\n"
+"import java.util.List;\n"
+"import java.util.Optional;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:236
 #, no-wrap
 msgid ""
 "// creating a person\n"
@@ -392,7 +431,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:208
+#: upstream/_guides/hibernate-orm-panache.adoc:239
 #, no-wrap
 msgid ""
 "// persist it\n"
@@ -400,8 +439,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:211
-#: upstream/_guides/hibernate-orm-panache.adoc:398
+#: upstream/_guides/hibernate-orm-panache.adoc:242
+#: upstream/_guides/hibernate-orm-panache.adoc:460
 #, no-wrap
 msgid ""
 "// note that once persisted, you don't need to explicitly save your entity: all\n"
@@ -409,7 +448,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:217
+#: upstream/_guides/hibernate-orm-panache.adoc:248
 #, no-wrap
 msgid ""
 "// check if it is persistent\n"
@@ -420,7 +459,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:220
+#: upstream/_guides/hibernate-orm-panache.adoc:251
 #, no-wrap
 msgid ""
 "// getting a list of all Person entities\n"
@@ -428,7 +467,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:223
+#: upstream/_guides/hibernate-orm-panache.adoc:254
 #, no-wrap
 msgid ""
 "// finding a specific person by ID\n"
@@ -436,7 +475,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:227
+#: upstream/_guides/hibernate-orm-panache.adoc:258
 #, no-wrap
 msgid ""
 "// finding a specific person by ID via an Optional\n"
@@ -445,7 +484,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:230
+#: upstream/_guides/hibernate-orm-panache.adoc:261
 #, no-wrap
 msgid ""
 "// finding all living persons\n"
@@ -453,7 +492,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:233
+#: upstream/_guides/hibernate-orm-panache.adoc:264
 #, no-wrap
 msgid ""
 "// counting all persons\n"
@@ -461,7 +500,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:236
+#: upstream/_guides/hibernate-orm-panache.adoc:267
 #, no-wrap
 msgid ""
 "// counting all living persons\n"
@@ -469,7 +508,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:239
+#: upstream/_guides/hibernate-orm-panache.adoc:270
 #, no-wrap
 msgid ""
 "// delete all living persons\n"
@@ -477,7 +516,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:242
+#: upstream/_guides/hibernate-orm-panache.adoc:273
 #, no-wrap
 msgid ""
 "// delete all persons\n"
@@ -485,7 +524,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:245
+#: upstream/_guides/hibernate-orm-panache.adoc:276
 #, no-wrap
 msgid ""
 "// delete by id\n"
@@ -493,7 +532,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:248
+#: upstream/_guides/hibernate-orm-panache.adoc:279
 #, no-wrap
 msgid ""
 "// set the name of all living persons to 'Mortal'\n"
@@ -501,14 +540,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:252
-#: upstream/_guides/hibernate-orm-panache.adoc:439
+#: upstream/_guides/hibernate-orm-panache.adoc:283
+#: upstream/_guides/hibernate-orm-panache.adoc:501
 #, fuzzy
 msgid "All `list` methods have equivalent `stream` versions."
 msgstr "所有 `list` 方法都有相等的 `stream` 版本。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:261
+#: upstream/_guides/hibernate-orm-panache.adoc:289
+#: upstream/_guides/hibernate-orm-panache.adoc:507
+#, no-wrap
+msgid ""
+"import java.util.List;\n"
+"import java.util.stream.Collectors;\n"
+"import java.util.stream.Stream;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:296
 #, no-wrap
 msgid ""
 "try (Stream<Person> persons = Person.streamAll()) {\n"
@@ -520,37 +569,46 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:266
+#: upstream/_guides/hibernate-orm-panache.adoc:301
 #, fuzzy
 msgid "The `stream` methods require a transaction to work. + As they perform I/O operations, they should be closed via the `close()` method or via a try-with-resource to close the underlying `ResultSet`.  If not, you will see warnings from Agroal that will close the underlying `ResultSet` for you."
 msgstr " `stream` 方法需要一个事务来工作。+ 由于它们执行I/O操作，它们应该通过 `close()` 方法或通过try-with-resource来关闭底层的 `ResultSet` 。如果不这样做，你会看到来自Agroal的警告，它将为你关闭底层 `ResultSet` 。"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:267
+#: upstream/_guides/hibernate-orm-panache.adoc:302
 #, fuzzy, no-wrap
 msgid "Adding entity methods"
 msgstr "添加实体方法"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:272
+#: upstream/_guides/hibernate-orm-panache.adoc:307
 #, fuzzy
 msgid "Add custom queries on your entities inside the entities themselves.  That way, you and your co-workers can find them easily, and queries are co-located with the object they operate on.  Adding them as static methods in your entity class is the Panache Active Record way."
 msgstr "在你的实体上添加自定义查询，在实体本身里面。这样，你和你的同事可以很容易地找到它们，而且查询与它们所操作的对象同在一处。将它们作为静态方法添加到你的实体类中是Panache Active Record的方式。"
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:295
+#: upstream/_guides/hibernate-orm-panache.adoc:337
 #, fuzzy, no-wrap
 msgid "Solution 2: using the repository pattern"
 msgstr "解决方案2：使用资源库模式"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:301
+#: upstream/_guides/hibernate-orm-panache.adoc:343
 #, fuzzy
-msgid "When using the repository pattern, you can define your entities as regular JPA entities."
+msgid "When using the repository pattern, you can define your entities as regular Jakarta Persistence entities."
 msgstr "当使用存储库模式时，你可以将你的实体定义为普通的JPA实体。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:310
+#: upstream/_guides/hibernate-orm-panache.adoc:351
+#, no-wrap
+msgid ""
+"import jakarta.persistence.GeneratedValue;\n"
+"import jakarta.persistence.Id;\n"
+"import java.time.LocalDate;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:358
 #, no-wrap
 msgid ""
 "@Entity\n"
@@ -562,7 +620,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:336
+#: upstream/_guides/hibernate-orm-panache.adoc:384
 #, no-wrap
 msgid ""
 "    public Long getId(){\n"
@@ -593,25 +651,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:340
+#: upstream/_guides/hibernate-orm-panache.adoc:388
 #, fuzzy
 msgid "If you don't want to bother defining getters/setters for your entities, you can make them extend `PanacheEntityBase` and Quarkus will generate them for you. You can even extend `PanacheEntity` and take advantage of the default ID it provides."
 msgstr "如果你不想麻烦地为你的实体定义getters/setters，你可以让它们扩展 `PanacheEntityBase` ，Quarkus将为你生成它们。你甚至可以扩展 `PanacheEntity` ，并利用它提供的默认ID的优势。"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:341
+#: upstream/_guides/hibernate-orm-panache.adoc:389
 #, fuzzy, no-wrap
 msgid "Defining your repository"
 msgstr "定义你的存储库"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:345
+#: upstream/_guides/hibernate-orm-panache.adoc:393
 #, fuzzy
 msgid "When using Repositories, you get the exact same convenient methods as with the active record pattern, injected in your Repository, by making them implements `PanacheRepository`:"
 msgstr "当使用 Repositories 时，你可以得到与活动记录模式完全相同的方便方法，通过使它们实现 `PanacheRepository` ，注入到你的 Repository 中。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:350
+#: upstream/_guides/hibernate-orm-panache.adoc:399
+#, no-wrap
+msgid "import io.quarkus.hibernate.orm.panache.PanacheRepository;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:402
+#, no-wrap
+msgid ""
+"import jakarta.enterprise.context.ApplicationScoped;\n"
+"import java.util.List;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:405
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -619,13 +691,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:352
+#: upstream/_guides/hibernate-orm-panache.adoc:407
 #, no-wrap
 msgid "   // put your custom logic here as instance methods\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:356
+#: upstream/_guides/hibernate-orm-panache.adoc:411
 #, no-wrap
 msgid ""
 "   public Person findByName(String name){\n"
@@ -634,7 +706,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:360
+#: upstream/_guides/hibernate-orm-panache.adoc:415
 #, no-wrap
 msgid ""
 "   public List<Person> findAlive(){\n"
@@ -643,7 +715,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:365
+#: upstream/_guides/hibernate-orm-panache.adoc:420
 #, no-wrap
 msgid ""
 "   public void deleteStefs(){\n"
@@ -653,13 +725,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:369
+#: upstream/_guides/hibernate-orm-panache.adoc:424
 #, fuzzy
 msgid "All the operations that are defined on `PanacheEntityBase` are available on your repository, so using it is exactly the same as using the active record pattern, except you need to inject it:"
 msgstr "所有在 `PanacheEntityBase` 上定义的操作都可以在你的版本库上使用，所以使用它与使用活动记录模式完全一样，只是你需要注入它。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:374
+#: upstream/_guides/hibernate-orm-panache.adoc:428
+#, no-wrap
+msgid "import jakarta.inject.Inject;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:431
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -667,7 +745,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:379
+#: upstream/_guides/hibernate-orm-panache.adoc:436
 #, no-wrap
 msgid ""
 "@GET\n"
@@ -677,13 +755,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:384
+#: upstream/_guides/hibernate-orm-panache.adoc:441
 #, fuzzy
 msgid "Once you have written your repository, here are the most common operations you will be able to perform:"
 msgstr "一旦你写好了你的版本库，以下是你能够执行的最常见的操作。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:392
+#: upstream/_guides/hibernate-orm-panache.adoc:454
 #, no-wrap
 msgid ""
 "// creating a person\n"
@@ -694,7 +772,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:395
+#: upstream/_guides/hibernate-orm-panache.adoc:457
 #, no-wrap
 msgid ""
 "// persist it\n"
@@ -702,7 +780,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:404
+#: upstream/_guides/hibernate-orm-panache.adoc:466
 #, no-wrap
 msgid ""
 "// check if it is persistent\n"
@@ -713,7 +791,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:407
+#: upstream/_guides/hibernate-orm-panache.adoc:469
 #, no-wrap
 msgid ""
 "// getting a list of all Person entities\n"
@@ -721,7 +799,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:410
+#: upstream/_guides/hibernate-orm-panache.adoc:472
 #, no-wrap
 msgid ""
 "// finding a specific person by ID\n"
@@ -729,7 +807,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:414
+#: upstream/_guides/hibernate-orm-panache.adoc:476
 #, no-wrap
 msgid ""
 "// finding a specific person by ID via an Optional\n"
@@ -738,7 +816,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:417
+#: upstream/_guides/hibernate-orm-panache.adoc:479
 #, no-wrap
 msgid ""
 "// finding all living persons\n"
@@ -746,7 +824,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:420
+#: upstream/_guides/hibernate-orm-panache.adoc:482
 #, no-wrap
 msgid ""
 "// counting all persons\n"
@@ -754,7 +832,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:423
+#: upstream/_guides/hibernate-orm-panache.adoc:485
 #, no-wrap
 msgid ""
 "// counting all living persons\n"
@@ -762,7 +840,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:426
+#: upstream/_guides/hibernate-orm-panache.adoc:488
 #, no-wrap
 msgid ""
 "// delete all living persons\n"
@@ -770,7 +848,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:429
+#: upstream/_guides/hibernate-orm-panache.adoc:491
 #, no-wrap
 msgid ""
 "// delete all persons\n"
@@ -778,7 +856,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:432
+#: upstream/_guides/hibernate-orm-panache.adoc:494
 #, no-wrap
 msgid ""
 "// delete by id\n"
@@ -786,7 +864,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:435
+#: upstream/_guides/hibernate-orm-panache.adoc:497
 #, no-wrap
 msgid ""
 "// set the name of all living persons to 'Mortal'\n"
@@ -794,7 +872,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:447
+#: upstream/_guides/hibernate-orm-panache.adoc:513
 #, no-wrap
 msgid ""
 "Stream<Person> persons = personRepository.streamAll();\n"
@@ -805,37 +883,56 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:450
+#: upstream/_guides/hibernate-orm-panache.adoc:516
 #, fuzzy
 msgid "The `stream` methods require a transaction to work."
 msgstr " `stream` 方法需要一个交易才能发挥作用。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:454
+#: upstream/_guides/hibernate-orm-panache.adoc:520
 #, fuzzy
 msgid "The rest of the documentation show usages based on the active record pattern only, but keep in mind that they can be performed with the repository pattern as well.  The repository pattern examples have been omitted for brevity."
 msgstr "其余的文档只展示了基于活动记录模式的用法，但请记住，这些用法也可以用资源库模式来执行。为了简洁起见，版本库模式的例子被省略了。"
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:455
+#: upstream/_guides/hibernate-orm-panache.adoc:521
 #, fuzzy, no-wrap
-msgid "Writing a JAX-RS resource"
+msgid "Writing a Jakarta REST resource"
 msgstr "编写一个JAX-RS资源"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:458
+#: upstream/_guides/hibernate-orm-panache.adoc:524
 #, fuzzy
-msgid "First, include one of the RESTEasy Reactive extensions to enable JAX-RS endpoints, for example, add the `io.quarkus:quarkus-resteasy-reactive-jackson` dependency for JAX-RS and JSON support."
+msgid "First, include one of the RESTEasy Reactive extensions to enable Jakarta REST endpoints, for example, add the `io.quarkus:quarkus-resteasy-reactive-jackson` dependency for Jakarta REST and JSON support."
 msgstr "首先，包含RESTEasy Reactive扩展之一，以启用JAX-RS端点，例如，添加JAX-RS和JSON支持的 `io.quarkus:quarkus-resteasy-reactive-jackson` 依赖。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:460
+#: upstream/_guides/hibernate-orm-panache.adoc:526
 #, fuzzy
 msgid "Then, you can create the following resource to create/read/update/delete your Person entity:"
 msgstr "然后，你可以创建以下资源来创建/阅读/更新/删除你的Person实体。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:467
+#: upstream/_guides/hibernate-orm-panache.adoc:544
+#, no-wrap
+msgid ""
+"import java.net.URI;\n"
+"import java.util.List;\n"
+"import jakarta.transaction.Transactional;\n"
+"import jakarta.ws.rs.Consumes;\n"
+"import jakarta.ws.rs.DELETE;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.NotFoundException;\n"
+"import jakarta.ws.rs.POST;\n"
+"import jakarta.ws.rs.PUT;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.core.Response;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:549
 #, no-wrap
 msgid ""
 "@Path(\"/persons\")\n"
@@ -845,7 +942,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:472
+#: upstream/_guides/hibernate-orm-panache.adoc:554
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -855,7 +952,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:478
+#: upstream/_guides/hibernate-orm-panache.adoc:560
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -866,7 +963,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:485
+#: upstream/_guides/hibernate-orm-panache.adoc:567
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -878,7 +975,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:494
+#: upstream/_guides/hibernate-orm-panache.adoc:576
 #, no-wrap
 msgid ""
 "    @PUT\n"
@@ -892,7 +989,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:497
+#: upstream/_guides/hibernate-orm-panache.adoc:579
 #, no-wrap
 msgid ""
 "        // map all fields from the person parameter to the existing entity\n"
@@ -900,7 +997,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:500
+#: upstream/_guides/hibernate-orm-panache.adoc:582
 #, no-wrap
 msgid ""
 "        return entity;\n"
@@ -908,7 +1005,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:511
+#: upstream/_guides/hibernate-orm-panache.adoc:593
 #, no-wrap
 msgid ""
 "    @DELETE\n"
@@ -924,7 +1021,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:517
+#: upstream/_guides/hibernate-orm-panache.adoc:599
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -935,7 +1032,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:524
+#: upstream/_guides/hibernate-orm-panache.adoc:606
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -947,32 +1044,101 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:528
+#: upstream/_guides/hibernate-orm-panache.adoc:610
 #, fuzzy
 msgid "Be careful to use the `@Transactional` annotation on the operations that modify the database, you can add the annotation at the class level for simplicity purpose."
 msgstr "请注意在修改数据库的操作上使用 `@Transactional` 注释，为了简单起见，你可以在类的层次上添加注释。"
 
+#. type: Plain text
+#: upstream/_guides/hibernate-orm-panache.adoc:612
+msgid "To make it easier to showcase some capabilities of Hibernate ORM with Panache on Quarkus with Dev mode, some test data should be inserted into the database by adding the following content to a new file named src/main/resources/import.sql:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:617
+#, no-wrap
+msgid ""
+"INSERT INTO person (id, birth, name, status) VALUES (1, '1995-09-12', 'Emily Brown', 0);\n"
+"ALTER SEQUENCE person_seq RESTART WITH 2;\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/hibernate-orm-panache.adoc:620
+msgid "If you would like to initialize the DB when you start the Quarkus app in your production environment, add `quarkus.hibernate-orm.database.generation=drop-and-create` to the Quarkus startup options in addition to `import.sql`."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/hibernate-orm-panache.adoc:622
+msgid "After that, you can see the people list and add new person as followings:"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:627
+#, no-wrap
+msgid ""
+"$ curl -w \"\\n\" http://localhost:8080/persons\n"
+"[{\"id\":1,\"name\":\"Emily Brown\",\"birth\":\"1995-09-12\",\"status\":\"Alive\"}]\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:629
+#, no-wrap
+msgid "$ curl -X POST -H \"Content-Type: application/json\" -d '{\"name\" : \"William Davis\" , \"birth\" : \"1988-07-04\", \"status\" : \"Alive\"}' http://localhost:8080/persons\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:632
+#, no-wrap
+msgid ""
+"$ curl -w \"\\n\" http://localhost:8080/persons\n"
+"[{\"id\":1,\"name\":\"Emily Brown\",\"birth\":\"1995-09-12\",\"status\":\"Alive\"}, {\"id\":2,\"name\":\"William Davis\",\"birth\":\"1988-07-04\",\"status\":\"Alive\"}]\n"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/hibernate-orm-panache.adoc:635
+msgid "If you see the Person object as Person<1>, then the object has not been converted. In this case, add the dependency `quarkus-resteasy-reactive-jackson` in `pom.xml`."
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:643
+#, no-wrap
+msgid ""
+"<dependency>\n"
+"    <groupId>io.quarkus</groupId>\n"
+"    <artifactId>quarkus-resteasy-reactive-jackson</artifactId>\n"
+"</dependency>\n"
+msgstr ""
+
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:529
+#: upstream/_guides/hibernate-orm-panache.adoc:645
 #, fuzzy, no-wrap
 msgid "Advanced Query"
 msgstr "高级查询"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:531
+#: upstream/_guides/hibernate-orm-panache.adoc:647
 #, fuzzy, no-wrap
 msgid "Paging"
 msgstr "寻呼"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:535
+#: upstream/_guides/hibernate-orm-panache.adoc:651
 #, fuzzy
 msgid "You should only use `list` and `stream` methods if your table contains small enough data sets. For larger data sets you can use the `find` method equivalents, which return a `PanacheQuery` on which you can do paging:"
 msgstr "如果你的表包含足够小的数据集，你应该只使用 `list` 和 `stream` 方法。对于较大的数据集，你可以使用 `find` 方法的等价物，它返回一个 `PanacheQuery` ，你可以对其进行分页。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:540
-#: upstream/_guides/hibernate-orm-panache.adoc:576
+#: upstream/_guides/hibernate-orm-panache.adoc:657
+#, no-wrap
+msgid ""
+"import io.quarkus.hibernate.orm.panache.PanacheQuery;\n"
+"import io.quarkus.panache.common.Page;\n"
+"import java.util.List;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:660
+#: upstream/_guides/hibernate-orm-panache.adoc:699
 #, no-wrap
 msgid ""
 "// create a query for all living persons\n"
@@ -980,7 +1146,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:543
+#: upstream/_guides/hibernate-orm-panache.adoc:663
 #, no-wrap
 msgid ""
 "// make it use pages of 25 entries at a time\n"
@@ -988,7 +1154,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:546
+#: upstream/_guides/hibernate-orm-panache.adoc:666
 #, no-wrap
 msgid ""
 "// get the first page\n"
@@ -996,7 +1162,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:549
+#: upstream/_guides/hibernate-orm-panache.adoc:669
 #, no-wrap
 msgid ""
 "// get the second page\n"
@@ -1004,7 +1170,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:552
+#: upstream/_guides/hibernate-orm-panache.adoc:672
 #, no-wrap
 msgid ""
 "// get page 7\n"
@@ -1012,7 +1178,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:555
+#: upstream/_guides/hibernate-orm-panache.adoc:675
 #, no-wrap
 msgid ""
 "// get the number of pages\n"
@@ -1020,7 +1186,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:558
+#: upstream/_guides/hibernate-orm-panache.adoc:678
 #, no-wrap
 msgid ""
 "// get the total number of entities returned by this query without paging\n"
@@ -1028,7 +1194,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:564
+#: upstream/_guides/hibernate-orm-panache.adoc:684
 #, no-wrap
 msgid ""
 "// and you can chain methods of course\n"
@@ -1039,25 +1205,33 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:567
+#: upstream/_guides/hibernate-orm-panache.adoc:687
 #, fuzzy
 msgid "The `PanacheQuery` type has many other methods to deal with paging and returning streams."
 msgstr " `PanacheQuery` 类型有许多其他方法来处理分页和返回流。"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:568
+#: upstream/_guides/hibernate-orm-panache.adoc:688
 #, fuzzy, no-wrap
 msgid "Using a range instead of pages"
 msgstr "使用一个范围而不是页面"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:571
+#: upstream/_guides/hibernate-orm-panache.adoc:691
 #, fuzzy
 msgid "`PanacheQuery` also allows range-based queries."
 msgstr " `PanacheQuery` 也允许基于范围的查询。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:579
+#: upstream/_guides/hibernate-orm-panache.adoc:696
+#, no-wrap
+msgid ""
+"import io.quarkus.hibernate.orm.panache.PanacheQuery;\n"
+"import java.util.List;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:702
 #, no-wrap
 msgid ""
 "// make it use a range: start at index 0 until index 24 (inclusive).\n"
@@ -1065,7 +1239,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:582
+#: upstream/_guides/hibernate-orm-panache.adoc:705
 #, no-wrap
 msgid ""
 "// get the range\n"
@@ -1073,7 +1247,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:585
+#: upstream/_guides/hibernate-orm-panache.adoc:708
 #, no-wrap
 msgid ""
 "// to get the next range, you need to call range again\n"
@@ -1081,43 +1255,49 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:591
+#: upstream/_guides/hibernate-orm-panache.adoc:714
 #, fuzzy
 msgid "You cannot mix ranges and pages: if you use a range, all methods that depend on having a current page will throw an `UnsupportedOperationException`; you can switch back to paging using `page(Page)` or `page(int, int)`."
 msgstr "你不能混合使用范围和页面：如果你使用范围，所有依赖于拥有当前页面的方法将抛出一个 `UnsupportedOperationException` ；你可以使用 `page(Page)` 或 `page(int, int)` 切换回分页。"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:593
+#: upstream/_guides/hibernate-orm-panache.adoc:716
 #, fuzzy, no-wrap
 msgid "Sorting"
 msgstr "分拣"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:596
+#: upstream/_guides/hibernate-orm-panache.adoc:719
 #, fuzzy
 msgid "All methods accepting a query string also accept the following simplified query form:"
 msgstr "所有接受查询字符串的方法也接受以下简化查询形式。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:600
+#: upstream/_guides/hibernate-orm-panache.adoc:723
 #, no-wrap
 msgid "List<Person> persons = Person.list(\"order by name,birth\");\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:603
+#: upstream/_guides/hibernate-orm-panache.adoc:726
 #, fuzzy
 msgid "But these methods also accept an optional `Sort` parameter, which allows you to abstract your sorting:"
 msgstr "但这些方法也接受一个可选的 `Sort` 参数，这使你可以抽象出你的排序。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:607
+#: upstream/_guides/hibernate-orm-panache.adoc:730
+#, no-wrap
+msgid "import io.quarkus.panache.common.Sort;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:732
 #, no-wrap
 msgid "List<Person> persons = Person.list(Sort.by(\"name\").and(\"birth\"));\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:610
+#: upstream/_guides/hibernate-orm-panache.adoc:735
 #, no-wrap
 msgid ""
 "// and with more restrictions\n"
@@ -1125,7 +1305,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:613
+#: upstream/_guides/hibernate-orm-panache.adoc:738
 #, no-wrap
 msgid ""
 "// and list first the entries with null values in the field \"birth\"\n"
@@ -1133,123 +1313,141 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:616
+#: upstream/_guides/hibernate-orm-panache.adoc:741
 #, fuzzy
 msgid "The `Sort` class has plenty of methods for adding columns and specifying sort direction or the null precedence."
 msgstr " `Sort` 类有很多方法用于添加列和指定排序方向。"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:617
+#: upstream/_guides/hibernate-orm-panache.adoc:742
 #, fuzzy, no-wrap
 msgid "Simplified queries"
 msgstr "简化查询"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:621
+#: upstream/_guides/hibernate-orm-panache.adoc:746
 #, fuzzy
 msgid "Normally, HQL queries are of this form: `from EntityName [where ...] [order by ...]`, with optional elements at the end."
 msgstr "通常情况下，HQL查询是这种形式。 `from EntityName [where …​] [order by …​]` ，结尾处有可选元素。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:623
+#: upstream/_guides/hibernate-orm-panache.adoc:748
 #, fuzzy
 msgid "If your select query does not start with `from`, we support the following additional forms:"
 msgstr "如果你的选择查询不是以 `from` 开始，我们支持以下额外的形式。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:625
+#: upstream/_guides/hibernate-orm-panache.adoc:750
 #, fuzzy
 msgid "`order by ...` which will expand to `from EntityName order by ...`"
 msgstr " `order by …​` 这将扩大到 `from EntityName order by …​` "
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:626
+#: upstream/_guides/hibernate-orm-panache.adoc:751
 #, fuzzy
 msgid "`<singleColumnName>` (and single parameter) which will expand to `from EntityName where <singleColumnName> = ?`"
 msgstr " `<singleColumnName>` (和单一参数），这将扩展为 `from EntityName where <singleColumnName> = ?` "
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:627
+#: upstream/_guides/hibernate-orm-panache.adoc:752
 #, fuzzy
 msgid "`<query>` will expand to `from EntityName where <query>`"
 msgstr " `<query>` 将扩大到 `from EntityName where <query>` "
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:629
+#: upstream/_guides/hibernate-orm-panache.adoc:754
 #, fuzzy
 msgid "If your update query does not start with `update`, we support the following additional forms:"
 msgstr "如果您的更新查询不是以 `update` 开始，我们支持以下额外的形式。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:631
+#: upstream/_guides/hibernate-orm-panache.adoc:756
 #, fuzzy
-msgid "`from EntityName ...` which will expand to `update from EntityName ...`"
+msgid "`from EntityName ...` which will expand to `update EntityName ...`"
 msgstr " `from EntityName …​` 这将扩大到 `update from EntityName …​` "
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:632
+#: upstream/_guides/hibernate-orm-panache.adoc:757
 #, fuzzy
-msgid "`set? <singleColumnName>` (and single parameter) which will expand to `update from EntityName set <singleColumnName> = ?`"
+msgid "`set? <singleColumnName>` (and single parameter) which will expand to `update EntityName set <singleColumnName> = ?`"
 msgstr " `set? <singleColumnName>` (和单一参数），这将扩展为 `update from EntityName set <singleColumnName> = ?` "
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:633
+#: upstream/_guides/hibernate-orm-panache.adoc:758
 #, fuzzy
-msgid "`set? <update-query>` will expand to `update from EntityName set <update-query>`"
+msgid "`set? <update-query>` will expand to `update EntityName set <update-query>`"
 msgstr " `set? <update-query>` 将扩大到 `update from EntityName set <update-query>` "
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:635
+#: upstream/_guides/hibernate-orm-panache.adoc:760
 #, fuzzy
 msgid "If your delete query does not start with `delete`, we support the following additional forms:"
 msgstr "如果您的删除查询不是以 `delete` 开始，我们支持以下附加形式。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:637
+#: upstream/_guides/hibernate-orm-panache.adoc:762
 #, fuzzy
 msgid "`from EntityName ...` which will expand to `delete from EntityName ...`"
 msgstr " `from EntityName …​` 这将扩大到 `delete from EntityName …​` "
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:638
+#: upstream/_guides/hibernate-orm-panache.adoc:763
 #, fuzzy
 msgid "`<singleColumnName>` (and single parameter) which will expand to `delete from EntityName where <singleColumnName> = ?`"
 msgstr " `<singleColumnName>` (和单一参数），这将扩展为 `delete from EntityName where <singleColumnName> = ?` "
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:639
+#: upstream/_guides/hibernate-orm-panache.adoc:764
 #, fuzzy
 msgid "`<query>` will expand to `delete from EntityName where <query>`"
 msgstr " `<query>` 将扩大到 `delete from EntityName where <query>` "
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:642
+#: upstream/_guides/hibernate-orm-panache.adoc:767
 #, fuzzy
 msgid "You can also write your queries in plain link:https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#hql[HQL]:"
 msgstr "你也可以用普通的 link:https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#hql[HQL] 编写你的查询。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:647
+#: upstream/_guides/hibernate-orm-panache.adoc:772
 #, no-wrap
 msgid ""
 "Order.find(\"select distinct o from Order o left join fetch o.lineItems\");\n"
-"Order.update(\"update from Person set name = 'Mortal' where status = ?\", Status.Alive);\n"
+"Order.update(\"update Person set name = 'Mortal' where status = ?\", Status.Alive);\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:649
+#: upstream/_guides/hibernate-orm-panache.adoc:774
 #, fuzzy, no-wrap
 msgid "Named queries"
 msgstr "命名查询"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:652
+#: upstream/_guides/hibernate-orm-panache.adoc:777
 #, fuzzy
 msgid "You can reference a named query instead of a (simplified) HQL query by prefixing its name with the '#' character. You can also use named queries for count, update and delete queries."
 msgstr "你可以通过在其名称前加上'#'字符来引用一个命名的查询，而不是一个（简化的）HQL查询。你也可以在计数、更新和删除查询中使用命名查询。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:662
+#: upstream/_guides/hibernate-orm-panache.adoc:786
+#, no-wrap
+msgid ""
+"import java.time.LocalDate;\n"
+"import jakarta.persistence.Entity;\n"
+"import jakarta.persistence.NamedQueries;\n"
+"import jakarta.persistence.NamedQuery;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:789
+#, no-wrap
+msgid ""
+"import io.quarkus.hibernate.orm.panache.PanacheEntity;\n"
+"import io.quarkus.panache.common.Parameters;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:797
 #, no-wrap
 msgid ""
 "@Entity\n"
@@ -1262,7 +1460,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:667
+#: upstream/_guides/hibernate-orm-panache.adoc:802
 #, no-wrap
 msgid ""
 "public class Person extends PanacheEntity {\n"
@@ -1272,7 +1470,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:671
+#: upstream/_guides/hibernate-orm-panache.adoc:806
 #, no-wrap
 msgid ""
 "    public static Person findByName(String name){\n"
@@ -1281,7 +1479,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:675
+#: upstream/_guides/hibernate-orm-panache.adoc:810
 #, no-wrap
 msgid ""
 "    public static long countByStatus(Status status) {\n"
@@ -1290,7 +1488,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:679
+#: upstream/_guides/hibernate-orm-panache.adoc:814
 #, no-wrap
 msgid ""
 "    public static long updateStatusById(Status status, long id) {\n"
@@ -1299,7 +1497,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:684
+#: upstream/_guides/hibernate-orm-panache.adoc:819
 #, no-wrap
 msgid ""
 "    public static long deleteById(long id) {\n"
@@ -1309,37 +1507,45 @@ msgid ""
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:690
+#: upstream/_guides/hibernate-orm-panache.adoc:825
 #, fuzzy
-msgid "Named queries can only be defined inside your JPA entity classes (being the Panache entity class, or the repository parameterized type), or on one of its super classes."
+msgid "Named queries can only be defined inside your Jakarta Persistence entity classes (being the Panache entity class, or the repository parameterized type), or on one of its super classes."
 msgstr "命名查询只能在你的JPA实体类（是Panache实体类，或存储库的参数化类型）内定义，或在它的一个超类中定义。"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:692
+#: upstream/_guides/hibernate-orm-panache.adoc:827
 #, fuzzy, no-wrap
 msgid "Query parameters"
 msgstr "查询参数"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:695
+#: upstream/_guides/hibernate-orm-panache.adoc:830
 #, fuzzy
 msgid "You can pass query parameters by index (1-based) as shown below:"
 msgstr "你可以通过索引（基于1）传递查询参数，如下所示。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:699
+#: upstream/_guides/hibernate-orm-panache.adoc:834
 #, no-wrap
 msgid "Person.find(\"name = ?1 and status = ?2\", \"stef\", Status.Alive);\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:702
+#: upstream/_guides/hibernate-orm-panache.adoc:837
 #, fuzzy
 msgid "Or by name using a `Map`:"
 msgstr "或者使用 `Map` ，按名字来命名。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:709
+#: upstream/_guides/hibernate-orm-panache.adoc:842
+#, no-wrap
+msgid ""
+"import java.util.HashMap;\n"
+"import java.util.Map;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:847
 #, no-wrap
 msgid ""
 "Map<String, Object> params = new HashMap<>();\n"
@@ -1349,13 +1555,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:712
+#: upstream/_guides/hibernate-orm-panache.adoc:850
 #, fuzzy
 msgid "Or using the convenience class `Parameters` either as is or to build a `Map`:"
 msgstr "或者使用便利类 `Parameters` ，既可以是原样，也可以是建立一个 `Map` 。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:718
+#: upstream/_guides/hibernate-orm-panache.adoc:856
 #, no-wrap
 msgid ""
 "// generate a Map\n"
@@ -1364,7 +1570,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:722
+#: upstream/_guides/hibernate-orm-panache.adoc:860
 #, no-wrap
 msgid ""
 "// use it as-is\n"
@@ -1373,50 +1579,51 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:725
+#: upstream/_guides/hibernate-orm-panache.adoc:863
 #, fuzzy
 msgid "Every query operation accepts passing parameters by index (`Object...`), or by name (`Map<String,Object>` or `Parameters`)."
 msgstr "每个查询操作都接受按索引（ `Object…​` ）或按名称（ `Map<String,Object>` 或 `Parameters` ）传递参数。"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:726
+#: upstream/_guides/hibernate-orm-panache.adoc:864
 #, fuzzy, no-wrap
 msgid "Query projection"
 msgstr "查询投影"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:729
+#: upstream/_guides/hibernate-orm-panache.adoc:867
 #, fuzzy
 msgid "Query projection can be done with the `project(Class)` method on the `PanacheQuery` object that is returned by the `find()` methods."
 msgstr "可以用 `project(Class)` 方法对 `find()` 方法返回的 `PanacheQuery` 对象进行查询推算。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:731
+#: upstream/_guides/hibernate-orm-panache.adoc:869
 #, fuzzy
 msgid "You can use it to restrict which fields will be returned by the database."
 msgstr "你可以用它来限制哪些字段将被数据库返回。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:735
+#: upstream/_guides/hibernate-orm-panache.adoc:873
 #, fuzzy
 msgid "Hibernate will use **DTO projection** and generate a SELECT clause with the attributes from the projection class.  This is also called **dynamic instantiation** or **constructor expression**, more info can be found on the Hibernate guide: link:https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#hql-select-clause[hql select clause]"
 msgstr "Hibernate将使用 *DTO投影* 并生成一个带有投影类属性的SELECT子句。这也被称为 *动态实例化* 或 *构造器表达* ，更多信息可以在Hibernate指南中找到： link:https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#hql-select-clause[HQL选择子句]"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:738
+#: upstream/_guides/hibernate-orm-panache.adoc:876
 #, fuzzy
 msgid "The projection class needs to have a constructor that contains all its attributes, this constructor will be used to instantiate the projection DTO instead of using the entity class. This class must have a matching constructor with all the class attributes as parameters."
 msgstr "投影类需要是一个有效的Java Bean，并且有一个包含其所有属性的构造函数，这个构造函数将被用来实例化投影DTO，而不是使用实体类。这个类必须有一个匹配的构造函数，包含所有的类属性作为参数。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:743
-#: upstream/_guides/hibernate-orm-panache.adoc:804
+#: upstream/_guides/hibernate-orm-panache.adoc:882
 #, no-wrap
-msgid "import io.quarkus.runtime.annotations.RegisterForReflection;\n"
+msgid ""
+"import io.quarkus.runtime.annotations.RegisterForReflection;\n"
+"import io.quarkus.hibernate.orm.panache.PanacheQuery;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:747
+#: upstream/_guides/hibernate-orm-panache.adoc:886
 #, no-wrap
 msgid ""
 "@RegisterForReflection // <1>\n"
@@ -1425,7 +1632,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:752
+#: upstream/_guides/hibernate-orm-panache.adoc:891
 #, no-wrap
 msgid ""
 "    public PersonName(String name){ // <3>\n"
@@ -1435,7 +1642,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:755
+#: upstream/_guides/hibernate-orm-panache.adoc:894
 #, no-wrap
 msgid ""
 "// only 'name' will be loaded from the database\n"
@@ -1443,42 +1650,50 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:757
+#: upstream/_guides/hibernate-orm-panache.adoc:896
 #, fuzzy
 msgid "The `@RegisterForReflection` annotation instructs Quarkus to keep the class and its members during the native compilation. More details about the `@RegisterForReflection` annotation can be found on the xref:writing-native-applications-tips.adoc#registerForReflection[native application tips] page."
 msgstr " `@RegisterForReflection` 注解指示Quarkus在本地编译过程中保留该类和其成员。关于 `@RegisterForReflection` 注解的更多细节可以在 link:writing-native-applications-tips.html#registerForReflection[本地应用程序提示] 页面找到。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:758
+#: upstream/_guides/hibernate-orm-panache.adoc:897
 #, fuzzy
 msgid "We use public fields here, but you can use private fields and getters/setters if you prefer."
 msgstr "我们在这里使用公共字段，但如果你愿意，也可以使用私人字段和获取器/设置器。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:759
+#: upstream/_guides/hibernate-orm-panache.adoc:898
 #, fuzzy
 msgid "This constructor will be used by Hibernate, it must be the only constructor in your class and have all the class attributes as parameters."
 msgstr "这个构造函数将被Hibernate使用，它必须是你的类中唯一的构造函数，并且有所有的类属性作为参数。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:766
+#: upstream/_guides/hibernate-orm-panache.adoc:905
 #, fuzzy
 msgid "The implementation of the `project(Class)` method uses the constructor's parameter names to build the select clause of the query, so the compiler must be configured to store parameter names inside the compiled class.  This is enabled by default if you are using the Quarkus Maven archetype. If you are not using it, add the property `<maven.compiler.parameters>true</maven.compiler.parameters>` to your `pom.xml`."
 msgstr " `project(Class)` 方法的实现使用构造函数的参数名来构建查询的选择子句，所以编译器必须配置为在编译后的类中存储参数名。如果您使用Quarkus Maven原型，该功能默认是启用的。如果您没有使用，请在您的 `pom.xml` 中添加该属性 `<maven.compiler.parameters>true</maven.compiler.parameters>` 。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:769
+#: upstream/_guides/hibernate-orm-panache.adoc:908
 msgid "If you run Java 17+, records are a good fit for projection classes."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:771
+#: upstream/_guides/hibernate-orm-panache.adoc:910
 #, fuzzy
 msgid "If in the DTO projection object you have a field from a referenced entity, you can use the `@ProjectedFieldName` annotation to provide the path for the SELECT statement."
 msgstr "如果在DTO投影对象中，你有一个来自被引用实体的字段，你可以使用 `@ProjectedFieldName` 注释来为SELECT语句提供路径。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:782
+#: upstream/_guides/hibernate-orm-panache.adoc:915
+#, no-wrap
+msgid ""
+"import jakarta.persistence.ManyToOne;\n"
+"import io.quarkus.hibernate.orm.panache.common.ProjectedFieldName;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:924
 #, no-wrap
 msgid ""
 "@Entity\n"
@@ -1492,7 +1707,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:787
+#: upstream/_guides/hibernate-orm-panache.adoc:929
 #, no-wrap
 msgid ""
 "@RegisterForReflection\n"
@@ -1502,7 +1717,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:793
+#: upstream/_guides/hibernate-orm-panache.adoc:935
 #, no-wrap
 msgid ""
 "    public DogDto(String name, @ProjectedFieldName(\"owner.name\") String ownerName) {  // <1>\n"
@@ -1513,25 +1728,31 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:795
+#: upstream/_guides/hibernate-orm-panache.adoc:937
 #, no-wrap
 msgid "PanacheQuery<DogDto> query = Dog.findAll().project(DogDto.class);\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:797
+#: upstream/_guides/hibernate-orm-panache.adoc:939
 #, fuzzy
 msgid "The `ownerName` DTO constructor's parameter will be loaded from the `owner.name` HQL property."
 msgstr " `ownerName` DTO构造器的参数将从 `owner.name` HQL属性加载。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:800
+#: upstream/_guides/hibernate-orm-panache.adoc:942
 #, fuzzy
 msgid "It is also possible to specify a HQL query with a select clause. In this case, the projection class must have a constructor matching the values returned by the select clause:"
 msgstr "也可以用一个选择子句来指定一个HQL查询。在这种情况下，投影类必须有一个与选择子句返回的值相匹配的构造函数。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:809
+#: upstream/_guides/hibernate-orm-panache.adoc:946
+#, no-wrap
+msgid "import io.quarkus.runtime.annotations.RegisterForReflection;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:951
 #, no-wrap
 msgid ""
 "@RegisterForReflection \n"
@@ -1541,7 +1762,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:813
+#: upstream/_guides/hibernate-orm-panache.adoc:955
 #, no-wrap
 msgid ""
 "    public RaceWeight(String race) {\n"
@@ -1550,7 +1771,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:819
+#: upstream/_guides/hibernate-orm-panache.adoc:961
 #, no-wrap
 msgid ""
 "    public RaceWeight(String race, Double weight) { // <1>\n"
@@ -1561,7 +1782,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:822
+#: upstream/_guides/hibernate-orm-panache.adoc:964
 #, no-wrap
 msgid ""
 "// Only the race and the average weight will be loaded\n"
@@ -1569,85 +1790,91 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:824
+#: upstream/_guides/hibernate-orm-panache.adoc:966
 #, fuzzy
 msgid "Hibernate ORM will use this constructor. When the query has a select clause, it is possible to have multiple constructors."
 msgstr "Hibernate ORM将使用这个构造函数。当查询有一个选择子句时，有可能会有多个构造函数。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:828
+#: upstream/_guides/hibernate-orm-panache.adoc:970
 #, fuzzy
 msgid "It is not possible to have a HQL `select new` query and `.project(Class)` at the same time - you need to pick one approach."
 msgstr "不可能同时拥有HQL `select new` 查询和 `.project(Class)` - 你需要选择一种方法。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:830
+#: upstream/_guides/hibernate-orm-panache.adoc:972
 #, fuzzy
 msgid "For example, this will fail:"
 msgstr "例如，这将失败。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:834
+#: upstream/_guides/hibernate-orm-panache.adoc:976
 #, no-wrap
 msgid "PanacheQuery<RaceWeight> query = Person.find(\"select new MyView(d.race, AVG(d.weight)) from Dog d group by d.race\").project(AnotherView.class);\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:837
+#: upstream/_guides/hibernate-orm-panache.adoc:979
 #, fuzzy, no-wrap
 msgid "Multiple Persistence Units"
 msgstr "多重持久性单元"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:840
+#: upstream/_guides/hibernate-orm-panache.adoc:982
 #, fuzzy
 msgid "The support for multiple persistence units is described in detail in xref:hibernate-orm.adoc#multiple-persistence-units[the Hibernate ORM guide]."
 msgstr "对多个持久化单元的支持在 link:hibernate-orm.html#multiple-persistence-units[Hibernate ORM指南] 中有详细描述。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:842
+#: upstream/_guides/hibernate-orm-panache.adoc:984
 #, fuzzy
 msgid "When using Panache, things are simple:"
 msgstr "使用Panache时，事情很简单。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:844
+#: upstream/_guides/hibernate-orm-panache.adoc:986
 #, fuzzy
 msgid "A given Panache entity can be attached to only a single persistence unit."
 msgstr "一个给定的Panache实体只能附加到一个持久化单元。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:845
+#: upstream/_guides/hibernate-orm-panache.adoc:987
 #, fuzzy
 msgid "Given that, Panache already provides the necessary plumbing to transparently find the appropriate `EntityManager` associated to a Panache entity."
 msgstr "鉴于此，Panache已经提供了必要的管道来透明地找到与Panache实体相关的适当的 `EntityManager` 。"
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:846
+#: upstream/_guides/hibernate-orm-panache.adoc:988
 #, fuzzy, no-wrap
 msgid "Transactions"
 msgstr "交易"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:851
+#: upstream/_guides/hibernate-orm-panache.adoc:993
 #, fuzzy
 msgid "Make sure to wrap methods modifying your database (e.g. `entity.persist()`) within a transaction. Marking a CDI bean method `@Transactional` will do that for you and make that method a transaction boundary. We recommend doing so at your application entry point boundaries like your REST endpoint controllers."
 msgstr "请确保将修改数据库的方法（例如： `entity.persist()` ）包裹在一个事务中。将CDI bean方法标记为 `@Transactional` ，将为你做到这一点，并使该方法成为一个事务边界。我们建议在你的应用入口点边界这样做，比如你的REST端点控制器。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:857
+#: upstream/_guides/hibernate-orm-panache.adoc:999
 #, fuzzy
-msgid "JPA batches changes you make to your entities and sends changes (it is called flush) at the end of the transaction or before a query.  This is usually a good thing as it is more efficient.  But if you want to check optimistic locking failures, do object validation right away or generally want to get immediate feedback, you can force the flush operation by calling `entity.flush()` or even use `entity.persistAndFlush()` to make it a single method call. This will allow you to catch any `PersistenceException` that could occur when JPA send those changes to the database.  Remember, this is less efficient so don't abuse it.  And your transaction still has to be committed."
+msgid "Hibernate ORM batches changes you make to your entities and sends changes (it is called flush) at the end of the transaction or before a query.  This is usually a good thing as it is more efficient.  But if you want to check optimistic locking failures, do object validation right away or generally want to get immediate feedback, you can force the flush operation by calling `entity.flush()` or even use `entity.persistAndFlush()` to make it a single method call. This will allow you to catch any `PersistenceException` that could occur when Hibernate ORM sends those changes to the database.  Remember, this is less efficient so don't abuse it.  And your transaction still has to be committed."
 msgstr "JPA将你对实体所做的改变进行分批处理，并在事务结束时或查询前发送改变（这被称为冲刷）。这通常是一件好事，因为它更有效率。但是，如果你想检查乐观的锁定失败，立即进行对象验证，或者一般想得到即时的反馈，你可以通过调用 `entity.flush()` ，甚至使用 `entity.persistAndFlush()` ，使其成为一个单一的方法调用，来强制进行冲刷操作。这将允许你在JPA向数据库发送这些变化时捕捉任何可能发生的 `PersistenceException` 。记住，这样做的效率较低，所以不要滥用它。而且你的事务仍然需要提交。"
 
 #. type: delimited block =
-#: upstream/_guides/hibernate-orm-panache.adoc:859
+#: upstream/_guides/hibernate-orm-panache.adoc:1001
 #, fuzzy
 msgid "Here is an example of the usage of the flush method to allow making a specific action in case of `PersistenceException`:"
 msgstr "下面是一个使用同花顺方法的例子，允许在 `PersistenceException` 的情况下进行具体操作。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:873
+#: upstream/_guides/hibernate-orm-panache.adoc:1004
+#, no-wrap
+msgid "import jakarta.persistence.PersistenceException;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:1017
 #, no-wrap
 msgid ""
 "@Transactional\n"
@@ -1665,38 +1892,48 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:875
+#: upstream/_guides/hibernate-orm-panache.adoc:1019
 #, fuzzy, no-wrap
 msgid "Lock management"
 msgstr "锁定管理"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:878
+#: upstream/_guides/hibernate-orm-panache.adoc:1022
 #, fuzzy
 msgid "Panache provides direct support for database locking with your entity/repository, using `findById(Object, LockModeType)` or `find().withLock(LockModeType)`."
 msgstr "Panache为你的实体/资源库提供直接的数据库锁支持，使用 `findById(Object, LockModeType)` 或 `find().withLock(LockModeType)` 。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:880
+#: upstream/_guides/hibernate-orm-panache.adoc:1024
 #, fuzzy
 msgid "The following examples are for the active record pattern, but the same can be used with repositories."
 msgstr "下面的例子是针对活动记录模式的，但同样可以用于存储库。"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:881
+#: upstream/_guides/hibernate-orm-panache.adoc:1025
 #, fuzzy, no-wrap
 msgid "First: Locking using findById()."
 msgstr "首先。使用findById()进行锁定。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:886
-#: upstream/_guides/hibernate-orm-panache.adoc:903
+#: upstream/_guides/hibernate-orm-panache.adoc:1032
+#: upstream/_guides/hibernate-orm-panache.adoc:1053
+#, no-wrap
+msgid ""
+"import jakarta.persistence.LockModeType;\n"
+"import jakarta.transaction.Transactional;\n"
+"import jakarta.ws.rs.GET;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:1034
+#: upstream/_guides/hibernate-orm-panache.adoc:1055
 #, no-wrap
 msgid "public class PersonEndpoint {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:894
+#: upstream/_guides/hibernate-orm-panache.adoc:1042
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1709,20 +1946,20 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:896
-#: upstream/_guides/hibernate-orm-panache.adoc:913
+#: upstream/_guides/hibernate-orm-panache.adoc:1044
+#: upstream/_guides/hibernate-orm-panache.adoc:1065
 #, no-wrap
 msgid "}\n"
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:898
+#: upstream/_guides/hibernate-orm-panache.adoc:1046
 #, fuzzy, no-wrap
 msgid "Second: Locking in a find()."
 msgstr "第二：锁定一个find()。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:911
+#: upstream/_guides/hibernate-orm-panache.adoc:1063
 #, no-wrap
 msgid ""
 "    @GET\n"
@@ -1735,31 +1972,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:916
+#: upstream/_guides/hibernate-orm-panache.adoc:1068
 #, fuzzy
 msgid "Be careful that locks are released when the transaction ends, so the method that invokes the lock query must be annotated with the `@Transactional` annotation."
 msgstr "请注意，当事务结束时，锁会被释放，所以调用锁查询的方法必须用 `@Transactional` 注释。"
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:917
+#: upstream/_guides/hibernate-orm-panache.adoc:1069
 #, fuzzy, no-wrap
 msgid "Custom IDs"
 msgstr "自定义ID"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:921
+#: upstream/_guides/hibernate-orm-panache.adoc:1073
 #, fuzzy
 msgid "IDs are often a touchy subject, and not everyone's up for letting them handled by the framework, once again we have you covered."
 msgstr "身份证往往是一个敏感的话题，并不是每个人都愿意让它们由框架来处理，我们再一次为你提供保障。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:924
+#: upstream/_guides/hibernate-orm-panache.adoc:1076
 #, fuzzy
 msgid "You can specify your own ID strategy by extending `PanacheEntityBase` instead of `PanacheEntity`. Then you just declare whatever ID you want as a public field:"
 msgstr "你可以通过扩展 `PanacheEntityBase` ，而不是 `PanacheEntity` ，来指定你自己的ID策略。然后你只要把你想要的任何ID声明为一个公共字段。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:929
+#: upstream/_guides/hibernate-orm-panache.adoc:1085
+#, no-wrap
+msgid ""
+"import jakarta.persistence.Entity;\n"
+"import jakarta.persistence.GeneratedValue;\n"
+"import jakarta.persistence.GenerationType;\n"
+"import jakarta.persistence.Id;\n"
+"import jakarta.persistence.SequenceGenerator;\n"
+"import io.quarkus.hibernate.orm.panache.PanacheEntityBase;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:1088
 #, no-wrap
 msgid ""
 "@Entity\n"
@@ -1767,7 +2016,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:938
+#: upstream/_guides/hibernate-orm-panache.adoc:1097
 #, no-wrap
 msgid ""
 "    @Id\n"
@@ -1781,7 +2030,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:941
+#: upstream/_guides/hibernate-orm-panache.adoc:1100
 #, no-wrap
 msgid ""
 "    //...\n"
@@ -1789,13 +2038,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:945
+#: upstream/_guides/hibernate-orm-panache.adoc:1104
 #, fuzzy
 msgid "If you're using repositories, then you will want to extend `PanacheRepositoryBase` instead of `PanacheRepository` and specify your ID type as an extra type parameter:"
 msgstr "如果你使用存储库，那么你要扩展 `PanacheRepositoryBase` ，而不是 `PanacheRepository` ，并指定你的ID类型作为一个额外的类型参数。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:952
+#: upstream/_guides/hibernate-orm-panache.adoc:1109
+#, no-wrap
+msgid ""
+"import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;\n"
+"import jakarta.enterprise.context.ApplicationScoped;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:1114
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -1805,31 +2062,31 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:954
+#: upstream/_guides/hibernate-orm-panache.adoc:1116
 #, fuzzy, no-wrap
 msgid "Mocking"
 msgstr "嘲讽"
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:956
+#: upstream/_guides/hibernate-orm-panache.adoc:1118
 #, fuzzy, no-wrap
 msgid "Using the active record pattern"
 msgstr "使用主动记录模式"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:961
+#: upstream/_guides/hibernate-orm-panache.adoc:1123
 #, fuzzy
 msgid "If you are using the active record pattern you cannot use Mockito directly as it does not support mocking static methods, but you can use the `quarkus-panache-mock` module which allows you to use Mockito to mock all provided static methods, including your own."
 msgstr "如果你使用主动记录模式，你不能直接使用Mockito，因为它不支持模拟静态方法，但你可以使用 `quarkus-panache-mock` 模块，它允许你使用Mockito来模拟所有提供的静态方法，包括你自己的。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:963
+#: upstream/_guides/hibernate-orm-panache.adoc:1125
 #, fuzzy
 msgid "Add this dependency to your `pom.xml`:"
 msgstr "将此依赖性添加到你的 `pom.xml` 。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:971
+#: upstream/_guides/hibernate-orm-panache.adoc:1133
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -1840,14 +2097,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:975
-#: upstream/_guides/hibernate-orm-panache.adoc:1114
+#: upstream/_guides/hibernate-orm-panache.adoc:1137
+#: upstream/_guides/hibernate-orm-panache.adoc:1293
 #, fuzzy
 msgid "Given this simple entity:"
 msgstr "鉴于这个简单的实体。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:980
+#: upstream/_guides/hibernate-orm-panache.adoc:1142
 #, no-wrap
 msgid ""
 "@Entity\n"
@@ -1855,13 +2112,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:982
+#: upstream/_guides/hibernate-orm-panache.adoc:1144
 #, no-wrap
 msgid "    public String name;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:987
+#: upstream/_guides/hibernate-orm-panache.adoc:1149
 #, no-wrap
 msgid ""
 "    public static List<Person> findOrdered() {\n"
@@ -1871,14 +2128,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:990
-#: upstream/_guides/hibernate-orm-panache.adoc:1141
+#: upstream/_guides/hibernate-orm-panache.adoc:1152
+#: upstream/_guides/hibernate-orm-panache.adoc:1320
 #, fuzzy
 msgid "You can write your mocking test like this:"
 msgstr "你可以像这样写你的模拟测试。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:995
+#: upstream/_guides/hibernate-orm-panache.adoc:1162
+#, no-wrap
+msgid ""
+"import io.quarkus.panache.mock.PanacheMock;\n"
+"import io.quarkus.test.junit.QuarkusTest;\n"
+"import org.junit.jupiter.api.Assertions;\n"
+"import org.junit.jupiter.api.Test;\n"
+"import org.mockito.Mockito;\n"
+"import jakarta.ws.rs.WebApplicationException;\n"
+"import java.util.Collections;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:1165
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -1886,7 +2156,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:999
+#: upstream/_guides/hibernate-orm-panache.adoc:1169
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -1895,7 +2165,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1002
+#: upstream/_guides/hibernate-orm-panache.adoc:1172
 #, no-wrap
 msgid ""
 "        // Mocked classes always return a default value\n"
@@ -1903,7 +2173,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1006
+#: upstream/_guides/hibernate-orm-panache.adoc:1176
 #, no-wrap
 msgid ""
 "        // Now let's specify the return value\n"
@@ -1912,7 +2182,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1010
+#: upstream/_guides/hibernate-orm-panache.adoc:1180
 #, no-wrap
 msgid ""
 "        // Now let's change the return value\n"
@@ -1921,7 +2191,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1014
+#: upstream/_guides/hibernate-orm-panache.adoc:1184
 #, no-wrap
 msgid ""
 "        // Now let's call the original method\n"
@@ -1930,7 +2200,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1017
+#: upstream/_guides/hibernate-orm-panache.adoc:1187
 #, no-wrap
 msgid ""
 "        // Check that we called it 4 times\n"
@@ -1938,7 +2208,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1023
+#: upstream/_guides/hibernate-orm-panache.adoc:1193
 #, no-wrap
 msgid ""
 "        // Mock only with specific parameters\n"
@@ -1949,7 +2219,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1027
+#: upstream/_guides/hibernate-orm-panache.adoc:1197
 #, no-wrap
 msgid ""
 "        // Mock throwing\n"
@@ -1958,7 +2228,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1031
+#: upstream/_guides/hibernate-orm-panache.adoc:1201
 #, no-wrap
 msgid ""
 "        // We can even mock your custom methods\n"
@@ -1967,7 +2237,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1034
+#: upstream/_guides/hibernate-orm-panache.adoc:1204
 #, no-wrap
 msgid ""
 "        // Mocking a void method\n"
@@ -1975,7 +2245,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1043
+#: upstream/_guides/hibernate-orm-panache.adoc:1213
 #, no-wrap
 msgid ""
 "        // Make it throw\n"
@@ -1989,7 +2259,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1047
+#: upstream/_guides/hibernate-orm-panache.adoc:1217
 #, no-wrap
 msgid ""
 "        // Back to doNothing\n"
@@ -1998,7 +2268,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1056
+#: upstream/_guides/hibernate-orm-panache.adoc:1226
 #, no-wrap
 msgid ""
 "        // Make it call the real method\n"
@@ -2012,7 +2282,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1063
+#: upstream/_guides/hibernate-orm-panache.adoc:1233
 #, no-wrap
 msgid ""
 "        PanacheMock.verify(Person.class).findOrdered();\n"
@@ -2024,25 +2294,39 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1066
+#: upstream/_guides/hibernate-orm-panache.adoc:1236
 #, fuzzy
 msgid "Be sure to call your `verify` and `do*` methods on `PanacheMock` rather than `Mockito`, otherwise you won't know what mock object to pass."
 msgstr "请确保在 `PanacheMock` 而不是 `Mockito` 上调用你的 `verify` 和 `do*` 方法，否则你将不知道要传递什么模拟对象。"
 
 #. type: Title ====
-#: upstream/_guides/hibernate-orm-panache.adoc:1067
+#: upstream/_guides/hibernate-orm-panache.adoc:1237
 #, fuzzy, no-wrap
 msgid "Mocking `EntityManager`, `Session` and entity instance methods"
 msgstr "Mocking `EntityManager` , `Session` 和实体实例方法"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1070
+#: upstream/_guides/hibernate-orm-panache.adoc:1240
 #, fuzzy
 msgid "If you need to mock entity instance methods, such as `persist()` you can do it by mocking the Hibernate ORM `Session` object:"
 msgstr "如果你需要模拟实体实例方法，比如 `persist()` ，你可以通过模拟Hibernate ORM `Session` 对象来实现。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1075
+#: upstream/_guides/hibernate-orm-panache.adoc:1251
+#, no-wrap
+msgid ""
+"import io.quarkus.test.junit.QuarkusTest;\n"
+"import io.quarkus.test.junit.mockito.InjectMock;\n"
+"import org.hibernate.Session;\n"
+"import org.hibernate.query.Query;\n"
+"import org.junit.jupiter.api.Assertions;\n"
+"import org.junit.jupiter.api.BeforeEach;\n"
+"import org.junit.jupiter.api.Test;\n"
+"import org.mockito.Mockito;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:1254
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -2050,7 +2334,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1078
+#: upstream/_guides/hibernate-orm-panache.adoc:1257
 #, no-wrap
 msgid ""
 "    @InjectMock\n"
@@ -2058,7 +2342,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1086
+#: upstream/_guides/hibernate-orm-panache.adoc:1265
 #, no-wrap
 msgid ""
 "    @BeforeEach\n"
@@ -2071,7 +2355,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1093
+#: upstream/_guides/hibernate-orm-panache.adoc:1272
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -2083,7 +2367,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1097
+#: upstream/_guides/hibernate-orm-panache.adoc:1276
 #, no-wrap
 msgid ""
 "        Mockito.verify(session, Mockito.times(1)).persist(Mockito.any());\n"
@@ -2092,19 +2376,19 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/hibernate-orm-panache.adoc:1099
+#: upstream/_guides/hibernate-orm-panache.adoc:1278
 #, fuzzy, no-wrap
 msgid "Using the repository pattern"
 msgstr "使用资源库模式"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1103
+#: upstream/_guides/hibernate-orm-panache.adoc:1282
 #, fuzzy
 msgid "If you are using the repository pattern you can use Mockito directly, using the `quarkus-junit5-mockito` module, which makes mocking beans much easier:"
 msgstr "如果你使用存储库模式，你可以直接使用Mockito，使用 `quarkus-junit5-mockito` 模块，这使得嘲弄Bean变得更加容易。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1111
+#: upstream/_guides/hibernate-orm-panache.adoc:1290
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -2115,7 +2399,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1119
+#: upstream/_guides/hibernate-orm-panache.adoc:1298
 #, no-wrap
 msgid ""
 "@Entity\n"
@@ -2123,7 +2407,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1123
+#: upstream/_guides/hibernate-orm-panache.adoc:1302
 #, no-wrap
 msgid ""
 "    @Id\n"
@@ -2132,7 +2416,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1126
+#: upstream/_guides/hibernate-orm-panache.adoc:1305
 #, no-wrap
 msgid ""
 "    public String name;\n"
@@ -2140,13 +2424,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1129
+#: upstream/_guides/hibernate-orm-panache.adoc:1308
 #, fuzzy
 msgid "And this repository:"
 msgstr "还有这个储存库。"
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1138
+#: upstream/_guides/hibernate-orm-panache.adoc:1317
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -2158,7 +2442,20 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1148
+#: upstream/_guides/hibernate-orm-panache.adoc:1330
+#, no-wrap
+msgid ""
+"import io.quarkus.test.junit.QuarkusTest;\n"
+"import io.quarkus.test.junit.mockito.InjectMock;\n"
+"import org.junit.jupiter.api.Assertions;\n"
+"import org.junit.jupiter.api.Test;\n"
+"import org.mockito.Mockito;\n"
+"import jakarta.ws.rs.WebApplicationException;\n"
+"import java.util.Collections;\n"
+msgstr ""
+
+#. type: delimited block -
+#: upstream/_guides/hibernate-orm-panache.adoc:1335
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -2168,7 +2465,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1153
+#: upstream/_guides/hibernate-orm-panache.adoc:1340
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -2178,7 +2475,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1157
+#: upstream/_guides/hibernate-orm-panache.adoc:1344
 #, no-wrap
 msgid ""
 "        // Now let's specify the return value\n"
@@ -2187,7 +2484,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1161
+#: upstream/_guides/hibernate-orm-panache.adoc:1348
 #, no-wrap
 msgid ""
 "        // Now let's change the return value\n"
@@ -2196,7 +2493,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1165
+#: upstream/_guides/hibernate-orm-panache.adoc:1352
 #, no-wrap
 msgid ""
 "        // Now let's call the original method\n"
@@ -2205,7 +2502,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1168
+#: upstream/_guides/hibernate-orm-panache.adoc:1355
 #, no-wrap
 msgid ""
 "        // Check that we called it 4 times\n"
@@ -2213,7 +2510,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1174
+#: upstream/_guides/hibernate-orm-panache.adoc:1361
 #, no-wrap
 msgid ""
 "        // Mock only with specific parameters\n"
@@ -2224,7 +2521,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1178
+#: upstream/_guides/hibernate-orm-panache.adoc:1365
 #, no-wrap
 msgid ""
 "        // Mock throwing\n"
@@ -2233,7 +2530,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1181
+#: upstream/_guides/hibernate-orm-panache.adoc:1368
 #, no-wrap
 msgid ""
 "        Mockito.when(personRepository.findOrdered()).thenReturn(Collections.emptyList());\n"
@@ -2241,7 +2538,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1188
+#: upstream/_guides/hibernate-orm-panache.adoc:1375
 #, no-wrap
 msgid ""
 "        // We can even mock your custom methods\n"
@@ -2253,101 +2550,101 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:1190
+#: upstream/_guides/hibernate-orm-panache.adoc:1377
 #, fuzzy, no-wrap
 msgid "How and why we simplify Hibernate ORM mappings"
 msgstr "我们如何以及为什么要简化Hibernate ORM映射？"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1194
+#: upstream/_guides/hibernate-orm-panache.adoc:1381
 #, fuzzy
 msgid "When it comes to writing Hibernate ORM entities, there are a number of annoying things that users have grown used to reluctantly deal with, such as:"
 msgstr "在编写Hibernate ORM实体时，有许多恼人的事情，用户已经习惯于不情愿地处理，例如：。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1197
+#: upstream/_guides/hibernate-orm-panache.adoc:1384
 #, fuzzy
 msgid "Duplicating ID logic: most entities need an ID, most people don't care how it is set, because it is not really relevant to your model."
 msgstr "重复ID逻辑：大多数实体需要一个ID，大多数人并不关心它是如何设置的，因为它与你的模型并不真正相关。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1203
+#: upstream/_guides/hibernate-orm-panache.adoc:1390
 #, fuzzy
 msgid "Traditional EE patterns advise to split entity definition (the model) from the operations you can do on them (DAOs, Repositories), but really that requires a split between the state and its operations even though we would never do something like that for regular objects in the Object-Oriented architecture, where state and methods are in the same class. Moreover, this requires two classes per entity, and requires injection of the DAO or Repository where you need to do entity operations, which breaks your edit flow and requires you to get out of the code you're writing to set up an injection point before coming back to use it."
 msgstr "传统的EE模式建议将实体定义（模型）与你可以对其进行的操作（DAO、Repositories）分开，但实际上这需要将状态和其操作分开，尽管我们永远不会对面向对象架构中的普通对象做这样的事情，因为状态和方法是在同一个类中。此外，这需要每个实体有两个类，并且需要在你需要进行实体操作的地方注入DAO或Repository，这就破坏了你的编辑流程，需要你从正在编写的代码中跳出来，建立一个注入点，然后再回来使用它。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1205
+#: upstream/_guides/hibernate-orm-panache.adoc:1392
 #, fuzzy
 msgid "Hibernate queries are super powerful, but overly verbose for common operations, requiring you to write queries even when you don't need all the parts."
 msgstr "Hibernate查询功能超级强大，但对于普通操作来说过于冗长，即使不需要所有的部分，也需要你写查询。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1207
+#: upstream/_guides/hibernate-orm-panache.adoc:1394
 #, fuzzy
 msgid "Hibernate is very general-purpose, but does not make it trivial to do trivial operations that make up 90% of our model usage."
 msgstr "Hibernate是非常通用的，但并没有让我们的模型使用量占90%的琐碎操作变得简单。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1209
+#: upstream/_guides/hibernate-orm-panache.adoc:1396
 #, fuzzy
 msgid "With Panache, we took an opinionated approach to tackle all these problems:"
 msgstr "通过Panache，我们采取了一种有主见的方法来解决所有这些问题。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1212
+#: upstream/_guides/hibernate-orm-panache.adoc:1399
 #, fuzzy
 msgid "Make your entities extend `PanacheEntity`: it has an ID field that is auto-generated. If you require a custom ID strategy, you can extend `PanacheEntityBase` instead and handle the ID yourself."
 msgstr "让你的实体扩展 `PanacheEntity` ：它有一个自动生成的ID字段。如果你需要一个自定义的ID策略，你可以扩展 `PanacheEntityBase` ，而不是自己处理ID。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1215
+#: upstream/_guides/hibernate-orm-panache.adoc:1402
 #, fuzzy
 msgid "Use public fields. Get rid of dumb getter and setters. Hibernate ORM w/o Panache also doesn't require you to use getters and setters, but Panache will additionally generate all getters and setters that are missing, and rewrite every access to these fields to use the accessor methods. This way you can still write _useful_ accessors when you need them, which will be used even though your entity users still use field accesses. This implies that from the Hibernate perspective you're using accessors via getters and setters even while it looks like field accessors."
 msgstr "使用公共字段。摆脱愚蠢的getter和setters。Hibernate ORM w/o Panache也不要求你使用getter和setter，但Panache会额外生成所有缺失的getter和setter，并重写对这些字段的每一个访问，以使用访问器方法。这样，当你需要的时候，你仍然可以编写 _有用的_ 访问器，即使你的实体用户仍然使用字段访问，这些访问器也会被使用。这意味着从Hibernate的角度来看，你正在通过getters和setters使用访问器，即使它看起来像字段访问器。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1218
+#: upstream/_guides/hibernate-orm-panache.adoc:1405
 #, fuzzy
 msgid "With the active record pattern: put all your entity logic in static methods in your entity class and don't create DAOs.  Your entity superclass comes with lots of super useful static methods, and you can add your own in your entity class.  Users can just start using your entity `Person` by typing `Person.` and getting completion for all the operations in a single place."
 msgstr "使用活动记录模式：把你所有的实体逻辑放在实体类的静态方法中，不要创建DAO。你的实体超类带有很多超级有用的静态方法，你也可以在你的实体类中添加你自己的静态方法。用户可以通过输入 `Person.` ，开始使用你的实体 `Person` ，并在一个地方获得所有操作的完成。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1221
+#: upstream/_guides/hibernate-orm-panache.adoc:1408
 #, fuzzy
 msgid "Don't write parts of the query that you don't need: write `Person.find(\"order by name\")` or `Person.find(\"name = ?1 and status = ?2\", \"stef\", Status.Alive)` or even better `Person.find(\"name\", \"stef\")`."
 msgstr "不要写你不需要的查询部分：写 `Person.find(\"order by name\")` 或 `Person.find(\"name = ?1 and status = ?2\", \"stef\", Status.Alive)` ，甚至更好的 `Person.find(\"name\", \"stef\")` 。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1223
+#: upstream/_guides/hibernate-orm-panache.adoc:1410
 #, fuzzy
 msgid "That's all there is to it: with Panache, Hibernate ORM has never looked so trim and neat."
 msgstr "这就是它的全部内容：有了Panache，Hibernate ORM看起来从未如此修长和整洁。"
 
 #. type: Title ==
-#: upstream/_guides/hibernate-orm-panache.adoc:1224
+#: upstream/_guides/hibernate-orm-panache.adoc:1411
 #, fuzzy, no-wrap
 msgid "Defining entities in external projects or jars"
 msgstr "在外部项目或罐子中定义实体"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1227
+#: upstream/_guides/hibernate-orm-panache.adoc:1414
 #, fuzzy
 msgid "Hibernate ORM with Panache relies on compile-time bytecode enhancements to your entities."
 msgstr "带有Panache的Hibernate ORM依赖于编译时对实体的字节码增强。"
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1233
+#: upstream/_guides/hibernate-orm-panache.adoc:1420
 msgid "It attempts to identify archives with Panache entities (and consumers of Panache entities)  by the presence of the marker file `META-INF/panache-archive.marker`. Panache includes an annotation processor that will automatically create this file in archives that depend on Panache (even indirectly). If you have disabled annotation processors you may need to create this file manually in some cases."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/hibernate-orm-panache.adoc:1237
+#: upstream/_guides/hibernate-orm-panache.adoc:1424
 msgid "If you include the jpa-modelgen annotation processor this will exclude the Panache annotation processor by default. If you do this you should either create the marker file yourself, or add the `quarkus-panache-common` as well, as shown below:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/hibernate-orm-panache.adoc:1258
+#: upstream/_guides/hibernate-orm-panache.adoc:1445
 #, no-wrap
 msgid ""
 "<plugin>\n"

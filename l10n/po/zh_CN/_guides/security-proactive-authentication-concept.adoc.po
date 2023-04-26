@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:16+0000\n"
+"POT-Creation-Date: 2023-04-26 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,7 +185,7 @@ msgstr "如何定制认证异常响应"
 #. type: Plain text
 #: upstream/_guides/security-proactive-authentication-concept.adoc:89
 #, fuzzy
-msgid "You can use JAX-RS `ExceptionMapper` to capture Quarkus Security authentication exceptions such as `io.quarkus.security.AuthenticationFailedException`, for example:"
+msgid "You can use Jakarta REST `ExceptionMapper` to capture Quarkus Security authentication exceptions such as `io.quarkus.security.AuthenticationFailedException`, for example:"
 msgstr "你可以使用 JAX-RS `ExceptionMapper` 来捕获 Quarkus Security 认证异常，例如 `io.quarkus.security.AuthenticationFailedException` 。"
 
 #. type: delimited block -
@@ -303,5 +303,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-proactive-authentication-concept.adoc:156
+msgid "xref:security-architecture-concept.adoc[Quarkus Security architecture]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-proactive-authentication-concept.adoc:157
 msgid "xref:security-authentication-mechanisms-concept.adoc#other-supported-authentication-mechanisms[Authentication mechanisms in Quarkus]"
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/security-proactive-authentication-concept.adoc:157
+msgid "xref:security-identity-providers-concept.adoc[Identity providers]"
 msgstr ""

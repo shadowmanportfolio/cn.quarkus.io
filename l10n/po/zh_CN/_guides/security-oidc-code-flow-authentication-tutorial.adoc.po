@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 14:15+0000\n"
+"POT-Creation-Date: 2023-04-26 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. type: Title =
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:2
 #, fuzzy, no-wrap
-msgid "Protect a web application by using OIDC authorization code flow"
+msgid "Protect a web application by using OpenID Connect (OIDC) authorization code flow"
 msgstr "通过使用OIDC授权代码流来保护一个网络应用程序"
 
 #. type: Plain text
@@ -155,7 +155,7 @@ msgstr "撰写申请书"
 #. type: Plain text
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:68
 #, fuzzy
-msgid "Let's write a simple JAX-RS resource which has all the tokens returned in the authorization code grant response injected:"
+msgid "Let's write a simple Jakarta REST resource which has all the tokens returned in the authorization code grant response injected:"
 msgstr "让我们写一个简单的JAX-RS资源，其中注入了授权码授予响应中返回的所有令牌。"
 
 #. type: delimited block -
@@ -305,7 +305,7 @@ msgstr "这个端点注入了ID、访问和刷新令牌。它从ID令牌返回�
 msgid "Note that you do not have to inject the tokens - it is only required if the endpoint needs to use the ID token to interact with the currently authenticated user or use the access token to access a downstream service on behalf of this user."
 msgstr "请注意，你不必注入令牌--只有当端点需要使用ID令牌与当前认证的用户进行交互或使用访问令牌代表该用户访问下游服务时才需要。"
 
-#.  SJ: TO DO - update link to point to new reference guide. For more information, see <<access_id_and_access_tokens,Access ID and Access Tokens>> section.
+#.  SJ: TO DO - update link to point to new reference guide. For more information, see xref:access_id_and_access_tokens[Access ID and Access Tokens] section.
 #. type: Title ===
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:145
 #, fuzzy, no-wrap
@@ -519,7 +519,7 @@ msgstr "点击 `Login` 按钮后，你会被重新引导到应用程序。"
 #. type: Plain text
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:244
 #, fuzzy
-msgid "For more information about writing the integration tests that depend on `Dev Services for Keycloak`, see the <<integration-testing-keycloak-devservices, Dev Services for Keycloak>> section."
+msgid "For more information about writing the integration tests that depend on `Dev Services for Keycloak`, see the xref:security-oidc-code-flow-authentication-concept.adoc#integration-testing-keycloak-devservices[Dev Services for Keycloak] section."
 msgstr "关于编写依赖于 `Dev Services for Keycloak` 的集成测试的更多信息，请参阅 link:#integration-testing-keycloak-devservices[Keycloak的开发服务] 部分。"
 
 #. type: Title ==

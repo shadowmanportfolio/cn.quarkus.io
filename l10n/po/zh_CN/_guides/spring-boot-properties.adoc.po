@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 15:19+0000\n"
+"POT-Creation-Date: 2023-04-26 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr "用Spring Boot属性API访问应用程序属性"
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:13
 #, fuzzy
-msgid "If you prefer to use Spring Boot `@ConfigurationProperties` annotated class to access application properties instead of <<config-mappings.adoc#config-mappings,`@ConfigMapping`>> or a MicroProfile `@ConfigProperty` approach, you can do that with this extension."
+msgid "If you prefer to use Spring Boot `@ConfigurationProperties` annotated class to access application properties instead of xref:config-mappings.adoc#config-mappings[`@ConfigMapping`] or a MicroProfile `@ConfigProperty` approach, you can do that with this extension."
 msgstr "如果你喜欢使用Spring Boot `@ConfigurationProperties` 注释的类来访问应用程序的属性，而不是Quarkus本地 `@ConfigProperties` 或MicroProfile `@ConfigProperty` 方法，你可以通过这个扩展来实现。"
 
 #. type: Plain text
@@ -134,7 +134,7 @@ msgstr "问候语控制器"
 #. type: Plain text
 #: upstream/_guides/spring-boot-properties.adoc:67
 #, fuzzy
-msgid "First, create a `GreetingResource` JAX-RS resource in the `src/main/java/org/acme/spring/boot/properties/GreetingResource.java` file that looks like:"
+msgid "First, create a `GreetingResource` Jakarta REST resource in the `src/main/java/org/acme/spring/boot/properties/GreetingResource.java` file that looks like:"
 msgstr "首先，在 `src/main/java/org/acme/spring/boot/properties/GreetingResource.java` 文件中创建一个 `GreetingResource` JAX-RS资源，看起来像。"
 
 #. type: delimited block -
@@ -157,10 +157,10 @@ msgstr ""
 #: upstream/_guides/spring-boot-properties.adoc:76
 #, no-wrap
 msgid ""
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -250,11 +250,11 @@ msgstr "现在修改 `GreetingResource` ，开始使用 `GreetingProperties` 。
 #: upstream/_guides/spring-boot-properties.adoc:372
 #, no-wrap
 msgid ""
-"import javax.inject.Inject;\n"
-"import javax.ws.rs.GET;\n"
-"import javax.ws.rs.Path;\n"
-"import javax.ws.rs.Produces;\n"
-"import javax.ws.rs.core.MediaType;\n"
+"import jakarta.inject.Inject;\n"
+"import jakarta.ws.rs.GET;\n"
+"import jakarta.ws.rs.Path;\n"
+"import jakarta.ws.rs.Produces;\n"
+"import jakarta.ws.rs.core.MediaType;\n"
 msgstr ""
 
 #. type: delimited block -
