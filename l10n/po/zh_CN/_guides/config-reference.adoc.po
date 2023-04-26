@@ -879,8 +879,9 @@ msgstr " `quarkus.http.ssl-port` 是9443"
 
 #. type: delimited block =
 #: upstream/_guides/config-reference.adoc:399
+#, fuzzy
 msgid "Do not use Profile aware files to set `quarkus.config.profile.parent`. This will not work because the profile is required in advance to load the profile aware files."
-msgstr ""
+msgstr "不要使用配置文件感知文件来设置 `quarkus.config.profile.parent` 。这将不会起作用，因为事先需要配置文件来加载配置文件感知文件。"
 
 #. type: Title ===
 #: upstream/_guides/config-reference.adoc:401
@@ -890,13 +891,15 @@ msgstr "默认配置文件"
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:405
+#, fuzzy
 msgid "Multiple Profiles may be active at the same time. The configuration `quarkus.profile` accepts a comma-separated list of profile names: `quarkus.profile=common,dev`. Both `common` and `dev` are separate profiles."
-msgstr ""
+msgstr "多个配置文件可以同时激活。配置 `quarkus.profile` ，接受一个用逗号分隔的配置文件名称列表： `quarkus.profile=common,dev` 。 `common` 和 `dev` 都是独立的配置文件。"
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:408
+#, fuzzy
 msgid "When multiple profiles are active, the rules for profile configuration are the same. If two profiles define the same configuration, then the last listed profile has priority. Consider:"
-msgstr ""
+msgstr "当多个配置文件被激活时，配置文件的配置规则是相同的。如果两个配置文件定义了相同的配置，那么最后列出的配置文件具有优先权。考虑一下："
 
 #. type: delimited block -
 #: upstream/_guides/config-reference.adoc:413
@@ -924,8 +927,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:426
+#, fuzzy
 msgid "`common.prop` value is `common`"
-msgstr ""
+msgstr " `common.prop` 价值是 `common` "
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:427
@@ -935,13 +939,15 @@ msgstr "有效的配置文件是 `dev` "
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:428
+#, fuzzy
 msgid "`my.prop` value is `5678`"
-msgstr ""
+msgstr " `my.prop` 价值是 `5678` "
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:429
+#, fuzzy
 msgid "`test.prop` does not have a `value`"
-msgstr ""
+msgstr " `test.prop` 没有一个 `value` "
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:432

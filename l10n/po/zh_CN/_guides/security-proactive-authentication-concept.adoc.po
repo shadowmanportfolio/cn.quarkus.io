@@ -242,8 +242,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-proactive-authentication-concept.adoc:121
+#, fuzzy
 msgid "Some HTTP authentication mechanisms need to handle authentication exceptions themselves to create a correct authentication challenge.  For example, `io.quarkus.oidc.runtime.CodeAuthenticationMechanism` which manages OpenId Connect authorization code flow authentication, needs to build a correct redirect URL, cookies, etc.  For that reason, using custom exception mappers to customize authentication exceptions thrown by such mechanisms is not recommended.  Instead, a safer approach would be to ensure that proactive authentication is enabled and to use Vert.x HTTP route failure handlers. This is because events come to the handler with the correct response status and headers.  You will then only need to customize the response, as outlined in the following example:"
-msgstr ""
+msgstr "一些HTTP认证机制需要自己处理认证异常，以创建一个正确的认证挑战。例如，管理OpenId Connect授权代码流认证的 `io.quarkus.oidc.runtime.CodeAuthenticationMechanism` ，需要建立一个正确的重定向URL、cookies等。由于这个原因，不建议使用自定义异常映射器来定制此类机制抛出的认证异常。相反，更安全的方法是确保启用主动认证，并使用Vert.x HTTP路由失败处理程序。这是因为事件会带着正确的响应状态和头文件来到处理程序。然后你只需要定制响应，就像下面的例子中所概述的那样："
 
 #. type: delimited block -
 #: upstream/_guides/security-proactive-authentication-concept.adoc:128
@@ -292,19 +293,21 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_guides/security-proactive-authentication-concept.adoc:152
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "References"
-msgstr ""
+msgstr "参考文献"
 
 #. type: Plain text
 #: upstream/_guides/security-proactive-authentication-concept.adoc:155
+#, fuzzy
 msgid "xref:security-overview-concept.adoc[Quarkus Security overview]"
-msgstr ""
+msgstr "link:security-overview-concept.html[Quarkus安全概述]"
 
 #. type: Plain text
 #: upstream/_guides/security-proactive-authentication-concept.adoc:156
+#, fuzzy
 msgid "xref:security-architecture-concept.adoc[Quarkus Security architecture]"
-msgstr ""
+msgstr "link:security-architecture-concept.html[Quarkus安全架构]"
 
 #. type: Plain text
 #: upstream/_guides/security-proactive-authentication-concept.adoc:157

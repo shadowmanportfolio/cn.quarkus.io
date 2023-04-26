@@ -895,55 +895,63 @@ msgstr "默认情况下，当Quarkus应用程序启动时（在常规或开发�
 
 #. type: Title ==
 #: upstream/_guides/getting-started.adoc:472
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Non Application endpoints"
-msgstr ""
+msgstr "非应用端点"
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:476
+#, fuzzy
 msgid "Various Quarkus extensions contribute non-application endpoints that provide different kinds of information about the application.  Examples of such extensions are the xref:smallrye-health.adoc[health], xref:micrometer.adoc[metrics], xref:openapi-swaggerui.adoc[OpenAPI] and info extensions."
-msgstr ""
+msgstr "各种Quarkus扩展贡献了非应用程序的端点，提供关于应用程序的不同种类的信息。这种扩展的例子有 link:smallrye-health.html[健康] 、 link:micrometer.html[度量] 、 link:openapi-swaggerui.html[OpenAPI] 和信息扩展。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:478
+#, fuzzy
 msgid "These non application endpoints are normally accessible under the `/q` prefix like so:"
-msgstr ""
+msgstr "这些非应用程序的端点通常可以在 `/q` 前缀下访问，就像这样："
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:480
+#, fuzzy
 msgid "`/q/health`"
-msgstr ""
+msgstr " `/q/health` "
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:481
+#, fuzzy
 msgid "`/q/metrics`"
-msgstr ""
+msgstr " `/q/metrics` "
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:482
+#, fuzzy
 msgid "`/q/openapi`"
-msgstr ""
+msgstr " `/q/openapi` "
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:483
+#, fuzzy
 msgid "`/q/info`"
-msgstr ""
+msgstr " `/q/info` "
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:485
+#, fuzzy
 msgid "but users can also choose to expose one that might present a security risk under a different TCP port using a dedicated xref:management-interface-reference.adoc[management interface]."
-msgstr ""
+msgstr "但用户也可以选择在不同的TCP端口下使用专门的 link:management-interface-reference.html[管理界面] 来暴露一个可能存在安全风险的。"
 
 #. type: Title ===
 #: upstream/_guides/getting-started.adoc:486
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Info endpoint"
-msgstr ""
+msgstr "信息端点"
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:489
+#, fuzzy
 msgid "If the application contains the `quarkus-info` extension, then Quarkus will by default expose the `/q/info` endpoint which provides information about the build, java version, version control, and operating system. The level of detail of the exposed information is configurable."
-msgstr ""
+msgstr "如果应用程序包含 `quarkus-info` 扩展，那么Quarkus将默认暴露 `/q/info` 端点，该端点提供关于构建、java版本、版本控制和操作系统的信息。暴露的信息的详细程度是可以配置的。"
 
 #. type: Title ====
 #: upstream/_guides/getting-started.adoc:490
@@ -959,23 +967,27 @@ msgstr "下一步是什么？"
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:500
+#, fuzzy
 msgid "This guide covered the creation of an application using Quarkus.  However, there is much more.  We recommend continuing the journey with the xref:building-native-image.adoc[building a native executable guide], where you learn about creating a native executable and packaging it in a container.  If you are interested in reactive, we recommend the xref:getting-started-reactive.adoc[Getting Started with Reactive guide], where you can see how to implement reactive applications with Quarkus."
-msgstr ""
+msgstr "本指南涵盖了使用Quarkus创建一个应用程序。然而，还有很多内容。我们建议继续学习 link:building-native-image.html[构建本地可执行文件指南] ，在那里你可以了解到如何创建一个本地可执行文件并将其打包到容器中。如果你对反应式感兴趣，我们推荐《 link:getting-started-reactive.html[反应式入门》指南] ，在那里你可以看到如何用Quarkus实现反应式应用。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:502
+#, fuzzy
 msgid "In addition, the xref:tooling.adoc[tooling guide] document explains how to:"
-msgstr ""
+msgstr "此外， link:tooling.html[工具指南] 文件解释了如何："
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:504
+#, fuzzy
 msgid "scaffold a project in a single command line"
-msgstr ""
+msgstr "在一个单一的命令行中建立一个项目的脚手架"
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:505
+#, fuzzy
 msgid "enable the _development mode_ (hot reload)"
-msgstr ""
+msgstr "启用 _开发模式_ （热重载）。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started.adoc:506

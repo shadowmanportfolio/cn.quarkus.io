@@ -1051,8 +1051,9 @@ msgstr "请注意在修改数据库的操作上使用 `@Transactional` 注释，
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:612
+#, fuzzy
 msgid "To make it easier to showcase some capabilities of Hibernate ORM with Panache on Quarkus with Dev mode, some test data should be inserted into the database by adding the following content to a new file named src/main/resources/import.sql:"
-msgstr ""
+msgstr "为了更方便地在Quarkus上展示Hibernate ORM与Panache的一些功能，应该在一个名为src/main/resources/import.sql的新文件中加入以下内容，将一些测试数据插入数据库："
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:617
@@ -1064,13 +1065,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:620
+#, fuzzy
 msgid "If you would like to initialize the DB when you start the Quarkus app in your production environment, add `quarkus.hibernate-orm.database.generation=drop-and-create` to the Quarkus startup options in addition to `import.sql`."
-msgstr ""
+msgstr "如果你想在生产环境中启动Quarkus应用程序时初始化数据库，除了 `import.sql` ，还可以在Quarkus启动选项中添加 `quarkus.hibernate-orm.database.generation=drop-and-create` 。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:622
+#, fuzzy
 msgid "After that, you can see the people list and add new person as followings:"
-msgstr ""
+msgstr "之后，你可以看到人们的名单，并添加新的人作为追随者："
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:627
@@ -1096,8 +1099,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:635
+#, fuzzy
 msgid "If you see the Person object as Person<1>, then the object has not been converted. In this case, add the dependency `quarkus-resteasy-reactive-jackson` in `pom.xml`."
-msgstr ""
+msgstr "如果你看到Person对象是Person<1>，那么这个对象还没有被转换。在这种情况下，在 `pom.xml` ，添加依赖性 `quarkus-resteasy-reactive-jackson` 。"
 
 #. type: delimited block -
 #: upstream/_guides/hibernate-orm-panache.adoc:643
@@ -1675,8 +1679,9 @@ msgstr " `project(Class)` 方法的实现使用构造函数的参数名来构建
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:908
+#, fuzzy
 msgid "If you run Java 17+, records are a good fit for projection classes."
-msgstr ""
+msgstr "如果你运行的是Java 17+，记录是很适合投影类的。"
 
 #. type: Plain text
 #: upstream/_guides/hibernate-orm-panache.adoc:910

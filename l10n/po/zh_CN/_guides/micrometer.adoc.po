@@ -342,14 +342,15 @@ msgstr "什么时候应该使用量具？只有在你无法使用其他东西的
 
 #. type: Title ==
 #: upstream/_guides/micrometer.adoc:192 upstream/_guides/micrometer.adoc:610
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Management interface"
-msgstr ""
+msgstr "管理界面"
 
 #. type: delimited block =
 #: upstream/_guides/micrometer.adoc:198
+#, fuzzy
 msgid "By default, the metrics are exposed on the main HTTP server.  You can expose them on a separate network interface and port by enabling the management interface with the `quarkus.management.enabled=true` property.  Refer to the xref:./management-interface-reference.adoc[management interface reference] for more information."
-msgstr ""
+msgstr "默认情况下，指标被暴露在主HTTP服务器上。你可以通过启用 `quarkus.management.enabled=true` 属性的管理界面，将它们暴露在一个单独的网络接口和端口上。更多信息请参考 link:./management-interface-reference.html[管理接口参考] 。"
 
 #. type: Title ===
 #: upstream/_guides/micrometer.adoc:200
@@ -637,14 +638,15 @@ msgstr "如果不能确定正确的URL，请使用 `quarkus.micrometer.binder.ht
 
 #. type: Block title
 #: upstream/_guides/micrometer.adoc:410
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Exported metrics format"
-msgstr ""
+msgstr "导出的度量衡格式"
 
 #. type: Plain text
 #: upstream/_guides/micrometer.adoc:414
+#, fuzzy
 msgid "By default, the metrics are exported using the Prometheus format `application/openmetrics-text`, you can revert to the former format by specifying the `Accept` request header to `text/plain` (`curl -H \"Accept: text/plain\" localhost:8080/q/metrics/`)."
-msgstr ""
+msgstr "默认情况下，指标是使用Prometheus格式导出的 `application/openmetrics-text` ，你可以通过指定 `Accept` 请求头来恢复到以前的格式 `text/plain` ( `curl -H \"Accept: text/plain\" localhost:8080/q/metrics/` )。"
 
 #. type: Title ==
 #: upstream/_guides/micrometer.adoc:415
@@ -931,18 +933,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/micrometer.adoc:609
+#, fuzzy
 msgid "The MP Metrics API compatibility layer will be moved to a different extension in the future."
-msgstr ""
+msgstr "MP Metrics API兼容层将来会被移到一个不同的扩展中。"
 
 #. type: Plain text
 #: upstream/_guides/micrometer.adoc:616
+#, fuzzy
 msgid "By default, the metrics are exposed on the main HTTP server.  You can expose them on a separate network interface and port by setting `quarkus.management.enabled=true` in your application configuration.  Note that this property is a build-time property.  The value cannot be overridden at runtime."
-msgstr ""
+msgstr "默认情况下，指标是在主HTTP服务器上公开的。你可以通过在你的应用程序配置中设置 `quarkus.management.enabled=true` ，将它们暴露在一个单独的网络接口和端口上。注意，这个属性是一个构建时的属性。该值不能在运行时被重写。"
 
 #. type: Plain text
 #: upstream/_guides/micrometer.adoc:619
+#, fuzzy
 msgid "If you enable the management interface without customizing the management network interface and port, the metrics are exposed under: `http://0.0.0.0:9000/q/metrics`.  You can configure the path of each exposed format using:"
-msgstr ""
+msgstr "如果你启用了管理界面而没有定制管理网络接口和端口，那么指标就会在下面暴露： `<a href=\"http://0.0.0.0:9000/q/metrics\" class=\"bare\">http://0.0.0.0:9000/q/metrics</a>` .你可以用以下方式配置每个暴露的格式的路径："
 
 #. type: delimited block -
 #: upstream/_guides/micrometer.adoc:624
@@ -955,8 +960,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/micrometer.adoc:628
+#, fuzzy
 msgid "With such a configuration, the json metrics will be available from `http://0.0.0.0:9000/q/metrics/json`.  The prometheus metrics will be available from `http://0.0.0.0:9000/q/metrics/prometheus`."
-msgstr ""
+msgstr "有了这样的配置，json指标就可以从 `<a href=\"http://0.0.0.0:9000/q/metrics/json\" class=\"bare\">http://0.0.0.0:9000/q/metrics/json</a>` .prometheus指标将从 `<a href=\"http://0.0.0.0:9000/q/metrics/prometheus\" class=\"bare\">http://0.0.0.0:9000/q/metrics/prometheus</a>` ."
 
 #. type: Plain text
 #: upstream/_guides/micrometer.adoc:630

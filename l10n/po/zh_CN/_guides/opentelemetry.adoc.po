@@ -33,18 +33,21 @@ msgstr "本指南解释了你的Quarkus应用程序如何利用 link:https://ope
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:15
+#, fuzzy
 msgid "OpenTelemetry Metrics and Logging are not yet supported."
-msgstr ""
+msgstr "目前还不支持OpenTelemetry指标和日志。"
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:21
+#, fuzzy
 msgid "Quarkus now supports the OpenTelemetry Autoconfiguration for Traces. The configurations match what you can see at https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md[OpenTelemetry SDK Autoconfigure] with the `quarkus.*` prefix."
-msgstr ""
+msgstr "Quarkus现在支持OpenTelemetry Autoconfiguration for Traces。这些配置与你在 link:https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md[OpenTelemetry SDK Autoconfigure] 中看到的配置一致，前缀为 `quarkus.*` 。"
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:23
+#, fuzzy
 msgid "Extensions and the libraries they provide, are directly instrumented in Quarkus. The *use of the https://opentelemetry.io/docs/instrumentation/java/automatic/[OpenTelemetry Agent] is not needed nor recommended* due to context propagation issues between imperative and reactive libraries."
-msgstr ""
+msgstr "扩展和它们所提供的库，在Quarkus中直接使用工具。由于命令式和反应式库之间的上下文传播问题， *不需要也不推荐* 使用 *<a href=\"https://opentelemetry.io/docs/instrumentation/java/automatic/\">OpenTelemetry Agent</a>* 。"
 
 #. type: Title ==
 #: upstream/_guides/opentelemetry.adoc:25
@@ -222,13 +225,15 @@ msgstr "创建配置"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:112
+#, fuzzy
 msgid "There are no mandatory configurations for the extension to work."
-msgstr ""
+msgstr "该扩展的工作没有强制性配置。"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:114
+#, fuzzy
 msgid "If you need to change any of the default property values, here is an example on how to configure the default OTLP gRPC Exporter within the application, using the `src/main/resources/application.properties` file:"
-msgstr ""
+msgstr "如果你需要改变任何默认的属性值，这里有一个例子，说明如何在应用程序内配置默认的OTLP gRPC导出器，使用 `src/main/resources/application.properties` 文件："
 
 #. type: delimited block -
 #: upstream/_guides/opentelemetry.adoc:121
@@ -256,8 +261,9 @@ msgstr "所有从应用程序创建的跨度将包括一个OpenTelemetry `Resour
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:128
+#, fuzzy
 msgid "gRPC endpoint to send spans. If not set, it will default to `http://localhost:4317`."
-msgstr ""
+msgstr "用于发送跨度的gRPC端点。如果没有设置，它将默认为 `<a href=\"http://localhost:4317\" class=\"bare\">http://localhost:4317</a>` ."
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:129
@@ -279,13 +285,15 @@ msgstr "你也可以只把跟踪信息放到访问日志中。在这种情况下
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:135
+#, fuzzy
 msgid "All configurations have been updated from `quarkus.opentelemetry.\\*` -> `quarkus.otel.*`"
-msgstr ""
+msgstr "所有的配置都从 `quarkus.opentelemetry.*` →更新。 `quarkus.otel.*` "
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:137
+#, fuzzy
 msgid "The legacy configurations are now deprecated but will still work during a transition period."
-msgstr ""
+msgstr "遗留的配置现在已被废弃，但在过渡期内仍可使用。"
 
 #. type: Title ==
 #: upstream/_guides/opentelemetry.adoc:139
@@ -338,8 +346,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:170
+#, fuzzy
 msgid "You should remove the optional ports you don't need them."
-msgstr ""
+msgstr "你应该删除你不需要的可选端口。"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:172
@@ -640,106 +649,111 @@ msgstr "你可以通过设置 link:#configuration-reference[[配置-参考]] 中
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:345
+#, fuzzy
 msgid "Quarkus 3.0 introduced breaking changes on the configuration."
-msgstr ""
+msgstr "Quarkus 3.0在配置上引入了突破性的变化。"
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:347
+#, fuzzy
 msgid "Sampler related property names and values change to comply with the latest Java OpenTelemetry SDK. During a transition period it will be possible to set the new configuration values in the old property because we are mapping `quarkus.opentelemetry.tracer.sampler` -> `quarkus.otel.traces.sampler`."
-msgstr ""
+msgstr "采样器相关的属性名称和值会发生变化，以符合最新的Java OpenTelemetry SDK。在过渡时期，将有可能在旧的属性中设置新的配置值，因为我们正在映射 `quarkus.opentelemetry.tracer.sampler` → `quarkus.otel.traces.sampler` 。"
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:349
+#, fuzzy
 msgid "If the sampler is parent based, there is no need to set, the now dropped property, `quarkus.opentelemetry.tracer.sampler.parent-based`."
-msgstr ""
+msgstr "如果采样器是基于父级的，就不需要设置现在被放弃的属性， `quarkus.opentelemetry.tracer.sampler.parent-based` 。"
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:351
+#, fuzzy
 msgid "The values you need to set on `quarkus.opentelemetry.tracer.sampler` are now:"
-msgstr ""
+msgstr "你需要在 `quarkus.opentelemetry.tracer.sampler` ，现在需要设置的值是："
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:353
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Old Sampler config value"
-msgstr ""
+msgstr "旧的采样器配置值"
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:353
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "New Sampler config valu"
-msgstr ""
+msgstr "新的采样器配置值"
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:355
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "New Sampler config value (Parent based)"
-msgstr ""
+msgstr "新的采样器配置值（基于父代）。"
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:356
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`on`"
-msgstr ""
+msgstr " `on` "
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:357
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`always_on`"
-msgstr ""
+msgstr " `always_on` "
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:359
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`parentbased_always_on`"
-msgstr ""
+msgstr " `parentbased_always_on` "
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:360
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`off`"
-msgstr ""
+msgstr " `off` "
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:361
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`always_off`"
-msgstr ""
+msgstr " `always_off` "
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:363
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`parentbased_always_off`"
-msgstr ""
+msgstr " `parentbased_always_off` "
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:364
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`ratio`"
-msgstr ""
+msgstr " `ratio` "
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:365
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`traceidratio`"
-msgstr ""
+msgstr " `traceidratio` "
 
 #. type: Table
 #: upstream/_guides/opentelemetry.adoc:366
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "`parentbased_traceidratio`"
-msgstr ""
+msgstr " `parentbased_traceidratio` "
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:370
+#, fuzzy
 msgid "If you need to use a custom sampler there are now 2 different ways:"
-msgstr ""
+msgstr "如果你需要使用自定义采样器，现在有两种不同的方法："
 
 #. type: Title ====
 #: upstream/_guides/opentelemetry.adoc:371
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Sampler CDI Producer"
-msgstr ""
+msgstr "采样器CDI生产者"
 
 #. type: delimited block =
 #: upstream/_guides/opentelemetry.adoc:374
@@ -770,8 +784,9 @@ msgstr "采样器"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:395
+#, fuzzy
 msgid "This will use the SPI hooks available with the OTel Autoconfiguration.  You can create a simple Sampler class:"
-msgstr ""
+msgstr "这将使用OTel Autoconfiguration的SPI钩子。你可以创建一个简单的采样器类："
 
 #. type: delimited block -
 #: upstream/_guides/opentelemetry.adoc:408
@@ -803,8 +818,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:417
+#, fuzzy
 msgid "Then a Sampler Provider:"
-msgstr ""
+msgstr "然后是一个采样器供应商："
 
 #. type: delimited block -
 #: upstream/_guides/opentelemetry.adoc:424
@@ -830,8 +846,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:432
+#, fuzzy
 msgid "Write the SPI loader text file at `resources/META-INF/services` with name `io.opentelemetry.sdk.autoconfigure.spi.traces.ConfigurableSamplerProvider` containing the full qualified name of the `CustomSPISamplerProvider` class."
-msgstr ""
+msgstr "在 `resources/META-INF/services` ，写入SPI加载器文本文件，文件名为 `io.opentelemetry.sdk.autoconfigure.spi.traces.ConfigurableSamplerProvider` ，包含 `CustomSPISamplerProvider` 类的全称。"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:434
@@ -847,8 +864,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:440
+#, fuzzy
 msgid "As you can see, CDI is much simpler to work with."
-msgstr ""
+msgstr "正如你所看到的，CDI在工作上要简单得多。"
 
 #. type: Title ==
 #: upstream/_guides/opentelemetry.adoc:441
@@ -1070,9 +1088,9 @@ msgstr "额外的出口商将在Quarkiverse link:https://github.com/quarkiverse/
 
 #. type: Title ==
 #: upstream/_guides/opentelemetry.adoc:536
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "OpenTelemetry Configuration Reference"
-msgstr ""
+msgstr "OpenTelemetry配置参考"
 
 #. type: Plain text
 #: upstream/_guides/opentelemetry.adoc:542

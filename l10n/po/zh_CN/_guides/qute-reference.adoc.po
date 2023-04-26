@@ -3364,8 +3364,9 @@ msgstr "在渲染过程中使用注入的 `Service` 。"
 
 #. type: Plain text
 #: upstream/_guides/qute-reference.adoc:1516
+#, fuzzy
 msgid "The `@EngineConfiguration` annotation can be also used to register ``ValueResolver``s and ``NamespaceResolver``s."
-msgstr ""
+msgstr " `@EngineConfiguration` 注释也可以用来注册 `ValueResolver` s和 `NamespaceResolver` s。"
 
 #. type: Title ====
 #: upstream/_guides/qute-reference.adoc:1518
@@ -3532,18 +3533,21 @@ msgstr " `@Named @Dependent` beans在一个模板中的所有表达式中共享�
 
 #. type: Plain text
 #: upstream/_guides/qute-reference.adoc:1585
+#, fuzzy
 msgid "All expressions with `cdi` and `inject` namespaces are validated during build."
-msgstr ""
+msgstr "所有带有 `cdi` 和 `inject` 命名空间的表达式都在构建过程中被验证。"
 
 #. type: Plain text
 #: upstream/_guides/qute-reference.adoc:1587
+#, fuzzy
 msgid "For the expression `cdi:personService.findPerson(10).name`, the implementation class of the injected bean must either declare the `findPerson` method or a matching xref:template_extension_methods[template extension method] must exist."
-msgstr ""
+msgstr "对于表达式 `cdi:personService.findPerson(10).name` ，被注入的Bean的实现类必须声明 `findPerson` 方法或者必须存在一个匹配的 link:#template_extension_methods[模板扩展方法] 。"
 
 #. type: Plain text
 #: upstream/_guides/qute-reference.adoc:1589
+#, fuzzy
 msgid "For the expression `inject:foo.price`, the implementation class of the injected bean must either have the `price` property (e.g. a `getPrice()` method) or a matching xref:template_extension_methods[template extension method] must exist."
-msgstr ""
+msgstr "对于表达式 `inject:foo.price` ，被注入的Bean的实现类必须具有 `price` 属性（例如 `getPrice()` 方法）或者必须存在一个匹配的 link:#template_extension_methods[模板扩展方法] 。"
 
 #. type: Plain text
 #: upstream/_guides/qute-reference.adoc:1591
@@ -4785,13 +4789,15 @@ msgstr " `{str:fmt(locale,'%tA',now)}` "
 
 #. type: Plain text
 #: upstream/_guides/qute-reference.adoc:2105
+#, fuzzy
 msgid "`+`: Concatenation"
-msgstr ""
+msgstr " `+` :串联"
 
 #. type: Plain text
 #: upstream/_guides/qute-reference.adoc:2106
+#, fuzzy
 msgid "`{item.name + '_' + mySuffix}`"
-msgstr ""
+msgstr " `{item.name + '_' + mySuffix}` "
 
 #. type: Plain text
 #: upstream/_guides/qute-reference.adoc:2107
@@ -5763,9 +5769,9 @@ msgstr "也可以通过使用保留的密钥 `message` ，为运行时解决的�
 
 #. type: Title ====
 #: upstream/_guides/qute-reference.adoc:2523
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Default Bundle Name"
-msgstr ""
+msgstr "默认捆绑名称"
 
 #. type: Plain text
 #: upstream/_guides/qute-reference.adoc:2529

@@ -813,8 +813,9 @@ msgstr " `io.quarkus.test.junit.callback.QuarkusTestAfterEachCallback` "
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:429
+#, fuzzy
 msgid "Optionally, you can enable these callbacks also for the `@QuarkusIntegrationTest` tests if the property `quarkus.test.enable-callbacks-for-integration-tests` is `true`."
-msgstr ""
+msgstr "可选的是，如果属性 `quarkus.test.enable-callbacks-for-integration-tests` 是 `true` ，你也可以为 `@QuarkusIntegrationTest` 测试启用这些回调。"
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:431
@@ -2143,8 +2144,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:1192
+#, fuzzy
 msgid "If you want to make the annotation repeatable, the containing annotation type must be annotated with `@QuarkusTestResourceRepeatable`.  For example, this would define a repeatable `@WithRepeatableTestResource` annotation."
-msgstr ""
+msgstr "如果你想让注解可重复，包含的注解类型必须用 `@QuarkusTestResourceRepeatable` 。例如，这将定义一个可重复的 `@WithRepeatableTestResource` 注释。"
 
 #. type: delimited block -
 #: upstream/_guides/getting-started-testing.adoc:1200
@@ -2326,8 +2328,9 @@ msgstr "更多信息可以在《 link:building-native-image#testing-the-native-e
 
 #. type: delimited block =
 #: upstream/_guides/getting-started-testing.adoc:1303
+#, fuzzy
 msgid "When the application is tested using `@QuarkusIntegrationTest` it is launched using the `prod` configuration profile, but this can be changed using the `quarkus.test.integration-test-profile` property."
-msgstr ""
+msgstr "当使用 `@QuarkusIntegrationTest` 测试应用程序时，它是使用 `prod` 配置文件启动的，但这可以使用 `quarkus.test.integration-test-profile` 属性来改变。"
 
 #. type: Title ===
 #: upstream/_guides/getting-started-testing.adoc:1305

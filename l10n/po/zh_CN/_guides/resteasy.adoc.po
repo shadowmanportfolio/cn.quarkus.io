@@ -651,8 +651,9 @@ msgstr "现在，端点 `/records` 和 `/records/first` 将接受媒体类型 `j
 
 #. type: Plain text
 #: upstream/_guides/resteasy.adoc:336
+#, fuzzy
 msgid "For example, if we invoke the `/records` endpoint using curl to return a list of records, the HAL format will look like as follows:"
-msgstr ""
+msgstr "例如，如果我们使用curl调用 `/records` 端点来返回一个记录列表，HAL格式将如下所示："
 
 #. type: delimited block -
 #: upstream/_guides/resteasy.adoc:377
@@ -700,8 +701,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/resteasy.adoc:380
+#, fuzzy
 msgid "When we call a resource `/records/first` that returns only one instance, then the output is:"
-msgstr ""
+msgstr "当我们调用一个只返回一个实例的资源 `/records/first` ，那么输出是："
 
 #. type: delimited block -
 #: upstream/_guides/resteasy.adoc:397
@@ -1334,8 +1336,9 @@ msgstr "一旦GZip支持被启用，你可以通过在你的端点方法中添�
 
 #. type: Plain text
 #: upstream/_guides/resteasy.adoc:724
+#, fuzzy
 msgid "There is also the `quarkus.http.enable-compression` configuration property which enables HTTP response compression globally. If enabled then a response body is compressed if the `Content-Type` HTTP header is set and the value is a compressed media type as configured via the `quarkus.http.compress-media-types` configuration property."
-msgstr ""
+msgstr "还有一个配置属性 `quarkus.http.enable-compression` ，它在全局范围内启用HTTP响应压缩。如果启用，那么如果设置了 `Content-Type` HTTP头，并且该值是通过 `quarkus.http.compress-media-types` 配置属性配置的压缩媒体类型，那么响应体就会被压缩。"
 
 #. type: Title ==
 #: upstream/_guides/resteasy.adoc:725
@@ -1527,14 +1530,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/resteasy.adoc:812
+#, fuzzy
 msgid "Please note that if a Jakarta REST Application has been detected and the method `getClasses()` and/or `getSingletons()` has/have been overridden, Quarkus will ignore the build time conditions and consider only what has been defined in the Jakarta REST Application."
-msgstr ""
+msgstr "请注意，如果检测到一个Jakarta REST Application，并且方法 `getClasses()` 和/或 `getSingletons()` 已经被重写，Quarkus将忽略构建时间条件，只考虑Jakarta REST Application中定义的内容。"
 
 #. type: Title ==
 #: upstream/_guides/resteasy.adoc:813
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Conclusion"
-msgstr ""
+msgstr "总结"
 
 #. type: Plain text
 #: upstream/_guides/resteasy.adoc:816

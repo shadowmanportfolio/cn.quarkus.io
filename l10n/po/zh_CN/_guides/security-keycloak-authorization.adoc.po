@@ -69,8 +69,9 @@ msgstr "关于 `Bearer Token` 认证机制的更多信息，请参见 link:secur
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:26
+#, fuzzy
 msgid "Please see https://www.keycloak.org/docs/latest/authorization_services/index.html#_enforcer_overview[Keycloak Authorization Services documentation] for more information."
-msgstr ""
+msgstr "更多信息请参见 link:https://www.keycloak.org/docs/latest/authorization_services/index.html#_enforcer_overview[Keycloak授权服务文档] 。"
 
 #. type: Title ==
 #: upstream/_guides/security-keycloak-authorization.adoc:27
@@ -853,8 +854,9 @@ msgstr "以程序方式检查权限"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:394
+#, fuzzy
 msgid "In addition to resource permissions, you may want to specify method scopes. The scope usually represents an action that can be performed on a resource. You can create an enforcing Keycloak Authorization Policy with method scope like this:"
-msgstr ""
+msgstr "除了资源权限外，你可能想指定方法作用域。作用域通常代表一个可以在资源上执行的动作。你可以像这样用方法作用域创建一个强制执行的Keycloak授权策略："
 
 #. type: delimited block -
 #: upstream/_guides/security-keycloak-authorization.adoc:402
@@ -880,13 +882,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:410
+#, fuzzy
 msgid "User must have resource permission 'Scope Permission Resource' and scope 'read'"
-msgstr ""
+msgstr "用户必须有资源权限'范围许可资源'和范围'读'。"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:416
+#, fuzzy
 msgid "Request path `/api/protected/standard-way` is now secured by the Keycloak Policy Enforcer and does not require any additions (such as `@RolesAllowed` annotation). In some cases, you may want to perform the same check programmatically.  You are allowed to do that by injecting a `SecurityIdentity` instance in your beans, as demonstrated in the example below.  Alternatively, if you annotate resource method with the `@PermissionsAllowed` annotation, you can achieve the same effect.  The following example shows three resource method that all requires same 'read' scope:"
-msgstr ""
+msgstr "请求路径 `/api/protected/standard-way` ，现在由Keycloak Policy Enforcer保障，不需要添加任何东西（如 `@RolesAllowed` 注释）。在某些情况下，你可能想以编程方式执行同样的检查。你可以通过在你的bean中注入一个 `SecurityIdentity` 实例来做到这一点，正如下面的例子所展示的。另外，如果你用 `@PermissionsAllowed` 注解来注解资源方法，你也可以达到同样的效果。下面的例子显示了三个资源方法，它们都需要相同的 \"读取 \"范围："
 
 #. type: delimited block -
 #: upstream/_guides/security-keycloak-authorization.adoc:421
@@ -978,18 +982,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:472
+#, fuzzy
 msgid "Request sub-path `/standard-way` requires both resource permission and scope `read` according to the configuration properties we set in the `application.properties` before."
-msgstr ""
+msgstr "根据我们之前在 `application.properties` 中设置的配置属性，请求子路径 `/standard-way` 需要资源许可和范围 `read` 。"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:473
+#, fuzzy
 msgid "Request sub-path `/programmatic-way` only requires permission `Scope Permission Resource`, but we can enforce scope with `SecurityIdentity#checkPermission`."
-msgstr ""
+msgstr "请求子路径 `/programmatic-way` ，只需要权限 `Scope Permission Resource` ，但我们可以用 `SecurityIdentity#checkPermission` ，强制执行范围。"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:475
+#, fuzzy
 msgid "The `@PermissionsAllowed` annotation only grants access to the requests with permission `Scope Permission Resource` and scope `read`.  For more information, see the section xref:security-authorize-web-endpoints-reference.adoc#standard-security-annotations[Authorization using annotations] of the Security Authorization guide."
-msgstr ""
+msgstr " `@PermissionsAllowed` 注解只授予具有权限 `Scope Permission Resource` 和范围 `read` 的请求访问权。更多信息，请参见安全授权指南中 link:security-authorize-web-endpoints-reference.html#standard-security-annotations[使用注解的授权] 部分。"
 
 #. type: Title ==
 #: upstream/_guides/security-keycloak-authorization.adoc:476
@@ -1095,19 +1102,21 @@ msgstr "配置参考"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:525
+#, fuzzy
 msgid "The configuration is based on the official https://www.keycloak.org/docs/latest/authorization_services/index.html#_enforcer_filter[Keycloak Policy Enforcer Configuration]. If you are looking for more details about the different configuration options, please take a look at this documentation,"
-msgstr ""
+msgstr "该配置是基于官方的 link:https://www.keycloak.org/docs/latest/authorization_services/index.html#_enforcer_filter[Keycloak Policy Enforcer配置] 。如果你正在寻找关于不同配置选项的更多细节，请看一下这个文档、"
 
 #. type: Title ==
 #: upstream/_guides/security-keycloak-authorization.adoc:528
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "References"
-msgstr ""
+msgstr "参考文献"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:531
+#, fuzzy
 msgid "https://www.keycloak.org/documentation.html[Keycloak Documentation]"
-msgstr ""
+msgstr "link:https://www.keycloak.org/documentation.html[Keycloak文档]"
 
 #. type: Plain text
 #: upstream/_guides/security-keycloak-authorization.adoc:532

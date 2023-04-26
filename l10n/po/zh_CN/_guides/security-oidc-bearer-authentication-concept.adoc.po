@@ -24,8 +24,9 @@ msgstr "OIDC承载认证"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:12
+#, fuzzy
 msgid "Secure HTTP access to Jakarta REST (formerly known as JAX-RS) endpoints in your application with Bearer authentication by using the Quarkus OpenID Connect (OIDC) extension."
-msgstr ""
+msgstr "通过使用Quarkus OpenID Connect (OIDC)扩展，在你的应用程序中使用Bearer认证来确保对Jakarta REST（以前称为JAX-RS）端点的HTTP访问。"
 
 #. type: Title ==
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:13
@@ -35,8 +36,9 @@ msgstr "Quarkus中的承载认证机制概述"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:16
+#, fuzzy
 msgid "Quarkus supports the Bearer authentication mechanism through the Quarkus OpenID Connect (OIDC) extension."
-msgstr ""
+msgstr "Quarkus通过Quarkus OpenID Connect（OIDC）扩展支持Bearer认证机制。"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:18
@@ -1711,38 +1713,45 @@ msgstr "link:security-protect-service-applications-by-using-oidc-bearer-authenti
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:917
+#, fuzzy
 msgid "https://www.keycloak.org/documentation.html[Keycloak Documentation]"
-msgstr ""
+msgstr "link:https://www.keycloak.org/documentation.html[Keycloak文档]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:918
+#, fuzzy
 msgid "https://openid.net/connect/[OpenID Connect]"
-msgstr ""
+msgstr "link:https://openid.net/connect/[OpenID连接]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:919
+#, fuzzy
 msgid "https://tools.ietf.org/html/rfc7519[JSON Web Token]"
-msgstr ""
+msgstr "link:https://tools.ietf.org/html/rfc7519[JSON网络令牌]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:920
+#, fuzzy
 msgid "xref:security-openid-connect-client-reference.adoc[OpenID Connect and OAuth2 Client and Filters Reference Guide]"
-msgstr ""
+msgstr "link:security-openid-connect-client-reference.html[OpenID连接和OAuth2客户端和过滤器参考指南]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:921
+#, fuzzy
 msgid "xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak]"
-msgstr ""
+msgstr "link:security-openid-connect-dev-services.html[为Keycloak提供的开发服务]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:922
+#, fuzzy
 msgid "xref:security-jwt-build.adoc[Sign and encrypt JWT tokens with SmallRye JWT Build]"
-msgstr ""
+msgstr "link:security-jwt-build.html[用SmallRye JWT Build签署和加密JWT令牌]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:923
+#, fuzzy
 msgid "xref:security-authentication-mechanisms-concept.adoc#oidc-jwt-oauth2-comparison[Choosing between OpenID Connect, SmallRye JWT, and OAuth2 authentication mechanisms]"
-msgstr ""
+msgstr "link:security-authentication-mechanisms-concept.html#oidc-jwt-oauth2-comparison[在OpenID Connect、SmallRye JWT和OAuth2认证机制之间做出选择]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-bearer-authentication-concept.adoc:924
