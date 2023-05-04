@@ -130,6 +130,7 @@ l10n/po/zh_CN/_guides/opentracing.adoc.po, 58, 95, 851, 1251 ,32%
 l10n/po/zh_CN/_guides/native-reference.adoc.po, 293, 465, 8675, 12692 ,32%
 l10n/po/zh_CN/_guides/mongodb.adoc.po, 105, 192, 1963, 2872 ,32%
 l10n/po/zh_CN/_guides/lra.adoc.po, 21, 30, 870, 1267 ,32%
+l10n/po/zh_CN/_guides/jreleaser.adoc.po, 53, 89, 1869, 2725 ,32%
 l10n/po/zh_CN/_guides/doc-create-tutorial.adoc.po, 98, 147, 1259, 1849 ,32%
 l10n/po/zh_CN/_guides/continuous-testing.adoc.po, 36, 49, 600, 876 ,32%
 l10n/po/zh_CN/_guides/config-extending-support.adoc.po, 60, 104, 943, 1381 ,32%
@@ -140,7 +141,6 @@ l10n/po/zh_CN/_guides/security-basic-authentication-tutorial.adoc.po, 79, 135, 1
 l10n/po/zh_CN/_guides/resteasy-reactive.adoc.po, 441, 691, 6816, 9872 ,31%
 l10n/po/zh_CN/_guides/rest-data-panache.adoc.po, 95, 133, 1362, 1961 ,31%
 l10n/po/zh_CN/_guides/kotlin.adoc.po, 84, 153, 1335, 1919 ,31%
-l10n/po/zh_CN/_guides/jreleaser.adoc.po, 53, 89, 1869, 2688 ,31%
 l10n/po/zh_CN/_guides/hibernate-reactive.adoc.po, 64, 91, 847, 1212 ,31%
 l10n/po/zh_CN/_guides/funqy.adoc.po, 20, 40, 622, 892 ,31%
 l10n/po/zh_CN/_guides/context-propagation.adoc.po, 71, 87, 1021, 1472 ,31%
@@ -202,6 +202,7 @@ l10n/po/zh_CN/_guides/_templates/template-tutorial.adoc.po, 14, 17, 116, 150 ,23
 l10n/po/zh_CN/_guides/writing-native-applications-tips.adoc.po, 99, 152, 2249, 2848 ,22%
 l10n/po/zh_CN/_guides/writing-extensions.adoc.po, 600, 823, 12351, 15783 ,22%
 l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po, 284, 428, 6947, 8799 ,22%
+l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-concept.adoc.po, 233, 364, 6265, 8009 ,22%
 l10n/po/zh_CN/_guides/security-built-in-authentication-support-concept.adoc.po, 35, 63, 1013, 1293 ,22%
 l10n/po/zh_CN/_guides/security-authorization.adoc.po, 54, 80, 1260, 1596 ,22%
 l10n/po/zh_CN/_guides/performance-measure.adoc.po, 68, 86, 1034, 1313 ,22%
@@ -210,7 +211,6 @@ l10n/po/zh_CN/_guides/funqy-knative-events.adoc.po, 67, 91, 1506, 1909 ,22%
 l10n/po/zh_CN/_guides/databases-dev-services.adoc.po, 54, 79, 928, 1180 ,22%
 l10n/po/zh_CN/_guides/amazon-lambda-http.adoc.po, 99, 146, 2087, 2671 ,22%
 l10n/po/zh_CN/_guides/_includes/extension-status.adoc.po, 4, 6, 110, 141 ,22%
-l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-concept.adoc.po, 233, 362, 6288, 7957 ,21%
 l10n/po/zh_CN/_guides/resteasy.adoc.po, 142, 214, 2812, 3548 ,21%
 l10n/po/zh_CN/_guides/kafka-dev-services.adoc.po, 28, 37, 490, 620 ,21%
 l10n/po/zh_CN/_guides/funqy-http.adoc.po, 38, 63, 716, 906 ,21%
@@ -232,7 +232,7 @@ l10n/po/zh_CN/_guides/conditional-extension-dependencies.adoc.po, 24, 41, 669, 8
 l10n/po/zh_CN/_guides/azure-functions-http.adoc.po, 29, 38, 374, 452 ,18%
 l10n/po/zh_CN/_guides/amqp-reference.adoc.po, 210, 256, 2562, 3114 ,18%
 l10n/po/zh_CN/_guides/_templates/template-howto.adoc.po, 13, 14, 105, 128 ,18%
-l10n/po/zh_CN/_guides/hibernate-orm.adoc.po, 272, 357, 5146, 6148 ,17%
+l10n/po/zh_CN/_guides/hibernate-orm.adoc.po, 273, 360, 5152, 6191 ,17%
 l10n/po/zh_CN/_guides/getting-started.adoc.po, 107, 140, 1687, 2017 ,17%
 l10n/po/zh_CN/_guides/building-native-image.adoc.po, 184, 226, 3938, 4729 ,17%
 l10n/po/zh_CN/_guides/transaction.adoc.po, 80, 104, 1881, 2223 ,16%
@@ -297,6 +297,7 @@ l10n/po/zh_CN/_guides/_includes/quarkus-blaze-persistence.adoc.po, 16, 17, 637, 
 l10n/po/zh_CN/_guides/security-identity-providers-concept.adoc.po, 12, 13, 195, 199 ,3%
 l10n/po/zh_CN/_guides/doc-reference.adoc.po, 277, 286, 1927, 1968 ,3%
 l10n/po/zh_CN/_guides/_includes/smallrye-kafka-incoming.adoc.po, 109, 112, 1322, 1354 ,3%
+l10n/po/zh_CN/_posts/2023-05-04-quarkus-3-0-2-final-released.adoc.po, 0, 19, 0, 174 ,100%
 l10n/po/zh_CN/_posts/2022-07-19-quarkus-insights-qanda4.adoc.po, 0, 11, 0, 116 ,100%
 l10n/po/zh_CN/_posts/2022-01-13-quarkus-insights-qanda3.adoc.po, 0, 10, 0, 94 ,100%
 l10n/po/zh_CN/_posts/2021-08-20-quarkus-newsletter-11.adoc.po, 0, 10, 0, 137 ,100%
