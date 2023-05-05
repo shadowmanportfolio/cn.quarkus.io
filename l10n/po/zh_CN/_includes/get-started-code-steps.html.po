@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-08-19 07:21+0000\n"
+"POT-Creation-Date: 2023-05-05 15:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,7 +151,7 @@ msgstr ""
 
 #. type: Content of: <div><div><div><br><p>
 #: upstream/_includes/get-started-code-steps.html:73
-msgid "Open <code>src/main/java/GreetingsResource.java</code> in a text editor or your <a href=\"https://quarkus.io/guides/ide-tooling\">favorite IDE</a> and change \"hello RESTEasy\" to \"hola RESTEasy\". Then refresh the browser and see the changes."
+msgid "Open <code>src/main/java/org/acme/GreetingResource.java</code> in a text editor or your <a href=\"https://quarkus.io/guides/ide-tooling\">favorite IDE</a> and change \"Hello from RESTEasy Reactive\" to \"Hola from RESTEasy Reactive\". Then refresh the browser and see the changes."
 msgstr ""
 
 #. type: Content of: <div><div><div><br><div><div><pre>
@@ -160,7 +160,7 @@ msgstr ""
 msgid ""
 "<code>\n"
 "@Path(\"/hello\")\n"
-"public class GreetingsResource {\n"
+"public class GreetingResource {\n"
 "\n"
 "    @GET\n"
 "    @Produces(MediaType.TEXT_PLAIN)\n"
