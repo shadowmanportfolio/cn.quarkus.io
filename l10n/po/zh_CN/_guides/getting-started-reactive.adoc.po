@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-04-26 15:09+0000\n"
+"POT-Creation-Date: 2023-05-10 18:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,7 +338,7 @@ msgstr "这个类代表了 `Fruits` 。它是一个直接的实体，只有一�
 #. type: Plain text
 #: upstream/_guides/getting-started-reactive.adoc:150
 #, fuzzy
-msgid "Before going further, open the `src/main/resource/application.properties` file and add:"
+msgid "Before going further, open the `src/main/resources/application.properties` file and add:"
 msgstr "在进一步行动之前，打开 `src/main/resource/application.properties` 文件并添加。"
 
 #. type: delimited block -
