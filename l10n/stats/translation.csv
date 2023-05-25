@@ -298,7 +298,6 @@ l10n/po/zh_CN/_guides/_includes/quarkus-blaze-persistence.adoc.po,16,17,637,657,
 l10n/po/zh_CN/_guides/security-identity-providers-concept.adoc.po,12,13,195,199,3%
 l10n/po/zh_CN/_guides/doc-reference.adoc.po,277,286,1927,1968,3%
 l10n/po/zh_CN/_guides/_includes/smallrye-kafka-incoming.adoc.po,109,112,1322,1354,3%
-l10n/po/zh_CN/_posts/2023-05-20-quarkus-3-upgrade.adoc.po,0,44,0,635,100%
 l10n/po/zh_CN/_posts/2022-07-19-quarkus-insights-qanda4.adoc.po,0,11,0,116,100%
 l10n/po/zh_CN/_posts/2022-01-13-quarkus-insights-qanda3.adoc.po,0,10,0,94,100%
 l10n/po/zh_CN/_posts/2021-08-20-quarkus-newsletter-11.adoc.po,0,10,0,137,100%
@@ -495,6 +494,7 @@ l10n/po/zh_CN/_posts/2020-12-01-kafka-cloud-events.adoc.po,40,48,1089,1288,16%
 l10n/po/zh_CN/_posts/2020-09-03-quarkus-1-7-2-final-released.adoc.po,16,18,118,139,16%
 l10n/po/zh_CN/_posts/2019-11-08-quarkus-for-spring-developers.adoc.po,30,45,849,1002,16%
 l10n/po/zh_CN/_posts/2019-10-23-quarkus-0-26-1-released.adoc.po,26,32,369,438,16%
+l10n/po/zh_CN/_posts/2023-05-20-quarkus-3-upgrade.adoc.po,34,44,544,635,15%
 l10n/po/zh_CN/_posts/2022-12-06-quarkus-2-14-3-final-released.adoc.po,16,18,123,144,15%
 l10n/po/zh_CN/_posts/2022-11-28-quarkus-2-14-2-final-released.adoc.po,29,34,346,405,15%
 l10n/po/zh_CN/_posts/2022-11-10-road-to-quarkus-3.adoc.po,52,63,866,1017,15%
