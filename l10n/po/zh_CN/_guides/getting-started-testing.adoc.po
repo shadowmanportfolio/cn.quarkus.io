@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-04-26 15:10+0000\n"
+"POT-Creation-Date: 2023-05-25 12:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1588,7 +1588,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/getting-started-testing.adoc:887
 #, fuzzy
-msgid "`@InjectMock` results in a mock being and is available in test methods of the test class (other test classes are *not* affected by this)"
+msgid "`@InjectMock` results in a Mockito mock being created, which is then available in test methods of the test class (other test classes are *not* affected by this)"
 msgstr " `@InjectMock` 导致一个模拟的存在，并在测试类的测试方法中可用（其他测试 *类不受* 此影响）。"
 
 #. type: Plain text
