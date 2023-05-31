@@ -185,8 +185,9 @@ msgstr "至少要设置一个类别，以确保内容在 link:https://quarkus.io
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:58
+#, fuzzy
 msgid "Insert a blank line before the abstract."
-msgstr ""
+msgstr "在摘要前插入一个空行。"
 
 #. type: delimited block =
 #: upstream/_guides/doc-contribute-docs-howto.adoc:62
@@ -220,14 +221,15 @@ msgstr "先决条件"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:80
+#, fuzzy
 msgid "For how-to and tutorial topics, include a prerequisites section just after the abstract.  Declaring prerequisites clarifies the starting place for both how-to and tutorial content.  Include them even though they might seem obvious to knowledgeable users."
-msgstr ""
+msgstr "对于指南和教程的主题，在摘要之后包括一个先决条件部分。声明先决条件可以明确如何使用和教程内容的起点。即使它们对知识渊博的用户来说可能是显而易见的，也要把它们包括进来。"
 
 #. type: Block title
 #: upstream/_guides/doc-contribute-docs-howto.adoc:81
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "An example prerequisite with callout explanations"
-msgstr ""
+msgstr "一个带有呼出解释的先决条件例子"
 
 #. type: delimited block -
 #: upstream/_guides/doc-contribute-docs-howto.adoc:86
@@ -246,23 +248,27 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:92
+#, fuzzy
 msgid "Section heading for the prerequisites"
-msgstr ""
+msgstr "先决条件的章节标题"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:93
+#, fuzzy
 msgid "Optional: An attribute that modifies the prerequisites"
-msgstr ""
+msgstr "可选的：一个修改先决条件的属性"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:94
+#, fuzzy
 msgid "An include statement for the `prerequisites.adoc` file"
-msgstr ""
+msgstr " `prerequisites.adoc` 文件的包含声明"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:95
+#, fuzzy
 msgid "Optional: An additional prerequisite not covered by the attributes"
-msgstr ""
+msgstr "可选的：属性中没有涵盖的额外前提条件"
 
 #. type: Block title
 #: upstream/_guides/doc-contribute-docs-howto.adoc:96
@@ -272,8 +278,9 @@ msgstr "先决条件"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:99
+#, fuzzy
 msgid "By default, `include::{includes}/prerequisites.adoc[]` inserts the following asciidoc:"
-msgstr ""
+msgstr "默认情况下， `include::{includes}/prerequisites.adoc[]` ，插入以下asciidoc："
 
 #. type: delimited block -
 #: upstream/_guides/doc-contribute-docs-howto.adoc:103
@@ -283,24 +290,27 @@ msgstr ""
 
 #. type: Block title
 #: upstream/_guides/doc-contribute-docs-howto.adoc:105
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Using attributes to modify the prerequisites"
-msgstr ""
+msgstr "使用属性来修改先决条件"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:108
+#, fuzzy
 msgid "Optionally, you can add, remove, or modify the default prerequisites by inserting the following attributes on the line before the `include::{includes}/prerequisites.adoc[]` macro."
-msgstr ""
+msgstr "另外，你可以通过在 `include::{includes}/prerequisites.adoc[]` 宏的前一行插入以下属性来增加、删除或修改默认的先决条件。"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:110
+#, fuzzy
 msgid "`{prerequisites-time}: <number of minutes>` overrides the default value of 15 minutes. For example, `{prerequisites-time}: 30` adds `* Roughly 30 minutes`."
-msgstr ""
+msgstr " `{prerequisites-time}: <number of minutes>` 覆盖了15分钟的默认值。例如， 添加 。 `{prerequisites-time}: 30` `* Roughly 30 minutes` "
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:111
+#, fuzzy
 msgid "`{prerequisites-no-maven}` removes `* Apache Maven <maven version>`."
-msgstr ""
+msgstr " `{prerequisites-no-maven}` 删除 . `* Apache Maven <maven version>` "
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:112
@@ -310,28 +320,33 @@ msgstr "这种方法需要一个工作的容器运行时间（Docker或 link:pod
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:113
+#, fuzzy
 msgid "`{prerequisites-docker-compose}` adds `Docker and Docker Compose or xref:podman.adoc[Podman], and Docker Compose`."
-msgstr ""
+msgstr " `{prerequisites-docker-compose}` 添加 `Docker and Docker Compose or <a href=\"podman.html\">Podman</a>, and Docker Compose` ."
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:114
+#, fuzzy
 msgid "`{prerequisites-no-cli}` removes `* Optionally the xref:cli-tooling.adoc[Quarkus CLI] if you want to use it`."
-msgstr ""
+msgstr " `{prerequisites-no-cli}` 移除 `* Optionally the <a href=\"cli-tooling.html\">Quarkus CLI</a> if you want to use it` ."
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:115
+#, fuzzy
 msgid "`{prerequisites-no-graalvm}` or `{prerequisites-graalvm-mandatory}` remove `* Optionally Mandrel or GraalVM installed and xref:building-native-image.adoc#configuring-graalvm[configured appropriately] if you want to build a native executable (or Docker if you use a native container build)`."
-msgstr ""
+msgstr " `{prerequisites-no-graalvm}` 或 删除 `{prerequisites-graalvm-mandatory}` `* Optionally Mandrel or GraalVM installed and <a href=\"building-native-image.html#configuring-graalvm\">configured appropriately</a> if you want to build a native executable (or Docker if you use a native container build)` ."
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:116
+#, fuzzy
 msgid "`{prerequisites-graalvm-mandatory}` adds `* Mandrel or GraalVM installed and xref:building-native-image.adoc#configuring-graalvm[configured appropriately]`."
-msgstr ""
+msgstr " `{prerequisites-graalvm-mandatory}` 添加 `* Mandrel or GraalVM installed and <a href=\"building-native-image.html#configuring-graalvm\">configured appropriately</a>` ."
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:118
+#, fuzzy
 msgid "For more information about these attributes, inspect the content of the `docs/src/main/asciidoc/_includes/prerequisites.adoc` file."
-msgstr ""
+msgstr "关于这些属性的更多信息，请检查 `docs/src/main/asciidoc/_includes/prerequisites.adoc` 文件的内容。"
 
 #. type: Title ==
 #: upstream/_guides/doc-contribute-docs-howto.adoc:119
@@ -458,56 +473,63 @@ msgstr "link:https://github.com/quarkusio/quarkusio.github.io/pull/1579[PR #1579
 
 #. type: Title ==
 #: upstream/_guides/doc-contribute-docs-howto.adoc:153
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Use anchors to cross-reference in-file and cross-file content"
-msgstr ""
+msgstr "使用锚点来交叉引用文件内和文件外的内容"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:156
+#, fuzzy
 msgid "An anchor, also called an ID, can be defined almost anywhere in the document, including on a section title, discrete heading, paragraph, image, delimited block, inline phrase, etc."
-msgstr ""
+msgstr "锚，也叫ID，几乎可以在文档的任何地方定义，包括在章节标题、离散标题、段落、图像、分隔块、内联短语等。"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:158
+#, fuzzy
 msgid "The callout functions for these anchors vary based on whether you call a local ID or the ID from another file, but the anchored ID creation remains the same."
-msgstr ""
+msgstr "这些锚点的调用功能根据你是调用本地ID还是调用其他文件中的ID而有所不同，但锚点ID的创建是相同的。"
 
 #. type: Title ===
 #: upstream/_guides/doc-contribute-docs-howto.adoc:159
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Create an anchored ID"
-msgstr ""
+msgstr "创建一个锚定的ID"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:162
+#, fuzzy
 msgid "To create an ID for a new file or a section to which you want to refer, insert the anchor ID as follows:"
-msgstr ""
+msgstr "要为一个新的文件或你想参考的部分创建一个ID，按以下方式插入锚定ID："
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:164
+#, fuzzy
 msgid "Use lower-case characters."
-msgstr ""
+msgstr "使用小写的字符。"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:165
+#, fuzzy
 msgid "Separate each word with a dash character."
-msgstr ""
+msgstr "用一个破折号字符来分隔每个单词。"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:166
+#, fuzzy
 msgid "Enclose the ID in double square brackets."
-msgstr ""
+msgstr "用双方括号括住ID。"
 
 #. type: Block title
 #: upstream/_guides/doc-contribute-docs-howto.adoc:167
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Anchored ID creation example"
-msgstr ""
+msgstr "锚定的ID创建实例"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:170
+#, fuzzy
 msgid "In this section, we will use an anchor created above the level-2 heading for demonstration purposes."
-msgstr ""
+msgstr "在本节中，我们将使用一个在二级标题上方创建的锚点进行演示。"
 
 #. type: delimited block -
 #: upstream/_guides/doc-contribute-docs-howto.adoc:174
@@ -517,26 +539,27 @@ msgstr ""
 
 #. type: Title ==
 #: upstream/_guides/doc-contribute-docs-howto.adoc:174
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Title heading"
-msgstr ""
+msgstr "标题"
 
 #. type: Title ===
 #: upstream/_guides/doc-contribute-docs-howto.adoc:177
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Call an anchored ID in the same file"
-msgstr ""
+msgstr "在同一文件中调用一个锚定的ID"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:180
+#, fuzzy
 msgid "To call an anchor created in the same file, insert the anchored ID in a `<<>>` xref macro."
-msgstr ""
+msgstr "要调用在同一文件中创建的锚点，在 `<<>>` xref宏中插入锚点的ID。"
 
 #. type: Block title
 #: upstream/_guides/doc-contribute-docs-howto.adoc:181
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Inter-document anchored ID call example"
-msgstr ""
+msgstr "文件间锚定的ID调用实例"
 
 #. type: delimited block -
 #: upstream/_guides/doc-contribute-docs-howto.adoc:185
@@ -546,24 +569,27 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:188
+#, fuzzy
 msgid "This macro creates an URL with a name automatically sourced from the anchored heading, section, or table."
-msgstr ""
+msgstr "这个宏创建一个URL，其名称自动来自于锚定的标题、章节或表格。"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:191
+#, fuzzy
 msgid "Do not use the `<<>>` format with the verbatim heading or section description, such as `\\<<Title heading>>`."
-msgstr ""
+msgstr "不要使用 `<<>>` 格式的逐字标题或章节描述，如 `<<Title heading>>` 。"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:193
+#, fuzzy
 msgid "When you want to specify a non-default caption for your URL, specify the anchored ID and desired name separated by `,` without white space."
-msgstr ""
+msgstr "当你想为你的URL指定一个非默认的标题时，指定锚定的ID和所需的名称，用 `,` ，不留空白。"
 
 #. type: Block title
 #: upstream/_guides/doc-contribute-docs-howto.adoc:194
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Anchor with a custom URL caption example"
-msgstr ""
+msgstr "带有自定义URL标题的锚点示例"
 
 #. type: delimited block -
 #: upstream/_guides/doc-contribute-docs-howto.adoc:198
@@ -573,20 +599,21 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_guides/doc-contribute-docs-howto.adoc:200
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Call an anchored ID from a different file"
-msgstr ""
+msgstr "从一个不同的文件中调用一个锚定的ID"
 
 #. type: Plain text
 #: upstream/_guides/doc-contribute-docs-howto.adoc:203
+#, fuzzy
 msgid "To call an anchor created in a different file, insert the anchor to an `xref` macro and specify the full name of the hosting file and the desired anchored ID."
-msgstr ""
+msgstr "要调用在不同文件中创建的锚点，请将锚点插入一个 `xref` 宏，并指定托管文件的全名和所需的锚点ID。"
 
 #. type: Block title
 #: upstream/_guides/doc-contribute-docs-howto.adoc:204
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Cross-document anchored ID call example"
-msgstr ""
+msgstr "跨文档的锚定ID调用实例"
 
 #. type: delimited block -
 #: upstream/_guides/doc-contribute-docs-howto.adoc:208

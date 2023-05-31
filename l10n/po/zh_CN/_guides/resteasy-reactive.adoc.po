@@ -1950,14 +1950,15 @@ msgstr "响应过滤器不在流式响应上调用，因为它们会给人一种
 
 #. type: Title ====
 #: upstream/_guides/resteasy-reactive.adoc:936
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Customizing headers and status"
-msgstr ""
+msgstr "自定义标头和状态"
 
 #. type: Plain text
 #: upstream/_guides/resteasy-reactive.adoc:938
+#, fuzzy
 msgid "If you need to set custom HTTP headers and / or the HTTP response, then you can return `org.jboss.resteasy.reactive.RestMulti` instead, like this:"
-msgstr ""
+msgstr "如果你需要设置自定义的HTTP头和/或HTTP响应，那么你可以返回 `org.jboss.resteasy.reactive.RestMulti` ，像这样："
 
 #. type: delimited block -
 #: upstream/_guides/resteasy-reactive.adoc:951
@@ -1981,8 +1982,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/resteasy-reactive.adoc:968
+#, fuzzy
 msgid "In more advanced cases where the headers and / or status can only be obtained from the results of an async call, the `RestMulti.fromUniResponse` needs to be used.  Here is an example of such a use case:"
-msgstr ""
+msgstr "在更高级的情况下，头信息和/或状态只能从异步调用的结果中获得，需要使用 `RestMulti.fromUniResponse` 。下面是这样一个用例："
 
 #. type: delimited block -
 #: upstream/_guides/resteasy-reactive.adoc:978
@@ -2172,8 +2174,9 @@ msgstr "设置数据，即SSE信息的 `data` 字段的值。"
 
 #. type: delimited block =
 #: upstream/_guides/resteasy-reactive.adoc:1100
+#, fuzzy
 msgid "Manipulation of the returned HTTP headers and status code is not possible via `RestMulti.fromUniResponse` because when returning SSE responses the headers and status code cannot be delayed until the response becomes available."
-msgstr ""
+msgstr "通过 `RestMulti.fromUniResponse` ，对返回的HTTP头和状态代码的操纵是不可能的，因为当返回SSE响应时，头和状态代码不能被延迟到响应变得可用。"
 
 #. type: Title ===
 #: upstream/_guides/resteasy-reactive.adoc:1102
@@ -2930,8 +2933,9 @@ msgstr "然而，在某些情况下，这些类会导致 `JAXBContext` 失败：
 
 #. type: delimited block =
 #: upstream/_guides/resteasy-reactive.adoc:1488
+#, fuzzy
 msgid "The property `quarkus.jaxb.exclude-classes` accepts a comma separated list of fully qualified class names, for example: `quarkus.jaxb.exclude-classes=org.acme.one.Model,org.acme.two.Model`."
-msgstr ""
+msgstr "属性 `quarkus.jaxb.exclude-classes` ，接受逗号分隔的完全合格的类名列表，例如： `quarkus.jaxb.exclude-classes=org.acme.one.Model,org.acme.two.Model` 。"
 
 #. type: Title ====
 #: upstream/_guides/resteasy-reactive.adoc:1490
