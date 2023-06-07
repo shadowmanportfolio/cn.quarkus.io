@@ -73,7 +73,7 @@ l10n/po/zh_CN/_guides/websockets.adoc.po,38,66,463,807,43%
 l10n/po/zh_CN/_guides/security-csrf-prevention.adoc.po,33,66,569,983,43%
 l10n/po/zh_CN/_guides/scripting.adoc.po,69,108,984,1700,43%
 l10n/po/zh_CN/_guides/security-vulnerability-detection-concept.adoc.po,14,21,238,407,42%
-l10n/po/zh_CN/_guides/security-keycloak-admin-client.adoc.po,24,53,360,611,42%
+l10n/po/zh_CN/_guides/security-keycloak-admin-client.adoc.po,24,53,360,612,42%
 l10n/po/zh_CN/_guides/security-jpa-concept.adoc.po,25,49,485,823,42%
 l10n/po/zh_CN/_guides/security-customization.adoc.po,66,149,1225,2084,42%
 l10n/po/zh_CN/_guides/picocli.adoc.po,37,82,671,1143,42%
@@ -212,7 +212,7 @@ l10n/po/zh_CN/_guides/funqy-knative-events.adoc.po,67,91,1506,1909,22%
 l10n/po/zh_CN/_guides/databases-dev-services.adoc.po,54,79,928,1180,22%
 l10n/po/zh_CN/_guides/amazon-lambda-http.adoc.po,99,146,2087,2671,22%
 l10n/po/zh_CN/_guides/_includes/extension-status.adoc.po,4,6,110,141,22%
-l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-concept.adoc.po,237,364,6376,8009,21%
+l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-concept.adoc.po,237,364,6375,8008,21%
 l10n/po/zh_CN/_guides/resteasy.adoc.po,142,214,2812,3548,21%
 l10n/po/zh_CN/_guides/kafka-dev-services.adoc.po,28,37,490,620,21%
 l10n/po/zh_CN/_guides/funqy-http.adoc.po,38,63,716,906,21%
@@ -299,6 +299,7 @@ l10n/po/zh_CN/_guides/doc-reference.adoc.po,285,300,2057,2134,4%
 l10n/po/zh_CN/_guides/_includes/quarkus-blaze-persistence.adoc.po,16,17,637,657,4%
 l10n/po/zh_CN/_guides/security-identity-providers-concept.adoc.po,12,13,195,199,3%
 l10n/po/zh_CN/_guides/_includes/smallrye-kafka-incoming.adoc.po,109,112,1322,1354,3%
+l10n/po/zh_CN/_posts/2023-06-07-quarkus-3-1-1-final-released.adoc.po,0,20,0,188,100%
 l10n/po/zh_CN/_posts/2022-07-19-quarkus-insights-qanda4.adoc.po,0,11,0,116,100%
 l10n/po/zh_CN/_posts/2022-01-13-quarkus-insights-qanda3.adoc.po,0,10,0,94,100%
 l10n/po/zh_CN/_posts/2021-08-20-quarkus-newsletter-11.adoc.po,0,10,0,137,100%
