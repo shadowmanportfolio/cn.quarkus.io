@@ -65,7 +65,6 @@ l10n/po/zh_CN/_guides/hibernate-orm-panache.adoc.po,147,330,2724,5191,48%
 l10n/po/zh_CN/_guides/liquibase-mongodb.adoc.po,27,49,323,604,47%
 l10n/po/zh_CN/_guides/kogito-drl.adoc.po,37,92,577,1073,47%
 l10n/po/zh_CN/_guides/mongodb-panache-kotlin.adoc.po,19,48,504,928,46%
-l10n/po/zh_CN/_guides/ansible.adoc.po,28,78,800,1463,46%
 l10n/po/zh_CN/_guides/topic/standards.adoc.po,6,10,101,181,45%
 l10n/po/zh_CN/_guides/blaze-persistence.adoc.po,32,62,386,700,45%
 l10n/po/zh_CN/_guides/spring-data-jpa.adoc.po,79,179,1147,2044,44%
@@ -95,6 +94,7 @@ l10n/po/zh_CN/_guides/centralized-log-management.adoc.po,47,86,780,1254,38%
 l10n/po/zh_CN/_guides/mailer-reference.adoc.po,81,141,1289,2030,37%
 l10n/po/zh_CN/_guides/kubernetes-client.adoc.po,43,101,887,1403,37%
 l10n/po/zh_CN/_guides/elasticsearch-dev-services.adoc.po,15,25,226,354,37%
+l10n/po/zh_CN/_guides/ansible.adoc.po,40,78,934,1463,37%
 l10n/po/zh_CN/_guides/amqp.adoc.po,66,114,1012,1589,37%
 l10n/po/zh_CN/_guides/stork-reference.adoc.po,48,81,832,1282,36%
 l10n/po/zh_CN/_guides/security-oauth2.adoc.po,71,113,1162,1790,36%
