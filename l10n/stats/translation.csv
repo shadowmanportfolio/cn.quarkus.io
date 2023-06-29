@@ -65,6 +65,7 @@ l10n/po/zh_CN/_guides/hibernate-orm-panache.adoc.po,147,330,2724,5191,48%
 l10n/po/zh_CN/_guides/liquibase-mongodb.adoc.po,27,49,323,604,47%
 l10n/po/zh_CN/_guides/kogito-drl.adoc.po,37,92,577,1073,47%
 l10n/po/zh_CN/_guides/mongodb-panache-kotlin.adoc.po,19,48,504,928,46%
+l10n/po/zh_CN/_guides/ansible.adoc.po,28,78,800,1463,46%
 l10n/po/zh_CN/_guides/topic/standards.adoc.po,6,10,101,181,45%
 l10n/po/zh_CN/_guides/blaze-persistence.adoc.po,32,62,386,700,45%
 l10n/po/zh_CN/_guides/spring-data-jpa.adoc.po,79,179,1147,2044,44%
@@ -79,7 +80,6 @@ l10n/po/zh_CN/_guides/security-customization.adoc.po,66,149,1225,2084,42%
 l10n/po/zh_CN/_guides/picocli.adoc.po,37,82,671,1143,42%
 l10n/po/zh_CN/_guides/flyway.adoc.po,41,71,629,1069,42%
 l10n/po/zh_CN/_guides/config-yaml.adoc.po,28,48,343,589,42%
-l10n/po/zh_CN/_guides/ansible.adoc.po,28,75,801,1379,42%
 l10n/po/zh_CN/_guides/redis.adoc.po,77,135,834,1392,41%
 l10n/po/zh_CN/_guides/rabbitmq.adoc.po,67,120,964,1623,41%
 l10n/po/zh_CN/_guides/stork.adoc.po,66,110,922,1529,40%
