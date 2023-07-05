@@ -951,8 +951,9 @@ msgstr " `test.prop` 没有一个 `value` "
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:432
+#, fuzzy
 msgid "It is also possible to define multiple profile properties, with a comma-separated list of profile names. If the same property name exists in multiple profile properties then, the property name with the most specific profile wins:"
-msgstr ""
+msgstr "也可以定义多个简介属性，用逗号分隔的简介名称列表。如果相同的属性名称存在于多个配置文件属性中，那么，具有最具体配置文件的属性名称获胜："
 
 #. type: delimited block -
 #: upstream/_guides/config-reference.adoc:437
@@ -976,13 +977,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:447
+#, fuzzy
 msgid "`my.prop` value is 5678."
-msgstr ""
+msgstr " `my.prop` 值为5678。"
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:448
+#, fuzzy
 msgid "`another.prop` value is 1234."
-msgstr ""
+msgstr " `another.prop` 值为1234。"
 
 #. type: Title ===
 #: upstream/_guides/config-reference.adoc:449
@@ -1152,8 +1155,9 @@ msgstr "属性表达式"
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:530
+#, fuzzy
 msgid "A secret configuration may be expressed as `${handler::value}`, where the `handler` is the name of a `io.smallrye.config.SecretKeysHandler` to decode or decrypt the `value`. Consider:"
-msgstr ""
+msgstr "一个秘密配置可以表示为 `${handler::value}` ，其中 `handler` 是一个 `io.smallrye.config.SecretKeysHandler` 的名称，用于解码或解密 `value` 。考虑到："
 
 #. type: delimited block -
 #: upstream/_guides/config-reference.adoc:535
@@ -1171,8 +1175,9 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:542
+#, fuzzy
 msgid "A lookup to `my.secret` will use the `SecretKeysHandler` name `aes-gcm-nopadding` to decode the value `DJNrZ6LfpupFv6QbXyXhvzD8eVDnDa_kTliQBpuzTobDZxlg`."
-msgstr ""
+msgstr "对 `my.secret` 的查询将使用 `SecretKeysHandler` 名称 `aes-gcm-nopadding` 来解码值 `DJNrZ6LfpupFv6QbXyXhvzD8eVDnDa_kTliQBpuzTobDZxlg` 。"
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:545
@@ -1182,8 +1187,9 @@ msgstr "Quarkus依赖于 link:https://github.com/smallrye/smallrye-config/[Small
 
 #. type: delimited block =
 #: upstream/_guides/config-reference.adoc:550
+#, fuzzy
 msgid "SmallRye Config may provide handlers not fully supported by Quarkus. Currently, only `smallrye-config-crypto` is supported."
-msgstr ""
+msgstr "SmallRye配置可能提供Quarkus不完全支持的处理程序。目前，只支持 `smallrye-config-crypto` 。"
 
 #. type: Title ==
 #: upstream/_guides/config-reference.adoc:552
@@ -1396,8 +1402,9 @@ msgstr "SmallRye配置规定了 link:https://smallrye.io/smallrye-config/Main/co
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:657
+#, fuzzy
 msgid "link:https://smallrye.io/smallrye-config/Main/config-sources/factories/[Config Source Factories]"
-msgstr ""
+msgstr "link:https://smallrye.io/smallrye-config/Main/config-sources/factories/[配置来源工厂]"
 
 #. type: Plain text
 #: upstream/_guides/config-reference.adoc:658

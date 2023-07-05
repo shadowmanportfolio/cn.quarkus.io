@@ -696,18 +696,21 @@ msgstr "配置交易节点名称标识符"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:368
+#, fuzzy
 msgid "The Narayana project has the capability to store the transaction logs into a JDBC Datasource; this should be our recommendation for users needing transaction recovery capabilities, especially when running in volatile containers."
-msgstr ""
+msgstr "Narayana项目有能力将交易日志存储到JDBC数据源中；这应该是我们对需要交易恢复能力的用户的建议，特别是在不稳定容器中运行时。"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:370
+#, fuzzy
 msgid "To enable this capability, you need to set `quarkus.transaction-manager.object-store.type` to `jdbc` explicitly. Also, you can specify a datasource name to be used for the transaction log storage by setting `quarkus.transaction-manager.object-store.datasource`. It will use the default datasource configuration if not specified."
-msgstr ""
+msgstr "要启用这一功能，你需要明确设置 `quarkus.transaction-manager.object-store.type` 到 `jdbc` 。另外，你可以通过设置 `quarkus.transaction-manager.object-store.datasource` ，指定一个数据源名称，用于交易日志的存储。如果没有指定，它将使用默认的数据源配置。"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:372
+#, fuzzy
 msgid "If you enable `quarkus.transaction-manager.object-store.create-table`, the transaction log table will be created automatically if it does not exist."
-msgstr ""
+msgstr "如果你启用 `quarkus.transaction-manager.object-store.create-table` ，如果交易日志表不存在，将自动创建。"
 
 #. type: Plain text
 #: upstream/_guides/transaction.adoc:374

@@ -36,13 +36,15 @@ msgstr "link:security-oidc-code-flow-authentication-concept.html[用于保护网
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:13
+#, fuzzy
 msgid "To learn about how well-known social providers such as Google, GitHub, Microsoft, Twitter, Apple, Facebook, and Spotify can be used with Quarkus OIDC, see xref:security-openid-connect-providers.adoc[Configuring Well-Known OpenID Connect Providers].  See also, xref:security-authentication-mechanisms.adoc#other-supported-authentication-mechanisms[Authentication mechanisms in Quarkus]."
-msgstr ""
+msgstr "要了解知名的社交供应商如Google、GitHub、Microsoft、Twitter、Apple、Facebook和Spotify如何与Quarkus OIDC一起使用，请参阅 link:security-openid-connect-providers.html[配置知名的OpenID Connect供应商] 。另请参见， link:security-authentication-mechanisms.html#other-supported-authentication-mechanisms[Quarkus中的认证机制] 。"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:15
+#, fuzzy
 msgid "If you want to protect your service applications by using OIDC Bearer token authentication, see xref:security-oidc-bearer-token-authentication-concept.adoc[OIDC Bearer token authentication]."
-msgstr ""
+msgstr "如果你想通过使用OIDC承载令牌认证来保护你的服务应用，请参阅 link:security-oidc-bearer-token-authentication-concept.html[OIDC承载令牌认证] 。"
 
 #. type: Title ==
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:16
@@ -564,23 +566,27 @@ msgstr "link:security-oidc-code-flow-authentication-concept.html[用于保护网
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:261
+#, fuzzy
 msgid "xref:security-openid-connect-providers.adoc[Configuring well-known OpenID Connect Providers]"
-msgstr ""
+msgstr "link:security-openid-connect-providers.html[配置知名的OpenID连接供应商]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:262
+#, fuzzy
 msgid "xref:security-openid-connect-client-reference.adoc[OpenID Connect and OAuth2 Client and Filters Reference Guide]"
-msgstr ""
+msgstr "link:security-openid-connect-client-reference.html[OpenID连接和OAuth2客户端和过滤器参考指南]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:263
+#, fuzzy
 msgid "xref:security-openid-connect-dev-services.adoc[Dev Services for Keycloak]"
-msgstr ""
+msgstr "link:security-openid-connect-dev-services.html[为Keycloak提供的开发服务]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:264
+#, fuzzy
 msgid "xref:security-jwt-build.adoc[Sign and encrypt JWT tokens with SmallRye JWT Build]"
-msgstr ""
+msgstr "link:security-jwt-build.html[用SmallRye JWT Build签署和加密JWT令牌]"
 
 #. type: Plain text
 #: upstream/_guides/security-oidc-code-flow-authentication-tutorial.adoc:265

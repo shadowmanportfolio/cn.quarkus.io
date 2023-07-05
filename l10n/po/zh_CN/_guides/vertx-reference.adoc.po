@@ -141,8 +141,9 @@ msgstr "你可以从 `application.properties` 文件中配置Vert.x实例。下�
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:64
+#, fuzzy
 msgid "See xref:customizing-the-vert-x-configuration[Customize the Vert.x configuration] to configure the Vert.x instance using a programmatic approach."
-msgstr ""
+msgstr "参见 link:#customizing-the-vert-x-configuration[自定义Vert.x配置] ，使用编程方法配置Vert.x实例。"
 
 #. type: Title ==
 #: upstream/_guides/vertx-reference.adoc:66
@@ -1152,9 +1153,9 @@ msgstr "接收发送到 `greeting` 地址的信息"
 
 #. type: Title ===
 #: upstream/_guides/vertx-reference.adoc:518
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Process events asynchronously"
-msgstr ""
+msgstr "异步地处理事件"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:522
@@ -1309,9 +1310,9 @@ msgstr ""
 
 #. type: Title ===
 #: upstream/_guides/vertx-reference.adoc:624
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Consume messages (instead of events)"
-msgstr ""
+msgstr "消耗消息（而不是事件）"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:627
@@ -1841,8 +1842,9 @@ msgstr "GraalVM生产的二进制文件中不支持本地传输。"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:912
+#, fuzzy
 msgid "To use `io_uring`, refer to the xref:use-io_uring[Use io_uring] section."
-msgstr ""
+msgstr "要使用 `io_uring` ，请参考 link:#use-io_uring[使用io_uring] 部分。"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:917
@@ -2063,49 +2065,57 @@ msgstr "确保你的应用程序有正确的权限来写入套接字。"
 
 #. type: Title ==
 #: upstream/_guides/vertx-reference.adoc:1029
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Use io_uring"
-msgstr ""
+msgstr "使用 io_uring"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1032
+#, fuzzy
 msgid "`io_uring` is not supported in native executables."
-msgstr ""
+msgstr " `io_uring` 在本地可执行文件中不被支持。"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1034
+#, fuzzy
 msgid "`io_uring` support is experimental"
-msgstr ""
+msgstr " `io_uring` 支持是试验性的"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1039
+#, fuzzy
 msgid "`io_uring` is a Linux kernel interface that allows you to send and receive data asynchronously.  It provides unified semantics for both file and network I/O.  It was originally designed to target block devices and files but has since gained the ability to work with things like network sockets.  It has the potential to provide modest performance benefits to network I/O on its own and greater benefits for mixed file and network I/O application workloads."
-msgstr ""
+msgstr " `io_uring` 是一个Linux内核接口，允许你异步地发送和接收数据。它为文件和网络I/O提供统一的语义。它最初被设计为针对块设备和文件，但后来获得了与网络套接字等东西一起工作的能力。它有可能为网络I/O本身提供适度的性能优势，为混合文件和网络I/O应用工作负载提供更大的优势。"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1041
+#, fuzzy
 msgid "To learn more about `io_uring`, we recommend the following links:"
-msgstr ""
+msgstr "要了解更多关于 `io_uring` ，我们推荐以下链接："
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1045
+#, fuzzy
 msgid "https://developers.redhat.com/articles/2023/04/12/why-you-should-use-iouring-network-io[Why you should use io_uring for network I/O]: The main benefit of io_uring for network I/O is a modern asynchronous API that is straightforward to use and provides unified semantics for file and network I/O.  A potential performance benefit of io_uring for network I/O is reducing the number of syscalls.  This could provide the biggest benefit for high volumes of small operations where the overhead of system calls can be significant."
-msgstr ""
+msgstr "link:https://developers.redhat.com/articles/2023/04/12/why-you-should-use-iouring-network-io[为什么你应该使用io_uring进行网络I/O] ：io_uring用于网络I/O的主要好处是一个现代的异步API，可以直接使用并为文件和网络I/O提供统一的语义。io_uring对网络I/O的一个潜在的性能优势是减少系统调用的数量。这可以为大量的小操作提供最大的好处，因为系统调用的开销可能是很大的。"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1047
+#, fuzzy
 msgid "https://dzone.com/articles/the-backend-revolution-or-why-io-uring-is-so-impor[The Backend Revolution and Why io_uring Is So Important]: The io_uring API uses two ring buffers for communication between application and kernel (hence the API name) and designed in a way that enables natural batching of requests and responses.  Besides, it provides a way to submit multiple requests in one system call, which can reduce overhead."
-msgstr ""
+msgstr "link:https://dzone.com/articles/the-backend-revolution-or-why-io-uring-is-so-impor[后台革命和为什么io_uring如此重要] ：io_uring API使用两个环形缓冲区在应用程序和内核之间进行通信（因此API的名称），并以一种能够自然批处理请求和响应的方式设计。此外，它还提供了一种在一个系统调用中提交多个请求的方法，这可以减少开销。"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1049
+#, fuzzy
 msgid "https://stackoverflow.com/questions/61767702/what-exactly-is-io-uring[What exactly is io_uring?]: io_uring is a Linux kernel interface to efficiently allow you to send and receive data asynchronously.  It was originally designed to target block devices and files but has since gained the ability to work with things like network sockets."
-msgstr ""
+msgstr "link:https://stackoverflow.com/questions/61767702/what-exactly-is-io-uring[io_uring到底是什么？] : io_uring是一个Linux内核接口，可以有效地让你异步地发送和接收数据。它最初被设计为针对块设备和文件，但后来获得了与网络套接字等东西一起工作的能力。"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1053
+#, fuzzy
 msgid "To use `io_uring`, you need to add two dependencies to your project and enable native transport.  First add the following dependencies to your project:"
-msgstr ""
+msgstr "要使用 `io_uring` ，你需要向你的项目添加两个依赖项并启用本地传输。首先在你的项目中添加以下依赖项："
 
 #. type: delimited block -
 #: upstream/_guides/vertx-reference.adoc:1067
@@ -2134,19 +2144,21 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1078
+#, fuzzy
 msgid "Then, in the `application.properties`, add:"
-msgstr ""
+msgstr "然后，在 `application.properties` ，添加："
 
 #. type: Block title
 #: upstream/_guides/vertx-reference.adoc:1085
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Can I use io_uring on my Linux machine?"
-msgstr ""
+msgstr "我可以在我的Linux机器上使用io_uring吗？"
 
 #. type: delimited block =
 #: upstream/_guides/vertx-reference.adoc:1088
+#, fuzzy
 msgid "To check if you can use `io_uring` on your Linux machine, execute the following command:"
-msgstr ""
+msgstr "要检查你是否能在你的Linux机器上使用 `io_uring` ，执行以下命令："
 
 #. type: delimited block -
 #: upstream/_guides/vertx-reference.adoc:1105
@@ -2171,14 +2183,15 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1107
+#, fuzzy
 msgid "If it prints something like above, you can use `io_uring`."
-msgstr ""
+msgstr "如果它打印的内容与上面一样，你可以使用 `io_uring` 。"
 
 #. type: Block title
 #: upstream/_guides/vertx-reference.adoc:1110
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Troubleshooting"
-msgstr ""
+msgstr "故障排除"
 
 #. type: Plain text
 #: upstream/_guides/vertx-reference.adoc:1115
