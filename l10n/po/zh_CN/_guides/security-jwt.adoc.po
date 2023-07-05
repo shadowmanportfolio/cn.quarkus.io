@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-04-26 15:10+0000\n"
+"POT-Creation-Date: 2023-07-05 14:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr "本指南解释了您的Quarkus应用程序如何利用 link:https://git
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:22
 #, fuzzy
-msgid "Quarkus OpenID Connect `quarkus-oidc` extension also supports Bearer Token Authorization and uses `smallrye-jwt` to represent the bearer tokens as `JsonWebToken`.  For more information, read the xref:security-oidc-bearer-authentication-concept.adoc[OIDC Bearer authentication] guide.  OpenID Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow.  For more information, see xref:security-oidc-code-flow-authentication-concept.adoc[OIDC code flow mechanism for protecting web applications]"
+msgid "Quarkus OpenID Connect `quarkus-oidc` extension also supports Bearer Token Authorization and uses `smallrye-jwt` to represent the bearer tokens as `JsonWebToken`.  For more information, read the xref:security-oidc-bearer-token-authentication.adoc[OIDC Bearer token authentication] guide.  OpenID Connect extension has to be used if the Quarkus application needs to authenticate the users using OIDC Authorization Code Flow.  For more information, see xref:security-oidc-code-flow-authentication.adoc[OIDC code flow mechanism for protecting web applications]"
 msgstr "Quarkus OpenID Connect `quarkus-oidc` 扩展也支持承载令牌授权，并使用 `smallrye-jwt` 表示承载令牌为 `JsonWebToken` , 请阅读 link:security-openid-connect.html[Using OpenID Connect to Protect Service Applications] 指南了解更多信息。如果Quarkus应用程序需要使用OIDC授权代码流对用户进行认证，就必须使用OpenID Connect扩展，请阅读《 link:security-openid-connect-web-authentication.html[使用OpenID Connect保护Web应用程序] 》指南了解更多信息。"
 
 #. type: Title ==
@@ -1480,7 +1480,7 @@ msgstr "缆车"
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:808
 #, fuzzy
-msgid "If you configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Wiremock` section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "If you configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-oidc-bearer-token-authentication.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Wiremock` section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr "如果你配置 `mp.jwt.verify.publickey.location` ，以指向HTTPS或基于HTTP的JsonWebKey（JWK）集，那么你可以使用与 link:security-openid-connect.html#integration-testing[OpenID Connect Bearer Token集成测试] `Wiremock` 部分所述相同的方法，但只需改变 `application.properties` ，以使用MP JWT配置属性来代替。"
 
 #. type: delimited block -
@@ -1501,7 +1501,7 @@ msgstr "钥匙环"
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:820
 #, fuzzy
-msgid "If you work with Keycloak and configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] Keycloak section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "If you work with Keycloak and configure `mp.jwt.verify.publickey.location` to point to HTTPS or HTTP based JsonWebKey (JWK) set then you can use the same approach as described in the xref:security-oidc-bearer-token-authentication.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] Keycloak section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr "如果你与Keycloak合作，并配置 `mp.jwt.verify.publickey.location` ，以指向HTTPS或基于HTTP的JsonWebKey（JWK）集，那么你可以使用与 link:security-openid-connect.html#integration-testing-keycloak[OpenID Connect Bearer Token集成测试] `Keycloak` 部分中描述的相同方法，但只需改变 `application.properties` ，以使用MP JWT配置属性来代替。"
 
 #. type: delimited block -
@@ -1557,7 +1557,7 @@ msgstr "本地公钥"
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:848
 #, fuzzy
-msgid "You can use the same approach as described in the xref:security-oidc-bearer-authentication-concept.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Local Public Key` section but only change the `application.properties` to use MP JWT configuration properties instead:"
+msgid "You can use the same approach as described in the xref:security-oidc-bearer-token-authentication.adoc#integration-testing[OpenID Connect Bearer Token Integration testing] `Local Public Key` section but only change the `application.properties` to use MP JWT configuration properties instead:"
 msgstr "你可以使用与 link:security-openid-connect.html#integration-testing.adoc[OpenID Connect承载令牌集成测试] `Local Public Key` 部分所述相同的方法，但只需改变 `application.properties` ，以使用MP JWT配置属性代替。"
 
 #. type: delimited block -
@@ -1783,7 +1783,7 @@ msgstr "主动认证"
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:981
 #, fuzzy
-msgid "If you'd like to skip the token verification when the public endpoint methods are invoked, disable the xref:security-proactive-authentication-concept.adoc[proactive authentication]."
+msgid "If you'd like to skip the token verification when the public endpoint methods are invoked, disable the xref:security-proactive-authentication.adoc[proactive authentication]."
 msgstr "如果你想在调用公共端点方法时跳过令牌验证，那么请停用 link:security-built-in-authentication.html#proactive-authentication[主动验证] 。"
 
 #. type: Plain text
@@ -2649,12 +2649,12 @@ msgstr "link:security-jwt-build.html[用SmallRye JWT Build签署和加密JWT令�
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:1098
-msgid "xref:security-authentication-mechanisms-concept.adoc#combining-authentication-mechanisms[Combining authentication mechanisms]"
+msgid "xref:security-authentication-mechanisms.adoc#combining-authentication-mechanisms[Combining authentication mechanisms]"
 msgstr ""
 
 #. type: Plain text
 #: upstream/_guides/security-jwt.adoc:1098
-msgid "xref:security-overview-concept.adoc[Quarkus Security overview]"
+msgid "xref:security-overview.adoc[Quarkus Security overview]"
 msgstr ""
 
 #, fuzzy

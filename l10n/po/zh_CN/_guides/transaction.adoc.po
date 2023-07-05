@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-04-26 15:10+0000\n"
+"POT-Creation-Date: 2023-07-05 14:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -691,65 +691,92 @@ msgstr "在监听器方法中，你可以通过访问 `TransactionManager` ，�
 #. type: Title ==
 #: upstream/_guides/transaction.adoc:365
 #, fuzzy, no-wrap
+msgid "Configuring transaction log to be stored in a DataSource"
+msgstr "配置交易节点名称标识符"
+
+#. type: Plain text
+#: upstream/_guides/transaction.adoc:368
+msgid "The Narayana project has the capability to store the transaction logs into a JDBC Datasource; this should be our recommendation for users needing transaction recovery capabilities, especially when running in volatile containers."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/transaction.adoc:370
+msgid "To enable this capability, you need to set `quarkus.transaction-manager.object-store.type` to `jdbc` explicitly. Also, you can specify a datasource name to be used for the transaction log storage by setting `quarkus.transaction-manager.object-store.datasource`. It will use the default datasource configuration if not specified."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/transaction.adoc:372
+msgid "If you enable `quarkus.transaction-manager.object-store.create-table`, the transaction log table will be created automatically if it does not exist."
+msgstr ""
+
+#. type: Plain text
+#: upstream/_guides/transaction.adoc:374
+#, fuzzy
+msgid "When enabling this capability, the transaction node identifier must be set through `quarkus.transaction-manager.node-name`."
+msgstr "节点名称标识符可以通过属性 `quarkus.transaction-manager.node-name` 进行配置。"
+
+#. type: Title ==
+#: upstream/_guides/transaction.adoc:376
+#, fuzzy, no-wrap
 msgid "Why always having a transaction manager?"
 msgstr "为什么总是有一个交易经理？"
 
 #. type: Labeled list
-#: upstream/_guides/transaction.adoc:367
+#: upstream/_guides/transaction.adoc:378
 #, fuzzy, no-wrap
 msgid "Does it work everywhere I want to?"
 msgstr "它在我想去的地方都能工作吗？"
 
 #. type: Plain text
-#: upstream/_guides/transaction.adoc:374
+#: upstream/_guides/transaction.adoc:385
 #, fuzzy
 msgid "Yep, it works in your Quarkus application, in your IDE, in your tests, because all of these are Quarkus applications.  JTA has some bad press for some people.  I don't know why.  Let's just say that this is not your grandpa's JTA implementation.  What we have is perfectly embeddable and lean."
 msgstr "是的，它在你的Quarkus应用程序中，在你的IDE中，在你的测试中都可以使用，因为这些都是Quarkus应用程序。JTA对一些人来说有一些不好的影响。我不知道为什么。我们只能说，这不是你爷爷的JTA实现。我们所拥有的是完美的可嵌入的和精简的。"
 
 #. type: Labeled list
-#: upstream/_guides/transaction.adoc:375
+#: upstream/_guides/transaction.adoc:386
 #, fuzzy, no-wrap
 msgid "Does it do 2 Phase Commit and slow down my app?"
 msgstr "它是否做了2个阶段的承诺并减慢了我的应用程序？"
 
 #. type: Plain text
-#: upstream/_guides/transaction.adoc:379
+#: upstream/_guides/transaction.adoc:390
 #, fuzzy
 msgid "No, this is an old folk tale.  Let's assume it essentially comes for free and let you scale to more complex cases involving several datasources as needed."
 msgstr "不，这是一个古老的民间故事。让我们假设它基本上是免费的，让你根据需要扩展到涉及几个数据源的更复杂的情况。"
 
 #. type: Labeled list
-#: upstream/_guides/transaction.adoc:380
+#: upstream/_guides/transaction.adoc:391
 #, fuzzy, no-wrap
 msgid "I don't need transaction when I do read only operations, it's faster."
 msgstr "当我做只读操作时，我不需要交易，它更快。"
 
 #. type: Plain text
-#: upstream/_guides/transaction.adoc:392
+#: upstream/_guides/transaction.adoc:403
 #, fuzzy
 msgid "Wrong. + First off, just disable the transaction by marking your transaction boundary with `@Transactional(NOT_SUPPORTED)` (or `NEVER` or `SUPPORTS` depending on the semantic you want). + Second, it's again fairy tale that not using transaction is faster.  The answer is, it depends on your DB and how many SQL SELECTs you are making.  No transaction means the DB does have a single operation transaction context anyway. + Third, when you do several SELECTs, it's better to wrap them in a single transaction because they will all be consistent with one another.  Say your DB represents your car dashboard, you can see the number of kilometers remaining and the fuel gauge level.  By reading it in one transaction, they will be consistent.  If you read one and the other from two different transactions, then they can be inconsistent.  It can be more dramatic if you read data related to rights and access management for example."
 msgstr "错了。+ 首先，只要用 `@Transactional(NOT_SUPPORTED)` （或 `NEVER` 或 `SUPPORTS` ，取决于你想要的语义）标记你的事务边界，就可以禁用事务。+ 其次，不使用事务会更快，这又是一个童话故事。答案是，这取决于你的数据库和你正在进行的SQL SELECTs的数量。不使用事务意味着无论如何，DB确实有一个单一的操作事务环境。+ 第三，当你做几个SELECTs时，最好把它们包在一个事务中，因为它们都会相互一致。假设你的DB代表你的汽车仪表盘，你可以看到剩余的公里数和油表水平。通过在一个事务中读取它，它们将是一致的。如果你从两个不同的事务中读取一个和另一个，那么它们可能是不一致的。如果你读取与权限和访问管理有关的数据，例如，它可能会更加戏剧化。"
 
 #. type: Labeled list
-#: upstream/_guides/transaction.adoc:393
+#: upstream/_guides/transaction.adoc:404
 #, fuzzy, no-wrap
 msgid "Why do you prefer JTA vs Hibernate's transaction management API"
 msgstr "为什么你更喜欢JTA与Hibernate的事务管理API？"
 
 #. type: Plain text
-#: upstream/_guides/transaction.adoc:397
+#: upstream/_guides/transaction.adoc:408
 #, fuzzy
 msgid "Managing the transactions manually via `entityManager.getTransaction().begin()` and friends lead to a butt ugly code with tons of try catch finally that people get wrong.  Transactions are also about JMS and other database access, so one API makes more sense."
 msgstr "通过 `entityManager.getTransaction().begin()` 和朋友们手动管理事务，会导致大量的try catch最后出错的丑陋代码。交易也是关于JMS和其他数据库访问的，所以一个API更有意义。"
 
 #. type: Labeled list
-#: upstream/_guides/transaction.adoc:398
+#: upstream/_guides/transaction.adoc:409
 #, fuzzy, no-wrap
 msgid "It's a mess because I don't know if my Jakarta Persistence persistence unit is using `JTA` or `Resource-level` Transaction"
 msgstr "这是一个混乱，因为我不知道我的JPA持久化单元是使用 `JTA` 还是 `Resource-level` Transaction"
 
 #. type: Plain text
-#: upstream/_guides/transaction.adoc:403
+#: upstream/_guides/transaction.adoc:414
 msgid "It's not a mess in Quarkus :)  Resource-level was introduced to support Jakarta Persistence in a non managed environment.  But Quarkus is both lean and a managed environment, so we can safely always assume we are in JTA mode.  The end result is that the difficulties of running Hibernate ORM + CDI + a transaction manager in Java SE mode are solved by Quarkus."
 msgstr ""
 
