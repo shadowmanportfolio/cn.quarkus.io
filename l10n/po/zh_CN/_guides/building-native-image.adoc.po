@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-05 14:19+0000\n"
+"POT-Creation-Date: 2023-07-19 18:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -528,7 +528,7 @@ msgstr "你可以使用 `quarkus.test.native-image-profile` 属性覆盖测试�
 #. type: Plain text
 #: upstream/_guides/building-native-image.adoc:297
 #, fuzzy
-msgid "You can override the profile the executable is *built* with and *runs* with using the `quarkus-profile=test` property, e.g.  `./mvnw clean verify -Dnative -Dquarkus-profile=test`. This might come handy if there are test specific resources to be processed, such as importing test data into the database."
+msgid "You can override the profile the executable is *built* with and *runs* with using the `quarkus.profile=test` property, e.g.  `./mvnw clean verify -Dnative -Dquarkus.profile=test`. This might come handy if there are test specific resources to be processed, such as importing test data into the database."
 msgstr "你可以使用 `quarkus-profile=test` 属性覆盖可执行文件 *建立* 和 *运行* 的配置文件，例如： `./mvnw clean verify -Pnative -Dquarkus-profile=test` 。如果有特定的测试资源需要处理，例如将测试数据导入数据库，这可能很方便。"
 
 #. type: delimited block -
@@ -550,7 +550,7 @@ msgstr "在你的 `application.properties` ，你的Hibernate ORM管理的数据
 #. type: delimited block =
 #: upstream/_guides/building-native-image.adoc:315
 #, fuzzy
-msgid "The executable built with `-Dquarkus-profile=test` is not suitable for production deployment.  It contains your test resources files and settings. Once the testing is done, the executable would have to be built again, using the default, `prod` profile."
+msgid "The executable built with `-Dquarkus.profile=test` is not suitable for production deployment.  It contains your test resources files and settings. Once the testing is done, the executable would have to be built again, using the default, `prod` profile."
 msgstr "用 `-Dquarkus-profile=test` 构建的可执行文件不适合用于生产部署。它包含你的测试资源文件和设置。一旦测试完成，就必须使用默认的 `prod` 配置文件，重新构建可执行文件。"
 
 #. type: delimited block =
@@ -915,7 +915,7 @@ msgstr "项目的生成也在 `src/main/docker` 目录中提供了一个 `Docker
 #: upstream/_guides/building-native-image.adoc:550
 #, no-wrap
 msgid ""
-"FROM registry.access.redhat.com/ubi8/ubi-minimal:8.6\n"
+"FROM registry.access.redhat.com/ubi8/ubi-minimal:8.8\n"
 "WORKDIR /work/\n"
 "RUN chown 1001 /work \\\n"
 "    && chmod \"g+rwX\" /work \\\n"

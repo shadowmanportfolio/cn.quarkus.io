@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-09 13:39+0000\n"
+"POT-Creation-Date: 2023-07-19 18:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,7 @@ msgstr "你的应用程序可能有额外的要求。例如，如果你有一个
 #, no-wrap
 msgid ""
 "# First stage - install the dependencies in an intermediate container\n"
-"FROM registry.access.redhat.com/ubi8/ubi-minimal:8.6 as BUILD\n"
+"FROM registry.access.redhat.com/ubi8/ubi-minimal:8.8 as BUILD\n"
 "RUN microdnf install freetype\n"
 msgstr ""
 
@@ -136,7 +136,7 @@ msgstr "如果你需要获得完整的AWT支持，你需要的不仅仅是 `libf
 #, no-wrap
 msgid ""
 "# First stage - install the dependencies in an intermediate container\n"
-"FROM registry.access.redhat.com/ubi8/ubi-minimal:8.6 as BUILD\n"
+"FROM registry.access.redhat.com/ubi8/ubi-minimal:8.8 as BUILD\n"
 "RUN microdnf install freetype fontconfig\n"
 msgstr ""
 
@@ -219,7 +219,7 @@ msgstr ""
 #: upstream/_guides/quarkus-runtime-base-image.adoc:120
 #, no-wrap
 msgid ""
-"FROM registry.access.redhat.com/ubi8/ubi-minimal:8.6\n"
+"FROM registry.access.redhat.com/ubi8/ubi-minimal:8.8\n"
 "WORKDIR /work/\n"
 "RUN chown 1001 /work \\\n"
 "    && chmod \"g+rwX\" /work \\\n"
