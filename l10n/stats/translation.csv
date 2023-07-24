@@ -188,6 +188,7 @@ l10n/po/zh_CN/_guides/security-proactive-authentication.adoc.po,21,42,551,727,25
 l10n/po/zh_CN/_guides/security-proactive-authentication-concept.adoc.po,19,41,546,727,25%
 l10n/po/zh_CN/_guides/security-openid-connect.adoc.po,202,310,4209,5607,25%
 l10n/po/zh_CN/_guides/grpc-getting-started.adoc.po,82,122,1312,1744,25%
+l10n/po/zh_CN/_guides/transaction.adoc.po,81,116,1890,2478,24%
 l10n/po/zh_CN/_guides/spring-di.adoc.po,73,116,1004,1313,24%
 l10n/po/zh_CN/_guides/smallrye-graphql-client.adoc.po,44,86,1207,1581,24%
 l10n/po/zh_CN/_guides/rabbitmq-dev-services.adoc.po,29,38,494,645,24%
@@ -261,7 +262,6 @@ l10n/po/zh_CN/_guides/cdi-reference.adoc.po,220,310,4181,4923,16%
 l10n/po/zh_CN/_guides/cdi-integration.adoc.po,170,206,2853,3380,16%
 l10n/po/zh_CN/_guides/cassandra.adoc.po,163,224,3259,3845,16%
 l10n/po/zh_CN/_guides/amazon-lambda.adoc.po,142,206,2967,3521,16%
-l10n/po/zh_CN/_guides/transaction.adoc.po,85,109,2003,2345,15%
 l10n/po/zh_CN/_guides/quarkus-blaze-persistence.adoc.po,15,17,562,655,15%
 l10n/po/zh_CN/_guides/platform.adoc.po,49,62,1230,1431,15%
 l10n/po/zh_CN/_guides/maven-tooling.adoc.po,257,292,5069,5944,15%
@@ -292,13 +292,13 @@ l10n/po/zh_CN/_guides/security.adoc.po,137,149,2386,2604,9%
 l10n/po/zh_CN/_guides/reaugmentation.adoc.po,19,22,624,683,9%
 l10n/po/zh_CN/_guides/extension-registry-user.adoc.po,53,72,1327,1456,9%
 l10n/po/zh_CN/_guides/doc-contribute-docs-howto.adoc.po,142,160,2014,2203,9%
+l10n/po/zh_CN/_guides/datasource.adoc.po,276,316,2880,3159,9%
 l10n/po/zh_CN/_guides/0-glossary.adoc.po,22,24,121,132,9%
 l10n/po/zh_CN/_guides/security-architecture-concept.adoc.po,32,36,411,442,8%
 l10n/po/zh_CN/_guides/quarkus-reactive-architecture.adoc.po,62,75,1564,1682,8%
 l10n/po/zh_CN/_guides/mutiny-primer.adoc.po,120,140,1928,2091,8%
 l10n/po/zh_CN/_guides/gradle-tooling.adoc.po,167,197,3238,3506,8%
 l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po,87,101,1453,1566,8%
-l10n/po/zh_CN/_guides/datasource.adoc.po,276,315,2877,3123,8%
 l10n/po/zh_CN/_guides/config-reference.adoc.po,185,224,2923,3153,8%
 l10n/po/zh_CN/_guides/dev-mode-differences.adoc.po,44,46,702,751,7%
 l10n/po/zh_CN/_guides/kogito-dmn.adoc.po,82,94,1151,1217,6%
@@ -312,6 +312,8 @@ l10n/po/zh_CN/_guides/_includes/quarkus-blaze-persistence.adoc.po,16,17,637,657,
 l10n/po/zh_CN/_guides/security-identity-providers-concept.adoc.po,12,13,195,199,3%
 l10n/po/zh_CN/_guides/security-basic-authentication.adoc.po,29,32,468,481,3%
 l10n/po/zh_CN/_guides/_includes/smallrye-kafka-incoming.adoc.po,109,112,1322,1354,3%
+l10n/po/zh_CN/_posts/2023-07-24-quarkus-3-2-2-final-released.adoc.po,0,26,0,364,100%
+l10n/po/zh_CN/_posts/2023-07-24-profile-and-monitor-native-executables-with-jfr.adoc.po,0,11,0,157,100%
 l10n/po/zh_CN/_posts/2023-07-20-quarkus-3-2-1-final-released.adoc.po,0,25,0,323,100%
 l10n/po/zh_CN/_posts/2023-07-13-quarkus-newsletter-34.adoc.po,0,10,0,232,100%
 l10n/po/zh_CN/_posts/2023-07-12-on-the-road-to-cdi-compatibility.adoc.po,0,50,0,1738,100%
@@ -444,7 +446,7 @@ l10n/po/zh_CN/_posts/2021-06-22-calling-all-roadies.adoc.po,19,38,286,371,23%
 l10n/po/zh_CN/_posts/2021-03-03-quarkus-1-12-1-final-released.adoc.po,16,20,114,148,23%
 l10n/po/zh_CN/_posts/2021-01-12-magic-control.adoc.po,44,88,1121,1439,23%
 l10n/po/zh_CN/_posts/2023-05-15-quarkus-newsletter-32.adoc.po,7,10,146,185,22%
-l10n/po/zh_CN/_posts/2021-09-01-using-lra.adoc.po,85,127,2057,2636,22%
+l10n/po/zh_CN/_posts/2021-09-01-using-lra.adoc.po,85,127,2056,2635,22%
 l10n/po/zh_CN/_posts/2020-12-08-quarkus-1-10-3-final-released.adoc.po,16,20,125,159,22%
 l10n/po/zh_CN/_posts/2019-11-20-quarkus-1-0-0-CR2-released.adoc.po,16,22,248,317,22%
 l10n/po/zh_CN/_posts/2023-01-04-quarkus-2-15-2-final-released.adoc.po,14,18,128,162,21%
