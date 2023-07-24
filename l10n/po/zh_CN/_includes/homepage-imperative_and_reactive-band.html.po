@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-13 07:20+0000\n"
+"POT-Creation-Date: 2023-07-24 18:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #. type: Content of: <div><div><div><p>
 #: upstream/_includes/homepage-imperative_and_reactive-band.html:7
-msgid "Combine both the familiar imperative code and the reactive style when developing applications.  <a href=\"/vision/continuum\">Learn more</a>."
+msgid "Combine both the familiar imperative code and the reactive style when developing applications.  <a href=\"/continuum\">Learn more</a>."
 msgstr ""
 
 #. type: Content of: <div><div><div><div><div><div>
