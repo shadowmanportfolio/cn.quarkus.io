@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-05-31 13:13+0000\n"
+"POT-Creation-Date: 2023-08-02 18:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -541,7 +541,7 @@ msgstr ""
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:271
 #, fuzzy
-msgid "The complete example is available in the `kafka-panache-quickstart` {quickstarts-tree-url}/kafka-panache-quickstart[directory]."
+msgid "The complete example is available in the `kafka-panache-quickstart` link:{quickstarts-tree-url}/kafka-panache-quickstart[directory]."
 msgstr "完整的例子可以在 `kafka-panache-quickstart` {quickstarts-tree-url}/kafka-panache-quickstart[目录]。"
 
 #. type: delimited block =

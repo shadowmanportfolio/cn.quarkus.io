@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-19 18:13+0000\n"
+"POT-Creation-Date: 2023-08-02 18:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,7 +132,7 @@ msgstr "克隆 Git 仓库。 `git clone {quickstarts-clone-url}` ，或者下载
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:61
 #, fuzzy
-msgid "The solution is located in the `hibernate-reactive-panache-quickstart` {quickstarts-tree-url}/hibernate-reactive-panache-quickstart[directory]."
+msgid "The solution is located in the `hibernate-reactive-panache-quickstart` link:{quickstarts-tree-url}/hibernate-reactive-panache-quickstart[directory]."
 msgstr "该解决方案位于 `hibernate-reactive-panache-quickstart` {quickstarts-treeurl}/hibernate-reactive-panache-quickstart[目录]中。"
 
 #. type: delimited block =
@@ -1035,7 +1035,7 @@ msgstr " `<query>` 将扩大到 `delete from EntityName where <query>` "
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:529
 #, fuzzy
-msgid "You can also write your queries in plain link:https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#hql[HQL]:"
+msgid "You can also write your queries in plain link:{hibernate-orm-docs-url}#hql[HQL]:"
 msgstr "你也可以用普通的 link:https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#hql[HQL] 编写你的查询。"
 
 #. type: delimited block -
@@ -1203,7 +1203,7 @@ msgstr "你可以用它来限制哪些字段将被数据库返回。"
 #. type: Plain text
 #: upstream/_guides/hibernate-reactive-panache.adoc:621
 #, fuzzy
-msgid "Hibernate will use **DTO projection** and generate a SELECT clause with the attributes from the projection class.  This is also called **dynamic instantiation** or **constructor expression**, more info can be found on the Hibernate guide: link:https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#hql-select-clause[hql select clause]"
+msgid "Hibernate will use **DTO projection** and generate a SELECT clause with the attributes from the projection class.  This is also called **dynamic instantiation** or **constructor expression**, more info can be found on the Hibernate guide: link:{hibernate-orm-docs-url}#hql-select-clause[hql select clause]"
 msgstr "Hibernate将使用 *DTO投影* 并生成一个带有投影类属性的SELECT子句。这也被称为 *动态实例化* 或 *构造器表达* ，更多信息可以在Hibernate指南中找到： link:https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#hql-select-clause[HQL选择子句]"
 
 #. type: Plain text
