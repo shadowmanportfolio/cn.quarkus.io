@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-02 18:19+0000\n"
+"POT-Creation-Date: 2023-08-11 19:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1499,7 +1499,7 @@ msgstr "Quarkus提供了以下状态存储的实现。"
 #. type: Plain text
 #: upstream/_guides/kafka.adoc:787
 #, fuzzy
-msgid "`quarkus-redis`: Uses the xref:redis-reference.adoc[`quarkus-redis-client`] extension to persist processing states.  Jackson is used to serialize processing state in Json. For complex objects it is required to configure the `checkpoint.state-type` property with the class name of the object.  By default, the state store uses the default redis client, but if a link:https://quarkus.io/guides/redis-reference#default-and-named-clients[named client] is to be used, the client name can be specified using the `mp.messaging.incoming.[channel-name].checkpoint.quarkus-redis.client-name` property.  Processing states will be stored in Redis using the key naming scheme `[consumer-group-id]:[topic]:[partition]`."
+msgid "`quarkus-redis`: Uses the xref:redis-reference.adoc[`quarkus-redis-client`] extension to persist processing states.  Jackson is used to serialize processing state in Json. For complex objects it is required to configure the `checkpoint.state-type` property with the class name of the object.  By default, the state store uses the default redis client, but if a xref:redis-reference.adoc#default-and-named-clients[named client] is to be used, the client name can be specified using the `mp.messaging.incoming.[channel-name].checkpoint.quarkus-redis.client-name` property.  Processing states will be stored in Redis using the key naming scheme `[consumer-group-id]:[topic]:[partition]`."
 msgstr " `quarkus-redis` :使用 link:redis-reference.html[`quarkus-redis-client`] 扩展来持久化处理状态。Jackson用于在Json中序列化处理状态。对于复杂的对象，需要在 `checkpoint.state-type` 属性中配置对象的类名。默认情况下，状态存储使用默认的Redis客户端，但如果要使用一个 link:https://quarkus.io/guides/redis-reference#default-and-named-clients[命名的客户端] ，可以使用 `mp.messaging.incoming.[channel-name].checkpoint.quarkus-redis.client-name` 属性指定客户端名称。处理状态将使用密钥命名方案 `[consumer-group-id]:[topic]:[partition]` ，存储在Redis中。"
 
 #. type: Plain text
@@ -2375,7 +2375,7 @@ msgstr "虽然一个正常的消息发射器会支持并发调用 `send` 方法�
 #. type: delimited block =
 #: upstream/_guides/kafka.adoc:1298
 #, fuzzy
-msgid "Note that in Reactive Messaging, the execution of processing methods, is already serialized, unless `@Blocking(ordered = false)` is used.  If `withTransaction` can be called concurrently, for example from a REST endpoint, it is recommended to limit the concurrency of the execution.  This can be done using the `@Bulkhead` annotation from link:https://quarkus.io/guides/smallrye-fault-tolerance[_Microprofile Fault Tolerance_]."
+msgid "Note that in Reactive Messaging, the execution of processing methods, is already serialized, unless `@Blocking(ordered = false)` is used.  If `withTransaction` can be called concurrently, for example from a REST endpoint, it is recommended to limit the concurrency of the execution.  This can be done using the `@Bulkhead` annotation from xref:smallrye-fault-tolerance.adoc[_Microprofile Fault Tolerance_]."
 msgstr "注意，在Reactive Messaging中，处理方法的执行，已经被序列化，除非使用 `@Blocking(ordered = false)` 。如果 `withTransaction` 可以被并发调用，例如从一个REST端点，建议限制执行的并发性。这可以使用 link:https://quarkus.io/guides/smallrye-fault-tolerance[_Microprofile Fault Tolerance_] 中的 `@Bulkhead` 注释来完成。"
 
 #. type: delimited block =

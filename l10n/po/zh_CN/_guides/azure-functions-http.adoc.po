@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-07-05 14:18+0000\n"
+"POT-Creation-Date: 2023-08-11 19:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -309,7 +309,7 @@ msgstr "构建和部署到Azure"
 #. type: Plain text
 #: upstream/_guides/azure-functions-http.adoc:164
 #, fuzzy
-msgid "The `quarkus-azure-functions-http` extension handles all the work to deploy to Azure.  By default, Quarkus will use the Azure CLI in the background to authenticate and deploy to Azure.  If you have multiple subscriptions associated with your account, you must set the `quarkus.azure-functions.subscription-id` property in your `application.properties` file to the subscription you want to use.  For other authentication mechanisms and deployment options see our config properties https://quarkus.io/guides/all-config[here]."
+msgid "The `quarkus-azure-functions-http` extension handles all the work to deploy to Azure.  By default, Quarkus will use the Azure CLI in the background to authenticate and deploy to Azure.  If you have multiple subscriptions associated with your account, you must set the `quarkus.azure-functions.subscription-id` property in your `application.properties` file to the subscription you want to use.  For other authentication mechanisms and deployment options see our config properties xref:all-config.adoc[here]."
 msgstr " `quarkus-azure-functions-http` 扩展处理所有部署到Azure的工作。默认情况下，Quarkus会在后台使用Azure CLI来验证和部署到Azure。如果你有多个订阅与你的帐户相关联，你必须在你的 `application.properties` 文件中设置 `quarkus.azure-functions.subscription-id` 属性为你要使用的订阅。关于其他认证机制和部署选项，请看我们的配置属性， link:https://quarkus.io/guides/all-config[这里] 。"
 
 #. type: Plain text
