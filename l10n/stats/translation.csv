@@ -153,12 +153,12 @@ l10n/po/zh_CN/_guides/hibernate-reactive.adoc.po,64,91,847,1212,31%
 l10n/po/zh_CN/_guides/grpc-kubernetes.adoc.po,15,25,242,347,31%
 l10n/po/zh_CN/_guides/funqy.adoc.po,20,40,622,892,31%
 l10n/po/zh_CN/_guides/context-propagation.adoc.po,71,87,1021,1472,31%
+l10n/po/zh_CN/_guides/vertx-reference.adoc.po,201,315,2712,3833,30%
 l10n/po/zh_CN/_guides/topic/continuum.adoc.po,31,56,738,1041,30%
 l10n/po/zh_CN/_guides/reactive-routes.adoc.po,156,229,2192,3127,30%
 l10n/po/zh_CN/_guides/deploying-to-heroku.adoc.po,45,63,669,950,30%
 l10n/po/zh_CN/_guides/command-mode-reference.adoc.po,52,87,956,1348,30%
 l10n/po/zh_CN/_guides/cache.adoc.po,160,265,2992,4225,30%
-l10n/po/zh_CN/_guides/vertx-reference.adoc.po,206,315,2722,3833,29%
 l10n/po/zh_CN/_guides/spring-web.adoc.po,113,141,991,1386,29%
 l10n/po/zh_CN/_guides/spring-data-rest.adoc.po,105,150,1078,1512,29%
 l10n/po/zh_CN/_guides/security-openid-connect-client.adoc.po,84,139,1299,1820,29%
@@ -230,6 +230,7 @@ l10n/po/zh_CN/_guides/resteasy.adoc.po,142,214,2812,3548,21%
 l10n/po/zh_CN/_guides/kafka-dev-services.adoc.po,28,37,490,620,21%
 l10n/po/zh_CN/_guides/funqy-http.adoc.po,38,63,716,906,21%
 l10n/po/zh_CN/_guides/deploying-to-kubernetes.adoc.po,340,449,5833,7307,21%
+l10n/po/zh_CN/_guides/config-reference.adoc.po,188,246,2933,3696,21%
 l10n/po/zh_CN/_guides/building-my-first-extension.adoc.po,177,239,3326,4162,21%
 l10n/po/zh_CN/_guides/appcds.adoc.po,24,30,570,718,21%
 l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication.adoc.po,264,396,6998,8667,20%
@@ -244,7 +245,8 @@ l10n/po/zh_CN/_guides/stork-reference.adoc.po,18,25,235,286,18%
 l10n/po/zh_CN/_guides/security-protect-service-application-using-oidc-bearer-authentication-tutorial.adoc.po,80,110,1176,1423,18%
 l10n/po/zh_CN/_guides/resteasy-reactive-migration.adoc.po,86,96,1020,1238,18%
 l10n/po/zh_CN/_guides/rabbitmq-reference.adoc.po,240,291,2380,2900,18%
-l10n/po/zh_CN/_guides/deploying-to-openshift.adoc.po,138,180,1940,2339,18%
+l10n/po/zh_CN/_guides/maven-tooling.adoc.po,259,301,5076,6169,18%
+l10n/po/zh_CN/_guides/deploying-to-openshift.adoc.po,138,180,1939,2338,18%
 l10n/po/zh_CN/_guides/config.adoc.po,63,84,746,900,18%
 l10n/po/zh_CN/_guides/conditional-extension-dependencies.adoc.po,24,41,669,811,18%
 l10n/po/zh_CN/_guides/building-native-image.adoc.po,207,250,4076,4927,18%
@@ -260,13 +262,12 @@ l10n/po/zh_CN/_guides/kogito.adoc.po,109,152,1592,1886,16%
 l10n/po/zh_CN/_guides/infinispan-dev-services.adoc.po,36,43,668,793,16%
 l10n/po/zh_CN/_guides/http-reference.adoc.po,199,237,2407,2839,16%
 l10n/po/zh_CN/_guides/extension-metadata.adoc.po,52,55,1008,1191,16%
-l10n/po/zh_CN/_guides/cdi-reference.adoc.po,220,310,4181,4923,16%
+l10n/po/zh_CN/_guides/cdi-reference.adoc.po,220,311,4181,4940,16%
 l10n/po/zh_CN/_guides/cdi-integration.adoc.po,170,206,2853,3380,16%
 l10n/po/zh_CN/_guides/cassandra.adoc.po,163,224,3259,3845,16%
 l10n/po/zh_CN/_guides/amazon-lambda.adoc.po,142,206,2967,3521,16%
 l10n/po/zh_CN/_guides/quarkus-blaze-persistence.adoc.po,15,17,562,655,15%
 l10n/po/zh_CN/_guides/platform.adoc.po,49,62,1230,1431,15%
-l10n/po/zh_CN/_guides/maven-tooling.adoc.po,257,292,5069,5944,15%
 l10n/po/zh_CN/_guides/kubernetes-config.adoc.po,39,49,784,914,15%
 l10n/po/zh_CN/_guides/doc-concept.adoc.po,36,43,526,616,15%
 l10n/po/zh_CN/_guides/cdi.adoc.po,130,178,2251,2630,15%
@@ -300,7 +301,6 @@ l10n/po/zh_CN/_guides/quarkus-reactive-architecture.adoc.po,62,75,1564,1682,8%
 l10n/po/zh_CN/_guides/mutiny-primer.adoc.po,120,140,1928,2091,8%
 l10n/po/zh_CN/_guides/gradle-tooling.adoc.po,167,197,3238,3506,8%
 l10n/po/zh_CN/_guides/deploying-to-google-cloud.adoc.po,87,101,1453,1566,8%
-l10n/po/zh_CN/_guides/config-reference.adoc.po,185,224,2923,3153,8%
 l10n/po/zh_CN/_guides/dev-mode-differences.adoc.po,44,46,702,751,7%
 l10n/po/zh_CN/_guides/kogito-dmn.adoc.po,82,94,1151,1217,6%
 l10n/po/zh_CN/_guides/class-loading-reference.adoc.po,61,66,1419,1503,6%
