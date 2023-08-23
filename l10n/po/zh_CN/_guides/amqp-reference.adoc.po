@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-04-26 15:09+0000\n"
+"POT-Creation-Date: 2023-08-23 11:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -937,36 +937,47 @@ msgstr "它们具有相同的效果。因此，你可以同时使用两者。第
 
 #. type: Block title
 #: upstream/_guides/amqp-reference.adoc:415
+#, no-wrap
+msgid "@RunOnVirtualThread"
+msgstr ""
+
+#. type: delimited block =
+#: upstream/_guides/amqp-reference.adoc:418
+msgid "For running the blocking processing on Java _virtual threads_, see the xref:messaging-virtual-threads.adoc[Quarkus Virtual Thread support with Reactive Messaging documentation]."
+msgstr ""
+
+#. type: Block title
+#: upstream/_guides/amqp-reference.adoc:421
 #, fuzzy, no-wrap
 msgid "@Transactional"
 msgstr "@交易型"
 
 #. type: delimited block =
-#: upstream/_guides/amqp-reference.adoc:418
+#: upstream/_guides/amqp-reference.adoc:424
 #, fuzzy
 msgid "If your method is annotated with `@Transactional`, it will be considered _blocking_ automatically, even if the method is not annotated with `@Blocking`."
 msgstr "如果你的方法被注解为 `@Transactional` ，它将被自动视为 _阻塞_ ，即使该方法没有被注解为 `@Blocking` 。"
 
 #. type: Title ==
-#: upstream/_guides/amqp-reference.adoc:420
+#: upstream/_guides/amqp-reference.adoc:426
 #, fuzzy, no-wrap
 msgid "Customizing the underlying AMQP client"
 msgstr "定制底层AMQP客户端"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:424
+#: upstream/_guides/amqp-reference.adoc:430
 #, fuzzy
 msgid "The connector uses the Vert.x AMQP client underneath.  More details about this client can be found in the https://vertx.io/docs/vertx-amqp-client/java/[Vert.x website]."
 msgstr "该连接器在下面使用Vert.x AMQP客户端。关于这个客户端的更多细节可以在 link:https://vertx.io/docs/vertx-amqp-client/java/[Vert.x的网站上] 找到。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:426
+#: upstream/_guides/amqp-reference.adoc:432
 #, fuzzy
 msgid "You can customize the underlying client configuration by producing an instance of `AmqpClientOptions` as follows:"
 msgstr "你可以通过产生一个 `AmqpClientOptions` 的实例来定制底层的客户端配置，如下所示。"
 
 #. type: delimited block -
-#: upstream/_guides/amqp-reference.adoc:447
+#: upstream/_guides/amqp-reference.adoc:453
 #, no-wrap
 msgid ""
 "@Produces\n"
@@ -990,73 +1001,73 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:451
+#: upstream/_guides/amqp-reference.adoc:457
 #, fuzzy
 msgid "This instance is retrieved and used to configure the client used by the connector.  You need to indicate the name of the client using the `client-options-name` attribute:"
 msgstr "这个实例被检索出来，用于配置连接器使用的客户端。你需要使用 `client-options-name` 属性指出客户端的名称。"
 
 #. type: delimited block -
-#: upstream/_guides/amqp-reference.adoc:455
+#: upstream/_guides/amqp-reference.adoc:461
 #, no-wrap
 msgid "mp.messaging.incoming.prices.client-options-name=my-named-options\n"
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/amqp-reference.adoc:457
+#: upstream/_guides/amqp-reference.adoc:463
 #, fuzzy, no-wrap
 msgid "Health reporting"
 msgstr "健康报告"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:462
+#: upstream/_guides/amqp-reference.adoc:468
 #, fuzzy
 msgid "If you use the AMQP connector with the `quarkus-smallrye-health` extension, it contributes to the readiness and liveness probes.  The AMQP connector reports the readiness and liveness of each channel managed by the connector.  At the moment, the AMQP connector uses the same logic for the readiness and liveness checks."
 msgstr "如果你将AMQP连接器与 `quarkus-smallrye-health` 扩展一起使用，它就会对就绪性和有效性的探测作出贡献。AMQP连接器报告连接器所管理的每个通道的就绪性和有效性。目前，AMQP连接器使用相同的逻辑来进行就绪性和有效性检查。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:466
+#: upstream/_guides/amqp-reference.adoc:472
 #, fuzzy
 msgid "To disable health reporting, set the `health-enabled` attribute for the channel to false.  On the inbound side (receiving messages from AMQP), the check verifies that the receiver is attached to the broker.  On the outbound side (sending records to AMQP), the check verifies that the sender is attached to the broker."
 msgstr "要禁用健康报告，将通道的 `health-enabled` 属性设置为false。在入站端（从AMQP接收消息），检查验证接收者是否连接到经纪人。在出站端（向AMQP发送记录），检查验证发送者是否连接到经纪人。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:470
+#: upstream/_guides/amqp-reference.adoc:476
 #, fuzzy
 msgid "Note that a message processing failures nacks the message, which is then handled by the `failure-strategy`.  It is the responsibility of the `failure-strategy` to report the failure and influence the outcome of the checks.  The `fail` failure strategy reports the failure, and so the check will report the fault."
 msgstr "请注意，一个消息处理的失败会将消息打包，然后由 `failure-strategy` 。报告失败并影响检查的结果是 `failure-strategy` 的责任。 `fail` 失败策略报告失败，因此检查会报告故障。"
 
 #. type: Title ==
-#: upstream/_guides/amqp-reference.adoc:471
+#: upstream/_guides/amqp-reference.adoc:477
 #, fuzzy, no-wrap
 msgid "Using RabbitMQ"
 msgstr "使用RabbitMQ"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:475
+#: upstream/_guides/amqp-reference.adoc:481
 #, fuzzy
 msgid "This connector is for AMQP 1.0. RabbitMQ implements AMQP 0.9.1.  RabbitMQ does not provide AMQP 1.0 by default, but there is a plugin for it.  To use RabbitMQ with this connector, enable and configure the AMQP 1.0 plugin."
 msgstr "此连接器用于 AMQP 1.0。RabbitMQ 实现了 AMQP 0.9.1。RabbitMQ 默认不提供 AMQP 1.0，但有一个插件。要在此连接器上使用 RabbitMQ，请启用并配置 AMQP 1.0 插件。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:478
+#: upstream/_guides/amqp-reference.adoc:484
 #, fuzzy
 msgid "Despite the existence of the plugin, a few AMQP 1.0 features won’t work with RabbitMQ.  Thus, we recommend the following configurations."
 msgstr "尽管存在该插件，但少数 AMQP 1.0 功能不会与 RabbitMQ 一起工作。因此，我们建议采用以下配置。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:480
+#: upstream/_guides/amqp-reference.adoc:486
 #, fuzzy
 msgid "To receive messages from RabbitMQ:"
 msgstr "要接收来自 RabbitMQ 的消息。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:482
+#: upstream/_guides/amqp-reference.adoc:488
 #, fuzzy
 msgid "Set durable to false"
 msgstr "将持久性设置为假"
 
 #. type: delimited block -
-#: upstream/_guides/amqp-reference.adoc:487
+#: upstream/_guides/amqp-reference.adoc:493
 #, no-wrap
 msgid ""
 "mp.messaging.incoming.prices.connector=smallrye-amqp\n"
@@ -1064,25 +1075,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:490
+#: upstream/_guides/amqp-reference.adoc:496
 #, fuzzy
 msgid "To send messages to RabbitMQ:"
 msgstr "要向 RabbitMQ 发送消息。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:492
+#: upstream/_guides/amqp-reference.adoc:498
 #, fuzzy
 msgid "set the destination address (anonymous sender are not supported)"
 msgstr "设置目的地地址（不支持匿名发送者）。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:493
+#: upstream/_guides/amqp-reference.adoc:499
 #, fuzzy
 msgid "set `use-anonymous-sender` to false"
 msgstr "设置 `use-anonymous-sender` 为假"
 
 #. type: delimited block -
-#: upstream/_guides/amqp-reference.adoc:499
+#: upstream/_guides/amqp-reference.adoc:505
 #, no-wrap
 msgid ""
 "mp.messaging.outgoing.generated-price.connector=smallrye-amqp\n"
@@ -1091,121 +1102,121 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:502
+#: upstream/_guides/amqp-reference.adoc:508
 #, fuzzy
 msgid "As a consequence, it’s not possible to change the destination dynamically (using message metadata) when using RabbitMQ."
 msgstr "因此，在使用 RabbitMQ 时，不可能动态地改变目的地（使用消息元数据）。"
 
 #. type: Title ==
-#: upstream/_guides/amqp-reference.adoc:503
+#: upstream/_guides/amqp-reference.adoc:509
 #, fuzzy, no-wrap
 msgid "Receiving Cloud Events"
 msgstr "接收云事件"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:508
+#: upstream/_guides/amqp-reference.adoc:514
 #, fuzzy
 msgid "The AMQP connector supports https://cloudevents.io/[Cloud Events].  When the connector detects a _structured_ or _binary_ Cloud Events, it adds a `IncomingCloudEventMetadata<T>` into the metadata of the `Message`.  `IncomingCloudEventMetadata` contains accessors to the mandatory and optional Cloud Event attributes."
 msgstr "AMQP连接器支持 link:https://cloudevents.io/[云事件] 。当连接器检测到一个 _结构化的_ 或 _二进制的_ 云事件时，它会在 `Message` 的元数据中添加一个 `IncomingCloudEventMetadata<T>` 。 `IncomingCloudEventMetadata` ，包含对强制性和可选的云事件属性的访问器。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:510
+#: upstream/_guides/amqp-reference.adoc:516
 #, fuzzy
 msgid "If the connector cannot extract the Cloud Event metadata, it sends the Message without the metadata."
 msgstr "如果连接器无法提取云事件元数据，它将发送没有元数据的消息。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:512
+#: upstream/_guides/amqp-reference.adoc:518
 #, fuzzy
 msgid "For more information on receiving Cloud Events, see https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.12/amqp/amqp.html#_receiving_cloud_events[Receiving Cloud Events] in SmallRye Reactive Messaging documentation."
 msgstr "关于接收云事件的更多信息，请参阅SmallRye Reactive Messaging文档中的 link:https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.12/amqp/amqp.html#_receiving_cloud_events[接收云事件] 。"
 
 #. type: Title ===
-#: upstream/_guides/amqp-reference.adoc:513
+#: upstream/_guides/amqp-reference.adoc:519
 #, fuzzy, no-wrap
 msgid "Sending Cloud Events"
 msgstr "发送云事件"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:517
+#: upstream/_guides/amqp-reference.adoc:523
 #, fuzzy
 msgid "The AMQP connector supports https://cloudevents.io/[Cloud Events].  The connector sends the outbound record as Cloud Events if:"
 msgstr "AMQP连接器支持 link:https://cloudevents.io/[云事件] 。在以下情况下，连接器会将出站记录作为云事件发送。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:519
+#: upstream/_guides/amqp-reference.adoc:525
 #, fuzzy
 msgid "the message metadata contains an `io.smallrye.reactive.messaging.ce.OutgoingCloudEventMetadata` instance,"
 msgstr "该消息元数据包含一个 `io.smallrye.reactive.messaging.ce.OutgoingCloudEventMetadata` 实例。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:520
+#: upstream/_guides/amqp-reference.adoc:526
 #, fuzzy
 msgid "the channel configuration defines the `cloud-events-type` and `cloud-events-source` attributes."
 msgstr "该通道配置定义了 `cloud-events-type` 和 `cloud-events-source` 属性。"
 
 #. type: Plain text
-#: upstream/_guides/amqp-reference.adoc:522
+#: upstream/_guides/amqp-reference.adoc:528
 #, fuzzy
 msgid "For more information on sending Cloud Events, see https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.12/amqp/amqp.html#_sending_cloud_events[Sending Cloud Events] in SmallRye Reactive Messaging documentation."
 msgstr "关于发送云事件的更多信息，请参阅SmallRye Reactive Messaging文档中的 link:https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.12/amqp/amqp.html#_sending_cloud_events[发送云事件] 。"
 
 #. type: Title ==
-#: upstream/_guides/amqp-reference.adoc:524
+#: upstream/_guides/amqp-reference.adoc:530
 #, fuzzy, no-wrap
 msgid "AMQP Connector Configuration Reference"
 msgstr "AMQP连接器配置参考"
 
 #. type: Title ===
-#: upstream/_guides/amqp-reference.adoc:526
+#: upstream/_guides/amqp-reference.adoc:532
 #, fuzzy, no-wrap
 msgid "Quarkus specific configuration"
 msgstr "Quarkus的具体配置"
 
 #. type: Title ===
-#: upstream/_guides/amqp-reference.adoc:530
+#: upstream/_guides/amqp-reference.adoc:536
 #, fuzzy, no-wrap
 msgid "Incoming channel configuration"
 msgstr "入站通道配置"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:534
-#: upstream/_guides/amqp-reference.adoc:657
+#: upstream/_guides/amqp-reference.adoc:540
+#: upstream/_guides/amqp-reference.adoc:663
 #, fuzzy, no-wrap
 msgid "Attribute (_alias_)"
 msgstr "属性 _（别名）_ "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:534
-#: upstream/_guides/amqp-reference.adoc:657
+#: upstream/_guides/amqp-reference.adoc:540
+#: upstream/_guides/amqp-reference.adoc:663
 #, fuzzy, no-wrap
 msgid "Description"
 msgstr "描述"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:534
-#: upstream/_guides/amqp-reference.adoc:657
+#: upstream/_guides/amqp-reference.adoc:540
+#: upstream/_guides/amqp-reference.adoc:663
 #, fuzzy, no-wrap
 msgid "Mandatory"
 msgstr "强制性"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:536
-#: upstream/_guides/amqp-reference.adoc:659
+#: upstream/_guides/amqp-reference.adoc:542
+#: upstream/_guides/amqp-reference.adoc:665
 #, fuzzy, no-wrap
 msgid "Default"
 msgstr "默认情况下"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:536
-#: upstream/_guides/amqp-reference.adoc:659
+#: upstream/_guides/amqp-reference.adoc:542
+#: upstream/_guides/amqp-reference.adoc:665
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*address*#"
 msgstr " *地址* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:538
-#: upstream/_guides/amqp-reference.adoc:661
+#: upstream/_guides/amqp-reference.adoc:544
+#: upstream/_guides/amqp-reference.adoc:667
 #, fuzzy, no-wrap
 msgid ""
 "The AMQP address. If not set, the channel name is used\n"
@@ -1214,71 +1225,71 @@ msgid ""
 msgstr "AMQP地址。如果没有设置，则使用通道名称"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:538
-#: upstream/_guides/amqp-reference.adoc:542
-#: upstream/_guides/amqp-reference.adoc:546
-#: upstream/_guides/amqp-reference.adoc:550
+#: upstream/_guides/amqp-reference.adoc:544
+#: upstream/_guides/amqp-reference.adoc:548
+#: upstream/_guides/amqp-reference.adoc:552
 #: upstream/_guides/amqp-reference.adoc:556
-#: upstream/_guides/amqp-reference.adoc:560
+#: upstream/_guides/amqp-reference.adoc:562
 #: upstream/_guides/amqp-reference.adoc:566
-#: upstream/_guides/amqp-reference.adoc:570
-#: upstream/_guides/amqp-reference.adoc:574
-#: upstream/_guides/amqp-reference.adoc:578
-#: upstream/_guides/amqp-reference.adoc:582
+#: upstream/_guides/amqp-reference.adoc:572
+#: upstream/_guides/amqp-reference.adoc:576
+#: upstream/_guides/amqp-reference.adoc:580
+#: upstream/_guides/amqp-reference.adoc:584
 #: upstream/_guides/amqp-reference.adoc:588
-#: upstream/_guides/amqp-reference.adoc:592
+#: upstream/_guides/amqp-reference.adoc:594
 #: upstream/_guides/amqp-reference.adoc:598
 #: upstream/_guides/amqp-reference.adoc:604
 #: upstream/_guides/amqp-reference.adoc:610
 #: upstream/_guides/amqp-reference.adoc:616
 #: upstream/_guides/amqp-reference.adoc:622
-#: upstream/_guides/amqp-reference.adoc:626
-#: upstream/_guides/amqp-reference.adoc:630
+#: upstream/_guides/amqp-reference.adoc:628
+#: upstream/_guides/amqp-reference.adoc:632
 #: upstream/_guides/amqp-reference.adoc:636
 #: upstream/_guides/amqp-reference.adoc:642
 #: upstream/_guides/amqp-reference.adoc:648
-#: upstream/_guides/amqp-reference.adoc:661
-#: upstream/_guides/amqp-reference.adoc:665
+#: upstream/_guides/amqp-reference.adoc:654
+#: upstream/_guides/amqp-reference.adoc:667
 #: upstream/_guides/amqp-reference.adoc:671
-#: upstream/_guides/amqp-reference.adoc:675
+#: upstream/_guides/amqp-reference.adoc:677
 #: upstream/_guides/amqp-reference.adoc:681
 #: upstream/_guides/amqp-reference.adoc:687
 #: upstream/_guides/amqp-reference.adoc:693
-#: upstream/_guides/amqp-reference.adoc:697
+#: upstream/_guides/amqp-reference.adoc:699
 #: upstream/_guides/amqp-reference.adoc:703
 #: upstream/_guides/amqp-reference.adoc:709
 #: upstream/_guides/amqp-reference.adoc:715
 #: upstream/_guides/amqp-reference.adoc:721
-#: upstream/_guides/amqp-reference.adoc:725
-#: upstream/_guides/amqp-reference.adoc:729
-#: upstream/_guides/amqp-reference.adoc:733
-#: upstream/_guides/amqp-reference.adoc:737
+#: upstream/_guides/amqp-reference.adoc:727
+#: upstream/_guides/amqp-reference.adoc:731
+#: upstream/_guides/amqp-reference.adoc:735
+#: upstream/_guides/amqp-reference.adoc:739
 #: upstream/_guides/amqp-reference.adoc:743
-#: upstream/_guides/amqp-reference.adoc:747
-#: upstream/_guides/amqp-reference.adoc:751
+#: upstream/_guides/amqp-reference.adoc:749
+#: upstream/_guides/amqp-reference.adoc:753
 #: upstream/_guides/amqp-reference.adoc:757
 #: upstream/_guides/amqp-reference.adoc:763
 #: upstream/_guides/amqp-reference.adoc:769
 #: upstream/_guides/amqp-reference.adoc:775
 #: upstream/_guides/amqp-reference.adoc:781
-#: upstream/_guides/amqp-reference.adoc:785
-#: upstream/_guides/amqp-reference.adoc:789
-#: upstream/_guides/amqp-reference.adoc:793
+#: upstream/_guides/amqp-reference.adoc:787
+#: upstream/_guides/amqp-reference.adoc:791
+#: upstream/_guides/amqp-reference.adoc:795
 #: upstream/_guides/amqp-reference.adoc:799
 #: upstream/_guides/amqp-reference.adoc:805
 #: upstream/_guides/amqp-reference.adoc:811
+#: upstream/_guides/amqp-reference.adoc:817
 #, fuzzy, no-wrap
 msgid "false"
 msgstr "假的"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:540
+#: upstream/_guides/amqp-reference.adoc:546
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*auto-acknowledgement*#"
 msgstr " *自动确认* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:542
+#: upstream/_guides/amqp-reference.adoc:548
 #, fuzzy, no-wrap
 msgid ""
 "Whether the received AMQP messages must be acknowledged when received\n"
@@ -1287,25 +1298,25 @@ msgid ""
 msgstr "收到的AMQP消息在收到时是否必须被确认"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:544
-#: upstream/_guides/amqp-reference.adoc:548
-#: upstream/_guides/amqp-reference.adoc:576
-#: upstream/_guides/amqp-reference.adoc:638
-#: upstream/_guides/amqp-reference.adoc:735
-#: upstream/_guides/amqp-reference.adoc:753
-#: upstream/_guides/amqp-reference.adoc:801
+#: upstream/_guides/amqp-reference.adoc:550
+#: upstream/_guides/amqp-reference.adoc:554
+#: upstream/_guides/amqp-reference.adoc:582
+#: upstream/_guides/amqp-reference.adoc:644
+#: upstream/_guides/amqp-reference.adoc:741
+#: upstream/_guides/amqp-reference.adoc:759
+#: upstream/_guides/amqp-reference.adoc:807
 #, fuzzy, no-wrap
 msgid "`false`"
 msgstr " `false` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:544
+#: upstream/_guides/amqp-reference.adoc:550
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*broadcast*#"
 msgstr " *广播* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:546
+#: upstream/_guides/amqp-reference.adoc:552
 #, fuzzy, no-wrap
 msgid ""
 "Whether the received AMQP messages must be dispatched to multiple _subscribers_\n"
@@ -1314,15 +1325,15 @@ msgid ""
 msgstr "收到的AMQP消息是否必须被派发给多个 _订阅者_ "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:548
-#: upstream/_guides/amqp-reference.adoc:663
+#: upstream/_guides/amqp-reference.adoc:554
+#: upstream/_guides/amqp-reference.adoc:669
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*capabilities*#"
 msgstr " *耐用* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:550
-#: upstream/_guides/amqp-reference.adoc:665
+#: upstream/_guides/amqp-reference.adoc:556
+#: upstream/_guides/amqp-reference.adoc:671
 #, no-wrap
 msgid ""
 "A comma-separated list of capabilities proposed by the sender or receiver client.\n"
@@ -1331,8 +1342,8 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:554
-#: upstream/_guides/amqp-reference.adoc:669
+#: upstream/_guides/amqp-reference.adoc:560
+#: upstream/_guides/amqp-reference.adoc:675
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*client-options-name*#\n"
@@ -1341,8 +1352,8 @@ msgid ""
 msgstr " *客户端-选项-名称* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:556
-#: upstream/_guides/amqp-reference.adoc:671
+#: upstream/_guides/amqp-reference.adoc:562
+#: upstream/_guides/amqp-reference.adoc:677
 #, fuzzy, no-wrap
 msgid ""
 "The name of the AMQP Client Option bean used to customize the AMQP client configuration\n"
@@ -1351,15 +1362,15 @@ msgid ""
 msgstr "用于定制AMQP客户端配置的AMQP客户端选项豆的名称。"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:558
-#: upstream/_guides/amqp-reference.adoc:673
+#: upstream/_guides/amqp-reference.adoc:564
+#: upstream/_guides/amqp-reference.adoc:679
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*cloud-events*#"
 msgstr " *云-事件* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:560
-#: upstream/_guides/amqp-reference.adoc:675
+#: upstream/_guides/amqp-reference.adoc:566
+#: upstream/_guides/amqp-reference.adoc:681
 #, fuzzy, no-wrap
 msgid ""
 "Enables (default) or disables the Cloud Event support. If enabled on an _incoming_ channel, the connector analyzes the incoming records and try to create Cloud Event metadata. If enabled on an _outgoing_, the connector sends the outgoing messages as Cloud Event if the message includes Cloud Event Metadata.\n"
@@ -1368,18 +1379,18 @@ msgid ""
 msgstr "启用（默认）或停用云事件支持。如果在 _传入_ 通道上启用，连接器会分析传入记录并尝试创建云事件元数据。如果在 _传出_ 通道上启用，如果消息包括云事件元数据，连接器会将传出的消息作为云事件发送。"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:562
-#: upstream/_guides/amqp-reference.adoc:632
-#: upstream/_guides/amqp-reference.adoc:677
-#: upstream/_guides/amqp-reference.adoc:695
-#: upstream/_guides/amqp-reference.adoc:787
+#: upstream/_guides/amqp-reference.adoc:568
+#: upstream/_guides/amqp-reference.adoc:638
+#: upstream/_guides/amqp-reference.adoc:683
+#: upstream/_guides/amqp-reference.adoc:701
+#: upstream/_guides/amqp-reference.adoc:793
 #, fuzzy, no-wrap
 msgid "`true`"
 msgstr " `true` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:564
-#: upstream/_guides/amqp-reference.adoc:719
+#: upstream/_guides/amqp-reference.adoc:570
+#: upstream/_guides/amqp-reference.adoc:725
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*connect-timeout*#\n"
@@ -1388,8 +1399,8 @@ msgid ""
 msgstr " *连接超时* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:566
-#: upstream/_guides/amqp-reference.adoc:721
+#: upstream/_guides/amqp-reference.adoc:572
+#: upstream/_guides/amqp-reference.adoc:727
 #, fuzzy, no-wrap
 msgid ""
 "The connection timeout in milliseconds\n"
@@ -1398,22 +1409,22 @@ msgid ""
 msgstr "连接超时，以毫秒为单位"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:568
-#: upstream/_guides/amqp-reference.adoc:723
+#: upstream/_guides/amqp-reference.adoc:574
+#: upstream/_guides/amqp-reference.adoc:729
 #, fuzzy, no-wrap
 msgid "`1000`"
 msgstr " `1000` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:568
-#: upstream/_guides/amqp-reference.adoc:723
+#: upstream/_guides/amqp-reference.adoc:574
+#: upstream/_guides/amqp-reference.adoc:729
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*container-id*#"
 msgstr " *容器-ID* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:570
-#: upstream/_guides/amqp-reference.adoc:725
+#: upstream/_guides/amqp-reference.adoc:576
+#: upstream/_guides/amqp-reference.adoc:731
 #, fuzzy, no-wrap
 msgid ""
 "The AMQP container id\n"
@@ -1422,14 +1433,14 @@ msgid ""
 msgstr "AMQP容器的ID"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:572
-#: upstream/_guides/amqp-reference.adoc:731
+#: upstream/_guides/amqp-reference.adoc:578
+#: upstream/_guides/amqp-reference.adoc:737
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*durable*#"
 msgstr " *耐用* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:574
+#: upstream/_guides/amqp-reference.adoc:580
 #, fuzzy, no-wrap
 msgid ""
 "Whether AMQP subscription is durable\n"
@@ -1438,13 +1449,13 @@ msgid ""
 msgstr "AMQP订阅是否持久"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:576
+#: upstream/_guides/amqp-reference.adoc:582
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*failure-strategy*#"
 msgstr " *失败-战略* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:578
+#: upstream/_guides/amqp-reference.adoc:584
 #, fuzzy, no-wrap
 msgid ""
 "Specify the failure strategy to apply when a message produced from an AMQP message is nacked. Accepted values are `fail` (default), `accept`, `release`, `reject`, `modified-failed`, `modified-failed-undeliverable-here`\n"
@@ -1453,21 +1464,21 @@ msgid ""
 msgstr "指定从AMQP消息中产生的消息被破解时，要应用的失败策略。可接受的值是 `fail` （默认）， `accept` ， `release` ， `reject` ， `modified-failed` 。 `modified-failed-undeliverable-here` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:580
+#: upstream/_guides/amqp-reference.adoc:586
 #, fuzzy, no-wrap
 msgid "`fail`"
 msgstr " `fail` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:580
-#: upstream/_guides/amqp-reference.adoc:735
+#: upstream/_guides/amqp-reference.adoc:586
+#: upstream/_guides/amqp-reference.adoc:741
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*health-timeout*#"
 msgstr " *健康超时* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:582
-#: upstream/_guides/amqp-reference.adoc:737
+#: upstream/_guides/amqp-reference.adoc:588
+#: upstream/_guides/amqp-reference.adoc:743
 #, fuzzy, no-wrap
 msgid ""
 "The max number of seconds to wait to determine if the connection with the broker is still established for the readiness check. After that threshold, the check is considered as failed.\n"
@@ -1476,15 +1487,15 @@ msgid ""
 msgstr "等待的最大秒数，以确定与经纪商的连接是否仍在建立，以便进行就绪检查。在该阈值之后，检查被认为是失败的。"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:584
-#: upstream/_guides/amqp-reference.adoc:739
+#: upstream/_guides/amqp-reference.adoc:590
+#: upstream/_guides/amqp-reference.adoc:745
 #, fuzzy, no-wrap
 msgid "`3`"
 msgstr " `3` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:586
-#: upstream/_guides/amqp-reference.adoc:741
+#: upstream/_guides/amqp-reference.adoc:592
+#: upstream/_guides/amqp-reference.adoc:747
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*host*#\n"
@@ -1493,8 +1504,8 @@ msgid ""
 msgstr " *主机* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:588
-#: upstream/_guides/amqp-reference.adoc:743
+#: upstream/_guides/amqp-reference.adoc:594
+#: upstream/_guides/amqp-reference.adoc:749
 #, fuzzy, no-wrap
 msgid ""
 "The broker hostname\n"
@@ -1503,22 +1514,22 @@ msgid ""
 msgstr "经纪人的主机名"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:590
-#: upstream/_guides/amqp-reference.adoc:745
+#: upstream/_guides/amqp-reference.adoc:596
+#: upstream/_guides/amqp-reference.adoc:751
 #, fuzzy, no-wrap
 msgid "`localhost`"
 msgstr " `localhost` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:590
-#: upstream/_guides/amqp-reference.adoc:745
+#: upstream/_guides/amqp-reference.adoc:596
+#: upstream/_guides/amqp-reference.adoc:751
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*link-name*#"
 msgstr " *链接名* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:592
-#: upstream/_guides/amqp-reference.adoc:747
+#: upstream/_guides/amqp-reference.adoc:598
+#: upstream/_guides/amqp-reference.adoc:753
 #, fuzzy, no-wrap
 msgid ""
 "The name of the link. If not set, the channel name is used.\n"
@@ -1527,8 +1538,8 @@ msgid ""
 msgstr "链接的名称。如果没有设置，则使用通道名称。"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:596
-#: upstream/_guides/amqp-reference.adoc:755
+#: upstream/_guides/amqp-reference.adoc:602
+#: upstream/_guides/amqp-reference.adoc:761
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*password*#\n"
@@ -1537,8 +1548,8 @@ msgid ""
 msgstr " *密码* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:598
-#: upstream/_guides/amqp-reference.adoc:757
+#: upstream/_guides/amqp-reference.adoc:604
+#: upstream/_guides/amqp-reference.adoc:763
 #, fuzzy, no-wrap
 msgid ""
 "The password used to authenticate to the broker\n"
@@ -1547,8 +1558,8 @@ msgid ""
 msgstr "用于认证经纪人的密码"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:602
-#: upstream/_guides/amqp-reference.adoc:761
+#: upstream/_guides/amqp-reference.adoc:608
+#: upstream/_guides/amqp-reference.adoc:767
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*port*#\n"
@@ -1557,8 +1568,8 @@ msgid ""
 msgstr " *港口* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:604
-#: upstream/_guides/amqp-reference.adoc:763
+#: upstream/_guides/amqp-reference.adoc:610
+#: upstream/_guides/amqp-reference.adoc:769
 #, fuzzy, no-wrap
 msgid ""
 "The broker port\n"
@@ -1567,15 +1578,15 @@ msgid ""
 msgstr "经纪人端口"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:606
-#: upstream/_guides/amqp-reference.adoc:765
+#: upstream/_guides/amqp-reference.adoc:612
+#: upstream/_guides/amqp-reference.adoc:771
 #, fuzzy, no-wrap
 msgid "`5672`"
 msgstr " `5672` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:608
-#: upstream/_guides/amqp-reference.adoc:767
+#: upstream/_guides/amqp-reference.adoc:614
+#: upstream/_guides/amqp-reference.adoc:773
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*reconnect-attempts*#\n"
@@ -1584,8 +1595,8 @@ msgid ""
 msgstr " *重新连接的尝试* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:610
-#: upstream/_guides/amqp-reference.adoc:769
+#: upstream/_guides/amqp-reference.adoc:616
+#: upstream/_guides/amqp-reference.adoc:775
 #, fuzzy, no-wrap
 msgid ""
 "The number of reconnection attempts\n"
@@ -1594,15 +1605,15 @@ msgid ""
 msgstr "尝试重新连接的次数"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:612
-#: upstream/_guides/amqp-reference.adoc:771
+#: upstream/_guides/amqp-reference.adoc:618
+#: upstream/_guides/amqp-reference.adoc:777
 #, fuzzy, no-wrap
 msgid "`100`"
 msgstr " `100` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:614
-#: upstream/_guides/amqp-reference.adoc:773
+#: upstream/_guides/amqp-reference.adoc:620
+#: upstream/_guides/amqp-reference.adoc:779
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*reconnect-interval*#\n"
@@ -1611,8 +1622,8 @@ msgid ""
 msgstr " *重新连接-间隔* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:616
-#: upstream/_guides/amqp-reference.adoc:775
+#: upstream/_guides/amqp-reference.adoc:622
+#: upstream/_guides/amqp-reference.adoc:781
 #, fuzzy, no-wrap
 msgid ""
 "The interval in second between two reconnection attempts\n"
@@ -1621,15 +1632,15 @@ msgid ""
 msgstr "两次重新连接尝试之间的间隔时间（秒）。"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:618
-#: upstream/_guides/amqp-reference.adoc:777
+#: upstream/_guides/amqp-reference.adoc:624
+#: upstream/_guides/amqp-reference.adoc:783
 #, fuzzy, no-wrap
 msgid "`10`"
 msgstr " `10` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:620
-#: upstream/_guides/amqp-reference.adoc:779
+#: upstream/_guides/amqp-reference.adoc:626
+#: upstream/_guides/amqp-reference.adoc:785
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*sni-server-name*#\n"
@@ -1638,8 +1649,8 @@ msgid ""
 msgstr " *嗅觉-服务器-名称* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:622
-#: upstream/_guides/amqp-reference.adoc:781
+#: upstream/_guides/amqp-reference.adoc:628
+#: upstream/_guides/amqp-reference.adoc:787
 #, fuzzy, no-wrap
 msgid ""
 "If set, explicitly override the hostname to use for the TLS SNI server name\n"
@@ -1648,13 +1659,13 @@ msgid ""
 msgstr "如果设置，明确地覆盖用于TLS SNI服务器名称的主机名。"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:624
+#: upstream/_guides/amqp-reference.adoc:630
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*selector*#"
 msgstr " *合并* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:626
+#: upstream/_guides/amqp-reference.adoc:632
 #, no-wrap
 msgid ""
 "Sets a message selector. This attribute is used to define an `apache.org:selector-filter:string` filter on the source terminus, using SQL-based syntax to request the server filters which messages are delivered to the receiver (if supported by the server in question). Precise functionality supported and syntax needed can vary depending on the server.\n"
@@ -1663,15 +1674,15 @@ msgid ""
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:628
-#: upstream/_guides/amqp-reference.adoc:783
+#: upstream/_guides/amqp-reference.adoc:634
+#: upstream/_guides/amqp-reference.adoc:789
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*tracing-enabled*#"
 msgstr " *启用了追踪功能* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:630
-#: upstream/_guides/amqp-reference.adoc:785
+#: upstream/_guides/amqp-reference.adoc:636
+#: upstream/_guides/amqp-reference.adoc:791
 #, fuzzy, no-wrap
 msgid ""
 "Whether tracing is enabled (default) or disabled\n"
@@ -1680,8 +1691,8 @@ msgid ""
 msgstr "追踪是否启用（默认）或禁用"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:634
-#: upstream/_guides/amqp-reference.adoc:797
+#: upstream/_guides/amqp-reference.adoc:640
+#: upstream/_guides/amqp-reference.adoc:803
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*use-ssl*#\n"
@@ -1690,8 +1701,8 @@ msgid ""
 msgstr " *使用-ssl* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:636
-#: upstream/_guides/amqp-reference.adoc:799
+#: upstream/_guides/amqp-reference.adoc:642
+#: upstream/_guides/amqp-reference.adoc:805
 #, fuzzy, no-wrap
 msgid ""
 "Whether the AMQP connection uses SSL/TLS\n"
@@ -1700,8 +1711,8 @@ msgid ""
 msgstr "AMQP连接是否使用SSL/TLS"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:640
-#: upstream/_guides/amqp-reference.adoc:803
+#: upstream/_guides/amqp-reference.adoc:646
+#: upstream/_guides/amqp-reference.adoc:809
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*username*#\n"
@@ -1710,8 +1721,8 @@ msgid ""
 msgstr " *帐号* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:642
-#: upstream/_guides/amqp-reference.adoc:805
+#: upstream/_guides/amqp-reference.adoc:648
+#: upstream/_guides/amqp-reference.adoc:811
 #, fuzzy, no-wrap
 msgid ""
 "The username used to authenticate to the broker\n"
@@ -1720,8 +1731,8 @@ msgid ""
 msgstr "用于认证经纪人的用户名"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:646
-#: upstream/_guides/amqp-reference.adoc:809
+#: upstream/_guides/amqp-reference.adoc:652
+#: upstream/_guides/amqp-reference.adoc:815
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*virtual-host*#\n"
@@ -1730,8 +1741,8 @@ msgid ""
 msgstr " *虚拟主机* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:648
-#: upstream/_guides/amqp-reference.adoc:811
+#: upstream/_guides/amqp-reference.adoc:654
+#: upstream/_guides/amqp-reference.adoc:817
 #, fuzzy, no-wrap
 msgid ""
 "If set, configure the hostname value used for the connection AMQP Open frame and TLS SNI server name (if TLS is in use)\n"
@@ -1740,13 +1751,13 @@ msgid ""
 msgstr "如果设置，配置用于连接AMQP开放框架和TLS SNI服务器名称（如果使用TLS）的主机名值。"
 
 #. type: Title ===
-#: upstream/_guides/amqp-reference.adoc:653
+#: upstream/_guides/amqp-reference.adoc:659
 #, fuzzy, no-wrap
 msgid "Outgoing channel configuration"
 msgstr "发出通道配置"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:679
+#: upstream/_guides/amqp-reference.adoc:685
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*cloud-events-data-content-type*#\n"
@@ -1755,7 +1766,7 @@ msgid ""
 msgstr " *云活动-数据-内容类型* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:681
+#: upstream/_guides/amqp-reference.adoc:687
 #, fuzzy, no-wrap
 msgid ""
 "Configure the default `datacontenttype` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `datacontenttype` attribute itself\n"
@@ -1764,7 +1775,7 @@ msgid ""
 msgstr "配置传出的云事件的默认 `datacontenttype` 属性。要求 `cloud-events` 设置为 `true` 。如果消息本身没有配置 `datacontenttype` 属性，则使用此值"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:685
+#: upstream/_guides/amqp-reference.adoc:691
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*cloud-events-data-schema*#\n"
@@ -1773,7 +1784,7 @@ msgid ""
 msgstr " *云事件-数据-schema* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:687
+#: upstream/_guides/amqp-reference.adoc:693
 #, fuzzy, no-wrap
 msgid ""
 "Configure the default `dataschema` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `dataschema` attribute itself\n"
@@ -1782,7 +1793,7 @@ msgid ""
 msgstr "配置传出的云事件的默认 `dataschema` 属性。要求 `cloud-events` 设置为 `true` 。如果消息本身没有配置 `dataschema` 属性，则使用此值"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:691
+#: upstream/_guides/amqp-reference.adoc:697
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*cloud-events-insert-timestamp*#\n"
@@ -1791,7 +1802,7 @@ msgid ""
 msgstr " *云事件-插入-时间戳* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:693
+#: upstream/_guides/amqp-reference.adoc:699
 #, fuzzy, no-wrap
 msgid ""
 "Whether the connector should insert automatically the `time` attribute into the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `time` attribute itself\n"
@@ -1800,13 +1811,13 @@ msgid ""
 msgstr "连接器是否应将 `time` 属性自动插入到发出的云事件中。要求 `cloud-events` 被设置为 `true` 。如果消息本身没有配置 `time` 属性，则使用此值"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:695
+#: upstream/_guides/amqp-reference.adoc:701
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*cloud-events-mode*#"
 msgstr " *云-事件-模式* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:697
+#: upstream/_guides/amqp-reference.adoc:703
 #, fuzzy, no-wrap
 msgid ""
 "The Cloud Event mode (`structured` or `binary` (default)). Indicates how are written the cloud events in the outgoing record\n"
@@ -1815,13 +1826,13 @@ msgid ""
 msgstr "云事件模式（ `structured` 或 `binary` （默认））。表示如何在发出的记录中写入云事件"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:699
+#: upstream/_guides/amqp-reference.adoc:705
 #, fuzzy, no-wrap
 msgid "`binary`"
 msgstr " `binary` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:701
+#: upstream/_guides/amqp-reference.adoc:707
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*cloud-events-source*#\n"
@@ -1830,7 +1841,7 @@ msgid ""
 msgstr " *云事件-源* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:703
+#: upstream/_guides/amqp-reference.adoc:709
 #, fuzzy, no-wrap
 msgid ""
 "Configure the default `source` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `source` attribute itself\n"
@@ -1839,7 +1850,7 @@ msgid ""
 msgstr "配置传出的云事件的默认 `source` 属性。要求 `cloud-events` 设置为 `true` 。如果消息本身没有配置 `source` 属性，则使用此值"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:707
+#: upstream/_guides/amqp-reference.adoc:713
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*cloud-events-subject*#\n"
@@ -1848,7 +1859,7 @@ msgid ""
 msgstr " *云-事件-主题* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:709
+#: upstream/_guides/amqp-reference.adoc:715
 #, fuzzy, no-wrap
 msgid ""
 "Configure the default `subject` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `subject` attribute itself\n"
@@ -1857,7 +1868,7 @@ msgid ""
 msgstr "配置传出的云事件的默认 `subject` 属性。要求 `cloud-events` 设置为 `true` 。如果消息本身没有配置 `subject` 属性，则使用此值"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:713
+#: upstream/_guides/amqp-reference.adoc:719
 #, fuzzy, no-wrap
 msgid ""
 "[.no-hyphens]#*cloud-events-type*#\n"
@@ -1866,7 +1877,7 @@ msgid ""
 msgstr " *云-事件-类型* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:715
+#: upstream/_guides/amqp-reference.adoc:721
 #, fuzzy, no-wrap
 msgid ""
 "Configure the default `type` attribute of the outgoing Cloud Event. Requires `cloud-events` to be set to `true`. This value is used if the message does not configure the `type` attribute itself\n"
@@ -1875,13 +1886,13 @@ msgid ""
 msgstr "配置传出的云事件的默认 `type` 属性。要求 `cloud-events` 设置为 `true` 。如果消息本身没有配置 `type` 属性，则使用此值"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:727
+#: upstream/_guides/amqp-reference.adoc:733
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*credit-retrieval-period*#"
 msgstr " *信用-检索-期* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:729
+#: upstream/_guides/amqp-reference.adoc:735
 #, fuzzy, no-wrap
 msgid ""
 "The period (in milliseconds) between two attempts to retrieve the credits granted by the broker. This time is used when the sender run out of credits.\n"
@@ -1890,13 +1901,13 @@ msgid ""
 msgstr "两次尝试检索经纪商授予的点数之间的时间（以毫秒为单位）。这个时间用于发送者用完信用额度的时候。"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:731
+#: upstream/_guides/amqp-reference.adoc:737
 #, fuzzy, no-wrap
 msgid "`2000`"
 msgstr " `2000` "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:733
+#: upstream/_guides/amqp-reference.adoc:739
 #, fuzzy, no-wrap
 msgid ""
 "Whether sent AMQP messages are marked durable\n"
@@ -1905,13 +1916,13 @@ msgid ""
 msgstr "发送的AMQP消息是否被标记为耐用"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:749
+#: upstream/_guides/amqp-reference.adoc:755
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*merge*#"
 msgstr " *合并* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:751
+#: upstream/_guides/amqp-reference.adoc:757
 #, fuzzy, no-wrap
 msgid ""
 "Whether the connector should allow multiple upstreams\n"
@@ -1920,13 +1931,13 @@ msgid ""
 msgstr "连接器是否应允许多个上游"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:787
+#: upstream/_guides/amqp-reference.adoc:793
 #, fuzzy, no-wrap
 msgid "[.no-hyphens]#*ttl*#"
 msgstr " *ttl* "
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:789
+#: upstream/_guides/amqp-reference.adoc:795
 #, fuzzy, no-wrap
 msgid ""
 "The time-to-live of the sent AMQP messages. 0 to disable the TTL\n"
@@ -1935,19 +1946,19 @@ msgid ""
 msgstr "发送的AMQP消息是否被标记为耐用"
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:791
+#: upstream/_guides/amqp-reference.adoc:797
 #, no-wrap
 msgid "`0`"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:791
+#: upstream/_guides/amqp-reference.adoc:797
 #, no-wrap
 msgid "[.no-hyphens]#*use-anonymous-sender*#"
 msgstr ""
 
 #. type: Table
-#: upstream/_guides/amqp-reference.adoc:793
+#: upstream/_guides/amqp-reference.adoc:799
 #, no-wrap
 msgid ""
 "Whether the connector should use an anonymous sender. Default value is `true` if the broker supports it, `false` otherwise. If not supported, it is not possible to dynamically change the destination address.\n"
