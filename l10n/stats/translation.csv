@@ -93,6 +93,7 @@ l10n/po/zh_CN/_guides/blaze-persistence.adoc.po,32,62,386,700,45%
 l10n/po/zh_CN/_guides/spring-data-jpa.adoc.po,79,179,1147,2044,44%
 l10n/po/zh_CN/_guides/kafka-streams.adoc.po,126,271,2502,4458,44%
 l10n/po/zh_CN/_guides/websockets.adoc.po,38,66,463,803,43%
+l10n/po/zh_CN/_guides/security-jpa.adoc.po,26,51,502,870,43%
 l10n/po/zh_CN/_guides/security-csrf-prevention.adoc.po,33,66,569,983,43%
 l10n/po/zh_CN/_guides/security-vulnerability-detection.adoc.po,14,22,241,410,42%
 l10n/po/zh_CN/_guides/security-vulnerability-detection-concept.adoc.po,14,21,238,407,42%
@@ -108,7 +109,6 @@ l10n/po/zh_CN/_guides/rabbitmq.adoc.po,67,120,964,1623,41%
 l10n/po/zh_CN/_guides/hibernate-reactive-panache.adoc.po,145,286,2852,4801,41%
 l10n/po/zh_CN/_guides/elasticsearch.adoc.po,74,119,1156,1934,41%
 l10n/po/zh_CN/_guides/stork.adoc.po,66,110,922,1529,40%
-l10n/po/zh_CN/_guides/security-jpa.adoc.po,26,49,502,823,40%
 l10n/po/zh_CN/_guides/scheduler.adoc.po,34,59,375,619,40%
 l10n/po/zh_CN/_guides/reactive-sql-clients.adoc.po,152,237,1658,2722,40%
 l10n/po/zh_CN/_guides/README.adoc.po,18,32,122,201,40%
@@ -125,7 +125,7 @@ l10n/po/zh_CN/_guides/credentials-provider.adoc.po,37,69,608,953,37%
 l10n/po/zh_CN/_guides/ansible.adoc.po,40,78,934,1463,37%
 l10n/po/zh_CN/_guides/amqp.adoc.po,66,114,1012,1589,37%
 l10n/po/zh_CN/_guides/security-oauth2.adoc.po,71,113,1163,1791,36%
-l10n/po/zh_CN/_guides/security-basic-authentication-howto.adoc.po,12,20,166,259,36%
+l10n/po/zh_CN/_guides/security-basic-authentication-howto.adoc.po,12,20,167,260,36%
 l10n/po/zh_CN/_guides/jms.adoc.po,53,87,706,1102,36%
 l10n/po/zh_CN/_guides/_templates/template-concepts.adoc.po,12,16,126,196,36%
 l10n/po/zh_CN/_guides/smallrye-graphql.adoc.po,172,290,2355,3570,35%
@@ -181,6 +181,7 @@ l10n/po/zh_CN/_guides/topic/continuum.adoc.po,31,56,738,1041,30%
 l10n/po/zh_CN/_guides/security-jwt.adoc.po,289,384,4290,6045,30%
 l10n/po/zh_CN/_guides/rest-client-reactive.adoc.po,225,389,4177,5905,30%
 l10n/po/zh_CN/_guides/reactive-routes.adoc.po,156,229,2192,3127,30%
+l10n/po/zh_CN/_guides/getting-started-testing.adoc.po,221,404,4971,7025,30%
 l10n/po/zh_CN/_guides/deploying-to-heroku.adoc.po,45,63,669,950,30%
 l10n/po/zh_CN/_guides/command-mode-reference.adoc.po,52,87,956,1348,30%
 l10n/po/zh_CN/_guides/cache.adoc.po,160,265,2992,4225,30%
@@ -188,7 +189,6 @@ l10n/po/zh_CN/_guides/spring-web.adoc.po,113,141,991,1386,29%
 l10n/po/zh_CN/_guides/spring-data-rest.adoc.po,105,150,1078,1512,29%
 l10n/po/zh_CN/_guides/security-openid-connect-client.adoc.po,84,139,1299,1820,29%
 l10n/po/zh_CN/_guides/security-basic-authentication-tutorial.adoc.po,94,148,1491,2082,29%
-l10n/po/zh_CN/_guides/getting-started-testing.adoc.po,222,405,5039,7093,29%
 l10n/po/zh_CN/_guides/funqy-gcp-functions.adoc.po,76,108,1267,1784,29%
 l10n/po/zh_CN/_guides/security-properties.adoc.po,34,48,490,674,28%
 l10n/po/zh_CN/_guides/security-oidc-bearer-token-authentication.adoc.po,140,231,3249,4459,28%
@@ -227,7 +227,7 @@ l10n/po/zh_CN/_guides/topic/developer-joy.adoc.po,19,21,467,601,23%
 l10n/po/zh_CN/_guides/telemetry-micrometer-tutorial.adoc.po,58,75,766,991,23%
 l10n/po/zh_CN/_guides/security-keycloak-authorization.adoc.po,106,162,2018,2594,23%
 l10n/po/zh_CN/_guides/security-basic-auth-concept.adoc.po,10,14,269,346,23%
-l10n/po/zh_CN/_guides/security-architecture.adoc.po,30,37,422,547,23%
+l10n/po/zh_CN/_guides/security-architecture.adoc.po,30,37,423,548,23%
 l10n/po/zh_CN/_guides/rest-client-multipart.adoc.po,55,87,968,1249,23%
 l10n/po/zh_CN/_guides/mailer.adoc.po,50,68,649,842,23%
 l10n/po/zh_CN/_guides/extension-codestart.adoc.po,135,168,1823,2357,23%
@@ -274,7 +274,7 @@ l10n/po/zh_CN/_guides/getting-started.adoc.po,103,136,1655,1985,17%
 l10n/po/zh_CN/_guides/deploying-to-openshift.adoc.po,138,181,1979,2383,17%
 l10n/po/zh_CN/_guides/smallrye-health.adoc.po,89,120,1675,1990,16%
 l10n/po/zh_CN/_guides/security-overview-concept.adoc.po,34,43,511,607,16%
-l10n/po/zh_CN/_guides/security-openid-connect-dev-services.adoc.po,110,153,3081,3650,16%
+l10n/po/zh_CN/_guides/security-openid-connect-dev-services.adoc.po,110,153,3081,3661,16%
 l10n/po/zh_CN/_guides/scheduler-reference.adoc.po,89,125,1698,2000,16%
 l10n/po/zh_CN/_guides/kogito.adoc.po,109,152,1592,1886,16%
 l10n/po/zh_CN/_guides/infinispan-dev-services.adoc.po,36,43,668,793,16%
@@ -303,7 +303,7 @@ l10n/po/zh_CN/_guides/_includes/smallrye-kafka-outgoing.adoc.po,79,89,885,992,11
 l10n/po/zh_CN/_guides/status-include.adoc.po,4,5,110,122,10%
 l10n/po/zh_CN/_guides/software-transactional-memory.adoc.po,40,54,1832,2031,10%
 l10n/po/zh_CN/_guides/security-overview.adoc.po,38,43,577,641,10%
-l10n/po/zh_CN/_guides/security-authentication-mechanisms.adoc.po,146,162,2082,2299,10%
+l10n/po/zh_CN/_guides/security-authentication-mechanisms.adoc.po,146,162,2084,2301,10%
 l10n/po/zh_CN/_guides/funqy-amazon-lambda.adoc.po,75,93,1358,1498,10%
 l10n/po/zh_CN/_guides/azure-functions-http.adoc.po,44,56,697,766,10%
 l10n/po/zh_CN/_guides/smallrye-kafka-outgoing.adoc.po,76,85,873,952,9%
