@@ -94,10 +94,10 @@ l10n/po/zh_CN/_guides/elasticsearch-dev-services.adoc.po,16,30,230,430,47%
 l10n/po/zh_CN/_guides/security-openid-connect-multitenancy.adoc.po,108,223,1883,3433,46%
 l10n/po/zh_CN/_guides/mongodb-panache-kotlin.adoc.po,19,48,504,928,46%
 l10n/po/zh_CN/_guides/topic/standards.adoc.po,6,10,101,181,45%
-l10n/po/zh_CN/_guides/blaze-persistence.adoc.po,32,62,386,700,45%
 l10n/po/zh_CN/_guides/spring-data-jpa.adoc.po,80,180,1156,2053,44%
 l10n/po/zh_CN/_guides/kafka-streams.adoc.po,126,271,2502,4458,44%
 l10n/po/zh_CN/_guides/flyway.adoc.po,42,80,649,1141,44%
+l10n/po/zh_CN/_guides/blaze-persistence.adoc.po,35,65,409,723,44%
 l10n/po/zh_CN/_guides/websockets.adoc.po,38,66,463,803,43%
 l10n/po/zh_CN/_guides/security-jpa.adoc.po,26,51,502,870,43%
 l10n/po/zh_CN/_guides/rabbitmq.adoc.po,67,126,964,1668,43%
@@ -114,7 +114,7 @@ l10n/po/zh_CN/_guides/redis.adoc.po,77,135,834,1392,41%
 l10n/po/zh_CN/_guides/elasticsearch.adoc.po,74,119,1156,1945,41%
 l10n/po/zh_CN/_guides/stork.adoc.po,66,110,922,1529,40%
 l10n/po/zh_CN/_guides/scheduler.adoc.po,34,59,375,619,40%
-l10n/po/zh_CN/_guides/reactive-sql-clients.adoc.po,152,237,1658,2722,40%
+l10n/po/zh_CN/_guides/reactive-sql-clients.adoc.po,152,237,1659,2723,40%
 l10n/po/zh_CN/_guides/README.adoc.po,18,32,122,201,40%
 l10n/po/zh_CN/_guides/mongodb-panache.adoc.po,192,377,3718,6030,39%
 l10n/po/zh_CN/_guides/mailer-reference.adoc.po,82,148,1324,2168,39%
@@ -163,13 +163,14 @@ l10n/po/zh_CN/_guides/kogito-pmml.adoc.po,35,55,448,666,33%
 l10n/po/zh_CN/_guides/doc-create-tutorial.adoc.po,97,148,1250,1859,33%
 l10n/po/zh_CN/_guides/security-ldap.adoc.po,37,69,572,841,32%
 l10n/po/zh_CN/_guides/security-getting-started.adoc.po,96,157,1511,2196,32%
-l10n/po/zh_CN/_guides/resteasy-reactive.adoc.po,445,713,6970,10199,32%
+l10n/po/zh_CN/_guides/resteasy-reactive.adoc.po,445,715,6972,10221,32%
 l10n/po/zh_CN/_guides/reactive-event-bus.adoc.po,69,107,931,1350,32%
 l10n/po/zh_CN/_guides/opentracing.adoc.po,58,95,851,1251,32%
 l10n/po/zh_CN/_guides/mongodb.adoc.po,105,192,1963,2872,32%
 l10n/po/zh_CN/_guides/lra.adoc.po,21,30,870,1267,32%
 l10n/po/zh_CN/_guides/lifecycle.adoc.po,59,90,867,1268,32%
 l10n/po/zh_CN/_guides/jreleaser.adoc.po,53,89,1869,2723,32%
+l10n/po/zh_CN/_guides/infinispan-client-reference.adoc.po,160,243,2483,3639,32%
 l10n/po/zh_CN/_guides/continuous-testing.adoc.po,36,49,600,876,32%
 l10n/po/zh_CN/_guides/config-extending-support.adoc.po,60,104,943,1381,32%
 l10n/po/zh_CN/_guides/spring-cache.adoc.po,45,73,624,904,31%
@@ -178,7 +179,6 @@ l10n/po/zh_CN/_guides/smallrye-fault-tolerance.adoc.po,79,125,1569,2273,31%
 l10n/po/zh_CN/_guides/native-reference.adoc.po,319,491,8971,12978,31%
 l10n/po/zh_CN/_guides/kubernetes-client.adoc.po,53,111,1108,1598,31%
 l10n/po/zh_CN/_guides/kotlin.adoc.po,84,153,1340,1927,31%
-l10n/po/zh_CN/_guides/infinispan-client-reference.adoc.po,161,240,2503,3603,31%
 l10n/po/zh_CN/_guides/grpc-kubernetes.adoc.po,15,25,242,347,31%
 l10n/po/zh_CN/_guides/funqy.adoc.po,20,40,622,892,31%
 l10n/po/zh_CN/_guides/context-propagation.adoc.po,71,87,1021,1472,31%
@@ -212,6 +212,7 @@ l10n/po/zh_CN/_guides/security-authorization-of-web-endpoints-reference.adoc.po,
 l10n/po/zh_CN/_guides/rest-json.adoc.po,90,147,1538,2075,26%
 l10n/po/zh_CN/_guides/rest-client-multipart.adoc.po,55,93,968,1294,26%
 l10n/po/zh_CN/_guides/kafka.adoc.po,553,845,11125,14926,26%
+l10n/po/zh_CN/_guides/infinispan-client.adoc.po,74,110,952,1273,26%
 l10n/po/zh_CN/_guides/spring-security.adoc.po,90,134,1148,1526,25%
 l10n/po/zh_CN/_guides/spring-scheduled.adoc.po,57,84,698,920,25%
 l10n/po/zh_CN/_guides/security-proactive-authentication.adoc.po,21,42,551,727,25%
@@ -226,7 +227,6 @@ l10n/po/zh_CN/_guides/smallrye-graphql-client.adoc.po,44,86,1207,1581,24%
 l10n/po/zh_CN/_guides/security-oidc-bearer-token-authentication-tutorial.adoc.po,76,116,1136,1477,24%
 l10n/po/zh_CN/_guides/rabbitmq-dev-services.adoc.po,29,38,494,645,24%
 l10n/po/zh_CN/_guides/micrometer.adoc.po,83,123,2167,2836,24%
-l10n/po/zh_CN/_guides/infinispan-client.adoc.po,74,109,934,1226,24%
 l10n/po/zh_CN/_guides/grpc.adoc.po,10,16,119,155,24%
 l10n/po/zh_CN/_guides/deploying-to-azure-cloud.adoc.po,43,61,641,841,24%
 l10n/po/zh_CN/_guides/config-reference.adoc.po,188,249,2945,3836,24%
@@ -244,6 +244,7 @@ l10n/po/zh_CN/_guides/security-openid-connect-web-authentication.adoc.po,284,428
 l10n/po/zh_CN/_guides/security-oidc-code-flow-authentication-tutorial.adoc.po,69,92,903,1146,22%
 l10n/po/zh_CN/_guides/security-built-in-authentication-support-concept.adoc.po,35,63,1013,1293,22%
 l10n/po/zh_CN/_guides/security-authorization.adoc.po,54,80,1260,1596,22%
+l10n/po/zh_CN/_guides/resteasy-reactive-migration.adoc.po,86,98,1020,1298,22%
 l10n/po/zh_CN/_guides/performance-measure.adoc.po,68,86,1034,1313,22%
 l10n/po/zh_CN/_guides/includes/extension-status.adoc.po,4,6,110,141,22%
 l10n/po/zh_CN/_guides/funqy-knative-events.adoc.po,67,91,1506,1909,22%
@@ -265,7 +266,6 @@ l10n/po/zh_CN/_guides/validation.adoc.po,112,155,1774,2156,18%
 l10n/po/zh_CN/_guides/topic/community.adoc.po,21,28,237,289,18%
 l10n/po/zh_CN/_guides/stork-reference.adoc.po,18,25,235,286,18%
 l10n/po/zh_CN/_guides/security-protect-service-application-using-oidc-bearer-authentication-tutorial.adoc.po,80,110,1176,1423,18%
-l10n/po/zh_CN/_guides/resteasy-reactive-migration.adoc.po,86,96,1020,1238,18%
 l10n/po/zh_CN/_guides/maven-tooling.adoc.po,259,301,5075,6168,18%
 l10n/po/zh_CN/_guides/config.adoc.po,63,84,746,900,18%
 l10n/po/zh_CN/_guides/conditional-extension-dependencies.adoc.po,24,41,669,811,18%
@@ -295,7 +295,7 @@ l10n/po/zh_CN/_guides/cdi.adoc.po,130,178,2251,2630,15%
 l10n/po/zh_CN/_guides/ide-tooling.adoc.po,33,49,217,252,14%
 l10n/po/zh_CN/_guides/getting-started-reactive.adoc.po,69,98,1714,1992,14%
 l10n/po/zh_CN/_guides/security-basic-authentication-concept.adoc.po,24,32,421,482,13%
-l10n/po/zh_CN/_guides/datasource.adoc.po,278,323,2838,3253,13%
+l10n/po/zh_CN/_guides/datasource.adoc.po,278,323,2840,3255,13%
 l10n/po/zh_CN/_guides/apicurio-registry-dev-services.adoc.po,20,24,391,448,13%
 l10n/po/zh_CN/_guides/security-authentication-mechanisms-concept.adoc.po,144,161,2013,2266,12%
 l10n/po/zh_CN/_guides/gradle-tooling.adoc.po,167,204,3237,3670,12%
@@ -332,7 +332,8 @@ l10n/po/zh_CN/_guides/_includes/quarkus-blaze-persistence.adoc.po,16,17,637,657,
 l10n/po/zh_CN/_guides/security-identity-providers-concept.adoc.po,12,13,195,199,3%
 l10n/po/zh_CN/_guides/security-basic-authentication.adoc.po,29,32,468,481,3%
 l10n/po/zh_CN/_guides/_includes/smallrye-kafka-incoming.adoc.po,109,112,1322,1354,3%
-l10n/po/zh_CN/_posts/2023-11-16-quarkus-meets-langchain4j.adoc.po,0,82,0,1704,100%
+l10n/po/zh_CN/_posts/2023-11-16-quarkus-meets-langchain4j.adoc.po,0,83,0,1722,100%
+l10n/po/zh_CN/_posts/2023-11-16-quarkus-3-5-2-released.adoc.po,0,23,0,223,100%
 l10n/po/zh_CN/_posts/2023-11-13-quarkus-newsletter-38.adoc.po,0,10,0,257,100%
 l10n/po/zh_CN/_posts/2023-11-09-quarkus-3-5-1-released.adoc.po,0,24,0,236,100%
 l10n/po/zh_CN/_posts/2023-11-08-quarkus-3-2-8-final-released.adoc.po,0,20,0,174,100%
