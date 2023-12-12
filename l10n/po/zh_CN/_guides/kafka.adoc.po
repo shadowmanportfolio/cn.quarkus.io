@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-11-29 11:17+0000\n"
+"POT-Creation-Date: 2023-12-12 16:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,7 @@ msgstr "这将在你的构建文件中添加以下内容。"
 
 #. type: Block title
 #: upstream/_guides/kafka.adoc:49 upstream/_guides/kafka.adoc:1719
-#: upstream/_guides/kafka.adoc:1968 upstream/_guides/kafka.adoc:2043
+#: upstream/_guides/kafka.adoc:1966 upstream/_guides/kafka.adoc:2041
 #, fuzzy, no-wrap
 msgid "pom.xml"
 msgstr "pom.xml"
@@ -116,7 +116,7 @@ msgstr ""
 
 #. type: Block title
 #: upstream/_guides/kafka.adoc:58 upstream/_guides/kafka.adoc:1728
-#: upstream/_guides/kafka.adoc:1982 upstream/_guides/kafka.adoc:2053
+#: upstream/_guides/kafka.adoc:1980 upstream/_guides/kafka.adoc:2051
 #, fuzzy, no-wrap
 msgid "build.gradle"
 msgstr "build.gradle"
@@ -232,8 +232,8 @@ msgid "Continuing from the previous minimal configuration, your Quarkus applicat
 msgstr "继续之前的最小配置，你的Quarkus应用程序可以直接接收消息有效载荷。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:112 upstream/_guides/kafka.adoc:2599
-#: upstream/_guides/kafka.adoc:2680
+#: upstream/_guides/kafka.adoc:112 upstream/_guides/kafka.adoc:2597
+#: upstream/_guides/kafka.adoc:2678
 #, no-wrap
 msgid "import org.eclipse.microprofile.reactive.messaging.Incoming;\n"
 msgstr ""
@@ -273,9 +273,9 @@ msgstr ""
 #: upstream/_guides/kafka.adoc:1304 upstream/_guides/kafka.adoc:1342
 #: upstream/_guides/kafka.adoc:1403 upstream/_guides/kafka.adoc:1431
 #: upstream/_guides/kafka.adoc:1483 upstream/_guides/kafka.adoc:1586
-#: upstream/_guides/kafka.adoc:1644 upstream/_guides/kafka.adoc:2038
-#: upstream/_guides/kafka.adoc:2121 upstream/_guides/kafka.adoc:2587
-#: upstream/_guides/kafka.adoc:2667 upstream/_guides/kafka.adoc:2700
+#: upstream/_guides/kafka.adoc:1644 upstream/_guides/kafka.adoc:2036
+#: upstream/_guides/kafka.adoc:2119 upstream/_guides/kafka.adoc:2585
+#: upstream/_guides/kafka.adoc:2665 upstream/_guides/kafka.adoc:2698
 #, no-wrap
 msgid "}\n"
 msgstr ""
@@ -512,7 +512,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:257 upstream/_guides/kafka.adoc:2597
+#: upstream/_guides/kafka.adoc:257 upstream/_guides/kafka.adoc:2595
 #, no-wrap
 msgid ""
 "import jakarta.enterprise.context.ApplicationScoped;\n"
@@ -1388,19 +1388,19 @@ msgstr " `@Incoming` 通道的消费者代码可以通过 `CheckpointMetadata` A
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:733 upstream/_guides/kafka.adoc:833
-#: upstream/_guides/kafka.adoc:2487 upstream/_guides/kafka.adoc:2535
-#: upstream/_guides/kafka.adoc:2576 upstream/_guides/kafka.adoc:2594
-#: upstream/_guides/kafka.adoc:2624 upstream/_guides/kafka.adoc:2656
-#: upstream/_guides/kafka.adoc:2675 upstream/_guides/kafka.adoc:2720
-#: upstream/_guides/kafka.adoc:2763 upstream/_guides/kafka.adoc:2805
-#: upstream/_guides/kafka.adoc:2912
+#: upstream/_guides/kafka.adoc:2485 upstream/_guides/kafka.adoc:2533
+#: upstream/_guides/kafka.adoc:2574 upstream/_guides/kafka.adoc:2592
+#: upstream/_guides/kafka.adoc:2622 upstream/_guides/kafka.adoc:2654
+#: upstream/_guides/kafka.adoc:2673 upstream/_guides/kafka.adoc:2718
+#: upstream/_guides/kafka.adoc:2761 upstream/_guides/kafka.adoc:2803
+#: upstream/_guides/kafka.adoc:2910
 #, no-wrap
 msgid "package org.acme;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:735 upstream/_guides/kafka.adoc:2489
-#: upstream/_guides/kafka.adoc:2537 upstream/_guides/kafka.adoc:2765
+#: upstream/_guides/kafka.adoc:735 upstream/_guides/kafka.adoc:2487
+#: upstream/_guides/kafka.adoc:2535 upstream/_guides/kafka.adoc:2763
 #, no-wrap
 msgid "import java.util.concurrent.CompletionStage;\n"
 msgstr ""
@@ -1561,8 +1561,8 @@ msgid "With `AveragePriceEntity` being a Jakarta Persistence entity extending `C
 msgstr "由于 `AveragePriceEntity` 是一个JPA实体，扩展了 `CheckpointEntity` 。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:835 upstream/_guides/kafka.adoc:2578
-#: upstream/_guides/kafka.adoc:2658
+#: upstream/_guides/kafka.adoc:835 upstream/_guides/kafka.adoc:2576
+#: upstream/_guides/kafka.adoc:2656
 #, no-wrap
 msgid "import jakarta.persistence.Entity;\n"
 msgstr ""
@@ -1849,8 +1849,8 @@ msgid "For this, you can use an `Emitter`."
 msgstr "为此，你可以使用一个 `Emitter` 。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:994 upstream/_guides/kafka.adoc:2497
-#: upstream/_guides/kafka.adoc:2545 upstream/_guides/kafka.adoc:2772
+#: upstream/_guides/kafka.adoc:994 upstream/_guides/kafka.adoc:2495
+#: upstream/_guides/kafka.adoc:2543 upstream/_guides/kafka.adoc:2770
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.reactive.messaging.Channel;\n"
@@ -1957,7 +1957,7 @@ msgstr "如果你喜欢使用Reactive Stream APIs，你可以使用 `MutinyEmitt
 
 #. type: delimited block -
 #: upstream/_guides/kafka.adoc:1073 upstream/_guides/kafka.adoc:1321
-#: upstream/_guides/kafka.adoc:2810
+#: upstream/_guides/kafka.adoc:2808
 #, no-wrap
 msgid "import org.eclipse.microprofile.reactive.messaging.Channel;\n"
 msgstr ""
@@ -2999,15 +2999,15 @@ msgid "package com.acme.fruit.jackson;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1672 upstream/_guides/kafka.adoc:2626
-#: upstream/_guides/kafka.adoc:2722
+#: upstream/_guides/kafka.adoc:1672 upstream/_guides/kafka.adoc:2624
+#: upstream/_guides/kafka.adoc:2720
 #, no-wrap
 msgid "import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1678 upstream/_guides/kafka.adoc:2632
-#: upstream/_guides/kafka.adoc:2728
+#: upstream/_guides/kafka.adoc:1678 upstream/_guides/kafka.adoc:2630
+#: upstream/_guides/kafka.adoc:2726
 #, no-wrap
 msgid ""
 "public class FruitDeserializer extends ObjectMapperDeserializer<Fruit> {\n"
@@ -3646,43 +3646,31 @@ msgid "mp.messaging.outgoing.fruit-out.compression.type=snappy\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1956
+#: upstream/_guides/kafka.adoc:1957
 #, fuzzy
-msgid "In JVM mode, it will work out of the box.  However, to compile your application to a native executable, you need to:"
+msgid "In JVM mode, it will work out of the box.  However, to compile your application to a native executable, you need to add `quarkus.kafka.snappy.enabled=true` to your `application.properties`."
 msgstr "在JVM模式下，它可以开箱即用。然而，要把你的应用程序编译成一个本地可执行文件，你需要。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1958
-#, fuzzy
-msgid "Uses GraalVM 21.+"
-msgstr "使用GraalVM 21.+"
-
-#. type: Plain text
 #: upstream/_guides/kafka.adoc:1959
-#, fuzzy
-msgid "Add `quarkus.kafka.snappy.enabled=true` to your `application.properties`"
-msgstr "将 `quarkus.kafka.snappy.enabled=true` 添加到您的 `application.properties` "
-
-#. type: Plain text
-#: upstream/_guides/kafka.adoc:1961
 #, fuzzy
 msgid "In native mode, Snappy is disabled by default as the use of Snappy requires embedding a native library and unpacking it when the application starts."
 msgstr "在本地模式下，Snappy默认是禁用的，因为使用Snappy需要嵌入一个本地库，并在应用程序启动时解包。"
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:1962
+#: upstream/_guides/kafka.adoc:1960
 #, fuzzy, no-wrap
 msgid "Authentication with OAuth"
 msgstr "用OAuth进行认证"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1966
+#: upstream/_guides/kafka.adoc:1964
 #, fuzzy
 msgid "If your Kafka broker uses OAuth as authentication mechanism, you need to configure the Kafka consumer to enable this authentication process.  First, add the following dependency to your application:"
 msgstr "如果你的Kafka代理使用OAuth作为认证机制，你需要配置Kafka消费者来启用这个认证过程。首先，在你的应用程序中添加以下依赖关系。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1979
+#: upstream/_guides/kafka.adoc:1977
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -3697,7 +3685,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:1987
+#: upstream/_guides/kafka.adoc:1985
 #, no-wrap
 msgid ""
 "implementation(\"io.strimzi:kafka-oauth-client\")\n"
@@ -3706,13 +3694,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:1991
+#: upstream/_guides/kafka.adoc:1989
 #, fuzzy
 msgid "This dependency provides the callback handler required to handle the OAuth workflow.  Then, in the `application.properties`, add:"
 msgstr "这个依赖关系提供了处理OAuth工作流程所需的回调处理器。然后，在 `application.properties` ，添加。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2001
+#: upstream/_guides/kafka.adoc:1999
 #, no-wrap
 msgid ""
 "mp.messaging.connector.smallrye-kafka.security.protocol=SASL_PLAINTEXT\n"
@@ -3725,55 +3713,55 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2003
+#: upstream/_guides/kafka.adoc:2001
 #, no-wrap
 msgid "quarkus.ssl.native=true\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2006
+#: upstream/_guides/kafka.adoc:2004
 #, fuzzy
 msgid "Update the `oauth.client.id`, `oauth.client.secret` and `oauth.token.endpoint.uri` values."
 msgstr "更新 `oauth.client.id` , `oauth.client.secret` 和 `oauth.token.endpoint.uri` 值。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2008
+#: upstream/_guides/kafka.adoc:2006
 #, fuzzy
 msgid "OAuth authentication works for both JVM and native modes. Since SSL in not enabled by default in native mode, `quarkus.ssl.native=true` must be added to support JaasClientOauthLoginCallbackHandler, which uses SSL. (See the xref:native-and-ssl.adoc[Using SSL with Native Executables] guide for more details.)"
 msgstr "OAuth认证对JVM和本地模式都有效。由于SSL在本地模式下默认不启用，必须添加 `quarkus.ssl.native=true` ，以支持JaasClientOauthLoginCallbackHandler，它使用SSL。(更多细节请参见《 link:native-and-ssl.html[在本地可执行文件中使用SSL] 》指南)。"
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:2009
+#: upstream/_guides/kafka.adoc:2007
 #, fuzzy, no-wrap
 msgid "Testing a Kafka application"
 msgstr "测试一个Kafka应用程序"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2011
+#: upstream/_guides/kafka.adoc:2009
 #, fuzzy, no-wrap
 msgid "Testing without a broker"
 msgstr "没有经纪人的测试"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2015
+#: upstream/_guides/kafka.adoc:2013
 #, fuzzy
 msgid "It can be useful to test the application without having to start a Kafka broker.  To achieve this, you can _switch_ the channels managed by the Kafka connector to _in-memory_."
 msgstr "在不启动Kafka代理的情况下测试应用程序可能很有用。为了实现这一点，你可以 _把_ Kafka连接器管理的通道 _切换_ 到内存 _中_ 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2017
+#: upstream/_guides/kafka.adoc:2015
 #, fuzzy
 msgid "This approach only works for JVM tests. It cannot be used for native tests (because they do not support injection)."
 msgstr "这种方法只适用于JVM测试。它不能用于本地测试（因为它们不支持注入）。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2019
+#: upstream/_guides/kafka.adoc:2017
 #, fuzzy
 msgid "Let's say we want to test the following processor application:"
 msgstr "假设我们想测试以下的处理器应用。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2024 upstream/_guides/kafka.adoc:2137
+#: upstream/_guides/kafka.adoc:2022 upstream/_guides/kafka.adoc:2135
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -3781,7 +3769,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2036
+#: upstream/_guides/kafka.adoc:2034
 #, no-wrap
 msgid ""
 "    @Incoming(\"orders\")\n"
@@ -3798,13 +3786,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2041
+#: upstream/_guides/kafka.adoc:2039
 #, fuzzy
 msgid "First, add the following test dependency to your application:"
 msgstr "首先，在你的应用程序中添加以下测试依赖关系。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2050
+#: upstream/_guides/kafka.adoc:2048
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -3815,25 +3803,25 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2056
+#: upstream/_guides/kafka.adoc:2054
 #, no-wrap
 msgid "testImplementation(\"io.smallrye.reactive:smallrye-reactive-messaging-in-memory\")\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2059
+#: upstream/_guides/kafka.adoc:2057
 #, fuzzy
 msgid "Then, create a Quarkus Test Resource as follows:"
 msgstr "然后，按以下方法创建Quarkus测试资源。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2063
+#: upstream/_guides/kafka.adoc:2061
 #, no-wrap
 msgid "public class KafkaTestResourceLifecycleManager implements QuarkusTestResourceLifecycleManager {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2073
+#: upstream/_guides/kafka.adoc:2071
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -3848,7 +3836,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2079
+#: upstream/_guides/kafka.adoc:2077
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -3859,43 +3847,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2081
+#: upstream/_guides/kafka.adoc:2079
 #, fuzzy
 msgid "Switch the incoming channel `orders` (expecting messages from Kafka) to in-memory."
 msgstr "将传入通道 `orders` （期待来自Kafka的消息）切换到内存中。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2082
+#: upstream/_guides/kafka.adoc:2080
 #, fuzzy
 msgid "Switch the outgoing channel `beverages` (writing messages to Kafka) to in-memory."
 msgstr "将出站通道 `beverages` （向Kafka写消息）切换到内存中。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2083
+#: upstream/_guides/kafka.adoc:2081
 #, fuzzy
 msgid "Builds and returns a `Map` containing all the properties required to configure the application to use in-memory channels."
 msgstr "构建并返回一个 `Map` ，包含配置应用程序使用内存通道所需的所有属性。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2084
+#: upstream/_guides/kafka.adoc:2082
 #, fuzzy
 msgid "When the test stops, clear the `InMemoryConnector` (discard all the received and sent messages)"
 msgstr "当测试停止时，清除 `InMemoryConnector` （丢弃所有接收和发送的信息）。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2086
+#: upstream/_guides/kafka.adoc:2084
 #, fuzzy
 msgid "Create a Quarkus Test using the test resource created above:"
 msgstr "使用上面创建的测试资源创建一个Quarkus测试。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2090 upstream/_guides/kafka.adoc:2149
+#: upstream/_guides/kafka.adoc:2088 upstream/_guides/kafka.adoc:2147
 #, no-wrap
 msgid "import static org.awaitility.Awaitility.await;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2094 upstream/_guides/kafka.adoc:2153
+#: upstream/_guides/kafka.adoc:2092 upstream/_guides/kafka.adoc:2151
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -3904,7 +3892,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2098
+#: upstream/_guides/kafka.adoc:2096
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -3913,7 +3901,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2103
+#: upstream/_guides/kafka.adoc:2101
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -3923,7 +3911,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2108
+#: upstream/_guides/kafka.adoc:2106
 #, no-wrap
 msgid ""
 "        Order order = new Order();\n"
@@ -3933,19 +3921,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2110
+#: upstream/_guides/kafka.adoc:2108
 #, no-wrap
 msgid "        ordersIn.send(order);  // <4>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2112
+#: upstream/_guides/kafka.adoc:2110
 #, no-wrap
 msgid "        await().<List<? extends Message<Beverage>>>until(beveragesOut::received, t -> t.size() == 1); // <5>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2119
+#: upstream/_guides/kafka.adoc:2117
 #, no-wrap
 msgid ""
 "        Beverage queuedBeverage = beveragesOut.received().get(0).getPayload();\n"
@@ -3957,47 +3945,47 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2123
+#: upstream/_guides/kafka.adoc:2121
 #, fuzzy
 msgid "Inject the in-memory connector in your test class."
 msgstr "在你的测试类中注入内存中的连接器。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2124
+#: upstream/_guides/kafka.adoc:2122
 #, fuzzy
 msgid "Retrieve the incoming channel (`orders`) - the channel must have been switched to in-memory in the test resource."
 msgstr "检索传入的通道( `orders` )--该通道必须在测试资源中被切换到内存中。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2125
+#: upstream/_guides/kafka.adoc:2123
 #, fuzzy
 msgid "Retrieve the outgoing channel (`beverages`) - the channel must have been switched to in-memory in the test resource."
 msgstr "检索出站通道 ( `beverages` ) - 该通道必须在测试资源中被切换到内存中。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2127
+#: upstream/_guides/kafka.adoc:2125
 #, fuzzy
 msgid "Use the `send` method to send a message to the `orders` channel.  The application will process this message and send a message to `beverages` channel."
 msgstr "使用 `send` 方法向 `orders` 通道发送一个消息。应用程序将处理这个消息并向 `beverages` channel发送消息。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2128
+#: upstream/_guides/kafka.adoc:2126
 #, fuzzy
 msgid "Use the `received` method on `beverages` channel to check the messages produced by the application."
 msgstr "在 `beverages` channel上使用 `received` 方法来检查应用程序产生的信息。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2130
+#: upstream/_guides/kafka.adoc:2128
 msgid "If your Kafka consumer is batch based, you will need to send a batch of messages to the channel as by creating them manually."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2132
+#: upstream/_guides/kafka.adoc:2130
 msgid "For instance:"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2144
+#: upstream/_guides/kafka.adoc:2142
 #, no-wrap
 msgid ""
 "    @Incoming(\"orders\")\n"
@@ -4009,7 +3997,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2156
+#: upstream/_guides/kafka.adoc:2154
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -4017,13 +4005,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2158
+#: upstream/_guides/kafka.adoc:2156
 #, no-wrap
 msgid "    InMemoryConnector connector;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2176
+#: upstream/_guides/kafka.adoc:2174
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -4046,7 +4034,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2185
+#: upstream/_guides/kafka.adoc:2183
 #, no-wrap
 msgid ""
 "        Order order = new Order();\n"
@@ -4060,13 +4048,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2187
+#: upstream/_guides/kafka.adoc:2185
 #, no-wrap
 msgid "        ordersIn.send(batch);\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2191
+#: upstream/_guides/kafka.adoc:2189
 #, no-wrap
 msgid ""
 "        await().until(committed::get);  // <4>\n"
@@ -4075,51 +4063,51 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2193
+#: upstream/_guides/kafka.adoc:2191
 msgid "Create an `AtomicBoolean` to track if the batch has been committed."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2194
+#: upstream/_guides/kafka.adoc:2192
 msgid "Update `committed` when the batch is committed."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2195
+#: upstream/_guides/kafka.adoc:2193
 msgid "Create a `IncomingKafkaRecordBatch` with a single record."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2196
+#: upstream/_guides/kafka.adoc:2194
 msgid "Wait until the batch is committed."
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:2201
+#: upstream/_guides/kafka.adoc:2199
 #, fuzzy
 msgid "With in-memory channels we were able to test application code processing messages without starting a Kafka broker.  Note that different in-memory channels are independent, and switching channel connector to in-memory does not simulate message delivery between channels configured to the same Kafka topic."
 msgstr "有了内存通道，我们就可以测试应用程序代码处理消息，而无需启动Kafka代理。请注意，不同的内存通道是独立的，将通道连接器切换到内存中并不能模拟配置到同一Kafka主题的通道之间的消息传递。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2203
+#: upstream/_guides/kafka.adoc:2201
 #, fuzzy, no-wrap
 msgid "Testing using a Kafka broker"
 msgstr "使用Kafka经纪人进行测试"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2208
+#: upstream/_guides/kafka.adoc:2206
 #, fuzzy
 msgid "If you are using xref:kafka-dev-services[Dev Services for Kafka], a Kafka broker will be started and available throughout the tests, unless it is disabled in `%test` profile.  While it is possible to connect to this broker using Kafka Clients API, https://smallrye.io/smallrye-reactive-messaging/latest/kafka/test-companion/[Kafka Companion Library] proposes an easier way of interacting with a Kafka broker and, creating consumer, producer and admin actions inside tests."
 msgstr "如果你使用 link:#kafka-dev-services[[kafka-dev-services]] ，Kafka代理将被启动并在整个测试中可用，除非它在 `%test` profile中被禁用。虽然可以使用Kafka客户端API连接到这个代理，但 link:https://smallrye.io/smallrye-reactive-messaging/latest/kafka/test-companion/[Kafka Companion Library] 提出了一种更简单的方式来与Kafka代理互动，并在测试中创建消费者、生产者和管理员动作。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2210
+#: upstream/_guides/kafka.adoc:2208
 #, fuzzy
 msgid "For using `KafkaCompanion` API in tests, start by adding the following dependency:"
 msgstr "为了在测试中使用 `KafkaCompanion` API，首先要添加以下依赖关系。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2218
+#: upstream/_guides/kafka.adoc:2216
 #, no-wrap
 msgid ""
 "<dependency>\n"
@@ -4130,31 +4118,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2221
+#: upstream/_guides/kafka.adoc:2219
 #, fuzzy
 msgid "which provides `io.quarkus.test.kafka.KafkaCompanionResource` - an implementation of `io.quarkus.test.common.QuarkusTestResourceLifecycleManager`."
 msgstr "它提供了 `io.quarkus.test.kafka.KafkaCompanionResource` -- `io.quarkus.test.common.QuarkusTestResourceLifecycleManager` 的实现。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2223
+#: upstream/_guides/kafka.adoc:2221
 #, fuzzy
 msgid "Then use `@QuarkusTestResource` to configure the Kafka Companion in tests, for example:"
 msgstr "然后使用 `@QuarkusTestResource` ，在测试中配置Kafka Companion，比如说。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2227
+#: upstream/_guides/kafka.adoc:2225
 #, no-wrap
 msgid "import static org.junit.jupiter.api.Assertions.assertEquals;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2229
+#: upstream/_guides/kafka.adoc:2227
 #, no-wrap
 msgid "import java.util.UUID;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2232
+#: upstream/_guides/kafka.adoc:2230
 #, no-wrap
 msgid ""
 "import org.apache.kafka.clients.producer.ProducerRecord;\n"
@@ -4162,7 +4150,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2239
+#: upstream/_guides/kafka.adoc:2237
 #, no-wrap
 msgid ""
 "import io.quarkus.test.common.QuarkusTestResource;\n"
@@ -4174,7 +4162,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2243
+#: upstream/_guides/kafka.adoc:2241
 #, no-wrap
 msgid ""
 "@QuarkusTest\n"
@@ -4183,7 +4171,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2246
+#: upstream/_guides/kafka.adoc:2244
 #, no-wrap
 msgid ""
 "    @InjectKafkaCompanion // <1>\n"
@@ -4191,7 +4179,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2250
+#: upstream/_guides/kafka.adoc:2248
 #, no-wrap
 msgid ""
 "    @Test\n"
@@ -4200,13 +4188,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2252
+#: upstream/_guides/kafka.adoc:2250
 #, no-wrap
 msgid "        // Expect that the tested application processes orders from 'orders' topic and write to 'orders-processed' topic\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2258
+#: upstream/_guides/kafka.adoc:2256
 #, no-wrap
 msgid ""
 "        ConsumerTask<String, String> orders = companion.consumeStrings().fromTopics(\"orders-processed\", 10); // <3>\n"
@@ -4217,43 +4205,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2261
+#: upstream/_guides/kafka.adoc:2259
 #, fuzzy
 msgid "`@InjectKafkaCompanion` injects the `KafkaCompanion` instance, configured to access the Kafka broker created for tests."
 msgstr " `@InjectKafkaCompanion` 注入 实例，配置为访问为测试创建的Kafka代理。 `KafkaCompanion` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2262
+#: upstream/_guides/kafka.adoc:2260
 #, fuzzy
 msgid "Use `KafkaCompanion` to create producer task which writes 10 records to 'orders' topic."
 msgstr "使用 `KafkaCompanion` ，创建生产者任务，向 \"订单 \"主题写入10条记录。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2263
+#: upstream/_guides/kafka.adoc:2261
 #, fuzzy
 msgid "Create consumer task which subscribes to 'orders-processed' topic and consumes 10 records."
 msgstr "创建消费者任务，订阅'orders-processed'主题并消耗10条记录。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2264
+#: upstream/_guides/kafka.adoc:2262
 #, fuzzy
 msgid "Await completion of the consumer task."
 msgstr "等待消费者任务的完成。"
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:2268
+#: upstream/_guides/kafka.adoc:2266
 #, fuzzy
 msgid "If the Kafka Dev Service is available during tests, `KafkaCompanionResource` uses the created Kafka broker, otherwise it creates a Kafka broker using https://github.com/strimzi/test-container[Strimzi Test Container]."
 msgstr "如果Kafka Dev Service在测试期间是可用的， `KafkaCompanionResource` ，则使用创建的Kafka代理，否则就使用 link:https://github.com/strimzi/test-container[Strimzi测试容器] 创建一个Kafka代理。"
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:2270
+#: upstream/_guides/kafka.adoc:2268
 #, fuzzy
 msgid "The configuration of the created Kafka broker can be customized using `@ResourceArg`, for example:"
 msgstr "创建的Kafka代理的配置可以使用 `@ResourceArg` ，例如，可以自定义。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2281
+#: upstream/_guides/kafka.adoc:2279
 #, no-wrap
 msgid ""
 "@QuarkusTestResource(value = KafkaCompanionResource.class, initArgs = {\n"
@@ -4268,31 +4256,31 @@ msgid ""
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/kafka.adoc:2284
+#: upstream/_guides/kafka.adoc:2282
 #, fuzzy, no-wrap
 msgid "Custom test resource"
 msgstr "自定义测试资源"
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:2288
+#: upstream/_guides/kafka.adoc:2286
 #, fuzzy
 msgid "Alternatively, you can start a Kafka broker in a test resource.  The following snippet shows a test resource starting a Kafka broker using https://www.testcontainers.org/modules/kafka/[Testcontainers]:"
 msgstr "另外，你也可以在测试资源中启动一个Kafka代理。下面的片段显示了一个测试资源使用 link:https://www.testcontainers.org/modules/kafka/[Testcontainers] 启动一个Kafka代理。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2292
+#: upstream/_guides/kafka.adoc:2290
 #, no-wrap
 msgid "public class KafkaResource implements QuarkusTestResourceLifecycleManager {\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2294
+#: upstream/_guides/kafka.adoc:2292
 #, no-wrap
 msgid "    private final KafkaContainer kafka = new KafkaContainer();\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2300
+#: upstream/_guides/kafka.adoc:2298
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4303,7 +4291,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2306
+#: upstream/_guides/kafka.adoc:2304
 #, no-wrap
 msgid ""
 "    @Override\n"
@@ -4314,241 +4302,241 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2308
+#: upstream/_guides/kafka.adoc:2306
 #, fuzzy
 msgid "Configure the Kafka bootstrap location, so the application connects to this broker."
 msgstr "配置Kafka bootstrap位置，这样应用程序就会连接到这个代理。"
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:2315
+#: upstream/_guides/kafka.adoc:2313
 #, fuzzy, no-wrap
 msgid "Kubernetes Service Bindings"
 msgstr "Kubernetes服务绑定"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2320
+#: upstream/_guides/kafka.adoc:2318
 #, fuzzy
 msgid "Quarkus Kafka extension supports xref:deploying-to-kubernetes.adoc[Service Binding Specification for Kubernetes].  You can enable this by adding the `quarkus-kubernetes-service-binding` extension to your application."
 msgstr "Quarkus Kafka扩展支持 link:deploying-to-kubernetes.html[Kubernetes的服务绑定规范] 。你可以通过在你的应用程序中添加 `quarkus-kubernetes-service-binding` 扩展来启用它。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2322
+#: upstream/_guides/kafka.adoc:2320
 #, fuzzy
 msgid "When running in appropriately configured Kubernetes clusters, Kafka extension will pull its Kafka broker connection configuration from the service binding available inside the cluster, without the need for user configuration."
 msgstr "当在适当配置的Kubernetes集群中运行时，Kafka扩展将从集群内部可用的服务绑定中提取其Kafka代理连接配置，而不需要用户配置。"
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:2323
+#: upstream/_guides/kafka.adoc:2321
 #, fuzzy, no-wrap
 msgid "Execution model"
 msgstr "执行模式"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2328
+#: upstream/_guides/kafka.adoc:2326
 #, fuzzy
 msgid "Reactive Messaging invokes user's methods on an I/O thread.  Thus, by default, the methods must not block.  As described in xref:blocking-processing[Blocking processing], you need to add the `@Blocking` annotation on the method if this method will block the caller thread."
 msgstr "Reactive Messaging在I/O线程上调用用户的方法。因此，默认情况下，这些方法不能阻塞。正如 link:#blocking-processing[[blocking-processing]] 中所述，如果这个方法会阻塞调用者线程，你需要在方法上添加 `@Blocking` 注解。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2330
+#: upstream/_guides/kafka.adoc:2328
 #, fuzzy
 msgid "See the xref:quarkus-reactive-architecture.adoc[Quarkus Reactive Architecture documentation] for further details on this topic."
 msgstr "关于这个话题的更多细节，请看 link:quarkus-reactive-architecture.html[Quarkus Reactive Architecture文档] 。"
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:2331
+#: upstream/_guides/kafka.adoc:2329
 #, fuzzy, no-wrap
 msgid "Channel Decorators"
 msgstr "渠道装修公司"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2334
+#: upstream/_guides/kafka.adoc:2332
 #, fuzzy
 msgid "SmallRye Reactive Messaging supports decorating incoming and outgoing channels for implementing cross-cutting concerns such as monitoring, tracing or message interception. For more information on implementing decorators and message interceptors see the http://smallrye.io/smallrye-reactive-messaging/latest/concepts/decorators/[SmallRye Reactive Messaging documentation]."
 msgstr "SmallRye Reactive Messaging支持装饰传入和传出通道，以实现监控、追踪或消息拦截等跨领域关注。关于实现装饰器和消息拦截器的更多信息，请参见 link:http://smallrye.io/smallrye-reactive-messaging/3.19.1/concepts/decorators/[SmallRye Reactive Messaging文档] 。"
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:2336
+#: upstream/_guides/kafka.adoc:2334
 #, fuzzy, no-wrap
 msgid "Configuration Reference"
 msgstr "配置参考"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2339
+#: upstream/_guides/kafka.adoc:2337
 #, fuzzy
 msgid "More details about the SmallRye Reactive Messaging configuration can be found in the https://smallrye.io/smallrye-reactive-messaging/latest/kafka/kafka/#using-the-kafka-connector[SmallRye Reactive Messaging - Kafka Connector Documentation]."
 msgstr "关于SmallRye Reactive Messaging配置的更多细节可以在 link:https://smallrye.io/smallrye-reactive-messaging/smallrye-reactive-messaging/3.1/kafka/kafka.html[SmallRye Reactive Messaging - Kafka Connector文档] 中找到。"
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:2343
+#: upstream/_guides/kafka.adoc:2341
 #, fuzzy
 msgid "Each channel can be disabled via configuration using:"
 msgstr "每个通道都可以通过配置来禁用。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2347
+#: upstream/_guides/kafka.adoc:2345
 #, no-wrap
 msgid "mp.messaging.[incoming|outgoing].[channel].enabled=false\n"
 msgstr ""
 
 #. type: delimited block =
-#: upstream/_guides/kafka.adoc:2351
+#: upstream/_guides/kafka.adoc:2349
 #, fuzzy
 msgid "The most important attributes are listed in the tables below:"
 msgstr "最重要的属性列在以下表格中。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2352
+#: upstream/_guides/kafka.adoc:2350
 #, fuzzy, no-wrap
 msgid "Incoming channel configuration (polling from Kafka)"
 msgstr "入站通道配置（从Kafka轮询）。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2355 upstream/_guides/kafka.adoc:2394
+#: upstream/_guides/kafka.adoc:2353 upstream/_guides/kafka.adoc:2392
 #, fuzzy
 msgid "The following attributes are configured using:"
 msgstr "使用以下属性进行配置。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2359
+#: upstream/_guides/kafka.adoc:2357
 #, no-wrap
 msgid "mp.messaging.incoming.your-channel-name.attribute=value\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2362 upstream/_guides/kafka.adoc:2401
+#: upstream/_guides/kafka.adoc:2360 upstream/_guides/kafka.adoc:2399
 #, fuzzy
 msgid "Some properties have aliases which can be configured globally:"
 msgstr "有些属性有别名，可以全局配置。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2366 upstream/_guides/kafka.adoc:2405
+#: upstream/_guides/kafka.adoc:2364 upstream/_guides/kafka.adoc:2403
 #, no-wrap
 msgid "kafka.bootstrap.servers=...\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2369
+#: upstream/_guides/kafka.adoc:2367
 #, fuzzy
 msgid "You can also pass any property supported by the underlying https://kafka.apache.org/documentation/#consumerconfigs[Kafka consumer]."
 msgstr "你也可以传递底层 link:https://kafka.apache.org/documentation/#consumerconfigs[Kafka消费者] 支持的任何属性。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2371
+#: upstream/_guides/kafka.adoc:2369
 #, fuzzy
 msgid "For example, to configure the `max.poll.records` property, use:"
 msgstr "例如，要配置 `max.poll.records` 属性，使用。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2375
+#: upstream/_guides/kafka.adoc:2373
 #, no-wrap
 msgid "mp.messaging.incoming.[channel].max.poll.records=1000\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2378
+#: upstream/_guides/kafka.adoc:2376
 #, fuzzy
 msgid "Some consumer client properties are configured to sensible default values:"
 msgstr "一些消费者客户端属性被配置为合理的默认值。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2380 upstream/_guides/kafka.adoc:2419
+#: upstream/_guides/kafka.adoc:2378 upstream/_guides/kafka.adoc:2417
 #, fuzzy
 msgid "If not set, `reconnect.backoff.max.ms` is set to `10000` to avoid high load on disconnection."
 msgstr " `10000` 如果不设置， `reconnect.backoff.max.ms` ，以避免断开时的高负荷。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2382
+#: upstream/_guides/kafka.adoc:2380
 #, fuzzy
 msgid "If not set, `key.deserializer` is set to `org.apache.kafka.common.serialization.StringDeserializer`."
 msgstr "如果没有设置， `key.deserializer` ，则设置为 `org.apache.kafka.common.serialization.StringDeserializer` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2384
+#: upstream/_guides/kafka.adoc:2382
 #, fuzzy
 msgid "The consumer `client.id` is configured according to the number of clients to create using `mp.messaging.incoming.[channel].partitions` property."
 msgstr "消费者 `client.id` ，根据使用 `mp.messaging.incoming.[channel].partitions` 属性创建的客户数量进行配置。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2386
+#: upstream/_guides/kafka.adoc:2384
 #, fuzzy
 msgid "If a `client.id` is provided, it is used as-is or suffixed with client index if `partitions` property is set."
 msgstr "如果提供了一个 `client.id` ，它将被原封不动地使用，如果 `partitions` 属性被设置，则以客户索引为后缀。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2387
+#: upstream/_guides/kafka.adoc:2385
 #, fuzzy
 msgid "If a `client.id` is not provided, it is generated as `[client-id-prefix][channel-name][-index]`."
 msgstr "如果没有提供 `client.id` ，则生成为 `kafka-consumer-[channel][-index]` 。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2391
+#: upstream/_guides/kafka.adoc:2389
 #, fuzzy, no-wrap
 msgid "Outgoing channel configuration (writing to Kafka)"
 msgstr "外发通道配置（写到Kafka）。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2398
+#: upstream/_guides/kafka.adoc:2396
 #, no-wrap
 msgid "mp.messaging.outgoing.your-channel-name.attribute=value\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2408
+#: upstream/_guides/kafka.adoc:2406
 #, fuzzy
 msgid "You can also pass any property supported by the underlying https://kafka.apache.org/documentation/#producerconfigs[Kafka producer]."
 msgstr "你也可以传递底层 link:https://kafka.apache.org/documentation/#producerconfigs[Kafka生产者] 支持的任何属性。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2410
+#: upstream/_guides/kafka.adoc:2408
 #, fuzzy
 msgid "For example, to configure the `max.block.ms` property, use:"
 msgstr "例如，要配置 `max.block.ms` 属性，使用。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2414
+#: upstream/_guides/kafka.adoc:2412
 #, no-wrap
 msgid "mp.messaging.incoming.[channel].max.block.ms=10000\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2417
+#: upstream/_guides/kafka.adoc:2415
 #, fuzzy
 msgid "Some producer client properties are configured to sensible default values:"
 msgstr "一些生产者客户端属性被配置为合理的默认值。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2421
+#: upstream/_guides/kafka.adoc:2419
 #, fuzzy
 msgid "If not set, `key.serializer` is set to `org.apache.kafka.common.serialization.StringSerializer`."
 msgstr "如果不设置， `key.serializer` ，则设置为 `org.apache.kafka.common.serialization.StringSerializer` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2423
+#: upstream/_guides/kafka.adoc:2421
 #, fuzzy
 msgid "If not set, producer `client.id` is generated as `[client-id-prefix][channel-name]`."
 msgstr "如果不设置，生产者 `client.id` ，则生成为 `kafka-producer-[channel]` 。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2427
+#: upstream/_guides/kafka.adoc:2425
 #, fuzzy, no-wrap
 msgid "Kafka Configuration Resolution"
 msgstr "Kafka配置决议"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2431
+#: upstream/_guides/kafka.adoc:2429
 #, fuzzy
 msgid "Quarkus exposes all Kafka related application properties, prefixed with `kafka.` or `KAFKA_` inside a configuration map with `default-kafka-broker` name.  This configuration is used to establish the connection with the Kafka broker."
 msgstr "Quarkus公开了所有与Kafka相关的应用属性，前缀为 `kafka.` 或 `KAFKA_` ，在配置图中有 `default-kafka-broker` 名称。这个配置被用来建立与Kafka代理的连接。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2433
+#: upstream/_guides/kafka.adoc:2431
 #, fuzzy
 msgid "In addition to this default configuration, you can configure the name of the `Map` producer using the `kafka-configuration` attribute:"
 msgstr "除了这个默认配置外，你还可以使用 `kafka-configuration` 属性配置 `Map` 生产者的名称。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2438
+#: upstream/_guides/kafka.adoc:2436
 #, no-wrap
 msgid ""
 "mp.messaging.incoming.my-channel.connector=smallrye-kafka\n"
@@ -4556,13 +4544,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2442
+#: upstream/_guides/kafka.adoc:2440
 #, fuzzy
 msgid "In this case, the connector looks for the `Map` associated with the `my-configuration` name.  If `kafka-configuration` is not set, an optional lookup for a `Map` exposed with the channel name (`my-channel` in the previous example) is done."
 msgstr "在这种情况下，连接器会寻找与 `my-configuration` 名称相关的 `Map` 。如果没有设置 `kafka-configuration` ，就会进行可选的查询，即查询与通道名称相关的 `Map` （在前面的例子中是 `my-channel` ）。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2453
+#: upstream/_guides/kafka.adoc:2451
 #, no-wrap
 msgid ""
 "@Produces\n"
@@ -4576,91 +4564,91 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2456
+#: upstream/_guides/kafka.adoc:2454
 #, fuzzy
 msgid "If `kafka-configuration` is set and no `Map` can be found, the deployment fails."
 msgstr "如果设置了 `kafka-configuration` ，但没有找到 `Map` ，则部署失败。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2458
+#: upstream/_guides/kafka.adoc:2456
 #, fuzzy
 msgid "Attribute values are resolved as follows:"
 msgstr "属性值的解决方式如下。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2460
+#: upstream/_guides/kafka.adoc:2458
 #, fuzzy
 msgid "the attribute is set directly on the channel configuration (`mp.messaging.incoming.my-channel.attribute=value`),"
 msgstr "该属性是直接在通道配置上设置的( `mp.messaging.incoming.my-channel.attribute=value` )。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2461
+#: upstream/_guides/kafka.adoc:2459
 #, fuzzy
 msgid "if not set, the connector looks for a `Map` with the channel name or the configured `kafka-configuration` (if set) and the value is retrieved from that `Map`"
 msgstr "如果没有设置，连接器会寻找一个带有通道名称或配置的 `kafka-configuration` （如果设置了）的 `Map` ，并从该值中检索出 `Map` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2462
+#: upstream/_guides/kafka.adoc:2460
 #, fuzzy
 msgid "If the resolved `Map` does not contain the value the default `Map` is used (exposed with the `default-kafka-broker` name)"
 msgstr "如果解决的 `Map` 不包含该值，则使用默认的 `Map` （用 `default-kafka-broker` 的名称暴露）。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2463
+#: upstream/_guides/kafka.adoc:2461
 #, no-wrap
 msgid "Conditionally configure channels"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2467
+#: upstream/_guides/kafka.adoc:2465
 msgid "You can configure the channels using a specific profile.  Thus, the channels are only configured (and added to the application) when the specified profile is enabled."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2469
+#: upstream/_guides/kafka.adoc:2467
 msgid "To achieve this, you need:"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2471
+#: upstream/_guides/kafka.adoc:2469
 msgid "Prefix the `mp.messaging.[incoming|outgoing].$channel` entries with `%my-profile` such as `%my-profile.mp.messaging.[incoming|outgoing].$channel.key=value`"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2472
+#: upstream/_guides/kafka.adoc:2470
 msgid "Use the `@IfBuildProfile(\"my-profile\")` on the CDI beans containing `@Incoming(channel)` and `@Outgoing(channel)` annotations that need only to be enabled when the profile is enabled."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2475
+#: upstream/_guides/kafka.adoc:2473
 msgid "Note that reactive messaging verifies that the graph is complete.  So, when using such a conditional configuration, ensure the application works with and without the profile enabled."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2477
+#: upstream/_guides/kafka.adoc:2475
 msgid "Note that this approach can also be used to change the channel configuration based on a profile."
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:2478
+#: upstream/_guides/kafka.adoc:2476
 #, fuzzy, no-wrap
 msgid "Integrating with Kafka - Common patterns"
 msgstr "与Kafka的整合--常见模式"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2480
+#: upstream/_guides/kafka.adoc:2478
 #, fuzzy, no-wrap
 msgid "Writing to Kafka from an HTTP endpoint"
 msgstr "从一个HTTP端点写到Kafka"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2483
+#: upstream/_guides/kafka.adoc:2481
 #, fuzzy
 msgid "To send messages to Kafka from an HTTP endpoint, inject an `Emitter` (or a `MutinyEmitter`) in your endpoint:"
 msgstr "要从HTTP端点向Kafka发送消息，在你的端点中注入一个 `Emitter` （或一个 `MutinyEmitter` ）。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2494 upstream/_guides/kafka.adoc:2542
+#: upstream/_guides/kafka.adoc:2492 upstream/_guides/kafka.adoc:2540
 #, no-wrap
 msgid ""
 "import jakarta.ws.rs.POST;\n"
@@ -4670,8 +4658,8 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2500 upstream/_guides/kafka.adoc:2550
-#: upstream/_guides/kafka.adoc:2775
+#: upstream/_guides/kafka.adoc:2498 upstream/_guides/kafka.adoc:2548
+#: upstream/_guides/kafka.adoc:2773
 #, no-wrap
 msgid ""
 "@Path(\"/\")\n"
@@ -4679,13 +4667,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2502
+#: upstream/_guides/kafka.adoc:2500
 #, no-wrap
 msgid "    @Channel(\"kafka\") Emitter<String> emitter;          // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2509
+#: upstream/_guides/kafka.adoc:2507
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -4697,31 +4685,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2511
+#: upstream/_guides/kafka.adoc:2509
 #, fuzzy
 msgid "Inject an `Emitter<String>`"
 msgstr "注入一个 `Emitter<String>` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2512
+#: upstream/_guides/kafka.adoc:2510
 #, fuzzy
 msgid "The HTTP method receives the payload and returns a `CompletionStage` completed when the message is written to Kafka"
 msgstr "HTTP方法接收有效载荷，并在消息被写入Kafka时返回一个 `CompletionStage` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2513
+#: upstream/_guides/kafka.adoc:2511
 #, fuzzy
 msgid "Send the message to Kafka, the `send` method returns a `CompletionStage`"
 msgstr "将消息发送到Kafka， `send` 方法返回一个 `CompletionStage` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2516
+#: upstream/_guides/kafka.adoc:2514
 #, fuzzy
 msgid "The endpoint sends the passed payload (from a `POST` HTTP request) to the emitter.  The emitter's channel is mapped to a Kafka topic in the `application.properties` file:"
 msgstr "端点将传递的有效载荷（来自 `POST` HTTP请求）发送给发射器。发射器的通道被映射到 `application.properties` 文件中的一个Kafka主题。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2521
+#: upstream/_guides/kafka.adoc:2519
 #, no-wrap
 msgid ""
 "mp.messaging.outgoing.kafka.connector=smallrye-kafka\n"
@@ -4729,37 +4717,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2527
+#: upstream/_guides/kafka.adoc:2525
 #, fuzzy
 msgid "The endpoint returns a `CompletionStage` indicating the asynchronous nature of the method.  The `emitter.send` method returns a `CompletionStage<Void>` .  The returned future is completed when the message has been written to Kafka.  If the writing fails, the returned `CompletionStage` is completed exceptionally."
 msgstr "端点返回一个 `CompletionStage` ，表明该方法的异步性质。 `emitter.send` 方法返回一个 `CompletionStage<Void>` 。当消息被写入Kafka时，返回的未来就完成了。如果写入失败，返回的 `CompletionStage` 会例外地完成。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2529
+#: upstream/_guides/kafka.adoc:2527
 #, fuzzy
 msgid "If the endpoint does not return a `CompletionStage`, the HTTP response may be written before the message is sent to Kafka, and so failures won't be reported to the user."
 msgstr "如果端点没有返回 `CompletionStage` ，HTTP响应可能会在消息被发送到Kafka之前被写入，因此失败不会被报告给用户。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2531
+#: upstream/_guides/kafka.adoc:2529
 #, fuzzy
 msgid "If you need to send a Kafka record, use:"
 msgstr "如果你需要发送一条Kafka记录，请使用。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2547
+#: upstream/_guides/kafka.adoc:2545
 #, no-wrap
 msgid "import io.smallrye.reactive.messaging.kafka.Record;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2552
+#: upstream/_guides/kafka.adoc:2550
 #, no-wrap
 msgid "    @Channel(\"kafka\") Emitter<Record<String,String>> emitter;  // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2560
+#: upstream/_guides/kafka.adoc:2558
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -4771,49 +4759,49 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2562
+#: upstream/_guides/kafka.adoc:2560
 #, fuzzy
 msgid "Note the usage of an `Emitter<Record<K, V>>`"
 msgstr "注意使用一个 `Emitter<Record<K, V>>` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2563
+#: upstream/_guides/kafka.adoc:2561
 #, fuzzy
 msgid "Create the record using `Record.of(k, v)`"
 msgstr "使用以下方法创建记录 `Record.of(k, v)` "
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2564
+#: upstream/_guides/kafka.adoc:2562
 #, fuzzy, no-wrap
 msgid "Persisting Kafka messages with Hibernate with Panache"
 msgstr "用Hibernate与Panache坚持Kafka消息"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2567
+#: upstream/_guides/kafka.adoc:2565
 #, fuzzy
 msgid "To persist objects received from Kafka into a database, you can use Hibernate with Panache."
 msgstr "为了将从Kafka收到的对象持久化到数据库中，你可以使用Hibernate与Panache。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2569
+#: upstream/_guides/kafka.adoc:2567
 #, fuzzy
 msgid "If you use Hibernate Reactive, look at xref:persisting-kafka-messages-with-hibernate-reactive[Persisting Kafka messages with Hibernate Reactive]."
 msgstr "如果你使用Hibernate Reactive，请看 link:#persisting-kafka-messages-with-hibernate-reactive[[persisting-kafka-messages-with-hibernate-reactive]] 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2572 upstream/_guides/kafka.adoc:2652
+#: upstream/_guides/kafka.adoc:2570 upstream/_guides/kafka.adoc:2650
 #, fuzzy
 msgid "Let's imagine you receive `Fruit` objects.  For simplicity purposes, our `Fruit` class is pretty simple:"
 msgstr "让我们想象一下，你收到 `Fruit` 对象。为了简单起见，我们的 `Fruit` 类是非常简单的。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2580
+#: upstream/_guides/kafka.adoc:2578
 #, no-wrap
 msgid "import io.quarkus.hibernate.orm.panache.PanacheEntity;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2583 upstream/_guides/kafka.adoc:2663
+#: upstream/_guides/kafka.adoc:2581 upstream/_guides/kafka.adoc:2661
 #, no-wrap
 msgid ""
 "@Entity\n"
@@ -4821,25 +4809,25 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2585 upstream/_guides/kafka.adoc:2665
+#: upstream/_guides/kafka.adoc:2583 upstream/_guides/kafka.adoc:2663
 #, no-wrap
 msgid "    public String name;\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2590 upstream/_guides/kafka.adoc:2671
+#: upstream/_guides/kafka.adoc:2588 upstream/_guides/kafka.adoc:2669
 #, fuzzy
 msgid "To consume `Fruit` instances stored on a Kafka topic, and persist them into a database, you can use the following approach:"
 msgstr "要消费存储在Kafka主题上的 `Fruit` 实例，并将其持久化到数据库中，你可以使用以下方法。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2601
+#: upstream/_guides/kafka.adoc:2599
 #, no-wrap
 msgid "import io.smallrye.common.annotation.Blocking;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2604
+#: upstream/_guides/kafka.adoc:2602
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -4847,7 +4835,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2611
+#: upstream/_guides/kafka.adoc:2609
 #, no-wrap
 msgid ""
 "    @Incoming(\"fruits\")                                     // <1>\n"
@@ -4859,43 +4847,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2613
+#: upstream/_guides/kafka.adoc:2611
 #, fuzzy
 msgid "Configuring the incoming channel. This channel reads from Kafka."
 msgstr "配置传入通道。这个通道从Kafka读取。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2615
+#: upstream/_guides/kafka.adoc:2613
 #, fuzzy
 msgid "As we are writing in a database, we must be in a transaction. This annotation starts a new transaction and commits it when the method returns.  Quarkus automatically considers the method as _blocking_. Indeed, writing to a database using classic Hibernate is blocking. So, Quarkus calls the method on a worker thread you can block (and not an I/O thread)."
 msgstr "由于我们是在数据库中写作，我们必须在一个事务中。这个注解启动了一个新的事务，并在方法返回时提交了它。Quarkus会自动认为这个方法是 _阻塞的_ 。事实上，使用经典的Hibernate向数据库写入是阻塞的。所以，Quarkus在一个可以阻塞的工作线程上调用这个方法（而不是I/O线程）。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2616
+#: upstream/_guides/kafka.adoc:2614
 #, fuzzy
 msgid "The method receives each Fruit. Note that you would need a deserializer to reconstruct the Fruit instances from the Kafka records."
 msgstr "该方法接收每个Fruit。注意，你需要一个反序列化器来从Kafka记录中重构Fruit实例。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2617
+#: upstream/_guides/kafka.adoc:2615
 #, fuzzy
 msgid "Persist the received `fruit` object."
 msgstr "保存收到的 `fruit` 对象。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2620
+#: upstream/_guides/kafka.adoc:2618
 #, fuzzy
 msgid "As mentioned in <4>, you need a deserializer that can create a `Fruit` from the record.  This can be done using a Jackson deserializer:"
 msgstr "正如<4>中提到的，你需要一个能从记录中创建 `Fruit` 的反序列化器。这可以用Jackson的反序列化器来完成。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2635 upstream/_guides/kafka.adoc:2731
+#: upstream/_guides/kafka.adoc:2633 upstream/_guides/kafka.adoc:2729
 #, fuzzy
 msgid "The associated configuration would be:"
 msgstr "相关的配置将是。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2640 upstream/_guides/kafka.adoc:2736
+#: upstream/_guides/kafka.adoc:2638 upstream/_guides/kafka.adoc:2734
 #, no-wrap
 msgid ""
 "mp.messaging.incoming.fruits.connector=smallrye-kafka\n"
@@ -4903,37 +4891,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2644 upstream/_guides/kafka.adoc:2740
+#: upstream/_guides/kafka.adoc:2642 upstream/_guides/kafka.adoc:2738
 #, fuzzy
 msgid "Check xref:jackson-serialization[Serializing via Jackson] for more detail about the usage of Jackson with Kafka.  You can also use Avro."
 msgstr "查看 link:#jackson-serialization[[jackson-serialization]] ，了解更多关于Jackson与Kafka的使用细节。你也可以使用Avro。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2646
+#: upstream/_guides/kafka.adoc:2644
 #, fuzzy, no-wrap
 msgid "Persisting Kafka messages with Hibernate Reactive"
 msgstr "用Hibernate Reactive持久化Kafka消息"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2649
+#: upstream/_guides/kafka.adoc:2647
 #, fuzzy
 msgid "To persist objects received from Kafka into a database, you can use Hibernate Reactive with Panache."
 msgstr "为了将从Kafka收到的对象持久化到数据库中，你可以使用Hibernate Reactive与Panache。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2660
+#: upstream/_guides/kafka.adoc:2658
 #, no-wrap
 msgid "import io.quarkus.hibernate.reactive.panache.PanacheEntity;  // <1>\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2669
+#: upstream/_guides/kafka.adoc:2667
 #, fuzzy
 msgid "Make sure to use the reactive variant"
 msgstr "请确保使用反应式变体"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2678
+#: upstream/_guides/kafka.adoc:2676
 #, no-wrap
 msgid ""
 "import jakarta.enterprise.context.ApplicationScoped;\n"
@@ -4941,7 +4929,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2683
+#: upstream/_guides/kafka.adoc:2681
 #, no-wrap
 msgid ""
 "import io.quarkus.hibernate.reactive.panache.Panache;\n"
@@ -4949,7 +4937,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2686
+#: upstream/_guides/kafka.adoc:2684
 #, no-wrap
 msgid ""
 "@ApplicationScoped\n"
@@ -4957,7 +4945,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2689
+#: upstream/_guides/kafka.adoc:2687
 #, no-wrap
 msgid ""
 "    @Inject\n"
@@ -4965,7 +4953,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2698
+#: upstream/_guides/kafka.adoc:2696
 #, no-wrap
 msgid ""
 "    @Incoming(\"in\")\n"
@@ -4979,108 +4967,108 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2702
+#: upstream/_guides/kafka.adoc:2700
 #, fuzzy
 msgid "Inject the Hibernate Reactive `Session`"
 msgstr "注入Hibernate Reactive `SessionFactory` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2705
+#: upstream/_guides/kafka.adoc:2703
 msgid "Hibernate Reactive `Session` and `Panache` APIs require an active CDI Request context.  `@ActivateRequestContext` annotation creates a new request context and destroys it when the `Uni` returned from the method completes.  If `Panache` is not used, `Mutiny.SessionFactory` can be injected and used similarly without the need of activating the request context or closing the session manually."
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2706
+#: upstream/_guides/kafka.adoc:2704
 #, fuzzy
 msgid "Requests a new transaction. The transaction completes when the passed action completes."
 msgstr "指示Panache在一个事务中运行给定的（异步）动作。当该动作完成时，事务就完成了。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2707
+#: upstream/_guides/kafka.adoc:2705
 #, fuzzy
 msgid "Persist the entity. It returns a `Uni<Fruit>`."
 msgstr "坚持该实体。它返回一个 `Uni<Fruit>` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2708
+#: upstream/_guides/kafka.adoc:2706
 #, fuzzy
 msgid "Switch back to a `Uni<Void>`."
 msgstr "换回一个 `Uni<Void>` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2709
+#: upstream/_guides/kafka.adoc:2707
 #, fuzzy
 msgid "Close the session - this is close the connection with the database. The connection can then be recycled."
 msgstr "关闭会话 - 这是关闭与数据库的连接。然后，该连接可以被回收。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2713
+#: upstream/_guides/kafka.adoc:2711
 #, fuzzy
 msgid "Unlike with _classic_ Hibernate, you can't use `@Transactional`.  Instead, we use `session.withTransaction` and persist our entity.  The `map` is used to return a `Uni<Void>` and not a `Uni<Fruit>`."
 msgstr "与 _经典的_ Hibernate不同，你不能使用 `@Transactional` 。相反，我们使用 `Panache.withTransaction` ，并持久化我们的实体。 `map` 是用来返回一个 `Uni<Void>` ，而不是一个 `Uni<Fruit>` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2716
+#: upstream/_guides/kafka.adoc:2714
 #, fuzzy
 msgid "You need a deserializer that can create a `Fruit` from the record.  This can be done using a Jackson deserializer:"
 msgstr "你需要一个能从记录中创建 `Fruit` 的反序列化器。这可以用Jackson的反序列化器来完成。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2741
+#: upstream/_guides/kafka.adoc:2739
 #, fuzzy, no-wrap
 msgid "Writing entities managed by Hibernate to Kafka"
 msgstr "将Hibernate管理的实体写入Kafka中"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2744
+#: upstream/_guides/kafka.adoc:2742
 #, fuzzy
 msgid "Let's imagine the following process:"
 msgstr "让我们想象一下下面的过程。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2746
+#: upstream/_guides/kafka.adoc:2744
 #, fuzzy
 msgid "You receive an HTTP request with a payload,"
 msgstr "你收到一个带有有效载荷的HTTP请求。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2747
+#: upstream/_guides/kafka.adoc:2745
 #, fuzzy
 msgid "You create an Hibernate entity instance from this payload,"
 msgstr "你从这个有效载荷中创建一个Hibernate实体实例。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2748
+#: upstream/_guides/kafka.adoc:2746
 #, fuzzy
 msgid "You persist that entity into a database,"
 msgstr "你将该实体持久化到数据库中。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2749
+#: upstream/_guides/kafka.adoc:2747
 #, fuzzy
 msgid "You send the entity to a Kafka topic"
 msgstr "你把实体发送到一个Kafka主题上"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2751
+#: upstream/_guides/kafka.adoc:2749
 #, fuzzy
 msgid "If you use Hibernate Reactive, look at xref:writing-entities-managed-by-hibernate-reactive-to-kafka[Writing entities managed by Hibernate Reactive to Kafka]."
 msgstr "如果你使用Hibernate Reactive，请看 link:#writing-entities-managed-by-hibernate-reactive-to-kafka[[writing-entities-managed-by-hibernate-reactive-to-kafka]] 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2757
+#: upstream/_guides/kafka.adoc:2755
 #, fuzzy
 msgid "Because we write to a database, we must run this method in a transaction.  Yet, sending the entity to Kafka happens asynchronously.  The operation returns a `CompletionStage` (or a `Uni` if you use a `MutinyEmitter`) reporting when the operation completes.  We must be sure that the transaction is still running until the object is written.  Otherwise, you may access the object outside the transaction, which is not allowed."
 msgstr "因为我们写到了数据库，所以我们必须在一个事务中运行这个方法。然而，向Kafka发送实体是异步进行的。该操作完成后会返回一个 `CompletionStage` （如果你使用 `MutinyEmitter` ，则返回 `Uni` ）报告。我们必须确定，在对象被写入之前，事务仍然在运行。否则，你可能会在事务之外访问该对象，这是不允许的。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2759
+#: upstream/_guides/kafka.adoc:2757
 #, fuzzy
 msgid "To implement this process, you need the following approach:"
 msgstr "为了实施这一过程，你需要采取以下方法。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2769
+#: upstream/_guides/kafka.adoc:2767
 #, no-wrap
 msgid ""
 "import jakarta.transaction.Transactional;\n"
@@ -5089,13 +5077,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2777
+#: upstream/_guides/kafka.adoc:2775
 #, no-wrap
 msgid "    @Channel(\"kafka\") Emitter<Fruit> emitter;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2786
+#: upstream/_guides/kafka.adoc:2784
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -5109,54 +5097,54 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2788
+#: upstream/_guides/kafka.adoc:2786
 #, fuzzy
 msgid "As we are writing to the database, make sure we run inside a transaction"
 msgstr "当我们向数据库写入时，确保我们在一个事务中运行"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2789
+#: upstream/_guides/kafka.adoc:2787
 #, fuzzy
 msgid "The method receives the fruit instance to persist. It returns a `CompletionStage` which is used for the transaction demarcation. The transaction is committed when the return `CompletionStage` completes. In our case, it's when the message is written to Kafka."
 msgstr "该方法接收要持久化的水果实例。它返回一个 `CompletionStage` ，用于事务分界。当返回的 `CompletionStage` 完成时，事务就提交了。在我们的例子中，就是消息被写入Kafka的时候。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2791
+#: upstream/_guides/kafka.adoc:2789
 msgid "Wrap the managed entity inside a Data transfer object and send it to Kafka.  This makes sure that managed entity is not impacted by the Kafka serialization."
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2793
+#: upstream/_guides/kafka.adoc:2791
 #, fuzzy, no-wrap
 msgid "Writing entities managed by Hibernate Reactive to Kafka"
 msgstr "将Hibernate Reactive管理的实体写入Kafka中"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2796
+#: upstream/_guides/kafka.adoc:2794
 #, fuzzy
 msgid "To send to Kafka entities managed by Hibernate Reactive, we recommend using:"
 msgstr "为了向由Hibernate Reactive管理的Kafka实体发送，我们建议使用。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2798
+#: upstream/_guides/kafka.adoc:2796
 #, fuzzy
 msgid "RESTEasy Reactive to serve HTTP requests"
 msgstr "RESTEasy Reactive为HTTP请求提供服务"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2799
+#: upstream/_guides/kafka.adoc:2797
 #, fuzzy
 msgid "A `MutinyEmitter` to send message to a channel, so it can be easily integrated with the Mutiny API exposed by Hibernate Reactive or Hibernate Reactive with Panache."
 msgstr "一个 `MutinyEmitter` ，向一个通道发送消息，所以它可以很容易地与Hibernate Reactive或Hibernate Reactive with Panache暴露的Mutiny API集成。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2801
+#: upstream/_guides/kafka.adoc:2799
 #, fuzzy
 msgid "The following example demonstrates how to receive a payload, store it in the database using Hibernate Reactive with Panache, and send the persisted entity to Kafka:"
 msgstr "下面的例子演示了如何接收一个有效载荷，使用Hibernate Reactive with Panache将其存储在数据库中，并将持久化的实体发送到Kafka。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2808
+#: upstream/_guides/kafka.adoc:2806
 #, no-wrap
 msgid ""
 "import jakarta.ws.rs.POST;\n"
@@ -5164,7 +5152,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2814
+#: upstream/_guides/kafka.adoc:2812
 #, no-wrap
 msgid ""
 "import io.quarkus.hibernate.reactive.panache.Panache;\n"
@@ -5173,7 +5161,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2817
+#: upstream/_guides/kafka.adoc:2815
 #, no-wrap
 msgid ""
 "@Path(\"/\")\n"
@@ -5181,13 +5169,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2819
+#: upstream/_guides/kafka.adoc:2817
 #, no-wrap
 msgid "    @Channel(\"kafka\") MutinyEmitter<Fruit> emitter;     // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2829
+#: upstream/_guides/kafka.adoc:2827
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -5202,61 +5190,61 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2831
+#: upstream/_guides/kafka.adoc:2829
 #, fuzzy
 msgid "Inject a `MutinyEmitter` which exposes a Mutiny API. It simplifies the integration with the Mutiny API exposed by Hibernate Reactive with Panache."
 msgstr "注入一个 `MutinyEmitter` ，它暴露了Mutiny API。它简化了与Hibernate Reactive与Panache所暴露的Mutiny API的整合。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2832
+#: upstream/_guides/kafka.adoc:2830
 #, fuzzy
 msgid "The HTTP method receiving the payload returns a `Uni<Void>`. The HTTP response is written when the operation completes (the entity is persisted and written to Kafka)."
 msgstr "接收有效载荷的HTTP方法返回一个 `Uni<Void>` 。当操作完成后，HTTP响应被写入（实体被持久化并写入Kafka）。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2833
+#: upstream/_guides/kafka.adoc:2831
 #, fuzzy
 msgid "We need to write the entity into the database in a transaction."
 msgstr "我们需要在一个事务中把实体写进数据库。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2834
+#: upstream/_guides/kafka.adoc:2832
 #, fuzzy
 msgid "Once the persist operation completes, we send the entity to Kafka. The `send` method returns a `Uni<Void>`."
 msgstr "一旦持久化操作完成，我们就把实体发送到Kafka。 `send` 方法返回一个 `Uni<Void>` 。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2836
+#: upstream/_guides/kafka.adoc:2834
 #, fuzzy, no-wrap
 msgid "Streaming Kafka topics as server-sent events"
 msgstr "将Kafka主题作为服务器发送的事件流化"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2839
+#: upstream/_guides/kafka.adoc:2837
 #, fuzzy
 msgid "Streaming a Kafka topic as server-sent events (SSE) is straightforward:"
 msgstr "将Kafka主题作为服务器发送的事件（SSE）进行流化是很直接的。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2841
+#: upstream/_guides/kafka.adoc:2839
 #, fuzzy
 msgid "You inject the channel representing the Kafka topic in your HTTP endpoint"
 msgstr "你在你的HTTP端点中注入代表Kafka主题的通道"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2842
+#: upstream/_guides/kafka.adoc:2840
 #, fuzzy
 msgid "You return that channel as a `Publisher` or a `Multi` from the HTTP method"
 msgstr "你将该通道作为一个 `Publisher` ，或从HTTP方法中返回一个 `Multi` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2844
+#: upstream/_guides/kafka.adoc:2842
 #, fuzzy
 msgid "The following code provides an example:"
 msgstr "下面的代码提供了一个例子。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2849 upstream/_guides/kafka.adoc:2864
+#: upstream/_guides/kafka.adoc:2847 upstream/_guides/kafka.adoc:2862
 #, no-wrap
 msgid ""
 "@Channel(\"fruits\")\n"
@@ -5264,7 +5252,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2855
+#: upstream/_guides/kafka.adoc:2853
 #, no-wrap
 msgid ""
 "@GET\n"
@@ -5275,13 +5263,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2859
+#: upstream/_guides/kafka.adoc:2857
 #, fuzzy
 msgid "Some environment cuts the SSE connection when there is not enough activity.  The workaround consists of sending _ping_ messages (or empty objects) periodically."
 msgstr "当没有足够的活动时，有些环境会切断SSE的连接。解决的办法是定期发送 _ping_ 信息（或空对象）。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2867
+#: upstream/_guides/kafka.adoc:2865
 #, no-wrap
 msgid ""
 "@Inject\n"
@@ -5289,7 +5277,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2877
+#: upstream/_guides/kafka.adoc:2875
 #, no-wrap
 msgid ""
 "@GET\n"
@@ -5304,7 +5292,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2882
+#: upstream/_guides/kafka.adoc:2880
 #, no-wrap
 msgid ""
 "Multi<String> emitAPeriodicPing() {\n"
@@ -5314,7 +5302,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2890
+#: upstream/_guides/kafka.adoc:2888
 #, no-wrap
 msgid ""
 "private String toJson(Fruit f) {\n"
@@ -5327,61 +5315,61 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2894
+#: upstream/_guides/kafka.adoc:2892
 #, fuzzy
 msgid "The workaround is a bit more complex as besides sending the fruits coming from Kafka, we need to send pings periodically.  To achieve this we merge the stream coming from Kafka and a periodic stream emitting `{}` every 10 seconds."
 msgstr "这个解决方法有点复杂，因为除了发送来自Kafka的水果，我们还需要定期发送ping。为了实现这一点，我们合并了来自Kafka的数据流和一个周期性的数据流，每10秒发射一次 `{}` 。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:2896
+#: upstream/_guides/kafka.adoc:2894
 #, fuzzy, no-wrap
 msgid "Chaining Kafka Transactions with Hibernate Reactive transactions"
 msgstr "用Hibernate Reactive持久化Kafka消息"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2900
+#: upstream/_guides/kafka.adoc:2898
 #, fuzzy
 msgid "By chaining a Kafka transaction with a Hibernate Reactive transaction you can send records to a Kafka transaction, perform database updates and commit the Kafka transaction only if the database transaction is successful."
 msgstr "通过将Kafka事务与Hibernate Reactive事务相连接，你可以向Kafka事务发送记录，执行数据库更新，并且只有在数据库事务成功时才提交Kafka事务。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2902
+#: upstream/_guides/kafka.adoc:2900
 #, fuzzy
 msgid "The following example demonstrates:"
 msgstr "下面的例子说明了这一点。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2904
+#: upstream/_guides/kafka.adoc:2902
 #, fuzzy
 msgid "Receive a payload by serving HTTP requests using RESTEasy Reactive,"
 msgstr "通过使用RESTEasy Reactive提供HTTP请求来接收有效载荷。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2905
+#: upstream/_guides/kafka.adoc:2903
 #, fuzzy
 msgid "Limit concurrency of that HTTP endpoint using Smallrye Fault Tolerance,"
 msgstr "使用Smallrye Fault Tolerance限制该HTTP端点的并发性。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2906
+#: upstream/_guides/kafka.adoc:2904
 #, fuzzy
 msgid "Start a Kafka transaction and send the payload to Kafka record,"
 msgstr "启动一个Kafka事务，并将有效载荷发送到Kafka记录。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2907
+#: upstream/_guides/kafka.adoc:2905
 #, fuzzy
 msgid "Store the payload in the database using Hibernate Reactive with Panache,"
 msgstr "为了将从Kafka收到的对象持久化到数据库中，你可以使用Hibernate Reactive与Panache。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2908
+#: upstream/_guides/kafka.adoc:2906
 #, fuzzy
 msgid "Commit the Kafka transaction only if the entity is persisted successfully."
 msgstr "只有当实体被持久化成功后才会提交Kafka事务。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2917
+#: upstream/_guides/kafka.adoc:2915
 #, no-wrap
 msgid ""
 "import jakarta.ws.rs.Consumes;\n"
@@ -5391,7 +5379,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2921 upstream/_guides/kafka.adoc:2971
+#: upstream/_guides/kafka.adoc:2919 upstream/_guides/kafka.adoc:2969
 #, no-wrap
 msgid ""
 "import org.eclipse.microprofile.faulttolerance.Bulkhead;\n"
@@ -5400,7 +5388,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2925
+#: upstream/_guides/kafka.adoc:2923
 #, no-wrap
 msgid ""
 "import io.quarkus.hibernate.reactive.panache.Panache;\n"
@@ -5409,7 +5397,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2928 upstream/_guides/kafka.adoc:2979
+#: upstream/_guides/kafka.adoc:2926 upstream/_guides/kafka.adoc:2977
 #, no-wrap
 msgid ""
 "@Path(\"/\")\n"
@@ -5417,13 +5405,13 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2930
+#: upstream/_guides/kafka.adoc:2928
 #, no-wrap
 msgid "    @Channel(\"kafka\") KafkaTransactions<Fruit> kafkaTx; // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2944
+#: upstream/_guides/kafka.adoc:2942
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -5442,61 +5430,61 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2947
+#: upstream/_guides/kafka.adoc:2945
 #, fuzzy
 msgid "Inject a `KafkaTransactions` which exposes a Mutiny API. It allows the integration with the Mutiny API exposed by Hibernate Reactive with Panache."
 msgstr "注入一个 `MutinyEmitter` ，它暴露了Mutiny API。它简化了与Hibernate Reactive与Panache所暴露的Mutiny API的整合。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2948
+#: upstream/_guides/kafka.adoc:2946
 #, fuzzy
 msgid "Limit the concurrency of the HTTP endpoint to \"1\", preventing starting multiple transactions at a given time."
 msgstr "将HTTP端点的并发性限制为 \"1\"，防止在给定时间内启动多个事务。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2949
+#: upstream/_guides/kafka.adoc:2947
 #, fuzzy
 msgid "The HTTP method receiving the payload returns a `Uni<Void>`. The HTTP response is written when the operation completes (the entity is persisted and Kafka transaction is committed)."
 msgstr "接收有效载荷的HTTP方法返回一个 `Uni<Void>` 。当操作完成后，HTTP响应被写入（实体被持久化并写入Kafka）。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2950 upstream/_guides/kafka.adoc:3003
+#: upstream/_guides/kafka.adoc:2948 upstream/_guides/kafka.adoc:3001
 #, fuzzy
 msgid "Begin a Kafka transaction."
 msgstr "测试一个Kafka应用程序"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2951
+#: upstream/_guides/kafka.adoc:2949
 #, fuzzy
 msgid "Send the payload to Kafka inside the Kafka transaction."
 msgstr "在Kafka事务内将有效载荷发送到Kafka。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2952
+#: upstream/_guides/kafka.adoc:2950
 #, fuzzy
 msgid "Persist the entity into the database in a Hibernate Reactive transaction."
 msgstr "我们需要在一个事务中把实体写进数据库。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2954
+#: upstream/_guides/kafka.adoc:2952
 #, fuzzy
 msgid "Once the persist operation completes, and there is no errors, the Kafka transaction is committed.  The result is omitted and returned as the HTTP response."
 msgstr "一旦持久化操作完成，并且没有错误，Kafka事务就会提交。结果被省略并作为HTTP响应返回。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2957
+#: upstream/_guides/kafka.adoc:2955
 #, fuzzy
 msgid "In the previous example the database transaction (inner) will commit followed by the Kafka transaction (outer).  If you wish to commit the Kafka transaction first and the database transaction second, you need to nest them in the reverse order."
 msgstr "在前面的例子中，数据库事务（内部）将提交，然后是Kafka事务（外部）。如果你想先提交Kafka事务，后提交数据库事务，你需要以相反的顺序嵌套它们。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:2959
+#: upstream/_guides/kafka.adoc:2957
 #, fuzzy
 msgid "The next example demonstrates that using the Hibernate Reactive API (without Panache):"
 msgstr "下一个例子展示了使用Hibernate Reactive API（没有Panache）。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2967
+#: upstream/_guides/kafka.adoc:2965
 #, no-wrap
 msgid ""
 "import jakarta.inject.Inject;\n"
@@ -5507,7 +5495,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2976
+#: upstream/_guides/kafka.adoc:2974
 #, no-wrap
 msgid ""
 "import io.smallrye.mutiny.Uni;\n"
@@ -5517,19 +5505,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2981
+#: upstream/_guides/kafka.adoc:2979
 #, no-wrap
 msgid "    @Channel(\"kafka\") KafkaTransactions<Fruit> kafkaTx;\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2983
+#: upstream/_guides/kafka.adoc:2981
 #, no-wrap
 msgid "    @Inject Mutiny.SessionFactory sf; // <1>\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:2997
+#: upstream/_guides/kafka.adoc:2995
 #, no-wrap
 msgid ""
 "    @POST\n"
@@ -5548,73 +5536,73 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3000
+#: upstream/_guides/kafka.adoc:2998
 #, fuzzy
 msgid "Inject the Hibernate Reactive `SessionFactory`."
 msgstr "注入Hibernate Reactive `SessionFactory` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3001
+#: upstream/_guides/kafka.adoc:2999
 #, fuzzy
 msgid "Capture the caller Vert.x context."
 msgstr "捕获调用者Vert.x的上下文。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3002
+#: upstream/_guides/kafka.adoc:3000
 #, fuzzy
 msgid "Begin a Hibernate Reactive transaction."
 msgstr "开始一个Hibernate Reactive事务。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3004
+#: upstream/_guides/kafka.adoc:3002
 #, fuzzy
 msgid "Persist the payload and send the entity to Kafka."
 msgstr "你把实体发送到一个Kafka主题上"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3006
+#: upstream/_guides/kafka.adoc:3004
 #, fuzzy
 msgid "The Kafka transaction terminates on the Kafka producer sender thread.  We need to switch to the Vert.x context previously captured in order to terminate the Hibernate Reactive transaction on the same context we started it."
 msgstr "Kafka事务在Kafka生产者发送者线程上终止。我们需要切换到之前捕获的Vert.x上下文，以便在我们启动的同一上下文上终止Hibernate Reactive事务。"
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:3007
+#: upstream/_guides/kafka.adoc:3005
 #, fuzzy, no-wrap
 msgid "Logging"
 msgstr "伐木"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3010
+#: upstream/_guides/kafka.adoc:3008
 #, fuzzy
 msgid "To reduce the amount of log written by the Kafka client, Quarkus sets the level of the following log categories to `WARNING`:"
 msgstr "为了减少Kafka客户端写入的日志量，Quarkus将以下日志类别的级别设置为 `WARNING` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3012
+#: upstream/_guides/kafka.adoc:3010
 #, fuzzy
 msgid "`org.apache.kafka.clients`"
 msgstr " `org.apache.kafka.clients` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3013
+#: upstream/_guides/kafka.adoc:3011
 #, fuzzy
 msgid "`org.apache.kafka.common.utils`"
 msgstr " `org.apache.kafka.common.utils` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3014
+#: upstream/_guides/kafka.adoc:3012
 #, fuzzy
 msgid "`org.apache.kafka.common.metrics`"
 msgstr " `org.apache.kafka.common.metrics` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3016
+#: upstream/_guides/kafka.adoc:3014
 #, fuzzy
 msgid "You can override the configuration by adding the following lines to the `application.properties`:"
 msgstr "你可以通过在 `application.properties` 中添加以下几行来覆盖配置。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3022
+#: upstream/_guides/kafka.adoc:3020
 #, no-wrap
 msgid ""
 "quarkus.log.category.\"org.apache.kafka.clients\".level=INFO\n"
@@ -5623,43 +5611,43 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:3024
+#: upstream/_guides/kafka.adoc:3022
 #, fuzzy, no-wrap
 msgid "Connecting to Managed Kafka clusters"
 msgstr "连接到管理的Kafka集群"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3027
+#: upstream/_guides/kafka.adoc:3025
 #, fuzzy
 msgid "This section explains how to connect to notorious Kafka Cloud Services."
 msgstr "本节解释了如何连接到臭名昭著的Kafka云服务。"
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:3028
+#: upstream/_guides/kafka.adoc:3026
 #, fuzzy, no-wrap
 msgid "Azure Event Hub"
 msgstr "Azure事件中心"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3031
+#: upstream/_guides/kafka.adoc:3029
 #, fuzzy
 msgid "https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview[Azure Event Hub] provides an endpoint compatible with Apache Kafka."
 msgstr "link:https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview[Azure Event Hub] 提供了一个与Apache Kafka兼容的端点。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3035
+#: upstream/_guides/kafka.adoc:3033
 #, fuzzy
 msgid "Azure Event Hubs for Kafka is not available in the _basic_ tier.  You need at least the _standard_ tier to use Kafka.  See https://azure.microsoft.com/en-us/pricing/details/event-hubs/[Azure Event Hubs Pricing] to see the other options."
 msgstr "Azure Event Hubs for Kafka在 _基本_ 层中不可用。你至少需要 _标准_ 层才能使用Kafka。请参阅 link:https://azure.microsoft.com/en-us/pricing/details/event-hubs/[Azure Event Hubs定价] ，查看其他选项。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3037
+#: upstream/_guides/kafka.adoc:3035
 #, fuzzy
 msgid "To connect to Azure Event Hub, using the Kafka protocol with TLS, you need the following configuration:"
 msgstr "要连接到Azure Event Hub，使用带有TLS的Kafka协议，你需要以下配置。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3046
+#: upstream/_guides/kafka.adoc:3044
 #, no-wrap
 msgid ""
 "kafka.bootstrap.servers=my-event-hub.servicebus.windows.net:9093 # <1>\n"
@@ -5671,37 +5659,37 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3048
+#: upstream/_guides/kafka.adoc:3046
 #, fuzzy
 msgid "The port is `9093`."
 msgstr "该端口为 `9093` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3049
+#: upstream/_guides/kafka.adoc:3047
 #, fuzzy
 msgid "You need to use the JAAS `PlainLoginModule`."
 msgstr "你需要使用JAAS `PlainLoginModule` 。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3050
+#: upstream/_guides/kafka.adoc:3048
 #, fuzzy
 msgid "The username is the `$ConnectionString` string."
 msgstr "用户名是指 `$ConnectionString` 字符串。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3051
+#: upstream/_guides/kafka.adoc:3049
 #, fuzzy
 msgid "The Event Hub connection string given by Azure."
 msgstr "由Azure提供的Event Hub连接字符串。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3055
+#: upstream/_guides/kafka.adoc:3053
 #, fuzzy
 msgid "Replace `<YOUR.EVENTHUBS.CONNECTION.STRING>` with the connection string for your Event Hubs namespace.  For instructions on getting the connection string, see https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string[Get an Event Hubs connection string].  The result would be something like:"
 msgstr "用您的Event Hubs命名空间的连接字符串替换 `<YOUR.EVENTHUBS.CONNECTION.STRING>` 。有关获取连接字符串的说明，请参阅 link:https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string[获取Event Hubs连接字符串] 。结果会是这样的。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3061
+#: upstream/_guides/kafka.adoc:3059
 #, no-wrap
 msgid ""
 "kafka.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \\\n"
@@ -5710,13 +5698,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3064
+#: upstream/_guides/kafka.adoc:3062
 #, fuzzy
 msgid "This configuration can be global (as above), or set in the channel configuration:"
 msgstr "这个配置可以是全局的（如上），也可以在通道配置中设置。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3073
+#: upstream/_guides/kafka.adoc:3071
 #, no-wrap
 msgid ""
 "mp.messaging.incoming.$channel.bootstrap.servers=my-event-hub.servicebus.windows.net:9093\n"
@@ -5728,25 +5716,25 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: upstream/_guides/kafka.adoc:3075
+#: upstream/_guides/kafka.adoc:3073
 #, fuzzy, no-wrap
 msgid "Red Hat OpenShift Streams for Apache Kafka"
 msgstr "红帽OpenShift Streams for Apache Kafka"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3080
+#: upstream/_guides/kafka.adoc:3078
 #, fuzzy
 msgid "https://cloud.redhat.com/[Red Hat OpenShift Streams for Apache Kafka] provides managed Kafka brokers.  First, follow the instructions from https://access.redhat.com/documentation/en-us/red_hat_openshift_streams_for_apache_kafka/1/guide/88e1487a-2a14-4b35-85b9-a7a2d67a37f3[Getting started with the `rhoas` CLI for Red Hat OpenShift Streams for Apache Kafka] to create your Kafka broker instance.  Make sure you copied the client id and client secret associated with the _ServiceAccount_ you created."
 msgstr "link:https://cloud.redhat.com/[Red Hat OpenShift Streams for Apache Kafka] 提供了可管理的Kafka经纪人。首先，按照 link:https://access.redhat.com/documentation/en-us/red_hat_openshift_streams_for_apache_kafka/1/guide/88e1487a-2a14-4b35-85b9-a7a2d67a37f3[Red Hat OpenShift Streams for Apache Kafka的 `rhoas` CLI入门] 的说明，创建你的Kafka经纪人实例。确保你复制了与你创建的 _ServiceAccount_ 相关的客户ID和客户秘密。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3082
+#: upstream/_guides/kafka.adoc:3080
 #, fuzzy
 msgid "Then, you can configure the Quarkus application to connect to the broker as follows:"
 msgstr "然后，你可以配置Quarkus应用程序以连接到经纪人，如下所示。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3091
+#: upstream/_guides/kafka.adoc:3089
 #, no-wrap
 msgid ""
 "kafka.bootstrap.servers=<connection url> # <1>\n"
@@ -5758,43 +5746,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3093
+#: upstream/_guides/kafka.adoc:3091
 #, fuzzy
 msgid "The connection string, given on the admin console, such as `demo-c--bjsv-ldd-cvavkc-a.bf2.kafka.rhcloud.com:443`"
 msgstr "连接字符串，在管理控制台给出，例如 `demo-c—​bjsv-ldd-cvavkc-a.bf2.kafka.rhcloud.com:443` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3094
+#: upstream/_guides/kafka.adoc:3092
 #, fuzzy
 msgid "The kafka username (the client id from the service account)"
 msgstr "kafka的用户名（来自服务账户的客户端ID）。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3095
+#: upstream/_guides/kafka.adoc:3093
 #, fuzzy
 msgid "the kafka password (the client secret from the service account)"
 msgstr "kafka密码（来自服务账户的客户秘密）。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3097
+#: upstream/_guides/kafka.adoc:3095
 #, fuzzy
 msgid "In general, these properties are prefixed using `%prod` to enable them only when running in production mode."
 msgstr "一般来说，这些属性的前缀是使用 `%prod` ，以便只在生产模式下运行时启用。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3100
+#: upstream/_guides/kafka.adoc:3098
 #, fuzzy
 msgid "As explained in https://access.redhat.com/documentation/en-us/red_hat_openshift_streams_for_apache_kafka/1/guide/88e1487a-2a14-4b35-85b9-a7a2d67a37f3[Getting started with the rhoas CLI for Red Hat OpenShift Streams for Apache Kafka], to use Red Hat OpenShift Streams for Apache Kafka, you must create the topic beforehand, create a _Service Account_, and provide permissions to read and write to your topic from that service account.  The authentication data (client id and secret) relates to the service account, which means you can implement fine-grain permissions and restrict access to the topic."
 msgstr "正如在《 link:https://access.redhat.com/documentation/en-us/red_hat_openshift_streams_for_apache_kafka/1/guide/88e1487a-2a14-4b35-85b9-a7a2d67a37f3[Getting started with the rhoas CLI for Red Hat OpenShift Streams for Apache Kaf] ka》中所解释的那样，要使用Red Hat OpenShift Streams for Apache Kafka，你必须事先创建主题，创建一个 _服务账户_ ，并提供从该服务账户读取和写入主题的权限。认证数据（客户端ID和秘密）与服务账户有关，这意味着你可以实现细粒度的权限，并限制对主题的访问。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3102
+#: upstream/_guides/kafka.adoc:3100
 #, fuzzy
 msgid "When using Kubernetes, it is recommended to set the client id and secret in a Kubernetes secret:"
 msgstr "当使用Kubernetes时，建议在Kubernetes秘密中设置客户端ID和秘密。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3112
+#: upstream/_guides/kafka.adoc:3110
 #, no-wrap
 msgid ""
 "apiVersion: v1\n"
@@ -5807,67 +5795,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3115
+#: upstream/_guides/kafka.adoc:3113
 #, fuzzy
 msgid "To allow your Quarkus application to use that secret, add the following line to the `application.properties` file:"
 msgstr "为了允许你的Quarkus应用程序使用该秘密，请在 `application.properties` 文件中添加以下一行。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3119
+#: upstream/_guides/kafka.adoc:3117
 #, no-wrap
 msgid "%prod.quarkus.openshift.env.secrets=kafka-credentials\n"
 msgstr ""
 
 #. type: Title ====
-#: upstream/_guides/kafka.adoc:3121
+#: upstream/_guides/kafka.adoc:3119
 #, fuzzy, no-wrap
 msgid "Red Hat OpenShift Service Registry"
 msgstr "红帽OpenShift Streams for Apache Kafka"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3125
+#: upstream/_guides/kafka.adoc:3123
 #, fuzzy
 msgid "https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-service-registry[Red Hat OpenShift Service Registry] provides fully managed service registry for handling Kafka schemas."
 msgstr "link:https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-service-registry[红帽OpenShift服务注册中心] 为处理Kafka模式提供完全管理的服务注册中心。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3129
+#: upstream/_guides/kafka.adoc:3127
 #, fuzzy
 msgid "You can follow the instructions from https://access.redhat.com/documentation/en-us/red_hat_openshift_service_registry/1/guide/ab1894d1-cae0-4d11-b185-81d62b4aabc7#_60472331-fa00-48ec-a621-bbd039500c7d[Getting started with Red Hat OpenShift Service Registry], or use the `rhoas` CLI to create a new service registry instance:"
 msgstr "你可以按照《 link:https://access.redhat.com/documentation/en-us/red_hat_openshift_service_registry/1/guide/ab1894d1-cae0-4d11-b185-81d62b4aabc7#_60472331-fa00-48ec-a621-bbd039500c7d[红帽OpenShift服务注册中心入门》] 中的说明，或者使用 `rhoas` CLI来创建一个新的服务注册中心实例。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3133
+#: upstream/_guides/kafka.adoc:3131
 #, no-wrap
 msgid "rhoas service-registry create --name my-schema-registry\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3138
+#: upstream/_guides/kafka.adoc:3136
 #, fuzzy
 msgid "Make sure to note the _Registry URL_ of the instance created.  For authentication, you can use the same _ServiceAccount_ you created previously.  You need to make sure that it has the necessary permissions to access the service registry."
 msgstr "请确保注意所创建的实例的 _注册表URL_ 。对于认证，你可以使用你之前创建的同一个 _ServiceAccount_ 。你需要确保它有必要的权限来访问服务注册表。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3140
+#: upstream/_guides/kafka.adoc:3138
 #, fuzzy
 msgid "For example, using the `rhoas` CLI, you can grant the `MANAGER` role to the service account:"
 msgstr "例如，使用 `rhoas` CLI，你可以将 `MANAGER` 角色授予服务账户。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3144
+#: upstream/_guides/kafka.adoc:3142
 #, no-wrap
 msgid "rhoas service-registry role add --role manager --service-account [SERVICE_ACCOUNT_CLIENT_ID]\n"
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3147
+#: upstream/_guides/kafka.adoc:3145
 #, fuzzy
 msgid "Then, you can configure the Quarkus application to connect to the schema registry as follows:"
 msgstr "然后，你可以配置Quarkus应用程序以连接到经纪人，如下所示。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3154
+#: upstream/_guides/kafka.adoc:3152
 #, no-wrap
 msgid ""
 "mp.messaging.connector.smallrye-kafka.apicurio.registry.url=${RHOAS_SERVICE_REGISTRY_URL} <1>\n"
@@ -5877,67 +5865,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3156
+#: upstream/_guides/kafka.adoc:3154
 #, fuzzy
 msgid "The service registry URL, given on the admin console, such as `https://bu98.serviceregistry.rhcloud.com/t/0e95af2c-6e11-475e-82ee-f13bd782df24/apis/registry/v2`"
 msgstr "服务注册表的URL，在管理控制台给出，例如 `<a href=\"https://bu98.serviceregistry.rhcloud.com/t/0e95af2c-6e11-475e-82ee-f13bd782df24/apis/registry/v2\" class=\"bare\">https://bu98.serviceregistry.rhcloud.com/t/0e95af2c-6e11-475e-82ee-f13bd782df24/apis/registry/v2</a>` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3157
+#: upstream/_guides/kafka.adoc:3155
 #, fuzzy
 msgid "The OAuth token endpoint URL, such as `https://identity.api.openshift.com/auth/realms/rhoas/protocol/openid-connect/token`"
 msgstr "OAuth令牌端点的URL，如 `<a href=\"https://identity.api.openshift.com/auth/realms/rhoas/protocol/openid-connect/token\" class=\"bare\">https://identity.api.openshift.com/auth/realms/rhoas/protocol/openid-connect/token</a>` "
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3158
+#: upstream/_guides/kafka.adoc:3156
 #, fuzzy
 msgid "The client id (from the service account)"
 msgstr "kafka的用户名（来自服务账户的客户端ID）。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3159
+#: upstream/_guides/kafka.adoc:3157
 #, fuzzy
 msgid "The client secret (from the service account)"
 msgstr "kafka密码（来自服务账户的客户秘密）。"
 
 #. type: Title ====
-#: upstream/_guides/kafka.adoc:3160
+#: upstream/_guides/kafka.adoc:3158
 #, fuzzy, no-wrap
 msgid "Binding Red Hat OpenShift managed services to Quarkus application using the Service Binding Operator"
 msgstr "使用服务绑定操作符将红帽OpenShift管理的服务绑定到Quarkus应用程序上"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3164
+#: upstream/_guides/kafka.adoc:3162
 #, fuzzy
 msgid "If your Quarkus application is deployed on a Kubernetes or OpenShift cluster with link:https://github.com/redhat-developer/service-binding-operator[Service Binding Operator] and link:https://github.com/redhat-developer/app-services-operator/tree/main/docs[OpenShift Application Services] operators installed, configurations necessary to access Red Hat OpenShift Streams for Apache Kafka and Service Registry can be injected to the application using xref:deploying-to-kubernetes.adoc#service_binding[Kubernetes Service Binding]."
 msgstr "如果你的Quarkus应用被部署在安装了 link:https://github.com/redhat-developer/service-binding-operator[服务绑定运营商] 和 link:https://github.com/redhat-developer/app-services-operator/tree/main/docs[OpenShift应用服务] 运营商的Kubernetes或OpenShift集群上，访问Red Hat OpenShift Streams for Apache Kafka和服务注册中心所需的配置可以使用 link:deploying-to-kubernetes.html#service_binding[Kubernetes服务绑定] 注入到应用中。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3167
+#: upstream/_guides/kafka.adoc:3165
 #, fuzzy
 msgid "In order to set up the Service Binding, you need first to connect OpenShift managed services to your cluster.  For an OpenShift cluster you can follow the instructions from link:https://github.com/redhat-developer/app-services-guides/tree/main/docs/registry/service-binding-registry#connecting-a-kafka-and-service-registry-instance-to-your-openshift-cluster[Connecting a Kafka and Service Registry instance to your OpenShift cluster]."
 msgstr "为了设置服务绑定，你首先需要将OpenShift管理的服务连接到你的集群。对于OpenShift集群，你可以按照《 link:https://github.com/redhat-developer/app-services-guides/tree/main/docs/registry/service-binding-registry#connecting-a-kafka-and-service-registry-instance-to-your-openshift-cluster[将Kafka和服务注册中心实例连接到你的OpenShift集群] 》的说明进行操作。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3169
+#: upstream/_guides/kafka.adoc:3167
 #, fuzzy
 msgid "Once you've connected your cluster with the RHOAS Kafka and Service Registry instances, make sure you've granted necessary permissions to the newly created service account."
 msgstr "一旦你将你的集群与RHOAS Kafka和服务注册中心实例连接起来，确保你已经给新创建的服务账户授予必要的权限。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3172
+#: upstream/_guides/kafka.adoc:3170
 #, fuzzy
 msgid "Then, using the xref:deploying-to-kubernetes.adoc#service_binding[Kubernetes Service Binding] extension, you can configure the Quarkus application to generate `ServiceBinding` resources for those services:"
 msgstr "然后，使用 link:deploying-to-kubernetes.html#service_binding[Kubernetes服务绑定] 扩展，你可以配置Quarkus应用程序，为这些服务生成 `ServiceBinding` 资源。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3176
+#: upstream/_guides/kafka.adoc:3174
 #, no-wrap
 msgid "quarkus.kubernetes-service-binding.detect-binding-resources=true\n"
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3180
+#: upstream/_guides/kafka.adoc:3178
 #, no-wrap
 msgid ""
 "quarkus.kubernetes-service-binding.services.kafka.api-version=rhoas.redhat.com/v1alpha1\n"
@@ -5946,7 +5934,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3184
+#: upstream/_guides/kafka.adoc:3182
 #, no-wrap
 msgid ""
 "quarkus.kubernetes-service-binding.services.serviceregistry.api-version=rhoas.redhat.com/v1alpha1\n"
@@ -5955,13 +5943,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3187
+#: upstream/_guides/kafka.adoc:3185
 #, fuzzy
 msgid "For this example Quarkus build will generate the following `ServiceBinding` resources:"
 msgstr "对于这个例子，Quarkus构建将产生以下 `ServiceBinding` 资源。"
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3207
+#: upstream/_guides/kafka.adoc:3205
 #, no-wrap
 msgid ""
 "apiVersion: binding.operators.coreos.com/v1alpha1\n"
@@ -5985,7 +5973,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: upstream/_guides/kafka.adoc:3225
+#: upstream/_guides/kafka.adoc:3223
 #, no-wrap
 msgid ""
 "apiVersion: binding.operators.coreos.com/v1alpha1\n"
@@ -6008,27 +5996,35 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3229
+#: upstream/_guides/kafka.adoc:3227
 #, fuzzy
 msgid "You can follow xref:deploying-to-kubernetes.adoc#openshift[Deploying to OpenShift] to deploy your application, including generated `ServiceBinding` resources.  The configuration properties necessary to access the Kafka and Schema Registry instances will be injected to the application automatically at deployment."
 msgstr "你可以按照 link:deploying-to-kubernetes.html#openshift[Deploying to OpenShift] 来部署你的应用程序，包括生成的 `ServiceBinding` 资源。访问Kafka和Schema Registry实例所需的配置属性将在部署时自动注入到应用程序。"
 
 #. type: Title ==
-#: upstream/_guides/kafka.adoc:3230
+#: upstream/_guides/kafka.adoc:3228
 #, fuzzy, no-wrap
 msgid "Going further"
 msgstr "更进一步"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3234
+#: upstream/_guides/kafka.adoc:3232
 #, fuzzy
 msgid "This guide has shown how you can interact with Kafka using Quarkus.  It utilizes SmallRye Reactive Messaging to build data streaming applications."
 msgstr "本指南已经展示了如何使用Quarkus与Kafka进行交互。它利用SmallRye Reactive Messaging来构建数据流应用。"
 
 #. type: Plain text
-#: upstream/_guides/kafka.adoc:3235
+#: upstream/_guides/kafka.adoc:3233
 msgid "If you want to go further, check the documentation of https://smallrye.io/smallrye-reactive-messaging[SmallRye Reactive Messaging], the implementation used in Quarkus."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Uses GraalVM 21.+"
+#~ msgstr "使用GraalVM 21.+"
+
+#, fuzzy
+#~ msgid "Add `quarkus.kafka.snappy.enabled=true` to your `application.properties`"
+#~ msgstr "将 `quarkus.kafka.snappy.enabled=true` 添加到您的 `application.properties` "
 
 #, fuzzy
 #~ msgid "Send the managed instance to Kafka. Make sure we wait for the message to complete before closing the transaction."
