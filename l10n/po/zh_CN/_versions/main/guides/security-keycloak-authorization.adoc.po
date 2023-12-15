@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-11-29 01:59+0000\n"
+"POT-Creation-Date: 2023-12-15 01:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-keycloak-authorization.adoc:36
-msgid "https://www.keycloak.org/docs/latest/server_installation/index.html[Keycloak]"
+msgid "https://www.keycloak.org[Keycloak]"
 msgstr ""
 
 #. type: Title ==
@@ -232,7 +232,7 @@ msgstr ""
 #. type: delimited block -
 #: upstream/_versions/main/guides/security-keycloak-authorization.adoc:119
 #, no-wrap
-msgid "import org.jboss.resteasy.annotations.cache.NoCache;\n"
+msgid "import org.jboss.resteasy.reactive.NoCache;\n"
 msgstr ""
 
 #. type: delimited block -
@@ -422,7 +422,7 @@ msgstr ""
 
 #. type: Plain text
 #: upstream/_versions/main/guides/security-keycloak-authorization.adoc:214
-msgid "where `keycloak.version` should be set to `17.0.0` or higher."
+msgid "where `keycloak.version` should be set to `23.0.0` or higher and the `keycloak-keystore.jks` can be found in https://github.com/quarkusio/quarkus-quickstarts/blob/main/security-keycloak-authorization-quickstart/config/keycloak-keystore.jks[quarkus-quickstarts/security-keycloak-authorization-quickstart/config]"
 msgstr ""
 
 #. type: Plain text
